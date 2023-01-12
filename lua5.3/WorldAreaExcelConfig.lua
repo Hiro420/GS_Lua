@@ -1,0 +1,15 @@
+-- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
+-- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\WorldAreaExcelConfig.luac 
+
+-- params : ...
+-- function num : 0 , upvalues : upval_0
+local l_0_0 = {}
+l_0_0.LEVEL_NONE = 0
+l_0_0.LEVEL_1 = 1
+l_0_0.LEVEL_2 = 2
+l_0_0.LEVEL_3 = 3
+upval_0.WorldAreaType = l_0_0
+upval_0.AreaTerrainType, l_0_0 = l_0_0, {AREA_TERRAIN_NONE = 0, AREA_TERRAIN_CITY = 1, AREA_TERRAIN_OUTDOOR = 2}
+upval_0.ExploreEventType, l_0_0 = l_0_0, {EXPLORE_EVENT_NONE = 0, EXPLORE_EVENT_UNLOCK_POINT = 1, EXPLORE_EVENT_OPEN_CHEST = 2, EXPLORE_EVENT_CLEAR_GROUP_MONSTER = 3, EXPLORE_EVENT_ITEM_ADD = 4, EXPLORE_EVENT_ENTER_FORCE = 5, EXPLORE_EVENT_OPEN_CHEST_BY_GADGET = 6}
+upval_0.WorldAreaLevelupActionType, l_0_0 = l_0_0, {WORLD_AREA_ACTION_NONE = 0, WORLD_AREA_ACTION_REWARD = 1, WORLD_AREA_ACTION_IMPROVE_STAMINA = 2, WORLD_AREA_ACTION_UNLOCK_FORCE = 3, WORLD_AREA_ACTION_UNLOCK_DUNGEON_ENTRANCE = 4, WORLD_AREA_ACTION_ACTIVATE_ITEM = 5, WORLD_AREA_ACTION_UNLOCK_DYNAMIC_HARD = 6, WORLD_AREA_ACTION_UNLOCK_AIR_PORTAL = 7, WORLD_AREA_ACTION_NOTIFY_GROUP = 8}
+

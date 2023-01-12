@@ -1,0 +1,32 @@
+-- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
+-- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q20518ClientConfig.luac 
+
+-- params : ...
+-- function num : 0 , upvalues : upval_0
+local l_0_0 = {}
+l_0_0.MainID = 20518
+l_0_0.ActorAlias = "20518"
+local l_0_1 = {}
+l_0_1.q2051801 = 2051801
+l_0_1.q2051802 = 2051802
+l_0_1.q2051803 = 2051803
+l_0_1.q2051804 = 2051804
+l_0_1.q2051805 = 2051805
+l_0_1.q2051806 = 2051806
+l_0_0.SubIDs = l_0_1
+local l_0_2 = {}
+l_0_2.id = 1525
+l_0_2.alias = "Npc1525"
+l_0_2.script = "Actor/Npc/NpcFSMBehaviour"
+l_0_2.point = (upval_0.sceneData):GetDummyPoint(3, "Q20518_Vile_InitPos")
+l_0_2 = {id = 1433, alias = "Npc1433", script = "Actor/Npc/NpcFSMBehaviour", point = (upval_0.sceneData):GetDummyPoint(3, "Q20518_Huffman_InitPos")}
+l_0_2 = {id = 1473, alias = "Npc1473", script = "Actor/Npc/NpcFSMBehaviour", point = (upval_0.sceneData):GetDummyPoint(1008, "Q20518_Jilliana_InitPos")}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc1525Data = l_0_2, Npc1433Data = l_0_2, Npc1473Data = l_0_2}
+local l_0_3 = {}
+l_0_3.dialogID = 205189901
+l_0_3.audioEvtName = ""
+l_0_3.duration = 3
+l_0_2 = {l_0_3}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable = l_0_2}
+return l_0_0
+

@@ -1,0 +1,40 @@
+-- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
+-- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q22115ClientConfig.luac 
+
+-- params : ...
+-- function num : 0 , upvalues : upval_0
+local l_0_0 = {}
+l_0_0.MainID = 22115
+l_0_0.ActorAlias = "22115"
+local l_0_1 = {}
+l_0_1.q2211501 = 2211501
+l_0_1.q2211502 = 2211502
+l_0_1.q2211503 = 2211503
+l_0_1.q2211504 = 2211504
+l_0_1.q2211505 = 2211505
+l_0_1.q2211506 = 2211506
+l_0_1.q2211507 = 2211507
+l_0_1.q2211508 = 2211508
+l_0_1.q2211509 = 2211509
+l_0_1.q2211510 = 2211510
+l_0_1.q2211511 = 2211511
+l_0_0.SubIDs = l_0_1
+local l_0_2 = {}
+l_0_2.id = 1624
+l_0_2.alias = "Npc1624"
+l_0_2.script = "Actor/Npc/NpcFSMBehaviour"
+l_0_2.point = (upval_0.sceneData):GetDummyPoint(3, "Q22115NPCBorn")
+local l_0_3 = {}
+local l_0_4 = {}
+l_0_4.x = 0
+l_0_4.y = 0
+l_0_4.z = 0
+l_0_3.pos = l_0_4
+l_0_3.rot, l_0_4 = l_0_4, {x = 0, y = 0, z = 0}
+l_0_2 = {id = 1005, alias = "Paimon", script = "Actor/Quest/Q352/Paimon", point = l_0_3}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc1624Data = l_0_2, PaimonData = l_0_2}
+l_0_4, l_0_3 = {dialogID = 221150404, audioEvtName = "", duration = 3}, {dialogID = 221150403, audioEvtName = "", duration = 3}
+l_0_2 = {l_0_3, l_0_4}
+l_0_0.Datas, l_0_1 = l_0_1, {PaimonReminder = l_0_2}
+return l_0_0
+
