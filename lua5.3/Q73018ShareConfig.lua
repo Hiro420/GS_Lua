@@ -1,10 +1,10 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73018ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73018ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
 upval_0.main_id = 73018
-upval_0.sub_ids = {7301801, 7301802, 7301806, 7301807, 7301828, 7301808, 7301823, 7301809, 7301810, 7301811, 7301813, 7301814, 7301816, 7301817, 7301819, 7301820, 7301821, 7301827, 7301822, 7301826, 7301825, 7301824, 7301818, 7301815, 7301812, 7301805, 7301804, 7301803}
+upval_0.sub_ids = {7301801, 7301802, 7301806, 7301807, 7301808, 7301823, 7301809, 7301810, 7301811, 7301813, 7301814, 7301816, 7301817, 7301819, 7301820, 7301821, 7301827, 7301822, 7301803, 7301804, 7301805, 7301812, 7301815, 7301818, 7301824, 7301825, 7301826}
 local l_0_0 = {}
 l_0_0.CLIENT = {}
 l_0_0.SERVER = {}
@@ -53,7 +53,7 @@ l_0_6.pos = "guide_Q7301801_4"
 l_0_6.scene_id = 3
 l_0_6.room_id = 0
 l_0_6.data_index = 4
--- DECOMPILER ERROR at PC87: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC86: No list found for R2 , SetList fails
 
 l_0_1.npcs = l_0_2
 l_0_1 = {}
@@ -89,12 +89,9 @@ l_0_1 = {}
 l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20608, alias = "Npc20608", script = "Actor/Npc/TempNPC", pos = "guide_Q7301821_4", scene_id = 3, room_id = 0, data_index = 4}, {id = 20607, alias = "Npc20607", script = "Actor/Npc/TempNPC", pos = "guide_Q7301821_3", scene_id = 3, room_id = 0, data_index = 3}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301821_2", scene_id = 3, room_id = 0, data_index = 2}, {id = 20605, alias = "Npc20605", script = "Actor/Npc/TempNPC", pos = "guide_Q7301821", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
 l_0_1 = {npcs = l_0_2}
-l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20608, alias = "Npc20608", script = "Actor/Npc/TempNPC", pos = "guide_Q7301805_4", scene_id = 3, room_id = 0, data_index = 4}, {id = 20607, alias = "Npc20607", script = "Actor/Npc/TempNPC", pos = "guide_Q7301805_3", scene_id = 3, room_id = 0, data_index = 3}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301805_2", scene_id = 3, room_id = 0, data_index = 2}, {id = 20605, alias = "Npc20605", script = "Actor/Npc/TempNPC", pos = "guide_Q7301805", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
-l_0_1 = {npcs = l_0_2}
 upval_0.rewind_data, l_0_0 = l_0_0, {
 ["7301801"] = {}
-, ["7301802"] = l_0_1, ["7301803"] = l_0_1, ["7301804"] = l_0_1, ["7301805"] = l_0_1, ["7301806"] = l_0_1, ["7301807"] = l_0_1, ["7301808"] = l_0_1, ["7301809"] = l_0_1, ["7301810"] = l_0_1, ["7301811"] = l_0_1, ["7301812"] = l_0_1, ["7301813"] = l_0_1, ["7301814"] = l_0_1, ["7301815"] = l_0_1, ["7301816"] = l_0_1, ["7301817"] = l_0_1, ["7301818"] = l_0_1, ["7301819"] = l_0_1, ["7301820"] = l_0_1, ["7301821"] = l_0_1, ["7301822"] = l_0_1, ["7301823"] = l_0_1, ["7301824"] = l_0_1, ["7301825"] = l_0_1, ["7301826"] = l_0_1, ["7301827"] = l_0_1, ["7301828"] = l_0_1}
+, ["7301802"] = l_0_1, ["7301803"] = l_0_1, ["7301804"] = l_0_1, ["7301805"] = l_0_1, ["7301806"] = l_0_1, ["7301807"] = l_0_1, ["7301808"] = l_0_1, ["7301809"] = l_0_1, ["7301810"] = l_0_1, ["7301811"] = l_0_1, ["7301812"] = l_0_1, ["7301813"] = l_0_1, ["7301814"] = l_0_1, ["7301815"] = l_0_1, ["7301816"] = l_0_1, ["7301817"] = l_0_1, ["7301818"] = l_0_1, ["7301819"] = l_0_1, ["7301820"] = l_0_1, ["7301821"] = l_0_1, ["7301822"] = l_0_1, ["7301823"] = l_0_1, ["7301824"] = l_0_1, ["7301825"] = l_0_1, ["7301826"] = l_0_1, ["7301827"] = l_0_1}
 local l_0_7 = {}
 l_0_7.id = 4187
 l_0_7.alias = "Npc4187"
@@ -172,8 +169,5 @@ l_0_1 = {}
 l_0_6, l_0_5, l_0_4, l_0_3 = {id = 4190, alias = "Npc4190", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301821_4", scene_id = 3, room_id = 0, data_index = 4}, {id = 4189, alias = "Npc4189", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301821_3", scene_id = 3, room_id = 0, data_index = 3}, {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301821_2", scene_id = 3, room_id = 0, data_index = 2}, {id = 4187, alias = "Npc4187", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301821", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
 l_0_1 = {npcs = l_0_2}
-l_0_6, l_0_5, l_0_4, l_0_3 = {id = 4190, alias = "Npc4190", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301805_4", scene_id = 3, room_id = 0, data_index = 4}, {id = 4189, alias = "Npc4189", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301805_3", scene_id = 3, room_id = 0, data_index = 3}, {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301805_2", scene_id = 3, room_id = 0, data_index = 2}, {id = 4187, alias = "Npc4187", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301805", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
-l_0_1 = {npcs = l_0_2}
-upval_0.quest_data, l_0_0 = l_0_0, {["7301801"] = l_0_1, ["7301802"] = l_0_1, ["7301803"] = l_0_1, ["7301804"] = l_0_1, ["7301805"] = l_0_1, ["7301806"] = l_0_1, ["7301807"] = l_0_1, ["7301808"] = l_0_1, ["7301809"] = l_0_1, ["7301810"] = l_0_1, ["7301811"] = l_0_1, ["7301812"] = l_0_1, ["7301813"] = l_0_1, ["7301814"] = l_0_1, ["7301815"] = l_0_1, ["7301816"] = l_0_1, ["7301817"] = l_0_1, ["7301818"] = l_0_1, ["7301819"] = l_0_1, ["7301820"] = l_0_1, ["7301821"] = l_0_1, ["7301822"] = l_0_1, ["7301823"] = l_0_1, ["7301824"] = l_0_1, ["7301825"] = l_0_1, ["7301826"] = l_0_1, ["7301827"] = l_0_1, ["7301828"] = l_0_1}
+upval_0.quest_data, l_0_0 = l_0_0, {["7301801"] = l_0_1, ["7301802"] = l_0_1, ["7301803"] = l_0_1, ["7301804"] = l_0_1, ["7301805"] = l_0_1, ["7301806"] = l_0_1, ["7301807"] = l_0_1, ["7301808"] = l_0_1, ["7301809"] = l_0_1, ["7301810"] = l_0_1, ["7301811"] = l_0_1, ["7301812"] = l_0_1, ["7301813"] = l_0_1, ["7301814"] = l_0_1, ["7301815"] = l_0_1, ["7301816"] = l_0_1, ["7301817"] = l_0_1, ["7301818"] = l_0_1, ["7301819"] = l_0_1, ["7301820"] = l_0_1, ["7301821"] = l_0_1, ["7301822"] = l_0_1, ["7301823"] = l_0_1, ["7301824"] = l_0_1, ["7301825"] = l_0_1, ["7301826"] = l_0_1, ["7301827"] = l_0_1}
 

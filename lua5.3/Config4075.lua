@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4075.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4075.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -26,14 +26,14 @@ l_0_9.condition = l_0_10
 local l_0_11 = {}
 local l_0_12 = {}
 local l_0_13 = {}
-l_0_13.x = -309.9182
-l_0_13.y = 248.5391
-l_0_13.z = 2832.166
+l_0_13.x = -309.9493
+l_0_13.y = 249.1062
+l_0_13.z = 2833.653
 l_0_12.pos = l_0_13
-l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 191.1224, z = 0}
+l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 150, z = 0}
 l_0_11.dummypoint = l_0_12
-l_0_11.freestyle = 8010
-l_0_12 = l_0_1.Sit
+l_0_11.freestyle = 4130
+l_0_12 = l_0_1.Stand
 l_0_11.action = l_0_12
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
 l_0_12 = l_0_2.Night
@@ -85,12 +85,6 @@ l_0_11 = {l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, l_0_17}
 -- DECOMPILER ERROR at PC148: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
-l_0_11 = 0
-l_0_10 = {l_0_11; transTeleport = true, condition = l_0_11, actionPoints = l_0_11}
-l_0_11 = {dialogId = 1018407500, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_9 = {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9}
 l_0_6.Data = l_0_7
 return l_0_6
 

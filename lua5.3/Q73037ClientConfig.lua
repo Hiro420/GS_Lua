@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73037ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73037ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -7,19 +7,19 @@ local l_0_0 = {}
 l_0_0.MainID = 73037
 l_0_0.ActorAlias = "73037"
 local l_0_1 = {}
+l_0_1.q7303701 = 7303701
 l_0_1.q7303702 = 7303702
 l_0_1.q7303703 = 7303703
+l_0_1.q7303713 = 7303713
 l_0_1.q7303704 = 7303704
 l_0_1.q7303705 = 7303705
 l_0_1.q7303706 = 7303706
+l_0_1.q7303707 = 7303707
 l_0_1.q7303708 = 7303708
 l_0_1.q7303709 = 7303709
 l_0_1.q7303712 = 7303712
 l_0_1.q7303710 = 7303710
 l_0_1.q7303711 = 7303711
-l_0_1.q7303701 = 7303701
-l_0_1.q7303707 = 7303707
-l_0_1.q7303713 = 7303713
 l_0_0.SubIDs = l_0_1
 local l_0_2 = {}
 l_0_2.id = 20646
@@ -112,33 +112,10 @@ l_0_22.audioEvtName = ""
 l_0_22.duration = 4
 l_0_4, l_0_3 = {dialogID = 730379908, audioEvtName = "", duration = 4}, {dialogID = 730379907, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, l_0_17, l_0_18, l_0_19, l_0_20, l_0_21, l_0_22}
-l_0_5, l_0_4, l_0_3 = {dialogID = 730379903, audioEvtName = "", duration = 4}, {dialogID = 730379902, audioEvtName = "", duration = 7}, {dialogID = 730379901, audioEvtName = "", duration = 4}
+l_0_5, l_0_4, l_0_3 = {dialogID = 730379903, audioEvtName = "", duration = 4}, {dialogID = 730379902, audioEvtName = "", duration = 4}, {dialogID = 730379901, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4, l_0_5}
-l_0_5, l_0_4, l_0_3 = {dialogID = 730379906, audioEvtName = "", duration = 4}, {dialogID = 730379905, audioEvtName = "", duration = 7}, {dialogID = 730379904, audioEvtName = "", duration = 4}
+l_0_5, l_0_4, l_0_3 = {dialogID = 730379906, audioEvtName = "", duration = 4}, {dialogID = 730379905, audioEvtName = "", duration = 4}, {dialogID = 730379904, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4, l_0_5}
-l_0_3 = "QUEST_Message_Q73037"
-l_0_2 = {l_0_3}
-l_0_4 = 4
-l_0_5 = 4
-l_0_6 = 4
-l_0_7 = 4
-l_0_8 = 4
-l_0_9 = 4
-l_0_10 = 4
-l_0_11 = 4
-l_0_12 = 4
-l_0_13 = 4
-l_0_14 = 4
-l_0_15 = 4
-l_0_16 = 4
-l_0_17 = 4
-l_0_18 = 4
-l_0_19 = 4
-l_0_20 = 4
-l_0_21 = 4
-l_0_22 = 4
-l_0_3 = {l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, l_0_17, l_0_18, l_0_19, l_0_20, l_0_21, l_0_22, 4}
-l_0_2 = {narratorId = 730379907, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_performBoss = l_0_2, NarratorTable1 = l_0_2, NarratorTable2 = l_0_2, TextmapId = l_0_2, NarratorWithId_finalBoss = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_performBoss = l_0_2, NarratorTable1 = l_0_2, NarratorTable2 = l_0_2}
 return l_0_0
 

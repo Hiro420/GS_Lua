@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\scene1018_dummy_points.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\scene1018_dummy_points.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -75,21 +75,6 @@ l_0_0.Npc1595NightBorn, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = -12.792, y = 0.007, z = 7.912}
 l_0_2 = {x = 0, y = 174.565, z = 0}
 l_0_0.Npc1596NightBorn, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 0.109, y = 0.007, z = 3.45}
-l_0_2 = {x = 0, y = 178.276, z = 0}
-l_0_0.Q4007908_N1004, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = -4.059, y = 0.007, z = -0.41}
-l_0_2 = {x = 0, y = 0, z = 0}
-l_0_0.Q4007908_N1009, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 6.338, y = 0.007, z = -6.602}
-l_0_2 = {x = 0, y = 29.196, z = 0}
-l_0_0.Q4007908_N1009_stand, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 3.455, y = 0.02, z = -13.724}
-l_0_2 = {x = 0, y = 296.738, z = 0}
-l_0_0.Q4007908_N1531, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 0.227, y = 0.02, z = -12.952}
-l_0_2 = {x = 0, y = 233.251, z = 0}
-l_0_0.Q4007912_N1009, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = -10.019, y = 0.007, z = -12.362}
 l_0_2 = {x = 0, y = 49.64, z = 0}
 l_0_0.Q4111201Fischl, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
@@ -141,8 +126,5 @@ l_0_0.Q7051303_SendLetter_Pos, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = -2.063, y = 0.007, z = -13.473}
 l_0_2 = {x = 0, y = 0, z = 0}
 l_0_0.Q70824Target, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = -2.263, y = 0.007, z = 0.231}
-l_0_2 = {x = 0, y = 237.381, z = 0}
-l_0_0.T4007908_N10000005, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 upval_0.dummy_points = l_0_0
 

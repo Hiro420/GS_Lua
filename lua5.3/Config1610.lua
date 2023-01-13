@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config1610.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config1610.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -15,7 +15,6 @@ local l_0_7 = {}
 l_0_7.NpcId = "1610"
 l_0_7.Alias = "Npc1610"
 local l_0_8 = {}
-l_0_8.refreshDailyActionImmediately = true
 local l_0_9 = {}
 local l_0_10 = {}
 l_0_10.daily = l_0_2.Night
@@ -40,22 +39,7 @@ l_0_11 = {daily = l_0_12, sceneId = 3, priority = 0}
 l_0_13 = l_0_1.Hide
 l_0_12 = {action = l_0_13}
 l_0_11 = {l_0_12}
-l_0_12 = {sceneId = 3, priority = 1}
-local l_0_14 = {}
-l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionActivityCondCondition
-l_0_14.activityId = 2016
-l_0_14.activityCondId = 2016001
-l_0_14.isActivityValid = true
-local l_0_15 = {}
-l_0_15._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
-l_0_15.mainQuestId = 40080
-l_0_15.questState = l_0_3.Finished
-l_0_13 = {l_0_14, l_0_15}
-l_0_12 = {l_0_13}
-l_0_14 = l_0_1.Hide
-l_0_13 = {action = l_0_14}
-l_0_12 = {l_0_13}
--- DECOMPILER ERROR at PC87: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC55: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_6.Data = l_0_7

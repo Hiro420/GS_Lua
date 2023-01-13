@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q7302705Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q7302705Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,7 +20,7 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
-  local l_2_3 = 15
+  local l_2_3 = 12
   local l_2_4 = (upval_0.DistType).EULER
   local l_2_5 = {}
   l_2_5.x = 0
@@ -30,20 +30,14 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
 end
 
 l_0_1.TriggerIn = function(l_3_0)
-  -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_4
-  local l_3_6, l_3_7 = nil
+  -- function num : 0_2 , upvalues : upval_0
+  local l_3_5, l_3_6, l_3_7 = nil
   ;
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("73027")
   local l_3_2, l_3_3 = l_3_1:PlayCutsceneIndex, l_3_1
   local l_3_4 = 7302705
-  local l_3_5 = function(l_4_0)
-    -- function num : 0_2_0 , upvalues : upval_0, upval_1
-    local l_4_1 = (upval_0.actorMgr):GetActor("73027")
-    l_4_1:RequestInteraction((upval_1.Npc20645Data).alias)
-  end
-
-  l_3_2(l_3_3, l_3_4, l_3_5, nil, nil, false)
+  l_3_2(l_3_3, l_3_4, nil, nil, nil, false)
   l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
   l_3_2(l_3_3)
 end

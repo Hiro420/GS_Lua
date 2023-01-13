@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q3004ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q3004ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -8,7 +8,6 @@ l_0_0.MainID = 3004
 l_0_0.ActorAlias = "3004"
 local l_0_1 = {}
 l_0_1.q300401 = 300401
-l_0_1.q300422 = 300422
 l_0_1.q300402 = 300402
 l_0_1.q300403 = 300403
 l_0_1.q300404 = 300404
@@ -134,24 +133,8 @@ l_0_4 = {x = 0, y = 0, z = 0}
 l_0_4 = {x = 0, y = 0, z = 0}
 l_0_3 = {pos = l_0_4, rot = l_0_4}
 l_0_2 = {id = 1005, alias = "Paimon", script = "Actor/Quest/Q352/Paimon", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 12902, alias = "Npc12902", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 12903, alias = "Npc12903", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 12904, alias = "Npc12904", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 12913, alias = "Npc12913", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_0.Npcs, l_0_1 = l_0_1, {Npc12562Data = l_0_2, Npc12555Data = l_0_2, Npc1052Data = l_0_2, Npc1054Data = l_0_2, Npc12565Data = l_0_2, Npc12566Data = l_0_2, Npc12567Data = l_0_2, Npc1051Data = l_0_2, Npc4313Data = l_0_2, Npc4019Data = l_0_2, Npc4314Data = l_0_2, Npc4098Data = l_0_2, Npc4030Data = l_0_2, Npc4315Data = l_0_2, Npc4316Data = l_0_2, Npc4059Data = l_0_2, Npc12563Data = l_0_2, Npc4011Data = l_0_2, Npc4066Data = l_0_2, Npc4044Data = l_0_2, Npc12733Data = l_0_2, Npc12734Data = l_0_2, Npc4055Data = l_0_2, PaimonData = l_0_2, Npc12902Data = l_0_2, Npc12903Data = l_0_2, Npc12904Data = l_0_2, Npc12913Data = l_0_2}
-l_0_3 = "QUEST_Message_Q300404"
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc12562Data = l_0_2, Npc12555Data = l_0_2, Npc1052Data = l_0_2, Npc1054Data = l_0_2, Npc12565Data = l_0_2, Npc12566Data = l_0_2, Npc12567Data = l_0_2, Npc1051Data = l_0_2, Npc4313Data = l_0_2, Npc4019Data = l_0_2, Npc4314Data = l_0_2, Npc4098Data = l_0_2, Npc4030Data = l_0_2, Npc4315Data = l_0_2, Npc4316Data = l_0_2, Npc4059Data = l_0_2, Npc12563Data = l_0_2, Npc4011Data = l_0_2, Npc4066Data = l_0_2, Npc4044Data = l_0_2, Npc12733Data = l_0_2, Npc12734Data = l_0_2, Npc4055Data = l_0_2, PaimonData = l_0_2}
+l_0_3 = ""
 l_0_2 = {l_0_3}
 l_0_2 = {narratorId = 300401, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
 l_0_2 = {narratorId = 300402, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}

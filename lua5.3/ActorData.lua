@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\ActorData.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\ActorData.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -55,9 +55,9 @@ l_0_0.GetByNpcRewindData = function(l_1_0, l_1_1, l_1_2, l_1_3)
 
             -- DECOMPILER ERROR at PC60: Confused about usage of register: R9 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC78: Confused about usage of register: R6 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC76: Confused about usage of register: R6 in 'UnsetPending'
 
-            do return {alias = l_1_25, metaPath = l_1_1.script, configID = l_1_26, dataIndex = l_1_1.data_index, bornPos = ((upval_0.sceneData):GetDummyPoint(l_1_14, l_1_15)).pos, bornEuler = ((upval_0.sceneData):GetDummyPoint(l_1_14, l_1_15)).rot, bornShoesOffset = l_1_1.bornShoesOffset, isNetwork = true, isAutoStart = l_1_1.isAutoStart ~= false, sceneID = l_1_27, roomID = l_1_28, questID = l_1_24, noPerform = false} end
+            do return {alias = l_1_25, metaPath = l_1_1.script, configID = l_1_26, dataIndex = l_1_1.data_index, bornPos = ((upval_0.sceneData):GetDummyPoint(l_1_14, l_1_15)).pos, bornEuler = ((upval_0.sceneData):GetDummyPoint(l_1_14, l_1_15)).rot, isNetwork = true, isAutoStart = l_1_1.isAutoStart ~= false, sceneID = l_1_27, roomID = l_1_28, questID = l_1_24, noPerform = false} end
             -- DECOMPILER ERROR: 1 unprocessed JMP targets
           end
         end
@@ -111,10 +111,8 @@ l_0_0.GetByGadgetRewindData = function(l_2_0, l_2_1, l_2_2, l_2_3)
 
             -- DECOMPILER ERROR at PC66: Overwrote pending register: R12 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC68: Overwrote pending register: R12 in 'AssignReg'
-
             do return l_2_25 end
-            l_2_25 = {alias = l_2_19, metaPath = l_2_28, configID = l_2_22, dataIndex = l_2_28, bornPos = l_2_28, bornEuler = l_2_28, bornShoesOffset = l_2_28, isNetwork = false, isAutoStart = false, sceneID = l_2_6, roomID = l_2_9, questID = l_2_25, noPerform = false}
+            l_2_25 = {alias = l_2_19, metaPath = l_2_28, configID = l_2_22, dataIndex = l_2_28, bornPos = l_2_28, bornEuler = l_2_28, isNetwork = false, isAutoStart = false, sceneID = l_2_6, roomID = l_2_9, questID = l_2_25, noPerform = false}
           end
         end
       end

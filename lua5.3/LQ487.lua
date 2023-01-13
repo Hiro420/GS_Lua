@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\LQ487.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\LQ487.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -363,22 +363,14 @@ end
 
 l_0_1.OnSubFinish48704 = function(l_21_0, l_21_1)
   -- function num : 0_20 , upvalues : ERROR_unknown_upvalue_2
-  local l_21_5, l_21_9 = nil
+  local l_21_5 = nil
   l_21_0:SceneLookCamera()
-  if l_21_0:GetSubQuestState(7066503) == 3 then
-    local l_21_2, l_21_3 = l_21_0:NarratorOnlyTaskLegacy, l_21_0
-    local l_21_4 = (upval_0.NarratorData).Story4
-    l_21_2(l_21_3, l_21_4, nil, "StoryCut")
-  else
-    do
-      local l_21_6, l_21_7 = l_21_0:NarratorOnlyTaskLegacy, l_21_0
-      do
-        local l_21_8 = (upval_0.NarratorData).Story3
-        l_21_6(l_21_7, l_21_8, nil, "StoryCut")
-        l_21_0:CallDelay(4, l_21_0.PlayerInputOn)
-      end
-    end
-  end
+  local l_21_2, l_21_3 = l_21_0:NarratorOnlyTaskLegacy, l_21_0
+  local l_21_4 = (upval_0.NarratorData).Story3
+  l_21_2(l_21_3, l_21_4, nil, "StoryCut")
+  l_21_2, l_21_3 = l_21_0:CallDelay, l_21_0
+  l_21_4 = 4
+  l_21_2(l_21_3, l_21_4, l_21_0.PlayerInputOn)
 end
 
 l_0_1.PlayerInputOn = function(l_22_0)

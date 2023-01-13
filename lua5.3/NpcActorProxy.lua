@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\NpcActorProxy.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\NpcActorProxy.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -155,86 +155,81 @@ l_0_1.ResumeOriginMat = function(l_24_0, l_24_1, l_24_2)
   (l_24_0.uActor):ResumeOriginMat(l_24_1, l_24_2)
 end
 
-l_0_1.ChangeNpcAvatarPendantVisual = function(l_25_0, l_25_1)
+l_0_1.CallOnNpcSit = function(l_25_0, l_25_1)
   -- function num : 0_24
-  (l_25_0.uActor):ChangeNpcAvatarPendantVisual(l_25_1)
+  (l_25_0.uActor):CallOnNpcSit(l_25_1)
 end
 
-l_0_1.CallOnNpcSit = function(l_26_0, l_26_1)
+l_0_1.UncallOnNpcSit = function(l_26_0, l_26_1)
   -- function num : 0_25
-  (l_26_0.uActor):CallOnNpcSit(l_26_1)
+  (l_26_0.uActor):UncallOnNpcSit(l_26_1)
 end
 
-l_0_1.UncallOnNpcSit = function(l_27_0, l_27_1)
+l_0_1.CallOnNpcStand = function(l_27_0, l_27_1)
   -- function num : 0_26
-  (l_27_0.uActor):UncallOnNpcSit(l_27_1)
+  (l_27_0.uActor):CallOnNpcStand(l_27_1)
 end
 
-l_0_1.CallOnNpcStand = function(l_28_0, l_28_1)
+l_0_1.UncallOnNpcStand = function(l_28_0, l_28_1)
   -- function num : 0_27
-  (l_28_0.uActor):CallOnNpcStand(l_28_1)
+  (l_28_0.uActor):UncallOnNpcStand(l_28_1)
 end
 
-l_0_1.UncallOnNpcStand = function(l_29_0, l_29_1)
+l_0_1.ShowNpcWithLevelTagId = function(l_29_0, l_29_1, l_29_2)
   -- function num : 0_28
-  (l_29_0.uActor):UncallOnNpcStand(l_29_1)
-end
-
-l_0_1.ShowNpcWithLevelTagId = function(l_30_0, l_30_1, l_30_2)
-  -- function num : 0_29
-  if l_30_2 == nil then
-    l_30_2 = true
+  if l_29_2 == nil then
+    l_29_2 = true
   end
   ;
-  (l_30_0.uActor):ShowNpcWithLevelTagId(l_30_1, l_30_2)
+  (l_29_0.uActor):ShowNpcWithLevelTagId(l_29_1, l_29_2)
 end
 
-l_0_1.CancelShowNpcWithLevelTagId = function(l_31_0)
+l_0_1.CancelShowNpcWithLevelTagId = function(l_30_0)
+  -- function num : 0_29
+  (l_30_0.uActor):CancelShowNpcWithLevelTagId()
+end
+
+l_0_1.OnDestroy = function(l_31_0)
   -- function num : 0_30
-  (l_31_0.uActor):CancelShowNpcWithLevelTagId()
 end
 
-l_0_1.OnDestroy = function(l_32_0)
-  -- function num : 0_31
-end
-
-l_0_1.Destroy = function(l_33_0, l_33_1, l_33_2)
-  -- function num : 0_32 , upvalues : upval_0
-  if l_33_2 == nil then
-    l_33_2 = false
+l_0_1.Destroy = function(l_32_0, l_32_1, l_32_2)
+  -- function num : 0_31 , upvalues : upval_0
+  if l_32_2 == nil then
+    l_32_2 = false
   end
-  l_33_0:OnDestroy()
-  l_33_0:ClearCoroutine()
-  if l_33_0.uActor ~= nil then
-    if l_33_2 == false then
-      (l_33_0.uActor):ClearCmd()
+  l_32_0:OnDestroy()
+  l_32_0:ClearCoroutine()
+  if l_32_0.uActor ~= nil then
+    if l_32_2 == false then
+      (l_32_0.uActor):ClearCmd()
     end
     ;
-    (l_33_0.uActor):Destroy(l_33_1)
+    (l_32_0.uActor):Destroy(l_32_1)
   end
   ;
-  (upval_0.actorMgr):ClearActor(l_33_0.alias)
-  l_33_0.uActor = nil
-  l_33_0.actorData = nil
+  (upval_0.actorMgr):ClearActor(l_32_0.alias)
+  l_32_0.uActor = nil
+  l_32_0.actorData = nil
 end
 
-l_0_1.ClearActor = function(l_34_0)
-  -- function num : 0_33 , upvalues : upval_0
-  (l_34_0.uActor):ClearActor()
-  l_34_0.CallOnStartCacheInternal = nil
-  l_34_0.targetPos = nil
-  l_34_0.routePoints = nil
-  l_34_0.BeFollowLen = 10
-  l_34_0.BeFollowFailedLen = 20
-  l_34_0.BeFollowState = (upval_0.BeFollowState).ING
-  l_34_0.BeFollowFailed = nil
-  l_34_0.CurrDialogList = nil
-  l_34_0.CurrDialogIndex = 1
-  l_34_0.CurrDuration = 0
-  l_34_0.CurrDurationCnt = 0
-  l_34_0.NarratorPauseLen = 10
-  l_34_0.NarratorResumeLen = 5
-  l_34_0.NarratorState = (upval_0.NarratorState).ING
+l_0_1.ClearActor = function(l_33_0)
+  -- function num : 0_32 , upvalues : upval_0
+  (l_33_0.uActor):ClearActor()
+  l_33_0.CallOnStartCacheInternal = nil
+  l_33_0.targetPos = nil
+  l_33_0.routePoints = nil
+  l_33_0.BeFollowLen = 10
+  l_33_0.BeFollowFailedLen = 20
+  l_33_0.BeFollowState = (upval_0.BeFollowState).ING
+  l_33_0.BeFollowFailed = nil
+  l_33_0.CurrDialogList = nil
+  l_33_0.CurrDialogIndex = 1
+  l_33_0.CurrDuration = 0
+  l_33_0.CurrDurationCnt = 0
+  l_33_0.NarratorPauseLen = 10
+  l_33_0.NarratorResumeLen = 5
+  l_33_0.NarratorState = (upval_0.NarratorState).ING
 end
 
 return l_0_1

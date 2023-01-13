@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config1598.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config1598.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -42,11 +42,7 @@ l_0_13 = l_0_5.Greater
 l_0_12 = {questGlobalVarId = 70516, questGlobalVarValue = 0, questGlobalVarOperate = l_0_13, activityId = 5085, activityCondId = 5085005, isActivityValid = true, sceneId = 3, priority = 1}
 l_0_13 = {action = l_0_1.Hide}
 l_0_12 = {l_0_13}
-l_0_13 = {activityId = 2016, activityCondId = 2016005, isActivityValid = true, sceneId = 3, priority = 2}
-local l_0_14 = {}
-l_0_14.action = l_0_1.Hide
-l_0_13 = {l_0_14}
--- DECOMPILER ERROR at PC86: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC72: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_6.Data = l_0_7

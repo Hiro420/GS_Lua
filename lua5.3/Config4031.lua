@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4031.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4031.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -31,7 +31,6 @@ l_0_13.z = 2808.314
 l_0_12.pos = l_0_13
 l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 240.7436, z = 0}
 l_0_11.dummypoint = l_0_12
-l_0_11.actionPointId = 330200008
 l_0_12 = l_0_1.Stand
 l_0_11.action = l_0_12
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
@@ -46,7 +45,7 @@ l_0_13 = {pos = l_0_14, rot = l_0_14}
 l_0_13 = l_0_1.Stand
 l_0_12 = {dummypoint = l_0_13, freestyle = 4140, action = l_0_13}
 l_0_11 = {l_0_12}
--- DECOMPILER ERROR at PC70: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC69: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_14 = l_0_2.AllDay
@@ -56,55 +55,6 @@ l_0_11 = {l_0_12}
 l_0_10 = {transTeleport = true, condition = l_0_11, actionPoints = l_0_11, titleStr = "NPC_TITLE_4031", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018403100, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_13 = upval_0.LuaVirtualType
-l_0_13 = l_0_13.NpcActionDayNightCondition
-l_0_13 = l_0_2.Day
-l_0_12 = {_type_ = l_0_13, daily = l_0_13}
-l_0_11 = {l_0_12}
-l_0_10 = {l_0_11}
-l_0_12 = 0
-l_0_11 = {l_0_12}
-l_0_12 = {dialogId = 1018403101, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_11 = {l_0_12}
-l_0_14 = upval_0.LuaVirtualType
-l_0_14 = l_0_14.NpcActionDayNightCondition
-l_0_14 = l_0_2.Night
-l_0_13 = {_type_ = l_0_14, daily = l_0_14}
-l_0_12 = {l_0_13}
-l_0_11 = {l_0_12}
-l_0_13 = 23020
-l_0_12 = {l_0_13}
-l_0_13 = {dialogId = 1018403102, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_12 = {l_0_13}
-l_0_14 = {_type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition, mainQuestId = 23020, questState = 2}
-l_0_13 = {l_0_14}
-l_0_12 = {l_0_13}
-l_0_14 = 23021
-l_0_13 = {l_0_14}
-l_0_14 = {dialogId = 1018403103, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_13 = {l_0_14}
-local l_0_15 = {}
-l_0_15._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
-l_0_15.mainQuestId = 23021
-l_0_15.questState = 2
-l_0_14 = {l_0_15}
-l_0_13 = {l_0_14}
-l_0_15 = 23022
-l_0_14 = {l_0_15}
-l_0_15 = {dialogId = 1018403104, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_14 = {l_0_15}
-local l_0_16 = {}
-l_0_16._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
-l_0_16.mainQuestId = 23022
-l_0_16.questState = 2
-l_0_15 = {l_0_16}
-l_0_14 = {l_0_15}
-l_0_13, l_0_12, l_0_11, l_0_10, l_0_9 = {validQuestIds = l_0_14, priority = 300, dialogDataList = l_0_14, conditions = l_0_14}, {validQuestIds = l_0_13, priority = 300, dialogDataList = l_0_13, conditions = l_0_13}, {validQuestIds = l_0_12, priority = 300, dialogDataList = l_0_12, conditions = l_0_12}, {validQuestIds = l_0_11, priority = 10, dialogDataList = l_0_11, conditions = l_0_11}, {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10, conditions = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9, l_0_10, l_0_11, l_0_12, l_0_13}
 l_0_6.Data = l_0_7
 return l_0_6
 

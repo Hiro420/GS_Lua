@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73016TriggerBattle03.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73016TriggerBattle03.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -33,7 +33,7 @@ l_0_1.TriggerIn = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_4
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("73016")
-  l_3_1:CallDelay(6, function(l_4_0)
+  l_3_1:CallDelay(4, function(l_4_0)
     -- function num : 0_2_0 , upvalues : ERROR_unknown_upvalue_1
     local l_4_6 = nil
     local l_4_1 = l_4_0:GetQuestNpcActor((upval_0.Npc20606Data).alias)

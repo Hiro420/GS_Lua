@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config9052.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config9052.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -23,76 +23,82 @@ local l_0_13 = {}
 local l_0_14 = {}
 l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_14.mainQuestId = 2021
-l_0_14.questState = 3
--- DECOMPILER ERROR at PC27: No list found for R13 , SetList fails
+l_0_14.questState = l_0_3.UnFinished
+-- DECOMPILER ERROR at PC28: No list found for R13 , SetList fails
 
 local l_0_15 = {}
 l_0_15._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_15.mainQuestId = 2021
-l_0_15.questState = 2
+l_0_15.questState = l_0_3.UnStarted
 local l_0_16 = {}
 l_0_16._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_16.mainQuestId = 2021
-l_0_16.questState = 0
--- DECOMPILER ERROR at PC44: No list found for R12 , SetList fails
+l_0_16.questState = l_0_3.None
+-- DECOMPILER ERROR at PC47: No list found for R12 , SetList fails
 
 l_0_11.conditions = l_0_12
 l_0_11.weight = 20
 l_0_11.initDialog = 1016905200
 l_0_16 = upval_0.LuaVirtualType
 l_0_16 = l_0_16.NpcActionMainQuestCondition
-l_0_15 = {l_0_16; _type_ = l_0_16, mainQuestId = 2021, questState = 4}
+l_0_16 = l_0_3.Finished
+l_0_15 = {l_0_16; _type_ = l_0_16, mainQuestId = 2021, questState = l_0_16}
 l_0_14 = {l_0_15, l_0_15}
 l_0_13 = {l_0_14}
-l_0_16 = {_type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition, mainQuestId = 2021, questState = 4}
+l_0_16 = {_type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition, mainQuestId = 2021, questState = l_0_3.Finished}
 l_0_15 = {l_0_16}
 l_0_14 = {l_0_15}
 local l_0_17 = {}
 l_0_17._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_17.mainQuestId = 2021
-l_0_17.questState = 4
+l_0_17.questState = l_0_3.Finished
 l_0_16 = {l_0_17}
 l_0_15 = {l_0_16}
 local l_0_18 = {}
 l_0_18._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_18.mainQuestId = 2021
-l_0_18.questState = 4
+l_0_18.questState = l_0_3.Finished
 l_0_17 = {l_0_18}
 l_0_16 = {l_0_17}
 local l_0_19 = {}
 l_0_19._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
 l_0_19.mainQuestId = 2021
-l_0_19.questState = 4
+l_0_19.questState = l_0_3.Finished
 l_0_18 = {l_0_19}
 l_0_17 = {l_0_18}
--- DECOMPILER ERROR at PC118: No list found for R10 , SetList fails
+-- DECOMPILER ERROR at PC126: No list found for R10 , SetList fails
 
 l_0_9[905201] = l_0_10
--- DECOMPILER ERROR at PC125: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC133: Overwrote pending register: R15 in 'AssignReg'
 
--- DECOMPILER ERROR at PC126: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC134: Overwrote pending register: R15 in 'AssignReg'
 
 l_0_15 = {conditions = l_0_16, weight = 20, initDialog = 1016905205}
-l_0_14 = {conditions = l_0_15, weight = 20, initDialog = 1016905204, _type_ = l_0_15, mainQuestId = 2021, questState = 3}
--- DECOMPILER ERROR at PC133: Overwrote pending register: R16 in 'AssignReg'
+l_0_15 = l_0_3.UnFinished
+l_0_14 = {conditions = l_0_15, weight = 20, initDialog = 1016905204, _type_ = l_0_15, mainQuestId = 2021, questState = l_0_15}
+-- DECOMPILER ERROR at PC142: Overwrote pending register: R16 in 'AssignReg'
 
--- DECOMPILER ERROR at PC134: Overwrote pending register: R16 in 'AssignReg'
+-- DECOMPILER ERROR at PC143: Overwrote pending register: R16 in 'AssignReg'
 
 l_0_16 = {conditions = l_0_17, weight = 20, initDialog = 1016905206}
-l_0_15 = {_type_ = l_0_16, mainQuestId = 2021, questState = 2}
+l_0_16 = l_0_3.UnStarted
+l_0_15 = {_type_ = l_0_16, mainQuestId = 2021, questState = l_0_16}
 l_0_17 = upval_0.LuaVirtualType
 l_0_17 = l_0_17.NpcActionMainQuestCondition
-l_0_16 = {_type_ = l_0_17, mainQuestId = 2021, questState = 0}
+l_0_17 = l_0_3.None
+l_0_16 = {_type_ = l_0_17, mainQuestId = 2021, questState = l_0_17}
 l_0_15, l_0_14, l_0_13 = {l_0_16}, {l_0_15}, {l_0_14; conditions = l_0_14, weight = 20, initDialog = 1016905203}
 l_0_12 = {l_0_13, l_0_14, l_0_15; conditions = l_0_13, weight = 20, initDialog = 1016905202}
 l_0_16 = upval_0.LuaVirtualType
 l_0_16 = l_0_16.NpcActionMainQuestCondition
-l_0_15 = {_type_ = l_0_16, mainQuestId = 2021, questState = 4}
+l_0_16 = l_0_3.Finished
+l_0_15 = {_type_ = l_0_16, mainQuestId = 2021, questState = l_0_16}
 l_0_14 = {l_0_15}
 l_0_13 = {l_0_14}
 l_0_17 = upval_0.LuaVirtualType
 l_0_17 = l_0_17.NpcActionMainQuestCondition
-l_0_16 = {_type_ = l_0_17, mainQuestId = 2021, questState = 4}
+l_0_17 = l_0_3.Finished
+l_0_16 = {_type_ = l_0_17, mainQuestId = 2021, questState = l_0_17}
 l_0_15 = {l_0_16}
 l_0_14 = {l_0_15}
 l_0_13, l_0_12, l_0_11 = {conditions = l_0_14, weight = 20, initDialog = 1016905208}, {conditions = l_0_13, weight = 20, initDialog = 1016905207}, {conditions = l_0_12, weight = 20, initDialog = 1016905201}

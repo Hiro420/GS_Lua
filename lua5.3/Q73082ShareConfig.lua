@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73082ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73082ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -43,10 +43,10 @@ l_0_3 = {id = 20671, alias = "Npc20671", script = "Actor/Npc/TempNPC", pos = "Q7
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
-l_0_3 = {id = 20671, alias = "Npc20671", script = "Actor/Npc/TempNPC", pos = "Q7308202_N20671", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_3 = {id = 20671, alias = "Npc20671", script = "Actor/Npc/TempNPC", pos = "Q7308202_N20671", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
-l_0_3 = {id = 20671, alias = "Npc20671", script = "Actor/Npc/TempNPC", pos = "Q7308202_N20671", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_3 = {id = 20671, alias = "Npc20671", script = "Actor/Npc/TempNPC", pos = "Q7308202_N20671", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 upval_0.quest_data, l_0_0 = l_0_0, {["7308201"] = l_0_1, ["7308202"] = l_0_1, ["7308203"] = l_0_1, ["7308204"] = l_0_1, ["7308205"] = l_0_1}

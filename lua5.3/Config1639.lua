@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config1639.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config1639.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -15,7 +15,6 @@ local l_0_7 = {}
 l_0_7.NpcId = "1639"
 l_0_7.Alias = "Npc1639"
 local l_0_8 = {}
-l_0_8.refreshDailyActionImmediately = true
 local l_0_9 = {}
 local l_0_10 = {}
 l_0_10.daily = l_0_2.Day
@@ -53,22 +52,13 @@ l_0_14 = {pos = l_0_15, rot = l_0_15}
 l_0_14 = l_0_1.Stand
 l_0_13, l_0_12 = {dummypoint = l_0_14, freestyle = 1120, time = 15, action = l_0_14}, {dummypoint = l_0_13, freestyle = 1120, time = 15, action = l_0_13}
 l_0_11 = {l_0_12, l_0_13}
-l_0_12 = {sceneId = 3, priority = 1}
-l_0_15 = upval_0.LuaVirtualType
-l_0_15 = l_0_15.NpcActionActivityCondCondition
-l_0_15, l_0_14 = {_type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition, mainQuestId = 40080, questState = l_0_3.Finished}, {_type_ = l_0_15, activityId = 2016, activityCondId = 2016001, isActivityValid = true}
-l_0_13 = {l_0_14, l_0_15}
-l_0_12 = {l_0_13}
-l_0_14 = l_0_1.Hide
-l_0_13 = {action = l_0_14}
-l_0_12 = {l_0_13}
--- DECOMPILER ERROR at PC117: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC86: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_14 = l_0_2.AllDay
 l_0_13 = {daily = l_0_14}
 l_0_12 = {condition = l_0_13, priority = 0, isShow = true}
-l_0_11 = {l_0_12; condition = l_0_12, conditionGrp = l_0_12, actionPoints = l_0_12}
+l_0_11 = {l_0_12}
 l_0_10 = {condition = l_0_11, actionPoints = l_0_11, titleStr = "NPC_TITLE_1639", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Bubble1433.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Bubble1433.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -37,20 +37,6 @@ local l_0_12 = {}
 
 -- DECOMPILER ERROR at PC52: Overwrote pending register: R11 in 'AssignReg'
 
-local l_0_13 = {}
--- DECOMPILER ERROR at PC83: Overwrote pending register: R14 in 'AssignReg'
-
-l_0_13._type_ = (30).NpcActionActivityCondCondition
-l_0_13.activityId = 2016
-l_0_13.activityCondId = 2016001
-l_0_13.isActivityValid = true
-local l_0_14 = {}
-l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
-l_0_14.mainQuestId = 40078
-l_0_14.questState = l_0_4.Finished
-l_0_12 = {l_0_13, l_0_14}
-l_0_11 = {l_0_12}
-l_0_10, l_0_9 = {condition = l_0_11, bubbleDatas = l_0_11, conditionGrp = l_0_11}, {condition = l_0_10, bubbleDatas = l_0_10}
-l_0_7.BubbleData, l_0_8 = l_0_8, {l_0_9, l_0_10}
-return l_0_7
+do return l_0_7 end
+-- WARNING: undefined locals caused missing assignments!
 

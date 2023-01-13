@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73002ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73002ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -71,6 +71,7 @@ l_0_3 = {dialogID = 730029905, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3}
 l_0_4, l_0_3 = {dialogID = 730029907, audioEvtName = "", duration = 3}, {dialogID = 730029906, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4}
+l_0_2 = {dialogID = 730029911, audioEvtName = "", duration = 3}
 local l_0_6 = {}
 l_0_6.x = -1328.643
 l_0_6.y = 176.86
@@ -99,9 +100,6 @@ l_0_5, l_0_4, l_0_3 = {x = -1252.974, y = 176.5, z = 3002.135}, {x = -1045.486, 
 l_0_2 = {l_0_3, l_0_4, l_0_5}
 l_0_5, l_0_4, l_0_3 = {dialogID = 730029914, audioEvtName = "", duration = 3}, {dialogID = 730029913, audioEvtName = "", duration = 3}, {dialogID = 730029912, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4, l_0_5}
-l_0_4 = 4
-l_0_3 = {l_0_4}
-l_0_2 = {narratorId = 730029911, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = true, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_RanaHint1 = l_0_2, NarratorTable_RanaHint2 = l_0_2, NarratorTable_RanaHint3 = l_0_2, NarratorTable_RanaHint4 = l_0_2, RoutePointsData_RanaReachCamp = l_0_2, NarratorTable = l_0_2, RoutePointsData = l_0_2, NarratorTable_RanaHint5 = l_0_2, NarratorWithId = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_RanaHint1 = l_0_2, NarratorTable_RanaHint2 = l_0_2, NarratorTable_RanaHint3 = l_0_2, NarratorTable_RanaHint4 = l_0_2, NarratorTable_RanaHintFire = l_0_2, RoutePointsData_RanaReachCamp = l_0_2, NarratorTable = l_0_2, RoutePointsData = l_0_2, NarratorTable_RanaHint5 = l_0_2}
 return l_0_0
 

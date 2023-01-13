@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config9069.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config9069.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -43,12 +43,12 @@ l_0_12 = l_0_12.HomeBornPos
 l_0_11 = {_type_ = l_0_12, configId = 10000069}
 l_0_14 = 906901
 l_0_13 = {l_0_14}
-l_0_14 = {phoneme = "P_Smile_01", emotion = "Angry_02_B"}
+l_0_14 = {phoneme = "P_Default_01", emotion = "Default_01_B"}
 l_0_15 = 906901
 l_0_14 = {l_0_15}
 l_0_15 = {phoneme = "P_Default_01", emotion = "Default_01_B"}
 l_0_15 = {906901}
-l_0_14, l_0_13, l_0_12 = {weight = 20, time = 6, freestyle = 1220, isLoop = true, emotion = l_0_15, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_15}, {weight = 20, time = 6, freestyle = 1190, isLoop = true, disableHeadCtrl = true, emotion = l_0_14, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_14}, {weight = 20, time = 6, isLoop = true, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_13}
+l_0_14, l_0_13, l_0_12 = {weight = 20, time = 6, freestyle = 1220, isLoop = true, emotion = l_0_15, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_15}, {weight = 20, time = 6, freestyle = 1120, isLoop = true, emotion = l_0_14, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_14}, {weight = 20, time = 6, isLoop = true, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_13}
 l_0_11 = {l_0_12, l_0_13, l_0_14}
 l_0_15 = upval_0.LuaVirtualType
 l_0_15 = l_0_15.NpcActionHomeEventCondition
@@ -97,7 +97,7 @@ l_0_8.actionList, l_0_9 = l_0_9, {l_0_10, l_0_11, l_0_12, l_0_13, l_0_14}
 l_0_12 = {phoneme = "P_Smile_01", emotion = "Gentle_01_B"}
 l_0_13 = 906902
 l_0_12 = {l_0_13}
-l_0_11 = {weight = 20, time = 6, freestyle = 1230, isLoop = true, emotion = l_0_12, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_12}
+l_0_11 = {weight = 20, time = 6, freestyle = 1130, isLoop = true, emotion = l_0_12, bubbleRate = 0.3, bubbleDelay = 0.2, bubbleGroupIds = l_0_12}
 l_0_10 = {l_0_11}
 l_0_8.Greet, l_0_9 = l_0_9, {freeStyleList = l_0_10}
 l_0_7.HomeScheduleData = l_0_8

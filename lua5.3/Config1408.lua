@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config1408.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config1408.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -74,7 +74,7 @@ local l_0_16 = {}
 l_0_16.dummypoint = (upval_0.sceneData):GetDummyPoint(3, "Q2002101_N1408")
 l_0_16.action = l_0_1.Hide
 l_0_15 = {l_0_16}
--- DECOMPILER ERROR at PC169: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC167: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_6.Data = l_0_7

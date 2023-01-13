@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4096.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4096.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -42,31 +42,6 @@ l_0_11 = {l_0_12}
 l_0_10 = {titleStr = "NPC_TITLE_4096", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018409600, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_12 = 13015
-l_0_11 = {l_0_12}
-l_0_12 = {dialogId = 130159906, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_11 = {l_0_12}
-l_0_13 = {_type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition, subQuestId = 1301502, questState = l_0_3.UnStarted}
-local l_0_14 = {}
-l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition
-l_0_14.subQuestId = 1301502
-l_0_14.questState = l_0_3.UnFinished
-local l_0_15 = {}
-l_0_15._type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition
-l_0_15.subQuestId = 1301503
-l_0_15.questState = l_0_3.UnStarted
-local l_0_16 = {}
-l_0_16._type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition
-l_0_16.subQuestId = 1301503
-l_0_16.questState = l_0_3.UnFinished
-l_0_15, l_0_14, l_0_13, l_0_12 = {l_0_16}, {l_0_15}, {l_0_14}, {l_0_13}
-l_0_11 = {l_0_12, l_0_13, l_0_14, l_0_15}
-l_0_10, l_0_9 = {validQuestIds = l_0_11, priority = 300, dialogDataList = l_0_11, conditions = l_0_11}, {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9, l_0_10}
 l_0_6.Data = l_0_7
 return l_0_6
 

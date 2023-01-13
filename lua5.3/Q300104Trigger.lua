@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q300104Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q300104Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,8 +20,8 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddCylinderShapeTrigger, l_2_0
-  local l_2_3 = 5
-  local l_2_4 = 5
+  local l_2_3 = 9
+  local l_2_4 = 6
   local l_2_5 = false
   local l_2_6 = {}
   l_2_6.x = 0

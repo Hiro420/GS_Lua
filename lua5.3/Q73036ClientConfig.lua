@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73036ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73036ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -28,8 +28,6 @@ l_0_1.q7303642 = 7303642
 l_0_1.q7303643 = 7303643
 l_0_1.q7303644 = 7303644
 l_0_1.q7303645 = 7303645
-l_0_1.q7303647 = 7303647
-l_0_1.q7303648 = 7303648
 l_0_1.q7303613 = 7303613
 l_0_1.q7303614 = 7303614
 l_0_1.q7303615 = 7303615
@@ -134,27 +132,23 @@ l_0_2 = {l_0_3, l_0_4}
 l_0_4, l_0_3 = {dialogID = 730369904, audioEvtName = "", duration = 3}, {dialogID = 730369903, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4}
 local l_0_5 = {}
-l_0_5.dialogID = 730369906
+l_0_5.dialogID = 730369907
 l_0_5.audioEvtName = ""
 l_0_5.duration = 8
 local l_0_6 = {}
-l_0_6.dialogID = 730369907
+l_0_6.dialogID = 730369908
 l_0_6.audioEvtName = ""
-l_0_6.duration = 8
+l_0_6.duration = 5
 local l_0_7 = {}
-l_0_7.dialogID = 730369908
+l_0_7.dialogID = 730369909
 l_0_7.audioEvtName = ""
 l_0_7.duration = 5
 local l_0_8 = {}
-l_0_8.dialogID = 730369909
+l_0_8.dialogID = 730369910
 l_0_8.audioEvtName = ""
-l_0_8.duration = 5
-local l_0_9 = {}
-l_0_9.dialogID = 730369910
-l_0_9.audioEvtName = ""
-l_0_9.duration = 4
-l_0_4, l_0_3 = {dialogID = 730369905, audioEvtName = "", duration = 4}, {dialogID = 730369962, audioEvtName = "", duration = 3}
-l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9}
+l_0_8.duration = 4
+l_0_4, l_0_3 = {dialogID = 730369906, audioEvtName = "", duration = 8}, {dialogID = 730369905, audioEvtName = "", duration = 5}
+l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8}
 l_0_3 = {dialogID = 730369912, audioEvtName = "", duration = 8}
 l_0_3 = {dialogID = 730369913, audioEvtName = "", duration = 8}
 l_0_3 = {dialogID = 730369914, audioEvtName = "", duration = 8}
@@ -181,7 +175,7 @@ l_0_4, l_0_3 = {dialogID = 730369941, audioEvtName = "", duration = 3}, {dialogI
 l_0_2 = {l_0_3, l_0_4}
 l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {dialogID = 730369946, audioEvtName = "", duration = 3}, {dialogID = 730369945, audioEvtName = "", duration = 3}, {dialogID = 730369944, audioEvtName = "", duration = 4}, {dialogID = 730369943, audioEvtName = "", duration = 8}, {dialogID = 730369942, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7}
-l_0_6, l_0_5, l_0_4, l_0_3 = {dialogID = 730369950, audioEvtName = "", duration = 3}, {dialogID = 730369949, audioEvtName = "", duration = 5}, {dialogID = 730369948, audioEvtName = "", duration = 7}, {dialogID = 730369947, audioEvtName = "", duration = 5}
+l_0_6, l_0_5, l_0_4, l_0_3 = {dialogID = 730369950, audioEvtName = "", duration = 4}, {dialogID = 730369949, audioEvtName = "", duration = 6}, {dialogID = 730369948, audioEvtName = "", duration = 7}, {dialogID = 730369947, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
 l_0_3 = {dialogID = 730369951, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3}
@@ -193,17 +187,12 @@ l_0_4, l_0_3 = {dialogID = 730369955, audioEvtName = "", duration = 4}, {dialogI
 l_0_2 = {l_0_3, l_0_4}
 l_0_3 = {dialogID = 730369956, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3}
-l_0_5 = 730369958
-l_0_4, l_0_3 = {dialogID = l_0_5, audioEvtName = "", duration = 4}, {dialogID = 730369957, audioEvtName = "", duration = 4}
+l_0_4, l_0_3 = {dialogID = 730369958, audioEvtName = "", duration = 4}, {dialogID = 730369957, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4}
-l_0_2 = "NarratorTable_Arama19"
-l_0_5 = 730369961
-l_0_4 = {dialogID = l_0_5, audioEvtName = "", duration = 4}
-l_0_3 = {l_0_4}
-l_0_2 = "NarratorTable_Arama20"
-l_0_5 = 730369959
-l_0_4 = {dialogID = l_0_5, audioEvtName = "", duration = 4}
-l_0_3 = {l_0_4}
+l_0_3 = {dialogID = 730369961, audioEvtName = "", duration = 4}
+l_0_2 = {l_0_3}
+l_0_3 = {dialogID = 730369959, audioEvtName = "", duration = 4}
+l_0_2 = {l_0_3}
 l_0_2 = "NarratorTable_Arama21"
 l_0_5 = 730369960
 l_0_4 = {dialogID = l_0_5, audioEvtName = "", duration = 5}
@@ -211,37 +200,6 @@ l_0_3 = {l_0_4}
 l_0_2 = "NarratorTable_AramaCommon2new"
 l_0_7, l_0_6, l_0_5, l_0_4 = {dialogID = 730369914, audioEvtName = "", duration = 8}, {dialogID = 730369913, audioEvtName = "", duration = 8}, {dialogID = 730369912, audioEvtName = "", duration = 8}, {dialogID = 730369911, audioEvtName = "", duration = 4}
 l_0_3 = {l_0_4, l_0_5, l_0_6, l_0_7}
-l_0_2 = "NarratorWithId7303601"
-l_0_4 = "narratorId"
-l_0_4 = "pauseLen"
-l_0_4 = "resumeLen"
-l_0_4 = "tag"
-l_0_5 = "Story"
-l_0_4 = "startCheckPause"
-l_0_5 = false
-l_0_4 = "durationList"
-l_0_6 = 2
-l_0_7 = 6
-l_0_8 = 3
-l_0_9 = 2
-l_0_5 = {l_0_6, l_0_7, l_0_8, l_0_9}
-l_0_3 = {[l_0_4] = 730369901, [l_0_4] = 10, [l_0_4] = 5, [l_0_4] = l_0_5, [l_0_4] = l_0_5, [l_0_4] = l_0_5}
-l_0_2 = "NarratorWithId_AramaCommon1new"
-l_0_4 = "narratorId"
-l_0_5 = 730369963
-l_0_4 = "pauseLen"
-l_0_4 = "resumeLen"
-l_0_4 = "tag"
-l_0_5 = "Story"
-l_0_4 = "startCheckPause"
-l_0_5 = false
-l_0_4 = "durationList"
-l_0_6 = 3
-l_0_7 = 4
-l_0_8 = 8
-l_0_9 = 8
-l_0_5 = {l_0_6, l_0_7, l_0_8, l_0_9, 5, 5, 4}
-l_0_3 = {[l_0_4] = l_0_5, [l_0_4] = 10, [l_0_4] = 5, [l_0_4] = l_0_5, [l_0_4] = l_0_5, [l_0_4] = l_0_5}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_Arama1 = l_0_2, NarratorTable_Arama2 = l_0_2, NarratorTable_AramaCommon1 = l_0_2, NarratorTable_AramaCommon2 = l_0_2, NarratorTable_AramaCommon3 = l_0_2, NarratorTable_AramaCommon4 = l_0_2, NarratorTable_Arama3 = l_0_2, NarratorTable_Arama4 = l_0_2, NarratorTable_Arama5 = l_0_2, NarratorTable_Arama6 = l_0_2, NarratorTable_Arama7 = l_0_2, NarratorTable_Arama8 = l_0_2, NarratorTable_Arama9 = l_0_2, NarratorTable_Arama10 = l_0_2, NarratorTable_Arama11 = l_0_2, NarratorTable_Arama12 = l_0_2, NarratorTable_Arama13 = l_0_2, NarratorTable_Arama14 = l_0_2, NarratorTable_Arama15 = l_0_2, NarratorTable_Arama16 = l_0_2, NarratorTable_Arama17 = l_0_2, NarratorTable_Arama18 = l_0_2, [l_0_2] = l_0_3, [l_0_2] = l_0_3, [l_0_2] = l_0_3, [l_0_2] = l_0_3, [l_0_2] = l_0_3, [l_0_2] = l_0_3}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_Arama1 = l_0_2, NarratorTable_Arama2 = l_0_2, NarratorTable_AramaCommon1 = l_0_2, NarratorTable_AramaCommon2 = l_0_2, NarratorTable_AramaCommon3 = l_0_2, NarratorTable_AramaCommon4 = l_0_2, NarratorTable_Arama3 = l_0_2, NarratorTable_Arama4 = l_0_2, NarratorTable_Arama5 = l_0_2, NarratorTable_Arama6 = l_0_2, NarratorTable_Arama7 = l_0_2, NarratorTable_Arama8 = l_0_2, NarratorTable_Arama9 = l_0_2, NarratorTable_Arama10 = l_0_2, NarratorTable_Arama11 = l_0_2, NarratorTable_Arama12 = l_0_2, NarratorTable_Arama13 = l_0_2, NarratorTable_Arama14 = l_0_2, NarratorTable_Arama15 = l_0_2, NarratorTable_Arama16 = l_0_2, NarratorTable_Arama17 = l_0_2, NarratorTable_Arama18 = l_0_2, NarratorTable_Arama19 = l_0_2, NarratorTable_Arama20 = l_0_2, [l_0_2] = l_0_3, [l_0_2] = l_0_3}
 return l_0_0
 

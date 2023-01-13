@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q1300105TriggerNearCall.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q1300105TriggerNearCall.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,7 +20,7 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
-  local l_2_3 = 15
+  local l_2_3 = 22
   local l_2_4 = (upval_0.DistType).EULER
   local l_2_5 = {}
   l_2_5.x = 0
@@ -45,14 +45,19 @@ l_0_1.TriggerIn = function(l_3_0)
     local l_4_1 = (upval_0.actorMgr):GetActor("13001")
     l_4_1:EnterSceneLookCamera(((upval_0.sceneData):GetDummyPoint(3, "Q1300105_N1050")).pos, 0, 3, true, false)
     l_4_1:EnablePlayerInput(false)
-    l_4_1:CallDelay(3, function(l_5_0)
-      -- function num : 0_2_0_0 , upvalues : upval_0
+    l_4_1:CallDelay(1, function(l_5_0)
+      -- function num : 0_2_0_0 , upvalues : upval_0, upval_1
       local l_5_1 = (upval_0.actorMgr):GetActor("13001")
-      l_5_1:EnablePlayerInput(true)
+      local l_5_2 = l_5_1:GetQuestNpcActor((upval_1.Npc1050Data).alias, 13001)
+      l_5_1:NpcWalkToTaskEasy(l_5_2, ((upval_0.sceneData):GetDummyPoint(3, "Q1300105_N1050_02")).pos)
+      l_5_1:CallDelay(2, function(l_6_0)
+        -- function num : 0_2_0_0_0 , upvalues : upval_0
+        local l_6_1 = (upval_0.actorMgr):GetActor("13001")
+        l_6_1:EnablePlayerInput(true)
+      end
+)
     end
 )
-    local l_4_2 = l_4_1:GetQuestNpcActor((upval_1.Npc1050Data).alias)
-    l_4_2:TurnToAvatar()
   end
 )
   l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0

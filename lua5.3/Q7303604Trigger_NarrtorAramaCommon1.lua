@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q7303604Trigger_NarrtorAramaCommon1.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q7303604Trigger_NarrtorAramaCommon1.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -33,24 +33,15 @@ end
 
 l_0_1.TriggerIn = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_5
-  local l_3_6 = nil
+  local l_3_5 = nil
   ;
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("73036")
-  if l_3_1:GetSubQuestState(302819) ~= 3 then
-    local l_3_2 = (upval_0.actorMgr):GetActor("73036")
-    local l_3_3, l_3_4 = l_3_2:NarratorOnlyTask, l_3_2
-    local l_3_5 = upval_1.NarratorTable_AramaCommon1
-    l_3_3(l_3_4, l_3_5, nil, "")
-    l_3_3, l_3_4 = l_3_0:DestroySelf, l_3_0
-    l_3_3(l_3_4)
-  else
-    do
-      local l_3_7 = (upval_0.actorMgr):GetActor("73036")
-      l_3_7:NarratorOnlyTaskByData(upval_1.NarratorWithId_AramaCommon1new)
-      l_3_0:DestroySelf()
-    end
-  end
+  local l_3_2, l_3_3 = l_3_1:NarratorOnlyTask, l_3_1
+  local l_3_4 = upval_1.NarratorTable_AramaCommon1
+  l_3_2(l_3_3, l_3_4, nil, "")
+  l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
+  l_3_2(l_3_3)
 end
 
 l_0_1.TriggerOut = function(l_4_0)

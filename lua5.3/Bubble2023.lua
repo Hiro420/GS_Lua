@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Bubble2023.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Bubble2023.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -44,29 +44,7 @@ l_0_14.duration = 0
 l_0_14.intervalMin = 20
 l_0_14.intervalMax = 30
 l_0_13 = {l_0_14}
-l_0_14 = {priority = 3}
-local l_0_15 = {}
-l_0_15.dialogId = 1016202304
-l_0_15.duration = 0
-l_0_15.intervalMin = 20
-l_0_15.intervalMax = 30
-l_0_14 = {l_0_15}
-local l_0_16 = {}
-l_0_16._type_ = (upval_0.LuaVirtualType).NpcActionDayNightCondition
-l_0_16.daily = l_0_3.Day
-local l_0_17 = {}
-l_0_17._type_ = (upval_0.LuaVirtualType).NpcActionActivityCondCondition
-l_0_17.activityId = 2019
-l_0_17.activityCondId = 2019001
-l_0_17.isActivityValid = true
-local l_0_18 = {}
-l_0_18._type_ = (upval_0.LuaVirtualType).NpcActionQuestGlobalVarCondition
-l_0_18.questGlobalVarId = 4009201
-l_0_18.questGlobalVarValue = 1
-l_0_18.questGlobalVarOperate = l_0_6.Equal
-l_0_15 = {l_0_16, l_0_17, l_0_18}
-l_0_14 = {l_0_15}
--- DECOMPILER ERROR at PC110: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC72: No list found for R8 , SetList fails
 
 l_0_7.BubbleData = l_0_8
 return l_0_7

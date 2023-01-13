@@ -1,10 +1,10 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73039ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73039ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
 upval_0.main_id = 73039
-upval_0.sub_ids = {7303901, 7303902, 7303905, 7303904, 7303911, 7303903, 7303909, 7303910, 7303912, 7303906, 7303907, 7303908}
+upval_0.sub_ids = {7303901, 7303902, 7303903, 7303909, 7303910, 7303904, 7303911, 7303905, 7303906, 7303907, 7303908}
 local l_0_0 = {}
 l_0_0.CLIENT = {}
 l_0_0.SERVER = {}
@@ -61,7 +61,7 @@ l_0_7.pos = "Q7303902_N20653"
 l_0_7.scene_id = 3
 l_0_7.room_id = 0
 l_0_7.data_index = 5
--- DECOMPILER ERROR at PC81: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC80: No list found for R2 , SetList fails
 
 l_0_1.npcs = l_0_2
 l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20653, alias = "Npc20653", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20653", scene_id = 3, room_id = 0, data_index = 5}, {id = 20652, alias = "Npc20652", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20652", scene_id = 3, room_id = 0, data_index = 4}, {id = 20651, alias = "Npc20651", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20651", scene_id = 3, room_id = 0, data_index = 3}, {id = 20650, alias = "Npc20650", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20650", scene_id = 3, room_id = 0, data_index = 2}, {id = 20649, alias = "Npc20649", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20649", scene_id = 3, room_id = 0, data_index = 1}
@@ -88,14 +88,11 @@ l_0_1 = {npcs = l_0_2}
 l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20653, alias = "Npc20653", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20653", scene_id = 3, room_id = 0, data_index = 5}, {id = 20652, alias = "Npc20652", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20652", scene_id = 3, room_id = 0, data_index = 4}, {id = 20651, alias = "Npc20651", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20651", scene_id = 3, room_id = 0, data_index = 3}, {id = 20650, alias = "Npc20650", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20650", scene_id = 3, room_id = 0, data_index = 2}, {id = 20649, alias = "Npc20649", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20649", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7}
 l_0_1 = {npcs = l_0_2}
-l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20653, alias = "Npc20653", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20653", scene_id = 3, room_id = 0, data_index = 5}, {id = 20652, alias = "Npc20652", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20652", scene_id = 3, room_id = 0, data_index = 4}, {id = 20651, alias = "Npc20651", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20651", scene_id = 3, room_id = 0, data_index = 3}, {id = 20650, alias = "Npc20650", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20650", scene_id = 3, room_id = 0, data_index = 2}, {id = 20649, alias = "Npc20649", script = "Actor/Npc/TempNPC", pos = "Q7303902_N20649", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7}
-l_0_1 = {npcs = l_0_2}
 upval_0.rewind_data, l_0_0 = l_0_0, {
 ["7303901"] = {}
 , 
 ["7303902"] = {}
-, ["7303903"] = l_0_1, ["7303904"] = l_0_1, ["7303905"] = l_0_1, ["7303906"] = l_0_1, ["7303907"] = l_0_1, ["7303908"] = l_0_1, ["7303909"] = l_0_1, ["7303910"] = l_0_1, ["7303911"] = l_0_1, ["7303912"] = l_0_1}
+, ["7303903"] = l_0_1, ["7303904"] = l_0_1, ["7303905"] = l_0_1, ["7303906"] = l_0_1, ["7303907"] = l_0_1, ["7303908"] = l_0_1, ["7303909"] = l_0_1, ["7303910"] = l_0_1, ["7303911"] = l_0_1}
 local l_0_8 = {}
 l_0_8.id = 4191
 l_0_8.alias = "Npc4191"
@@ -171,8 +168,5 @@ l_0_1 = {npcs = l_0_2}
 l_0_8, l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {id = 4195, alias = "Npc4195", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20653", scene_id = 3, room_id = 0, data_index = 6}, {id = 4194, alias = "Npc4194", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20652", scene_id = 3, room_id = 0, data_index = 5}, {id = 4193, alias = "Npc4193", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20651", scene_id = 3, room_id = 0, data_index = 4}, {id = 4192, alias = "Npc4192", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20650", scene_id = 3, room_id = 0, data_index = 3}, {id = 4191, alias = "Npc4191", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20649", scene_id = 3, room_id = 0, data_index = 2}, {id = 20812, alias = "Npc20812", script = "Actor/Npc/TempNPC", pos = "Q7303911_N20812", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8}
 l_0_1 = {npcs = l_0_2}
-l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {id = 4195, alias = "Npc4195", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20653", scene_id = 3, room_id = 0, data_index = 5}, {id = 4194, alias = "Npc4194", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20652", scene_id = 3, room_id = 0, data_index = 4}, {id = 4193, alias = "Npc4193", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20651", scene_id = 3, room_id = 0, data_index = 3}, {id = 4192, alias = "Npc4192", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20650", scene_id = 3, room_id = 0, data_index = 2}, {id = 4191, alias = "Npc4191", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q7303902_N20649", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7}
-l_0_1 = {npcs = l_0_2}
-upval_0.quest_data, l_0_0 = l_0_0, {["7303901"] = l_0_1, ["7303902"] = l_0_1, ["7303903"] = l_0_1, ["7303904"] = l_0_1, ["7303905"] = l_0_1, ["7303906"] = l_0_1, ["7303907"] = l_0_1, ["7303908"] = l_0_1, ["7303909"] = l_0_1, ["7303910"] = l_0_1, ["7303911"] = l_0_1, ["7303912"] = l_0_1}
+upval_0.quest_data, l_0_0 = l_0_0, {["7303901"] = l_0_1, ["7303902"] = l_0_1, ["7303903"] = l_0_1, ["7303904"] = l_0_1, ["7303905"] = l_0_1, ["7303906"] = l_0_1, ["7303907"] = l_0_1, ["7303908"] = l_0_1, ["7303909"] = l_0_1, ["7303910"] = l_0_1, ["7303911"] = l_0_1}
 

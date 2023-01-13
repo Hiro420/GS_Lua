@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73028ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73028ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -27,12 +27,10 @@ l_0_3.pos = l_0_4
 l_0_3.rot, l_0_4 = l_0_4, {x = 0, y = 0, z = 0}
 l_0_2.point = l_0_3
 l_0_0.Npcs, l_0_1 = l_0_1, {Npc20645Data = l_0_2}
-l_0_4 = 3
-l_0_3 = {l_0_4, 4}
-l_0_2 = {narratorId = 730289903, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_4 = 4
-l_0_3 = {l_0_4, 5}
-l_0_2 = {narratorId = 730289901, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorWithId = l_0_2, NarratorWithId2 = l_0_2}
+l_0_4, l_0_3 = {dialogID = 730289902, audioEvtName = "", duration = 3}, {dialogID = 730289901, audioEvtName = "", duration = 3}
+l_0_2 = {l_0_3, l_0_4}
+l_0_4, l_0_3 = {dialogID = 730289904, audioEvtName = "", duration = 3}, {dialogID = 730289903, audioEvtName = "", duration = 3}
+l_0_2 = {l_0_3, l_0_4}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable = l_0_2, NarratorTable1 = l_0_2}
 return l_0_0
 

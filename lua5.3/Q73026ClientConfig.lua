@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73026ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73026ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -10,7 +10,6 @@ local l_0_1 = {}
 l_0_1.q7302604 = 7302604
 l_0_1.q7302605 = 7302605
 l_0_1.q7302606 = 7302606
-l_0_1.q7302603 = 7302603
 l_0_1.q7302607 = 7302607
 l_0_1.q7302616 = 7302616
 l_0_1.q7302615 = 7302615
@@ -23,6 +22,7 @@ l_0_1.q7302612 = 7302612
 l_0_1.q7302613 = 7302613
 l_0_1.q7302601 = 7302601
 l_0_1.q7302602 = 7302602
+l_0_1.q7302603 = 7302603
 l_0_0.SubIDs = l_0_1
 local l_0_2 = {}
 l_0_2.id = 20645
@@ -43,9 +43,6 @@ l_0_2 = {id = 20601, alias = "Npc20601", script = "Actor/Npc/NpcEnkanomiya", poi
 l_0_0.Npcs, l_0_1 = l_0_1, {Npc20645Data = l_0_2, Npc20601Data = l_0_2}
 l_0_4, l_0_3 = {dialogID = 730269903, audioEvtName = "", duration = 3}, {dialogID = 730269902, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4}
-l_0_4 = 4
-l_0_3 = {l_0_4, 4, 4}
-l_0_2 = {narratorId = 730269904, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable1 = l_0_2, NarratorWithId = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable1 = l_0_2}
 return l_0_0
 

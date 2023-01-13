@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4328.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4328.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -36,12 +36,6 @@ l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
 -- DECOMPILER ERROR at PC41: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018432800, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_9 = {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9}
 l_0_6.Data = l_0_7
 return l_0_6
 

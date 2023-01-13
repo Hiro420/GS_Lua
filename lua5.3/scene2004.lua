@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\scene2004.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\scene2004.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -9,8 +9,8 @@ l_0_1.x = -4096
 l_0_1.z = -4096
 l_0_0.begin_pos = l_0_1
 l_0_0.size, l_0_1 = l_0_1, {x = 7168, z = 7168}
-l_0_0.born_pos, l_0_1 = l_0_1, {x = 227.475, y = 205.01, z = 655.097}
-l_0_0.born_rot, l_0_1 = l_0_1, {x = 0, y = 130.989, z = 0}
+l_0_0.born_pos, l_0_1 = l_0_1, {x = 251, y = 186.55, z = 545}
+l_0_0.born_rot, l_0_1 = l_0_1, {x = 0, y = 0, z = 0}
 l_0_0.die_y = -20
 l_0_0.vision_anchor, l_0_1 = l_0_1, {x = -4096, z = -4096}
 upval_0.scene_config = l_0_0

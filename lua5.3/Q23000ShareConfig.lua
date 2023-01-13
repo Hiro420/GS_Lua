@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q23000ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q23000ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -39,7 +39,7 @@ upval_0.rewind_data, l_0_0 = l_0_0, {
 , 
 ["2300003"] = {}
 , ["2300004"] = l_0_1}
-l_0_3 = {id = 4003, alias = "Npc4003", script = "Actor/Npc/NpcFSMBehaviour", pos = "[3_1712:-464.063,236.697,2757.596,0.000,41.280,0.000]", scene_id = 3, room_id = 0, data_index = 1}
+l_0_3 = {id = 4003, alias = "Npc4003", script = "Actor/Npc/NpcFSMBehaviour", pos = "[3_1712:-465.104,236.697,2755.260,0.000,19.580,0.000]", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 l_0_1 = {}

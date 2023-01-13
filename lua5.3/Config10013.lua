@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config10013.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config10013.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -34,17 +34,6 @@ l_0_10.condList = l_0_11
 
 l_0_8.titleDatas = l_0_9
 l_0_7.TitleData = l_0_8
-l_0_11 = 3029
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 30299803, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_13 = upval_0.LuaVirtualType
-l_0_13 = l_0_13.NpcActionMainQuestCondition
-l_0_12 = {_type_ = l_0_13, mainQuestId = 3029, questState = 2}
-l_0_11 = {l_0_12}
-l_0_10 = {l_0_11}
-l_0_9 = {validQuestIds = l_0_10, priority = 300, dialogDataList = l_0_10, conditions = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9}
 l_0_6.Data = l_0_7
 return l_0_6
 

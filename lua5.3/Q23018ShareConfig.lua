@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q23018ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q23018ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -30,14 +30,6 @@ local l_0_4 = {}
 
 local l_0_5 = {}
 -- DECOMPILER ERROR at PC58: No list found for R5 , SetList fails
-
--- DECOMPILER ERROR at PC69: Overwrote pending register: R6 in 'AssignReg'
-
-local l_0_6 = {}
--- DECOMPILER ERROR at PC73: No list found for R6 , SetList fails
-
-local l_0_7 = {}
--- DECOMPILER ERROR at PC76: No list found for R7 , SetList fails
 
 -- WARNING: undefined locals caused missing assignments!
 

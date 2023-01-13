@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q300317Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q300317Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -22,14 +22,14 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddCubeShapeTrigger, l_2_0
-  local l_2_3 = 4
-  local l_2_4 = 8
-  local l_2_5 = 11
+  local l_2_3 = 6
+  local l_2_4 = 15
+  local l_2_5 = 12
   local l_2_6 = true
   local l_2_7 = {}
   l_2_7.x = 0
-  l_2_7.y = 0
-  l_2_7.z = 0
+  l_2_7.y = 5
+  l_2_7.z = -3
   l_2_1(l_2_2, l_2_3, l_2_4, l_2_5, l_2_6, l_2_7, l_2_0.TriggerIn, l_2_0.TriggerOut)
 end
 
@@ -37,7 +37,7 @@ l_0_1.TriggerIn = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("3003")
-  l_3_1:LoadSceneTagCoverEffect("ART/Stages/Eff_Stream/POI/Eff_Stages_POI_Level_Xm_BigTreeScreenDissolve_01_Vo", 3, 3, 3, function(l_4_0)
+  l_3_1:LoadSceneTagCoverEffect("ART/Stages/Eff_Stream/POI/Eff_Stages_POI_Level_Xm_BigTreeScreenDissolve_01_Vo", 5, 5, 5, function(l_4_0)
     -- function num : 0_2_0 , upvalues : upval_0
     ((upval_0.actorUtils).FinishQuestID)(false, 300317)
   end

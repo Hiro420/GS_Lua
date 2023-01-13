@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q3006ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q3006ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -35,9 +35,7 @@ l_0_1.npcs = l_0_2
 l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
-l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3}
-l_0_1 = {npcs = l_0_2}
+l_0_1 = {}
 l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
@@ -46,7 +44,9 @@ l_0_3 = {id = 1055, alias = "Npc1055", script = "Actor/Npc/TempNPC", pos = "Q300
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
-l_0_1 = {}
+l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300609_N1053", scene_id = 3, room_id = 0, data_index = 1}
+l_0_2 = {l_0_3}
+l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
 l_0_1 = {}
 l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
@@ -76,7 +76,9 @@ l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
 l_0_1 = {}
-l_0_1 = {}
+l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
+l_0_2 = {l_0_3}
+l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
 l_0_4, l_0_3 = {id = 1055, alias = "Npc1055", script = "Actor/Npc/TempNPC", pos = "Q300607_N1055", scene_id = 3, room_id = 0, data_index = 2}, {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300602_N1053", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
@@ -119,9 +121,7 @@ l_0_8.data_index = 6
 l_0_4, l_0_3 = {id = 12581, alias = "Npc12581", script = "Actor/Npc/TempNPC", pos = "Q300609_N12581", scene_id = 3, room_id = 0, data_index = 2}, {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300609_N1053", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8}
 l_0_1 = {npcs = l_0_2}
-l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300609_N1053", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3}
-l_0_1 = {npcs = l_0_2}
+l_0_1 = {}
 l_0_3 = {id = 1053, alias = "Npc1053", script = "Actor/Npc/TempNPC", pos = "Q300609_N1053", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}

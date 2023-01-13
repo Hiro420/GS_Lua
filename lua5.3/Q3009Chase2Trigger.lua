@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q3009Chase2Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q3009Chase2Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -30,11 +30,12 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
 end
 
 l_0_1.TriggerIn = function(l_3_0)
-  -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_4
+  -- function num : 0_2 , upvalues : upval_0
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("3009")
-  l_3_1:CreateQuestNpcById(300903, (upval_1.Npc12912Data).id, 0)
-  l_3_1:RequestInteraction((upval_1.Npc12912Data).alias)
+  l_3_1:EnterSceneLookCamera(((upval_0.sceneData):GetDummyPoint(3, "Q3009Day3StartGodSearch2")).pos, 0, 5, true, false)
+  ;
+  ((upval_0.actorUtils).FinishQuestID)(false, 300903)
   l_3_0:DestroySelf()
 end
 

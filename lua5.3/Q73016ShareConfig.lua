@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73016ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73016ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -80,13 +80,13 @@ l_0_1 = {npcs = l_0_2}
 l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301601", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
-l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301604", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301604", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301604", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301604", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
 l_0_1 = {npcs = l_0_2}
-l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301605", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301605", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301605", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301605", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
 l_0_1 = {npcs = l_0_2}
-l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301606", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301606", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301606", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301606", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
 l_0_1 = {npcs = l_0_2}
 l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301607", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301607", scene_id = 3, room_id = 0, data_index = 1}
@@ -99,7 +99,7 @@ l_0_1 = {}
 l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301612", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301612", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
 l_0_1 = {npcs = l_0_2}
-l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301611", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301611", scene_id = 3, room_id = 0, data_index = 1, bornShoesOffset = 1}
+l_0_4, l_0_3 = {id = 4188, alias = "Npc4188", script = "Actor/Npc/NpcFSMBehaviour", pos = "guide_Q7301611", scene_id = 3, room_id = 0, data_index = 2}, {id = 20606, alias = "Npc20606", script = "Actor/Npc/TempNPC", pos = "guide_Q7301611", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4}
 l_0_1 = {npcs = l_0_2}
 l_0_1 = {}

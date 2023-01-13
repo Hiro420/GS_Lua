@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4173.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4173.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -30,11 +30,10 @@ l_0_13.z = 2642.92
 l_0_12.pos = l_0_13
 l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 273.6129, z = 0}
 l_0_11.dummypoint = l_0_12
-l_0_11.actionPointId = 330400013
 l_0_12 = l_0_1.Stand
 l_0_11.action = l_0_12
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
--- DECOMPILER ERROR at PC42: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC41: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_13 = {daily = l_0_2.AllDay}

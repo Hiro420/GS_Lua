@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73037Trigger2_7303702.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73037Trigger2_7303702.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,7 +20,7 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
-  local l_2_3 = 25
+  local l_2_3 = 24.9
   local l_2_4 = (upval_0.DistType).EULER
   local l_2_5 = {}
   l_2_5.x = 0
@@ -39,7 +39,7 @@ l_0_1.TriggerIn = function(l_3_0)
   local l_3_4 = upval_1.NarratorTable2
   l_3_2(l_3_3, l_3_4, nil, "")
   l_3_2, l_3_3 = l_3_1:EnterSceneLookCamera, l_3_1
-  l_3_2(l_3_3, l_3_4, 0.2, 2, true, false)
+  l_3_2(l_3_3, l_3_4, 0.2, 3, true, false)
   l_3_4 = {x = -681.5, y = -150.3, z = 4025.9}
   l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
   l_3_2(l_3_3)

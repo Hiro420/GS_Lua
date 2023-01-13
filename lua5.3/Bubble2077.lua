@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Bubble2077.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Bubble2077.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -23,7 +23,7 @@ l_0_11.duration = 0
 l_0_11.intervalMin = 20
 l_0_11.intervalMax = 30
 l_0_9.bubbleDatas, l_0_10 = l_0_10, {l_0_11}
-l_0_11 = {activityId = 2019, activityCondId = 2019001, isActivityValid = true, priority = 1}
+l_0_11 = {activityId = 2010, activityCondId = 2010002, isActivityValid = true, priority = 1}
 local l_0_12 = {}
 l_0_12.dialogId = 1016207702
 l_0_12.duration = 0
@@ -32,12 +32,16 @@ l_0_12.intervalMax = 30
 l_0_11 = {l_0_12}
 l_0_12 = {questGlobalVarId = 12042, questGlobalVarValue = 1, questGlobalVarOperate = l_0_6.Equal, mainQuestId = 72802, questState = l_0_4.Finished, priority = 2}
 local l_0_13 = {}
-l_0_13.dialogId = 1016207701
-l_0_13.duration = 0
-l_0_13.intervalMin = 20
-l_0_13.intervalMax = 30
+local l_0_14 = {}
+l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
+l_0_14.mainQuestId = 70822
+l_0_14.questState = l_0_4.Finished
+-- DECOMPILER ERROR at PC62: No list found for R13 , SetList fails
+
 l_0_12 = {l_0_13}
--- DECOMPILER ERROR at PC61: No list found for R8 , SetList fails
+l_0_13 = {dialogId = 1016207701, duration = 0, intervalMin = 20, intervalMax = 30}
+l_0_12 = {l_0_13}
+-- DECOMPILER ERROR at PC73: No list found for R8 , SetList fails
 
 l_0_7.BubbleData = l_0_8
 return l_0_7

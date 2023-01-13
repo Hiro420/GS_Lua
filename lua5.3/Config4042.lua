@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4042.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4042.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -42,29 +42,6 @@ l_0_11 = {l_0_12}
 l_0_10 = {titleStr = "NPC_TITLE_4042", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018404200, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_12 = 23015
-l_0_11 = {l_0_12}
-l_0_12 = {dialogId = 1018404201, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_11 = {l_0_12}
-l_0_13 = {_type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition, mainQuestId = 23015, questState = 2}
-l_0_12 = {l_0_13}
-l_0_11 = {l_0_12}
-l_0_13 = 23016
-l_0_12 = {l_0_13}
-l_0_13 = {dialogId = 1018404202, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_12 = {l_0_13}
-local l_0_14 = {}
-l_0_14._type_ = (upval_0.LuaVirtualType).NpcActionMainQuestCondition
-l_0_14.mainQuestId = 23016
-l_0_14.questState = 2
-l_0_13 = {l_0_14}
-l_0_12 = {l_0_13}
-l_0_11, l_0_10, l_0_9 = {validQuestIds = l_0_12, priority = 300, dialogDataList = l_0_12, conditions = l_0_12}, {validQuestIds = l_0_11, priority = 300, dialogDataList = l_0_11, conditions = l_0_11}, {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9, l_0_10, l_0_11}
 l_0_6.Data = l_0_7
 return l_0_6
 

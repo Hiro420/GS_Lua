@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73018ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73018ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -11,7 +11,6 @@ l_0_1.q7301801 = 7301801
 l_0_1.q7301802 = 7301802
 l_0_1.q7301806 = 7301806
 l_0_1.q7301807 = 7301807
-l_0_1.q7301828 = 7301828
 l_0_1.q7301808 = 7301808
 l_0_1.q7301823 = 7301823
 l_0_1.q7301809 = 7301809
@@ -26,15 +25,15 @@ l_0_1.q7301820 = 7301820
 l_0_1.q7301821 = 7301821
 l_0_1.q7301827 = 7301827
 l_0_1.q7301822 = 7301822
-l_0_1.q7301826 = 7301826
-l_0_1.q7301825 = 7301825
-l_0_1.q7301824 = 7301824
-l_0_1.q7301818 = 7301818
-l_0_1.q7301815 = 7301815
-l_0_1.q7301812 = 7301812
-l_0_1.q7301805 = 7301805
-l_0_1.q7301804 = 7301804
 l_0_1.q7301803 = 7301803
+l_0_1.q7301804 = 7301804
+l_0_1.q7301805 = 7301805
+l_0_1.q7301812 = 7301812
+l_0_1.q7301815 = 7301815
+l_0_1.q7301818 = 7301818
+l_0_1.q7301824 = 7301824
+l_0_1.q7301825 = 7301825
+l_0_1.q7301826 = 7301826
 l_0_0.SubIDs = l_0_1
 local l_0_2 = {}
 l_0_2.id = 20605
@@ -91,13 +90,6 @@ l_0_6, l_0_5, l_0_4, l_0_3 = {dialogID = 730189918, audioEvtName = "", duration 
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8}
 l_0_4, l_0_3 = {dialogID = 730189922, audioEvtName = "", duration = 3}, {dialogID = 730189921, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4}
-l_0_4 = 3
-l_0_5 = 2
-l_0_6 = 2
-l_0_7 = 3
-l_0_8 = 2
-l_0_3 = {l_0_4, l_0_5, l_0_6, l_0_7, l_0_8}
-l_0_2 = {narratorId = 730189923, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable = l_0_2, NarratorTable1 = l_0_2, NarratorTable2 = l_0_2, NarratorTable3 = l_0_2, NarratorTable4 = l_0_2, NarratorTable5 = l_0_2, NarratorTable6 = l_0_2, NarratorWithId = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable = l_0_2, NarratorTable1 = l_0_2, NarratorTable2 = l_0_2, NarratorTable3 = l_0_2, NarratorTable4 = l_0_2, NarratorTable5 = l_0_2, NarratorTable6 = l_0_2}
 return l_0_0
 

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Bubble1646.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Bubble1646.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -17,9 +17,6 @@ local l_0_9 = {}
 local l_0_10 = {}
 l_0_10.mainQuestId = 359
 l_0_10.questState = l_0_4.Finished
-l_0_10.questGlobalVarId = 302617
-l_0_10.questGlobalVarValue = 0
-l_0_10.questGlobalVarOperate = l_0_6.Equal
 l_0_9.condition = l_0_10
 local l_0_11 = {}
 l_0_11.dialogId = 1016164600
@@ -27,76 +24,56 @@ l_0_11.duration = 0
 l_0_11.intervalMin = 20
 l_0_11.intervalMax = 30
 l_0_9.bubbleDatas, l_0_10 = l_0_10, {l_0_11}
-l_0_11 = {mainQuestId = 20101, questState = l_0_4.Finished, questGlobalVarId = 302617, questGlobalVarValue = 0, questGlobalVarOperate = l_0_6.Equal, priority = 1}
+l_0_11 = {mainQuestId = 20101, questState = l_0_4.Finished, priority = 1}
 local l_0_12 = {}
 l_0_12.dialogId = 1016164601
 l_0_12.duration = 0
 l_0_12.intervalMin = 20
 l_0_12.intervalMax = 30
 l_0_11 = {l_0_12}
-l_0_12 = {mainQuestId = 394, questState = l_0_4.Finished, questGlobalVarId = 302617, questGlobalVarValue = 0, questGlobalVarOperate = l_0_6.Equal, priority = 2}
+l_0_12 = {mainQuestId = 394, questState = l_0_4.Finished, priority = 2}
 local l_0_13 = {}
 l_0_13.dialogId = 1016164602
 l_0_13.duration = 0
 l_0_13.intervalMin = 20
 l_0_13.intervalMax = 30
 l_0_12 = {l_0_13}
-l_0_13 = {mainQuestId = 1000, questState = l_0_4.Finished, questGlobalVarId = 302617, questGlobalVarValue = 0, questGlobalVarOperate = l_0_6.Equal, priority = 3}
+l_0_13 = {mainQuestId = 1000, questState = l_0_4.Finished, priority = 3}
 local l_0_14 = {}
 l_0_14.dialogId = 1016164603
 l_0_14.duration = 0
 l_0_14.intervalMin = 20
 l_0_14.intervalMax = 30
 l_0_13 = {l_0_14}
-l_0_14 = {mainQuestId = 1025, questState = l_0_4.Finished, questGlobalVarId = 302617, questGlobalVarValue = 0, questGlobalVarOperate = l_0_6.Equal, priority = 4}
+l_0_14 = {mainQuestId = 1025, questState = l_0_4.Finished, priority = 4}
 local l_0_15 = {}
 l_0_15.dialogId = 1016164604
 l_0_15.duration = 0
 l_0_15.intervalMin = 20
 l_0_15.intervalMax = 30
 l_0_14 = {l_0_15}
-l_0_15 = {mainQuestId = 2011, questState = l_0_4.Finished, questGlobalVarId = 302617, questGlobalVarValue = 0, questGlobalVarOperate = l_0_6.Equal, priority = 5}
+l_0_15 = {mainQuestId = 2011, questState = l_0_4.Finished, priority = 5}
 local l_0_16 = {}
 l_0_16.dialogId = 1016164605
 l_0_16.duration = 0
 l_0_16.intervalMin = 20
 l_0_16.intervalMax = 30
 l_0_15 = {l_0_16}
-l_0_16 = {priority = 6}
+l_0_16 = {questGlobalVarId = 12042, questGlobalVarValue = 1, questGlobalVarOperate = l_0_6.Equal, priority = 6}
 local l_0_17 = {}
 l_0_17.dialogId = 1016164606
 l_0_17.duration = 0
 l_0_17.intervalMin = 20
 l_0_17.intervalMax = 30
 l_0_16 = {l_0_17}
+l_0_17 = {questGlobalVarId = 103106, questGlobalVarValue = 1, questGlobalVarOperate = l_0_6.Equal, priority = 7}
 local l_0_18 = {}
-l_0_18._type_ = (upval_0.LuaVirtualType).NpcActionQuestGlobalVarCondition
-l_0_18.questGlobalVarId = 12042
-l_0_18.questGlobalVarValue = 1
-l_0_18.questGlobalVarOperate = l_0_6.Equal
-local l_0_19 = {}
-l_0_19._type_ = (upval_0.LuaVirtualType).NpcActionQuestGlobalVarCondition
-l_0_19.questGlobalVarId = 302617
-l_0_19.questGlobalVarValue = 0
-l_0_19.questGlobalVarOperate = l_0_6.Equal
-l_0_17 = {l_0_18, l_0_19}
-l_0_16 = {l_0_17}
-l_0_17 = {priority = 7}
-l_0_18 = {dialogId = 1016164607, duration = 0, intervalMin = 20, intervalMax = 30}
+l_0_18.dialogId = 1016164607
+l_0_18.duration = 0
+l_0_18.intervalMin = 20
+l_0_18.intervalMax = 30
 l_0_17 = {l_0_18}
-local l_0_20 = {}
-l_0_20._type_ = (upval_0.LuaVirtualType).NpcActionQuestGlobalVarCondition
-l_0_20.questGlobalVarId = 302617
-l_0_20.questGlobalVarValue = 0
-l_0_20.questGlobalVarOperate = l_0_6.Equal
-l_0_19 = {_type_ = (upval_0.LuaVirtualType).NpcActionQuestGlobalVarCondition, questGlobalVarId = 103106, questGlobalVarValue = 1, questGlobalVarOperate = l_0_6.Equal}
-l_0_18 = {l_0_19, l_0_20}
-l_0_17 = {l_0_18}
-l_0_19 = l_0_6.Equal
-l_0_18 = {questGlobalVarId = 302617, questGlobalVarValue = 1, questGlobalVarOperate = l_0_19, priority = 8}
-l_0_19 = {dialogId = 1016164608, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_18 = {l_0_19}
--- DECOMPILER ERROR at PC209: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC135: No list found for R8 , SetList fails
 
 l_0_7.BubbleData = l_0_8
 return l_0_7

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Bubble1537.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Bubble1537.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -52,8 +52,6 @@ local l_0_14 = {}
 -- DECOMPILER ERROR at PC72: Overwrote pending register: R11 in 'AssignReg'
 
 -- DECOMPILER ERROR at PC90: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC111: Overwrote pending register: R13 in 'AssignReg'
 
 do return l_0_7 end
 -- WARNING: undefined locals caused missing assignments!

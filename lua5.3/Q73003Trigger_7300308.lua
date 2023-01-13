@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73003Trigger_7300308.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73003Trigger_7300308.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -31,7 +31,7 @@ end
 
 l_0_1.TriggerIn = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_4
-  local l_3_8, l_3_9 = nil
+  local l_3_6 = nil
   ;
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("73003")
@@ -47,11 +47,10 @@ l_0_1.TriggerIn = function(l_3_0)
     l_5_1:EnablePlayerInput(true)
   end
 )
-  local l_3_2, l_3_3 = l_3_1:ShowBlackScreen, l_3_1
-  local l_3_4 = 0.5
-  local l_3_5 = 0.5
-  local l_3_6 = 0.5
-  local l_3_7 = function(l_6_0)
+  local l_3_2, l_3_3 = l_3_1:TransmitPlayerByQuestId, l_3_1
+  local l_3_4 = 7300308
+  local l_3_5 = 1
+  l_3_2(l_3_3, l_3_4, l_3_5, nil, function(l_6_0)
     -- function num : 0_2_2 , upvalues : upval_0, upval_1
     local l_6_1 = ((upval_0.actorUtils).GetAvatarPos)()
     local l_6_2 = ((upval_0.actorUtils).GetAvatarForward)()
@@ -71,8 +70,9 @@ l_0_1.TriggerIn = function(l_3_0)
     end
 )
   end
-
-  l_3_2(l_3_3, l_3_4, l_3_5, l_3_6, l_3_7, nil, nil, "", false, true)
+)
+  l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
+  l_3_2(l_3_3)
 end
 
 l_0_1.TriggerOut = function(l_4_0)

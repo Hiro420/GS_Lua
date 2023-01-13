@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q1300105Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q1300105Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,7 +20,7 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
-  local l_2_3 = 7
+  local l_2_3 = 10
   local l_2_4 = (upval_0.DistType).EULER
   local l_2_5 = {}
   l_2_5.x = 0
@@ -36,9 +36,9 @@ l_0_1.TriggerIn = function(l_3_0)
   ((upval_0.actorUtils).FinishQuestID)(false, 1300105)
   local l_3_1 = (upval_0.actorMgr):GetActor("13001")
   l_3_1:ClearNarratorTask()
-  l_3_0:DestroySelf()
-  local l_3_2 = l_3_1:GetQuestNpcActor((upval_1.Npc1050Data).alias, 13001)
+  local l_3_2 = l_3_0:GetQuestNpcActor((upval_1.Npc1050Data).alias)
   l_3_2:Standby()
+  l_3_0:DestroySelf()
 end
 
 l_0_1.TriggerOut = function(l_4_0)

@@ -1,10 +1,10 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73064ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73064ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
 upval_0.main_id = 73064
-upval_0.sub_ids = {7306401, 7306402, 7306406, 7306407, 7306408, 7306409, 7306410, 7306411, 7306412, 7306413, 7306414, 7306405, 7306403, 7306404}
+upval_0.sub_ids = {7306401, 7306402, 7306406, 7306407, 7306408, 7306409, 7306410, 7306411, 7306412, 7306413, 7306405, 7306414, 7306403, 7306404}
 local l_0_0 = {}
 l_0_0.CLIENT = {}
 l_0_0.SERVER = {}

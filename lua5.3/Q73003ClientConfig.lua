@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73003ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73003ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -64,18 +64,15 @@ l_0_2 = {id = 20759, alias = "Npc20759", script = "Actor/Npc/TempNPC", point = l
 l_0_4 = {x = 0, y = 0, z = 0}
 l_0_4 = {x = 0, y = 0, z = 0}
 l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20813, alias = "Npc20813", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4327, alias = "Npc4327", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_0.Npcs, l_0_1 = l_0_1, {Npc4198Data = l_0_2, Npc20594Data = l_0_2, Npc20593Data = l_0_2, PaimonData = l_0_2, Npc20647Data = l_0_2, Npc20758Data = l_0_2, Npc20759Data = l_0_2, Npc20813Data = l_0_2, Npc4327Data = l_0_2}
+l_0_2 = {id = 20760, alias = "Npc20760", script = "Actor/Npc/TempNPC", point = l_0_3}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc4198Data = l_0_2, Npc20594Data = l_0_2, Npc20593Data = l_0_2, PaimonData = l_0_2, Npc20647Data = l_0_2, Npc20758Data = l_0_2, Npc20759Data = l_0_2, Npc20760Data = l_0_2}
 l_0_4, l_0_3 = {dialogID = 730039902, audioEvtName = "", duration = 3}, {dialogID = 730039901, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4}
 l_0_4, l_0_3 = {dialogID = 730039904, audioEvtName = "", duration = 3}, {dialogID = 730039903, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4}
-l_0_4, l_0_3 = {dialogID = 730039910, audioEvtName = "", duration = 4}, {dialogID = 730039909, audioEvtName = "", duration = 4}
-l_0_2 = {l_0_3, l_0_4}
+l_0_4 = {dialogID = 730039910, audioEvtName = "", duration = 4}
+l_0_3 = {dialogID = 730039909, audioEvtName = "", duration = 4, NarratorData = l_0_4}
+l_0_2 = {l_0_3}
 l_0_3 = {dialogID = 730039911, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3}
 local l_0_5 = {}
@@ -94,12 +91,6 @@ l_0_5, l_0_4, l_0_3 = {dialogID = 730039907, audioEvtName = "", duration = 3}, {
 l_0_2 = {l_0_3, l_0_4, l_0_5}
 l_0_3 = {dialogID = 730039908, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3}
-l_0_4 = 3
-l_0_5 = 5
-l_0_3 = {l_0_4, l_0_5}
-l_0_2 = {narratorId = 730039909, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_3 = "Quest_Black_Q730003"
-l_0_2 = {l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable1_ranaHint1 = l_0_2, NarratorTable2_ranaHint2 = l_0_2, NarratorTable5_ranaHint5 = l_0_2, NarratorTable6_PaimonHint1 = l_0_2, NarratorTable7_PaimonHint2 = l_0_2, NarratorTable8_PaimonHint3 = l_0_2, NarratorTable9_PaimonHint4 = l_0_2, NarratorTable10_PaimonHint5 = l_0_2, NarratorTable3_ranaHint3 = l_0_2, NarratorTable4_ranaHint4 = l_0_2, NarratorWithId = l_0_2, TextmapId = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable1_ranaHint1 = l_0_2, NarratorTable2_ranaHint2 = l_0_2, NarratorTable5_ranaHint5 = l_0_2, NarratorTable6_PaimonHint1 = l_0_2, NarratorTable7_PaimonHint2 = l_0_2, NarratorTable8_PaimonHint3 = l_0_2, NarratorTable9_PaimonHint4 = l_0_2, NarratorTable10_PaimonHint5 = l_0_2, NarratorTable3_ranaHint3 = l_0_2, NarratorTable4_ranaHint4 = l_0_2}
 return l_0_0
 

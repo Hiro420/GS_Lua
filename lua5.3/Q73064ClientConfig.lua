@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73064ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73064ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -17,8 +17,8 @@ l_0_1.q7306410 = 7306410
 l_0_1.q7306411 = 7306411
 l_0_1.q7306412 = 7306412
 l_0_1.q7306413 = 7306413
-l_0_1.q7306414 = 7306414
 l_0_1.q7306405 = 7306405
+l_0_1.q7306414 = 7306414
 l_0_1.q7306403 = 7306403
 l_0_1.q7306404 = 7306404
 l_0_0.SubIDs = l_0_1

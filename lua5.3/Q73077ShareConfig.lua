@@ -1,10 +1,10 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73077ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73077ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
 upval_0.main_id = 73077
-upval_0.sub_ids = {7307701, 7307704, 7307705, 7307706, 7307707, 7307708, 7307709, 7307710, 7307711, 7307712, 7307713, 7307714, 7307715, 7307716, 7307717, 7307718, 7307719, 7307720, 7307721, 7307723, 7307724, 7307725, 7307728, 7307729, 7307730, 7307731, 7307732, 7307722, 7307702, 7307703, 7307733, 7307726, 7307727}
+upval_0.sub_ids = {7307701, 7307704, 7307705, 7307706, 7307707, 7307708, 7307709, 7307710, 7307711, 7307712, 7307713, 7307714, 7307715, 7307716, 7307717, 7307733, 7307718, 7307719, 7307720, 7307721, 7307723, 7307724, 7307725, 7307726, 7307727, 7307728, 7307729, 7307730, 7307731, 7307732, 7307722, 7307702, 7307703}
 local l_0_0 = {}
 l_0_0.CLIENT = {}
 l_0_0.SERVER = {}
@@ -149,9 +149,7 @@ l_0_1 = {}
 l_0_1 = {}
 l_0_1 = {}
 l_0_1 = {}
-l_0_3 = {id = 4225, alias = "Npc4225", script = "Actor/Npc/NpcFSMBehaviour", pos = "wq7307733_lnla", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3}
-l_0_1 = {npcs = l_0_2}
+l_0_1 = {}
 upval_0.quest_data, l_0_0 = l_0_0, {
 ["7307701"] = {}
 , 

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\scene1073.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\scene1073.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -13,9 +13,9 @@ l_0_0.born_pos, l_0_1 = l_0_1, {x = 95.492, y = 5.577, z = 0}
 l_0_0.born_rot, l_0_1 = l_0_1, {x = 0, y = 0, z = 0}
 l_0_0.die_y = -100
 local l_0_2 = {}
-l_0_2.x = -385.528
-l_0_2.y = 281.463
-l_0_2.z = 2838.741
+l_0_2.x = -420
+l_0_2.y = 277
+l_0_2.z = 2723
 l_0_2 = {x = 0, y = 0, z = 0}
 l_0_0.room_safe_pos, l_0_1 = l_0_1, {scene_id = 3, safe_pos = l_0_2, safe_rot = l_0_2}
 l_0_0.vision_anchor, l_0_1 = l_0_1, {x = -1000, z = -1000}

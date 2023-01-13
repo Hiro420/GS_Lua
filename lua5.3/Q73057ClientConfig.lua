@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73057ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73057ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -74,9 +74,9 @@ l_0_11.x = 181.919
 l_0_11.y = 279.677
 l_0_11.z = 2853.414
 local l_0_12 = {}
-l_0_12.x = 179.443
+l_0_12.x = 179.555
 l_0_12.y = 280.308
-l_0_12.z = 2846.314
+l_0_12.z = 2846.39
 l_0_4, l_0_3 = {x = 136.992, y = 246.616, z = 2955.628}, {x = 126.728, y = 246.5, z = 2976.467}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12}
 l_0_8, l_0_7, l_0_6, l_0_5, l_0_4, l_0_3 = {dialogID = 730579906, audioEvtName = "", duration = 6}, {dialogID = 730579905, audioEvtName = "", duration = 6}, {dialogID = 730579904, audioEvtName = "", duration = 6}, {dialogID = 730579903, audioEvtName = "", duration = 6}, {dialogID = 730579902, audioEvtName = "", duration = 6}, {dialogID = 730579901, audioEvtName = "", duration = 6}

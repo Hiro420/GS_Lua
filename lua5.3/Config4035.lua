@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4035.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4035.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -49,21 +49,21 @@ l_0_14 = l_0_1.Patrol
 local l_0_16 = {}
 l_0_16.x = -515.714
 l_0_16.y = 202.3152
-l_0_16.z = 2801.73
+l_0_16.z = 2802.171
 l_0_16 = {x = 0, y = 0, z = 0}
 l_0_15 = {pos = l_0_16, rot = l_0_16}
 l_0_15 = l_0_1.Patrol
 local l_0_17 = {}
-l_0_17.x = -531.0692
+l_0_17.x = -529.1339
 l_0_17.y = 202.3152
-l_0_17.z = 2802.549
+l_0_17.z = 2803.945
 l_0_17 = {x = 0, y = 0, z = 0}
 l_0_16 = {pos = l_0_17, rot = l_0_17}
 l_0_16 = l_0_1.Patrol
 local l_0_18 = {}
-l_0_18.x = -530.9251
+l_0_18.x = -529.3767
 l_0_18.y = 202.3152
-l_0_18.z = 2795.681
+l_0_18.z = 2796.151
 l_0_18 = {x = 0, y = 0, z = 0}
 l_0_17 = {pos = l_0_18, rot = l_0_18}
 l_0_17 = l_0_1.Patrol
@@ -86,12 +86,6 @@ l_0_11 = {l_0_12}
 l_0_10 = {titleStr = "NPC_TITLE_4035", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018403500, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_9 = {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9}
 l_0_6.Data = l_0_7
 return l_0_6
 

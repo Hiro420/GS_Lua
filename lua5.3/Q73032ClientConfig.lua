@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73032ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73032ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -20,6 +20,7 @@ l_0_1.q7303218 = 7303218
 l_0_1.q7303219 = 7303219
 l_0_1.q7303220 = 7303220
 l_0_1.q7303221 = 7303221
+l_0_1.q7303204 = 7303204
 l_0_1.q7303211 = 7303211
 l_0_1.q7303225 = 7303225
 l_0_1.q7303205 = 7303205
@@ -29,7 +30,6 @@ l_0_1.q7303206 = 7303206
 l_0_1.q7303224 = 7303224
 l_0_1.q7303207 = 7303207
 l_0_1.q7303208 = 7303208
-l_0_1.q7303204 = 7303204
 l_0_1.q7303222 = 7303222
 l_0_1.q7303223 = 7303223
 l_0_0.SubIDs = l_0_1
@@ -148,9 +148,6 @@ l_0_3 = {dialogID = 730329901, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3}
 l_0_3 = {dialogID = 730329902, audioEvtName = "", duration = 5}
 l_0_2 = {l_0_3}
-l_0_4 = 5
-l_0_3 = {l_0_4}
-l_0_2 = {narratorId = 730329903, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = true, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {QUEST_Black_Q7303201 = l_0_2, Paimon_Start = l_0_2, Paimon_Finish = l_0_2, NarratorWithId_7303208fin = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {QUEST_Black_Q7303201 = l_0_2, Paimon_Start = l_0_2, Paimon_Finish = l_0_2}
 return l_0_0
 

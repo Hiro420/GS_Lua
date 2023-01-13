@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73025ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73025ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -64,64 +64,7 @@ l_0_4 = {x = 0, y = 0, z = 0}
 l_0_4 = {x = 0, y = 0, z = 0}
 l_0_3 = {pos = l_0_4, rot = l_0_4}
 l_0_2 = {id = 1005, alias = "Paimon", script = "Actor/Quest/Q352/Paimon", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20777, alias = "Npc20777", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20656, alias = "Npc20656", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20816, alias = "Npc20816", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20578, alias = "Npc20578", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20649, alias = "Npc20649", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4211, alias = "Npc4211", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4230, alias = "Npc4230", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20716, alias = "Npc20716", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20714, alias = "Npc20714", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 20715, alias = "Npc20715", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4210, alias = "Npc4210", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4212, alias = "Npc4212", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4321, alias = "Npc4321", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_0.Npcs, l_0_1 = l_0_1, {Npc20646Data = l_0_2, Npc20648Data = l_0_2, Npc20644Data = l_0_2, PaimonData = l_0_2, Npc20777Data = l_0_2, Npc20656Data = l_0_2, Npc20816Data = l_0_2, Npc20578Data = l_0_2, Npc20649Data = l_0_2, Npc4211Data = l_0_2, Npc4230Data = l_0_2, Npc20716Data = l_0_2, Npc20714Data = l_0_2, Npc20715Data = l_0_2, Npc4210Data = l_0_2, Npc4212Data = l_0_2, Npc4321Data = l_0_2}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 45001001, alias = "Gadget45001001", point = l_0_3}
-l_0_0.Gadgets, l_0_1 = l_0_1, {Gadget45001001Data = l_0_2}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc20646Data = l_0_2, Npc20648Data = l_0_2, Npc20644Data = l_0_2, PaimonData = l_0_2}
 l_0_4, l_0_3 = {dialogID = 730259902, audioEvtName = "", duration = 4}, {dialogID = 730259901, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3, l_0_4}
 l_0_4, l_0_3 = {dialogID = 730259904, audioEvtName = "", duration = 4}, {dialogID = 730259903, audioEvtName = "", duration = 4}
@@ -199,8 +142,6 @@ l_0_5, l_0_4, l_0_3 = {dialogID = 730259961, audioEvtName = "", duration = 5}, {
 l_0_2 = {l_0_3, l_0_4, l_0_5}
 l_0_5, l_0_4, l_0_3 = {dialogID = 730259964, audioEvtName = "", duration = 5}, {dialogID = 730259963, audioEvtName = "", duration = 5}, {dialogID = 730259962, audioEvtName = "", duration = 3}
 l_0_2 = {l_0_3, l_0_4, l_0_5}
-l_0_3 = ""
-l_0_2 = {l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_departwithlyre = l_0_2, NarratorTable_departborrowlyre = l_0_2, NarratorTable_ontheway1 = l_0_2, NarratorTable_ontheway2 = l_0_2, NarratorTable_ontheway3 = l_0_2, NarratorTable_ontheway4 = l_0_2, NarratorTable_ontheway5 = l_0_2, NarratorTable_entervana1 = l_0_2, NarratorTable_entervana2 = l_0_2, NarratorTable_collectbegin = l_0_2, NarratorTable_collectend = l_0_2, NarratorTable_collectnext = l_0_2, NarratorTable_passchefhouse = l_0_2, NarratorTable_clean1_stone = l_0_2, NarratorTable_clean1_stone2 = l_0_2, NarratorTable_clean2_mushroom1 = l_0_2, NarratorTable_clean2_mushroom2 = l_0_2, NarratorTable_clean2_mushroom3 = l_0_2, NarratorTable_clean3_huohua = l_0_2, NarratorTable_clean3_huohua2 = l_0_2, NarratorTable_clean0_start = l_0_2, NarratorTable_clean0_end = l_0_2, NarratorTable_clean0_end2 = l_0_2, NarratorTable_questfinish = l_0_2, TextmapIdEmpty = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable_departwithlyre = l_0_2, NarratorTable_departborrowlyre = l_0_2, NarratorTable_ontheway1 = l_0_2, NarratorTable_ontheway2 = l_0_2, NarratorTable_ontheway3 = l_0_2, NarratorTable_ontheway4 = l_0_2, NarratorTable_ontheway5 = l_0_2, NarratorTable_entervana1 = l_0_2, NarratorTable_entervana2 = l_0_2, NarratorTable_collectbegin = l_0_2, NarratorTable_collectend = l_0_2, NarratorTable_collectnext = l_0_2, NarratorTable_passchefhouse = l_0_2, NarratorTable_clean1_stone = l_0_2, NarratorTable_clean1_stone2 = l_0_2, NarratorTable_clean2_mushroom1 = l_0_2, NarratorTable_clean2_mushroom2 = l_0_2, NarratorTable_clean2_mushroom3 = l_0_2, NarratorTable_clean3_huohua = l_0_2, NarratorTable_clean3_huohua2 = l_0_2, NarratorTable_clean0_start = l_0_2, NarratorTable_clean0_end = l_0_2, NarratorTable_clean0_end2 = l_0_2, NarratorTable_questfinish = l_0_2}
 return l_0_0
 

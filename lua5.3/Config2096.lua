@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config2096.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config2096.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -15,10 +15,7 @@ local l_0_7 = {}
 l_0_7.NpcId = "2096"
 l_0_7.Alias = "Npc2096"
 local l_0_8 = {}
-l_0_8.refreshDailyActionImmediately = true
 local l_0_9 = {}
-l_0_9.transTeleport = true
-l_0_9.bornConfigId = 100000048
 local l_0_10 = {}
 l_0_10.daily = l_0_2.AllDay
 l_0_10.sceneId = 3
@@ -86,7 +83,7 @@ l_0_19 = {pos = l_0_20, rot = l_0_20}
 l_0_19 = l_0_1.Patrol
 l_0_18, l_0_17, l_0_16, l_0_15, l_0_14, l_0_13, l_0_12 = {dummypoint = l_0_19, action = l_0_19}, {dummypoint = l_0_18, action = l_0_18}, {dummypoint = l_0_17, action = l_0_17}, {dummypoint = l_0_16, action = l_0_16}, {dummypoint = l_0_15, freestyle = 1190, time = 15, action = l_0_15}, {dummypoint = l_0_14, action = l_0_14}, {dummypoint = l_0_13, freestyle = 1190, time = 15, action = l_0_13}
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, l_0_17, l_0_18}
--- DECOMPILER ERROR at PC153: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC150: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_14 = l_0_2.AllDay

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73025Trigger_7302508.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73025Trigger_7302508.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -10,8 +10,7 @@ l_0_1.defaultAlias = "Q73025Trigger_7302508"
 local l_0_2 = (upval_0.require)("Quest/Client/Q73025ClientConfig")
 local l_0_3 = l_0_2.SubIDs
 local l_0_4 = l_0_2.Npcs
-local l_0_5 = l_0_2.Gadgets
-local l_0_6 = l_0_2.Datas
+local l_0_5 = l_0_2.Datas
 l_0_1.OnPostDataPrepare = function(l_1_0)
   -- function num : 0_0 , upvalues : upval_0
   (upval_0.print)("OnPostDataPrepare")
@@ -21,7 +20,7 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
   local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
-  local l_2_3 = 20
+  local l_2_3 = 15
   local l_2_4 = (upval_0.DistType).EULER
   local l_2_5 = {}
   l_2_5.x = 0
@@ -31,30 +30,39 @@ l_0_1.OnPostComponentPrepare = function(l_2_0)
 end
 
 l_0_1.TriggerIn = function(l_3_0)
-  -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_6
-  local l_3_5, l_3_9 = nil
-  ;
+  -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_5
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("73025")
-  if l_3_1:GetSubQuestState(7302531) == 2 then
-    local l_3_2, l_3_3 = l_3_1:NarratorOnlyTask, l_3_1
-    local l_3_4 = upval_1.NarratorTable_clean2_mushroom1
-    l_3_2(l_3_3, l_3_4, nil, "")
-    l_3_2 = upval_0.actorUtils
-    l_3_2 = l_3_2.FinishQuestID
+  local l_3_6 = l_3_1:EnterSceneLookCamera
+  l_3_6(l_3_1, ((upval_0.sceneData):GetDummyPoint(3, "Q7302508_guide")).pos, 0, 4, true, false)
+  l_3_6 = upval_0.actorMgr
+  l_3_6 = l_3_6(l_3_6, "73025")
+  local l_3_2 = nil
+  l_3_2 = l_3_2(l_3_6, 7302531)
+  if l_3_2 == 2 then
+    local l_3_3, l_3_4 = l_3_6
+    l_3_4 = upval_1.NarratorTable_clean2_mushroom1
+    local l_3_5 = nil
+    l_3_5 = nil
+    l_3_2(l_3_3, l_3_4, l_3_5, "")
+    -- DECOMPILER ERROR at PC33: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC34: Overwrote pending register: R3 in 'AssignReg'
+
     l_3_3 = false
     l_3_4 = 7302531
     l_3_2(l_3_3, l_3_4)
   else
     do
-      if l_3_1:GetSubQuestState(7302531) == 3 then
-        local l_3_6, l_3_7 = l_3_1:NarratorOnlyTask, l_3_1
-        local l_3_8 = upval_1.NarratorTable_clean2_mushroom2
-        l_3_6(l_3_7, l_3_8, nil, "")
+      -- DECOMPILER ERROR at PC39: Overwrote pending register: R3 in 'AssignReg'
+
+      l_3_2 = l_3_2(l_3_6, 7302531)
+      if l_3_2 == 3 then
+        l_3_2(l_3_6, upval_1.NarratorTable_clean2_mushroom2, nil, "")
       end
-      do
-        l_3_0:DestroySelf()
-      end
+      -- DECOMPILER ERROR at PC49: Overwrote pending register: R3 in 'AssignReg'
+
+      l_3_2(l_3_0)
     end
   end
 end

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\NpcFSMBehaviour.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\NpcFSMBehaviour.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -11,11 +11,6 @@ l_0_1.DataInit = function(l_1_0)
   l_1_0.ID = l_1_0:GetNpcConfigId()
   ;
   ((upval_0.util).begin_sample)("[NpcFSMBehaviour]RequireLua")
-  if upval_0.NG_HSOD_DEBUG then
-    ((upval_0.util).unrequire)(l_1_0.ConfigPath)
-    ;
-    ((upval_0.util).unrequire)(l_1_0.BubblePath)
-  end
   local l_1_1 = (upval_0.require)(l_1_0.ConfigPath)
   local l_1_2 = (upval_0.require)(l_1_0.BubblePath)
   ;
@@ -39,9 +34,6 @@ l_0_1.DataInit = function(l_1_0)
           if (l_1_7.condition).priority ~= nil then
             l_1_8.priority = (l_1_7.condition).priority
           end
-        end
-        if l_1_7.priority ~= nil then
-          l_1_8.priority = l_1_7.priority
         end
         if l_1_7.conditionGrp ~= nil then
           l_1_8:SetConditionGroup(l_1_7.conditionGrp)
@@ -85,7 +77,7 @@ l_0_1.DataInit = function(l_1_0)
                     l_1_14.floatingHeight = l_1_7.defaultFloatingHeight
                   end
                 end
-                -- DECOMPILER ERROR at PC190: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC174: LeaveBlock: unexpected jumping out DO_STMT
 
               end
             end
@@ -112,18 +104,14 @@ l_0_1.DataInit = function(l_1_0)
         end
         do
           do
-            l_1_8.bornConfigId = 0
-            if l_1_7.bornConfigId ~= nil then
-              l_1_8.bornConfigId = l_1_7.bornConfigId
-            end
             l_1_8.transTeleport = l_1_7.transTeleport
             ;
             (l_1_0.uActor):AddDailyConfigData(l_1_8)
-            -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC225: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC225: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC225: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
@@ -171,11 +159,6 @@ l_0_1.DataInit = function(l_1_0)
     ;
     ((upval_0.util).begin_sample)("[NpcFSMBehaviour]HomeScheduleData")
     l_1_0:TryCreateHomeTask((l_1_0.ConfigData).HomeScheduleData)
-    ;
-    ((upval_0.util).end_sample)()
-    ;
-    ((upval_0.util).begin_sample)("[NpcFSMBehaviour]CardScheduleData")
-    l_1_0:TryCreateCardSummonTask((l_1_0.ConfigData).CardScheduleData)
     ;
     ((upval_0.util).end_sample)()
   end
@@ -280,38 +263,26 @@ l_0_1.TryCreateHomeTask = function(l_5_0, l_5_1)
   end
 end
 
-l_0_1.TryCreateCardSummonTask = function(l_6_0, l_6_1)
-  -- function num : 0_5 , upvalues : upval_0
-  if l_6_1 == nil then
-    return 
-  end
-  if l_6_0.cardTask == nil then
-    l_6_0.cardTask = l_6_0:CreateTask((upval_0.TaskID).CARD_SUMMON_TASK_ID, (upval_0.LuaTaskType).CARD_SUMMON, "Card")
-    ;
-    (l_6_0.cardTask):InitParam(l_6_1.actionList, l_6_1.bubbleGroup)
-  end
+l_0_1.OnEvent = function(l_6_0, l_6_1)
+  -- function num : 0_5
 end
 
-l_0_1.OnEvent = function(l_7_0, l_7_1)
+l_0_1.StartDay = function(l_7_0)
   -- function num : 0_6
 end
 
-l_0_1.StartDay = function(l_8_0)
+l_0_1.OnCollisionEnter = function(l_8_0, l_8_1)
   -- function num : 0_7
 end
 
-l_0_1.OnCollisionEnter = function(l_9_0, l_9_1)
+l_0_1.OnAppear = function(l_9_0)
   -- function num : 0_8
+  l_9_0:TryCreateDailySpeechBubbleTask()
 end
 
-l_0_1.OnAppear = function(l_10_0)
+l_0_1.OnDisappear = function(l_10_0)
   -- function num : 0_9
-  l_10_0:TryCreateDailySpeechBubbleTask()
-end
-
-l_0_1.OnDisappear = function(l_11_0)
-  -- function num : 0_10
-  l_11_0.speechBubbleTask = nil
+  l_10_0.speechBubbleTask = nil
 end
 
 return l_0_1

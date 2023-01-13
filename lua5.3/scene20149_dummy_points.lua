@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\scene20149_dummy_points.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\scene20149_dummy_points.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -114,16 +114,16 @@ l_0_0.Q1300204_N12615, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = 524.413, y = 116.742, z = 338.897}
 l_0_2 = {x = 0, y = 0, z = 0}
 l_0_0.Q1300205_N1050, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 522.467, y = 116.319, z = 331.785}
-l_0_2 = {x = 0, y = 182.6, z = 0}
+l_0_2 = {x = 522.464, y = 116.317, z = 332.459}
+l_0_2 = {x = 0, y = 193.2, z = 0}
 l_0_0.Q1300205_N12603, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = 525.033, y = 117.172, z = 340.336}
 l_0_2 = {x = 0, y = 91.6, z = 0}
 l_0_0.Q1300205_N12639, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 493.911, y = 130.752, z = 405.579}
+l_0_2 = {x = 494.347, y = 130.752, z = 404.788}
 l_0_2 = {x = 0, y = 0, z = 0}
 l_0_0.Q1300206_guide, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
-l_0_2 = {x = 512.468, y = 121.154, z = 372.116}
+l_0_2 = {x = 499.801, y = 126.577, z = 383.006}
 l_0_2 = {x = 0, y = 0, z = 0}
 l_0_0.Q1300206_guide_02, l_0_1 = l_0_1, {pos = l_0_2, rot = l_0_2}
 l_0_2 = {x = 508.555, y = 133.128, z = 403.053}

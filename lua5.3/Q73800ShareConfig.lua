@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73800ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73800ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -25,13 +25,24 @@ local l_0_3 = {}
 l_0_3.id = 20271
 l_0_3.alias = "Npc20271"
 l_0_3.script = "Actor/Npc/NpcFSMBehaviour"
-l_0_3.pos = "Q73800_08_WILD_GUIJINGZONGJIU"
+l_0_3.pos = "Q73800_01_BAY_GUIJINGZONGJIU"
 l_0_3.scene_id = 3
 l_0_3.room_id = 0
-l_0_3.data_index = 1
--- DECOMPILER ERROR at PC77: No list found for R2 , SetList fails
+l_0_3.data_index = 3
+-- DECOMPILER ERROR at PC59: No list found for R2 , SetList fails
 
 l_0_1.npcs = l_0_2
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_1 = {}
+l_0_3 = {id = 20271, alias = "Npc20271", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_08_WILD_GUIJINGZONGJIU", scene_id = 3, room_id = 0, data_index = 1}
+l_0_2 = {l_0_3}
+l_0_1 = {npcs = l_0_2}
 l_0_3 = {id = 20271, alias = "Npc20271", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_08_WILD_GUIJINGZONGJIU", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
@@ -87,30 +98,12 @@ l_0_1 = {npcs = l_0_2}
 l_0_1 = {}
 upval_0.rewind_data, l_0_0 = l_0_0, {
 ["7380001"] = {}
-, 
-["7380002"] = {}
-, 
-["7380003"] = {}
-, 
-["7380004"] = {}
-, 
-["7380005"] = {}
-, 
-["7380006"] = {}
-, 
-["7380007"] = {}
-, 
-["7380008"] = {}
-, 
-["7380009"] = {}
-, 
-["7380010"] = {}
-, ["7380011"] = l_0_1, ["7380012"] = l_0_1, ["7380013"] = l_0_1, ["7380014"] = l_0_1, ["7380015"] = l_0_1, ["7380016"] = l_0_1, ["7380017"] = l_0_1, ["7380018"] = l_0_1, ["7380019"] = l_0_1, ["7380020"] = l_0_1, ["7380021"] = l_0_1, ["7380022"] = l_0_1, ["7380023"] = l_0_1, ["7380024"] = l_0_1}
+, ["7380002"] = l_0_1, ["7380003"] = l_0_1, ["7380004"] = l_0_1, ["7380005"] = l_0_1, ["7380006"] = l_0_1, ["7380007"] = l_0_1, ["7380008"] = l_0_1, ["7380009"] = l_0_1, ["7380010"] = l_0_1, ["7380011"] = l_0_1, ["7380012"] = l_0_1, ["7380013"] = l_0_1, ["7380014"] = l_0_1, ["7380015"] = l_0_1, ["7380016"] = l_0_1, ["7380017"] = l_0_1, ["7380018"] = l_0_1, ["7380019"] = l_0_1, ["7380020"] = l_0_1, ["7380021"] = l_0_1, ["7380022"] = l_0_1, ["7380023"] = l_0_1, ["7380024"] = l_0_1}
 l_0_6, l_0_5, l_0_4, l_0_3 = {id = 20271, alias = "Npc20271", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_01_BAY_GUIJINGZONGJIU", scene_id = 3, room_id = 0, data_index = 4}, {id = 20269, alias = "Npc20269", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_01_BAY_ZHULI", scene_id = 3, room_id = 0, data_index = 3}, {id = 20270, alias = "Npc20270", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_01_BAY_BAERWANIE", scene_id = 3, room_id = 0, data_index = 2}, {id = 20268, alias = "Npc20268", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_01_BAY_XUDONG", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6}
 l_0_1 = {npcs = l_0_2}
-l_0_4, l_0_3 = {id = 20271, alias = "Npc20271", script = "Actor/Npc/NpcFSMBehaviour", pos = "Q73800_01_BAY_GUIJINGZONGJIU", scene_id = 3, room_id = 0, data_index = 2}, {id = 20270, alias = "Npc20270", script = "Actor/Npc/NpcFSMBehaviour", pos = "73800_02_XUMIFIRS_BAERWANIE", scene_id = 3, room_id = 0, data_index = 1}
-l_0_2 = {l_0_3, l_0_4}
+l_0_3 = {id = 20270, alias = "Npc20270", script = "Actor/Npc/NpcFSMBehaviour", pos = "73800_02_XUMIFIRS_BAERWANIE", scene_id = 3, room_id = 0, data_index = 1}
+l_0_2 = {l_0_3}
 l_0_1 = {npcs = l_0_2}
 l_0_3 = {id = 20857, alias = "Npc20857", script = "Actor/Npc/TempNPC", pos = "Q73800_02_XUMI_SHAERZHA", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3}

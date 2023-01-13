@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\main.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\main.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -25,20 +25,6 @@ l_0_0 = upval_0.main
 l_0_0.OnStart = function()
   -- function num : 0_0 , upvalues : upval_0
   (upval_0.print)("On Main Started!")
-  ;
-  (upval_0.pcall)(function()
-    -- function num : 0_0_0 , upvalues : upval_0
-    ((upval_0.math).randomseed)(((upval_0.os).time)())
-    ;
-    ((upval_0.math).random)()
-    ;
-    ((upval_0.math).random)()
-    ;
-    ((upval_0.math).random)()
-    ;
-    (upval_0.print)("random!")
-  end
-)
   if upval_0.NG_HSOD_DEBUG then
     (upval_0.testGod):Init()
   end

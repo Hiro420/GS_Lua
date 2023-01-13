@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73104ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73104ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -7,8 +7,6 @@ local l_0_0 = {}
 l_0_0.MainID = 73104
 l_0_0.ActorAlias = "73104"
 local l_0_1 = {}
-l_0_1.q7310416 = 7310416
-l_0_1.q7310417 = 7310417
 l_0_1.q7310401 = 7310401
 l_0_1.q7310402 = 7310402
 l_0_1.q7310403 = 7310403
@@ -74,8 +72,6 @@ l_0_3 = {dialogID = 731049909, audioEvtName = "", duration = 4}
 l_0_2 = {l_0_3}
 l_0_4, l_0_3 = {dialogID = 731049911, audioEvtName = "", duration = 3.5}, {dialogID = 731049910, audioEvtName = "", duration = 3.5}
 l_0_2 = {l_0_3, l_0_4}
-l_0_3 = {dialogID = 731049912, audioEvtName = "", duration = 3}
-l_0_2 = {l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable731049901 = l_0_2, NarratorTable731049904 = l_0_2, NarratorTable731049905 = l_0_2, NarratorTable731049908 = l_0_2, NarratorTable731049909 = l_0_2, NarratorTable731049910 = l_0_2, NarratorTable731049912 = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable731049901 = l_0_2, NarratorTable731049904 = l_0_2, NarratorTable731049905 = l_0_2, NarratorTable731049908 = l_0_2, NarratorTable731049909 = l_0_2, NarratorTable731049910 = l_0_2}
 return l_0_0
 

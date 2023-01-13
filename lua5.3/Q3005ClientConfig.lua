@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q3005ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q3005ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -7,6 +7,7 @@ local l_0_0 = {}
 l_0_0.MainID = 3005
 l_0_0.ActorAlias = "3005"
 local l_0_1 = {}
+l_0_1.q300518 = 300518
 l_0_1.q300501 = 300501
 l_0_1.q300502 = 300502
 l_0_1.q300503 = 300503
@@ -129,11 +130,7 @@ l_0_4 = {x = 0, y = 0, z = 0}
 l_0_4 = {x = 0, y = 0, z = 0}
 l_0_3 = {pos = l_0_4, rot = l_0_4}
 l_0_2 = {id = 4168, alias = "Npc4168", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4109, alias = "Npc4109", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_0.Npcs, l_0_1 = l_0_1, {Npc12572Data = l_0_2, Npc12573Data = l_0_2, Npc12580Data = l_0_2, Npc4154Data = l_0_2, Npc4156Data = l_0_2, Npc4167Data = l_0_2, Npc12571Data = l_0_2, Npc4155Data = l_0_2, Npc4124Data = l_0_2, Npc12581Data = l_0_2, Npc12582Data = l_0_2, Npc1053Data = l_0_2, Npc12584Data = l_0_2, Npc1055Data = l_0_2, Npc1052Data = l_0_2, Npc4314Data = l_0_2, PaimonData = l_0_2, Npc12564Data = l_0_2, Npc12733Data = l_0_2, Npc4129Data = l_0_2, Npc4115Data = l_0_2, Npc4147Data = l_0_2, Npc4066Data = l_0_2, Npc4168Data = l_0_2, Npc4109Data = l_0_2}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc12572Data = l_0_2, Npc12573Data = l_0_2, Npc12580Data = l_0_2, Npc4154Data = l_0_2, Npc4156Data = l_0_2, Npc4167Data = l_0_2, Npc12571Data = l_0_2, Npc4155Data = l_0_2, Npc4124Data = l_0_2, Npc12581Data = l_0_2, Npc12582Data = l_0_2, Npc1053Data = l_0_2, Npc12584Data = l_0_2, Npc1055Data = l_0_2, Npc1052Data = l_0_2, Npc4314Data = l_0_2, PaimonData = l_0_2, Npc12564Data = l_0_2, Npc12733Data = l_0_2, Npc4129Data = l_0_2, Npc4115Data = l_0_2, Npc4147Data = l_0_2, Npc4066Data = l_0_2, Npc4168Data = l_0_2}
 l_0_2 = {narratorId = 300501, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
 l_0_2 = {narratorId = 300502, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
 l_0_2 = {narratorId = 300503, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
@@ -141,17 +138,17 @@ l_0_2 = {narratorId = 300504, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPa
 l_0_2 = {narratorId = 300506, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
 l_0_2 = {narratorId = 300507, pauseLen = 10, resumeLen = 5, tag = "StoryInMainPage", startCheckPause = false}
 local l_0_5 = {}
-l_0_5.x = -1976.375
+l_0_5.x = -1977.485
 l_0_5.y = 200.834
-l_0_5.z = 2556.302
+l_0_5.z = 2556.064
 local l_0_6 = {}
-l_0_6.x = -1972.625
+l_0_6.x = -1973.12
 l_0_6.y = 200.835
-l_0_6.z = 2554.65
+l_0_6.z = 2554.19
 local l_0_7 = {}
-l_0_7.x = -1968.588
+l_0_7.x = -1968.926
 l_0_7.y = 200.835
-l_0_7.z = 2553.128
+l_0_7.z = 2552.772
 local l_0_8 = {}
 l_0_8.x = -1963.249
 l_0_8.y = 200.835
@@ -188,7 +185,7 @@ local l_0_16 = {}
 l_0_16.x = -1929.658
 l_0_16.y = 203.135
 l_0_16.z = 2562.932
-l_0_4, l_0_3 = {x = -1978.572, y = 200.834, z = 2557.702}, {x = -1981.812, y = 200.835, z = 2560.135}
+l_0_4, l_0_3 = {x = -1980.989, y = 200.834, z = 2558.802}, {x = -1984.259, y = 200.835, z = 2561.271}
 l_0_2 = {l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16, ((upval_0.sceneData):GetDummyPoint(3, "Q300511_N12584")).pos}
 l_0_0.Datas, l_0_1 = l_0_1, {NarratorWithId300501 = l_0_2, NarratorWithId300502 = l_0_2, NarratorWithId300503 = l_0_2, NarratorWithId300504 = l_0_2, NarratorWithId300506 = l_0_2, NarratorWithId300507 = l_0_2, RoutePointsData300510 = l_0_2}
 return l_0_0

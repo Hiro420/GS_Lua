@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q1300205Trigger.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q1300205Trigger.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -31,24 +31,11 @@ end
 
 l_0_1.TriggerIn = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0, ERROR_unknown_upvalue_4
-  local l_3_8, l_3_9 = nil
-  ;
   (upval_0.print)("TriggerIn")
   local l_3_1 = (upval_0.actorMgr):GetActor("13002")
-  local l_3_2, l_3_3 = l_3_1:ShowBlackScreen, l_3_1
-  local l_3_4 = 0.5
-  local l_3_5 = 1
-  local l_3_6 = 0.5
-  local l_3_7 = function(l_4_0)
-    -- function num : 0_2_0 , upvalues : upval_0, upval_1
-    local l_4_1 = (upval_0.actorMgr):GetActor("13002")
-    l_4_1:CreateQuestNpcById(1300205, (upval_1.Npc1050Data).id, 1)
-    l_4_1:RequestInteraction((upval_1.Npc1050Data).alias)
-  end
-
-  l_3_2(l_3_3, l_3_4, l_3_5, l_3_6, l_3_7, nil, nil, "", false, true)
-  l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
-  l_3_2(l_3_3)
+  l_3_1:CreateQuestNpcById(1300205, (upval_1.Npc1050Data).id, 1)
+  l_3_1:RequestInteraction((upval_1.Npc1050Data).alias)
+  l_3_0:DestroySelf()
 end
 
 l_0_1.TriggerOut = function(l_4_0)

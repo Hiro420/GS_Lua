@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q23032ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q23032ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -38,26 +38,9 @@ l_0_4.z = 0
 l_0_3.pos = l_0_4
 l_0_3.rot, l_0_4 = l_0_4, {x = 0, y = 0, z = 0}
 l_0_2.point = l_0_3
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4052, alias = "Npc4052", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4030, alias = "Npc4030", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 4055, alias = "Npc4055", script = "Actor/Npc/NpcFSMBehaviour", point = l_0_3}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_4 = {x = 0, y = 0, z = 0}
-l_0_3 = {pos = l_0_4, rot = l_0_4}
-l_0_2 = {id = 12763, alias = "Npc12763", script = "Actor/Npc/TempNPC", point = l_0_3}
-l_0_0.Npcs, l_0_1 = l_0_1, {Npc1517Data = l_0_2, Npc4052Data = l_0_2, Npc4030Data = l_0_2, Npc4055Data = l_0_2, Npc12763Data = l_0_2}
-l_0_4 = 3
-l_0_3 = {l_0_4}
-l_0_2 = {narratorId = 23032, pauseLen = 10, resumeLen = 5, tag = "Story", startCheckPause = false, durationList = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {NarratorWithId04 = l_0_2}
+l_0_0.Npcs, l_0_1 = l_0_1, {Npc1517Data = l_0_2}
+l_0_3 = {dialogID = 230329901, audioEvtName = "", duration = 3}
+l_0_2 = {l_0_3}
+l_0_0.Datas, l_0_1 = l_0_1, {NarratorTable04 = l_0_2}
 return l_0_0
 

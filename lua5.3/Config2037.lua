@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config2037.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config2037.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -39,15 +39,12 @@ l_0_11 = {daily = l_0_12, sceneId = 3, priority = 0}
 l_0_13 = l_0_1.Hide
 l_0_12 = {action = l_0_13}
 l_0_11 = {l_0_12}
-l_0_12 = {activityId = 2019, activityCondId = 2019001, isActivityValid = true, sceneId = 3, priority = 1}
-l_0_13 = {action = l_0_1.Hide}
-l_0_12 = {l_0_13}
--- DECOMPILER ERROR at PC69: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC55: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_13 = {daily = l_0_2.AllDay}
 l_0_12 = {condition = l_0_13, priority = 0, isShow = true}
-l_0_11 = {l_0_12; condition = l_0_12, actionPoints = l_0_12}
+l_0_11 = {l_0_12}
 l_0_10 = {condition = l_0_11, actionPoints = l_0_11, titleStr = "NPC_TITLE_2037", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}

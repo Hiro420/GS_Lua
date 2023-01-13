@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73036Trigger3_finish7303607.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73036Trigger3_finish7303607.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -41,29 +41,22 @@ l_0_1.TriggerIn = function(l_3_0)
   l_3_4.x = -593
   l_3_4.y = 35
   l_3_4.z = 3808
-  local l_3_5 = 1
-  l_3_2(l_3_3, l_3_4, l_3_5, 3, true, false)
+  l_3_2(l_3_3, l_3_4, 0.7, 12, true, true)
   l_3_2, l_3_3 = l_3_1:NarratorOnlyTask, l_3_1
   l_3_4 = upval_1.NarratorTable_Arama12
-  l_3_5 = nil
-  l_3_2(l_3_3, l_3_4, l_3_5, "")
-  l_3_2, l_3_3 = l_3_1:CallDelay, l_3_1
-  l_3_4 = 3
-  l_3_5 = function(l_4_0)
+  l_3_2(l_3_3, l_3_4, function(l_4_0)
     -- function num : 0_2_0 , upvalues : upval_0
-    local l_4_1 = (upval_0.actorMgr):GetActor("73036")
-    l_4_1:EnablePlayerInput(true)
-  end
-
-  l_3_2(l_3_3, l_3_4, l_3_5)
-  l_3_2, l_3_3 = l_3_1:CallDelay, l_3_1
-  l_3_4 = 12
-  l_3_5 = function(l_5_0)
-    -- function num : 0_2_1 , upvalues : upval_0
     ((upval_0.actorUtils).FinishQuestID)(false, 7303607)
   end
-
-  l_3_2(l_3_3, l_3_4, l_3_5)
+, "")
+  l_3_2, l_3_3 = l_3_1:CallDelay, l_3_1
+  l_3_4 = 12
+  l_3_2(l_3_3, l_3_4, function(l_5_0)
+    -- function num : 0_2_1 , upvalues : upval_0
+    local l_5_1 = (upval_0.actorMgr):GetActor("73036")
+    l_5_1:EnablePlayerInput(true)
+  end
+)
   l_3_2, l_3_3 = l_3_0:DestroySelf, l_3_0
   l_3_2(l_3_3)
 end

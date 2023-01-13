@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q19015ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q19015ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -52,10 +52,6 @@ l_0_3 = "COOP_Black_Q19015_fail2"
 l_0_2 = {l_0_3}
 l_0_3 = "COOP_Black_Q19015_fail"
 l_0_2 = {l_0_3}
-l_0_3 = upval_0.sceneData
-l_0_3, l_0_4 = l_0_3:GetDummyPoint, l_0_3
-l_0_3 = l_0_3(l_0_4, 3, "Q19015_Battle_Pos")
-l_0_2 = {alias = "Q19015Trigger_BattleArea", script = "Actor/Gadget/Q19015Trigger_BattleArea", id = 70900002, point = l_0_3}
-l_0_0.Datas, l_0_1 = l_0_1, {Q19015Trigger_RunFinsh = l_0_2, Q19015Trigger_TrainningArea = l_0_2, Text_Fail1 = l_0_2, Text_Fail2_OutTrigger = l_0_2, Q19015Trigger_BattleArea = l_0_2}
+l_0_0.Datas, l_0_1 = l_0_1, {Q19015Trigger_RunFinsh = l_0_2, Q19015Trigger_TrainningArea = l_0_2, Text_Fail1 = l_0_2, Text_Fail2_OutTrigger = l_0_2}
 return l_0_0
 

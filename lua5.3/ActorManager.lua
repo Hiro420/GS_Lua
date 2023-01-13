@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\ActorManager.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\ActorManager.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -97,25 +97,22 @@ end
 l_0_0.CreateActor = function(l_10_0, l_10_1, l_10_2, l_10_3)
   -- function num : 0_9 , upvalues : upval_0, upval_0
   local l_10_4 = (upval_0.GetActorInternal)(l_10_0, l_10_1)
-  if l_10_4 == nil then
-    if upval_1.NG_HSOD_DEBUG then
-      ((upval_1.util).unrequire)(l_10_2)
-    end
-    local l_10_5 = (upval_1.require)(l_10_2)
-    l_10_4 = l_10_5:new()
-    l_10_4.metaPath = l_10_2
-    l_10_4:OnPreInit()
-    if l_10_1 == nil or l_10_1 == "" then
-      l_10_1 = l_10_4.defaultAlias
-    end
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R6 in 'UnsetPending'
-
-    ;
-    (upval_0.ActorDic)[l_10_1] = l_10_4
-    l_10_4:OnInit(l_10_1)
-    l_10_4:OnPostInit()
-  end
   do
+    if l_10_4 == nil then
+      local l_10_5 = (upval_1.require)(l_10_2)
+      l_10_4 = l_10_5:new()
+      l_10_4.metaPath = l_10_2
+      l_10_4:OnPreInit()
+      if l_10_1 == nil or l_10_1 == "" then
+        l_10_1 = l_10_4.defaultAlias
+      end
+      -- DECOMPILER ERROR at PC21: Confused about usage of register: R6 in 'UnsetPending'
+
+      ;
+      (upval_0.ActorDic)[l_10_1] = l_10_4
+      l_10_4:OnInit(l_10_1)
+      l_10_4:OnPostInit()
+    end
     if l_10_3 == nil then
       l_10_3 = true
     end
@@ -209,14 +206,11 @@ l_0_0.CreateActorWithDataInternal = function(l_14_0, l_14_1, l_14_2)
         if l_14_9 ~= (upval_0.sceneData).currSceneID and (upval_0.sceneData).currSceneID ~= 1001 then
           if l_14_2 ~= true and l_14_21 and (upval_0.sceneData).currSceneID ~= -1 then
             ((upval_0.actorUtils).NotifyActorPreCreate)(l_14_12)
-            if upval_0.NG_HSOD_DEBUG then
-              ((upval_0.util).unrequire)(l_14_13)
-            end
             local l_14_22 = l_14_1.isAutoStart ~= false
             ;
             ((upval_0.actorUtils).NotifyActorCreate)(((upval_0.require)(l_14_13)).actorType, l_14_12, l_14_13, l_14_14, l_14_16, l_14_19, l_14_20, l_14_9, l_14_10, l_14_11)
           end
-          -- DECOMPILER ERROR at PC98: Confused about usage of register: R18 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC91: Confused about usage of register: R18 in 'UnsetPending'
 
           return l_14_0.dummyActor
         end
@@ -231,7 +225,7 @@ l_0_0.CreateActorWithDataInternal = function(l_14_0, l_14_1, l_14_2)
               local l_14_29 = l_14_1.dontDestroyOnClear
               ;
               (upval_1.ClearActor)(l_14_0, ((upval_0.actorUtils).TrySwitchNpcActor)(l_14_14, l_14_11, l_14_12))
-              -- DECOMPILER ERROR at PC134: Confused about usage of register: R23 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC127: Confused about usage of register: R23 in 'UnsetPending'
 
             end
             if (upval_1.GetActorInternal)(l_14_0, ((upval_0.actorUtils).TrySwitchNpcActor)(l_14_14, l_14_11, l_14_12)) ~= nil then
@@ -239,254 +233,250 @@ l_0_0.CreateActorWithDataInternal = function(l_14_0, l_14_1, l_14_2)
               if (upval_1.GetActorInternal)(l_14_0, l_14_12) ~= nil and ((upval_1.GetActorInternal)(l_14_0, l_14_12)):IsValid() ~= true then
                 (upval_1.ClearActor)(l_14_0, l_14_12)
               end
-              -- DECOMPILER ERROR at PC152: Confused about usage of register: R22 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC145: Confused about usage of register: R22 in 'UnsetPending'
 
-              if nil ~= nil and (nil).defaultAlias == upval_1.tempDefaultAlias then
-                if upval_0.NG_HSOD_DEBUG then
-                  ((upval_0.util).unrequire)(l_14_13)
+              do
+                if nil ~= nil and (nil).defaultAlias == upval_1.tempDefaultAlias then
+                  local l_14_31 = nil
+                  -- DECOMPILER ERROR at PC153: Confused about usage of register: R22 in 'UnsetPending'
+
+                  if ((upval_0.require)(l_14_13)).defaultAlias ~= (nil).defaultAlias then
+                    (upval_1.ClearActor)(l_14_0, l_14_12)
+                  end
                 end
-                local l_14_31 = nil
-                -- DECOMPILER ERROR at PC167: Confused about usage of register: R22 in 'UnsetPending'
+                if nil == nil then
+                  ((upval_0.actorUtils).NotifyActorPreCreate)(l_14_12)
+                  local l_14_32 = nil
+                  if (upval_0.require)(l_14_13) == nil then
+                    ((((upval_0.CS).MoleMole).SuperDebug).LogError)("[Lua] quest:" .. (upval_0.tostring)(upval_0.mainID) .. " check metaPath of " .. (upval_0.tostring)(l_14_12))
+                    -- DECOMPILER ERROR at PC186: Confused about usage of register: R22 in 'UnsetPending'
 
-                if ((upval_0.require)(l_14_13)).defaultAlias ~= (nil).defaultAlias then
-                  (upval_1.ClearActor)(l_14_0, l_14_12)
-                end
-              end
-              if nil == nil then
-                ((upval_0.actorUtils).NotifyActorPreCreate)(l_14_12)
-                if upval_0.NG_HSOD_DEBUG then
-                  ((upval_0.util).unrequire)(l_14_13)
-                end
-                local l_14_32 = nil
-                if (upval_0.require)(l_14_13) == nil then
-                  ((((upval_0.CS).MoleMole).SuperDebug).LogError)("[Lua] quest:" .. (upval_0.tostring)(upval_0.mainID) .. " check metaPath of " .. (upval_0.tostring)(l_14_12))
-                  -- DECOMPILER ERROR at PC207: Confused about usage of register: R22 in 'UnsetPending'
+                    return nil
+                  end
+                  -- DECOMPILER ERROR at PC190: Confused about usage of register: R22 in 'UnsetPending'
 
-                  return nil
-                end
-                -- DECOMPILER ERROR at PC211: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC191: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC212: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC191: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC212: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC192: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC213: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC192: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC213: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC193: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC214: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC193: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC214: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC194: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC215: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC194: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC215: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC195: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC216: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC195: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC216: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC196: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC217: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC196: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC217: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC197: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC218: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC197: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC218: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC198: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC219: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC198: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC219: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC199: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC220: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC199: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC220: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC200: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC221: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC200: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC221: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC201: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC222: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC201: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC222: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC202: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC223: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC202: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC223: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC203: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC224: Confused about usage of register: R22 in 'UnsetPending'
+                  local l_14_33 = true
+                  -- DECOMPILER ERROR at PC205: Confused about usage of register: R22 in 'UnsetPending'
 
-                local l_14_33 = true
-                -- DECOMPILER ERROR at PC226: Confused about usage of register: R22 in 'UnsetPending'
+                  ;
+                  (((upval_0.require)(l_14_13)):new()):OnPreInit()
+                  -- DECOMPILER ERROR at PC215: Confused about usage of register: R22 in 'UnsetPending'
 
-                ;
-                (((upval_0.require)(l_14_13)):new()):OnPreInit()
-                -- DECOMPILER ERROR at PC236: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC215: Overwrote pending register: R6 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC236: Overwrote pending register: R6 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC216: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC237: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC216: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC237: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC217: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC238: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC217: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC238: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC219: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC240: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC219: Confused about usage of register: R25 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC240: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC220: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC241: Confused about usage of register: R22 in 'UnsetPending'
+                  if l_14_12 == nil or l_14_12 == "" then
+                    if (((upval_0.require)(l_14_13)):new()):PreGetAlias() ~= nil then
+                      do
+                        (((upval_0.require)(l_14_13)):new()):OnInit(l_14_12)
+                        ;
+                        (upval_0.print)("NotifyActorCreate  actor == nil " .. (upval_0.tostring)(l_14_11) .. " Alias:=" .. l_14_12)
+                        -- DECOMPILER ERROR at PC232: Confused about usage of register: R22 in 'UnsetPending'
 
-                if l_14_12 == nil or l_14_12 == "" then
-                  if (((upval_0.require)(l_14_13)):new()):PreGetAlias() ~= nil then
-                    do
-                      (((upval_0.require)(l_14_13)):new()):OnInit(l_14_12)
-                      ;
-                      (upval_0.print)("NotifyActorCreate  actor == nil " .. (upval_0.tostring)(l_14_11) .. " Alias:=" .. l_14_12)
-                      -- DECOMPILER ERROR at PC253: Confused about usage of register: R22 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC236: Confused about usage of register: R25 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC257: Confused about usage of register: R25 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC238: Confused about usage of register: R25 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC259: Confused about usage of register: R25 in 'UnsetPending'
+                        if (((upval_0.require)(l_14_13)):new()).uActor == nil then
+                          return l_14_0.dummyActor
+                        else
+                          -- DECOMPILER ERROR at PC242: Confused about usage of register: R22 in 'UnsetPending'
 
-                      if (((upval_0.require)(l_14_13)):new()).uActor == nil then
-                        return l_14_0.dummyActor
-                      else
-                        -- DECOMPILER ERROR at PC263: Confused about usage of register: R22 in 'UnsetPending'
+                          (((upval_0.require)(l_14_13)):new()):OnPostInit()
+                          -- DECOMPILER ERROR at PC244: Confused about usage of register: R22 in 'UnsetPending'
 
-                        (((upval_0.require)(l_14_13)):new()):OnPostInit()
-                        -- DECOMPILER ERROR at PC265: Confused about usage of register: R22 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC247: Confused about usage of register: R22 in 'UnsetPending'
+
+                          if (((upval_0.require)(l_14_13)):new()).MarkDitherShow ~= nil then
+                            (((upval_0.require)(l_14_13)):new()):MarkDitherShow(l_14_1.ditherShow == true and l_14_1.ditherDuration ~= nil)
+                          end
+                          -- DECOMPILER ERROR at PC252: Confused about usage of register: R22 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC255: Confused about usage of register: R22 in 'UnsetPending'
+
+                          if not l_14_28 and (((upval_0.require)(l_14_13)):new()).CheckShow ~= nil then
+                            (((upval_0.require)(l_14_13)):new()):CheckShow()
+                          end
+                        end
+                        -- DECOMPILER ERROR at PC258: Confused about usage of register: R22 in 'UnsetPending'
+
+                        ;
+                        (((upval_0.require)(l_14_13)):new()):OnReuse()
+                        ;
+                        ((upval_0.actorUtils).NotifyActorPreCreate)(l_14_12)
+                        -- DECOMPILER ERROR at PC264: Confused about usage of register: R22 in 'UnsetPending'
+
+                        ;
+                        (((upval_0.require)(l_14_13)):new()):ClearAllTask()
+                        -- DECOMPILER ERROR at PC266: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC266: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC267: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC267: Confused about usage of register: R22 in 'UnsetPending'
 
                         -- DECOMPILER ERROR at PC268: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC268: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC269: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC269: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC270: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC270: Confused about usage of register: R22 in 'UnsetPending'
+
+                        ;
+                        (upval_0.print)("NotifyActorCreate actor OnReuse " .. (upval_0.tostring)(l_14_11) .. " Alias:=" .. l_14_12)
+                        -- DECOMPILER ERROR at PC280: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC283: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC284: Confused about usage of register: R19 in 'UnsetPending'
 
                         if (((upval_0.require)(l_14_13)):new()).MarkDitherShow ~= nil then
                           (((upval_0.require)(l_14_13)):new()):MarkDitherShow(l_14_1.ditherShow == true and l_14_1.ditherDuration ~= nil)
                         end
-                        -- DECOMPILER ERROR at PC273: Confused about usage of register: R22 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC286: Confused about usage of register: R22 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC276: Confused about usage of register: R22 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC289: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC295: Confused about usage of register: R18 in 'UnsetPending'
+
+                        if (((upval_0.require)(l_14_13)):new()).SetPosAndTurnTo ~= nil then
+                          (((upval_0.require)(l_14_13)):new()):SetPosAndTurnTo(l_14_16, ((upval_0.M).Euler2DirXZ)(l_14_19), l_14_33)
+                        else
+                          -- DECOMPILER ERROR at PC298: Confused about usage of register: R22 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC301: Confused about usage of register: R22 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC303: Confused about usage of register: R18 in 'UnsetPending'
+
+                          if (((upval_0.require)(l_14_13)):new()).SetPos ~= nil then
+                            (((upval_0.require)(l_14_13)):new()):SetPos(l_14_16, l_14_33)
+                          end
+                          -- DECOMPILER ERROR at PC305: Confused about usage of register: R22 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC308: Confused about usage of register: R22 in 'UnsetPending'
+
+                          if (((upval_0.require)(l_14_13)):new()).TurnTo ~= nil then
+                            (((upval_0.require)(l_14_13)):new()):TurnTo(((upval_0.M).Euler2DirXZ)(l_14_19))
+                          end
+                        end
+                        -- DECOMPILER ERROR at PC314: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC317: Confused about usage of register: R22 in 'UnsetPending'
+
+                        if (((upval_0.require)(l_14_13)):new()).SetShoesOffsetOnReuse ~= nil then
+                          (((upval_0.require)(l_14_13)):new()):SetShoesOffsetOnReuse(l_14_20)
+                        end
+                        -- DECOMPILER ERROR at PC322: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC325: Confused about usage of register: R22 in 'UnsetPending'
 
                         if not l_14_28 and (((upval_0.require)(l_14_13)):new()).CheckShow ~= nil then
                           (((upval_0.require)(l_14_13)):new()):CheckShow()
                         end
-                      end
-                      -- DECOMPILER ERROR at PC279: Confused about usage of register: R22 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC327: Confused about usage of register: R22 in 'UnsetPending'
 
-                      ;
-                      (((upval_0.require)(l_14_13)):new()):OnReuse()
-                      ;
-                      ((upval_0.actorUtils).NotifyActorPreCreate)(l_14_12)
-                      -- DECOMPILER ERROR at PC285: Confused about usage of register: R22 in 'UnsetPending'
+                        ;
+                        (((upval_0.require)(l_14_13)):new()):ClearActor()
+                        -- DECOMPILER ERROR at PC333: Confused about usage of register: R22 in 'UnsetPending'
 
-                      ;
-                      (((upval_0.require)(l_14_13)):new()):ClearAllTask()
-                      -- DECOMPILER ERROR at PC287: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC287: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC288: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC288: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC289: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC289: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC290: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC290: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC291: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC291: Confused about usage of register: R22 in 'UnsetPending'
-
-                      ;
-                      (upval_0.print)("NotifyActorCreate actor OnReuse " .. (upval_0.tostring)(l_14_11) .. " Alias:=" .. l_14_12)
-                      -- DECOMPILER ERROR at PC301: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC304: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC305: Confused about usage of register: R19 in 'UnsetPending'
-
-                      if (((upval_0.require)(l_14_13)):new()).MarkDitherShow ~= nil then
-                        (((upval_0.require)(l_14_13)):new()):MarkDitherShow(l_14_1.ditherShow == true and l_14_1.ditherDuration ~= nil)
-                      end
-                      -- DECOMPILER ERROR at PC307: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC310: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC316: Confused about usage of register: R18 in 'UnsetPending'
-
-                      if (((upval_0.require)(l_14_13)):new()).SetPosAndTurnTo ~= nil then
-                        (((upval_0.require)(l_14_13)):new()):SetPosAndTurnTo(l_14_16, ((upval_0.M).Euler2DirXZ)(l_14_19), l_14_33)
-                      else
-                        -- DECOMPILER ERROR at PC319: Confused about usage of register: R22 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC322: Confused about usage of register: R22 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC324: Confused about usage of register: R18 in 'UnsetPending'
-
-                        if (((upval_0.require)(l_14_13)):new()).SetPos ~= nil then
-                          (((upval_0.require)(l_14_13)):new()):SetPos(l_14_16, l_14_33)
+                        if l_14_2 ~= true then
+                          ((upval_0.actorUtils).NotifyActorCreate)((((upval_0.require)(l_14_13)):new()).actorType, l_14_12, l_14_13, l_14_14, l_14_16, l_14_19, l_14_20, l_14_9, l_14_10, l_14_11)
                         end
-                        -- DECOMPILER ERROR at PC326: Confused about usage of register: R22 in 'UnsetPending'
+                        ;
+                        ((upval_0.actorUtils).NotifyActorAutoStart)(l_14_14, l_14_11, l_14_27)
+                        -- DECOMPILER ERROR at PC352: Confused about usage of register: R22 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC329: Confused about usage of register: R22 in 'UnsetPending'
-
-                        if (((upval_0.require)(l_14_13)):new()).TurnTo ~= nil then
-                          (((upval_0.require)(l_14_13)):new()):TurnTo(((upval_0.M).Euler2DirXZ)(l_14_19))
+                        if l_14_27 then
+                          (((upval_0.require)(l_14_13)):new()):Start()
                         end
+                        -- DECOMPILER ERROR at PC358: Confused about usage of register: R22 in 'UnsetPending'
+
+                        if l_14_11 ~= nil and l_14_11 > 0 then
+                          (((upval_0.require)(l_14_13)):new()):ResetAsNoDaily()
+                        end
+                        -- DECOMPILER ERROR at PC360: Confused about usage of register: R19 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC362: Confused about usage of register: R22 in 'UnsetPending'
+
+                        -- DECOMPILER ERROR at PC365: Confused about usage of register: R22 in 'UnsetPending'
+
+                        if l_14_1.ditherShow == true and l_14_1.ditherDuration ~= nil and (((upval_0.require)(l_14_13)):new()).DitherToShowWhenAppear ~= nil then
+                          (((upval_0.require)(l_14_13)):new()):DitherToShowWhenAppear(l_14_1.ditherDuration)
+                        end
+                        -- DECOMPILER ERROR at PC368: Confused about usage of register: R22 in 'UnsetPending'
+
+                        do return ((upval_0.require)(l_14_13)):new() end
+                        -- DECOMPILER ERROR: 27 unprocessed JMP targets
                       end
-                      -- DECOMPILER ERROR at PC335: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC338: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if (((upval_0.require)(l_14_13)):new()).SetShoesOffsetOnReuse ~= nil then
-                        (((upval_0.require)(l_14_13)):new()):SetShoesOffsetOnReuse(l_14_20)
-                      end
-                      -- DECOMPILER ERROR at PC343: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC346: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if not l_14_28 and (((upval_0.require)(l_14_13)):new()).CheckShow ~= nil then
-                        (((upval_0.require)(l_14_13)):new()):CheckShow()
-                      end
-                      -- DECOMPILER ERROR at PC348: Confused about usage of register: R22 in 'UnsetPending'
-
-                      ;
-                      (((upval_0.require)(l_14_13)):new()):ClearActor()
-                      -- DECOMPILER ERROR at PC354: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if l_14_2 ~= true then
-                        ((upval_0.actorUtils).NotifyActorCreate)((((upval_0.require)(l_14_13)):new()).actorType, l_14_12, l_14_13, l_14_14, l_14_16, l_14_19, l_14_20, l_14_9, l_14_10, l_14_11)
-                      end
-                      ;
-                      ((upval_0.actorUtils).NotifyActorAutoStart)(l_14_14, l_14_11, l_14_27)
-                      -- DECOMPILER ERROR at PC373: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if l_14_27 then
-                        (((upval_0.require)(l_14_13)):new()):Start()
-                      end
-                      -- DECOMPILER ERROR at PC379: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if l_14_11 ~= nil and l_14_11 > 0 then
-                        (((upval_0.require)(l_14_13)):new()):ResetAsNoDaily()
-                      end
-                      -- DECOMPILER ERROR at PC381: Confused about usage of register: R19 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC383: Confused about usage of register: R22 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC386: Confused about usage of register: R22 in 'UnsetPending'
-
-                      if l_14_1.ditherShow == true and l_14_1.ditherDuration ~= nil and (((upval_0.require)(l_14_13)):new()).DitherToShowWhenAppear ~= nil then
-                        (((upval_0.require)(l_14_13)):new()):DitherToShowWhenAppear(l_14_1.ditherDuration)
-                      end
-                      -- DECOMPILER ERROR at PC389: Confused about usage of register: R22 in 'UnsetPending'
-
-                      do return ((upval_0.require)(l_14_13)):new() end
-                      -- DECOMPILER ERROR: 30 unprocessed JMP targets
                     end
                   end
                 end
@@ -530,9 +520,6 @@ end
 
 l_0_0.CreateQuestActorInternal = function(l_17_0, l_17_1, l_17_2, l_17_3, l_17_4)
   -- function num : 0_16 , upvalues : upval_0, upval_0
-  if upval_0.NG_HSOD_DEBUG then
-    ((upval_0.util).unrequire)(l_17_2)
-  end
   local l_17_5 = (upval_0.require)(l_17_2)
   if upval_0.NG_HSOD_DEBUG and (upval_0.tostring)((upval_0.type)(l_17_5)) ~= "table" then
     ((upval_0.actorUtils).ActorDebugError)("~~~~~~~~~~~~~~~~~~~~~~~~ " .. (upval_0.tostring)(l_17_3) .. " no actor! check this!")
@@ -551,7 +538,7 @@ l_0_0.CreateQuestActorInternal = function(l_17_0, l_17_1, l_17_2, l_17_3, l_17_4
   if l_17_1 == nil or l_17_1 == "" then
     l_17_1 = (upval_0.tostring)(l_17_3)
   end
-  -- DECOMPILER ERROR at PC77: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC70: Confused about usage of register: R7 in 'UnsetPending'
 
   ;
   (upval_1.ActorDic)[l_17_1] = l_17_6

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config1625.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config1625.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -24,9 +24,9 @@ l_0_9.condition = l_0_10
 local l_0_11 = {}
 local l_0_12 = {}
 local l_0_13 = {}
-l_0_13.x = -545.1788
-l_0_13.y = 237.8901
-l_0_13.z = 386.2928
+l_0_13.x = -545.2028
+l_0_13.y = 237.9068
+l_0_13.z = 386.3106
 l_0_12.pos = l_0_13
 l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 137.5494, z = 0}
 l_0_11.dummypoint = l_0_12

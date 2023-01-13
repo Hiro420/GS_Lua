@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config2400.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config2400.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -18,9 +18,6 @@ local l_0_8 = {}
 local l_0_9 = {}
 local l_0_10 = {}
 l_0_10.daily = l_0_2.AllDay
-l_0_10.questGlobalVarId = 2103501
-l_0_10.questGlobalVarValue = 0
-l_0_10.questGlobalVarOperate = l_0_5.Equal
 l_0_10.sceneId = 3
 l_0_10.priority = 0
 l_0_9.condition = l_0_10
@@ -37,7 +34,7 @@ l_0_11.freestyle = 1120
 l_0_12 = l_0_1.Sit
 l_0_11.action = l_0_12
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
--- DECOMPILER ERROR at PC46: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC42: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_13 = {daily = l_0_2.AllDay}

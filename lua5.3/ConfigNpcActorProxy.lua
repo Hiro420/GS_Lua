@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\ConfigNpcActorProxy.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\ConfigNpcActorProxy.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -39,9 +39,6 @@ end
 l_0_1.DataInit = function(l_3_0)
   -- function num : 0_2 , upvalues : upval_0
   l_3_0.ID = l_3_0:GetNpcConfigId()
-  if upval_0.NG_HSOD_DEBUG then
-    ((upval_0.util).unrequire)(l_3_0.ConfigPath)
-  end
   local l_3_1 = (upval_0.require)(l_3_0.ConfigPath)
   if l_3_1 ~= false and l_3_1 ~= true then
     l_3_0.ConfigData = l_3_1.Data
@@ -111,14 +108,8 @@ l_0_1.InitBaseConfig = function(l_7_0)
   end
   ;
   ((upval_0.util).end_sample)()
-  if (l_7_0.ConfigData).TitleDataNew ~= nil and ((l_7_0.ConfigData).TitleDataNew).titleDatas ~= nil then
-    (l_7_0.uActor):InitTitleDatas(((l_7_0.ConfigData).TitleDataNew).titleDatas)
-  end
   if (l_7_0.ConfigData).ExplicitNameData ~= nil and ((l_7_0.ConfigData).ExplicitNameData).nameDatas ~= nil then
     (l_7_0.uActor):InitExplicitNameDatas(((l_7_0.ConfigData).ExplicitNameData).nameDatas)
-  end
-  if (l_7_0.ConfigData).NahidaNarratorData ~= nil then
-    (l_7_0.uActor):InitNahidaNarratorData((l_7_0.ConfigData).NahidaNarratorData)
   end
 end
 

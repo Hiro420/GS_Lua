@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4188.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4188.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -15,7 +15,6 @@ local l_0_7 = {}
 l_0_7.NpcId = "4188"
 l_0_7.Alias = "Npc4188"
 local l_0_8 = {}
-l_0_8.refreshDailyActionImmediately = true
 local l_0_9 = {}
 local l_0_10 = {}
 l_0_10.sceneId = 3
@@ -26,26 +25,19 @@ local l_0_12 = {}
 l_0_12._type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition
 l_0_12.subQuestId = 7301822
 l_0_12.questState = l_0_3.Finished
-local l_0_13 = {}
-l_0_13._type_ = (upval_0.LuaVirtualType).NpcActionLevelTagCondition
-l_0_13.levelTag = 38
--- DECOMPILER ERROR at PC36: No list found for R11 , SetList fails
+-- DECOMPILER ERROR at PC30: No list found for R11 , SetList fails
 
 l_0_9.conditionGrp, l_0_10 = l_0_10, {l_0_11}
-l_0_13 = {x = -197.9442, y = 240.5499, z = 3605.465}
-l_0_13 = {x = 0, y = 54.27603, z = 0}
+local l_0_13 = {}
+l_0_13.x = -189.4266
+l_0_13.y = 238.9653
+l_0_13.z = 3608.669
+l_0_13 = {x = 0, y = 44.942, z = 0}
 l_0_12 = {pos = l_0_13, rot = l_0_13}
 l_0_12 = l_0_1.Stand
 l_0_11 = {dummypoint = l_0_12, action = l_0_12}
 l_0_9.actionPoints, l_0_10 = l_0_10, {l_0_11}
-l_0_11 = {sceneId = 3, priority = 1}
-l_0_13 = {_type_ = (upval_0.LuaVirtualType).NpcActionSubQuestCondition, subQuestId = 7321301, questState = l_0_3.UnFinished}
-l_0_12 = {l_0_13}
-l_0_11 = {l_0_12}
-l_0_13 = l_0_1.Hide
-l_0_12 = {action = l_0_13}
-l_0_11 = {l_0_12}
--- DECOMPILER ERROR at PC80: No list found for R8 , SetList fails
+-- DECOMPILER ERROR at PC51: No list found for R8 , SetList fails
 
 l_0_7.DailyScheduleData = l_0_8
 l_0_6.Data = l_0_7

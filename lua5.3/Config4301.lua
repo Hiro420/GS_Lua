@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Config4301.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Config4301.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -24,11 +24,11 @@ l_0_9.condition = l_0_10
 local l_0_11 = {}
 local l_0_12 = {}
 local l_0_13 = {}
-l_0_13.x = -821.4729
-l_0_13.y = 179.8313
-l_0_13.z = 2522.583
+l_0_13.x = -821.3858
+l_0_13.y = 179.7196
+l_0_13.z = 2521.382
 l_0_12.pos = l_0_13
-l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 120.8669, z = 0}
+l_0_12.rot, l_0_13 = l_0_13, {x = 0, y = 205.9412, z = 0}
 l_0_11.dummypoint = l_0_12
 l_0_11.freestyle = 1190
 l_0_12 = l_0_1.Stand
@@ -43,12 +43,6 @@ l_0_11 = {l_0_12}
 l_0_10 = {titleStr = "NPC_TITLE_4301", priority = 0, condList = l_0_11}
 l_0_9 = {l_0_10}
 l_0_7.TitleData, l_0_8 = l_0_8, {titleDatas = l_0_9}
-l_0_11 = 0
-l_0_10 = {l_0_11}
-l_0_11 = {dialogId = 1018430100, duration = 0, intervalMin = 20, intervalMax = 30}
-l_0_10 = {l_0_11}
-l_0_9 = {validQuestIds = l_0_10, priority = 10, dialogDataList = l_0_10}
-l_0_7.NahidaNarratorData, l_0_8 = l_0_8, {l_0_9}
 l_0_6.Data = l_0_7
 return l_0_6
 

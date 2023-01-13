@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73000ShareConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73000ShareConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -98,7 +98,7 @@ l_0_5.pos = "Q7300005_N20600"
 l_0_5.scene_id = 3
 l_0_5.room_id = 0
 l_0_5.data_index = 3
-l_0_4, l_0_3 = {id = 20600, alias = "Npc20600", script = "Actor/Npc/NpcEnkanomiya", pos = "Q7300005_N20600", scene_id = 3, room_id = 0, data_index = 2, bornShoesOffset = 1}, {id = 20601, alias = "Npc20601", script = "Actor/Npc/NpcEnkanomiya", pos = "WQL1_NPCROBOTBACK", scene_id = 3, room_id = 0, data_index = 1}
+l_0_4, l_0_3 = {id = 20600, alias = "Npc20600", script = "Actor/Npc/NpcEnkanomiya", pos = "Q7300005_N20600", scene_id = 3, room_id = 0, data_index = 2}, {id = 20601, alias = "Npc20601", script = "Actor/Npc/NpcEnkanomiya", pos = "WQL1_NPCROBOTBACK", scene_id = 3, room_id = 0, data_index = 1}
 l_0_2 = {l_0_3, l_0_4, l_0_5}
 l_0_1 = {npcs = l_0_2}
 l_0_3 = {id = 20601, alias = "Npc20601", script = "Actor/Npc/NpcEnkanomiya", pos = "WQL1_NPCROBOTBACK", scene_id = 3, room_id = 0, data_index = 1}

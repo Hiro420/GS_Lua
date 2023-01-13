@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73037Trigger_backcall.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73037Trigger_backcall.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -19,16 +19,14 @@ end
 l_0_1.OnPostComponentPrepare = function(l_2_0)
   -- function num : 0_1 , upvalues : upval_0
   (upval_0.print)("OnPostComponentPrepare")
-  local l_2_1, l_2_2 = l_2_0:AddCubeShapeTrigger, l_2_0
-  local l_2_3 = 20
-  local l_2_4 = 5
-  local l_2_5 = 20
-  local l_2_6 = true
-  local l_2_7 = {}
-  l_2_7.x = 0
-  l_2_7.y = 0
-  l_2_7.z = 0
-  l_2_1(l_2_2, l_2_3, l_2_4, l_2_5, l_2_6, l_2_7, l_2_0.TriggerIn, l_2_0.TriggerOut)
+  local l_2_1, l_2_2 = l_2_0:AddComponentTrigger, l_2_0
+  local l_2_3 = 10
+  local l_2_4 = (upval_0.DistType).EULER
+  local l_2_5 = {}
+  l_2_5.x = 0
+  l_2_5.y = 0
+  l_2_5.z = 0
+  l_2_1(l_2_2, l_2_3, l_2_4, l_2_5, l_2_0.TriggerIn, l_2_0.TriggerOut)
 end
 
 l_0_1.TriggerIn = function(l_3_0)

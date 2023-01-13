@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 5d67c74 for Lua 5.3 from https://github.com/viruscamp/luadec
--- Command line: C:\Users\nikur\Documents\3.3.51_lua\MiHoYoBinData\Q73165ClientConfig.luac 
+-- Command line: C:\Users\nikur\Documents\2.8.50_dev_lua\MiHoYoBinData\Q73165ClientConfig.luac 
 
 -- params : ...
 -- function num : 0 , upvalues : upval_0
@@ -9,7 +9,6 @@ l_0_0.ActorAlias = "73165"
 local l_0_1 = {}
 l_0_1.q7316501 = 7316501
 l_0_1.q7316502 = 7316502
-l_0_1.q7316505 = 7316505
 l_0_1.q7316503 = 7316503
 l_0_1.q7316504 = 7316504
 l_0_0.SubIDs = l_0_1
