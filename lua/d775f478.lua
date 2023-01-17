@@ -1,0 +1,39 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
+L0_1 = require
+L1_1 = "Actor/ActorCommon"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Actor/Npc/Config/NpcConfigCommon"
+L0_1 = L0_1(L1_1)
+L1_1 = L0_1.GeneralPattern
+L2_1 = L0_1.DailyCondition
+L3_1 = L0_1.QuestState
+L4_1 = L0_1.ActionPointType
+L5_1 = L0_1.CompareOperation
+L6_1 = {}
+L7_1 = {}
+L7_1.NpcId = "20593"
+L7_1.Alias = "Npc20593"
+L8_1 = {}
+L9_1 = {}
+L10_1 = {}
+L11_1 = 73001
+L12_1 = 73002
+L13_1 = 73003
+L10_1[1] = L11_1
+L10_1[2] = L12_1
+L10_1[3] = L13_1
+L9_1.validQuestIds = L10_1
+L9_1.priority = 30
+L10_1 = {}
+L11_1 = {}
+L11_1.dialogId = 1018205930
+L11_1.duration = 0
+L11_1.intervalMin = 20
+L11_1.intervalMax = 30
+L10_1[1] = L11_1
+L9_1.dialogDataList = L10_1
+L8_1[1] = L9_1
+L7_1.NahidaNarratorData = L8_1
+L6_1.Data = L7_1
+return L6_1
