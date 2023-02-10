@@ -145,6 +145,20 @@ function L8_1(A0_2, A1_2, A2_2, A3_2)
 end
 L1_1.DailyNpcSafeHideSelf = L8_1
 function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7350802"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7350802 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7350802"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7350802 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart7350801"

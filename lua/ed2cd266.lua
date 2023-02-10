@@ -34,7 +34,7 @@ function L7_1(A0_2)
   L2_2 = L1_2
   L1_2 = L1_2.AddCommonPolygonTrigger
   L3_2 = 1
-  L4_2 = "Inazuma_Tanit_fin "
+  L4_2 = "Inazuma_Tanit_fin"
   L5_2 = 1
   L6_2 = false
   L7_2 = A0_2.TriggerIn

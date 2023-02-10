@@ -102,22 +102,37 @@ function L7_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801401 = L7_1
 function L7_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubFailed801401"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.PlayerEnterDungeonPointWithDialogs
-  L4_2 = 2
-  L5_2 = 1175
-  L6_2 = 801401
-  L7_2 = 1
+  L2_2 = L2_2.ShowBlackScreenWithDialogText
+  L4_2 = 0.5
+  L5_2 = 1
+  L6_2 = 0.5
+  function L7_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.PlayerEnterDungeonPointWithDialogs
+    L3_3 = 2
+    L4_3 = 1175
+    L5_3 = 801401
+    L6_3 = 1
+    L7_3 = nil
+    L8_3 = 0
+    L9_3 = nil
+    L10_3 = nil
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+  end
   L8_2 = nil
-  L9_2 = 0
-  L10_2 = nil
-  L11_2 = nil
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubFailed801401 = L7_1
 return L1_1

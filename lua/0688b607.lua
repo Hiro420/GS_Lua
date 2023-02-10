@@ -49,19 +49,38 @@ function L7_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L7_1
 function L7_1(A0_2)
-  local L1_2, L2_2, L3_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
-  L1_2 = actorUtils
-  L1_2 = L1_2.FinishQuestID
-  L2_2 = false
-  L3_2 = 800909
-  L1_2(L2_2, L3_2)
-  L1_2 = L3_1
+  L1_2 = actorMgr
   L2_2 = L1_2
-  L1_2 = L1_2.DestroySelf
-  L1_2(L2_2)
+  L1_2 = L1_2.GetActor
+  L3_2 = "8009"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.ShowBlackScreenWithDialogText
+  L4_2 = 0
+  L5_2 = 1
+  L6_2 = 0.5
+  function L7_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L1_3 = actorUtils
+    L1_3 = L1_3.FinishQuestID
+    L2_3 = false
+    L3_3 = 800909
+    L1_3(L2_3, L3_3)
+  end
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerIn = L7_1
 function L7_1(A0_2)
@@ -72,10 +91,27 @@ function L7_1(A0_2)
 end
 L1_1.PreTriggerIn = L7_1
 function L7_1(A0_2)
-  local L1_2, L2_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L1_2 = print
   L2_2 = "LightUpTriggerIn"
   L1_2(L2_2)
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "8009"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.ShowBlackScreenWithDialogText
+  L4_2 = 0
+  L5_2 = 1
+  L6_2 = 0.5
+  L7_2 = nil
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.LightUpTriggerIn = L7_1
 function L7_1(A0_2)

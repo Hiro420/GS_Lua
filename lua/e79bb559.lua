@@ -64,6 +64,11 @@ function L7_1(A0_2)
   L5_2 = nil
   L6_2 = 40099
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.FinishQuestID
+  L3_2 = false
+  L4_2 = 4009911
+  L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DestroySelf

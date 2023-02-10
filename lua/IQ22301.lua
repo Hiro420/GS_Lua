@@ -541,7 +541,7 @@ function L9_1(A0_2, A1_2)
   L5_2(L6_2)
   L6_2 = A0_2
   L5_2 = A0_2.CreateSpeechBubbleTask
-  L7_2 = 202601
+  L7_2 = 2026
   L8_2 = 223019901
   L9_2 = 5
   L10_2 = true

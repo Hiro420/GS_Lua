@@ -147,6 +147,10 @@ function L9_1(A0_2)
   L1_2["801104"] = L2_2
   L2_2 = A0_2.OnSubFailed801105
   L1_2["801105"] = L2_2
+  L2_2 = A0_2.OnSubFailed801116
+  L1_2["801116"] = L2_2
+  L2_2 = A0_2.OnSubFailed801120
+  L1_2["801120"] = L2_2
   L2_2 = A0_2.OnSubFailed801106
   L1_2["801106"] = L2_2
   L2_2 = A0_2.OnSubFailed801107
@@ -195,65 +199,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnMainCanceled = L9_1
-function L9_1(A0_2)
-  local L1_2, L2_2
-  L1_2 = print
-  L2_2 = "Normalcheck"
-  L1_2(L2_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.CheckDistance
-  L1_2(L2_2)
-end
-L1_1.Normalcheck = L9_1
-function L9_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L1_2 = print
-  L2_2 = "CheckDistance"
-  L1_2(L2_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.GetSubQuestState
-  L3_2 = 801102
-  L1_2 = L1_2(L2_2, L3_2)
-  if L1_2 == 2 then
-    L1_2 = actorUtils
-    L1_2 = L1_2.GetAvatarPos
-    L1_2 = L1_2()
-    L3_2 = A0_2
-    L2_2 = A0_2.GetQuestNpcActor
-    L4_2 = L7_1.Npc13129Data
-    L4_2 = L4_2.alias
-    L2_2 = L2_2(L3_2, L4_2)
-    L4_2 = L2_2
-    L3_2 = L2_2.GetPos
-    L3_2 = L3_2(L4_2)
-    L4_2 = M
-    L4_2 = L4_2.Dist
-    L5_2 = L3_2
-    L6_2 = L1_2
-    L4_2 = L4_2(L5_2, L6_2)
-    if 30 < L4_2 then
-      L6_2 = A0_2
-      L5_2 = A0_2.ShowTextMapWithParam
-      L7_2 = "QUEST_Message_Q1905501"
-      L5_2(L6_2, L7_2)
-    end
-    if 50 < L4_2 then
-      L6_2 = A0_2
-      L5_2 = A0_2.FinishQuestID
-      L7_2 = true
-      L8_2 = 801102
-      L5_2(L6_2, L7_2, L8_2)
-    else
-      L6_2 = A0_2
-      L5_2 = A0_2.CallDelay
-      L7_2 = 1
-      L8_2 = A0_2.Normalcheck
-      L5_2(L6_2, L7_2, L8_2)
-    end
-  end
-end
-L1_1.CheckDistance = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -280,6 +225,65 @@ function L9_1(A0_2, A1_2)
   end
 end
 L1_1.InvokeOnInteraction = L9_1
+function L9_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = print
+  L2_2 = "CheckDistance"
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2.GetSubQuestState
+  L3_2 = 801102
+  L1_2 = L1_2(L2_2, L3_2)
+  if L1_2 == 2 then
+    L1_2 = actorUtils
+    L1_2 = L1_2.GetAvatarPos
+    L1_2 = L1_2()
+    L3_2 = A0_2
+    L2_2 = A0_2.GetQuestNpcActor
+    L4_2 = L7_1.Npc13129Data
+    L4_2 = L4_2.alias
+    L2_2 = L2_2(L3_2, L4_2)
+    L4_2 = L2_2
+    L3_2 = L2_2.GetPos
+    L3_2 = L3_2(L4_2)
+    L4_2 = M
+    L4_2 = L4_2.Dist
+    L5_2 = L3_2
+    L6_2 = L1_2
+    L4_2 = L4_2(L5_2, L6_2)
+    if 65 < L4_2 then
+      L6_2 = A0_2
+      L5_2 = A0_2.ShowTextMapWithParam
+      L7_2 = "QUEST_Message_Q1905501"
+      L5_2(L6_2, L7_2)
+    end
+    if 75 < L4_2 then
+      L6_2 = A0_2
+      L5_2 = A0_2.FinishQuestID
+      L7_2 = true
+      L8_2 = 801102
+      L5_2(L6_2, L7_2, L8_2)
+    else
+      L6_2 = A0_2
+      L5_2 = A0_2.CallDelay
+      L7_2 = 1
+      L8_2 = A0_2.Normalcheck
+      L5_2(L6_2, L7_2, L8_2)
+    end
+  end
+end
+L1_1.CheckDistance = L9_1
+function L9_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = print
+  L2_2 = "Normalcheck"
+  L1_2(L2_2)
+  L1_2 = L3_1
+  L2_2 = L1_2
+  L1_2 = L1_2.CheckDistance
+  L1_2(L2_2)
+end
+L1_1.Normalcheck = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
@@ -436,7 +440,7 @@ function L9_1(A0_2, A1_2)
     L2_3 = L1_3.WalkToRouteTask
     L4_3 = L8_1.RoutePointsData
     function L5_3(A0_4, A1_4)
-      local L2_4, L3_4, L4_4, L5_4, L6_4
+      local L2_4, L3_4, L4_4, L5_4, L6_4, L7_4, L8_4
       L2_4 = L3_1
       L3_4 = L2_4
       L2_4 = L2_4.GetQuestNpcActor
@@ -453,26 +457,18 @@ function L9_1(A0_2, A1_2)
       L3_4(L4_4, L5_4, L6_4)
       L3_4 = L3_1
       L4_4 = L3_4
-      L3_4 = L3_4.CallDelay
-      L5_4 = 2
-      function L6_4(A0_5)
-        local L1_5, L2_5, L3_5, L4_5, L5_5, L6_5
-        L1_5 = L3_1
-        L2_5 = L1_5
-        L1_5 = L1_5.FinishQuestID
-        L3_5 = false
-        L4_5 = 801102
-        L1_5(L2_5, L3_5, L4_5)
-        L1_5 = L3_1
-        L2_5 = L1_5
-        L1_5 = L1_5.NarratorOnlyTaskByDataSpecifyingResumeReminder
-        L3_5 = L8_1.Narrator_801101
-        L4_5 = nil
-        L5_5 = 8011
-        L6_5 = 0
-        L1_5(L2_5, L3_5, L4_5, L5_5, L6_5)
-      end
+      L3_4 = L3_4.FinishQuestID
+      L5_4 = false
+      L6_4 = 801102
       L3_4(L4_4, L5_4, L6_4)
+      L3_4 = L3_1
+      L4_4 = L3_4
+      L3_4 = L3_4.NarratorOnlyTaskByDataSpecifyingResumeReminder
+      L5_4 = L8_1.Narrator_801101
+      L6_4 = nil
+      L7_4 = 8011
+      L8_4 = 0
+      L3_4(L4_4, L5_4, L6_4, L7_4, L8_4)
     end
     function L6_3(A0_4, A1_4)
       local L2_4, L3_4, L4_4
@@ -513,6 +509,10 @@ function L9_1(A0_2, A1_2)
       L3_4(L4_4, L5_4, L6_4)
     end
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.CheckDistance
+    L2_3(L3_3)
   end
   L2_2(L3_2, L4_2)
 end
@@ -620,7 +620,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801104 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed801104"
   L2_2(L3_2)
@@ -631,6 +631,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 20178
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger2"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFailed801104 = L9_1
 function L9_1(A0_2, A1_2)
@@ -701,6 +708,20 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801116 = L9_1
 function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFailed801116"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger7"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFailed801116 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart801117"
@@ -761,6 +782,20 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801120 = L9_1
 function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFailed801120"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger8"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFailed801120 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart801122"
@@ -800,20 +835,14 @@ function L9_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q8011Trigger3"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20178
-  L11_2 = "Q801106_N13072"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20178
-  L12_2 = "Q801106_N13072"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
+  L8_2 = {}
+  L8_2.x = 322.867
+  L8_2.y = 264.887
+  L8_2.z = 347.344
+  L9_2 = {}
+  L9_2.x = 0.0
+  L9_2.y = 0.0
+  L9_2.z = 0.0
   L10_2 = true
   L11_2 = false
   L12_2 = 20178
@@ -835,7 +864,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801106 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed801106"
   L2_2(L3_2)
@@ -846,6 +875,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 20178
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger3"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFailed801106 = L9_1
 function L9_1(A0_2, A1_2)
@@ -944,7 +980,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801108 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed801108"
   L2_2(L3_2)
@@ -955,6 +991,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 20178
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger4"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFailed801108 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1005,40 +1048,33 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart801110 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubFinish801110"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.LevelLoadFinishSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.PlayerEnterDungeonPointWithDialogs
-    L3_3 = 2
-    L4_3 = 1177
-    L5_3 = 801110
-    L6_3 = 1
-    L7_3 = L8_1.DialogsId
-    L8_3 = 10
-    L9_3 = nil
-    L10_3 = nil
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc13072Data
-    L3_3 = L3_3.alias
-    L4_3 = 20178
-    L1_3(L2_3, L3_3, L4_3)
-  end
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.PlayerEnterDungeonPointWithDialogs
+  L4_2 = 11
+  L5_2 = 1177
+  L6_2 = 801110
+  L7_2 = 1
+  L8_2 = L8_1.DialogsId
+  L9_2 = 10
+  L10_2 = nil
+  L11_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyQuestNpcActor
+  L4_2 = L7_1.Npc13072Data
+  L4_2 = L4_2.alias
+  L5_2 = 20178
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish801110 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed801110"
   L2_2(L3_2)
@@ -1049,6 +1085,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 20178
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8011Trigger5"
+  L5_2 = 20178
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFailed801110 = L9_1
 function L9_1(A0_2, A1_2)

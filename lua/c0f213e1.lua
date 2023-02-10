@@ -32,7 +32,7 @@ function L6_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 5
+  L3_2 = 55
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}

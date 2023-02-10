@@ -33,7 +33,7 @@ function L7_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 20
+  L3_2 = 26.03869
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
@@ -59,8 +59,19 @@ function L7_1(A0_2)
   L3_2 = "13025"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.NarratorOnlyTaskByData
-  L4_2 = L6_1.Narrator_1302501
+  L2_2 = L1_2.AfterMainPageActiveSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.GetActor
+    L3_3 = "13025"
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.NarratorOnlyTaskByData
+    L4_3 = L6_1.Narrator_1302501
+    L2_3(L3_3, L4_3)
+  end
   L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2

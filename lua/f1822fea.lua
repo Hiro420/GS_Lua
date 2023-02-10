@@ -854,12 +854,15 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.CallDelay
   L4_2 = 2
   function L5_2(A0_3)
-    local L1_3, L2_3, L3_3
+    local L1_3, L2_3, L3_3, L4_3
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.NarratorOnlyTaskByData
     L3_3 = L8_1.Narrator_7328708
-    L1_3(L2_3, L3_3)
+    function L4_3(A0_4)
+      local L1_4
+    end
+    L1_3(L2_3, L3_3, L4_3)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
@@ -1059,43 +1062,51 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 3
+  L2_2 = L2_2.CallDelay
+  L4_2 = 1
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 3
+    L1_3(L2_3, L3_3, L4_3)
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateActorWithPos
+    L3_3 = "Q7328715sTrigger"
+    L4_3 = "Actor/Gadget/Q7328715sTrigger"
+    L5_3 = 70900002
+    L6_3 = 0
+    L7_3 = sceneData
+    L8_3 = L7_3
+    L7_3 = L7_3.GetDummyPoint
+    L9_3 = 3
+    L10_3 = "Q7328715_guide"
+    L7_3 = L7_3(L8_3, L9_3, L10_3)
+    L7_3 = L7_3.pos
+    L8_3 = sceneData
+    L9_3 = L8_3
+    L8_3 = L8_3.GetDummyPoint
+    L10_3 = 3
+    L11_3 = "Q7328715_guide"
+    L8_3 = L8_3(L9_3, L10_3, L11_3)
+    L8_3 = L8_3.rot
+    L9_3 = true
+    L10_3 = false
+    L11_3 = 3
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NpcCreate
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc4296Data
+    L4_3 = L4_3.id
+    L5_3 = 1
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NpcCreate
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc4296Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q7328715sTrigger"
-  L5_2 = "Actor/Gadget/Q7328715sTrigger"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q7328715_guide"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q7328715_guide"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubFinish7328715 = L9_1
 function L9_1(A0_2, A1_2)

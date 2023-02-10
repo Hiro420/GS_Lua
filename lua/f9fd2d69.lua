@@ -78,6 +78,8 @@ function L8_1(A0_2)
   L1_2["801013"] = L2_2
   L2_2 = A0_2.OnSubStart801026
   L1_2["801026"] = L2_2
+  L2_2 = A0_2.OnSubStart801032
+  L1_2["801032"] = L2_2
   L2_2 = A0_2.OnSubStart801014
   L1_2["801014"] = L2_2
   L2_2 = A0_2.OnSubStart801031
@@ -146,6 +148,8 @@ function L8_1(A0_2)
   L1_2["801013"] = L2_2
   L2_2 = A0_2.OnSubFinish801026
   L1_2["801026"] = L2_2
+  L2_2 = A0_2.OnSubFinish801032
+  L1_2["801032"] = L2_2
   L2_2 = A0_2.OnSubFinish801014
   L1_2["801014"] = L2_2
   L2_2 = A0_2.OnSubFinish801031
@@ -416,7 +420,7 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ActionSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.CreateQuestNpc
@@ -441,31 +445,6 @@ function L8_1(A0_2, A1_2)
     L9_3 = false
     L10_3 = false
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
-    L2_3 = actorMgr
-    L3_3 = L2_3
-    L2_3 = L2_3.CreateActorWithPos
-    L4_3 = "Q8010Trigger10"
-    L5_3 = "Actor/Gadget/Q8010Trigger10"
-    L6_3 = 70900002
-    L7_3 = 0
-    L8_3 = sceneData
-    L9_3 = L8_3
-    L8_3 = L8_3.GetDummyPoint
-    L10_3 = 20180
-    L11_3 = "Q801004_N13072"
-    L8_3 = L8_3(L9_3, L10_3, L11_3)
-    L8_3 = L8_3.pos
-    L9_3 = sceneData
-    L10_3 = L9_3
-    L9_3 = L9_3.GetDummyPoint
-    L11_3 = 20180
-    L12_3 = "Q801004_N13072"
-    L9_3 = L9_3(L10_3, L11_3, L12_3)
-    L9_3 = L9_3.rot
-    L10_3 = true
-    L11_3 = false
-    L12_3 = 20180
-    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
   L2_2(L3_2, L4_2)
 end
@@ -1187,6 +1166,30 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801026 = L8_1
 function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubStart801032"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13072Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+end
+L1_1.OnSubStart801032 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish801032"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish801032 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart801014"
@@ -1282,6 +1285,10 @@ function L8_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
 end
 L1_1.OnSubStart801015 = L8_1
 function L8_1(A0_2, A1_2)
@@ -1359,6 +1366,10 @@ function L8_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
   L3_2 = actorMgr
   L4_2 = L3_2
   L3_2 = L3_2.CreateActorWithPos
@@ -1387,17 +1398,27 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubStart801016 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish801016"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.DestroyQuestNpcActor
+  L2_2 = L2_2.GetQuestNpcActor
   L4_2 = L7_1.Npc13072Data
   L4_2 = L4_2.alias
-  L5_2 = 20180
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = false
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyQuestNpcActor
+  L5_2 = L7_1.Npc13072Data
+  L5_2 = L5_2.alias
+  L6_2 = 20180
+  L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish801016 = L8_1
 function L8_1(A0_2, A1_2)

@@ -64,11 +64,7 @@ function L9_1(A0_2)
   L1_2(L2_2)
   L1_2 = globalActor
   L2_2 = L1_2
-  L1_2 = L1_2.LeaveWeather
-  L1_2(L2_2)
-  L1_2 = globalActor
-  L2_2 = L1_2
-  L1_2 = L1_2.LeaveWeather
+  L1_2 = L1_2.LeaveAllWeather
   L1_2(L2_2)
 end
 L1_1.TriggerOut = L9_1

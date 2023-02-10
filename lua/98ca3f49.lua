@@ -46,4 +46,6 @@ L1_1 = "dummy_points"
 L0_1[1] = L1_1
 dummy_points = L0_1
 L0_1 = {}
+L1_1 = "routes"
+L0_1[1] = L1_1
 routes_config = L0_1

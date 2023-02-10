@@ -41,6 +41,8 @@ function L9_1(A0_2)
   L1_2["801221"] = L2_2
   L2_2 = A0_2.OnSubStart801214
   L1_2["801214"] = L2_2
+  L2_2 = A0_2.OnSubStart801222
+  L1_2["801222"] = L2_2
   L2_2 = A0_2.OnSubStart801201
   L1_2["801201"] = L2_2
   L2_2 = A0_2.OnSubStart801224
@@ -63,6 +65,18 @@ function L9_1(A0_2)
   L1_2["801217"] = L2_2
   L2_2 = A0_2.OnSubStart801207
   L1_2["801207"] = L2_2
+  L2_2 = A0_2.OnSubStart801220
+  L1_2["801220"] = L2_2
+  L2_2 = A0_2.OnSubStart801210
+  L1_2["801210"] = L2_2
+  L2_2 = A0_2.OnSubStart801223
+  L1_2["801223"] = L2_2
+  L2_2 = A0_2.OnSubStart801211
+  L1_2["801211"] = L2_2
+  L2_2 = A0_2.OnSubStart801213
+  L1_2["801213"] = L2_2
+  L2_2 = A0_2.OnSubStart801212
+  L1_2["801212"] = L2_2
   L2_2 = A0_2.OnSubStart801218
   L1_2["801218"] = L2_2
   L2_2 = A0_2.OnSubStart801208
@@ -71,20 +85,6 @@ function L9_1(A0_2)
   L1_2["801219"] = L2_2
   L2_2 = A0_2.OnSubStart801209
   L1_2["801209"] = L2_2
-  L2_2 = A0_2.OnSubStart801220
-  L1_2["801220"] = L2_2
-  L2_2 = A0_2.OnSubStart801210
-  L1_2["801210"] = L2_2
-  L2_2 = A0_2.OnSubStart801211
-  L1_2["801211"] = L2_2
-  L2_2 = A0_2.OnSubStart801213
-  L1_2["801213"] = L2_2
-  L2_2 = A0_2.OnSubStart801212
-  L1_2["801212"] = L2_2
-  L2_2 = A0_2.OnSubStart801222
-  L1_2["801222"] = L2_2
-  L2_2 = A0_2.OnSubStart801223
-  L1_2["801223"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -95,6 +95,8 @@ function L9_1(A0_2)
   L1_2["801221"] = L2_2
   L2_2 = A0_2.OnSubFinish801214
   L1_2["801214"] = L2_2
+  L2_2 = A0_2.OnSubFinish801222
+  L1_2["801222"] = L2_2
   L2_2 = A0_2.OnSubFinish801201
   L1_2["801201"] = L2_2
   L2_2 = A0_2.OnSubFinish801224
@@ -117,6 +119,18 @@ function L9_1(A0_2)
   L1_2["801217"] = L2_2
   L2_2 = A0_2.OnSubFinish801207
   L1_2["801207"] = L2_2
+  L2_2 = A0_2.OnSubFinish801220
+  L1_2["801220"] = L2_2
+  L2_2 = A0_2.OnSubFinish801210
+  L1_2["801210"] = L2_2
+  L2_2 = A0_2.OnSubFinish801223
+  L1_2["801223"] = L2_2
+  L2_2 = A0_2.OnSubFinish801211
+  L1_2["801211"] = L2_2
+  L2_2 = A0_2.OnSubFinish801213
+  L1_2["801213"] = L2_2
+  L2_2 = A0_2.OnSubFinish801212
+  L1_2["801212"] = L2_2
   L2_2 = A0_2.OnSubFinish801218
   L1_2["801218"] = L2_2
   L2_2 = A0_2.OnSubFinish801208
@@ -125,20 +139,6 @@ function L9_1(A0_2)
   L1_2["801219"] = L2_2
   L2_2 = A0_2.OnSubFinish801209
   L1_2["801209"] = L2_2
-  L2_2 = A0_2.OnSubFinish801220
-  L1_2["801220"] = L2_2
-  L2_2 = A0_2.OnSubFinish801210
-  L1_2["801210"] = L2_2
-  L2_2 = A0_2.OnSubFinish801211
-  L1_2["801211"] = L2_2
-  L2_2 = A0_2.OnSubFinish801213
-  L1_2["801213"] = L2_2
-  L2_2 = A0_2.OnSubFinish801212
-  L1_2["801212"] = L2_2
-  L2_2 = A0_2.OnSubFinish801222
-  L1_2["801222"] = L2_2
-  L2_2 = A0_2.OnSubFinish801223
-  L1_2["801223"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -157,12 +157,12 @@ function L9_1(A0_2)
   L1_2["801206"] = L2_2
   L2_2 = A0_2.OnSubFailed801207
   L1_2["801207"] = L2_2
+  L2_2 = A0_2.OnSubFailed801210
+  L1_2["801210"] = L2_2
   L2_2 = A0_2.OnSubFailed801208
   L1_2["801208"] = L2_2
   L2_2 = A0_2.OnSubFailed801209
   L1_2["801209"] = L2_2
-  L2_2 = A0_2.OnSubFailed801210
-  L1_2["801210"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
 L1_1.OnSubFailedHandlerBuild = L9_1
@@ -244,19 +244,91 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish801221 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart801214"
   L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q8012Trigger12"
+  L5_2 = "Actor/Gadget/Q8012Trigger12"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = {}
+  L8_2.x = -859.774
+  L8_2.y = 159.0
+  L8_2.z = 2214.073
+  L9_2 = {}
+  L9_2.x = 0.0
+  L9_2.y = 0.0
+  L9_2.z = 0.0
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q8012Trigger13"
+  L5_2 = "Actor/Gadget/Q8012Trigger13"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = sceneData
+  L9_2 = L8_2
+  L8_2 = L8_2.GetDummyPoint
+  L10_2 = 3
+  L11_2 = "Q801113_guide"
+  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_2.pos
+  L9_2 = sceneData
+  L10_2 = L9_2
+  L9_2 = L9_2.GetDummyPoint
+  L11_2 = 3
+  L12_2 = "Q801113_guide"
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart801214 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish801214"
   L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8012Trigger12"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8012Trigger13"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish801214 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart801222"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart801222 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish801222"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish801222 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -269,20 +341,14 @@ function L9_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q8012Trigger11"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20180
-  L11_2 = "Q801017_N13129"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20180
-  L12_2 = "Q801017_N13129"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
+  L8_2 = {}
+  L8_2.x = -859.774
+  L8_2.y = 159.0
+  L8_2.z = 2214.073
+  L9_2 = {}
+  L9_2.x = 0.0
+  L9_2.y = 0.0
+  L9_2.z = 0.0
   L10_2 = true
   L11_2 = false
   L12_2 = 20180
@@ -371,40 +437,40 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart801203 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubFinish801203"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.LevelLoadFinishSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.PlayerEnterDungeonPointWithDialogs
-    L3_3 = 1
-    L4_3 = 1177
-    L5_3 = 801203
-    L6_3 = 1
-    L7_3 = L8_1.DialogsId
-    L8_3 = 10
-    L9_3 = nil
-    L10_3 = nil
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc13076Data
-    L3_3 = L3_3.alias
-    L4_3 = 20180
-    L1_3(L2_3, L3_3, L4_3)
-  end
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.PlayerEnterDungeonPointWithDialogs
+  L4_2 = 4
+  L5_2 = 1177
+  L6_2 = 801203
+  L7_2 = 1
+  L8_2 = L8_1.DialogsId
+  L9_2 = 10
+  L10_2 = nil
+  L11_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyQuestNpcActor
+  L4_2 = L7_1.Npc13076Data
+  L4_2 = L4_2.alias
+  L5_2 = 20180
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyQuestNpcActor
+  L4_2 = L7_1.Npc13072Data
+  L4_2 = L4_2.alias
+  L5_2 = 20181
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish801203 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed801203"
   L2_2(L3_2)
@@ -415,6 +481,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 20180
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q8012Trigger1"
+  L5_2 = 20181
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFailed801203 = L9_1
 function L9_1(A0_2, A1_2)
@@ -858,228 +931,6 @@ L1_1.OnSubFailed801207 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
-  L3_2 = "OnSubStart801218"
-  L2_2(L3_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q8012Trigger8"
-  L5_2 = "Actor/Gadget/Q8012Trigger8"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20180
-  L11_2 = "Q801003_N13072"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20180
-  L12_2 = "Q801003_N13072"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20180
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-end
-L1_1.OnSubStart801218 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish801218"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish801218 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = print
-  L3_2 = "OnSubStart801208"
-  L2_2(L3_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q8012Trigger10"
-  L5_2 = "Actor/Gadget/Q8012Trigger10"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20180
-  L11_2 = "Q801207_N13078"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20180
-  L12_2 = "Q801207_N13078"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20180
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateLocalGadget
-  L4_2 = 70380342
-  L5_2 = "4"
-  L6_2 = {}
-  L6_2.x = -699.305
-  L6_2.y = 233.422
-  L6_2.z = 2229.999
-  L7_2 = {}
-  L7_2.x = 85.417
-  L7_2.y = -46.582
-  L7_2.z = 86.052
-  L8_2 = 20180
-  L9_2 = nil
-  L10_2 = nil
-  L11_2 = 0
-  L12_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-end
-L1_1.OnSubStart801208 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish801208"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish801208 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed801208"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed801208 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = print
-  L3_2 = "OnSubStart801219"
-  L2_2(L3_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q8012Trigger8"
-  L5_2 = "Actor/Gadget/Q8012Trigger8"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20180
-  L11_2 = "Q801003_N13072"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20180
-  L12_2 = "Q801003_N13072"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20180
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-end
-L1_1.OnSubStart801219 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish801219"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish801219 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = print
-  L3_2 = "OnSubStart801209"
-  L2_2(L3_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q8012Trigger3"
-  L5_2 = "Actor/Gadget/Q8012Trigger3"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 20180
-  L11_2 = "Q801207_N13078"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
-  L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 20180
-  L12_2 = "Q801207_N13078"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20180
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateLocalGadget
-  L4_2 = 70380342
-  L5_2 = "4"
-  L6_2 = {}
-  L6_2.x = -699.305
-  L6_2.y = 233.422
-  L6_2.z = 2229.999
-  L7_2 = {}
-  L7_2.x = 85.417
-  L7_2.y = -46.582
-  L7_2.z = 86.052
-  L8_2 = 20180
-  L9_2 = nil
-  L10_2 = nil
-  L11_2 = 0
-  L12_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-end
-L1_1.OnSubStart801209 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = print
-  L3_2 = "OnSubFinish801209"
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc13078Data
-  L4_2 = L4_2.alias
-  L5_2 = 20180
-  L2_2(L3_2, L4_2, L5_2)
-end
-L1_1.OnSubFinish801209 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
-  L2_2 = print
-  L3_2 = "OnSubFailed801209"
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc13078Data
-  L4_2 = L4_2.alias
-  L5_2 = 20180
-  L2_2(L3_2, L4_2, L5_2)
-end
-L1_1.OnSubFailed801209 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = print
   L3_2 = "OnSubStart801220"
   L2_2(L3_2)
   L2_2 = actorMgr
@@ -1231,6 +1082,45 @@ L1_1.OnSubFailed801210 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
+  L3_2 = "OnSubStart801223"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q8012Trigger14"
+  L5_2 = "Actor/Gadget/Q8012Trigger14"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = sceneData
+  L9_2 = L8_2
+  L8_2 = L8_2.GetDummyPoint
+  L10_2 = 20180
+  L11_2 = "Q801003_N13072"
+  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_2.pos
+  L9_2 = sceneData
+  L10_2 = L9_2
+  L9_2 = L9_2.GetDummyPoint
+  L11_2 = 20180
+  L12_2 = "Q801003_N13072"
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 20180
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.OnSubStart801223 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish801223"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish801223 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
   L3_2 = "OnSubStart801211"
   L2_2(L3_2)
   L2_2 = actorMgr
@@ -1363,29 +1253,71 @@ L1_1.OnSubFinish801212 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubStart801222"
+  L3_2 = "OnSubStart801218"
   L2_2(L3_2)
 end
-L1_1.OnSubStart801222 = L9_1
+L1_1.OnSubStart801218 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFinish801222"
+  L3_2 = "OnSubFinish801218"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish801222 = L9_1
+L1_1.OnSubFinish801218 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubStart801223"
+  L3_2 = "OnSubStart801208"
   L2_2(L3_2)
 end
-L1_1.OnSubStart801223 = L9_1
+L1_1.OnSubStart801208 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFinish801223"
+  L3_2 = "OnSubFinish801208"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish801223 = L9_1
+L1_1.OnSubFinish801208 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFailed801208"
+  L2_2(L3_2)
+end
+L1_1.OnSubFailed801208 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart801219"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart801219 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish801219"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish801219 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart801209"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart801209 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish801209"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish801209 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFailed801209"
+  L2_2(L3_2)
+end
+L1_1.OnSubFailed801209 = L9_1
 return L1_1

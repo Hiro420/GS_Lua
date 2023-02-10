@@ -279,7 +279,7 @@ function L9_1(A0_2, A1_2)
   L8_2 = nil
   L9_2 = true
   L10_2 = true
-  L11_2 = false
+  L11_2 = true
   L12_2 = true
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
@@ -547,6 +547,14 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q1302504Trigger"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.StopNarrator
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish1302504 = L9_1
 function L9_1(A0_2, A1_2)
@@ -559,6 +567,14 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q1302504Trigger"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.StopNarrator
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFailed1302504 = L9_1
 function L9_1(A0_2, A1_2)

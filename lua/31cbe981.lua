@@ -67,7 +67,7 @@ function L7_1(A0_2)
 end
 L1_1.PreTriggerIn = L7_1
 function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
   L2_2 = "LightUpTriggerIn"
   L1_2(L2_2)
@@ -77,10 +77,22 @@ function L7_1(A0_2)
   L3_2 = "40098"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.RequestInteraction
-  L4_2 = L5_1.Npc1051Data
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
+  L2_2 = L1_2.CreateQuestNpcById
+  L4_2 = 4009808
+  L5_2 = L5_1.Npc1051Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = "40098"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.RequestInteraction
+  L5_2 = L5_1.Npc1051Data
+  L5_2 = L5_2.alias
+  L3_2(L4_2, L5_2)
 end
 L1_1.LightUpTriggerIn = L7_1
 function L7_1(A0_2)

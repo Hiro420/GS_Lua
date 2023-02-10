@@ -148,11 +148,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = globalActor
   L3_2 = L2_2
-  L2_2 = L2_2.LeaveWeather
-  L2_2(L3_2)
-  L2_2 = globalActor
-  L3_2 = L2_2
-  L2_2 = L2_2.LeaveWeather
+  L2_2 = L2_2.LeaveAllWeather
   L2_2(L3_2)
   L2_2 = actorMgr
   L3_2 = L2_2
@@ -281,6 +277,10 @@ function L9_1(A0_2, A1_2)
     L4_2 = "BigWorld/Weather_Storm"
     L2_2(L3_2, L4_2)
   elseif A1_2 == 2 then
+    L2_2 = globalActor
+    L3_2 = L2_2
+    L2_2 = L2_2.LeaveAllWeather
+    L2_2(L3_2)
   elseif A1_2 == 3 then
   end
 end
@@ -292,7 +292,7 @@ function L9_1(A0_2)
   L1_2(L2_2)
   L1_2 = globalActor
   L2_2 = L1_2
-  L1_2 = L1_2.LeaveWeather
+  L1_2 = L1_2.LeaveAllWeather
   L1_2(L2_2)
   L2_2 = A0_2
   L1_2 = A0_2.CallDelay
@@ -633,7 +633,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = globalActor
   L3_2 = L2_2
-  L2_2 = L2_2.LeaveWeather
+  L2_2 = L2_2.LeaveAllWeather
   L2_2(L3_2)
 end
 L1_1.OnSubFailed1904307 = L9_1

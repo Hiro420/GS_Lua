@@ -1025,13 +1025,6 @@ function L8_1(A0_2, A1_2)
     L12_3 = false
     L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
     L6_3 = A0_3
-    L5_3 = A0_3.CreateQuestNpc
-    L7_3 = A1_2
-    L8_3 = L6_1.Npc3044Data
-    L8_3 = L8_3.id
-    L9_3 = 0
-    L5_3(L6_3, L7_3, L8_3, L9_3)
-    L6_3 = A0_3
     L5_3 = A0_3.NotifyTo
     L7_3 = L6_1.Npc3042Data
     L7_3 = L7_3.alias
@@ -1204,6 +1197,13 @@ function L8_1(A0_2, A1_2)
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.Npc3028Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc3044Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -1543,6 +1543,30 @@ function L8_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubFailed1203413"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearNarratorTask
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.StopNarrator
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.DestroyQuestNpcActor
+  L4_2 = L6_1.Npc3044Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.DestroyQuestNpcActor
+  L4_2 = L6_1.Npc3028Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.DestroyQuestNpcActor
+  L4_2 = L6_1.Npc3027Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.ExitTailMode
   L2_2(L3_2)

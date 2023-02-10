@@ -53,11 +53,10 @@ function L7_1(A0_2)
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
-  L1_2 = L3_1
+  L1_2 = actorMgr
   L2_2 = L1_2
-  L1_2 = L1_2.GetQuestNpcActor
-  L3_2 = L5_1.Npc13072Data
-  L3_2 = L3_2.alias
+  L1_2 = L1_2.GetActor
+  L3_2 = "8012"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
   L2_2 = L1_2.NarratorOnlyTaskByDataSpecifyingResumeReminder

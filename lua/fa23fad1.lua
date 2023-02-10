@@ -150,6 +150,13 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc4342Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.LightNotifyTo
   L4_2 = L7_1.Npc4081Data
   L4_2 = L4_2.alias
@@ -160,6 +167,14 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.LightNotifyTo
   L4_2 = L7_1.Npc4082Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc4342Data
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
@@ -189,13 +204,6 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
   L4_2 = "Q1917005Trigger"
-  L5_2 = 3
-  L6_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroyEntityActor
-  L4_2 = "Q1917002N1050Trigger"
   L5_2 = 3
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -242,6 +250,14 @@ function L8_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubStart1917001"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc4342Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos
@@ -290,6 +306,30 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1
   L7_2 = 20
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc4081Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc4082Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc4342Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.RequestCoopInteractionFromSubStartPoint
@@ -347,6 +387,14 @@ function L8_1(A0_2, A1_2)
   L4_2 = L7_1.Npc4082Data
   L4_2 = L4_2.alias
   L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc4342Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr

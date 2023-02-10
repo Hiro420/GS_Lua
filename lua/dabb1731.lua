@@ -146,19 +146,10 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7052902 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7052902"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc30046Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.ClearCheckPlayerDistTask
-  L3_2(L4_2)
 end
 L1_1.OnSubFinish7052902 = L8_1
 return L1_1

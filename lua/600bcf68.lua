@@ -111,7 +111,7 @@ function L8_1(A0_2, A1_2, A2_2)
     local L1_3, L2_3, L3_3, L4_3
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.SafeDestroyQuestNpc
+    L1_3 = L1_3.DestroyQuestNpcActor
     L3_3 = A2_2
     L4_3 = A1_2
     L1_3(L2_3, L3_3, L4_3)

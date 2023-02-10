@@ -110,7 +110,7 @@ function L7_1(A0_2)
   L4_2 = L5_1.PaimonData
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= nil then
+  if L2_2 ~= nil and L2_2 ~= 0 then
     L4_2 = L2_2
     L3_2 = L2_2.DestroyWithDisappear
     L5_2 = false

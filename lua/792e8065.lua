@@ -785,16 +785,9 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7328110 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish7328110"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish7328110 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
-  L3_2 = "OnSubStart7328134"
+  L3_2 = "OnSubFinish7328110"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -802,6 +795,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = L7_1.Npc20842Data
   L4_2 = L4_2.alias
   L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish7328110 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7328134"
+  L2_2(L3_2)
 end
 L1_1.OnSubStart7328134 = L9_1
 function L9_1(A0_2, A1_2)

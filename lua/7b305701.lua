@@ -61,6 +61,8 @@ function L9_1(A0_2)
   L1_2["80311"] = L2_2
   L2_2 = A0_2.OnSubStart80312
   L1_2["80312"] = L2_2
+  L2_2 = A0_2.OnSubStart80313
+  L1_2["80313"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -91,6 +93,8 @@ function L9_1(A0_2)
   L1_2["80311"] = L2_2
   L2_2 = A0_2.OnSubFinish80312
   L1_2["80312"] = L2_2
+  L2_2 = A0_2.OnSubFinish80313
+  L1_2["80313"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -387,25 +391,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateAvatarAttachLocalGadget
-  L4_2 = 10000078
-  L5_2 = 71700445
-  L6_2 = "1"
-  L7_2 = "WeaponR"
-  L8_2 = {}
-  L8_2.x = 0.0
-  L8_2.y = 0.0
-  L8_2.z = 0.0
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 0.0
-  L9_2.z = 0.0
-  L10_2 = nil
-  L11_2 = nil
-  L12_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
   L2_2 = L2_2.CreateNpcAttachLocalGadget
   L4_2 = 1053
   L5_2 = 803
@@ -444,25 +429,6 @@ function L9_1(A0_2, A1_2)
   L12_2 = nil
   L13_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateHeroAvatarAttachLocalGadget
-  L4_2 = 10000007
-  L5_2 = 71700445
-  L6_2 = "3"
-  L7_2 = "WeaponR"
-  L8_2 = {}
-  L8_2.x = 0.0
-  L8_2.y = 0.0
-  L8_2.z = 0.0
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 0.0
-  L9_2.z = 0.0
-  L10_2 = nil
-  L11_2 = nil
-  L12_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
@@ -541,4 +507,18 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80312 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80313"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80313 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80313"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80313 = L9_1
 return L1_1

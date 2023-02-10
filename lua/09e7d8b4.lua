@@ -47,12 +47,16 @@ function L9_1(A0_2)
   L1_2["4009903"] = L2_2
   L2_2 = A0_2.OnSubStart4009904
   L1_2["4009904"] = L2_2
+  L2_2 = A0_2.OnSubStart4009911
+  L1_2["4009911"] = L2_2
   L2_2 = A0_2.OnSubStart4009909
   L1_2["4009909"] = L2_2
   L2_2 = A0_2.OnSubStart4009905
   L1_2["4009905"] = L2_2
   L2_2 = A0_2.OnSubStart4009906
   L1_2["4009906"] = L2_2
+  L2_2 = A0_2.OnSubStart4009912
+  L1_2["4009912"] = L2_2
   L2_2 = A0_2.OnSubStart4009907
   L1_2["4009907"] = L2_2
   L2_2 = A0_2.OnSubStart4009908
@@ -73,12 +77,16 @@ function L9_1(A0_2)
   L1_2["4009903"] = L2_2
   L2_2 = A0_2.OnSubFinish4009904
   L1_2["4009904"] = L2_2
+  L2_2 = A0_2.OnSubFinish4009911
+  L1_2["4009911"] = L2_2
   L2_2 = A0_2.OnSubFinish4009909
   L1_2["4009909"] = L2_2
   L2_2 = A0_2.OnSubFinish4009905
   L1_2["4009905"] = L2_2
   L2_2 = A0_2.OnSubFinish4009906
   L1_2["4009906"] = L2_2
+  L2_2 = A0_2.OnSubFinish4009912
+  L1_2["4009912"] = L2_2
   L2_2 = A0_2.OnSubFinish4009907
   L1_2["4009907"] = L2_2
   L2_2 = A0_2.OnSubFinish4009908
@@ -202,24 +210,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnMainCanceled = L9_1
-function L9_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.CreateQuestNpcWithTrigger
-  L6_2 = "Q"
-  L7_2 = A2_2
-  L8_2 = "N"
-  L9_2 = A1_2
-  L10_2 = "Trigger"
-  L6_2 = L6_2 .. L7_2 .. L8_2 .. L9_2 .. L10_2
-  L7_2 = A2_2
-  L8_2 = A1_2
-  L9_2 = A3_2
-  L10_2 = 8
-  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-end
-L1_1.NpcCreateWithTrigger = L9_1
 function L9_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L3_2 = L3_1
@@ -232,7 +222,7 @@ function L9_1(A0_2, A1_2, A2_2)
     local L1_3, L2_3, L3_3, L4_3
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.SafeDestroyQuestNpc
+    L1_3 = L1_3.DestroyQuestNpcActor
     L3_3 = A2_2
     L4_3 = A1_2
     L1_3(L2_3, L3_3, L4_3)
@@ -330,12 +320,19 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc1587Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart4009902 = L9_1
 function L9_1(A0_2, A1_2)
@@ -414,27 +411,27 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithTriggerBlack
+  L4_2 = L7_1.Npc1587Data
+  L4_2 = L4_2.id
+  L5_2 = 4009904
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.ActionSafeCall
   function L4_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.NpcCreateWithTrigger
+    L1_3 = L1_3.NotifyTo
     L3_3 = L7_1.Npc1587Data
-    L3_3 = L3_3.id
-    L4_3 = 4009904
-    L5_3 = 0
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
     L1_3(L2_3, L3_3, L4_3, L5_3)
   end
   L2_2(L3_2, L4_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart4009904 = L9_1
 function L9_1(A0_2, A1_2)
@@ -452,40 +449,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish4009904 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L2_2 = print
-  L3_2 = "OnSubStart4009909"
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-end
-L1_1.OnSubStart4009909 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish4009909"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish4009909 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
-  L3_2 = "OnSubStart4009905"
+  L3_2 = "OnSubStart4009911"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithTriggerBlack
-  L4_2 = L7_1.Npc1019Data
-  L4_2 = L4_2.id
-  L5_2 = 4009905
-  L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos
@@ -511,14 +478,77 @@ function L9_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.OnSubStart4009911 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4009911"
+  L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q4009905Trigger"
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish4009911 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = print
+  L3_2 = "OnSubStart4009909"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc1587Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubStart4009909 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4009909"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish4009909 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubStart4009905"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithTriggerBlack
+  L4_2 = L7_1.Npc1019Data
+  L4_2 = L4_2.id
+  L5_2 = 4009905
+  L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc1587Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart4009905 = L9_1
 function L9_1(A0_2, A1_2)
@@ -535,9 +565,8 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q4009905Trigger"
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish4009905 = L9_1
 function L9_1(A0_2, A1_2)
@@ -580,12 +609,19 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc1587Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart4009906 = L9_1
 function L9_1(A0_2, A1_2)
@@ -615,6 +651,20 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish4009906 = L9_1
 function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart4009912"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart4009912 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4009912"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish4009912 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart4009907"
@@ -629,12 +679,19 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NotifyTo
-  L4_2 = L7_1.Npc1587Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc1587Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart4009907 = L9_1
 function L9_1(A0_2, A1_2)

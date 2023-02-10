@@ -130,8 +130,14 @@ function L10_1(A0_2)
 end
 L1_1.OnSubFinishHandlerBuild = L10_1
 function L10_1(A0_2)
-  local L1_2
+  local L1_2, L2_2
   L1_2 = {}
+  L2_2 = A0_2.OnSubFailed1302609
+  L1_2["1302609"] = L2_2
+  L2_2 = A0_2.OnSubFailed1302612
+  L1_2["1302612"] = L2_2
+  L2_2 = A0_2.OnSubFailed1302613
+  L1_2["1302613"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
 L1_1.OnSubFailedHandlerBuild = L10_1
@@ -492,11 +498,32 @@ function L10_1(A0_2, A1_2)
   L5_2 = 20177
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1302609N1052Trigger"
+  L5_2 = 20177
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q1302603Trigger"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = L8_1.Gadget71700633Data
+  L4_2 = L4_2.id
+  L5_2 = ""
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = L8_1.Gadget71700634Data
+  L4_2 = L4_2.id
+  L5_2 = ""
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart1302602 = L10_1
 function L10_1(A0_2, A1_2)
@@ -841,10 +868,23 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1302607 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubStart1302608"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CallDelay
+  L4_2 = 1
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NarratorOnlyTaskByData
+    L3_3 = L9_1.Narrator_1302603
+    L1_3(L2_3, L3_3)
+  end
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart1302608 = L10_1
 function L10_1(A0_2, A1_2)
@@ -947,7 +987,7 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.id
   L5_2 = 1302609
   L6_2 = 1
-  L7_2 = 30
+  L7_2 = 85
   L8_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
@@ -1014,6 +1054,97 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1302609 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFailed1302609"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13067Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13109Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13176Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13177Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13178Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13186Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13187Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13188Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13189Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13190Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13191Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13192Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFailed1302609 = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -1423,6 +1554,97 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1302612 = L10_1
 function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFailed1302612"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13067Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13109Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13176Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13177Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13178Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13186Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13187Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13188Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13189Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13190Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13191Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13192Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFailed1302612 = L10_1
+function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
   L2_2 = print
   L3_2 = "OnSubStart1302613"
@@ -1457,7 +1679,7 @@ function L10_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
   L3_2 = L3_1
   L4_2 = L3_2
@@ -1724,57 +1946,24 @@ function L10_1(A0_2, A1_2)
   L22_2 = 1
   L23_2 = false
   L13_2(L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
-  L13_2 = L3_1
+  L13_2 = actorMgr
   L14_2 = L13_2
-  L13_2 = L13_2.CreateLocalGadget
-  L15_2 = L8_1.Gadget71700633Data
-  L15_2 = L15_2.id
-  L16_2 = ""
-  L17_2 = sceneData
-  L18_2 = L17_2
-  L17_2 = L17_2.GetDummyPoint
-  L19_2 = 20177
-  L20_2 = "Q1302612_N13067"
-  L17_2 = L17_2(L18_2, L19_2, L20_2)
-  L17_2 = L17_2.pos
-  L18_2 = sceneData
-  L19_2 = L18_2
-  L18_2 = L18_2.GetDummyPoint
-  L20_2 = 20177
-  L21_2 = "Q1302612_N13067"
-  L18_2 = L18_2(L19_2, L20_2, L21_2)
-  L18_2 = L18_2.rot
-  L19_2 = 20177
-  L20_2 = nil
-  L21_2 = nil
-  L22_2 = 1
-  L23_2 = false
-  L13_2(L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
-  L13_2 = L3_1
-  L14_2 = L13_2
-  L13_2 = L13_2.CreateLocalGadget
-  L15_2 = L8_1.Gadget71700634Data
-  L15_2 = L15_2.id
-  L16_2 = ""
-  L17_2 = sceneData
-  L18_2 = L17_2
-  L17_2 = L17_2.GetDummyPoint
-  L19_2 = 20177
-  L20_2 = "Q1302612_N13111"
-  L17_2 = L17_2(L18_2, L19_2, L20_2)
-  L17_2 = L17_2.pos
-  L18_2 = sceneData
-  L19_2 = L18_2
-  L18_2 = L18_2.GetDummyPoint
-  L20_2 = 20177
-  L21_2 = "Q1302612_N13111"
-  L18_2 = L18_2(L19_2, L20_2, L21_2)
-  L18_2 = L18_2.rot
-  L19_2 = 20177
-  L20_2 = nil
-  L21_2 = nil
-  L22_2 = 1
-  L23_2 = false
+  L13_2 = L13_2.CreateActorWithPos
+  L15_2 = "Q1302613Trigger"
+  L16_2 = "Actor/Gadget/Q1302613Trigger"
+  L17_2 = 70900002
+  L18_2 = 0
+  L19_2 = {}
+  L19_2.x = 388.829
+  L19_2.y = 70.028
+  L19_2.z = 443.591
+  L20_2 = {}
+  L20_2.x = 0.0
+  L20_2.y = 0.0
+  L20_2.z = 0.0
+  L21_2 = true
+  L22_2 = false
+  L23_2 = 20177
   L13_2(L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
 end
 L1_1.OnSubStart1302613 = L10_1
@@ -1807,6 +1996,97 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1302613 = L10_1
 function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFailed1302613"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13067Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13109Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13176Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13177Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13178Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13186Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13187Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13188Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13189Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13190Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13191Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13192Data
+  L4_2 = L4_2.alias
+  L5_2 = 20177
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFailed1302613 = L10_1
+function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1302619"
@@ -1814,10 +2094,15 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1302619 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1302619"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q1302613Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish1302619 = L10_1
 function L10_1(A0_2, A1_2)

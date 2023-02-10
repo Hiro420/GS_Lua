@@ -33,7 +33,7 @@ function L7_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 10
+  L3_2 = 20
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
@@ -49,7 +49,7 @@ function L7_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L7_1
 function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
@@ -59,15 +59,34 @@ function L7_1(A0_2)
   L3_2 = "73507"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.NarratorOnlyTaskByData
-  L4_2 = L6_1.NarratorWithId
-  L5_2 = nil
-  L6_2 = 73507
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
+  L2_2 = L1_2.EnterSceneLookCamera
+  L4_2 = sceneData
+  L5_2 = L4_2
+  L4_2 = L4_2.GetDummyPoint
+  L6_2 = 3
+  L7_2 = "Q73507_N30318"
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L4_2.pos
+  L5_2 = 0.5
+  L6_2 = 3
+  L7_2 = true
+  L8_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.DestroySelf
-  L2_2(L3_2)
+  L2_2 = L2_2.GetActor
+  L4_2 = "73507"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.NarratorOnlyTaskByData
+  L5_2 = L6_1.NarratorWithId
+  L6_2 = nil
+  L7_2 = 73507
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroySelf
+  L3_2(L4_2)
 end
 L1_1.TriggerIn = L7_1
 function L7_1(A0_2)
