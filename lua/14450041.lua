@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -16,7 +16,8 @@ L4_1 = nil
 L5_1 = nil
 L6_1 = nil
 L7_1 = nil
-function L8_1(A0_2)
+L8_1 = nil
+function L9_1(A0_2)
   local L1_2
   L3_1 = A0_2
   L1_2 = A0_2.clientData
@@ -29,9 +30,11 @@ function L8_1(A0_2)
   L6_1 = L1_2
   L1_2 = L2_1.Npcs
   L7_1 = L1_2
+  L1_2 = L2_1.Points
+  L8_1 = L1_2
 end
-L1_1.OnDataLoaded = L8_1
-function L8_1(A0_2)
+L1_1.OnDataLoaded = L9_1
+function L9_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubStart1917301
@@ -98,8 +101,8 @@ function L8_1(A0_2)
   L1_2["1917325"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
-L1_1.OnSubStartHandlerBuild = L8_1
-function L8_1(A0_2)
+L1_1.OnSubStartHandlerBuild = L9_1
+function L9_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubFinish1917301
@@ -166,42 +169,42 @@ function L8_1(A0_2)
   L1_2["1917325"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
-L1_1.OnSubFinishHandlerBuild = L8_1
-function L8_1(A0_2)
+L1_1.OnSubFinishHandlerBuild = L9_1
+function L9_1(A0_2)
   local L1_2
   L1_2 = {}
   A0_2.subFailedHandlers = L1_2
 end
-L1_1.OnSubFailedHandlerBuild = L8_1
-function L8_1(A0_2)
+L1_1.OnSubFailedHandlerBuild = L9_1
+function L9_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "Start"
   L1_2(L2_2)
 end
-L1_1.Start = L8_1
-function L8_1(A0_2)
+L1_1.Start = L9_1
+function L9_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "OnDestroy"
   L1_2(L2_2)
 end
-L1_1.OnDestroy = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnDestroy = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainFinished"
   L2_2(L3_2)
 end
-L1_1.OnMainFinished = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnMainFinished = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainFailed"
   L2_2(L3_2)
 end
-L1_1.OnMainFailed = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnMainFailed = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
@@ -508,8 +511,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnMainCanceled = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnMainCanceled = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = actorMgr
   L3_2 = L2_2
@@ -522,8 +525,8 @@ function L8_1(A0_2, A1_2)
     L3_2(L4_2)
   end
 end
-L1_1.ActorDestroy = L8_1
-function L8_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.ActorDestroy = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2
   L4_2 = L3_1
   L5_2 = L4_2
@@ -540,8 +543,8 @@ function L8_1(A0_2, A1_2, A2_2, A3_2)
   end
   L4_2(L5_2, L6_2)
 end
-L1_1.DailyNpcSafeHideSelf = L8_1
-function L8_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.DailyNpcSafeHideSelf = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L4_2 = L3_1
   L5_2 = L4_2
@@ -558,8 +561,8 @@ function L8_1(A0_2, A1_2, A2_2, A3_2)
   L10_2 = 8
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
-L1_1.NpcCreateWithTrigger = L8_1
-function L8_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.NpcCreateWithTrigger = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2
   L4_2 = L3_1
   L5_2 = L4_2
@@ -576,8 +579,8 @@ function L8_1(A0_2, A1_2, A2_2, A3_2)
   end
   L4_2(L5_2, L6_2)
 end
-L1_1.NpcCreateWithActionSafeCall = L8_1
-function L8_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.NpcCreateWithActionSafeCall = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L4_2 = L3_1
   L5_2 = L4_2
@@ -595,8 +598,8 @@ function L8_1(A0_2, A1_2, A2_2, A3_2)
   L11_2 = 1
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.NpcCreateWithTriggerBlack = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.NpcCreateWithTriggerBlack = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "InvokeOnInteraction"
@@ -615,8 +618,8 @@ function L8_1(A0_2, A1_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.InvokeOnInteraction = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.InvokeOnInteraction = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917301"
@@ -643,15 +646,15 @@ function L8_1(A0_2, A1_2)
   L4_2 = 1917301
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart1917301 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917301 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917301"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917301 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917301 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1917302"
@@ -679,34 +682,24 @@ function L8_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q1917302Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q1917302_guide"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q1917302Trigger
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q1917302_guide"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q1917302Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
-L1_1.OnSubStart1917302 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917302 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917302"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917302 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917302 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L2_2 = print
   L3_2 = "OnSubStart1917303"
@@ -745,8 +738,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 1917302
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart1917303 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917303 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917303"
@@ -773,8 +766,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917303 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917303 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917304"
@@ -818,15 +811,15 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1917303
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917304 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917304 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917304"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917304 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917304 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1917305"
@@ -921,8 +914,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L4_2(L5_2, L6_2)
 end
-L1_1.OnSubStart1917305 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917305 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1917305"
@@ -945,8 +938,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = 3
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish1917305 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917305 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
   L2_2 = print
   L3_2 = "OnSubStart1917306"
@@ -1157,8 +1150,8 @@ function L8_1(A0_2, A1_2)
   L11_2 = true
   L9_2(L10_2, L11_2)
 end
-L1_1.OnSubStart1917306 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917306 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubFinish1917306"
@@ -1198,8 +1191,8 @@ function L8_1(A0_2, A1_2)
   L7_2 = 3
   L4_2(L5_2, L6_2, L7_2)
 end
-L1_1.OnSubFinish1917306 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917306 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
   L2_2 = print
   L3_2 = "OnSubStart1917307"
@@ -1332,8 +1325,8 @@ function L8_1(A0_2, A1_2)
   L10_2 = 1917305
   L7_2(L8_2, L9_2, L10_2)
 end
-L1_1.OnSubStart1917307 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917307 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917307"
@@ -1346,8 +1339,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917307 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917307 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917308"
@@ -1361,8 +1354,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917308 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917308 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917308"
@@ -1375,8 +1368,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917308 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917308 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917309"
@@ -1390,8 +1383,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917309 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917309 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917309"
@@ -1404,8 +1397,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917309 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917309 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917310"
@@ -1419,8 +1412,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917310 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917310 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917310"
@@ -1433,8 +1426,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917310 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917310 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917311"
@@ -1448,15 +1441,15 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917311 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917311 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917311"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917311 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917311 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
   L2_2 = print
   L3_2 = "OnSubStart1917312"
@@ -1588,34 +1581,24 @@ function L8_1(A0_2, A1_2)
   L10_2 = "Actor/Gadget/Q1917312Trigger"
   L11_2 = 70900002
   L12_2 = 0
-  L13_2 = sceneData
-  L14_2 = L13_2
-  L13_2 = L13_2.GetDummyPoint
-  L15_2 = 3
-  L16_2 = "Q1917306_guide"
-  L13_2 = L13_2(L14_2, L15_2, L16_2)
+  L13_2 = L8_1.TPos_Q1917312Trigger
   L13_2 = L13_2.pos
-  L14_2 = sceneData
-  L15_2 = L14_2
-  L14_2 = L14_2.GetDummyPoint
-  L16_2 = 3
-  L17_2 = "Q1917306_guide"
-  L14_2 = L14_2(L15_2, L16_2, L17_2)
+  L14_2 = L8_1.TPos_Q1917312Trigger
   L14_2 = L14_2.rot
   L15_2 = true
   L16_2 = false
   L17_2 = 3
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
 end
-L1_1.OnSubStart1917312 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917312 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917312"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917312 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917312 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1917313"
@@ -1688,19 +1671,9 @@ function L8_1(A0_2, A1_2)
     L4_3 = "Actor/Gadget/Q1917313Trigger"
     L5_3 = 70900002
     L6_3 = 0
-    L7_3 = sceneData
-    L8_3 = L7_3
-    L7_3 = L7_3.GetDummyPoint
-    L9_3 = 3
-    L10_3 = "Q1917313_N513"
-    L7_3 = L7_3(L8_3, L9_3, L10_3)
+    L7_3 = L8_1.TPos_Q1917313Trigger
     L7_3 = L7_3.pos
-    L8_3 = sceneData
-    L9_3 = L8_3
-    L8_3 = L8_3.GetDummyPoint
-    L10_3 = 3
-    L11_3 = "Q1917313_N513"
-    L8_3 = L8_3(L9_3, L10_3, L11_3)
+    L8_3 = L8_1.TPos_Q1917313Trigger
     L8_3 = L8_3.rot
     L9_3 = true
     L10_3 = false
@@ -1712,16 +1685,11 @@ function L8_1(A0_2, A1_2)
     L3_3 = 107601
     L4_3 = 1917309
     L1_3(L2_3, L3_3, L4_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.ActorDestroy
-    L3_3 = "Q1917312Trigger"
-    L1_3(L2_3, L3_3)
   end
   L4_2(L5_2, L6_2)
 end
-L1_1.OnSubStart1917313 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917313 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917313"
@@ -1754,9 +1722,14 @@ function L8_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q1917312Trigger"
+  L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish1917313 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917313 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   L2_2 = print
   L3_2 = "OnSubStart1917314"
@@ -1848,19 +1821,9 @@ function L8_1(A0_2, A1_2)
   L7_2 = "Actor/Gadget/Q1917312Trigger"
   L8_2 = 70900002
   L9_2 = 0
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q1917306_guide"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q1917312Trigger
   L10_2 = L10_2.pos
-  L11_2 = sceneData
-  L12_2 = L11_2
-  L11_2 = L11_2.GetDummyPoint
-  L13_2 = 3
-  L14_2 = "Q1917306_guide"
-  L11_2 = L11_2(L12_2, L13_2, L14_2)
+  L11_2 = L8_1.TPos_Q1917312Trigger
   L11_2 = L11_2.rot
   L12_2 = true
   L13_2 = false
@@ -1873,27 +1836,17 @@ function L8_1(A0_2, A1_2)
   L7_2 = "Actor/Gadget/Q1917314Trigger"
   L8_2 = 70900002
   L9_2 = 0
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q1917314_N513"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q1917314Trigger
   L10_2 = L10_2.pos
-  L11_2 = sceneData
-  L12_2 = L11_2
-  L11_2 = L11_2.GetDummyPoint
-  L13_2 = 3
-  L14_2 = "Q1917314_N513"
-  L11_2 = L11_2(L12_2, L13_2, L14_2)
+  L11_2 = L8_1.TPos_Q1917314Trigger
   L11_2 = L11_2.rot
   L12_2 = true
   L13_2 = false
   L14_2 = 3
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
-L1_1.OnSubStart1917314 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917314 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917314"
@@ -1920,8 +1873,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917314 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917314 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917326"
@@ -1973,8 +1926,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1917310
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917326 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917326 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917326"
@@ -1992,8 +1945,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917326 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917326 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L2_2 = print
   L3_2 = "OnSubStart1917315"
@@ -2037,19 +1990,9 @@ function L8_1(A0_2, A1_2)
   L6_2 = "Actor/Gadget/Q1917315Trigger"
   L7_2 = 70900002
   L8_2 = 0
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q1917315_N12935"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q1917315Trigger
   L9_2 = L9_2.pos
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q1917315_N12935"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q1917315Trigger
   L10_2 = L10_2.rot
   L11_2 = true
   L12_2 = false
@@ -2062,8 +2005,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1917311
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917315 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917315 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917315"
@@ -2076,8 +2019,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917315 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917315 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L2_2 = print
   L3_2 = "OnSubStart1917316"
@@ -2161,27 +2104,17 @@ function L8_1(A0_2, A1_2)
   L6_2 = "Actor/Gadget/Q1917316Trigger"
   L7_2 = 70900002
   L8_2 = 0
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q1917314_N513"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q1917316Trigger
   L9_2 = L9_2.pos
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q1917314_N513"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q1917316Trigger
   L10_2 = L10_2.rot
   L11_2 = true
   L12_2 = false
   L13_2 = 3
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
-L1_1.OnSubStart1917316 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917316 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917316"
@@ -2194,8 +2127,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917316 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917316 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1917327"
@@ -2263,8 +2196,8 @@ function L8_1(A0_2, A1_2)
   L7_2 = 1917312
   L4_2(L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1917327 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917327 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917327"
@@ -2298,22 +2231,22 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917327 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917327 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1917330"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1917330 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917330 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917330"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917330 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917330 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   L2_2 = print
   L3_2 = "OnSubStart1917317"
@@ -2387,27 +2320,17 @@ function L8_1(A0_2, A1_2)
   L7_2 = "Actor/Gadget/Q1917317Trigger"
   L8_2 = 70900002
   L9_2 = 0
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q1917317_N12939"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q1917317Trigger
   L10_2 = L10_2.pos
-  L11_2 = sceneData
-  L12_2 = L11_2
-  L11_2 = L11_2.GetDummyPoint
-  L13_2 = 3
-  L14_2 = "Q1917317_N12939"
-  L11_2 = L11_2(L12_2, L13_2, L14_2)
+  L11_2 = L8_1.TPos_Q1917317Trigger
   L11_2 = L11_2.rot
   L12_2 = true
   L13_2 = false
   L14_2 = 3
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
-L1_1.OnSubStart1917317 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917317 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917317"
@@ -2441,8 +2364,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917317 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917317 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1917318"
@@ -2534,8 +2457,8 @@ function L8_1(A0_2, A1_2)
   L7_2 = 1917314
   L4_2(L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1917318 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917318 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917318"
@@ -2548,36 +2471,36 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917318 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917318 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1917329"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1917329 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917329 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917329"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917329 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917329 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1917328"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1917328 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917328 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917328"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917328 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917328 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = print
   L3_2 = "OnSubStart1917319"
@@ -2669,19 +2592,9 @@ function L8_1(A0_2, A1_2)
   L8_2 = "Actor/Gadget/Q1917319Trigger"
   L9_2 = 70900002
   L10_2 = 0
-  L11_2 = sceneData
-  L12_2 = L11_2
-  L11_2 = L11_2.GetDummyPoint
-  L13_2 = 3
-  L14_2 = "Q1917304_guide"
-  L11_2 = L11_2(L12_2, L13_2, L14_2)
+  L11_2 = L8_1.TPos_Q1917319Trigger
   L11_2 = L11_2.pos
-  L12_2 = sceneData
-  L13_2 = L12_2
-  L12_2 = L12_2.GetDummyPoint
-  L14_2 = 3
-  L15_2 = "Q1917304_guide"
-  L12_2 = L12_2(L13_2, L14_2, L15_2)
+  L12_2 = L8_1.TPos_Q1917319Trigger
   L12_2 = L12_2.rot
   L13_2 = true
   L14_2 = false
@@ -2699,8 +2612,8 @@ function L8_1(A0_2, A1_2)
   L7_2 = true
   L5_2(L6_2, L7_2)
 end
-L1_1.OnSubStart1917319 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917319 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1917319"
@@ -2751,22 +2664,22 @@ function L8_1(A0_2, A1_2)
   L6_2 = 3
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish1917319 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917319 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1917331"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1917331 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917331 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917331"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917331 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917331 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917320"
@@ -2826,8 +2739,8 @@ function L8_1(A0_2, A1_2)
   L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart1917320 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917320 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1917320"
@@ -2847,8 +2760,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917320 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917320 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917321"
@@ -2886,15 +2799,15 @@ function L8_1(A0_2, A1_2)
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1917321 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917321 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917321"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917321 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917321 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917322"
@@ -2938,8 +2851,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1917316
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917322 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917322 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1917322"
@@ -2981,8 +2894,8 @@ function L8_1(A0_2, A1_2)
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1917322 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917322 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917323"
@@ -3020,15 +2933,15 @@ function L8_1(A0_2, A1_2)
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1917323 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917323 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917323"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917323 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917323 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1917324"
@@ -3080,15 +2993,15 @@ function L8_1(A0_2, A1_2)
   L6_2 = 1917317
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1917324 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917324 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1917324"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1917324 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubFinish1917324 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1917325"
@@ -3159,8 +3072,8 @@ function L8_1(A0_2, A1_2)
   L6_2 = true
   L4_2(L5_2, L6_2)
 end
-L1_1.OnSubStart1917325 = L8_1
-function L8_1(A0_2, A1_2)
+L1_1.OnSubStart1917325 = L9_1
+function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1917325"
@@ -3220,5 +3133,5 @@ function L8_1(A0_2, A1_2)
   L6_2 = 3
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish1917325 = L8_1
+L1_1.OnSubFinish1917325 = L9_1
 return L1_1

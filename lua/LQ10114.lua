@@ -42,6 +42,11 @@ function L2_1(A0_2, A1_2)
   L2_2 = L2_2.GetActor
   L4_2 = "10113"
   L2_2 = L2_2(L3_2, L4_2)
+  L3_2 = actorMgr
+  L3_2 = L3_2.dummyActor
+  if L2_2 == L3_2 then
+    return
+  end
   L4_2 = L2_2
   L3_2 = L2_2.GetQuestNpcActor
   L5_2 = "Wendy"

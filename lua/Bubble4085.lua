@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -42,7 +42,23 @@ L12_1.intervalMin = 20
 L12_1.intervalMax = 30
 L11_1[1] = L12_1
 L10_1.bubbleDatas = L11_1
+L11_1 = {}
+L12_1 = {}
+L12_1.activityId = 2021
+L12_1.activityCondId = 2021001
+L12_1.isActivityValid = true
+L12_1.priority = 2
+L11_1.condition = L12_1
+L12_1 = {}
+L13_1 = {}
+L13_1.dialogId = 1016408502
+L13_1.duration = 0
+L13_1.intervalMin = 20
+L13_1.intervalMax = 30
+L12_1[1] = L13_1
+L11_1.bubbleDatas = L12_1
 L8_1[1] = L9_1
 L8_1[2] = L10_1
+L8_1[3] = L11_1
 L7_1.BubbleData = L8_1
 return L7_1

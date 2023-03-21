@@ -262,6 +262,16 @@ function L2_1(A0_2)
     L3_2 = L3_2.NahidaNarratorData
     L1_2(L2_2, L3_2)
   end
+  L1_2 = A0_2.ConfigData
+  L1_2 = L1_2.ElementTypeData
+  if nil ~= L1_2 then
+    L1_2 = A0_2.uActor
+    L2_2 = L1_2
+    L1_2 = L1_2.InitElementTypeData
+    L3_2 = A0_2.ConfigData
+    L3_2 = L3_2.ElementTypeData
+    L1_2(L2_2, L3_2)
+  end
 end
 L1_1.InitBaseConfig = L2_1
 return L1_1

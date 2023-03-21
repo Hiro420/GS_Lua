@@ -10,6 +10,10 @@ L0_1.Frozen = 6
 L0_1.Wind = 7
 L0_1.Rock = 8
 L0_1.AntiFire = 9
+L0_1.VehicleMuteIce = 10
+L0_1.Mushroom = 11
+L0_1.Overdose = 12
+L0_1.Wood = 13
 ElementType = L0_1
 function L0_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2

@@ -286,10 +286,23 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1917001 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubFinish1917001"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ShowBlackScreenWithDialogText
+  L4_2 = 0.5
+  L5_2 = 1
+  L6_2 = 0.5
+  L7_2 = nil
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubFinish1917001 = L8_1
 function L8_1(A0_2, A1_2)

@@ -412,4 +412,12 @@ function L3_1(A0_2)
   A0_2.NarratorState = L1_2
 end
 L1_1.ClearActor = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
+  L1_2 = L1_2.GetMetaQuestToken
+  return L1_2(L2_2)
+end
+L1_1.GetQuestToken = L3_1
 return L1_1

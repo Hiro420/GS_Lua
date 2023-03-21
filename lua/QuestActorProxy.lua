@@ -38,6 +38,18 @@ function L5_1(A0_2)
   return L1_2
 end
 L1_1.GetSeriesID = L5_1
+function L5_1(A0_2)
+  local L1_2
+  L1_2 = A0_2.uActor
+  if nil == L1_2 then
+    L1_2 = 0
+    return L1_2
+  end
+  L1_2 = A0_2.uActor
+  L1_2 = L1_2.questToken
+  return L1_2
+end
+L1_1.GetQuestToken = L5_1
 function L5_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = A0_2.AliasCache
@@ -2136,31 +2148,40 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.GetQuestNpcActorNoDummy = L5_1
 function L5_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L4_2 = A0_2
   L3_2 = A0_2.GetRealAlias
   L5_2 = A1_2
   L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = actorMgr
-  L5_2 = L4_2
-  L4_2 = L4_2.DestroyEntityActor
-  L6_2 = L3_2
-  L7_2 = A2_2
-  return L4_2(L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.GetQuestToken
+  L4_2 = L4_2(L5_2)
+  L5_2 = actorMgr
+  L6_2 = L5_2
+  L5_2 = L5_2.DestroyEntityActor
+  L7_2 = L3_2
+  L8_2 = A2_2
+  L9_2 = nil
+  L10_2 = L4_2
+  return L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.DestroyQuestNpcActor = L5_1
 function L5_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L4_2 = A0_2
   L3_2 = A0_2.GetRealAlias
   L5_2 = A1_2
   L3_2 = L3_2(L4_2, L5_2)
-  L4_2 = actorMgr
-  L5_2 = L4_2
-  L4_2 = L4_2.DestroyNpcActorByAlias
-  L6_2 = L3_2
-  L7_2 = A2_2
-  return L4_2(L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.GetQuestToken
+  L4_2 = L4_2(L5_2)
+  L5_2 = actorMgr
+  L6_2 = L5_2
+  L5_2 = L5_2.DestroyNpcActorByAlias
+  L7_2 = L3_2
+  L8_2 = A2_2
+  L9_2 = L4_2
+  return L5_2(L6_2, L7_2, L8_2, L9_2)
 end
 L1_1.DestroyQuestNpcActorByAlias = L5_1
 function L5_1(A0_2, A1_2)
@@ -4027,19 +4048,58 @@ function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
 end
 L1_1.DelaySpawnGadget_MaleCond = L6_1
 function L6_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L4_2 = A0_2
-  L3_2 = A0_2.ActionSafeCall
-  function L5_2()
-    local L0_3, L1_3, L2_3, L3_3
+  L3_2 = A0_2.GetQuestToken
+  L3_2 = L3_2(L4_2)
+  L4_2 = print
+  L5_2 = ">> SafeDestroyQuestNpc "
+  L6_2 = tostring
+  L7_2 = A1_2
+  L6_2 = L6_2(L7_2)
+  L7_2 = " questToken "
+  L8_2 = tostring
+  L9_2 = L3_2
+  L8_2 = L8_2(L9_2)
+  L5_2 = L5_2 .. L6_2 .. L7_2 .. L8_2
+  L4_2(L5_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.ActionSafeCall
+  function L6_2()
+    local L0_3, L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L0_3 = print
+    L1_3 = ">> NowReal SafeDestroyQuestNpc "
+    L2_3 = tostring
+    L3_3 = A1_2
+    L2_3 = L2_3(L3_3)
+    L3_3 = " questToken "
+    L4_3 = tostring
+    L5_3 = L3_2
+    L4_3 = L4_3(L5_3)
+    L5_3 = "  nowToken "
+    L6_3 = tostring
+    L7_3 = A0_2
+    L8_3 = L7_3
+    L7_3 = L7_3.GetQuestToken
+    L7_3, L8_3 = L7_3(L8_3)
+    L6_3 = L6_3(L7_3, L8_3)
+    L1_3 = L1_3 .. L2_3 .. L3_3 .. L4_3 .. L5_3 .. L6_3
+    L0_3(L1_3)
     L0_3 = A0_2
     L1_3 = L0_3
-    L0_3 = L0_3.DestroyQuestNpcActor
+    L0_3 = L0_3.GetRealAlias
     L2_3 = A1_2
-    L3_3 = A2_2
-    L0_3(L1_3, L2_3, L3_3)
+    L0_3 = L0_3(L1_3, L2_3)
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyEntityActor
+    L3_3 = L0_3
+    L4_3 = A2_2
+    L5_3 = nil
+    L6_3 = L3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3)
   end
-  L3_2(L4_2, L5_2)
+  L4_2(L5_2, L6_2)
 end
 L1_1.SafeDestroyQuestNpc = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2)
@@ -5252,6 +5312,49 @@ function L6_1(A0_2, A1_2, A2_2, A3_2, ...)
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.LightNotifyTo = L6_1
+function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L6_2 = tostring
+  L7_2 = string
+  L7_2 = L7_2.format
+  L8_2 = "Q%s_%u"
+  L9_2 = A1_2
+  L10_2 = tostring
+  L11_2 = A0_2.mainQuestID
+  L10_2, L11_2, L12_2 = L10_2(L11_2)
+  L7_2, L8_2, L9_2, L10_2, L11_2, L12_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2)
+  L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  if A4_2 == nil then
+    A4_2 = 5
+  end
+  L7_2 = actorUtils
+  L7_2 = L7_2.CallOnElemViewOpenInSpecificArea
+  L8_2 = L6_2
+  L9_2 = A2_2
+  L10_2 = A3_2
+  L11_2 = A4_2
+  L12_2 = A5_2
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.CallOnElemViewOpenInSpecificArea = L6_1
+function L6_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = tostring
+  L3_2 = string
+  L3_2 = L3_2.format
+  L4_2 = "Q%s_%u"
+  L5_2 = A1_2
+  L6_2 = tostring
+  L7_2 = A0_2.mainQuestID
+  L6_2, L7_2 = L6_2(L7_2)
+  L3_2, L4_2, L5_2, L6_2, L7_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.UnCallOnElemViewOpenInSpecificArea
+  L4_2 = L2_2
+  L3_2(L4_2)
+end
+L1_1.UnCallOnElemViewOpenInSpecificArea = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
   local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
   L10_2 = A0_2
@@ -5655,4 +5758,36 @@ function L6_1(A0_2, A1_2)
   return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.GetLocalGadgetRelSubKey = L6_1
+function L6_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = tostring
+  L3_2 = string
+  L3_2 = L3_2.format
+  L4_2 = "Q%u"
+  L5_2 = A0_2.mainQuestID
+  L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.DeployStory
+  L5_2 = A1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.DeployStoryByQuest = L6_1
+function L6_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = tostring
+  L3_2 = string
+  L3_2 = L3_2.format
+  L4_2 = "Q%u"
+  L5_2 = A0_2.mainQuestID
+  L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
+  L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.CancelStory
+  L5_2 = A1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.CancelStoryByQuest = L6_1
 return L1_1

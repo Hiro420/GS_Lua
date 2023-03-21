@@ -726,6 +726,18 @@ function L3_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L1_1.SitOnChair = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2)
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L5_2 = A0_2.uActor
+  L6_2 = L5_2
+  L5_2 = L5_2.SitOnTargetChair
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L10_2 = A4_2
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L1_1.SitOnTargetChair = L3_1
 function L3_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
@@ -798,6 +810,15 @@ function L3_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L1_1.EnableInteraction = L3_1
+function L3_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.EnableInteractionWithUI
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+L1_1.EnableInteractionWithUI = L3_1
 L1_1.targetPos = nil
 L1_1.tarFloatingHeight = 0
 L1_1.floatingMove = false

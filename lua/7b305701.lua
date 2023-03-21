@@ -63,6 +63,8 @@ function L9_1(A0_2)
   L1_2["80312"] = L2_2
   L2_2 = A0_2.OnSubStart80313
   L1_2["80313"] = L2_2
+  L2_2 = A0_2.OnSubStart80314
+  L1_2["80314"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -95,6 +97,8 @@ function L9_1(A0_2)
   L1_2["80312"] = L2_2
   L2_2 = A0_2.OnSubFinish80313
   L1_2["80313"] = L2_2
+  L2_2 = A0_2.OnSubFinish80314
+  L1_2["80314"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -521,4 +525,33 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish80313 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubStart80314"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1063Data
+  L5_2 = L5_2.id
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart80314 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80314"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1063Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish80314 = L9_1
 return L1_1

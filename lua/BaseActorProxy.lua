@@ -124,6 +124,12 @@ function L1_1(A0_2)
   return L1_2(L2_2)
 end
 L0_1.IsValid = L1_1
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = 0
+  return L1_2
+end
+L0_1.GetQuestToken = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = A0_2.uActor
@@ -3754,14 +3760,15 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L0_1.CallOnElemViewClose = L1_1
-function L1_1(A0_2, A1_2)
+L1_1 = "CallOnDoorOpen"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = actorUtils
   L2_2 = L2_2.CallOnDoorOpen
   L3_2 = A1_2
   L2_2(L3_2)
 end
-L0_1.CallOnDoorOpen = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "UncallOnDoorOpen"
 function L2_1(A0_2)
   local L1_2
@@ -4469,6 +4476,26 @@ function L2_1(A0_2, A1_2, A2_2)
   else
     return A2_2
   end
+end
+L0_1[L1_1] = L2_1
+L1_1 = "DeployStory"
+function L2_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = actorUtils
+  L3_2 = L3_2.DeployStory
+  L4_2 = A1_2
+  L5_2 = A2_2
+  L3_2(L4_2, L5_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "CancelStory"
+function L2_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = actorUtils
+  L3_2 = L3_2.CancelStory
+  L4_2 = A1_2
+  L5_2 = A2_2
+  L3_2(L4_2, L5_2)
 end
 L0_1[L1_1] = L2_1
 return L0_1

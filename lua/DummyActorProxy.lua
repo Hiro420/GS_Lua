@@ -155,6 +155,18 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L0_1.SitOnChair = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L5_2 = actorUtils
+  L5_2 = L5_2.DoSitOnTargetChair
+  L6_2 = A0_2.alias
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L10_2 = A4_2
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.SitOnTargetChair = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = actorUtils
@@ -672,6 +684,24 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L0_1.DestroyWithDitherEx = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = actorUtils
+  L3_2 = L3_2.DeployStory
+  L4_2 = A1_2
+  L5_2 = A2_2
+  L3_2(L4_2, L5_2)
+end
+L0_1.DeployStory = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2
+  L3_2 = actorUtils
+  L3_2 = L3_2.CancelStory
+  L4_2 = A1_2
+  L5_2 = A2_2
+  L3_2(L4_2, L5_2)
+end
+L0_1.CancelStory = L1_1
 function L1_1(A0_2)
   local L1_2
   L1_2 = 0
@@ -1756,24 +1786,27 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.EmptyCB = L1_1
-function L1_1(A0_2)
+L1_1 = "RegisterTaskCB"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.RegisterTaskCB = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "UnregisterTaskCB"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.UnregisterTaskCB = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "BeFollowTaskByRoutePointsWithDiffLen"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.BeFollowTaskByRoutePointsWithDiffLen = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "alias"
 L2_1 = 0
 L0_1[L1_1] = L2_1

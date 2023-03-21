@@ -246,8 +246,8 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.EnableHeadCtrl
-  L5_2 = false
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
   L3_2(L4_2, L5_2)
   L3_2 = L3_1
   L4_2 = L3_2
@@ -282,6 +282,16 @@ function L9_1(A0_2, A1_2)
   L11_2 = true
   L12_2 = true
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L5_2 = L2_2
+  L4_2 = L2_2.PlayEmoSync
+  L6_2 = ""
+  L7_2 = "Cs_Emo_NPC_Common/Cs_Emo_NPC_Normal01"
+  L8_2 = "Cs_Emo_NPC_Common/Cs_Emo_NPC_WinkA01"
+  L9_2 = 0
+  L10_2 = false
+  L11_2 = true
+  L12_2 = true
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart1302501 = L9_1
 function L9_1(A0_2, A1_2)
@@ -296,8 +306,8 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.EnableHeadCtrl
-  L5_2 = true
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = false
   L3_2(L4_2, L5_2)
   L3_2 = L3_1
   L4_2 = L3_2

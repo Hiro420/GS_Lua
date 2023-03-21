@@ -873,71 +873,174 @@ function L1_1(A0_2, A1_2, A2_2)
   return L3_2
 end
 L0_1.GetQuestNPCActor = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   if A3_2 == nil then
     A3_2 = false
   end
+  if A4_2 == nil then
+    A4_2 = 0
+  end
   if A2_2 == nil then
-    L4_2 = sceneData
-    A2_2 = L4_2.DefaultSceneID
+    L5_2 = sceneData
+    A2_2 = L5_2.DefaultSceneID
   else
-    L4_2 = sceneID
-    if L4_2 == 0 then
-      L4_2 = sceneData
-      L4_2 = L4_2.currSceneID
-      if L4_2 ~= -1 then
-        L4_2 = sceneData
-        L4_2 = L4_2.currSceneID
-        sceneID = L4_2
+    L5_2 = sceneID
+    if L5_2 == 0 then
+      L5_2 = sceneData
+      L5_2 = L5_2.currSceneID
+      if L5_2 ~= -1 then
+        L5_2 = sceneData
+        L5_2 = L5_2.currSceneID
+        sceneID = L5_2
       end
     end
   end
-  L5_2 = A0_2
-  L4_2 = A0_2.GetActorInternal
-  L6_2 = A1_2
-  L4_2 = L4_2(L5_2, L6_2)
-  if A3_2 and L4_2 == nil then
+  L6_2 = A0_2
+  L5_2 = A0_2.GetActorInternal
+  L7_2 = A1_2
+  L5_2 = L5_2(L6_2, L7_2)
+  if A3_2 and L5_2 == nil then
     return
   end
-  if L4_2 ~= nil then
-    L6_2 = L4_2
-    L5_2 = L4_2.Destroy
-    L7_2 = A3_2
-    L5_2(L6_2, L7_2)
+  if L5_2 ~= nil then
+    if 0 < A4_2 then
+      L7_2 = L5_2
+      L6_2 = L5_2.GetQuestToken
+      L6_2 = L6_2(L7_2)
+      if 0 < L6_2 then
+        L7_2 = L5_2
+        L6_2 = L5_2.GetQuestToken
+        L6_2 = L6_2(L7_2)
+        if A4_2 ~= L6_2 then
+          L6_2 = NG_HSOD_DEBUG
+          if L6_2 then
+            L6_2 = CS
+            L6_2 = L6_2.MoleMole
+            L6_2 = L6_2.SuperDebug
+            L6_2 = L6_2.LogError
+            L7_2 = "[Lua]ActorManager DestroyEntityActor alias:"
+            L8_2 = tostring
+            L9_2 = A1_2
+            L8_2 = L8_2(L9_2)
+            L9_2 = "  questToken:"
+            L10_2 = tostring
+            L11_2 = A4_2
+            L10_2 = L10_2(L11_2)
+            L11_2 = " npcQuestToken:"
+            L12_2 = tostring
+            L14_2 = L5_2
+            L13_2 = L5_2.GetQuestToken
+            L13_2, L14_2 = L13_2(L14_2)
+            L12_2 = L12_2(L13_2, L14_2)
+            L7_2 = L7_2 .. L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
+            L6_2(L7_2)
+          end
+          return
+        end
+      end
+    end
+    L6_2 = NG_HSOD_DEBUG
+    if L6_2 then
+      L6_2 = CS
+      L6_2 = L6_2.MoleMole
+      L6_2 = L6_2.SuperDebug
+      L6_2 = L6_2.Log
+      L7_2 = "[Lua]ActorManager DestroyEntityActor alias:"
+      L8_2 = tostring
+      L9_2 = A1_2
+      L8_2 = L8_2(L9_2)
+      L9_2 = "  questToken:"
+      L10_2 = tostring
+      L11_2 = A4_2
+      L10_2 = L10_2(L11_2)
+      L11_2 = " npcQuestToken:"
+      L12_2 = tostring
+      L14_2 = L5_2
+      L13_2 = L5_2.GetQuestToken
+      L13_2, L14_2 = L13_2(L14_2)
+      L12_2 = L12_2(L13_2, L14_2)
+      L7_2 = L7_2 .. L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
+      L6_2(L7_2)
+    end
+    L7_2 = L5_2
+    L6_2 = L5_2.Destroy
+    L8_2 = A3_2
+    L6_2(L7_2, L8_2)
   else
-    L5_2 = actorUtils
-    L5_2 = L5_2.NotifyActorDestroy
-    L6_2 = A1_2
-    L7_2 = A2_2
-    L8_2 = true
-    L5_2(L6_2, L7_2, L8_2)
+    L6_2 = actorUtils
+    L6_2 = L6_2.NotifyActorDestroy
+    L7_2 = A1_2
+    L8_2 = A2_2
+    L9_2 = true
+    L10_2 = A4_2
+    L6_2(L7_2, L8_2, L9_2, L10_2)
   end
   if A3_2 == false then
-    L5_2 = actorUtils
-    L5_2 = L5_2.DestroyLocalGadget
-    L6_2 = A1_2
-    L5_2(L6_2)
+    L6_2 = actorUtils
+    L6_2 = L6_2.DestroyLocalGadget
+    L7_2 = A1_2
+    L6_2(L7_2)
   end
 end
 L0_1.DestroyEntityActor = L1_1
-function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  L3_2 = L0_1.GetActorInternal
-  L4_2 = A0_2
-  L5_2 = A1_2
-  L3_2 = L3_2(L4_2, L5_2)
-  if L3_2 ~= nil then
-    L5_2 = L3_2
-    L4_2 = L3_2.Destroy
-    L6_2 = A2_2
-    L4_2(L5_2, L6_2)
+function L1_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  if A3_2 == nil then
+    A3_2 = 0
+  end
+  L4_2 = L0_1.GetActorInternal
+  L5_2 = A0_2
+  L6_2 = A1_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if L4_2 ~= nil then
+    if 0 < A3_2 then
+      L6_2 = L4_2
+      L5_2 = L4_2.GetQuestToken
+      L5_2 = L5_2(L6_2)
+      if 0 < L5_2 then
+        L6_2 = L4_2
+        L5_2 = L4_2.GetQuestToken
+        L5_2 = L5_2(L6_2)
+        if A3_2 ~= L5_2 then
+          L5_2 = NG_HSOD_DEBUG
+          if L5_2 then
+            L5_2 = CS
+            L5_2 = L5_2.MoleMole
+            L5_2 = L5_2.SuperDebug
+            L5_2 = L5_2.LogError
+            L6_2 = "[Lua]ActorManager DestroyEntityActor alias:"
+            L7_2 = tostring
+            L8_2 = A1_2
+            L7_2 = L7_2(L8_2)
+            L8_2 = "  questToken:"
+            L9_2 = tostring
+            L10_2 = A3_2
+            L9_2 = L9_2(L10_2)
+            L10_2 = " npcQuestToken:"
+            L11_2 = tostring
+            L13_2 = L4_2
+            L12_2 = L4_2.GetQuestToken
+            L12_2, L13_2 = L12_2(L13_2)
+            L11_2 = L11_2(L12_2, L13_2)
+            L6_2 = L6_2 .. L7_2 .. L8_2 .. L9_2 .. L10_2 .. L11_2
+            L5_2(L6_2)
+          end
+          return
+        end
+      end
+    end
+    L6_2 = L4_2
+    L5_2 = L4_2.Destroy
+    L7_2 = A2_2
+    L5_2(L6_2, L7_2)
   elseif A2_2 ~= true then
-    L4_2 = actorUtils
-    L4_2 = L4_2.NotifyNpcActorDestroyByAlias
-    L5_2 = A1_2
-    L6_2 = true
-    L4_2(L5_2, L6_2)
+    L5_2 = actorUtils
+    L5_2 = L5_2.NotifyNpcActorDestroyByAlias
+    L6_2 = A1_2
+    L7_2 = true
+    L8_2 = A3_2
+    L5_2(L6_2, L7_2, L8_2)
   end
 end
 L0_1.DestroyNpcActorByAlias = L1_1

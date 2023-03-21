@@ -166,7 +166,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2)
 end
 L1_1.NpcCreateWithBlackscreenInteraction = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubStart1302001"
   L2_2(L3_2)
@@ -204,31 +204,38 @@ function L9_1(A0_2, A1_2)
     L6_2 = 3
     L3_2(L4_2, L5_2, L6_2)
   end
-  L3_2 = actorMgr
+  L3_2 = L3_1
   L4_2 = L3_2
-  L3_2 = L3_2.CreateActorWithPos
-  L5_2 = "Q1302001Talk"
-  L6_2 = "Actor/Gadget/Q1302001Talk"
-  L7_2 = 70900002
-  L8_2 = 0
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q13020_guide_T1302001_N13003"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
-  L9_2 = L9_2.pos
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q13020_guide_T1302001_N13003"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
-  L10_2 = L10_2.rot
-  L11_2 = true
-  L12_2 = false
-  L13_2 = 3
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  L3_2 = L3_2.AfterMainPageActiveSafeCall
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateActorWithPos
+    L3_3 = "Q1302001Talk"
+    L4_3 = "Actor/Gadget/Q1302001Talk"
+    L5_3 = 70900002
+    L6_3 = 0
+    L7_3 = sceneData
+    L8_3 = L7_3
+    L7_3 = L7_3.GetDummyPoint
+    L9_3 = 3
+    L10_3 = "Q13020_guide_T1302001_N13003"
+    L7_3 = L7_3(L8_3, L9_3, L10_3)
+    L7_3 = L7_3.pos
+    L8_3 = sceneData
+    L9_3 = L8_3
+    L8_3 = L8_3.GetDummyPoint
+    L10_3 = 3
+    L11_3 = "Q13020_guide_T1302001_N13003"
+    L8_3 = L8_3(L9_3, L10_3, L11_3)
+    L8_3 = L8_3.rot
+    L9_3 = true
+    L10_3 = false
+    L11_3 = 3
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+  end
+  L3_2(L4_2, L5_2)
 end
 L1_1.OnSubStart1302001 = L9_1
 function L9_1(A0_2, A1_2)
