@@ -60,8 +60,6 @@ function L10_1(A0_2)
   L1_2["7323837"] = L2_2
   L2_2 = A0_2.OnSubStart7323806
   L1_2["7323806"] = L2_2
-  L2_2 = A0_2.OnSubStart7323834
-  L1_2["7323834"] = L2_2
   L2_2 = A0_2.OnSubStart7323807
   L1_2["7323807"] = L2_2
   L2_2 = A0_2.OnSubStart7323830
@@ -102,6 +100,8 @@ function L10_1(A0_2)
   L1_2["7323832"] = L2_2
   L2_2 = A0_2.OnSubStart7323825
   L1_2["7323825"] = L2_2
+  L2_2 = A0_2.OnSubStart7323834
+  L1_2["7323834"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L10_1
@@ -128,8 +128,6 @@ function L10_1(A0_2)
   L1_2["7323837"] = L2_2
   L2_2 = A0_2.OnSubFinish7323806
   L1_2["7323806"] = L2_2
-  L2_2 = A0_2.OnSubFinish7323834
-  L1_2["7323834"] = L2_2
   L2_2 = A0_2.OnSubFinish7323807
   L1_2["7323807"] = L2_2
   L2_2 = A0_2.OnSubFinish7323830
@@ -170,6 +168,8 @@ function L10_1(A0_2)
   L1_2["7323832"] = L2_2
   L2_2 = A0_2.OnSubFinish7323825
   L1_2["7323825"] = L2_2
+  L2_2 = A0_2.OnSubFinish7323834
+  L1_2["7323834"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L10_1
@@ -419,6 +419,24 @@ function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = A2_2
+    L5_3 = A3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L4_2(L5_2, L6_2)
+end
+L1_1.NpcCreateWithActionSafeCall = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -498,10 +516,10 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.PaimonData
-  L4_2 = L4_2.alias
-  L5_2 = 3
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.PaimonData
+  L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7323841 = L10_1
@@ -610,7 +628,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323833 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7323833"
   L2_2(L3_2)
@@ -618,22 +636,34 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.NarratorOnlyTaskByData
   L4_2 = L9_1.Narrator_732389922
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.EnterSceneLookCamera
-    L3_3 = {}
-    L3_3.x = -53.402
-    L3_3.y = 215.864
-    L3_3.z = 6196.65
-    L4_3 = 0
-    L5_3 = 3
-    L6_3 = false
-    L7_3 = false
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
+    L1_3 = L1_3.CallDelay
+    L3_3 = 2
+    function L4_3(A0_4)
+      local L1_4, L2_4, L3_4, L4_4, L5_4, L6_4, L7_4
+      L1_4 = L3_1
+      L2_4 = L1_4
+      L1_4 = L1_4.EnterSceneLookCamera
+      L3_4 = {}
+      L3_4.x = -53.402
+      L3_4.y = 215.864
+      L3_4.z = 6196.65
+      L4_4 = 0
+      L5_4 = 2
+      L6_4 = false
+      L7_4 = false
+      L1_4(L2_4, L3_4, L4_4, L5_4, L6_4, L7_4)
+    end
+    L1_3(L2_3, L3_3, L4_3)
   end
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323833 = L10_1
 function L10_1(A0_2, A1_2)
@@ -769,19 +799,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323806Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "guide_Q7323806"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q7323806Trigger
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "guide_Q7323806"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q7323806Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -798,48 +818,9 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323806 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
-  L2_2 = print
-  L3_2 = "OnSubFinish7323806"
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.EnterSceneLookCamera
-  L4_2 = {}
-  L4_2.x = 58.0
-  L4_2.y = 240.0
-  L4_2.z = 6157.0
-  L5_2 = 0
-  L6_2 = 2
-  L7_2 = false
-  L8_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CallDelay
-  L4_2 = 1
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.NarratorOnlyTaskByData
-    L3_3 = L9_1.Narrator_732389903
-    L1_3(L2_3, L3_3)
-  end
-  L2_2(L3_2, L4_2, L5_2)
-end
-L1_1.OnSubFinish7323806 = L10_1
-function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubStart7323834"
-  L2_2(L3_2)
-end
-L1_1.OnSubStart7323834 = L10_1
-function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
-  L3_2 = "OnSubFinish7323834"
+  L3_2 = "OnSubFinish7323806"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -854,7 +835,7 @@ function L10_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish7323834 = L10_1
+L1_1.OnSubFinish7323806 = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -1089,14 +1070,6 @@ function L10_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubStart7323820"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc4283Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos
@@ -1116,6 +1089,21 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc4283Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7323820 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1126,18 +1114,20 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7323820 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart7323821"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc4283Data
-  L5_2 = L5_2.id
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
+  L4_2 = L7_1.Npc4283Data
+  L4_2 = L4_2.id
+  L5_2 = 7323821
   L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = 6
+  L8_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart7323821 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1154,7 +1144,7 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
+  L2_2 = L2_2.NpcCreateWithActionSafeCall
   L4_2 = A1_2
   L5_2 = L7_1.Npc4283Data
   L5_2 = L5_2.id
@@ -1170,6 +1160,21 @@ function L10_1(A0_2, A1_2)
   L8_2 = L8_1.TPos_Q7323822Trigger
   L8_2 = L8_2.pos
   L9_2 = L8_1.TPos_Q7323822Trigger
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q7323825Trigger"
+  L5_2 = "Actor/Gadget/Q7323825Trigger"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = L8_1.TPos_Q7323825Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q7323825Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -1219,11 +1224,6 @@ function L10_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubFinish7323835"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L9_1.Narrator_732389935
-  L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
@@ -1295,10 +1295,18 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323823 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish7323823"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc4283Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcDestroyWithBlackscreen
@@ -1551,4 +1559,18 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish7323825 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7323834"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7323834 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7323834"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7323834 = L10_1
 return L1_1

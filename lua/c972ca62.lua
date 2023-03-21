@@ -174,8 +174,10 @@ function L12_1(A0_2)
 end
 L1_1.OnSubFinishHandlerBuild = L12_1
 function L12_1(A0_2)
-  local L1_2
+  local L1_2, L2_2
   L1_2 = {}
+  L2_2 = A0_2.OnSubFailed1916104
+  L1_2["1916104"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
 L1_1.OnSubFailedHandlerBuild = L12_1
@@ -493,7 +495,7 @@ function L12_1(A0_2, A1_2)
   L8_2 = 3
   L9_2 = -1
   function L10_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.GetQuestNpcActor
@@ -501,44 +503,38 @@ function L12_1(A0_2, A1_2)
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
-    L2_3 = L1_3.SteerToTask
-    L4_3 = M
-    L4_3 = L4_3.Euler2DirXZ
-    L5_3 = {}
-    L5_3.y = 50
-    L4_3 = L4_3(L5_3)
-    L5_3 = 1
-    L6_3 = true
+    L2_3 = L1_3.DoFreeStyle
+    L4_3 = 1280
+    L5_3 = true
+    L6_3 = nil
     L7_3 = true
-    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3)
+    L8_3 = true
+    L9_3 = false
+    L10_3 = false
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
     L2_3 = L3_1
     L3_3 = L2_3
-    L2_3 = L2_3.CallDelay
-    L4_3 = 2
+    L2_3 = L2_3.NarratorOnlyTaskByData
+    L4_3 = L8_1.NarratorWithId_01
     function L5_3(A0_4)
-      local L1_4, L2_4, L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4
+      local L1_4, L2_4, L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4, L11_4, L12_4, L13_4, L14_4, L15_4
       L1_4 = L3_1
       L2_4 = L1_4
       L1_4 = L1_4.GetQuestNpcActor
       L3_4 = L7_1.Coop_LaylaData
       L3_4 = L3_4.alias
-      L1_4 = L1_4(L2_4, L3_4)
-      L3_4 = L1_4
-      L2_4 = L1_4.DoFreeStyle
-      L4_4 = 1280
-      L5_4 = true
-      L6_4 = nil
-      L7_4 = true
-      L8_4 = true
-      L9_4 = false
-      L10_4 = false
-      L2_4(L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4)
+      L4_4 = 19161
+      L1_4 = L1_4(L2_4, L3_4, L4_4)
       L2_4 = L3_1
       L3_4 = L2_4
-      L2_4 = L2_4.CallDelay
-      L4_4 = 4
-      function L5_4(A0_5)
-        local L1_5, L2_5, L3_5, L4_5, L5_5
+      L2_4 = L2_4.NpcBeFollowTaskByRoutePointsWithDiffLen
+      L4_4 = L1_4
+      L5_4 = L8_1.RoutePointsData_01
+      L6_4 = 5
+      L7_4 = 3
+      L8_4 = -1
+      function L9_4(A0_5)
+        local L1_5, L2_5, L3_5, L4_5, L5_5, L6_5, L7_5, L8_5, L9_5, L10_5
         L1_5 = L3_1
         L2_5 = L1_5
         L1_5 = L1_5.GetQuestNpcActor
@@ -546,17 +542,19 @@ function L12_1(A0_2, A1_2)
         L3_5 = L3_5.alias
         L1_5 = L1_5(L2_5, L3_5)
         L3_5 = L1_5
-        L2_5 = L1_5.DoFreeStateTrigger
-        L2_5(L3_5)
+        L2_5 = L1_5.DoFreeStyle
+        L4_5 = 1130
+        L5_5 = true
+        L6_5 = nil
+        L7_5 = true
+        L8_5 = true
+        L9_5 = false
+        L10_5 = false
+        L2_5(L3_5, L4_5, L5_5, L6_5, L7_5, L8_5, L9_5, L10_5)
         L2_5 = L3_1
         L3_5 = L2_5
         L2_5 = L2_5.NarratorOnlyTaskByData
-        L4_5 = L8_1.NarratorWithId_01
-        L2_5(L3_5, L4_5)
-        L2_5 = L3_1
-        L3_5 = L2_5
-        L2_5 = L2_5.CallDelay
-        L4_5 = 2
+        L4_5 = L8_1.NarratorWithId_02
         function L5_5(A0_6)
           local L1_6, L2_6, L3_6, L4_6, L5_6, L6_6, L7_6, L8_6, L9_6, L10_6, L11_6, L12_6, L13_6, L14_6, L15_6
           L1_6 = L3_1
@@ -570,12 +568,28 @@ function L12_1(A0_2, A1_2)
           L3_6 = L2_6
           L2_6 = L2_6.NpcBeFollowTaskByRoutePointsWithDiffLen
           L4_6 = L1_6
-          L5_6 = L8_1.RoutePointsData_01
+          L5_6 = L8_1.RoutePointsData_02
           L6_6 = 5
           L7_6 = 3
           L8_6 = -1
           function L9_6(A0_7)
             local L1_7, L2_7, L3_7, L4_7, L5_7, L6_7, L7_7
+            L1_7 = print
+            L2_7 = "FinishSubQuest1916104"
+            L1_7(L2_7)
+            L2_7 = A0_7
+            L1_7 = A0_7.SyncPos
+            L3_7 = 2
+            L1_7(L2_7, L3_7)
+            L1_7 = A0_7.BeFollowState
+            L2_7 = BeFollowState
+            L2_7 = L2_7.FAILED
+            if L1_7 == L2_7 then
+              return
+            end
+            L2_7 = A0_7
+            L1_7 = A0_7.Standby
+            L1_7(L2_7)
             L1_7 = L3_1
             L2_7 = L1_7
             L1_7 = L1_7.GetQuestNpcActor
@@ -587,141 +601,29 @@ function L12_1(A0_2, A1_2)
             L4_7 = M
             L4_7 = L4_7.Euler2DirXZ
             L5_7 = {}
-            L5_7.y = 270
+            L5_7.y = 90
             L4_7 = L4_7(L5_7)
             L5_7 = 1
             L6_7 = true
             L7_7 = true
             L2_7(L3_7, L4_7, L5_7, L6_7, L7_7)
+            L2_7 = actorUtils
+            L2_7 = L2_7.FinishQuestID
+            L3_7 = false
+            L4_7 = 1916104
+            L2_7(L3_7, L4_7)
             L2_7 = L3_1
             L3_7 = L2_7
-            L2_7 = L2_7.CallDelay
-            L4_7 = 2
-            function L5_7(A0_8)
-              local L1_8, L2_8, L3_8, L4_8, L5_8, L6_8, L7_8, L8_8, L9_8, L10_8
-              L1_8 = L3_1
-              L2_8 = L1_8
-              L1_8 = L1_8.GetQuestNpcActor
-              L3_8 = L7_1.Coop_LaylaData
-              L3_8 = L3_8.alias
-              L1_8 = L1_8(L2_8, L3_8)
-              L3_8 = L1_8
-              L2_8 = L1_8.DoFreeStyle
-              L4_8 = 1130
-              L5_8 = true
-              L6_8 = nil
-              L7_8 = true
-              L8_8 = true
-              L9_8 = false
-              L10_8 = false
-              L2_8(L3_8, L4_8, L5_8, L6_8, L7_8, L8_8, L9_8, L10_8)
-              L2_8 = L3_1
-              L3_8 = L2_8
-              L2_8 = L2_8.NarratorOnlyTaskByData
-              L4_8 = L8_1.NarratorWithId_02
-              function L5_8(A0_9)
-                local L1_9, L2_9, L3_9, L4_9, L5_9, L6_9, L7_9, L8_9, L9_9, L10_9, L11_9, L12_9, L13_9, L14_9, L15_9, L16_9
-                L1_9 = L3_1
-                L2_9 = L1_9
-                L1_9 = L1_9.GetQuestNpcActor
-                L3_9 = L7_1.Coop_LaylaData
-                L3_9 = L3_9.alias
-                L1_9 = L1_9(L2_9, L3_9)
-                L3_9 = L1_9
-                L2_9 = L1_9.DoFreeStateTrigger
-                L2_9(L3_9)
-                L2_9 = L3_1
-                L3_9 = L2_9
-                L2_9 = L2_9.GetQuestNpcActor
-                L4_9 = L7_1.Coop_LaylaData
-                L4_9 = L4_9.alias
-                L5_9 = 19161
-                L2_9 = L2_9(L3_9, L4_9, L5_9)
-                L3_9 = L3_1
-                L4_9 = L3_9
-                L3_9 = L3_9.NpcBeFollowTaskByRoutePointsWithDiffLen
-                L5_9 = L2_9
-                L6_9 = L8_1.RoutePointsData_02
-                L7_9 = 5
-                L8_9 = 3
-                L9_9 = -1
-                function L10_9(A0_10)
-                  local L1_10, L2_10, L3_10, L4_10, L5_10, L6_10, L7_10
-                  L1_10 = print
-                  L2_10 = "FinishSubQuest1916104"
-                  L1_10(L2_10)
-                  L2_10 = A0_10
-                  L1_10 = A0_10.SyncPos
-                  L3_10 = 2
-                  L1_10(L2_10, L3_10)
-                  L1_10 = A0_10.BeFollowState
-                  L2_10 = BeFollowState
-                  L2_10 = L2_10.FAILED
-                  if L1_10 == L2_10 then
-                    return
-                  end
-                  L2_10 = A0_10
-                  L1_10 = A0_10.Standby
-                  L1_10(L2_10)
-                  L1_10 = L3_1
-                  L2_10 = L1_10
-                  L1_10 = L1_10.GetQuestNpcActor
-                  L3_10 = L7_1.Coop_LaylaData
-                  L3_10 = L3_10.alias
-                  L1_10 = L1_10(L2_10, L3_10)
-                  L3_10 = L1_10
-                  L2_10 = L1_10.SteerToTask
-                  L4_10 = M
-                  L4_10 = L4_10.Euler2DirXZ
-                  L5_10 = {}
-                  L5_10.y = 90
-                  L4_10 = L4_10(L5_10)
-                  L5_10 = 1
-                  L6_10 = true
-                  L7_10 = true
-                  L2_10(L3_10, L4_10, L5_10, L6_10, L7_10)
-                  L2_10 = actorUtils
-                  L2_10 = L2_10.FinishQuestID
-                  L3_10 = false
-                  L4_10 = 1916104
-                  L2_10(L3_10, L4_10)
-                  L2_10 = L3_1
-                  L3_10 = L2_10
-                  L2_10 = L2_10.GetQuestNpcActor
-                  L4_10 = L7_1.Coop_LaylaData
-                  L4_10 = L4_10.alias
-                  L5_10 = 19161
-                  L2_10 = L2_10(L3_10, L4_10, L5_10)
-                  L3_10 = L3_1
-                  L4_10 = L3_10
-                  L3_10 = L3_10.NpcResetForceAvatarWalk
-                  L5_10 = L2_10
-                  L3_10(L4_10, L5_10)
-                end
-                L11_9 = nil
-                L12_9 = nil
-                L13_9 = A0_9.MovePause
-                L14_9 = A0_9.MoveResume
-                L15_9 = nil
-                L16_9 = true
-                L3_9(L4_9, L5_9, L6_9, L7_9, L8_9, L9_9, L10_9, L11_9, L12_9, L13_9, L14_9, L15_9, L16_9)
-                L3_9 = L3_1
-                L4_9 = L3_9
-                L3_9 = L3_9.CallDelay
-                L5_9 = 4
-                function L6_9(A0_10)
-                  local L1_10, L2_10, L3_10
-                  L1_10 = L3_1
-                  L2_10 = L1_10
-                  L1_10 = L1_10.NarratorOnlyTaskByData
-                  L3_10 = L8_1.NarratorWithId_03
-                  L1_10(L2_10, L3_10)
-                end
-                L3_9(L4_9, L5_9, L6_9)
-              end
-              L2_8(L3_8, L4_8, L5_8)
-            end
-            L2_7(L3_7, L4_7, L5_7)
+            L2_7 = L2_7.GetQuestNpcActor
+            L4_7 = L7_1.Coop_LaylaData
+            L4_7 = L4_7.alias
+            L5_7 = 19161
+            L2_7 = L2_7(L3_7, L4_7, L5_7)
+            L3_7 = L3_1
+            L4_7 = L3_7
+            L3_7 = L3_7.NpcResetForceAvatarWalk
+            L5_7 = L2_7
+            L3_7(L4_7, L5_7)
           end
           L10_6 = nil
           L11_6 = nil
@@ -730,10 +632,21 @@ function L12_1(A0_2, A1_2)
           L14_6 = nil
           L15_6 = true
           L2_6(L3_6, L4_6, L5_6, L6_6, L7_6, L8_6, L9_6, L10_6, L11_6, L12_6, L13_6, L14_6, L15_6)
+          L2_6 = L3_1
+          L3_6 = L2_6
+          L2_6 = L2_6.NarratorOnlyTaskByData
+          L4_6 = L8_1.NarratorWithId_03
+          L2_6(L3_6, L4_6)
         end
         L2_5(L3_5, L4_5, L5_5)
       end
-      L2_4(L3_4, L4_4, L5_4)
+      L10_4 = nil
+      L11_4 = nil
+      L12_4 = A0_4.MovePause
+      L13_4 = A0_4.MoveResume
+      L14_4 = nil
+      L15_4 = true
+      L2_4(L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4, L11_4, L12_4, L13_4, L14_4, L15_4)
     end
     L2_3(L3_3, L4_3, L5_3)
   end
@@ -781,6 +694,24 @@ function L12_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1916104 = L12_1
+function L12_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFailed1916104"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Coop_LaylaData
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+end
+L1_1.OnSubFailed1916104 = L12_1
 function L12_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print

@@ -180,25 +180,6 @@ function L10_1(A0_2, A1_2, A2_2, A3_2)
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.NpcCreateWithTrigger = L10_1
-function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
-  L6_2 = L3_1
-  L7_2 = L6_2
-  L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
-  L8_2 = "Q"
-  L9_2 = A2_2
-  L10_2 = "N"
-  L11_2 = A1_2
-  L12_2 = "Trigger"
-  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
-  L9_2 = A2_2
-  L10_2 = A1_2
-  L11_2 = A3_2
-  L12_2 = A4_2
-  L13_2 = A5_2
-  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-end
-L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L10_1
 function L10_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L3_2 = L3_1
@@ -274,7 +255,7 @@ function L10_1(A0_2, A1_2)
   L4_2 = A1_2
   L5_2 = 1
   L6_2 = L9_1.TextmapId01
-  L7_2 = 1
+  L7_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnSubFinish7328501 = L10_1
@@ -296,7 +277,7 @@ function L10_1(A0_2, A1_2)
   L4_2 = A1_2
   L5_2 = 2
   L6_2 = L9_1.TextmapId01
-  L7_2 = 1
+  L7_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnSubFinish7328502 = L10_1
@@ -337,10 +318,23 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7328503 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish7328503"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CallDelay
+  L4_2 = 2
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NarratorOnlyTaskByData
+    L3_3 = L9_1.NarratorWithId03
+    L1_3(L2_3, L3_3)
+  end
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7328503 = L10_1
 function L10_1(A0_2, A1_2)
@@ -477,7 +471,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7328517 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7328517"
   L2_2(L3_2)
@@ -485,28 +479,7 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.NarratorOnlyTaskByData
   L4_2 = L9_1.NarratorWithId02
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CallDelay
-    L3_3 = 2
-    function L4_3(A0_4)
-      local L1_4, L2_4, L3_4, L4_4, L5_4, L6_4, L7_4
-      L1_4 = L3_1
-      L2_4 = L1_4
-      L1_4 = L1_4.NpcCreateWithNpcTriggerAndBlackscreen
-      L3_4 = L7_1.Npc20971Data
-      L3_4 = L3_4.id
-      L4_4 = 7328518
-      L5_4 = 1
-      L6_4 = 40
-      L7_4 = 1
-      L1_4(L2_4, L3_4, L4_4, L5_4, L6_4, L7_4)
-    end
-    L1_3(L2_3, L3_3, L4_3)
-  end
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7328517 = L10_1
 function L10_1(A0_2, A1_2)
@@ -539,17 +512,37 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7328518 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart7328506"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc20971Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7328506 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7328506"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.NarratorWithId06
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7328506 = L10_1
 function L10_1(A0_2, A1_2)
@@ -572,11 +565,6 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L9_1.NarratorWithId06
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7328511 = L10_1
 function L10_1(A0_2, A1_2)
@@ -615,6 +603,21 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc20971Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = L7_1.Npc20971Data
+    L3_3 = L3_3.alias
+    L4_3 = 0
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7328507 = L10_1
 return L1_1

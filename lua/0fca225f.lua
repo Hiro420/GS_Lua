@@ -34,8 +34,8 @@ function L8_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddCylinderShapeTrigger
-  L3_2 = 20
-  L4_2 = 15
+  L3_2 = 30
+  L4_2 = 30
   L5_2 = true
   L6_2 = {}
   L6_2.x = 0.0

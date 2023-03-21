@@ -108,8 +108,10 @@ function L9_1(A0_2)
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
 function L9_1(A0_2)
-  local L1_2
+  local L1_2, L2_2
   L1_2 = {}
+  L2_2 = A0_2.OnSubFailed1202906
+  L1_2["1202906"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
 L1_1.OnSubFailedHandlerBuild = L9_1
@@ -844,4 +846,29 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1202906 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = print
+  L3_2 = "OnSubFailed1202906"
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L6_1.Npc12366Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = L4_1
+  L2_2 = L2_2(L3_2, L4_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q12029Trigger1"
+  L6_2 = 3
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+end
+L1_1.OnSubFailed1202906 = L9_1
 return L1_1

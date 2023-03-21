@@ -47,19 +47,46 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
-  L1_2 = actorUtils
-  L1_2 = L1_2.FinishQuestID
-  L2_2 = false
-  L3_2 = 7323806
-  L1_2(L2_2, L3_2)
-  L1_2 = L3_1
+  L1_2 = actorMgr
   L2_2 = L1_2
-  L1_2 = L1_2.DestroySelf
-  L1_2(L2_2)
+  L1_2 = L1_2.GetActor
+  L3_2 = "73238"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.EnterSceneLookCamera
+  L4_2 = {}
+  L4_2.x = 58.0
+  L4_2.y = 240.0
+  L4_2.z = 6157.0
+  L5_2 = 0
+  L6_2 = 2
+  L7_2 = false
+  L8_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CallDelay
+  L4_2 = 1
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.GetActor
+    L3_3 = "73238"
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.NarratorOnlyTaskByData
+    L4_3 = L7_1.Narrator_732389903
+    L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.DestroySelf
+    L2_3(L3_3)
+  end
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

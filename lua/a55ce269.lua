@@ -184,23 +184,10 @@ function L10_1(A0_2, A1_2, A2_2)
 end
 L1_1.NpcDestroyWithBlackscreen = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart7333001"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CallDelay
-  L4_2 = 1
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.NarratorOnlyTaskByData
-    L3_3 = L9_1.NarratorWithId03
-    L1_3(L2_3, L3_3)
-  end
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart7333001 = L10_1
 function L10_1(A0_2, A1_2)
@@ -481,15 +468,10 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7333008 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7333008"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L9_1.NarratorWithId08
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7333008 = L10_1
 function L10_1(A0_2, A1_2)

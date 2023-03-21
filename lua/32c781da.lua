@@ -349,6 +349,20 @@ end
 L1_1.NpcDestroyWithBlackscreen = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = L2_2
+    L3_2 = L2_2.DestroySelf
+    L3_2(L4_2)
+  end
+end
+L1_1.ActorDestroy = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "InvokeOnInteraction"
   L2_2(L3_2)
@@ -422,14 +436,6 @@ function L10_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubStart7323501"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc4283Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos
@@ -437,14 +443,10 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323501Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = {}
-  L8_2.x = 885.882
-  L8_2.y = 380.741
-  L8_2.z = 6057.145
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 8.298
-  L9_2.z = 0.0
+  L8_2 = L8_1.TPos_Q7323501Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q7323501Trigger
+  L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
   L12_2 = 3
@@ -478,19 +480,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323502Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "guide_Q7323504"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q7323502Trigger
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "guide_Q7323504"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q7323502Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -552,19 +544,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323503Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q7323503_guide"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q7323503Trigger
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q7323503_guide"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q7323503Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -625,10 +607,24 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7323551 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart7323505"
   L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q7323505Trigger"
+  L5_2 = "Actor/Gadget/Q7323505Trigger"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = L8_1.TPos_Q7323505Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q7323505Trigger
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart7323505 = L10_1
 function L10_1(A0_2, A1_2)
@@ -873,10 +869,15 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323510 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7323510"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q7323513Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323510 = L10_1
 function L10_1(A0_2, A1_2)
@@ -891,24 +892,25 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323514Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = {}
-  L8_2.x = 457.045
-  L8_2.y = 215.031
-  L8_2.z = 6085.441
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 0.0
-  L9_2.z = 0.0
+  L8_2 = L8_1.TPos_Q7323514Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q7323514Trigger
+  L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart7323519 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7323519"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q7323514Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323519 = L10_1
 function L10_1(A0_2, A1_2)
@@ -923,24 +925,25 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q7323515Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = {}
-  L8_2.x = 865.425
-  L8_2.y = 215.946
-  L8_2.z = 5626.133
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 0.0
-  L9_2.z = 0.0
+  L8_2 = L8_1.TPos_Q7323515Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q7323515Trigger
+  L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart7323522 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7323522"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q7323515Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323522 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1028,20 +1031,12 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ActionSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
+    local L1_3, L2_3, L3_3
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.NarratorOnlyTaskByData
     L3_3 = L9_1.NarratorWithId20
-    function L4_3(A0_4)
-      local L1_4, L2_4, L3_4
-      L1_4 = L3_1
-      L2_4 = L1_4
-      L1_4 = L1_4.ShowTutorialDialog
-      L3_4 = 1381
-      L1_4(L2_4, L3_4)
-    end
-    L1_3(L2_3, L3_3, L4_3)
+    L1_3(L2_3, L3_3)
   end
   L2_2(L3_2, L4_2)
 end

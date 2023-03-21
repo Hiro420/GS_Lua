@@ -6,12 +6,12 @@ L0_1 = require
 L1_1 = "Actor/Gadget/GadgetActorProxy"
 L0_1 = L0_1(L1_1)
 L1_1 = class
-L2_1 = "Q4010603_TriggerOut2"
+L2_1 = "Q4010012_TriggerIn"
 L3_1 = L0_1
 L1_1 = L1_1(L2_1, L3_1)
-L1_1.defaultAlias = "Q4010603_TriggerOut2"
+L1_1.defaultAlias = "Q4010012_TriggerIn"
 L2_1 = require
-L3_1 = "Quest/Client/Q40106ClientConfig"
+L3_1 = "Quest/Client/Q40100ClientConfig"
 L2_1 = L2_1(L3_1)
 L3_1 = nil
 L4_1 = L2_1.SubIDs
@@ -34,7 +34,7 @@ function L8_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 40
+  L3_2 = 5
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
@@ -50,10 +50,60 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "40100"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1050Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1058Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1064Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1063Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1067Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SafeDestroyQuestNpc
+  L4_2 = L5_1.Npc1065Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.RequestInteraction
+  L4_2 = L5_1.Npc13153Data
+  L4_2 = L4_2.alias
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)
@@ -71,18 +121,9 @@ function L8_1(A0_2)
 end
 L1_1.LightUpTriggerIn = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2
+  local L1_2, L2_2
   L1_2 = print
   L2_2 = "TriggerOut"
-  L1_2(L2_2)
-  L1_2 = actorUtils
-  L1_2 = L1_2.FinishQuestID
-  L2_2 = false
-  L3_2 = 4010603
-  L1_2(L2_2, L3_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.DestroySelf
   L1_2(L2_2)
 end
 L1_1.TriggerOut = L8_1

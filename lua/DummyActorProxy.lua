@@ -2175,6 +2175,13 @@ function L2_1(A0_2)
   return L1_2
 end
 L0_1[L1_1] = L2_1
+L1_1 = "EnableInteractionWithUI"
+function L2_1(A0_2)
+  local L1_2
+  L1_2 = 0
+  return L1_2
+end
+L0_1[L1_1] = L2_1
 L1_1 = "StartWalkTo"
 function L2_1(A0_2)
   local L1_2

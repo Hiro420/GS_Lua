@@ -195,7 +195,7 @@ function L8_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc20883Data
+  L4_2 = L7_1.Npc20987Data
   L4_2 = L4_2.id
   L5_2 = 7334305
   L6_2 = 1
@@ -212,7 +212,7 @@ function L8_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc20883Data
+  L4_2 = L7_1.Npc20987Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)

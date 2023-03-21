@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
@@ -63,10 +63,26 @@ function L8_1(A0_2)
   L2_2 = L1_2.NarratorOnlyTaskByData
   L4_2 = L7_1.NarratorWithId14
   L2_2(L3_2, L4_2)
-  L2_2 = L3_1
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.DestroySelf
-  L2_2(L3_2)
+  L2_2 = L2_2.GetActor
+  L4_2 = "73235"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.EnterSceneLookCamera
+  L5_2 = {}
+  L5_2.x = 456.397
+  L5_2.y = 214.989
+  L5_2.z = 6085.271
+  L6_2 = 0
+  L7_2 = 3
+  L8_2 = true
+  L9_2 = true
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroySelf
+  L3_2(L4_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

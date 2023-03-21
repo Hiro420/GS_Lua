@@ -204,33 +204,6 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
-function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2
-  L6_2 = L3_1
-  L7_2 = L6_2
-  L6_2 = L6_2.CallDelay
-  L8_2 = 2
-  function L9_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CreateQuestNpcWithTriggerBlack
-    L3_3 = "Q"
-    L4_3 = A2_2
-    L5_3 = "N"
-    L6_3 = A1_2
-    L7_3 = "Trigger"
-    L3_3 = L3_3 .. L4_3 .. L5_3 .. L6_3 .. L7_3
-    L4_3 = A2_2
-    L5_3 = A1_2
-    L6_3 = A3_2
-    L7_3 = A4_2
-    L8_3 = A5_2
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
-  end
-  L6_2(L7_2, L8_2, L9_2)
-end
-L1_1.CallDelayNpcCreateWithNpcTriggerAndBlack = L9_1
 function L9_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   L3_2 = L3_1
@@ -314,7 +287,7 @@ function L9_1(A0_2)
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
-    L2_3 = L1_3.EnableInteraction
+    L2_3 = L1_3.EnableInteractionWithUI
     L4_3 = true
     L2_3(L3_3, L4_3)
     L2_3 = {}
@@ -375,19 +348,14 @@ function L9_1(A0_2)
         L2_4(L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4)
       end
       L5_3(L6_3, L7_3, L8_3)
+    else
+      L5_3 = L3_1
+      L6_3 = L5_3
+      L5_3 = L5_3.BaizhuInvestigate
+      L5_3(L6_3)
     end
   end
   L1_2(L2_2, L3_2, L4_2, L5_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.GetQuestNpcActor
-  L3_2 = L7_1.Npc1068Data
-  L3_2 = L3_2.alias
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.EnableInteraction
-  L4_2 = false
-  L2_2(L3_2, L4_2)
 end
 L1_1.BAIWalkToPoint3 = L9_1
 function L9_1(A0_2)
@@ -421,7 +389,7 @@ function L9_1(A0_2)
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
-    L2_3 = L1_3.EnableInteraction
+    L2_3 = L1_3.EnableInteractionWithUI
     L4_3 = true
     L2_3(L3_3, L4_3)
     L2_3 = {}
@@ -482,23 +450,18 @@ function L9_1(A0_2)
         L2_4(L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4)
       end
       L5_3(L6_3, L7_3, L8_3)
+    else
+      L5_3 = L3_1
+      L6_3 = L5_3
+      L5_3 = L5_3.BaizhuInvestigate
+      L5_3(L6_3)
     end
   end
   L1_2(L2_2, L3_2, L4_2, L5_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.GetQuestNpcActor
-  L3_2 = L7_1.Npc1068Data
-  L3_2 = L3_2.alias
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.EnableInteraction
-  L4_2 = false
-  L2_2(L3_2, L4_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.UnCallFunc
-  L4_2 = A0_2.CallDelay
-  L2_2(L3_2, L4_2)
+  L2_2 = A0_2
+  L1_2 = A0_2.UnCallFunc
+  L3_2 = A0_2.CallDelay
+  L1_2(L2_2, L3_2)
 end
 L1_1.BAIWalkToPoint2 = L9_1
 function L9_1(A0_2)
@@ -536,7 +499,7 @@ function L9_1(A0_2)
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
-    L2_3 = L1_3.EnableInteraction
+    L2_3 = L1_3.EnableInteractionWithUI
     L4_3 = true
     L2_3(L3_3, L4_3)
     L2_3 = {}
@@ -597,19 +560,14 @@ function L9_1(A0_2)
         L2_4(L3_4, L4_4, L5_4, L6_4, L7_4, L8_4, L9_4, L10_4)
       end
       L5_3(L6_3, L7_3, L8_3)
+    else
+      L5_3 = L3_1
+      L6_3 = L5_3
+      L5_3 = L5_3.BaizhuInvestigate
+      L5_3(L6_3)
     end
   end
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1068Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.EnableInteraction
-  L5_2 = false
-  L3_2(L4_2, L5_2)
 end
 L1_1.BAIWalkToPoint1 = L9_1
 function L9_1(A0_2)
@@ -619,7 +577,7 @@ function L9_1(A0_2)
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.ActionSafeCall
+  L1_2 = L1_2.AfterMainPageActiveSafeCall
   function L3_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3
     L1_3 = L3_1
@@ -636,320 +594,326 @@ function L9_1(A0_2)
     L2_3 = L2_3.CallDelay
     L4_3 = 1.5
     function L5_3(A0_4)
-      local L1_4, L2_4, L3_4, L4_4
+      local L1_4, L2_4, L3_4
       L1_4 = L3_1
       L2_4 = L1_4
-      L1_4 = L1_4.GetQuestVar
-      L3_4 = 1102801
-      L4_4 = 0
-      L1_4 = L1_4(L2_4, L3_4, L4_4)
-      if L1_4 == 0 then
-        L1_4 = L3_1
-        L2_4 = L1_4
-        L1_4 = L1_4.BAIWalkToPoint1
-        L1_4(L2_4)
-      else
-        L1_4 = L3_1
-        L2_4 = L1_4
-        L1_4 = L1_4.GetQuestVar
-        L3_4 = 1102801
-        L4_4 = 0
-        L1_4 = L1_4(L2_4, L3_4, L4_4)
-        if L1_4 == 1 then
-          L1_4 = L3_1
-          L2_4 = L1_4
-          L1_4 = L1_4.GetQuestVar
-          L3_4 = 1102801
-          L4_4 = 1
-          L1_4 = L1_4(L2_4, L3_4, L4_4)
-          if L1_4 == 0 then
-            L1_4 = L3_1
-            L2_4 = L1_4
-            L1_4 = L1_4.BAIWalkToPoint1
-            L1_4(L2_4)
-          else
-            L1_4 = L3_1
-            L2_4 = L1_4
-            L1_4 = L1_4.GetQuestVar
-            L3_4 = 1102801
-            L4_4 = 1
-            L1_4 = L1_4(L2_4, L3_4, L4_4)
-            if L1_4 == 1 then
-              L1_4 = L3_1
-              L2_4 = L1_4
-              L1_4 = L1_4.BAIWalkToPoint2
-              L1_4(L2_4)
-            end
-          end
+      L1_4 = L1_4.ActionSafeCall
+      function L3_4(A0_5)
+        local L1_5, L2_5, L3_5, L4_5
+        L1_5 = L3_1
+        L2_5 = L1_5
+        L1_5 = L1_5.GetSubQuestState
+        L3_5 = 1102805
+        L1_5 = L1_5(L2_5, L3_5)
+        if L1_5 == 2 then
+          L1_5 = L3_1
+          L2_5 = L1_5
+          L1_5 = L1_5.BAIWalkToPoint4
+          L1_5(L2_5)
         else
-          L1_4 = L3_1
-          L2_4 = L1_4
-          L1_4 = L1_4.GetQuestVar
-          L3_4 = 1102801
-          L4_4 = 0
-          L1_4 = L1_4(L2_4, L3_4, L4_4)
-          if L1_4 == 2 then
-            L1_4 = L3_1
-            L2_4 = L1_4
-            L1_4 = L1_4.GetQuestVar
-            L3_4 = 1102801
-            L4_4 = 1
-            L1_4 = L1_4(L2_4, L3_4, L4_4)
-            if L1_4 == 0 then
-              L1_4 = L3_1
-              L2_4 = L1_4
-              L1_4 = L1_4.BAIWalkToPoint1
-              L1_4(L2_4)
-            else
-              L1_4 = L3_1
-              L2_4 = L1_4
-              L1_4 = L1_4.GetQuestVar
-              L3_4 = 1102801
-              L4_4 = 1
-              L1_4 = L1_4(L2_4, L3_4, L4_4)
-              if L1_4 == 1 then
-                L1_4 = L3_1
-                L2_4 = L1_4
-                L1_4 = L1_4.BAIWalkToPoint2
-                L1_4(L2_4)
+          L1_5 = L3_1
+          L2_5 = L1_5
+          L1_5 = L1_5.GetQuestVar
+          L3_5 = 1102801
+          L4_5 = 0
+          L1_5 = L1_5(L2_5, L3_5, L4_5)
+          if L1_5 == 0 then
+            L1_5 = L3_1
+            L2_5 = L1_5
+            L1_5 = L1_5.BAIWalkToPoint1
+            L1_5(L2_5)
+          else
+            L1_5 = L3_1
+            L2_5 = L1_5
+            L1_5 = L1_5.GetQuestVar
+            L3_5 = 1102801
+            L4_5 = 0
+            L1_5 = L1_5(L2_5, L3_5, L4_5)
+            if L1_5 == 1 then
+              L1_5 = L3_1
+              L2_5 = L1_5
+              L1_5 = L1_5.GetQuestVar
+              L3_5 = 1102801
+              L4_5 = 1
+              L1_5 = L1_5(L2_5, L3_5, L4_5)
+              if L1_5 == 0 then
+                L1_5 = L3_1
+                L2_5 = L1_5
+                L1_5 = L1_5.BAIWalkToPoint1
+                L1_5(L2_5)
               else
-                L1_4 = L3_1
-                L2_4 = L1_4
-                L1_4 = L1_4.GetQuestVar
-                L3_4 = 1102801
-                L4_4 = 1
-                L1_4 = L1_4(L2_4, L3_4, L4_4)
-                if L1_4 == 2 then
-                  L1_4 = L3_1
-                  L2_4 = L1_4
-                  L1_4 = L1_4.BAIWalkToPoint3
-                  L1_4(L2_4)
+                L1_5 = L3_1
+                L2_5 = L1_5
+                L1_5 = L1_5.GetQuestVar
+                L3_5 = 1102801
+                L4_5 = 1
+                L1_5 = L1_5(L2_5, L3_5, L4_5)
+                if L1_5 == 1 then
+                  L1_5 = L3_1
+                  L2_5 = L1_5
+                  L1_5 = L1_5.BAIWalkToPoint2
+                  L1_5(L2_5)
+                end
+              end
+            else
+              L1_5 = L3_1
+              L2_5 = L1_5
+              L1_5 = L1_5.GetQuestVar
+              L3_5 = 1102801
+              L4_5 = 0
+              L1_5 = L1_5(L2_5, L3_5, L4_5)
+              if L1_5 == 2 then
+                L1_5 = L3_1
+                L2_5 = L1_5
+                L1_5 = L1_5.GetQuestVar
+                L3_5 = 1102801
+                L4_5 = 1
+                L1_5 = L1_5(L2_5, L3_5, L4_5)
+                if L1_5 == 0 then
+                  L1_5 = L3_1
+                  L2_5 = L1_5
+                  L1_5 = L1_5.BAIWalkToPoint1
+                  L1_5(L2_5)
+                else
+                  L1_5 = L3_1
+                  L2_5 = L1_5
+                  L1_5 = L1_5.GetQuestVar
+                  L3_5 = 1102801
+                  L4_5 = 1
+                  L1_5 = L1_5(L2_5, L3_5, L4_5)
+                  if L1_5 == 1 then
+                    L1_5 = L3_1
+                    L2_5 = L1_5
+                    L1_5 = L1_5.BAIWalkToPoint2
+                    L1_5(L2_5)
+                  else
+                    L1_5 = L3_1
+                    L2_5 = L1_5
+                    L1_5 = L1_5.GetQuestVar
+                    L3_5 = 1102801
+                    L4_5 = 1
+                    L1_5 = L1_5(L2_5, L3_5, L4_5)
+                    if L1_5 == 2 then
+                      L1_5 = L3_1
+                      L2_5 = L1_5
+                      L1_5 = L1_5.BAIWalkToPoint3
+                      L1_5(L2_5)
+                    end
+                  end
+                end
+              else
+                L1_5 = L3_1
+                L2_5 = L1_5
+                L1_5 = L1_5.GetQuestVar
+                L3_5 = 1102801
+                L4_5 = 0
+                L1_5 = L1_5(L2_5, L3_5, L4_5)
+                if L1_5 == 3 then
+                  L1_5 = L3_1
+                  L2_5 = L1_5
+                  L1_5 = L1_5.BAIWalkToPoint4
+                  L1_5(L2_5)
                 end
               end
             end
-          else
-            L1_4 = L3_1
-            L2_4 = L1_4
-            L1_4 = L1_4.GetQuestVar
-            L3_4 = 1102801
-            L4_4 = 0
-            L1_4 = L1_4(L2_4, L3_4, L4_4)
-            if L1_4 == 3 then
-              L1_4 = L3_1
-              L2_4 = L1_4
-              L1_4 = L1_4.BAIWalkToPoint4
-              L1_4(L2_4)
-            end
           end
+          L1_5 = L3_1
+          L2_5 = L1_5
+          L1_5 = L1_5.GetQuestNpcActor
+          L3_5 = L7_1.Npc1068Data
+          L3_5 = L3_5.alias
+          L1_5 = L1_5(L2_5, L3_5)
+          L3_5 = L1_5
+          L2_5 = L1_5.EnableInteractionWithUI
+          L4_5 = false
+          L2_5(L3_5, L4_5)
         end
       end
+      L1_4(L2_4, L3_4)
     end
     L2_3(L3_3, L4_3, L5_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.EnableInteractionWithUI
+    L4_3 = false
+    L2_3(L3_3, L4_3)
   end
   L1_2(L2_2, L3_2)
 end
 L1_1.BaizhuInvestigate = L9_1
 function L9_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L1_2 = print
   L2_2 = "BAIWalkToPoint4"
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.GetQuestNpcActor
-  L3_2 = L7_1.Npc1068Data
-  L3_2 = L3_2.alias
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.DoFreeStateTrigger
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CallDelay
-  L4_2 = 2
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.GetQuestVar
-    L3_3 = 1102801
-    L4_3 = 1
-    L1_3 = L1_3(L2_3, L3_3, L4_3)
-    if L1_3 == 0 then
+  L1_2 = L1_2.GetQuestVar
+  L3_2 = 1102801
+  L4_2 = 1
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  if L1_2 == 0 then
+    L1_2 = L3_1
+    L2_2 = L1_2
+    L1_2 = L1_2.NpcWalkToRouteTaskEasy
+    L3_2 = L3_1
+    L4_2 = L3_2
+    L3_2 = L3_2.GetQuestNpcActor
+    L5_2 = L7_1.Npc1068Data
+    L5_2 = L5_2.alias
+    L6_2 = 11028
+    L3_2 = L3_2(L4_2, L5_2, L6_2)
+    L4_2 = L8_1.BAIWalkToPoint0_4
+    function L5_2(A0_3)
+      local L1_3, L2_3, L3_3, L4_3
       L1_3 = L3_1
       L2_3 = L1_3
-      L1_3 = L1_3.NpcWalkToRouteTaskEasy
-      L3_3 = L3_1
-      L4_3 = L3_3
-      L3_3 = L3_3.GetQuestNpcActor
-      L5_3 = L7_1.Npc1068Data
-      L5_3 = L5_3.alias
-      L6_3 = 11028
-      L3_3 = L3_3(L4_3, L5_3, L6_3)
-      L4_3 = L8_1.BAIWalkToPoint0_4
-      function L5_3(A0_4)
-        local L1_4, L2_4, L3_4, L4_4
-        L1_4 = L3_1
-        L2_4 = L1_4
-        L1_4 = L1_4.GetQuestNpcActor
-        L3_4 = L7_1.Npc1068Data
-        L3_4 = L3_4.alias
-        L1_4 = L1_4(L2_4, L3_4)
-        L3_4 = L1_4
-        L2_4 = L1_4.EnableInteraction
-        L4_4 = true
-        L2_4(L3_4, L4_4)
-        L2_4 = L3_1
-        L3_4 = L2_4
-        L2_4 = L2_4.RequestInteraction
-        L4_4 = L7_1.Npc1068Data
-        L4_4 = L4_4.alias
-        L2_4(L3_4, L4_4)
+      L1_3 = L1_3.GetQuestNpcActor
+      L3_3 = L7_1.Npc1068Data
+      L3_3 = L3_3.alias
+      L1_3 = L1_3(L2_3, L3_3)
+      L3_3 = L1_3
+      L2_3 = L1_3.EnableInteractionWithUI
+      L4_3 = true
+      L2_3(L3_3, L4_3)
+      L2_3 = L3_1
+      L3_3 = L2_3
+      L2_3 = L2_3.RequestInteraction
+      L4_3 = L7_1.Npc1068Data
+      L4_3 = L4_3.alias
+      L2_3(L3_3, L4_3)
+    end
+    L1_2(L2_2, L3_2, L4_2, L5_2)
+  else
+    L1_2 = L3_1
+    L2_2 = L1_2
+    L1_2 = L1_2.GetQuestVar
+    L3_2 = 1102801
+    L4_2 = 1
+    L1_2 = L1_2(L2_2, L3_2, L4_2)
+    if L1_2 == 1 then
+      L1_2 = L3_1
+      L2_2 = L1_2
+      L1_2 = L1_2.NpcWalkToRouteTaskEasy
+      L3_2 = L3_1
+      L4_2 = L3_2
+      L3_2 = L3_2.GetQuestNpcActor
+      L5_2 = L7_1.Npc1068Data
+      L5_2 = L5_2.alias
+      L6_2 = 11028
+      L3_2 = L3_2(L4_2, L5_2, L6_2)
+      L4_2 = L8_1.BAIWalkToPoint1_4
+      function L5_2(A0_3)
+        local L1_3, L2_3, L3_3, L4_3
+        L1_3 = L3_1
+        L2_3 = L1_3
+        L1_3 = L1_3.GetQuestNpcActor
+        L3_3 = L7_1.Npc1068Data
+        L3_3 = L3_3.alias
+        L1_3 = L1_3(L2_3, L3_3)
+        L3_3 = L1_3
+        L2_3 = L1_3.EnableInteractionWithUI
+        L4_3 = true
+        L2_3(L3_3, L4_3)
+        L2_3 = L3_1
+        L3_3 = L2_3
+        L2_3 = L2_3.RequestInteraction
+        L4_3 = L7_1.Npc1068Data
+        L4_3 = L4_3.alias
+        L2_3(L3_3, L4_3)
       end
-      L1_3(L2_3, L3_3, L4_3, L5_3)
+      L1_2(L2_2, L3_2, L4_2, L5_2)
     else
-      L1_3 = L3_1
-      L2_3 = L1_3
-      L1_3 = L1_3.GetQuestVar
-      L3_3 = 1102801
-      L4_3 = 1
-      L1_3 = L1_3(L2_3, L3_3, L4_3)
-      if L1_3 == 1 then
-        L1_3 = L3_1
-        L2_3 = L1_3
-        L1_3 = L1_3.NpcWalkToRouteTaskEasy
-        L3_3 = L3_1
-        L4_3 = L3_3
-        L3_3 = L3_3.GetQuestNpcActor
-        L5_3 = L7_1.Npc1068Data
-        L5_3 = L5_3.alias
-        L6_3 = 11028
-        L3_3 = L3_3(L4_3, L5_3, L6_3)
-        L4_3 = L8_1.BAIWalkToPoint1_4
-        function L5_3(A0_4)
-          local L1_4, L2_4, L3_4, L4_4
-          L1_4 = L3_1
-          L2_4 = L1_4
-          L1_4 = L1_4.GetQuestNpcActor
-          L3_4 = L7_1.Npc1068Data
-          L3_4 = L3_4.alias
-          L1_4 = L1_4(L2_4, L3_4)
-          L3_4 = L1_4
-          L2_4 = L1_4.EnableInteraction
-          L4_4 = true
-          L2_4(L3_4, L4_4)
-          L2_4 = L3_1
-          L3_4 = L2_4
-          L2_4 = L2_4.RequestInteraction
-          L4_4 = L7_1.Npc1068Data
-          L4_4 = L4_4.alias
-          L2_4(L3_4, L4_4)
+      L1_2 = L3_1
+      L2_2 = L1_2
+      L1_2 = L1_2.GetQuestVar
+      L3_2 = 1102801
+      L4_2 = 1
+      L1_2 = L1_2(L2_2, L3_2, L4_2)
+      if L1_2 == 2 then
+        L1_2 = L3_1
+        L2_2 = L1_2
+        L1_2 = L1_2.NpcWalkToRouteTaskEasy
+        L3_2 = L3_1
+        L4_2 = L3_2
+        L3_2 = L3_2.GetQuestNpcActor
+        L5_2 = L7_1.Npc1068Data
+        L5_2 = L5_2.alias
+        L6_2 = 11028
+        L3_2 = L3_2(L4_2, L5_2, L6_2)
+        L4_2 = L8_1.BAIWalkToPoint2_4
+        function L5_2(A0_3)
+          local L1_3, L2_3, L3_3, L4_3
+          L1_3 = L3_1
+          L2_3 = L1_3
+          L1_3 = L1_3.GetQuestNpcActor
+          L3_3 = L7_1.Npc1068Data
+          L3_3 = L3_3.alias
+          L1_3 = L1_3(L2_3, L3_3)
+          L3_3 = L1_3
+          L2_3 = L1_3.EnableInteractionWithUI
+          L4_3 = true
+          L2_3(L3_3, L4_3)
+          L2_3 = L3_1
+          L3_3 = L2_3
+          L2_3 = L2_3.RequestInteraction
+          L4_3 = L7_1.Npc1068Data
+          L4_3 = L4_3.alias
+          L2_3(L3_3, L4_3)
         end
-        L1_3(L2_3, L3_3, L4_3, L5_3)
+        L1_2(L2_2, L3_2, L4_2, L5_2)
       else
-        L1_3 = L3_1
-        L2_3 = L1_3
-        L1_3 = L1_3.GetQuestVar
-        L3_3 = 1102801
-        L4_3 = 1
-        L1_3 = L1_3(L2_3, L3_3, L4_3)
-        if L1_3 == 2 then
-          L1_3 = L3_1
-          L2_3 = L1_3
-          L1_3 = L1_3.NpcWalkToRouteTaskEasy
-          L3_3 = L3_1
-          L4_3 = L3_3
-          L3_3 = L3_3.GetQuestNpcActor
-          L5_3 = L7_1.Npc1068Data
-          L5_3 = L5_3.alias
-          L6_3 = 11028
-          L3_3 = L3_3(L4_3, L5_3, L6_3)
-          L4_3 = L8_1.BAIWalkToPoint2_4
-          function L5_3(A0_4)
-            local L1_4, L2_4, L3_4, L4_4
-            L1_4 = L3_1
-            L2_4 = L1_4
-            L1_4 = L1_4.GetQuestNpcActor
-            L3_4 = L7_1.Npc1068Data
-            L3_4 = L3_4.alias
-            L1_4 = L1_4(L2_4, L3_4)
-            L3_4 = L1_4
-            L2_4 = L1_4.EnableInteraction
-            L4_4 = true
-            L2_4(L3_4, L4_4)
-            L2_4 = L3_1
-            L3_4 = L2_4
-            L2_4 = L2_4.RequestInteraction
-            L4_4 = L7_1.Npc1068Data
-            L4_4 = L4_4.alias
-            L2_4(L3_4, L4_4)
-          end
-          L1_3(L2_3, L3_3, L4_3, L5_3)
-        else
-          L1_3 = L3_1
-          L2_3 = L1_3
-          L1_3 = L1_3.GetQuestVar
-          L3_3 = 1102801
-          L4_3 = 1
-          L1_3 = L1_3(L2_3, L3_3, L4_3)
-          if L1_3 == 3 then
+        L1_2 = L3_1
+        L2_2 = L1_2
+        L1_2 = L1_2.GetQuestVar
+        L3_2 = 1102801
+        L4_2 = 1
+        L1_2 = L1_2(L2_2, L3_2, L4_2)
+        if L1_2 == 3 then
+          L1_2 = L3_1
+          L2_2 = L1_2
+          L1_2 = L1_2.NpcWalkToTaskEasy
+          L3_2 = L3_1
+          L4_2 = L3_2
+          L3_2 = L3_2.GetQuestNpcActor
+          L5_2 = L7_1.Npc1068Data
+          L5_2 = L5_2.alias
+          L6_2 = 11028
+          L3_2 = L3_2(L4_2, L5_2, L6_2)
+          L4_2 = sceneData
+          L5_2 = L4_2
+          L4_2 = L4_2.GetDummyPoint
+          L6_2 = 3
+          L7_2 = "Q1102811_Baizhu_4"
+          L4_2 = L4_2(L5_2, L6_2, L7_2)
+          L4_2 = L4_2.pos
+          function L5_2(A0_3)
+            local L1_3, L2_3, L3_3, L4_3
             L1_3 = L3_1
             L2_3 = L1_3
-            L1_3 = L1_3.NpcWalkToTaskEasy
-            L3_3 = L3_1
-            L4_3 = L3_3
-            L3_3 = L3_3.GetQuestNpcActor
-            L5_3 = L7_1.Npc1068Data
-            L5_3 = L5_3.alias
-            L6_3 = 11028
-            L3_3 = L3_3(L4_3, L5_3, L6_3)
-            L4_3 = sceneData
-            L5_3 = L4_3
-            L4_3 = L4_3.GetDummyPoint
-            L6_3 = 3
-            L7_3 = "Q1102811_Baizhu_4"
-            L4_3 = L4_3(L5_3, L6_3, L7_3)
-            L4_3 = L4_3.pos
-            function L5_3(A0_4)
-              local L1_4, L2_4, L3_4, L4_4
-              L1_4 = L3_1
-              L2_4 = L1_4
-              L1_4 = L1_4.GetQuestNpcActor
-              L3_4 = L7_1.Npc1068Data
-              L3_4 = L3_4.alias
-              L1_4 = L1_4(L2_4, L3_4)
-              L3_4 = L1_4
-              L2_4 = L1_4.EnableInteraction
-              L4_4 = true
-              L2_4(L3_4, L4_4)
-              L2_4 = L3_1
-              L3_4 = L2_4
-              L2_4 = L2_4.RequestInteraction
-              L4_4 = L7_1.Npc1068Data
-              L4_4 = L4_4.alias
-              L2_4(L3_4, L4_4)
-            end
-            L1_3(L2_3, L3_3, L4_3, L5_3)
+            L1_3 = L1_3.GetQuestNpcActor
+            L3_3 = L7_1.Npc1068Data
+            L3_3 = L3_3.alias
+            L1_3 = L1_3(L2_3, L3_3)
+            L3_3 = L1_3
+            L2_3 = L1_3.EnableInteractionWithUI
+            L4_3 = true
+            L2_3(L3_3, L4_3)
+            L2_3 = L3_1
+            L3_3 = L2_3
+            L2_3 = L2_3.RequestInteraction
+            L4_3 = L7_1.Npc1068Data
+            L4_3 = L4_3.alias
+            L2_3(L3_3, L4_3)
           end
+          L1_2(L2_2, L3_2, L4_2, L5_2)
         end
       end
     end
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc1068Data
-    L3_3 = L3_3.alias
-    L1_3 = L1_3(L2_3, L3_3)
-    L3_3 = L1_3
-    L2_3 = L1_3.EnableInteraction
-    L4_3 = false
-    L2_3(L3_3, L4_3)
   end
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.BAIWalkToPoint4 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L2_2 = print
   L3_2 = "OnSubStart1102801"
   L2_2(L3_2)
@@ -1003,6 +967,13 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1068Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpcWithTriggerBlack
   L4_2 = "Q1102801_Trigger"
   L5_2 = 1102801
@@ -1015,23 +986,68 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1021Data
+  L4_2 = L7_1.Npc13135Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.DoFreeStyle
-  L5_2 = 1190
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13136Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
   L6_2 = true
-  L7_2 = nil
-  L8_2 = true
-  L9_2 = true
-  L10_2 = false
-  L11_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc1021Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.DoFreeStyle
+    L4_3 = 1190
+    L5_3 = true
+    L6_3 = nil
+    L7_3 = true
+    L8_3 = true
+    L9_3 = false
+    L10_3 = true
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+  end
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.RemoveLocalGadget
+  L6_2 = 70711025
+  L7_2 = "0"
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.RemoveLocalGadget
+  L6_2 = 70711025
+  L7_2 = "1"
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.RemoveLocalGadget
+  L6_2 = 70711025
+  L7_2 = "2"
+  L4_2(L5_2, L6_2, L7_2)
 end
 L1_1.OnSubStart1102801 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubFinish1102801"
   L2_2(L3_2)
@@ -1049,32 +1065,52 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc2103Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc10233Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc13136Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.GetQuestNpcActor
   L4_2 = L7_1.Npc13135Data
   L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = false
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13136Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = false
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc2103Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc10233Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc13136Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc13135Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
 end
 L1_1.OnSubFinish1102801 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1314,7 +1350,7 @@ function L9_1(A0_2, A1_2)
   L9_2 = true
   L10_2 = true
   L11_2 = false
-  L12_2 = false
+  L12_2 = true
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart1102811 = L9_1
@@ -1378,14 +1414,6 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DailyNpcSafeHideSelf
-  L4_2 = L7_1.Npc2103Data
-  L4_2 = L4_2.alias
-  L5_2 = 1
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DailyNpcSafeHideSelf
   L4_2 = L7_1.Npc2068Data
   L4_2 = L4_2.alias
   L5_2 = 1
@@ -1405,7 +1433,7 @@ function L9_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102805 = L9_1
@@ -1413,6 +1441,10 @@ function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1102805"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -1486,28 +1518,28 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc10233Data
+  L4_2 = L7_1.Npc1021Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
   L3_2 = L2_2.DoFreeStyle
-  L5_2 = 1280
+  L5_2 = 1190
   L6_2 = true
   L7_2 = nil
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
   L3_2 = L3_1
   L4_2 = L3_2
   L3_2 = L3_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc13136Data
+  L5_2 = L7_1.Npc10233Data
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
   L4_2 = L3_2.DoFreeStyle
-  L6_2 = 4120
+  L6_2 = 1280
   L7_2 = true
   L8_2 = nil
   L9_2 = true
@@ -1518,12 +1550,12 @@ function L9_1(A0_2, A1_2)
   L4_2 = L3_1
   L5_2 = L4_2
   L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1021Data
+  L6_2 = L7_1.Npc13136Data
   L6_2 = L6_2.alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
   L5_2 = L4_2.DoFreeStyle
-  L7_2 = 1190
+  L7_2 = 4120
   L8_2 = true
   L9_2 = nil
   L10_2 = true
@@ -1656,7 +1688,7 @@ function L9_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102807 = L9_1
@@ -1685,6 +1717,10 @@ function L9_1(A0_2, A1_2)
   L4_2 = L3_2.DisableInteeHeadCtrl
   L6_2 = true
   L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ClearNarratorTask
+  L4_2(L5_2)
   L4_2 = L3_1
   L5_2 = L4_2
   L4_2 = L4_2.SafeDestroyQuestNpc
@@ -1732,13 +1768,17 @@ function L9_1(A0_2, A1_2)
     L3_2 = L2_2
     L2_2 = L2_2.LevelLoadFinishSafeCall
     function L4_2(A0_3)
-      local L1_3, L2_3, L3_3, L4_3
+      local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
       L1_3 = L3_1
       L2_3 = L1_3
-      L1_3 = L1_3.TransmitPlayerById
+      L1_3 = L1_3.TransmitPlayerWithDialogTextById
       L3_3 = A1_2
       L4_3 = 2
-      L1_3(L2_3, L3_3, L4_3)
+      L5_3 = L8_1.TransmitBlank
+      L6_3 = 1
+      L7_3 = nil
+      L8_3 = nil
+      L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
     end
     L2_2(L3_2, L4_2)
   end
@@ -1756,7 +1796,7 @@ function L9_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102808 = L9_1
@@ -1835,33 +1875,15 @@ function L9_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102809 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1102809"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerWithDialogTextById
-  L4_2 = A1_2
-  L5_2 = 1
-  L6_2 = L8_1.TransmitBlank
-  L7_2 = 1
-  L8_2 = nil
-  function L9_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.RequestInteraction
-    L3_3 = L7_1.Npc1068Data
-    L3_3 = L3_3.alias
-    L1_3(L2_3, L3_3)
-  end
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
 end
 L1_1.OnSubFinish1102809 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1871,7 +1893,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CallDelayNpcCreateWithNpcTriggerAndBlack
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
   L4_2 = L7_1.Npc1068Data
   L4_2 = L4_2.id
   L5_2 = 1102810
@@ -1886,13 +1908,25 @@ function L9_1(A0_2, A1_2)
     L3_2 = L2_2
     L2_2 = L2_2.LevelLoadFinishSafeCall
     function L4_2(A0_3)
-      local L1_3, L2_3, L3_3, L4_3
+      local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
       L1_3 = L3_1
       L2_3 = L1_3
-      L1_3 = L1_3.TransmitPlayerById
+      L1_3 = L1_3.TransmitPlayerWithDialogTextById
       L3_3 = A1_2
       L4_3 = 1
-      L1_3(L2_3, L3_3, L4_3)
+      L5_3 = L8_1.TransmitBlank
+      L6_3 = 1
+      L7_3 = nil
+      function L8_3(A0_4)
+        local L1_4, L2_4, L3_4
+        L1_4 = L3_1
+        L2_4 = L1_4
+        L1_4 = L1_4.RequestInteraction
+        L3_4 = L7_1.Npc1068Data
+        L3_4 = L3_4.alias
+        L1_4(L2_4, L3_4)
+      end
+      L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
     end
     L2_2(L3_2, L4_2)
   end
@@ -1910,7 +1944,7 @@ function L9_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102810 = L9_1

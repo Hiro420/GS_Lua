@@ -34,7 +34,7 @@ function L8_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 50
+  L3_2 = 20
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
@@ -50,25 +50,10 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  local L1_2, L2_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
-  L1_2 = actorMgr
-  L2_2 = L1_2
-  L1_2 = L1_2.GetActor
-  L3_2 = "73697"
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.NarratorOnlyTaskByData
-  L4_2 = L7_1.NarratorWithId
-  L5_2 = nil
-  L6_2 = 73697
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroySelf
-  L2_2(L3_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)
@@ -86,10 +71,25 @@ function L8_1(A0_2)
 end
 L1_1.LightUpTriggerIn = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
   L2_2 = "TriggerOut"
   L1_2(L2_2)
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "73697"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.NarratorOnlyTaskByData
+  L4_2 = L7_1.NarratorWithId
+  L5_2 = nil
+  L6_2 = 73697
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerOut = L8_1
 return L1_1

@@ -396,7 +396,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7333205 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubFinish7333205"
   L2_2(L3_2)
@@ -407,6 +407,19 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc20954Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ShowBlackScreenWithDialogText
+  L4_2 = 0
+  L5_2 = 2
+  L6_2 = 0
+  L7_2 = nil
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubFinish7333205 = L10_1
 function L10_1(A0_2, A1_2)
@@ -439,17 +452,32 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7333207 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7333207"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcDestroy
-  L4_2 = L7_1.Npc20954Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CallDelay
+    L3_3 = 2
+    function L4_3(A0_4)
+      local L1_4, L2_4, L3_4, L4_4
+      L1_4 = L3_1
+      L2_4 = L1_4
+      L1_4 = L1_4.NpcDestroy
+      L3_4 = L7_1.Npc20954Data
+      L3_4 = L3_4.alias
+      L4_4 = 3
+      L1_4(L2_4, L3_4, L4_4)
+    end
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7333207 = L10_1
 function L10_1(A0_2, A1_2)

@@ -501,19 +501,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q1102702_NarratorTrigger2"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q1102702_Q1102703_T1102703_N13136"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q1102702_NarratorTrigger2
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q1102702_Q1102703_T1102703_N13136"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q1102702_NarratorTrigger2
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -587,19 +577,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q1102703_Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q1102702_Q1102703_T1102703_N13136"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q1102703_Trigger
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q1102702_Q1102703_T1102703_N13136"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q1102703_Trigger
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -657,6 +637,10 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish1102703 = L10_1
 function L10_1(A0_2, A1_2)
@@ -876,6 +860,26 @@ function L10_1(A0_2, A1_2)
     L2_3 = L1_3.DisableInteeHeadCtrl
     L4_3 = true
     L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.GetQuestNpcActor
+    L4_3 = L7_1.Npc13135Data
+    L4_3 = L4_3.alias
+    L2_3 = L2_3(L3_3, L4_3)
+    L4_3 = L2_3
+    L3_3 = L2_3.DisableInteeHeadCtrl
+    L5_3 = true
+    L3_3(L4_3, L5_3)
+    L3_3 = L3_1
+    L4_3 = L3_3
+    L3_3 = L3_3.GetQuestNpcActor
+    L5_3 = L7_1.Npc2103Data
+    L5_3 = L5_3.alias
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.DisableInteeHeadCtrl
+    L6_3 = true
+    L4_3(L5_3, L6_3)
   end
   L2_2(L3_2, L4_2)
   L2_2 = L3_1
@@ -897,7 +901,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1102708 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1102708"
   L2_2(L3_2)
@@ -929,6 +933,26 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13135Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = false
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc2103Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = false
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubFinish1102708 = L10_1
 function L10_1(A0_2, A1_2)

@@ -36,7 +36,7 @@ function L8_1(A0_2)
   L1_2 = L1_2.AddCubeShapeTrigger
   L3_2 = 50
   L4_2 = 40
-  L5_2 = 20
+  L5_2 = 30
   L6_2 = true
   L7_2 = {}
   L7_2.x = 0.0

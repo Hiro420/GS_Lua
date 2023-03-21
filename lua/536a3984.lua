@@ -63,7 +63,7 @@ function L8_1(A0_2)
   L2_2 = L1_2.TransmitPlayerWithDialogTextByQuestId
   L4_2 = 4010204
   L5_2 = 1
-  L6_2 = nil
+  L6_2 = L7_1.DialogsId
   L7_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
   L2_2 = L3_1

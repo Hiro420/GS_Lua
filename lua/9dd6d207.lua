@@ -283,6 +283,14 @@ function L8_1(A0_2, A1_2)
   L7_2 = 15
   L8_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NotifyTo
+  L4_2 = L7_1.Npc4284Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart7370206 = L8_1
 function L8_1(A0_2, A1_2)

@@ -1599,7 +1599,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1917312 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   L2_2 = print
   L3_2 = "OnSubStart1917313"
   L2_2(L3_2)
@@ -1687,6 +1687,21 @@ function L9_1(A0_2, A1_2)
     L1_3(L2_3, L3_3, L4_3)
   end
   L4_2(L5_2, L6_2)
+  L4_2 = actorMgr
+  L5_2 = L4_2
+  L4_2 = L4_2.CreateActorWithPos
+  L6_2 = "Q1917312Trigger"
+  L7_2 = "Actor/Gadget/Q1917312Trigger"
+  L8_2 = 70900002
+  L9_2 = 0
+  L10_2 = L8_1.TPos_Q1917312Trigger
+  L10_2 = L10_2.pos
+  L11_2 = L8_1.TPos_Q1917312Trigger
+  L11_2 = L11_2.rot
+  L12_2 = true
+  L13_2 = false
+  L14_2 = 3
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
 L1_1.OnSubStart1917313 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1722,11 +1737,6 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q1917312Trigger"
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish1917313 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1872,6 +1882,11 @@ function L9_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q1917312Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish1917314 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1932,11 +1947,6 @@ function L9_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubFinish1917326"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q1917312Trigger"
-  L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc

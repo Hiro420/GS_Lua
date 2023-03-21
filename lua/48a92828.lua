@@ -361,17 +361,32 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7331607 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7331607"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcDestroy
-  L4_2 = L7_1.Npc20962Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CallDelay
+    L3_3 = 2
+    function L4_3(A0_4)
+      local L1_4, L2_4, L3_4, L4_4
+      L1_4 = L3_1
+      L2_4 = L1_4
+      L1_4 = L1_4.NpcDestroy
+      L3_4 = L7_1.Npc20962Data
+      L3_4 = L3_4.alias
+      L4_4 = 3
+      L1_4(L2_4, L3_4, L4_4)
+    end
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7331607 = L10_1
 function L10_1(A0_2, A1_2)

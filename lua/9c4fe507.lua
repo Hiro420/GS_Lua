@@ -139,24 +139,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnMainCanceled = L9_1
-function L9_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.ActionSafeCall
-  function L6_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CreateQuestNpc
-    L3_3 = A1_2
-    L4_3 = A2_2
-    L5_3 = A3_2
-    L1_3(L2_3, L3_3, L4_3, L5_3)
-  end
-  L4_2(L5_2, L6_2)
-end
-L1_1.NpcCreateWithActionSafeCall = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L6_2 = L3_1
@@ -176,35 +158,76 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = A2_2
+    L5_3 = A3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L4_2(L5_2, L6_2)
+end
+L1_1.NpcCreateWithActionSafeCall = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L5_2 = A0_2
+  L4_2 = A0_2.GetQuestVar
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L4_2 + A3_2
+  L6_2 = A0_2
+  L5_2 = A0_2.SetQuestVar
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = L4_2
+  L5_2(L6_2, L7_2, L8_2, L9_2)
+end
+L1_1.QuestVarAdd = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart7329401"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithActionSafeCall
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc20930Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc20930Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.DoFreeStyle
-  L5_2 = 4120
-  L6_2 = true
-  L7_2 = nil
-  L8_2 = true
-  L9_2 = true
-  L10_2 = false
-  L11_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc20930Data
+    L4_3 = L4_3.id
+    L5_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc20930Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.DoFreeStyle
+    L4_3 = 4120
+    L5_3 = true
+    L6_3 = nil
+    L7_3 = true
+    L8_3 = true
+    L9_3 = false
+    L10_3 = false
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7329401 = L9_1
 function L9_1(A0_2, A1_2)
@@ -281,7 +304,7 @@ function L9_1(A0_2, A1_2)
   L5_2 = 7329405
   L6_2 = 1
   L7_2 = 10
-  L8_2 = 1
+  L8_2 = 1.5
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart7329405 = L9_1
@@ -314,15 +337,44 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7329406 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish7329406"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L8_1.NarratorWithId1
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.QuestVarAdd
+  L4_2 = 7329406
+  L5_2 = 0
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestVar
+  L4_2 = 7329406
+  L5_2 = 0
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if L2_2 == 1 then
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.NarratorOnlyTaskByData
+    L4_2 = L8_1.NarratorWithId2
+    L2_2(L3_2, L4_2)
+  else
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.GetQuestVar
+    L4_2 = 7329406
+    L5_2 = 0
+    L2_2 = L2_2(L3_2, L4_2, L5_2)
+    if L2_2 == 2 then
+      L2_2 = L3_1
+      L3_2 = L2_2
+      L2_2 = L2_2.NarratorOnlyTaskByData
+      L4_2 = L8_1.NarratorWithId1
+      L2_2(L3_2, L4_2)
+    end
+  end
 end
 L1_1.OnSubFinish7329406 = L9_1
 function L9_1(A0_2, A1_2)
@@ -333,15 +385,44 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7329407 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish7329407"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L8_1.NarratorWithId2
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.QuestVarAdd
+  L4_2 = 7329406
+  L5_2 = 0
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestVar
+  L4_2 = 7329406
+  L5_2 = 0
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  if L2_2 == 1 then
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.NarratorOnlyTaskByData
+    L4_2 = L8_1.NarratorWithId2
+    L2_2(L3_2, L4_2)
+  else
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.GetQuestVar
+    L4_2 = 7329406
+    L5_2 = 0
+    L2_2 = L2_2(L3_2, L4_2, L5_2)
+    if L2_2 == 2 then
+      L2_2 = L3_1
+      L3_2 = L2_2
+      L2_2 = L2_2.NarratorOnlyTaskByData
+      L4_2 = L8_1.NarratorWithId1
+      L2_2(L3_2, L4_2)
+    end
+  end
 end
 L1_1.OnSubFinish7329407 = L9_1
 function L9_1(A0_2, A1_2)

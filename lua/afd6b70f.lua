@@ -57,8 +57,7 @@ function L8_1(A0_2)
   L1_2 = actorMgr
   L2_2 = L1_2
   L1_2 = L1_2.GetActor
-  L3_2 = q10201cfg
-  L3_2 = L3_2.ActorAlias
+  L3_2 = L2_1.ActorAlias
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
   L2_2 = L1_2.TransmitPlayerByQuestId

@@ -171,7 +171,7 @@ function L10_1(A0_2)
   L2_2 = A0_2
   L1_2 = A0_2.FinishQuestID
   L3_2 = false
-  L4_2 = 7331902
+  L4_2 = 7329609
   L1_2(L2_2, L3_2, L4_2)
 end
 L1_1.Count_down = L10_1

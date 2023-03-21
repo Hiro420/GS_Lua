@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
@@ -65,6 +65,17 @@ function L8_1(A0_2)
   L5_2 = nil
   L6_2 = 11029
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.EnterSceneLookCamera
+  L4_2 = {}
+  L4_2.x = 192.11
+  L4_2.y = 43.282
+  L4_2.z = 756.062
+  L5_2 = 1
+  L6_2 = 2
+  L7_2 = false
+  L8_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DestroySelf

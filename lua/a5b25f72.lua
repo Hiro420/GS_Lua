@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
   L2_2 = "TriggerIn"
   L1_2(L2_2)
@@ -59,6 +59,12 @@ function L8_1(A0_2)
   L1_2 = L1_2.GetActor
   L3_2 = "40100"
   L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SetLocalGadgetState
+  L4_2 = 70711020
+  L5_2 = "1"
+  L6_2 = 202
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = L1_2
   L2_2 = L1_2.RequestInteraction
   L4_2 = L5_1.Npc1052Data
