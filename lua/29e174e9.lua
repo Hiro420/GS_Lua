@@ -1904,6 +1904,13 @@ function L10_1(A0_2, A1_2)
   L5_2 = 70291004
   L6_2 = "0"
   L3_2(L4_2, L5_2, L6_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.SafeDestroyQuestNpc
+  L5_2 = L7_1.Npc13175Data
+  L5_2 = L5_2.alias
+  L6_2 = 3
+  L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1102906 = L10_1
 function L10_1(A0_2, A1_2)
@@ -2064,13 +2071,6 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
   L4_2 = L7_1.Npc10233Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc13175Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)

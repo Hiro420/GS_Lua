@@ -861,14 +861,10 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q4010105_TriggerIn"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = {}
-  L8_2.x = -1898.951
-  L8_2.y = 317.872
-  L8_2.z = 4312.984
-  L9_2 = {}
-  L9_2.x = 0.0
-  L9_2.y = 0.0
-  L9_2.z = 0.0
+  L8_2 = L8_1.TPos_Q4010105_TriggerIn
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q4010105_TriggerIn
+  L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
   L12_2 = 3
@@ -1456,19 +1452,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q4010108_TriggerIn"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = sceneData
-  L9_2 = L8_2
-  L8_2 = L8_2.GetDummyPoint
-  L10_2 = 3
-  L11_2 = "Q4010103_guide"
-  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_1.TPos_Q4010108_TriggerIn
   L8_2 = L8_2.pos
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q4010103_guide"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q4010108_TriggerIn
   L9_2 = L9_2.rot
   L10_2 = true
   L11_2 = false
@@ -1679,19 +1665,9 @@ function L10_1(A0_2, A1_2)
   L6_2 = "Actor/Gadget/Q4010109_TriggerIn"
   L7_2 = 70900002
   L8_2 = 0
-  L9_2 = sceneData
-  L10_2 = L9_2
-  L9_2 = L9_2.GetDummyPoint
-  L11_2 = 3
-  L12_2 = "Q4010106_N1067"
-  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L8_1.TPos_Q4010109_TriggerIn
   L9_2 = L9_2.pos
-  L10_2 = sceneData
-  L11_2 = L10_2
-  L10_2 = L10_2.GetDummyPoint
-  L12_2 = 3
-  L13_2 = "Q4010106_N1067"
-  L10_2 = L10_2(L11_2, L12_2, L13_2)
+  L10_2 = L8_1.TPos_Q4010109_TriggerIn
   L10_2 = L10_2.rot
   L11_2 = true
   L12_2 = false
@@ -2398,8 +2374,8 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.SitOnChair
-  L5_2 = 8010
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
   L3_2(L4_2, L5_2)
   L3_2 = L3_1
   L4_2 = L3_2
@@ -2408,29 +2384,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
-  L4_2 = L3_2.SitOnChair
-  L6_2 = 8010
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
   L4_2(L5_2, L6_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1053Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L6_2 = L4_2
-  L5_2 = L4_2.DisableInteeHeadCtrl
-  L7_2 = true
-  L5_2(L6_2, L7_2)
-  L5_2 = L3_1
-  L6_2 = L5_2
-  L5_2 = L5_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc1054Data
-  L7_2 = L7_2.alias
-  L5_2 = L5_2(L6_2, L7_2)
-  L7_2 = L5_2
-  L6_2 = L5_2.DisableInteeHeadCtrl
-  L8_2 = true
-  L6_2(L7_2, L8_2)
 end
 L1_1.OnSubStart4010113 = L10_1
 function L10_1(A0_2, A1_2)

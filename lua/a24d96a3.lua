@@ -407,7 +407,7 @@ function L10_1(A0_2, A1_2)
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.CallDelay
-    L3_3 = 2
+    L3_3 = 1.5
     function L4_3(A0_4)
       local L1_4, L2_4, L3_4, L4_4, L5_4
       L1_4 = L3_1

@@ -604,6 +604,10 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
   L4_2 = L7_1.Npc13135Data
   L4_2 = L4_2.alias
@@ -637,10 +641,6 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ClearNarratorTask
-  L2_2(L3_2)
 end
 L1_1.OnSubFinish1102703 = L10_1
 function L10_1(A0_2, A1_2)
@@ -740,7 +740,7 @@ function L10_1(A0_2, A1_2)
   L4_2 = L7_1.Npc13302Data
   L4_2 = L4_2.id
   L5_2 = 1102709
-  L6_2 = 2
+  L6_2 = 5
   L7_2 = 10
   L8_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
@@ -901,7 +901,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1102708 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubFinish1102708"
   L2_2(L3_2)
@@ -919,20 +919,6 @@ function L10_1(A0_2, A1_2)
     L1_3(L2_3, L3_3, L4_3, L5_3)
   end
   L2_2(L3_2, L4_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc13135Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc2103Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
@@ -953,6 +939,20 @@ function L10_1(A0_2, A1_2)
   L4_2 = L3_2.DisableInteeHeadCtrl
   L6_2 = false
   L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc13135Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.SafeDestroyQuestNpc
+  L6_2 = L7_1.Npc2103Data
+  L6_2 = L6_2.alias
+  L7_2 = 3
+  L4_2(L5_2, L6_2, L7_2)
 end
 L1_1.OnSubFinish1102708 = L10_1
 function L10_1(A0_2, A1_2)

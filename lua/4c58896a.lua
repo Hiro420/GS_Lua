@@ -39,7 +39,7 @@ function L8_1(A0_2)
   L5_2 = true
   L6_2 = {}
   L6_2.x = 0.0
-  L6_2.y = 4.5
+  L6_2.y = 0.0
   L6_2.z = 0.0
   L7_2 = A0_2.TriggerIn
   L8_2 = A0_2.TriggerOut

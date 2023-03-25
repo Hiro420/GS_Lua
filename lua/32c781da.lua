@@ -954,15 +954,10 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323511 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7323511"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NarratorOnlyTaskByData
-  L4_2 = L9_1.NarratorWithId16
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323511 = L10_1
 function L10_1(A0_2, A1_2)

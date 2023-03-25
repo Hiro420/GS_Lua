@@ -504,7 +504,7 @@ function L10_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.npc1058Data
+  L4_2 = L7_1.Npc1058Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
@@ -801,6 +801,28 @@ function L10_1(A0_2, A1_2)
   L9_2 = L8_2.DisableInteeHeadCtrl
   L11_2 = true
   L9_2(L10_2, L11_2)
+  L9_2 = L3_1
+  L10_2 = L9_2
+  L9_2 = L9_2.GetQuestNpcActor
+  L11_2 = L7_1.Npc13228Data
+  L11_2 = L11_2.alias
+  L9_2 = L9_2(L10_2, L11_2)
+  L2_2 = L9_2
+  L10_2 = L2_2
+  L9_2 = L2_2.DisableInteeHeadCtrl
+  L11_2 = true
+  L9_2(L10_2, L11_2)
+  L9_2 = L3_1
+  L10_2 = L9_2
+  L9_2 = L9_2.GetQuestNpcActor
+  L11_2 = L7_1.Npc13229Data
+  L11_2 = L11_2.alias
+  L9_2 = L9_2(L10_2, L11_2)
+  L3_2 = L9_2
+  L10_2 = L3_2
+  L9_2 = L3_2.DisableInteeHeadCtrl
+  L11_2 = true
+  L9_2(L10_2, L11_2)
 end
 L1_1.OnSubStart4010404 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1056,6 +1078,28 @@ function L10_1(A0_2, A1_2)
   L17_2 = L16_2.DisableInteeHeadCtrl
   L19_2 = true
   L17_2(L18_2, L19_2)
+  L17_2 = L3_1
+  L18_2 = L17_2
+  L17_2 = L17_2.GetQuestNpcActor
+  L19_2 = L7_1.Npc13228Data
+  L19_2 = L19_2.alias
+  L17_2 = L17_2(L18_2, L19_2)
+  L2_2 = L17_2
+  L18_2 = L2_2
+  L17_2 = L2_2.DisableInteeHeadCtrl
+  L19_2 = true
+  L17_2(L18_2, L19_2)
+  L17_2 = L3_1
+  L18_2 = L17_2
+  L17_2 = L17_2.GetQuestNpcActor
+  L19_2 = L7_1.Npc13229Data
+  L19_2 = L19_2.alias
+  L17_2 = L17_2(L18_2, L19_2)
+  L3_2 = L17_2
+  L18_2 = L3_2
+  L17_2 = L3_2.DisableInteeHeadCtrl
+  L19_2 = true
+  L17_2(L18_2, L19_2)
 end
 L1_1.OnSubStart4010403 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1297,6 +1341,28 @@ function L10_1(A0_2, A1_2)
   L16_2 = L16_2(L17_2, L18_2)
   L18_2 = L16_2
   L17_2 = L16_2.DisableInteeHeadCtrl
+  L19_2 = true
+  L17_2(L18_2, L19_2)
+  L17_2 = L3_1
+  L18_2 = L17_2
+  L17_2 = L17_2.GetQuestNpcActor
+  L19_2 = L7_1.Npc13228Data
+  L19_2 = L19_2.alias
+  L17_2 = L17_2(L18_2, L19_2)
+  L2_2 = L17_2
+  L18_2 = L2_2
+  L17_2 = L2_2.DisableInteeHeadCtrl
+  L19_2 = true
+  L17_2(L18_2, L19_2)
+  L17_2 = L3_1
+  L18_2 = L17_2
+  L17_2 = L17_2.GetQuestNpcActor
+  L19_2 = L7_1.Npc13229Data
+  L19_2 = L19_2.alias
+  L17_2 = L17_2(L18_2, L19_2)
+  L3_2 = L17_2
+  L18_2 = L3_2
+  L17_2 = L3_2.DisableInteeHeadCtrl
   L19_2 = true
   L17_2(L18_2, L19_2)
 end
@@ -1569,6 +1635,28 @@ function L10_1(A0_2, A1_2)
   L18_2 = L17_2.DisableInteeHeadCtrl
   L20_2 = true
   L18_2(L19_2, L20_2)
+  L18_2 = L3_1
+  L19_2 = L18_2
+  L18_2 = L18_2.GetQuestNpcActor
+  L20_2 = L7_1.Npc13228Data
+  L20_2 = L20_2.alias
+  L18_2 = L18_2(L19_2, L20_2)
+  L2_2 = L18_2
+  L19_2 = L2_2
+  L18_2 = L2_2.DisableInteeHeadCtrl
+  L20_2 = true
+  L18_2(L19_2, L20_2)
+  L18_2 = L3_1
+  L19_2 = L18_2
+  L18_2 = L18_2.GetQuestNpcActor
+  L20_2 = L7_1.Npc13229Data
+  L20_2 = L20_2.alias
+  L18_2 = L18_2(L19_2, L20_2)
+  L3_2 = L18_2
+  L19_2 = L3_2
+  L18_2 = L3_2.DisableInteeHeadCtrl
+  L20_2 = true
+  L18_2(L19_2, L20_2)
 end
 L1_1.OnSubStart4010405 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1800,6 +1888,28 @@ function L10_1(A0_2, A1_2)
   L17_2 = L17_2(L18_2, L19_2)
   L19_2 = L17_2
   L18_2 = L17_2.DisableInteeHeadCtrl
+  L20_2 = true
+  L18_2(L19_2, L20_2)
+  L18_2 = L3_1
+  L19_2 = L18_2
+  L18_2 = L18_2.GetQuestNpcActor
+  L20_2 = L7_1.Npc13228Data
+  L20_2 = L20_2.alias
+  L18_2 = L18_2(L19_2, L20_2)
+  L2_2 = L18_2
+  L19_2 = L2_2
+  L18_2 = L2_2.DisableInteeHeadCtrl
+  L20_2 = true
+  L18_2(L19_2, L20_2)
+  L18_2 = L3_1
+  L19_2 = L18_2
+  L18_2 = L18_2.GetQuestNpcActor
+  L20_2 = L7_1.Npc13229Data
+  L20_2 = L20_2.alias
+  L18_2 = L18_2(L19_2, L20_2)
+  L3_2 = L18_2
+  L19_2 = L3_2
+  L18_2 = L3_2.DisableInteeHeadCtrl
   L20_2 = true
   L18_2(L19_2, L20_2)
 end

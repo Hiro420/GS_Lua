@@ -27,26 +27,26 @@ function L8_1(A0_2)
 end
 L1_1.OnPostDataPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L1_2 = print
   L2_2 = "OnPostComponentPrepare"
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 20
-  L4_2 = DistType
-  L4_2 = L4_2.EULER
-  L5_2 = {}
-  L5_2.x = 0.0
-  L5_2.y = 0.0
-  L5_2.z = 0.0
-  L6_2 = A0_2.TriggerIn
-  L7_2 = A0_2.TriggerOut
-  L8_2 = nil
-  L9_2 = A0_2.PreTriggerIn
-  L10_2 = A0_2.LightUpTriggerIn
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = L1_2.AddCylinderShapeTrigger
+  L3_2 = 18
+  L4_2 = 15
+  L5_2 = true
+  L6_2 = {}
+  L6_2.x = 0.0
+  L6_2.y = 0.0
+  L6_2.z = 0.0
+  L7_2 = A0_2.TriggerIn
+  L8_2 = A0_2.TriggerOut
+  L9_2 = nil
+  L10_2 = A0_2.PreTriggerIn
+  L11_2 = A0_2.LightUpTriggerIn
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)

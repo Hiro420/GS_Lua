@@ -39,7 +39,7 @@ function L8_1(A0_2)
   L5_2 = LuaLogicType
   L5_2 = L5_2.LUA_LOGIC_AND
   L6_2 = 10
-  L7_2 = 20
+  L7_2 = 10
   L8_2 = true
   L9_2 = {}
   L9_2.x = 0.0

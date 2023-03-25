@@ -278,7 +278,7 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ActionSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.CreateQuestNpc
@@ -295,6 +295,46 @@ function L10_1(A0_2, A1_2)
     L4_3 = L4_3.id
     L5_3 = 2
     L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc1059Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.SitOnChair
+    L4_3 = 8010
+    L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.GetQuestNpcActor
+    L4_3 = L7_1.Npc1052Data
+    L4_3 = L4_3.alias
+    L2_3 = L2_3(L3_3, L4_3)
+    L4_3 = L2_3
+    L3_3 = L2_3.SitOnChair
+    L5_3 = 8010
+    L3_3(L4_3, L5_3)
+    L3_3 = L3_1
+    L4_3 = L3_3
+    L3_3 = L3_3.GetQuestNpcActor
+    L5_3 = L7_1.Npc1059Data
+    L5_3 = L5_3.alias
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.DisableInteeHeadCtrl
+    L6_3 = true
+    L4_3(L5_3, L6_3)
+    L4_3 = L3_1
+    L5_3 = L4_3
+    L4_3 = L4_3.GetQuestNpcActor
+    L6_3 = L7_1.Npc1052Data
+    L6_3 = L6_3.alias
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = L4_3
+    L5_3 = L4_3.DisableInteeHeadCtrl
+    L7_3 = true
+    L5_3(L6_3, L7_3)
   end
   L2_2(L3_2, L4_2)
   L2_2 = L3_1
@@ -320,46 +360,6 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1059Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.SitOnChair
-  L5_2 = 8010
-  L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc1052Data
-  L5_2 = L5_2.alias
-  L3_2 = L3_2(L4_2, L5_2)
-  L5_2 = L3_2
-  L4_2 = L3_2.SitOnChair
-  L6_2 = 8010
-  L4_2(L5_2, L6_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1059Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L6_2 = L4_2
-  L5_2 = L4_2.DisableInteeHeadCtrl
-  L7_2 = true
-  L5_2(L6_2, L7_2)
-  L5_2 = L3_1
-  L6_2 = L5_2
-  L5_2 = L5_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc1052Data
-  L7_2 = L7_2.alias
-  L5_2 = L5_2(L6_2, L7_2)
-  L7_2 = L5_2
-  L6_2 = L5_2.DisableInteeHeadCtrl
-  L8_2 = true
-  L6_2(L7_2, L8_2)
 end
 L1_1.OnSubStart4010207 = L10_1
 function L10_1(A0_2, A1_2)
@@ -447,6 +447,14 @@ function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish4010202"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.TryPauseCurAutoNarrator
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
   L2_2(L3_2)
 end
 L1_1.OnSubFinish4010202 = L10_1

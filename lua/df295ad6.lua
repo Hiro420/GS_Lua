@@ -1766,19 +1766,26 @@ function L9_1(A0_2, A1_2)
   if L2_2 == 1082 then
     L2_2 = L3_1
     L3_2 = L2_2
-    L2_2 = L2_2.LevelLoadFinishSafeCall
+    L2_2 = L2_2.AfterMainPageActiveSafeCall
     function L4_2(A0_3)
-      local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+      local L1_3, L2_3, L3_3
       L1_3 = L3_1
       L2_3 = L1_3
-      L1_3 = L1_3.TransmitPlayerWithDialogTextById
-      L3_3 = A1_2
-      L4_3 = 2
-      L5_3 = L8_1.TransmitBlank
-      L6_3 = 1
-      L7_3 = nil
-      L8_3 = nil
-      L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
+      L1_3 = L1_3.LevelLoadFinishSafeCall
+      function L3_3(A0_4)
+        local L1_4, L2_4, L3_4, L4_4, L5_4, L6_4, L7_4, L8_4
+        L1_4 = L3_1
+        L2_4 = L1_4
+        L1_4 = L1_4.TransmitPlayerWithDialogTextById
+        L3_4 = A1_2
+        L4_4 = 2
+        L5_4 = L8_1.TransmitBlank
+        L6_4 = 1
+        L7_4 = nil
+        L8_4 = nil
+        L1_4(L2_4, L3_4, L4_4, L5_4, L6_4, L7_4, L8_4)
+      end
+      L1_3(L2_3, L3_3)
     end
     L2_2(L3_2, L4_2)
   end

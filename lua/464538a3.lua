@@ -689,18 +689,6 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc4283Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActionSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.NarratorOnlyTaskByData
-    L3_3 = L9_1.NarratorWithId12
-    L1_3(L2_3, L3_3)
-  end
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7325612 = L10_1
 function L10_1(A0_2, A1_2)
