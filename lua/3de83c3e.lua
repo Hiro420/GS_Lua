@@ -1171,7 +1171,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish4010106 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L2_2 = print
   L3_2 = "OnSubStart4010107"
   L2_2(L3_2)
@@ -1185,108 +1185,114 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1064Data
-  L5_2 = L5_2.id
-  L6_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13198Data
-  L5_2 = L5_2.id
-  L6_2 = 4
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13255Data
-  L5_2 = L5_2.id
-  L6_2 = 5
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13256Data
-  L5_2 = L5_2.id
-  L6_2 = 6
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13197Data
-  L5_2 = L5_2.id
-  L6_2 = 7
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1058
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Cyno"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1063
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Layla"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1067
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Faruzan"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1064
-  L4_2 = 40101
-  L5_2 = true
-  L6_2 = "UI_AvatarIcon_Side_Kaveh"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1065
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Wanderer"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q4010107_TriggerIn"
-  L5_2 = "Actor/Gadget/Q4010107_TriggerIn"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = L8_1.TPos_Q4010107_TriggerIn
-  L8_2 = L8_2.pos
-  L9_2 = L8_1.TPos_Q4010107_TriggerIn
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1053Data
+  L4_2 = L7_1.Npc1067Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.DisableInteeHeadCtrl
-  L5_2 = true
-  L3_2(L4_2, L5_2)
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1190
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc1064Data
+  L6_2 = L6_2.id
+  L7_2 = 3
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13198Data
+  L6_2 = L6_2.id
+  L7_2 = 4
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13255Data
+  L6_2 = L6_2.id
+  L7_2 = 5
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13256Data
+  L6_2 = L6_2.id
+  L7_2 = 6
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13197Data
+  L6_2 = L6_2.id
+  L7_2 = 7
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1058
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Cyno"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1063
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Layla"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1067
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Faruzan"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1064
+  L5_2 = 40101
+  L6_2 = true
+  L7_2 = "UI_AvatarIcon_Side_Kaveh"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1065
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Wanderer"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateActorWithPos
+  L5_2 = "Q4010107_TriggerIn"
+  L6_2 = "Actor/Gadget/Q4010107_TriggerIn"
+  L7_2 = 70900002
+  L8_2 = 0
+  L9_2 = L8_1.TPos_Q4010107_TriggerIn
+  L9_2 = L9_2.pos
+  L10_2 = L8_1.TPos_Q4010107_TriggerIn
+  L10_2 = L10_2.rot
+  L11_2 = true
+  L12_2 = false
+  L13_2 = 3
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
   L3_2 = L3_1
   L4_2 = L3_2
   L3_2 = L3_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc1054Data
+  L5_2 = L7_1.Npc1053Data
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
@@ -1296,12 +1302,236 @@ function L10_1(A0_2, A1_2)
   L4_2 = L3_1
   L5_2 = L4_2
   L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1058Data
+  L6_2 = L7_1.Npc1054Data
   L6_2 = L6_2.alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
   L5_2 = L4_2.DisableInteeHeadCtrl
   L7_2 = true
+  L5_2(L6_2, L7_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.GetQuestNpcActor
+  L7_2 = L7_1.Npc1058Data
+  L7_2 = L7_2.alias
+  L5_2 = L5_2(L6_2, L7_2)
+  L7_2 = L5_2
+  L6_2 = L5_2.DisableInteeHeadCtrl
+  L8_2 = true
+  L6_2(L7_2, L8_2)
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.GetQuestNpcActor
+  L8_2 = L7_1.Npc1064Data
+  L8_2 = L8_2.alias
+  L6_2 = L6_2(L7_2, L8_2)
+  L8_2 = L6_2
+  L7_2 = L6_2.DisableInteeHeadCtrl
+  L9_2 = true
+  L7_2(L8_2, L9_2)
+  L7_2 = L3_1
+  L8_2 = L7_2
+  L7_2 = L7_2.GetQuestNpcActor
+  L9_2 = L7_1.Npc1063Data
+  L9_2 = L9_2.alias
+  L7_2 = L7_2(L8_2, L9_2)
+  L9_2 = L7_2
+  L8_2 = L7_2.DisableInteeHeadCtrl
+  L10_2 = true
+  L8_2(L9_2, L10_2)
+  L8_2 = L3_1
+  L9_2 = L8_2
+  L8_2 = L8_2.GetQuestNpcActor
+  L10_2 = L7_1.Npc1067Data
+  L10_2 = L10_2.alias
+  L8_2 = L8_2(L9_2, L10_2)
+  L10_2 = L8_2
+  L9_2 = L8_2.DisableInteeHeadCtrl
+  L11_2 = true
+  L9_2(L10_2, L11_2)
+end
+L1_1.OnSubStart4010107 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4010107"
+  L2_2(L3_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.RemoveQuestAvatarNpcMark
+  L3_2 = 1058
+  L4_2 = 40101
+  L2_2(L3_2, L4_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.RemoveQuestAvatarNpcMark
+  L3_2 = 1065
+  L4_2 = 40101
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish4010107 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L2_2 = print
+  L3_2 = "OnSubStart4010108"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc13161Data
+  L5_2 = L5_2.id
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1058Data
+  L5_2 = L5_2.id
+  L6_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1063Data
+  L5_2 = L5_2.id
+  L6_2 = 4
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1067Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1190
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc1064Data
+  L6_2 = L6_2.id
+  L7_2 = 5
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc1065Data
+  L6_2 = L6_2.id
+  L7_2 = 6
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc1053Data
+  L6_2 = L6_2.id
+  L7_2 = 7
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc1054Data
+  L6_2 = L6_2.id
+  L7_2 = 8
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13198Data
+  L6_2 = L6_2.id
+  L7_2 = 9
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13255Data
+  L6_2 = L6_2.id
+  L7_2 = 10
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13256Data
+  L6_2 = L6_2.id
+  L7_2 = 11
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateQuestNpc
+  L5_2 = A1_2
+  L6_2 = L7_1.Npc13197Data
+  L6_2 = L6_2.id
+  L7_2 = 12
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateActorWithPos
+  L5_2 = "Q4010108_TriggerIn"
+  L6_2 = "Actor/Gadget/Q4010108_TriggerIn"
+  L7_2 = 70900002
+  L8_2 = 0
+  L9_2 = L8_1.TPos_Q4010108_TriggerIn
+  L9_2 = L9_2.pos
+  L10_2 = L8_1.TPos_Q4010108_TriggerIn
+  L10_2 = L10_2.rot
+  L11_2 = true
+  L12_2 = false
+  L13_2 = 3
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1063
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Layla"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1067
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Faruzan"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.AddQuestAvatarNpcMark
+  L4_2 = 1064
+  L5_2 = 40101
+  L6_2 = false
+  L7_2 = "UI_AvatarIcon_Side_Kaveh"
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc1053Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SitOnChair
+  L6_2 = 8010
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc1054Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.SitOnChair
+  L7_2 = 8010
   L5_2(L6_2, L7_2)
   L5_2 = L3_1
   L6_2 = L5_2
@@ -1333,218 +1563,10 @@ function L10_1(A0_2, A1_2)
   L8_2 = L7_2.DisableInteeHeadCtrl
   L10_2 = true
   L8_2(L9_2, L10_2)
-end
-L1_1.OnSubStart4010107 = L10_1
-function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = print
-  L3_2 = "OnSubFinish4010107"
-  L2_2(L3_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.RemoveQuestAvatarNpcMark
-  L3_2 = 1058
-  L4_2 = 40101
-  L2_2(L3_2, L4_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.RemoveQuestAvatarNpcMark
-  L3_2 = 1065
-  L4_2 = 40101
-  L2_2(L3_2, L4_2)
-end
-L1_1.OnSubFinish4010107 = L10_1
-function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L2_2 = print
-  L3_2 = "OnSubStart4010108"
-  L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13161Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1058Data
-  L5_2 = L5_2.id
-  L6_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1063Data
-  L5_2 = L5_2.id
-  L6_2 = 4
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1064Data
-  L5_2 = L5_2.id
-  L6_2 = 5
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1065Data
-  L5_2 = L5_2.id
-  L6_2 = 6
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1053Data
-  L5_2 = L5_2.id
-  L6_2 = 7
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1054Data
-  L5_2 = L5_2.id
-  L6_2 = 8
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13198Data
-  L5_2 = L5_2.id
-  L6_2 = 9
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13255Data
-  L5_2 = L5_2.id
-  L6_2 = 10
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13256Data
-  L5_2 = L5_2.id
-  L6_2 = 11
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc13197Data
-  L5_2 = L5_2.id
-  L6_2 = 12
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q4010108_TriggerIn"
-  L5_2 = "Actor/Gadget/Q4010108_TriggerIn"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = L8_1.TPos_Q4010108_TriggerIn
-  L8_2 = L8_2.pos
-  L9_2 = L8_1.TPos_Q4010108_TriggerIn
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1063
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Layla"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1067
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Faruzan"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = actorUtils
-  L2_2 = L2_2.AddQuestAvatarNpcMark
-  L3_2 = 1064
-  L4_2 = 40101
-  L5_2 = false
-  L6_2 = "UI_AvatarIcon_Side_Kaveh"
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1053Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.SitOnChair
-  L5_2 = 8010
-  L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc1054Data
-  L5_2 = L5_2.alias
-  L3_2 = L3_2(L4_2, L5_2)
-  L5_2 = L3_2
-  L4_2 = L3_2.SitOnChair
-  L6_2 = 8010
-  L4_2(L5_2, L6_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1064Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L6_2 = L4_2
-  L5_2 = L4_2.DisableInteeHeadCtrl
-  L7_2 = true
-  L5_2(L6_2, L7_2)
-  L5_2 = L3_1
-  L6_2 = L5_2
-  L5_2 = L5_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc1063Data
-  L7_2 = L7_2.alias
-  L5_2 = L5_2(L6_2, L7_2)
-  L7_2 = L5_2
-  L6_2 = L5_2.DisableInteeHeadCtrl
-  L8_2 = true
-  L6_2(L7_2, L8_2)
-  L6_2 = L3_1
-  L7_2 = L6_2
-  L6_2 = L6_2.GetQuestNpcActor
-  L8_2 = L7_1.Npc1067Data
-  L8_2 = L8_2.alias
-  L6_2 = L6_2(L7_2, L8_2)
-  L8_2 = L6_2
-  L7_2 = L6_2.DisableInteeHeadCtrl
-  L9_2 = true
-  L7_2(L8_2, L9_2)
-  L7_2 = L3_1
-  L8_2 = L7_2
-  L7_2 = L7_2.GetQuestNpcActor
-  L9_2 = L7_1.Npc1065Data
-  L9_2 = L9_2.alias
-  L7_2 = L7_2(L8_2, L9_2)
-  L9_2 = L7_2
-  L8_2 = L7_2.DisableInteeHeadCtrl
-  L10_2 = true
-  L8_2(L9_2, L10_2)
   L8_2 = L3_1
   L9_2 = L8_2
   L8_2 = L8_2.GetQuestNpcActor
-  L10_2 = L7_1.Npc1053Data
+  L10_2 = L7_1.Npc1065Data
   L10_2 = L10_2.alias
   L8_2 = L8_2(L9_2, L10_2)
   L10_2 = L8_2
@@ -1554,13 +1576,23 @@ function L10_1(A0_2, A1_2)
   L9_2 = L3_1
   L10_2 = L9_2
   L9_2 = L9_2.GetQuestNpcActor
-  L11_2 = L7_1.Npc1054Data
+  L11_2 = L7_1.Npc1053Data
   L11_2 = L11_2.alias
   L9_2 = L9_2(L10_2, L11_2)
   L11_2 = L9_2
   L10_2 = L9_2.DisableInteeHeadCtrl
   L12_2 = true
   L10_2(L11_2, L12_2)
+  L10_2 = L3_1
+  L11_2 = L10_2
+  L10_2 = L10_2.GetQuestNpcActor
+  L12_2 = L7_1.Npc1054Data
+  L12_2 = L12_2.alias
+  L10_2 = L10_2(L11_2, L12_2)
+  L12_2 = L10_2
+  L11_2 = L10_2.DisableInteeHeadCtrl
+  L13_2 = true
+  L11_2(L12_2, L13_2)
 end
 L1_1.OnSubStart4010108 = L10_1
 function L10_1(A0_2, A1_2)

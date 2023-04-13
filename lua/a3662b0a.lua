@@ -186,6 +186,16 @@ function L10_1(A0_2)
   L1_2(L2_2)
 end
 L1_1.Start = L10_1
+function L10_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.SafeDestroyQuestNpc
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.NpcDestroy = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L5_2 = L3_1
@@ -235,37 +245,6 @@ function L10_1(A0_2, A1_2, A2_2)
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.NpcDestroyWithBlackscreen = L10_1
-function L10_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.ShowBlackScreen
-  L6_2 = 0.5
-  L7_2 = 1
-  L8_2 = 0.5
-  function L9_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CreateQuestNpc
-    L3_3 = A1_2
-    L4_3 = A2_2
-    L5_3 = A3_2
-    L1_3(L2_3, L3_3, L4_3, L5_3)
-  end
-  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
-end
-L1_1.NpcCreateWithBlackscreen = L10_1
-function L10_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.SafeDestroyQuestNpc
-  L5_2 = A1_2
-  L6_2 = A2_2
-  L3_2(L4_2, L5_2, L6_2)
-end
-L1_1.NpcDestroy = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -402,11 +381,38 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.ShowBlackScreenWithDialogText
+  L4_2 = 0
+  L5_2 = 2
+  L6_2 = 0
+  L7_2 = nil
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.NpcDestroyWithBlackscreen
   L4_2 = 3
   L5_2 = L7_1.Npc20954Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish7333205 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7333206"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7333206 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7333206"
+  L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.ShowBlackScreenWithDialogText
@@ -421,20 +427,6 @@ function L10_1(A0_2, A1_2)
   L12_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
-L1_1.OnSubFinish7333205 = L10_1
-function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubStart7333206"
-  L2_2(L3_2)
-end
-L1_1.OnSubStart7333206 = L10_1
-function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish7333206"
-  L2_2(L3_2)
-end
 L1_1.OnSubFinish7333206 = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
@@ -443,7 +435,7 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithBlackscreen
+  L2_2 = L2_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L7_1.Npc20954Data
   L5_2 = L5_2.id

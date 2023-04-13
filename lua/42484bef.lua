@@ -400,6 +400,24 @@ function L10_1(A0_2, A1_2, A2_2)
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.NpcDestroyWithBlackscreen = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = A2_2
+    L5_3 = A3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L4_2(L5_2, L6_2)
+end
+L1_1.NpcCreateWithActionSafeCall = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L6_2 = L3_1
@@ -419,24 +437,6 @@ function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L10_1
-function L10_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.ActionSafeCall
-  function L6_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CreateQuestNpc
-    L3_3 = A1_2
-    L4_3 = A2_2
-    L5_3 = A3_2
-    L1_3(L2_3, L3_3, L4_3, L5_3)
-  end
-  L4_2(L5_2, L6_2)
-end
-L1_1.NpcCreateWithActionSafeCall = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -1114,20 +1114,20 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7323820 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubStart7323821"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc4283Data
-  L4_2 = L4_2.id
-  L5_2 = 7323821
+  L2_2 = L2_2.NpcCreateWithBlackscreenInteraction
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc4283Data
+  L5_2 = L5_2.id
   L6_2 = 1
-  L7_2 = 6
-  L8_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L7_2 = L7_1.Npc4283Data
+  L7_2 = L7_2.alias
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnSubStart7323821 = L10_1
 function L10_1(A0_2, A1_2)

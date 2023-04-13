@@ -253,29 +253,10 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7323201 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7323201"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.LevelLoadFinishSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.EnterSceneLookCamera
-    L3_3 = {}
-    L3_3.x = 597.486
-    L3_3.y = 392.111
-    L3_3.z = 5699.062
-    L4_3 = 0
-    L5_3 = 4
-    L6_3 = true
-    L7_3 = true
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
-  end
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7323201 = L10_1
 function L10_1(A0_2, A1_2)

@@ -954,25 +954,24 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7325118 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish7325118"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc4283Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7325118 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart7325119"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc4283Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart7325119 = L10_1
 function L10_1(A0_2, A1_2)

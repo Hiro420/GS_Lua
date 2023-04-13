@@ -27,23 +27,23 @@ function L8_1(A0_2)
 end
 L1_1.OnPostDataPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L1_2 = print
   L2_2 = "OnPostComponentPrepare"
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 25
-  L4_2 = DistType
-  L4_2 = L4_2.EULER
-  L5_2 = {}
-  L5_2.x = 0.0
-  L5_2.y = 0.0
-  L5_2.z = 0.0
-  L6_2 = A0_2.TriggerIn
-  L7_2 = A0_2.TriggerOut
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = L1_2.AddCylinderShapeTrigger
+  L3_2 = 28
+  L4_2 = 60
+  L5_2 = true
+  L6_2 = {}
+  L6_2.x = 0.0
+  L6_2.y = 0.0
+  L6_2.z = 0.0
+  L7_2 = A0_2.TriggerIn
+  L8_2 = A0_2.TriggerOut
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)

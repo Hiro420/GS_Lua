@@ -770,24 +770,10 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7325717 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7325717"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.NpcDestroyWithBlackscreen
-  L4_2 = 3
-  L5_2 = L7_1.Npc20887Data
-  L5_2 = L5_2.alias
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc20892Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7325717 = L10_1
 function L10_1(A0_2, A1_2)

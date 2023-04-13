@@ -677,20 +677,10 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1102707 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1102707"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerWithDialogTextById
-  L4_2 = A1_2
-  L5_2 = 1
-  L6_2 = L9_1.TransmitBlank
-  L7_2 = 1
-  L8_2 = nil
-  L9_2 = nil
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc

@@ -59,6 +59,10 @@ function L8_1(A0_2)
   L2_2 = false
   L3_2 = 7325625
   L1_2(L2_2, L3_2)
+  L1_2 = L3_1
+  L2_2 = L1_2
+  L1_2 = L1_2.DestroySelf
+  L1_2(L2_2)
   L1_2 = actorMgr
   L2_2 = L1_2
   L1_2 = L1_2.GetActor
@@ -89,10 +93,6 @@ function L8_1(A0_2)
     L2_3 = L1_3.NarratorOnlyTaskByData
     L4_3 = L7_1.NarratorWithId26
     L2_3(L3_3, L4_3)
-    L2_3 = L3_1
-    L3_3 = L2_3
-    L2_3 = L2_3.DestroySelf
-    L2_3(L3_3)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
