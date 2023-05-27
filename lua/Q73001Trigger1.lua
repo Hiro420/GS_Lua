@@ -20,7 +20,7 @@ L6_1 = L2_1.Datas
 function L7_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
-  L2_2 = "OnPostDataPrepare"
+  L2_2 = "[MainId: 73001][Trigger: Q73001Trigger1] OnPostDataPrepare"
   L1_2(L2_2)
   L3_1 = A0_2
 end
@@ -28,7 +28,7 @@ L1_1.OnPostDataPrepare = L7_1
 function L7_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L1_2 = print
-  L2_2 = "OnPostComponentPrepare"
+  L2_2 = "[MainId: 73001][Trigger: Q73001Trigger1] OnPostComponentPrepare"
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
@@ -48,7 +48,7 @@ L1_1.OnPostComponentPrepare = L7_1
 function L7_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L1_2 = print
-  L2_2 = "TriggerIn"
+  L2_2 = "[MainId: 73001][Trigger: Q73001Trigger1] TriggerIn"
   L1_2(L2_2)
   L1_2 = actorMgr
   L2_2 = L1_2
@@ -68,7 +68,7 @@ L1_1.TriggerIn = L7_1
 function L7_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
-  L2_2 = "TriggerOut"
+  L2_2 = "[MainId: 73001][Trigger: Q73001Trigger1] TriggerOut"
   L1_2(L2_2)
 end
 L1_1.TriggerOut = L7_1

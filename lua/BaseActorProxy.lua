@@ -2,6 +2,9 @@ local L0_1, L1_1, L2_1
 L0_1 = require
 L1_1 = "Base/Class"
 L0_1(L1_1)
+L0_1 = require
+L1_1 = "Actor/ActorCommon"
+L0_1(L1_1)
 L0_1 = class
 L1_1 = "BaseActorProxy"
 L2_1 = nil
@@ -12,6 +15,7 @@ L0_1.uActor = nil
 L0_1.defaultAlias = ""
 L0_1.bornSceneID = 3
 L0_1.coroutineDic = nil
+L0_1.coroutineKeyDic = nil
 L0_1.dataIndex = -1
 L0_1.isAutoStart = true
 L0_1.actorData = nil
@@ -95,6 +99,18 @@ function L1_1(A0_2)
     for L4_2, L5_2 in L1_2, L2_2, L3_2 do
       L7_2 = A0_2
       L6_2 = A0_2.UnCallFunc
+      L8_2 = L4_2
+      L6_2(L7_2, L8_2)
+    end
+  end
+  L1_2 = A0_2.coroutineKeyDic
+  if L1_2 ~= nil then
+    L1_2 = pairs
+    L2_2 = A0_2.coroutineKeyDic
+    L1_2, L2_2, L3_2 = L1_2(L2_2)
+    for L4_2, L5_2 in L1_2, L2_2, L3_2 do
+      L7_2 = A0_2
+      L6_2 = A0_2.UnCallDelayWithKey
       L8_2 = L4_2
       L6_2(L7_2, L8_2)
     end
@@ -366,165 +382,235 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
 end
 L0_1.DelayInTask = L1_1
 function L1_1(A0_2, A1_2, A2_2, ...)
-  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L4_2 = A0_2
   L3_2 = A0_2.CallDelayInternal
-  L5_2 = false
-  L6_2 = A1_2
-  L7_2 = A2_2
-  L8_2 = ...
-  return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
+  L5_2 = nil
+  L6_2 = false
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = ...
+  return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
 end
 L0_1.CallDelay = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, ...)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  if nil == A1_2 then
+    L4_2 = CS
+    L4_2 = L4_2.MoleMole
+    L4_2 = L4_2.SuperDebug
+    L4_2 = L4_2.LogError
+    L5_2 = "CallDelayWithKey:"
+    L6_2 = " key is nil "
+    L5_2 = L5_2 .. L6_2
+    L4_2(L5_2)
+    return
+  else
+    L4_2 = A0_2.coroutineKeyDic
+    if nil ~= L4_2 then
+      L4_2 = A0_2.coroutineKeyDic
+      L4_2 = L4_2[A1_2]
+      if nil ~= L4_2 then
+        L4_2 = CS
+        L4_2 = L4_2.MoleMole
+        L4_2 = L4_2.SuperDebug
+        L4_2 = L4_2.LogError
+        L5_2 = "Duplicated CallDelayWithKey"
+        L6_2 = tostring
+        L7_2 = A1_2
+        L6_2 = L6_2(L7_2)
+        L5_2 = L5_2 .. L6_2
+        L4_2(L5_2)
+        return
+      end
+    end
+  end
+  L5_2 = A0_2
+  L4_2 = A0_2.CallDelayInternal
+  L6_2 = A1_2
+  L7_2 = true
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L10_2 = ...
+  return L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L0_1.CallDelayWithKey = L1_1
 function L1_1(A0_2, A1_2, A2_2, ...)
-  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L4_2 = A0_2
   L3_2 = A0_2.CallDelayInternal
-  L5_2 = true
-  L6_2 = A1_2
-  L7_2 = A2_2
-  L8_2 = ...
-  return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
+  L5_2 = nil
+  L6_2 = true
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = ...
+  return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
 end
 L0_1.SafeCallDelay = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, ...)
-  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
-  L4_2 = -1
-  L5_2 = A0_2.uActor
-  if L5_2 == nil then
-    L5_2 = NG_HSOD_DEBUG
-    if L5_2 then
-      L5_2 = print
-      L6_2 = "call delay uActor nil "
-      L7_2 = A0_2.alias
-      L6_2 = L6_2 .. L7_2
-      L5_2(L6_2)
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, ...)
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
+  L5_2 = -1
+  L6_2 = A0_2.uActor
+  if L6_2 == nil then
+    L6_2 = NG_HSOD_DEBUG
+    if L6_2 then
+      L6_2 = print
+      L7_2 = "call delay uActor nil "
+      L8_2 = A0_2.alias
+      L7_2 = L7_2 .. L8_2
+      L6_2(L7_2)
     end
-    return L4_2
+    return L5_2
   end
   if A0_2 == nil then
-    L5_2 = (...)
-    if L5_2 == nil then
-      L5_2 = A0_2.uActor
-      L6_2 = L5_2
-      L5_2 = L5_2.CoroutineCall
-      L7_2 = A2_2
-      L8_2 = A3_2
-      L9_2 = A1_2
-      L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
-      L4_2 = L5_2
-  end
-  else
-    L5_2 = select
-    L6_2 = "#"
-    L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2 = ...
-    L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
-    if L5_2 == 0 then
+    L6_2 = (...)
+    if L6_2 == nil then
       L6_2 = A0_2.uActor
       L7_2 = L6_2
-      L6_2 = L6_2.CoroutineCall1Param
-      L8_2 = A2_2
-      L9_2 = A3_2
-      L10_2 = A0_2
-      L11_2 = nil
-      L12_2 = A1_2
-      L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-      L4_2 = L6_2
-    elseif L5_2 == 1 then
-      L6_2 = table
-      L6_2 = L6_2.unpack
-      L7_2 = {}
-      L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2 = ...
-      L7_2[1] = L8_2
-      L7_2[2] = L9_2
-      L7_2[3] = L10_2
-      L7_2[4] = L11_2
-      L7_2[5] = L12_2
-      L7_2[6] = L13_2
-      L7_2[7] = L14_2
-      L7_2[8] = L15_2
-      L7_2[9] = L16_2
-      L7_2[10] = L17_2
-      L6_2 = L6_2(L7_2)
+      L6_2 = L6_2.CoroutineCall
+      L8_2 = A3_2
+      L9_2 = A4_2
+      L10_2 = A2_2
+      L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2)
+      L5_2 = L6_2
+  end
+  else
+    L6_2 = select
+    L7_2 = "#"
+    L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2 = ...
+    L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
+    if L6_2 == 0 then
       L7_2 = A0_2.uActor
       L8_2 = L7_2
       L7_2 = L7_2.CoroutineCall1Param
-      L9_2 = A2_2
-      L10_2 = A3_2
+      L9_2 = A3_2
+      L10_2 = A4_2
       L11_2 = A0_2
-      L12_2 = L6_2
-      L13_2 = A1_2
+      L12_2 = nil
+      L13_2 = A2_2
       L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-      L4_2 = L7_2
-    elseif L5_2 == 2 then
-      L6_2 = table
-      L6_2 = L6_2.unpack
-      L7_2 = {}
-      L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2 = ...
-      L7_2[1] = L8_2
-      L7_2[2] = L9_2
-      L7_2[3] = L10_2
-      L7_2[4] = L11_2
-      L7_2[5] = L12_2
-      L7_2[6] = L13_2
-      L7_2[7] = L14_2
-      L7_2[8] = L15_2
-      L7_2[9] = L16_2
-      L7_2[10] = L17_2
-      L6_2, L7_2 = L6_2(L7_2)
+      L5_2 = L7_2
+    elseif L6_2 == 1 then
+      L7_2 = table
+      L7_2 = L7_2.unpack
+      L8_2 = {}
+      L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2 = ...
+      L8_2[1] = L9_2
+      L8_2[2] = L10_2
+      L8_2[3] = L11_2
+      L8_2[4] = L12_2
+      L8_2[5] = L13_2
+      L8_2[6] = L14_2
+      L8_2[7] = L15_2
+      L8_2[8] = L16_2
+      L8_2[9] = L17_2
+      L8_2[10] = L18_2
+      L7_2 = L7_2(L8_2)
       L8_2 = A0_2.uActor
       L9_2 = L8_2
-      L8_2 = L8_2.CoroutineCall2Param
-      L10_2 = A2_2
-      L11_2 = A3_2
+      L8_2 = L8_2.CoroutineCall1Param
+      L10_2 = A3_2
+      L11_2 = A4_2
       L12_2 = A0_2
-      L13_2 = L6_2
-      L14_2 = L7_2
-      L15_2 = A1_2
-      L8_2 = L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
-      L4_2 = L8_2
-    elseif L5_2 == 3 then
-      L6_2 = table
-      L6_2 = L6_2.unpack
-      L7_2 = {}
-      L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2 = ...
-      L7_2[1] = L8_2
-      L7_2[2] = L9_2
-      L7_2[3] = L10_2
-      L7_2[4] = L11_2
-      L7_2[5] = L12_2
-      L7_2[6] = L13_2
-      L7_2[7] = L14_2
-      L7_2[8] = L15_2
-      L7_2[9] = L16_2
-      L7_2[10] = L17_2
-      L6_2, L7_2, L8_2 = L6_2(L7_2)
+      L13_2 = L7_2
+      L14_2 = A2_2
+      L8_2 = L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+      L5_2 = L8_2
+    elseif L6_2 == 2 then
+      L7_2 = table
+      L7_2 = L7_2.unpack
+      L8_2 = {}
+      L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2 = ...
+      L8_2[1] = L9_2
+      L8_2[2] = L10_2
+      L8_2[3] = L11_2
+      L8_2[4] = L12_2
+      L8_2[5] = L13_2
+      L8_2[6] = L14_2
+      L8_2[7] = L15_2
+      L8_2[8] = L16_2
+      L8_2[9] = L17_2
+      L8_2[10] = L18_2
+      L7_2, L8_2 = L7_2(L8_2)
       L9_2 = A0_2.uActor
       L10_2 = L9_2
-      L9_2 = L9_2.CoroutineCall3Param
-      L11_2 = A2_2
-      L12_2 = A3_2
+      L9_2 = L9_2.CoroutineCall2Param
+      L11_2 = A3_2
+      L12_2 = A4_2
       L13_2 = A0_2
-      L14_2 = L6_2
+      L14_2 = L7_2
+      L15_2 = L8_2
+      L16_2 = A2_2
+      L9_2 = L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
+      L5_2 = L9_2
+    elseif L6_2 == 3 then
+      L7_2 = table
+      L7_2 = L7_2.unpack
+      L8_2 = {}
+      L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2 = ...
+      L8_2[1] = L9_2
+      L8_2[2] = L10_2
+      L8_2[3] = L11_2
+      L8_2[4] = L12_2
+      L8_2[5] = L13_2
+      L8_2[6] = L14_2
+      L8_2[7] = L15_2
+      L8_2[8] = L16_2
+      L8_2[9] = L17_2
+      L8_2[10] = L18_2
+      L7_2, L8_2, L9_2 = L7_2(L8_2)
+      L10_2 = A0_2.uActor
+      L11_2 = L10_2
+      L10_2 = L10_2.CoroutineCall3Param
+      L12_2 = A3_2
+      L13_2 = A4_2
+      L14_2 = A0_2
       L15_2 = L7_2
       L16_2 = L8_2
-      L17_2 = A1_2
-      L9_2 = L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
-      L4_2 = L9_2
+      L17_2 = L9_2
+      L18_2 = A2_2
+      L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
+      L5_2 = L10_2
     end
   end
-  if L4_2 ~= -1 then
-    L5_2 = A0_2.coroutineDic
-    if nil == L5_2 then
-      L5_2 = {}
-      A0_2.coroutineDic = L5_2
+  if L5_2 ~= -1 then
+    L6_2 = A0_2.coroutineDic
+    if nil == L6_2 then
+      L6_2 = {}
+      A0_2.coroutineDic = L6_2
     end
-    L5_2 = A0_2.coroutineDic
-    L5_2[A3_2] = L4_2
+    L6_2 = A0_2.coroutineDic
+    L6_2[A4_2] = L5_2
+    if A1_2 ~= nil then
+      L6_2 = A0_2.coroutineKeyDic
+      if nil == L6_2 then
+        L6_2 = {}
+        A0_2.coroutineKeyDic = L6_2
+      end
+      L6_2 = A0_2.coroutineKeyDic
+      L6_2[A1_2] = L5_2
+    end
   end
-  return L4_2
+  return L5_2
 end
 L0_1.CallDelayInternal = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = A0_2.coroutineKeyDic
+  if nil ~= L2_2 then
+    L2_2 = pairs
+    L3_2 = A0_2.coroutineKeyDic
+    L2_2, L3_2, L4_2 = L2_2(L3_2)
+    for L5_2, L6_2 in L2_2, L3_2, L4_2 do
+      if L6_2 == A1_2 then
+        L7_2 = A0_2.coroutineKeyDic
+        L7_2[L5_2] = nil
+        break
+      end
+    end
+  end
+end
+L0_1.InvokeRemoveCoroutine = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = A0_2.coroutineDic
@@ -544,6 +630,28 @@ function L1_1(A0_2, A1_2)
   end
 end
 L0_1.UnCallFunc = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = A0_2.coroutineKeyDic
+  if nil == L2_2 then
+    return
+  end
+  if nil == A1_2 then
+    return
+  end
+  L2_2 = A0_2.coroutineKeyDic
+  L2_2 = L2_2[A1_2]
+  if L2_2 ~= nil and L2_2 ~= -1 then
+    L3_2 = A0_2.uActor
+    L4_2 = L3_2
+    L3_2 = L3_2.StopCoroutine
+    L5_2 = L2_2
+    L3_2(L4_2, L5_2)
+    L3_2 = A0_2.coroutineKeyDic
+    L3_2[A1_2] = nil
+  end
+end
+L0_1.UnCallDelayWithKey = L1_1
 function L1_1(A0_2)
   local L1_2, L2_2
   L2_2 = A0_2
@@ -1759,12 +1867,117 @@ function L1_1(A0_2)
   L1_2(L2_2)
 end
 L0_1.ExitSceneLookCamera = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  if A1_2 == nil or A1_2 == "" then
+    L4_2 = A0_2
+    L3_2 = A0_2.MakeInterData
+    L5_2 = A2_2
+    return L3_2(L4_2, L5_2)
+  end
+  L3_2 = string
+  L3_2 = L3_2.format
+  L4_2 = "%s=%s"
+  L5_2 = A1_2
+  L7_2 = A0_2
+  L6_2 = A0_2.MakeInterData
+  L8_2 = A2_2
+  L6_2, L7_2, L8_2 = L6_2(L7_2, L8_2)
+  return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
+end
+L0_1.MakeInterInfo = L1_1
 function L1_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = actorUtils
-  L2_2 = L2_2.ActorDebugError
-  L3_2 = "The RenWuCeHua can only call request interaction from questActor"
-  L2_2(L3_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  if A1_2 == nil then
+    L2_2 = "{}"
+    return L2_2
+  end
+  L2_2 = A1_2.targetType
+  if L2_2 == nil then
+    L2_2 = "{}"
+    return L2_2
+  end
+  L2_2 = A1_2.targetType
+  L3_2 = EActorTargetType
+  L3_2 = L3_2.Avatar
+  if L2_2 == L3_2 then
+    L2_2 = A1_2.configId
+    if L2_2 ~= nil then
+      L2_2 = A1_2.configId
+      if L2_2 ~= 0 then
+        L2_2 = string
+        L2_2 = L2_2.format
+        L3_2 = "{type=%s,configId=%u}"
+        L4_2 = "Avatar"
+        L5_2 = A1_2.configId
+        return L2_2(L3_2, L4_2, L5_2)
+    end
+    else
+      L2_2 = string
+      L2_2 = L2_2.format
+      L3_2 = "{type=%s}"
+      L4_2 = "Avatar"
+      return L2_2(L3_2, L4_2)
+    end
+  else
+    L2_2 = A1_2.targetType
+    L3_2 = EActorTargetType
+    L3_2 = L3_2.Npc
+    if L2_2 == L3_2 then
+      L2_2 = A1_2.alias
+      if L2_2 ~= nil then
+        L2_2 = string
+        L2_2 = L2_2.format
+        L3_2 = "{type=%s,alias=%s}"
+        L4_2 = "Npc"
+        L5_2 = A1_2.alias
+        return L2_2(L3_2, L4_2, L5_2)
+      else
+        L2_2 = string
+        L2_2 = L2_2.format
+        L3_2 = "{type=%s,configId=%u,questId=%u}"
+        L4_2 = "Npc"
+        L5_2 = A1_2.configId
+        L6_2 = A1_2.subId
+        return L2_2(L3_2, L4_2, L5_2, L6_2)
+      end
+    else
+      L2_2 = A1_2.targetType
+      L3_2 = EActorTargetType
+      L3_2 = L3_2.QuestGadget
+      if L2_2 == L3_2 then
+        L2_2 = string
+        L2_2 = L2_2.format
+        L3_2 = "{type=%s,configId=%u,questId=%u,alias=%s}"
+        L4_2 = "QuestGadget"
+        L5_2 = A1_2.configId
+        L6_2 = A1_2.subId
+        L7_2 = A1_2.alias
+        return L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+      else
+        L2_2 = A1_2.targetType
+        L3_2 = EActorTargetType
+        L3_2 = L3_2.GroupGadget
+        if L2_2 == L3_2 then
+          L2_2 = string
+          L2_2 = L2_2.format
+          L3_2 = "{type=%s,configId=%u,groupId=%u}"
+          L4_2 = "GroupGadget"
+          L5_2 = A1_2.configId
+          L6_2 = A1_2.subId
+          return L2_2(L3_2, L4_2, L5_2, L6_2)
+        end
+      end
+    end
+  end
+end
+L0_1.MakeInterData = L1_1
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2
+  L3_2 = actorUtils
+  L3_2 = L3_2.ActorDebugError
+  L4_2 = "The RenWuCeHua can only call request interaction from questActor"
+  L3_2(L4_2)
 end
 L0_1.RequestInteraction = L1_1
 function L1_1(A0_2, A1_2)
@@ -2250,6 +2463,32 @@ function L1_1(A0_2, A1_2)
   end
 end
 L0_1.PrintTraceback = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = NG_HSOD_DEBUG
+  if L2_2 then
+    L2_2 = print
+    L3_2 = A1_2
+    L2_2(L3_2)
+    L2_2 = A0_2.alias
+    if L2_2 == nil then
+      L2_2 = actorUtils
+      L2_2 = L2_2.TrackLog
+      L3_2 = A1_2
+      L4_2 = 0
+      L2_2(L3_2, L4_2)
+    else
+      L2_2 = actorUtils
+      L2_2 = L2_2.TrackLog
+      L3_2 = A0_2.alias
+      L4_2 = A1_2
+      L3_2 = L3_2 .. L4_2
+      L4_2 = 0
+      L2_2(L3_2, L4_2)
+    end
+  end
+end
+L0_1.PrintEvent = L1_1
 function L1_1(A0_2)
   local L1_2, L2_2
   A0_2.isUserPauseNarrator = true
@@ -2744,12 +2983,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   L8_2 = L8_2()
   if L8_2 == false then
     if A7_2 then
-      L8_2 = CS
-      L8_2 = L8_2.MoleMole
-      L8_2 = L8_2.SuperDebug
-      L8_2 = L8_2.LogError
-      L9_2 = "NarratorTask call second."
-      L8_2(L9_2)
+      L9_2 = A0_2
+      L8_2 = A0_2.LogError
+      L10_2 = "NarratorTask call second."
+      L8_2(L9_2, L10_2)
       L8_2 = nil
       return L8_2
     end
@@ -2984,12 +3221,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L5_2 = L5_2()
   if L5_2 == false then
     if A4_2 then
-      L5_2 = CS
-      L5_2 = L5_2.MoleMole
-      L5_2 = L5_2.SuperDebug
-      L5_2 = L5_2.LogError
-      L6_2 = "NarratorOnlyTask call second."
-      L5_2(L6_2)
+      L6_2 = A0_2
+      L5_2 = A0_2.LogError
+      L7_2 = "NarratorOnlyTask call second."
+      L5_2(L6_2, L7_2)
       L5_2 = nil
       return L5_2
     end
@@ -3222,12 +3457,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
     end
   else
     if A6_2 then
-      L8_2 = CS
-      L8_2 = L8_2.MoleMole
-      L8_2 = L8_2.SuperDebug
-      L8_2 = L8_2.LogError
-      L9_2 = "NarratorOnlyTaskByData call second."
-      L8_2(L9_2)
+      L9_2 = A0_2
+      L8_2 = A0_2.LogError
+      L10_2 = "NarratorOnlyTaskByData call second."
+      L8_2(L9_2, L10_2)
       return
     end
     L9_2 = A0_2
@@ -3689,7 +3922,8 @@ function L1_1(A0_2)
   L1_2(L2_2)
 end
 L0_1.ForceFlushRemove = L1_1
-function L1_1(A0_2, A1_2, A2_2)
+L1_1 = "TriggerNpcSpeechBubble"
+function L2_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   L3_2 = A0_2.uActor
   if L3_2 ~= nil then
@@ -3701,8 +3935,9 @@ function L1_1(A0_2, A1_2, A2_2)
     L3_2(L4_2, L5_2, L6_2)
   end
 end
-L0_1.TriggerNpcSpeechBubble = L1_1
-function L1_1(A0_2, A1_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ClearNpcSpeechBubble"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
   if L2_2 ~= nil then
@@ -3713,53 +3948,59 @@ function L1_1(A0_2, A1_2)
     L2_2(L3_2, L4_2)
   end
 end
-L0_1.ClearNpcSpeechBubble = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "BanAvatarFreeStyle"
+function L2_1(A0_2)
   local L1_2
   L1_2 = actorUtils
   L1_2 = L1_2.BanAvatarFreeStyle
   L1_2()
 end
-L0_1.BanAvatarFreeStyle = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ResumeAvatarFreeStyle"
+function L2_1(A0_2)
   local L1_2
   L1_2 = actorUtils
   L1_2 = L1_2.ResumeAvatarFreeStyle
   L1_2()
 end
-L0_1.ResumeAvatarFreeStyle = L1_1
-function L1_1(A0_2, A1_2)
+L0_1[L1_1] = L2_1
+L1_1 = "CallOnAvatarSit"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = actorUtils
   L2_2 = L2_2.CallOnAvatarSit
   L3_2 = A1_2
   L2_2(L3_2)
 end
-L0_1.CallOnAvatarSit = L1_1
-function L1_1(A0_2, A1_2)
+L0_1[L1_1] = L2_1
+L1_1 = "CallOnAvatarStand"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = actorUtils
   L2_2 = L2_2.CallOnAvatarStand
   L3_2 = A1_2
   L2_2(L3_2)
 end
-L0_1.CallOnAvatarStand = L1_1
-function L1_1(A0_2, A1_2)
+L0_1[L1_1] = L2_1
+L1_1 = "CallOnElemViewOpen"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = actorUtils
   L2_2 = L2_2.CallOnElemViewOpen
   L3_2 = A1_2
   L2_2(L3_2)
 end
-L0_1.CallOnElemViewOpen = L1_1
-function L1_1(A0_2, A1_2)
+L0_1[L1_1] = L2_1
+L1_1 = "CallOnElemViewClose"
+function L2_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = actorUtils
   L2_2 = L2_2.CallOnElemViewClose
   L3_2 = A1_2
   L2_2(L3_2)
 end
-L0_1.CallOnElemViewClose = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "CallOnDoorOpen"
 function L2_1(A0_2, A1_2)
   local L2_2, L3_2
@@ -4476,6 +4717,83 @@ function L2_1(A0_2, A1_2, A2_2)
   else
     return A2_2
   end
+end
+L0_1[L1_1] = L2_1
+L1_1 = "Log"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.Log
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "LogError"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogError
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "LogWarning"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogWarning
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "VeryImportantError"
+function L2_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
+  if A2_2 == nil then
+    A2_2 = 1
+  end
+  if A3_2 == nil then
+    A3_2 = 19
+  end
+  if A4_2 == nil then
+    A4_2 = ""
+  end
+  if A5_2 == nil then
+    A5_2 = true
+  end
+  if A6_2 == nil then
+    A6_2 = ""
+  end
+  L7_2 = 0
+  L8_2 = 0
+  L9_2 = actorUtils
+  L9_2 = L9_2.VeryImportantError
+  L10_2 = A1_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
+  L14_2 = A5_2
+  L15_2 = L7_2
+  L16_2 = L8_2
+  L17_2 = A6_2
+  L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "VeryImportantWarning"
+function L2_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2
+  if A2_2 == nil then
+    A2_2 = true
+  end
+  if A3_2 == nil then
+    A3_2 = true
+  end
+  L4_2 = actorUtils
+  L4_2 = L4_2.VeryImportantWarning
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L7_2 = A3_2
+  L4_2(L5_2, L6_2, L7_2)
 end
 L0_1[L1_1] = L2_1
 L1_1 = "DeployStory"

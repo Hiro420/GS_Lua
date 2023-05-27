@@ -562,10 +562,10 @@ function L5_1(A0_2, A1_2)
   L4_2 = L2_2
   L3_2 = L2_2.DoFreeStateTrigger
   L3_2(L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.DestroyWithDither
-  L5_2 = false
-  L6_2 = 1
+  L4_2 = A0_2
+  L3_2 = A0_2.SafeDestroyQuestNpc
+  L5_2 = L3_1.Npc
+  L6_2 = 3
   L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnMainCanceled = L5_1

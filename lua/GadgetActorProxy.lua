@@ -339,6 +339,69 @@ function L3_1(A0_2, A1_2, A2_2)
   return L4_2
 end
 L1_1.ChangeToRealAlias = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2
+  if nil == A3_2 then
+    A3_2 = true
+  end
+  L10_2 = A0_2.uActor
+  L11_2 = L10_2
+  L10_2 = L10_2.AddCombinedSimpleTrigger
+  L12_2 = A1_2
+  L13_2 = A2_2
+  L14_2 = A3_2
+  L15_2 = A4_2
+  L16_2 = A5_2
+  L17_2 = A6_2
+  L18_2 = A7_2
+  L19_2 = A8_2
+  L20_2 = A9_2
+  L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2)
+end
+L1_1.AddCombinedSimpleTrigger = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+  local L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2
+  if nil == A3_2 then
+    A3_2 = true
+  end
+  L12_2 = A0_2.uActor
+  L13_2 = L12_2
+  L12_2 = L12_2.AddCombinedCubeShapeTrigger
+  L14_2 = A1_2
+  L15_2 = A2_2
+  L16_2 = A3_2
+  L17_2 = A4_2
+  L18_2 = A5_2
+  L19_2 = A6_2
+  L20_2 = A7_2
+  L21_2 = A8_2
+  L22_2 = A9_2
+  L23_2 = A10_2
+  L24_2 = A11_2
+  L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2)
+end
+L1_1.AddCombinedCubeShapeTrigger = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
+  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
+  if nil == A3_2 then
+    A3_2 = true
+  end
+  L11_2 = A0_2.uActor
+  L12_2 = L11_2
+  L11_2 = L11_2.AddCombinedCylinderShapeTrigger
+  L13_2 = A1_2
+  L14_2 = A2_2
+  L15_2 = A3_2
+  L16_2 = A4_2
+  L17_2 = A5_2
+  L18_2 = A6_2
+  L19_2 = A7_2
+  L20_2 = A8_2
+  L21_2 = A9_2
+  L22_2 = A10_2
+  L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
+end
+L1_1.AddCombinedCylinderShapeTrigger = L3_1
 function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   local L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
   L8_2 = nil

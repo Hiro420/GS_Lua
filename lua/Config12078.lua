@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -19,8 +19,6 @@ L9_1 = {}
 L10_1 = {}
 L10_1.titleStr = "NPC_TITLE_12078"
 L10_1.priority = 0
-L11_1 = {}
-L10_1.condList = L11_1
 L9_1[1] = L10_1
 L8_1.titleDatas = L9_1
 L7_1.TitleData = L8_1

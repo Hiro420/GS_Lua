@@ -23,10 +23,8 @@ function L4_1(A0_2, A1_2)
   else
     function L2_2()
       local L0_3, L1_3, L2_3, L3_3
-      L0_3 = CS
-      L0_3 = L0_3.MoleMole
-      L0_3 = L0_3.SuperDebug
-      L0_3 = L0_3.LogError
+      L0_3 = actorUtils
+      L0_3 = L0_3.VeryImportantWarning
       L1_3 = "[Lua]: Call DummyActor Func= "
       L2_3 = tostring
       L3_3 = A1_2
@@ -146,25 +144,33 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L0_1.LookAt = L1_1
-function L1_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
-  L2_2 = actorUtils
-  L2_2 = L2_2.DoSitOnChair
-  L3_2 = A0_2.alias
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
+function L1_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  if A2_2 == nil then
+    A2_2 = false
+  end
+  L3_2 = actorUtils
+  L3_2 = L3_2.DoSitOnChair
+  L4_2 = A0_2.alias
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
 end
 L0_1.SitOnChair = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
-  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-  L5_2 = actorUtils
-  L5_2 = L5_2.DoSitOnTargetChair
-  L6_2 = A0_2.alias
-  L7_2 = A1_2
-  L8_2 = A2_2
-  L9_2 = A3_2
-  L10_2 = A4_2
-  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  if A5_2 == nil then
+    A5_2 = false
+  end
+  L6_2 = actorUtils
+  L6_2 = L6_2.DoSitOnTargetChair
+  L7_2 = A0_2.alias
+  L8_2 = A1_2
+  L9_2 = A2_2
+  L10_2 = A3_2
+  L11_2 = A4_2
+  L12_2 = A5_2
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L0_1.SitOnTargetChair = L1_1
 function L1_1(A0_2, A1_2)
@@ -702,6 +708,78 @@ function L1_1(A0_2, A1_2, A2_2)
   L3_2(L4_2, L5_2)
 end
 L0_1.CancelStory = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.Log
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1.Log = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogError
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1.LogError = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogWarning
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1.LogWarning = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
+  if A2_2 == nil then
+    A2_2 = 1
+  end
+  if A3_2 == nil then
+    A3_2 = 19
+  end
+  if A4_2 == nil then
+    A4_2 = ""
+  end
+  if A5_2 == nil then
+    A5_2 = true
+  end
+  if A6_2 == nil then
+    A6_2 = ""
+  end
+  L7_2 = 0
+  L8_2 = 0
+  L9_2 = actorUtils
+  L9_2 = L9_2.VeryImportantError
+  L10_2 = A1_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
+  L14_2 = A5_2
+  L15_2 = L7_2
+  L16_2 = L8_2
+  L17_2 = A6_2
+  L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+end
+L0_1.VeryImportantError = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2
+  if A2_2 == nil then
+    A2_2 = true
+  end
+  if A3_2 == nil then
+    A3_2 = true
+  end
+  L4_2 = actorUtils
+  L4_2 = L4_2.VeryImportantWarning
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L7_2 = A3_2
+  L4_2(L5_2, L6_2, L7_2)
+end
+L0_1.VeryImportantWarning = L1_1
 function L1_1(A0_2)
   local L1_2
   L1_2 = 0
@@ -1335,6 +1413,18 @@ function L1_1(A0_2)
   L1_2 = 0
   return L1_2
 end
+L0_1.MakeInterInfo = L1_1
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = 0
+  return L1_2
+end
+L0_1.MakeInterData = L1_1
+function L1_1(A0_2)
+  local L1_2
+  L1_2 = 0
+  return L1_2
+end
 L0_1.RequestInteraction = L1_1
 function L1_1(A0_2)
   local L1_2
@@ -1744,48 +1834,55 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.ResetFlyStateParams = L1_1
-function L1_1(A0_2)
+L1_1 = "StopRealReminder"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.StopRealReminder = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "StopPlayerCombat"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.StopPlayerCombat = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "StopOpenPage"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.StopOpenPage = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "PlayerCombatOnPause"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.PlayerCombatOnPause = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "PlayerCombatOnResume"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.PlayerCombatOnResume = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "OpenPageOnResume"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.OpenPageOnResume = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "EmptyCB"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.EmptyCB = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "RegisterTaskCB"
 function L2_1(A0_2)
   local L1_2

@@ -26,15 +26,8 @@ L1_1.OnPostDataPrepare = L6_1
 function L6_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L1_2 = print
-  L2_2 = "OnPostComponentPrepare"
+  L2_2 = "Q4006805_Trigger OnPostComponentPrepare"
   L1_2(L2_2)
-  L1_2 = CS
-  L1_2 = L1_2.MoleMole
-  L1_2 = L1_2.SuperDebug
-  L1_2 = L1_2.VeryImportantWarning
-  L2_2 = "[Lua] Q4006805_Trigger OnPostComponentPrepare"
-  L3_2 = false
-  L1_2(L2_2, L3_2)
   L2_2 = A0_2
   L1_2 = A0_2.AddComponentTrigger
   L3_2 = 23
@@ -52,15 +45,8 @@ L1_1.OnPostComponentPrepare = L6_1
 function L6_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
-  L2_2 = "TriggerIn"
+  L2_2 = "Q4006805_Trigger TriggerIn"
   L1_2(L2_2)
-  L1_2 = CS
-  L1_2 = L1_2.MoleMole
-  L1_2 = L1_2.SuperDebug
-  L1_2 = L1_2.VeryImportantWarning
-  L2_2 = "[Lua] Q4006805_Trigger TriggerIn"
-  L3_2 = false
-  L1_2(L2_2, L3_2)
   L1_2 = actorMgr
   L2_2 = L1_2
   L1_2 = L1_2.GetActor
@@ -84,31 +70,17 @@ function L6_1(A0_2)
 end
 L1_1.TriggerIn = L6_1
 function L6_1(A0_2)
-  local L1_2, L2_2, L3_2
+  local L1_2, L2_2
   L1_2 = print
-  L2_2 = "TriggerOut"
+  L2_2 = "Q4006805_Trigger TriggerOut"
   L1_2(L2_2)
-  L1_2 = CS
-  L1_2 = L1_2.MoleMole
-  L1_2 = L1_2.SuperDebug
-  L1_2 = L1_2.VeryImportantWarning
-  L2_2 = "[Lua] Q4006805_Trigger TriggerOut"
-  L3_2 = false
-  L1_2(L2_2, L3_2)
 end
 L1_1.TriggerOut = L6_1
 function L6_1(A0_2)
-  local L1_2, L2_2, L3_2
+  local L1_2, L2_2
   L1_2 = print
   L2_2 = "Q4006805_Trigger OnDestroy"
   L1_2(L2_2)
-  L1_2 = CS
-  L1_2 = L1_2.MoleMole
-  L1_2 = L1_2.SuperDebug
-  L1_2 = L1_2.VeryImportantWarning
-  L2_2 = "[Lua] Q4006805_Trigger OnDestroy"
-  L3_2 = false
-  L1_2(L2_2, L3_2)
 end
 L1_1.OnDestroy = L6_1
 return L1_1

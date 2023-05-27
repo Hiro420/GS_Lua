@@ -48,41 +48,23 @@ function L6_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L6_1
 function L6_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L1_2, L2_2, L3_2, L4_2
   L1_2 = print
   L2_2 = "LightUpTriggerIn"
   L1_2(L2_2)
-  L1_2 = curtainUtils
-  L1_2 = L1_2.CreateEntityCreateTask
-  L2_2 = {}
-  L3_2 = L5_1.Npc1713Data
-  L3_2 = L3_2.alias
-  L2_2[1] = L3_2
-  L1_2 = L1_2(L2_2)
-  L2_2 = actorMgr
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "70667"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.RequestInteractionEx
+  L4_2 = "Npc1713"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.GetActor
-  L4_2 = "70667"
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.ShowBlackScreenWithDialogText
-  L5_2 = 0
-  L6_2 = 1
-  L7_2 = 1.5
-  function L8_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L2_3 = A0_3
-    L1_3 = A0_3.RequestInteractionForceAlias
-    L3_3 = "Npc1713"
-    L1_3(L2_3, L3_3)
-  end
-  L9_2 = nil
-  L10_2 = L1_2
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.DestroySelf
-  L3_2(L4_2)
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.LightUpTriggerIn = L6_1
 function L6_1(A0_2)

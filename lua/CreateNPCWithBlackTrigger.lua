@@ -70,9 +70,9 @@ function L2_1(A0_2)
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.ShowBlackScreen
-  L4_2 = 0.5
+  L4_2 = L1_2.durationToBlack
   L5_2 = L1_2.durationKeepBlack
-  L6_2 = 0.5
+  L6_2 = L1_2.durationFromBlack
   function L7_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3
     if A0_3 == nil then

@@ -120,8 +120,14 @@ L1_1.CatFeedPoint = 42
 L1_1.DogFeedPoint = 43
 L0_1.ActionPointType = L1_1
 L1_1 = {}
-L1_1.Always = 0
-L1_1.OnlyOnce = 1
-L1_1.Ignore = 2
+L1_1.Default = 0
+L1_1.Always = 1
+L1_1.OnlyOnce = 2
+L1_1.Ignore = 3
 L0_1.FocusToPlayerType = L1_1
+L1_1 = {}
+L1_1.Default = 0
+L1_1.React = 1
+L1_1.Ignore = 2
+L0_1.ReactEnableType = L1_1
 return L0_1

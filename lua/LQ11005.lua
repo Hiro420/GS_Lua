@@ -694,14 +694,27 @@ function L21_1(A0_2)
 end
 L1_1.BRMove = L21_1
 function L21_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "1100501 start:..."
   L2_2(L3_2)
   L3_2 = A0_2
-  L2_2 = A0_2.ActionSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3
+  L2_2 = A0_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L10_1.ID
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.GetQuestNpcActor
+  L4_2 = L10_1.Alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1240
+  L3_2(L4_2, L5_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.ActionSafeCall
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
     L2_3 = A0_3
     L1_3 = A0_3.NotifyTo
     L3_3 = "Npc1537"
@@ -739,31 +752,18 @@ function L21_1(A0_2, A1_2)
     L3_3 = A0_3
     L2_3 = A0_3.CreateQuestNpc
     L4_3 = A1_2
-    L5_3 = L10_1.ID
+    L5_3 = L8_1.ID
     L2_3(L3_3, L4_3, L5_3)
     L3_3 = A0_3
     L2_3 = A0_3.GetQuestNpcActor
-    L4_3 = L10_1.Alias
+    L4_3 = L8_1.Alias
     L2_3 = L2_3(L3_3, L4_3)
     L4_3 = L2_3
     L3_3 = L2_3.DoFreeStyle
-    L5_3 = 1240
+    L5_3 = 1220
     L3_3(L4_3, L5_3)
-    L4_3 = A0_3
-    L3_3 = A0_3.CreateQuestNpc
-    L5_3 = A1_2
-    L6_3 = L8_1.ID
-    L3_3(L4_3, L5_3, L6_3)
-    L4_3 = A0_3
-    L3_3 = A0_3.GetQuestNpcActor
-    L5_3 = L8_1.Alias
-    L3_3 = L3_3(L4_3, L5_3)
-    L5_3 = L3_3
-    L4_3 = L3_3.DoFreeStyle
-    L6_3 = 1220
-    L4_3(L5_3, L6_3)
   end
-  L2_2(L3_2, L4_2)
+  L3_2(L4_2, L5_2)
 end
 L1_1.OnSubStart1100501 = L21_1
 function L21_1(A0_2, A1_2)

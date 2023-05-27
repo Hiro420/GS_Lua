@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -13,60 +13,60 @@ L1_1.defaultAlias = "Q1201609Trigger"
 L2_1 = require
 L3_1 = "Quest/Client/Q12016ClientConfig"
 L2_1 = L2_1(L3_1)
-L3_1 = L2_1.SubIDs
-L4_1 = L2_1.Npcs
-L5_1 = L2_1.Datas
-function L6_1(A0_2)
+L3_1 = nil
+L4_1 = L2_1.SubIDs
+L5_1 = L2_1.Npcs
+L6_1 = L2_1.Points
+L7_1 = L2_1.Datas
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
-  L2_2 = "OnPostDataPrepare"
+  L2_2 = "[MainId: 12016][Trigger: Q1201609Trigger] OnPostDataPrepare"
   L1_2(L2_2)
+  L3_1 = A0_2
 end
-L1_1.OnPostDataPrepare = L6_1
-function L6_1(A0_2)
+L1_1.OnPostDataPrepare = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L1_2 = print
-  L2_2 = "OnPostComponentPrepare"
+  L2_2 = "[MainId: 12016][Trigger: Q1201609Trigger] OnPostComponentPrepare"
   L1_2(L2_2)
-  L2_2 = A0_2
-  L1_2 = A0_2.AddComponentTrigger
+  L1_2 = L3_1
+  L2_2 = L1_2
+  L1_2 = L1_2.AddComponentTrigger
   L3_2 = 3
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
-  L5_2.x = 0
+  L5_2.x = 0.0
   L5_2.y = 0.8
-  L5_2.z = 0
+  L5_2.z = 0.0
   L6_2 = A0_2.TriggerIn
   L7_2 = A0_2.TriggerOut
   L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnPostComponentPrepare = L6_1
-function L6_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
+L1_1.OnPostComponentPrepare = L8_1
+function L8_1(A0_2)
+  local L1_2, L2_2, L3_2
   L1_2 = print
-  L2_2 = "TriggerIn"
+  L2_2 = "[MainId: 12016][Trigger: Q1201609Trigger] TriggerIn"
   L1_2(L2_2)
-  L1_2 = actorMgr
+  L1_2 = actorUtils
+  L1_2 = L1_2.FinishQuestID
+  L2_2 = false
+  L3_2 = 1201609
+  L1_2(L2_2, L3_2)
+  L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.GetActor
-  L3_2 = "12016"
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.FinishQuestID
-  L4_2 = false
-  L5_2 = 1201609
-  L2_2(L3_2, L4_2, L5_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DestroySelf
-  L2_2(L3_2)
+  L1_2 = L1_2.DestroySelf
+  L1_2(L2_2)
 end
-L1_1.TriggerIn = L6_1
-function L6_1(A0_2)
+L1_1.TriggerIn = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
-  L2_2 = "TriggerOut"
+  L2_2 = "[MainId: 12016][Trigger: Q1201609Trigger] TriggerOut"
   L1_2(L2_2)
 end
-L1_1.TriggerOut = L6_1
+L1_1.TriggerOut = L8_1
 return L1_1

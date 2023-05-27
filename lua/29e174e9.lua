@@ -1043,6 +1043,20 @@ function L10_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.PlayEmoSync
+  L5_2 = ""
+  L6_2 = "Cs_Emo_NPC_Common/Cs_Emo_NPC_Normal01"
+  L7_2 = "Cs_Emo_NPC_Common/Cs_Emo_NPC_WinkA01"
+  L8_2 = 0
+  L9_2 = false
+  L10_2 = true
+  L11_2 = true
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1102911 = L10_1
 function L10_1(A0_2, A1_2)

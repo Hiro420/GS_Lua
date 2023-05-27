@@ -182,6 +182,21 @@ function L2_1(A0_2)
             L14_2.emotion = L15_2
             L15_2 = L13_2.disableBlink
             L14_2.disableBlink = L15_2
+            L15_2 = L13_2.lookAtType
+            if L15_2 ~= nil then
+              L15_2 = L13_2.lookAtType
+              L14_2.lookAtType = L15_2
+            end
+            L15_2 = L13_2.reactOnCollide
+            if L15_2 ~= nil then
+              L15_2 = L13_2.reactOnCollide
+              L14_2.reactOnCollide = L15_2
+            end
+            L15_2 = L13_2.reactOnBodyLang
+            if L15_2 ~= nil then
+              L15_2 = L13_2.reactOnBodyLang
+              L14_2.reactOnBodyLang = L15_2
+            end
             L15_2 = L13_2.moveType
             if L15_2 ~= nil then
               L15_2 = L13_2.moveType

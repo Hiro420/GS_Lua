@@ -45,7 +45,7 @@ function L3_1(A0_2, A1_2)
 end
 L1_1.CallOnStart = L3_1
 function L3_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = actorUtils
   L2_2 = L2_2.CreateActor
   L3_2 = A0_2
@@ -78,29 +78,39 @@ function L3_1(A0_2, A1_2)
   if L3_2 == nil then
     A0_2.bornShoesOffset = 0
   end
-  L3_2 = actorUtils
-  L3_2 = L3_2.CreateNpcActor
-  L4_2 = A0_2.configID
-  L5_2 = A0_2.bornPos
-  L6_2 = A0_2.bornDir
-  L7_2 = A0_2.bornShoesOffset
-  L8_2 = L2_2
-  L9_2 = A0_2.bornSceneID
-  L10_2 = A0_2.bornRoomID
-  L11_2 = A0_2.bornQuestID
-  L12_2 = A0_2.isLocal
-  L13_2 = A0_2.isAutoStart
-  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  L2_2 = L3_2
+  L3_2 = A0_2.isOrphan
+  if L3_2 == nil then
+    A0_2.isOrphan = false
+  end
+  L3_2 = {}
+  L4_2 = A0_2.isOrphan
+  L3_2.isOrphan = L4_2
+  L4_2 = A0_2.platformInfo
+  L3_2.platformInfo = L4_2
+  L4_2 = actorUtils
+  L4_2 = L4_2.CreateNpcActor
+  L5_2 = A0_2.configID
+  L6_2 = A0_2.bornPos
+  L7_2 = A0_2.bornDir
+  L8_2 = A0_2.bornShoesOffset
+  L9_2 = L2_2
+  L10_2 = A0_2.bornSceneID
+  L11_2 = A0_2.bornRoomID
+  L12_2 = A0_2.bornQuestID
+  L13_2 = A0_2.isLocal
+  L14_2 = A0_2.isAutoStart
+  L15_2 = L3_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
+  L2_2 = L4_2
   if nil ~= L2_2 then
-    L4_2 = A0_2
-    L3_2 = A0_2.GetCustomFreeStyleList
-    L3_2 = L3_2(L4_2)
-    if nil ~= L3_2 then
-      L5_2 = L2_2
-      L4_2 = L2_2.AddCustomLoadFreeStyleList
-      L6_2 = L3_2
-      L4_2(L5_2, L6_2)
+    L5_2 = A0_2
+    L4_2 = A0_2.GetCustomFreeStyleList
+    L4_2 = L4_2(L5_2)
+    if nil ~= L4_2 then
+      L6_2 = L2_2
+      L5_2 = L2_2.AddCustomLoadFreeStyleList
+      L7_2 = L4_2
+      L5_2(L6_2, L7_2)
     end
   end
   return L2_2

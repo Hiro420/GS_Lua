@@ -176,6 +176,16 @@ function L10_1(A0_2, A1_2, A2_2, A3_2)
   L4_2(L5_2, L6_2)
 end
 L1_1.DailyNpcSafeHideSelf = L10_1
+function L10_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyQuestNpcActor
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.NPCDestroyImmediately = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L5_2 = L3_1
@@ -608,35 +618,35 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc13135Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc13136Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc1021Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc2100Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc2101Data
   L4_2 = L4_2.alias
   L5_2 = 3

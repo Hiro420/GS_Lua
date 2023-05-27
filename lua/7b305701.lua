@@ -65,6 +65,38 @@ function L9_1(A0_2)
   L1_2["80313"] = L2_2
   L2_2 = A0_2.OnSubStart80314
   L1_2["80314"] = L2_2
+  L2_2 = A0_2.OnSubStart80315
+  L1_2["80315"] = L2_2
+  L2_2 = A0_2.OnSubStart80316
+  L1_2["80316"] = L2_2
+  L2_2 = A0_2.OnSubStart80317
+  L1_2["80317"] = L2_2
+  L2_2 = A0_2.OnSubStart80318
+  L1_2["80318"] = L2_2
+  L2_2 = A0_2.OnSubStart80319
+  L1_2["80319"] = L2_2
+  L2_2 = A0_2.OnSubStart80320
+  L1_2["80320"] = L2_2
+  L2_2 = A0_2.OnSubStart80321
+  L1_2["80321"] = L2_2
+  L2_2 = A0_2.OnSubStart80322
+  L1_2["80322"] = L2_2
+  L2_2 = A0_2.OnSubStart80323
+  L1_2["80323"] = L2_2
+  L2_2 = A0_2.OnSubStart80324
+  L1_2["80324"] = L2_2
+  L2_2 = A0_2.OnSubStart80325
+  L1_2["80325"] = L2_2
+  L2_2 = A0_2.OnSubStart80326
+  L1_2["80326"] = L2_2
+  L2_2 = A0_2.OnSubStart80327
+  L1_2["80327"] = L2_2
+  L2_2 = A0_2.OnSubStart80328
+  L1_2["80328"] = L2_2
+  L2_2 = A0_2.OnSubStart80329
+  L1_2["80329"] = L2_2
+  L2_2 = A0_2.OnSubStart80330
+  L1_2["80330"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -99,6 +131,38 @@ function L9_1(A0_2)
   L1_2["80313"] = L2_2
   L2_2 = A0_2.OnSubFinish80314
   L1_2["80314"] = L2_2
+  L2_2 = A0_2.OnSubFinish80315
+  L1_2["80315"] = L2_2
+  L2_2 = A0_2.OnSubFinish80316
+  L1_2["80316"] = L2_2
+  L2_2 = A0_2.OnSubFinish80317
+  L1_2["80317"] = L2_2
+  L2_2 = A0_2.OnSubFinish80318
+  L1_2["80318"] = L2_2
+  L2_2 = A0_2.OnSubFinish80319
+  L1_2["80319"] = L2_2
+  L2_2 = A0_2.OnSubFinish80320
+  L1_2["80320"] = L2_2
+  L2_2 = A0_2.OnSubFinish80321
+  L1_2["80321"] = L2_2
+  L2_2 = A0_2.OnSubFinish80322
+  L1_2["80322"] = L2_2
+  L2_2 = A0_2.OnSubFinish80323
+  L1_2["80323"] = L2_2
+  L2_2 = A0_2.OnSubFinish80324
+  L1_2["80324"] = L2_2
+  L2_2 = A0_2.OnSubFinish80325
+  L1_2["80325"] = L2_2
+  L2_2 = A0_2.OnSubFinish80326
+  L1_2["80326"] = L2_2
+  L2_2 = A0_2.OnSubFinish80327
+  L1_2["80327"] = L2_2
+  L2_2 = A0_2.OnSubFinish80328
+  L1_2["80328"] = L2_2
+  L2_2 = A0_2.OnSubFinish80329
+  L1_2["80329"] = L2_2
+  L2_2 = A0_2.OnSubFinish80330
+  L1_2["80330"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -554,4 +618,294 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80314 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80315"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80315 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80315"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80315 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80316"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80316 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80316"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80316 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80317"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80317 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80317"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80317 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80318"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80318 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80318"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80318 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubStart80319"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1032Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart80319 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80319"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80319 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80320"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80320 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80320"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80320 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80321"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80321 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80321"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80321 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80322"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80322 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80322"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80322 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80323"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80323 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80323"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80323 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80324"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80324 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80324"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80324 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80325"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80325 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80325"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80325 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80326"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80326 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80326"
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SetWeather
+  L4_2 = "BigWorld/Weather_Storm"
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish80326 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80327"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80327 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80327"
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.CancelWeather
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80327 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
+  L3_2 = "OnSubStart80328"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpcWithTriggerBlackEx
+  L4_2 = "Q80328Trigger28"
+  L5_2 = 80328
+  L6_2 = 1032
+  L7_2 = 0
+  L8_2 = 5
+  L9_2 = 0.5
+  L10_2 = 1
+  L11_2 = 0.5
+  L12_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.OnSubStart80328 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80328"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80328 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubStart80329"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.AmborData
+  L5_2 = L5_2.id
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CallDelayByQuest
+  L4_2 = "Test001"
+  L5_2 = 5
+  function L6_2(A0_3)
+    local L1_3, L2_3
+    L1_3 = print
+    L2_3 = "\229\143\150\230\182\136\229\187\182\232\191\159\230\137\167\232\161\140\229\164\177\232\180\165~"
+    L1_3(L2_3)
+  end
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart80329 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80329"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.AmborData
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.UnCallDelayByQuest
+  L4_2 = "Test001"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.TransmitPlayerByQuestId
+  L4_2 = 80329
+  L5_2 = 1
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish80329 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80330"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80330 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80330"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80330 = L9_1
 return L1_1

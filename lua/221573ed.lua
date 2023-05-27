@@ -137,7 +137,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc12130Data
+  L4_2 = L7_1.Npc13476Data
   L4_2 = L4_2.alias
   L5_2 = 1074
   L2_2(L3_2, L4_2, L5_2)
@@ -211,7 +211,7 @@ function L9_1(A0_2, A1_2, A2_2)
     local L1_3, L2_3, L3_3, L4_3
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.SafeDestroyQuestNpc
+    L1_3 = L1_3.DestroyQuestNpcActor
     L3_3 = A2_2
     L4_3 = A1_2
     L1_3(L2_3, L3_3, L4_3)
@@ -284,7 +284,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.SafeDestroyQuestNpc
   L4_2 = L7_1.Npc12717Data
   L4_2 = L4_2.alias
-  L5_2 = 3
+  L5_2 = 1074
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -417,15 +417,15 @@ function L9_1(A0_2, A1_2)
   L4_2 = A1_2
   L5_2 = L7_1.Npc1058Data
   L5_2 = L5_2.id
-  L6_2 = 1
+  L6_2 = 2
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12130Data
+  L5_2 = L7_1.Npc13476Data
   L5_2 = L5_2.id
-  L6_2 = 2
+  L6_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart2303505 = L9_1
@@ -437,7 +437,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc12130Data
+  L4_2 = L7_1.Npc13476Data
   L4_2 = L4_2.alias
   L5_2 = 1074
   L2_2(L3_2, L4_2, L5_2)
