@@ -503,31 +503,21 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubStart4011319 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish4011319"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc13246Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.DestroyWithDisappear
-  L5_2 = false
-  L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.NarratorOnlyTaskByData
-  L5_2 = L9_1.Kaiche4011303
-  L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.CallDelayByQuest
-  L5_2 = "4011303"
-  L6_2 = 1
-  function L7_2(A0_3)
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.Kaiche4011303
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CallDelayByQuest
+  L4_2 = "4011303"
+  L5_2 = 1
+  function L6_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
     L1_3 = L3_1
     L2_3 = L1_3
@@ -541,19 +531,29 @@ function L10_1(A0_2, A1_2)
     L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.PlayEffect
-    L3_3 = "Eff_SceneObj_LittleOceanid_01"
-    L4_3 = {}
-    L4_3.x = 759
-    L4_3.y = 109
-    L4_3.z = 755
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc13246Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.DestroyWithDisappear
+    L4_3 = false
+    L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.PlayEffect
+    L4_3 = "Eff_SceneObj_LittleOceanid_01"
     L5_3 = {}
-    L5_3.x = 0
-    L5_3.y = 0
-    L5_3.z = 0
-    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L5_3.x = 759
+    L5_3.y = 109
+    L5_3.z = 755
+    L6_3 = {}
+    L6_3.x = 0
+    L6_3.y = 0
+    L6_3.z = 0
+    L2_3(L3_3, L4_3, L5_3, L6_3)
   end
-  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish4011319 = L10_1
 function L10_1(A0_2, A1_2)
@@ -966,7 +966,7 @@ function L10_1(A0_2, A1_2)
     L1_3 = L7_3
     L8_3 = L1_3
     L7_3 = L1_3.DoFreeStyle
-    L9_3 = 1060
+    L9_3 = 1130
     L10_3 = true
     L11_3 = nil
     L12_3 = true

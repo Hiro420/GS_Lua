@@ -269,6 +269,11 @@ function L10_1(A0_2, A1_2)
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q4011602Talk"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q4011608Talk"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnMainCanceled = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2)
@@ -709,6 +714,14 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 10
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc13252Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart4011607 = L10_1
 function L10_1(A0_2, A1_2)
@@ -719,20 +732,35 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish4011607 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart4011608"
   L2_2(L3_2)
-  L2_2 = L3_1
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc13252Data
-  L4_2 = L4_2.id
-  L5_2 = 4011608
-  L6_2 = 0
-  L7_2 = 5
-  L8_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q4011608Talk"
+  L5_2 = "Actor/Gadget/Q4011608Talk"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = sceneData
+  L9_2 = L8_2
+  L8_2 = L8_2.GetDummyPoint
+  L10_2 = 10
+  L11_2 = "Q4011608_N13252"
+  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_2.pos
+  L9_2 = sceneData
+  L10_2 = L9_2
+  L9_2 = L9_2.GetDummyPoint
+  L11_2 = 10
+  L12_2 = "Q4011608_N13252"
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 10
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart4011608 = L10_1
 function L10_1(A0_2, A1_2)
@@ -956,6 +984,14 @@ function L10_1(A0_2, A1_2)
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q4011609Kaiche"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.TryPauseCurAutoNarrator
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish4011609 = L10_1
 function L10_1(A0_2, A1_2)

@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
   L2_2 = "[MainId: 11029][Trigger: Q1102906_Trigger] TriggerIn"
   L1_2(L2_2)
@@ -60,11 +60,12 @@ function L8_1(A0_2)
   L3_2 = "11029"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.CallDelay
-  L4_2 = 3
-  function L5_2(A0_3)
+  L2_2 = L1_2.CallDelayByQuest
+  L4_2 = "1102906Narrator"
+  L5_2 = 3
+  function L6_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
-    L1_3 = _quest_
+    L1_3 = L1_2
     L2_3 = L1_3
     L1_3 = L1_3.GetSubQuestState
     L3_3 = 1102906
@@ -84,7 +85,7 @@ function L8_1(A0_2)
       L2_3(L3_3, L4_3, L5_3, L6_3, L7_3)
     end
   end
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DestroySelf

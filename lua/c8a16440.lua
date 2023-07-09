@@ -27,26 +27,27 @@ function L8_1(A0_2)
 end
 L1_1.OnPostDataPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L1_2 = print
   L2_2 = "[MainId: 19080][Trigger: Q19080Trigger] OnPostComponentPrepare"
   L1_2(L2_2)
   L1_2 = L3_1
   L2_2 = L1_2
-  L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 15
-  L4_2 = DistType
-  L4_2 = L4_2.EULER
-  L5_2 = {}
-  L5_2.x = 0.0
-  L5_2.y = 0.0
-  L5_2.z = 0.0
-  L6_2 = A0_2.TriggerIn
-  L7_2 = A0_2.TriggerOut
-  L8_2 = nil
-  L9_2 = A0_2.PreTriggerIn
-  L10_2 = A0_2.LightUpTriggerIn
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L1_2 = L1_2.AddCubeShapeTrigger
+  L3_2 = 13.88349
+  L4_2 = 19.94
+  L5_2 = 5.2
+  L6_2 = true
+  L7_2 = {}
+  L7_2.x = 0.0
+  L7_2.y = 0.0
+  L7_2.z = 0.0
+  L8_2 = A0_2.TriggerIn
+  L9_2 = A0_2.TriggerOut
+  L10_2 = nil
+  L11_2 = A0_2.PreTriggerIn
+  L12_2 = A0_2.LightUpTriggerIn
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
@@ -72,10 +73,6 @@ function L8_1(A0_2)
     L2_3 = false
     L3_3 = 1908020
     L1_3(L2_3, L3_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.DestroySelf
-    L1_3(L2_3)
   end
   L6_2 = 19080
   L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -94,14 +91,43 @@ function L8_1(A0_2)
   L10_2 = false
   L11_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.StopLocalAvatar
+  L3_2(L4_2)
+  L4_2 = L1_2
+  L3_2 = L1_2.EnablePlayerInputByQuest
+  L5_2 = false
+  L3_2(L4_2, L5_2)
   L4_2 = L1_2
   L3_2 = L1_2.EnterSceneLookCamera
   L5_2 = L7_1.Cam1908020
-  L6_2 = 0.2
-  L7_2 = 4
+  L6_2 = 0.1
+  L7_2 = 3
   L8_2 = true
   L9_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L4_2 = L1_2
+  L3_2 = L1_2.CallDelayByQuest
+  L5_2 = "1908020"
+  L6_2 = 3
+  function L7_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.GetActor
+    L3_3 = "19080"
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.EnablePlayerInputByQuest
+    L4_3 = true
+    L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.DestroySelf
+    L2_3(L3_3)
+  end
+  L3_2(L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

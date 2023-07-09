@@ -308,6 +308,7 @@ function L1_1(A0_2)
   L3_2.z = 0
   L2_2.offsetRot = L3_2
   L1_2.platformInfo = L2_2
+  L1_2.inWater = false
   return L1_2
 end
 L0_1.CreateDefaultExtMetaInfo = L1_1
@@ -321,7 +322,7 @@ function L1_1(A0_2, A1_2)
 end
 L0_1.CreateLocalActorWithData = L1_1
 function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2
   L3_2 = A1_2.sceneID
   if L3_2 == nil then
     L4_2 = sceneData
@@ -382,381 +383,384 @@ function L1_1(A0_2, A1_2, A2_2)
     L21_2 = L21_2.groupId
     L20_2 = 0 < L21_2
   end
+  L21_2 = L18_2.inWater
   if L17_2 then
-    L21_2 = actorUtils
-    L21_2 = L21_2.ClearCacheCmdAll
-    L22_2 = L6_2
-    L21_2(L22_2)
+    L22_2 = actorUtils
+    L22_2 = L22_2.ClearCacheCmdAll
+    L23_2 = L6_2
+    L22_2(L23_2)
   end
-  L21_2 = sceneData
-  L21_2 = L21_2.currSceneID
-  if L3_2 ~= L21_2 then
-    L21_2 = sceneData
-    L21_2 = L21_2.currSceneID
-    if L21_2 ~= 1001 then
+  L22_2 = sceneData
+  L22_2 = L22_2.currSceneID
+  if L3_2 ~= L22_2 then
+    L22_2 = sceneData
+    L22_2 = L22_2.currSceneID
+    if L22_2 ~= 1001 then
       if A2_2 ~= true and L13_2 then
-        L21_2 = sceneData
-        L21_2 = L21_2.currSceneID
-        if L21_2 ~= -1 then
-          L21_2 = actorUtils
-          L21_2 = L21_2.NotifyActorPreCreate
-          L22_2 = L6_2
-          L21_2(L22_2)
-          L21_2 = NG_HSOD_DEBUG
-          if L21_2 then
-            L21_2 = util
-            L21_2 = L21_2.unrequire
-            L22_2 = L7_2
-            L21_2(L22_2)
-          end
-          L21_2 = require
-          L22_2 = L7_2
-          L21_2 = L21_2(L22_2)
+        L22_2 = sceneData
+        L22_2 = L22_2.currSceneID
+        if L22_2 ~= -1 then
           L22_2 = actorUtils
-          L22_2 = L22_2.NotifyActorCreate
-          L23_2 = L21_2.actorType
-          L24_2 = L6_2
-          L25_2 = L7_2
-          L26_2 = L8_2
-          L27_2 = L10_2
-          L28_2 = L11_2
-          L29_2 = L12_2
-          L30_2 = L3_2
-          L31_2 = L4_2
-          L32_2 = L5_2
-          L33_2 = 0
+          L22_2 = L22_2.NotifyActorPreCreate
+          L23_2 = L6_2
+          L22_2(L23_2)
+          L22_2 = NG_HSOD_DEBUG
+          if L22_2 then
+            L22_2 = util
+            L22_2 = L22_2.unrequire
+            L23_2 = L7_2
+            L22_2(L23_2)
+          end
+          L22_2 = require
+          L23_2 = L7_2
+          L22_2 = L22_2(L23_2)
+          L23_2 = actorUtils
+          L23_2 = L23_2.NotifyActorCreate
+          L24_2 = L22_2.actorType
+          L25_2 = L6_2
+          L26_2 = L7_2
+          L27_2 = L8_2
+          L28_2 = L10_2
+          L29_2 = L11_2
+          L30_2 = L12_2
+          L31_2 = L3_2
+          L32_2 = L4_2
+          L33_2 = L5_2
           L34_2 = 0
           L35_2 = 0
-          L36_2 = L18_2
-          L22_2(L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2)
+          L36_2 = 0
+          L37_2 = L18_2
+          L23_2(L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2)
         end
       end
-      L21_2 = A0_2.dummyActor
-      L21_2.alias = L6_2
-      L21_2 = A0_2.dummyActor
-      return L21_2
+      L22_2 = A0_2.dummyActor
+      L22_2.alias = L6_2
+      L22_2 = A0_2.dummyActor
+      return L22_2
     end
   end
-  L21_2 = A1_2.noPerform
-  if L21_2 == nil then
-    L21_2 = true
+  L22_2 = A1_2.noPerform
+  if L22_2 == nil then
+    L22_2 = true
   end
-  L22_2 = A1_2.ditherShow
-  L22_2 = L22_2 == true
-  L23_2 = A1_2.ditherDuration
-  L24_2 = actorUtils
-  L24_2 = L24_2.TrySwitchNpcActor
-  L25_2 = L8_2
-  L26_2 = L5_2
-  L27_2 = L6_2
-  L24_2 = L24_2(L25_2, L26_2, L27_2)
-  if L24_2 ~= nil then
-    L25_2 = L0_1.GetActorInternal
-    L26_2 = A0_2
-    L27_2 = L24_2
-    L25_2 = L25_2(L26_2, L27_2)
-    L26_2 = L0_1.ClearActor
+  L23_2 = A1_2.ditherShow
+  L23_2 = L23_2 == true
+  L24_2 = A1_2.ditherDuration
+  L25_2 = actorUtils
+  L25_2 = L25_2.TrySwitchNpcActor
+  L26_2 = L8_2
+  L27_2 = L5_2
+  L28_2 = L6_2
+  L25_2 = L25_2(L26_2, L27_2, L28_2)
+  if L25_2 ~= nil then
+    L26_2 = L0_1.GetActorInternal
     L27_2 = A0_2
-    L28_2 = L24_2
-    L26_2(L27_2, L28_2)
-    if L25_2 ~= nil then
-      L25_2.alias = L6_2
-      L26_2 = L0_1.ActorDic
-      L26_2[L6_2] = L25_2
+    L28_2 = L25_2
+    L26_2 = L26_2(L27_2, L28_2)
+    L27_2 = L0_1.ClearActor
+    L28_2 = A0_2
+    L29_2 = L25_2
+    L27_2(L28_2, L29_2)
+    if L26_2 ~= nil then
+      L26_2.alias = L6_2
+      L27_2 = L0_1.ActorDic
+      L27_2[L6_2] = L26_2
     end
   end
-  L25_2 = L0_1.GetActorInternal
-  L26_2 = A0_2
-  L27_2 = L6_2
-  L25_2 = L25_2(L26_2, L27_2)
-  if L25_2 ~= nil then
-    L27_2 = L25_2
-    L26_2 = L25_2.IsValid
-    L26_2 = L26_2(L27_2)
-    if L26_2 ~= true then
-      L26_2 = L0_1.ClearActor
-      L27_2 = A0_2
-      L28_2 = L6_2
-      L26_2(L27_2, L28_2)
-      L25_2 = nil
+  L26_2 = L0_1.GetActorInternal
+  L27_2 = A0_2
+  L28_2 = L6_2
+  L26_2 = L26_2(L27_2, L28_2)
+  if L26_2 ~= nil then
+    L28_2 = L26_2
+    L27_2 = L26_2.IsValid
+    L27_2 = L27_2(L28_2)
+    if L27_2 ~= true then
+      L27_2 = L0_1.ClearActor
+      L28_2 = A0_2
+      L29_2 = L6_2
+      L27_2(L28_2, L29_2)
+      L26_2 = nil
     end
   end
-  if L25_2 ~= nil then
-    L26_2 = L25_2.defaultAlias
-    L27_2 = L0_1.tempDefaultAlias
-    if L26_2 == L27_2 then
-      L26_2 = NG_HSOD_DEBUG
-      if L26_2 then
-        L26_2 = util
-        L26_2 = L26_2.unrequire
-        L27_2 = L7_2
-        L26_2(L27_2)
-      end
-      L26_2 = require
-      L27_2 = L7_2
-      L26_2 = L26_2(L27_2)
-      L27_2 = L26_2.defaultAlias
-      L28_2 = L25_2.defaultAlias
-      if L27_2 ~= L28_2 then
-        L27_2 = L0_1.ClearActor
-        L28_2 = A0_2
-        L29_2 = L6_2
-        L27_2(L28_2, L29_2)
-        L25_2 = nil
-      end
-    end
-  end
-  if L25_2 == nil then
-    L26_2 = actorUtils
-    L26_2 = L26_2.NotifyActorPreCreate
-    L27_2 = L6_2
-    L26_2(L27_2)
-    L26_2 = NG_HSOD_DEBUG
-    if L26_2 then
-      L26_2 = util
-      L26_2 = L26_2.unrequire
-      L27_2 = L7_2
-      L26_2(L27_2)
-    end
-    L26_2 = require
-    L27_2 = L7_2
-    L26_2 = L26_2(L27_2)
-    if L26_2 == nil then
+  if L26_2 ~= nil then
+    L27_2 = L26_2.defaultAlias
+    L28_2 = L0_1.tempDefaultAlias
+    if L27_2 == L28_2 then
       L27_2 = NG_HSOD_DEBUG
       if L27_2 then
-        L27_2 = actorUtils
-        L27_2 = L27_2.LogError
-        L28_2 = "[Lua] quest:"
-        L29_2 = tostring
-        L30_2 = mainID
-        L29_2 = L29_2(L30_2)
-        L30_2 = " check metaPath of "
-        L31_2 = tostring
-        L32_2 = L6_2
-        L31_2 = L31_2(L32_2)
-        L28_2 = L28_2 .. L29_2 .. L30_2 .. L31_2
+        L27_2 = util
+        L27_2 = L27_2.unrequire
+        L28_2 = L7_2
         L27_2(L28_2)
       end
-      return L25_2
-    end
-    L28_2 = L26_2
-    L27_2 = L26_2.new
-    L27_2 = L27_2(L28_2)
-    L25_2 = L27_2
-    L25_2.configID = L8_2
-    L25_2.dataIndex = L9_2
-    L25_2.bornSceneID = L3_2
-    L25_2.bornRoomID = L4_2
-    L25_2.bornQuestID = L5_2
-    L25_2.bornPos = L10_2
-    L25_2.bornDir = L11_2
-    L25_2.bornShoesOffset = L12_2
-    L25_2.isOrphan = L19_2
-    L27_2 = L18_2.platformInfo
-    L25_2.platformInfo = L27_2
-    L25_2.isNetwork = L13_2
-    L25_2.isAutoStart = L14_2
-    L25_2.actorData = A1_2
-    L25_2.dontDestroyOnClear = L16_2
-    L25_2.isLocal = A2_2
-    L28_2 = L25_2
-    L27_2 = L25_2.PreGetAlias
-    L27_2 = L27_2(L28_2)
-    L29_2 = L25_2
-    L28_2 = L25_2.OnPreInit
-    L28_2(L29_2)
-    if L6_2 == nil or L6_2 == "" then
-      if L27_2 ~= nil then
-        L6_2 = L27_2
-      else
-        L6_2 = L25_2.defaultAlias
+      L27_2 = require
+      L28_2 = L7_2
+      L27_2 = L27_2(L28_2)
+      L28_2 = L27_2.defaultAlias
+      L29_2 = L26_2.defaultAlias
+      if L28_2 ~= L29_2 then
+        L28_2 = L0_1.ClearActor
+        L29_2 = A0_2
+        L30_2 = L6_2
+        L28_2(L29_2, L30_2)
+        L26_2 = nil
       end
     end
-    L25_2.alias = L6_2
-    L25_2.metaPath = L7_2
-    L28_2 = L0_1.ActorDic
-    L28_2[L6_2] = L25_2
-    L29_2 = L25_2
-    L28_2 = L25_2.OnInit
-    L30_2 = L6_2
-    L28_2(L29_2, L30_2)
-    L28_2 = print
-    L29_2 = "NotifyActorCreate  actor == nil "
-    L30_2 = tostring
-    L31_2 = L5_2
-    L30_2 = L30_2(L31_2)
-    L31_2 = " Alias:="
-    L32_2 = L6_2
-    L29_2 = L29_2 .. L30_2 .. L31_2 .. L32_2
-    L28_2(L29_2)
-    L28_2 = L25_2.uActor
-    if L28_2 == nil then
-      L28_2 = L0_1.ActorDic
-      L28_2[L6_2] = nil
-      L28_2 = A0_2.dummyActor
-      L28_2.alias = L6_2
-      L28_2 = A0_2.dummyActor
-      return L28_2
-    else
-      L29_2 = L25_2
-      L28_2 = L25_2.OnPostInit
-      L28_2(L29_2)
-      L28_2 = L25_2.MarkDitherShow
+  end
+  if L26_2 == nil then
+    L27_2 = actorUtils
+    L27_2 = L27_2.NotifyActorPreCreate
+    L28_2 = L6_2
+    L27_2(L28_2)
+    L27_2 = NG_HSOD_DEBUG
+    if L27_2 then
+      L27_2 = util
+      L27_2 = L27_2.unrequire
+      L28_2 = L7_2
+      L27_2(L28_2)
+    end
+    L27_2 = require
+    L28_2 = L7_2
+    L27_2 = L27_2(L28_2)
+    if L27_2 == nil then
+      L28_2 = NG_HSOD_DEBUG
+      if L28_2 then
+        L28_2 = actorUtils
+        L28_2 = L28_2.LogError
+        L29_2 = "[Lua] quest:"
+        L30_2 = tostring
+        L31_2 = mainID
+        L30_2 = L30_2(L31_2)
+        L31_2 = " check metaPath of "
+        L32_2 = tostring
+        L33_2 = L6_2
+        L32_2 = L32_2(L33_2)
+        L29_2 = L29_2 .. L30_2 .. L31_2 .. L32_2
+        L28_2(L29_2)
+      end
+      return L26_2
+    end
+    L29_2 = L27_2
+    L28_2 = L27_2.new
+    L28_2 = L28_2(L29_2)
+    L26_2 = L28_2
+    L26_2.configID = L8_2
+    L26_2.dataIndex = L9_2
+    L26_2.bornSceneID = L3_2
+    L26_2.bornRoomID = L4_2
+    L26_2.bornQuestID = L5_2
+    L26_2.bornPos = L10_2
+    L26_2.bornDir = L11_2
+    L26_2.bornShoesOffset = L12_2
+    L26_2.isOrphan = L19_2
+    L28_2 = L18_2.platformInfo
+    L26_2.platformInfo = L28_2
+    L26_2.inWater = L21_2
+    L26_2.isNetwork = L13_2
+    L26_2.isAutoStart = L14_2
+    L26_2.actorData = A1_2
+    L26_2.dontDestroyOnClear = L16_2
+    L26_2.isLocal = A2_2
+    L29_2 = L26_2
+    L28_2 = L26_2.PreGetAlias
+    L28_2 = L28_2(L29_2)
+    L30_2 = L26_2
+    L29_2 = L26_2.OnPreInit
+    L29_2(L30_2)
+    if L6_2 == nil or L6_2 == "" then
       if L28_2 ~= nil then
-        L29_2 = L25_2
-        L28_2 = L25_2.MarkDitherShow
-        L30_2 = L22_2
-        L28_2(L29_2, L30_2)
+        L6_2 = L28_2
+      else
+        L6_2 = L26_2.defaultAlias
+      end
+    end
+    L26_2.alias = L6_2
+    L26_2.metaPath = L7_2
+    L29_2 = L0_1.ActorDic
+    L29_2[L6_2] = L26_2
+    L30_2 = L26_2
+    L29_2 = L26_2.OnInit
+    L31_2 = L6_2
+    L29_2(L30_2, L31_2)
+    L29_2 = print
+    L30_2 = "NotifyActorCreate  actor == nil "
+    L31_2 = tostring
+    L32_2 = L5_2
+    L31_2 = L31_2(L32_2)
+    L32_2 = " Alias:="
+    L33_2 = L6_2
+    L30_2 = L30_2 .. L31_2 .. L32_2 .. L33_2
+    L29_2(L30_2)
+    L29_2 = L26_2.uActor
+    if L29_2 == nil then
+      L29_2 = L0_1.ActorDic
+      L29_2[L6_2] = nil
+      L29_2 = A0_2.dummyActor
+      L29_2.alias = L6_2
+      L29_2 = A0_2.dummyActor
+      return L29_2
+    else
+      L30_2 = L26_2
+      L29_2 = L26_2.OnPostInit
+      L29_2(L30_2)
+      L29_2 = L26_2.MarkDitherShow
+      if L29_2 ~= nil then
+        L30_2 = L26_2
+        L29_2 = L26_2.MarkDitherShow
+        L31_2 = L23_2
+        L29_2(L30_2, L31_2)
       end
       if not L15_2 then
-        L28_2 = L25_2.CheckShow
-        if L28_2 ~= nil then
-          L29_2 = L25_2
-          L28_2 = L25_2.CheckShow
-          L28_2(L29_2)
+        L29_2 = L26_2.CheckShow
+        if L29_2 ~= nil then
+          L30_2 = L26_2
+          L29_2 = L26_2.CheckShow
+          L29_2(L30_2)
         end
       end
     end
   else
-    L27_2 = L25_2
-    L26_2 = L25_2.OnReuse
-    L26_2(L27_2)
-    L26_2 = actorUtils
-    L26_2 = L26_2.NotifyActorPreCreate
-    L27_2 = L6_2
-    L26_2(L27_2)
-    L27_2 = L25_2
-    L26_2 = L25_2.ClearAllTask
-    L26_2(L27_2)
-    L25_2.bornSceneID = L3_2
-    L25_2.bornRoomID = L4_2
-    L25_2.bornQuestID = L5_2
-    L25_2.bornShoesOffset = L12_2
-    L25_2.isOrphan = L19_2
-    L26_2 = L18_2.platformInfo
-    L25_2.platformInfo = L26_2
-    L25_2.isAutoStart = L14_2
-    L26_2 = print
-    L27_2 = "NotifyActorCreate actor OnReuse "
-    L28_2 = tostring
-    L29_2 = L5_2
-    L28_2 = L28_2(L29_2)
-    L29_2 = " Alias:="
-    L30_2 = L6_2
-    L27_2 = L27_2 .. L28_2 .. L29_2 .. L30_2
-    L26_2(L27_2)
-    L26_2 = L25_2.MarkDitherShow
-    if L26_2 ~= nil then
-      L27_2 = L25_2
-      L26_2 = L25_2.MarkDitherShow
-      L28_2 = L22_2
-      L26_2(L27_2, L28_2)
+    L28_2 = L26_2
+    L27_2 = L26_2.OnReuse
+    L27_2(L28_2)
+    L27_2 = actorUtils
+    L27_2 = L27_2.NotifyActorPreCreate
+    L28_2 = L6_2
+    L27_2(L28_2)
+    L28_2 = L26_2
+    L27_2 = L26_2.ClearAllTask
+    L27_2(L28_2)
+    L26_2.bornSceneID = L3_2
+    L26_2.bornRoomID = L4_2
+    L26_2.bornQuestID = L5_2
+    L26_2.bornShoesOffset = L12_2
+    L26_2.isOrphan = L19_2
+    L27_2 = L18_2.platformInfo
+    L26_2.platformInfo = L27_2
+    L26_2.inWater = L21_2
+    L26_2.isAutoStart = L14_2
+    L27_2 = print
+    L28_2 = "NotifyActorCreate actor OnReuse "
+    L29_2 = tostring
+    L30_2 = L5_2
+    L29_2 = L29_2(L30_2)
+    L30_2 = " Alias:="
+    L31_2 = L6_2
+    L28_2 = L28_2 .. L29_2 .. L30_2 .. L31_2
+    L27_2(L28_2)
+    L27_2 = L26_2.MarkDitherShow
+    if L27_2 ~= nil then
+      L28_2 = L26_2
+      L27_2 = L26_2.MarkDitherShow
+      L29_2 = L23_2
+      L27_2(L28_2, L29_2)
     end
     if not L20_2 then
-      L26_2 = L25_2.SetPosAndTurnTo
-      if L26_2 ~= nil then
-        L27_2 = L25_2
-        L26_2 = L25_2.SetPosAndTurnTo
-        L28_2 = L10_2
-        L29_2 = M
-        L29_2 = L29_2.Euler2DirXZ
-        L30_2 = L11_2
-        L29_2 = L29_2(L30_2)
-        L30_2 = L21_2
-        L26_2(L27_2, L28_2, L29_2, L30_2)
+      L27_2 = L26_2.SetPosAndTurnTo
+      if L27_2 ~= nil then
+        L28_2 = L26_2
+        L27_2 = L26_2.SetPosAndTurnTo
+        L29_2 = L10_2
+        L30_2 = M
+        L30_2 = L30_2.Euler2DirXZ
+        L31_2 = L11_2
+        L30_2 = L30_2(L31_2)
+        L31_2 = L22_2
+        L27_2(L28_2, L29_2, L30_2, L31_2)
       else
-        L26_2 = L25_2.SetPos
-        if L26_2 ~= nil then
-          L27_2 = L25_2
-          L26_2 = L25_2.SetPos
-          L28_2 = L10_2
-          L29_2 = L21_2
-          L26_2(L27_2, L28_2, L29_2)
+        L27_2 = L26_2.SetPos
+        if L27_2 ~= nil then
+          L28_2 = L26_2
+          L27_2 = L26_2.SetPos
+          L29_2 = L10_2
+          L30_2 = L22_2
+          L27_2(L28_2, L29_2, L30_2)
         end
-        L26_2 = L25_2.TurnTo
-        if L26_2 ~= nil then
-          L27_2 = L25_2
-          L26_2 = L25_2.TurnTo
-          L28_2 = M
-          L28_2 = L28_2.Euler2DirXZ
-          L29_2 = L11_2
-          L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2 = L28_2(L29_2)
-          L26_2(L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2)
+        L27_2 = L26_2.TurnTo
+        if L27_2 ~= nil then
+          L28_2 = L26_2
+          L27_2 = L26_2.TurnTo
+          L29_2 = M
+          L29_2 = L29_2.Euler2DirXZ
+          L30_2 = L11_2
+          L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2 = L29_2(L30_2)
+          L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2)
         end
       end
     else
-      L26_2 = L25_2.SetPosAndTurnOnPlatform
-      if L26_2 ~= nil then
-        L27_2 = L25_2
-        L26_2 = L25_2.SetPosAndTurnOnPlatform
-        L28_2 = L18_2.platformInfo
-        L26_2(L27_2, L28_2)
+      L27_2 = L26_2.SetPosAndTurnOnPlatform
+      if L27_2 ~= nil then
+        L28_2 = L26_2
+        L27_2 = L26_2.SetPosAndTurnOnPlatform
+        L29_2 = L18_2.platformInfo
+        L27_2(L28_2, L29_2)
       end
     end
-    L26_2 = L25_2.SetShoesOffsetOnReuse
-    if L26_2 ~= nil then
-      L27_2 = L25_2
-      L26_2 = L25_2.SetShoesOffsetOnReuse
-      L28_2 = L12_2
-      L26_2(L27_2, L28_2)
+    L27_2 = L26_2.SetShoesOffsetOnReuse
+    if L27_2 ~= nil then
+      L28_2 = L26_2
+      L27_2 = L26_2.SetShoesOffsetOnReuse
+      L29_2 = L12_2
+      L27_2(L28_2, L29_2)
     end
     if not L15_2 then
-      L26_2 = L25_2.CheckShow
-      if L26_2 ~= nil then
-        L27_2 = L25_2
-        L26_2 = L25_2.CheckShow
-        L26_2(L27_2)
+      L27_2 = L26_2.CheckShow
+      if L27_2 ~= nil then
+        L28_2 = L26_2
+        L27_2 = L26_2.CheckShow
+        L27_2(L28_2)
       end
     end
-    L27_2 = L25_2
-    L26_2 = L25_2.ClearActor
-    L26_2(L27_2)
+    L28_2 = L26_2
+    L27_2 = L26_2.ClearActor
+    L27_2(L28_2)
     if A2_2 ~= true then
-      L26_2 = actorUtils
-      L26_2 = L26_2.NotifyActorCreate
-      L27_2 = L25_2.actorType
-      L28_2 = L6_2
-      L29_2 = L7_2
-      L30_2 = L8_2
-      L31_2 = L10_2
-      L32_2 = L11_2
-      L33_2 = L12_2
-      L34_2 = L3_2
-      L35_2 = L4_2
-      L36_2 = L5_2
-      L37_2 = 0
+      L27_2 = actorUtils
+      L27_2 = L27_2.NotifyActorCreate
+      L28_2 = L26_2.actorType
+      L29_2 = L6_2
+      L30_2 = L7_2
+      L31_2 = L8_2
+      L32_2 = L10_2
+      L33_2 = L11_2
+      L34_2 = L12_2
+      L35_2 = L3_2
+      L36_2 = L4_2
+      L37_2 = L5_2
       L38_2 = 0
       L39_2 = 0
-      L40_2 = L18_2
-      L26_2(L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2)
+      L40_2 = 0
+      L41_2 = L18_2
+      L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2)
     end
-    L26_2 = actorUtils
-    L26_2 = L26_2.NotifyActorAutoStart
-    L27_2 = L8_2
-    L28_2 = L5_2
-    L29_2 = L14_2
-    L26_2(L27_2, L28_2, L29_2)
+    L27_2 = actorUtils
+    L27_2 = L27_2.NotifyActorAutoStart
+    L28_2 = L8_2
+    L29_2 = L5_2
+    L30_2 = L14_2
+    L27_2(L28_2, L29_2, L30_2)
     if L14_2 then
-      L27_2 = L25_2
-      L26_2 = L25_2.Start
-      L26_2(L27_2)
+      L28_2 = L26_2
+      L27_2 = L26_2.Start
+      L27_2(L28_2)
     end
   end
   if L5_2 ~= nil and 0 < L5_2 then
-    L27_2 = L25_2
-    L26_2 = L25_2.ResetAsNoDaily
-    L26_2(L27_2)
+    L28_2 = L26_2
+    L27_2 = L26_2.ResetAsNoDaily
+    L27_2(L28_2)
   end
-  if L22_2 then
-    L26_2 = L25_2.DitherToShowWhenAppear
-    if L26_2 ~= nil then
-      L27_2 = L25_2
-      L26_2 = L25_2.DitherToShowWhenAppear
-      L28_2 = L23_2
-      L26_2(L27_2, L28_2)
+  if L23_2 then
+    L27_2 = L26_2.DitherToShowWhenAppear
+    if L27_2 ~= nil then
+      L28_2 = L26_2
+      L27_2 = L26_2.DitherToShowWhenAppear
+      L29_2 = L24_2
+      L27_2(L28_2, L29_2)
     end
   end
-  return L25_2
+  return L26_2
 end
 L0_1.CreateActorWithDataInternal = L1_1
 function L1_1(A0_2, A1_2, A2_2)
@@ -1480,6 +1484,11 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   end
   L13_2 = A2_2.platformInfo
   L12_2.platformInfo = L13_2
+  L13_2 = A2_2.inWater
+  if L13_2 ~= nil then
+    L13_2 = A2_2.inWater
+    L12_2.inWater = L13_2
+  end
   L8_2.extMetaInfo = L12_2
   return L8_2
 end

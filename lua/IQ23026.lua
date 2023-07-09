@@ -351,11 +351,11 @@ function L11_1(A0_2, A1_2)
     L3_2 = print
     L4_2 = L9_1
     L3_2(L4_2)
-    L3_2 = table
-    L3_2 = L3_2.remove
-    L4_2 = L9_1
-    L5_2 = L8_1
-    L3_2(L4_2, L5_2)
+    L4_2 = A0_2
+    L3_2 = A0_2.RemoveTableElement
+    L5_2 = L9_1
+    L6_2 = L8_1
+    L3_2(L4_2, L5_2, L6_2)
     L3_2 = math
     L3_2 = L3_2.randomseed
     L4_2 = os
@@ -387,11 +387,11 @@ function L11_1(A0_2, A1_2)
     L6_2 = 0
     L3_2 = L3_2(L4_2, L5_2, L6_2)
     L8_1 = L3_2
-    L3_2 = table
-    L3_2 = L3_2.remove
-    L4_2 = L9_1
-    L5_2 = L8_1
-    L3_2(L4_2, L5_2)
+    L4_2 = A0_2
+    L3_2 = A0_2.RemoveTableElement
+    L5_2 = L9_1
+    L6_2 = L8_1
+    L3_2(L4_2, L5_2, L6_2)
     L3_2 = math
     L3_2 = L3_2.randomseed
     L4_2 = os

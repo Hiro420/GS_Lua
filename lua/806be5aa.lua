@@ -94,7 +94,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnMainFailed = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
@@ -144,27 +144,22 @@ function L8_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 1004
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q19095Trigger"
-  L2_2(L3_2, L4_2)
-end
-L1_1.OnMainCanceled = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
   L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.GetActor
-  L4_2 = A1_2
-  L2_2 = L2_2(L3_2, L4_2)
-  if L2_2 ~= nil then
-    L4_2 = L2_2
-    L3_2 = L2_2.DestroySelf
-    L3_2(L4_2)
-  end
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q19095Trigger"
+  L5_2 = 1004
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909503N516Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.ActorDestroy = L8_1
+L1_1.OnMainCanceled = L8_1
 function L8_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L6_2 = L3_1
@@ -300,6 +295,22 @@ function L8_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.QinData
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DoFreeStyle
+  L6_2 = 1190
+  L7_2 = true
+  L8_2 = nil
+  L9_2 = true
+  L10_2 = true
+  L11_2 = false
+  L12_2 = false
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart1909502 = L8_1
 function L8_1(A0_2, A1_2)
@@ -310,7 +321,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1909502 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1909503"
   L2_2(L3_2)
@@ -362,6 +373,22 @@ function L8_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.QinData
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DoFreeStyle
+  L6_2 = 1190
+  L7_2 = true
+  L8_2 = nil
+  L9_2 = true
+  L10_2 = true
+  L11_2 = false
+  L12_2 = true
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart1909503 = L8_1
 function L8_1(A0_2, A1_2)

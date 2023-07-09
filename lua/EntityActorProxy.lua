@@ -28,6 +28,7 @@ L1_1.bornDir = nil
 L1_1.bornShoesOffset = nil
 L1_1.isOrphan = false
 L1_1.platformInfo = nil
+L1_1.inWater = false
 L1_1.isNetwork = false
 L3_1 = ActorType
 L3_1 = L3_1.BASE_ENTITY
@@ -67,14 +68,7 @@ function L3_1(A0_2)
 end
 L1_1.Register = L3_1
 function L3_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
-  L1_2 = print
-  L2_2 = "here start "
-  L3_2 = tostring
-  L4_2 = A0_2.alias
-  L3_2 = L3_2(L4_2)
-  L2_2 = L2_2 .. L3_2
-  L1_2(L2_2)
+  local L1_2
 end
 L1_1.Start = L3_1
 function L3_1(A0_2, A1_2)
@@ -139,8 +133,8 @@ function L3_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L1_1.WalkToRoute = L3_1
-function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   if A2_2 == nil then
     A2_2 = 0
   end
@@ -153,15 +147,19 @@ function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   if A5_2 == nil then
     A5_2 = false
   end
-  L6_2 = A0_2.uActor
-  L7_2 = L6_2
-  L6_2 = L6_2.AdvWalkToRoute
-  L8_2 = A1_2
-  L9_2 = A2_2
-  L10_2 = A3_2
-  L11_2 = A4_2
-  L12_2 = A5_2
-  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  if A6_2 == nil then
+    A6_2 = false
+  end
+  L7_2 = A0_2.uActor
+  L8_2 = L7_2
+  L7_2 = L7_2.AdvWalkToRoute
+  L9_2 = A1_2
+  L10_2 = A2_2
+  L11_2 = A3_2
+  L12_2 = A4_2
+  L13_2 = A5_2
+  L14_2 = A6_2
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
 L1_1.AdvWalkToRoute = L3_1
 function L3_1(A0_2, A1_2, A2_2, A3_2)
@@ -234,8 +232,8 @@ function L3_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L1_1.RunToRoute = L3_1
-function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   if A2_2 == nil then
     A2_2 = 0
   end
@@ -248,15 +246,19 @@ function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   if A5_2 == nil then
     A5_2 = false
   end
-  L6_2 = A0_2.uActor
-  L7_2 = L6_2
-  L6_2 = L6_2.AdvRunToRoute
-  L8_2 = A1_2
-  L9_2 = A2_2
-  L10_2 = A3_2
-  L11_2 = A4_2
-  L12_2 = A5_2
-  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  if A6_2 == nil then
+    A6_2 = false
+  end
+  L7_2 = A0_2.uActor
+  L8_2 = L7_2
+  L7_2 = L7_2.AdvRunToRoute
+  L9_2 = A1_2
+  L10_2 = A2_2
+  L11_2 = A3_2
+  L12_2 = A4_2
+  L13_2 = A5_2
+  L14_2 = A6_2
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
 L1_1.AdvRunToRoute = L3_1
 function L3_1(A0_2, A1_2, A2_2, A3_2)

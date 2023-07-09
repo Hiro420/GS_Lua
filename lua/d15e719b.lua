@@ -335,6 +335,13 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13456Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.LightNotifyTo
   L4_2 = L7_1.Npc2010Data
   L4_2 = L4_2.alias
@@ -468,17 +475,43 @@ function L10_1(A0_2, A1_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1908007TriggerRequest"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
   L4_2 = "Q1908021TriggerRequest"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1908001N516Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1908009N516Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1908016N516Trigger"
   L5_2 = 3
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc13456Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.UnCallDelayByQuest
+  L4_2 = "1908020"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnMainCanceled = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2)
@@ -669,6 +702,26 @@ function L10_1(A0_2, A1_2)
   L5_2 = L5_2.id
   L6_2 = 7
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13304Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13305Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubStart1908001 = L10_1
 function L10_1(A0_2, A1_2)
@@ -782,10 +835,14 @@ function L10_1(A0_2, A1_2)
   L5_2 = "Actor/Gadget/Q19080Trigger"
   L6_2 = 70900002
   L7_2 = 0
-  L8_2 = L8_1.TPos_Q19080Trigger
-  L8_2 = L8_2.pos
-  L9_2 = L8_1.TPos_Q19080Trigger
-  L9_2 = L9_2.rot
+  L8_2 = {}
+  L8_2.x = -575.554
+  L8_2.y = 229.392
+  L8_2.z = 340.656
+  L9_2 = {}
+  L9_2.x = 0.0
+  L9_2.y = 46.778
+  L9_2.z = 0.0
   L10_2 = true
   L11_2 = false
   L12_2 = 3
@@ -1170,7 +1227,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1908014 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1908015"
   L2_2(L3_2)
@@ -1244,15 +1301,72 @@ function L10_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Coop_KaeyaData
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DoFreeStyle
+  L6_2 = 1220
+  L7_2 = true
+  L8_2 = nil
+  L9_2 = true
+  L10_2 = true
+  L11_2 = false
+  L12_2 = true
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13340Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L2_2 = L4_2
+  L5_2 = L2_2
+  L4_2 = L2_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13319Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.DisableInteeHeadCtrl
+  L7_2 = true
+  L5_2(L6_2, L7_2)
 end
 L1_1.OnSubStart1908015 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1908015"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13340Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = false
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13319Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = false
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubFinish1908015 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1334,7 +1448,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1908005 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = print
   L3_2 = "OnSubStart1908017"
   L2_2(L3_2)
@@ -1480,6 +1594,22 @@ function L10_1(A0_2, A1_2)
   L6_2 = L5_2.DisableInteeHeadCtrl
   L8_2 = true
   L6_2(L7_2, L8_2)
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.GetQuestNpcActor
+  L8_2 = L7_1.Coop_KaeyaData
+  L8_2 = L8_2.alias
+  L6_2 = L6_2(L7_2, L8_2)
+  L8_2 = L6_2
+  L7_2 = L6_2.DoFreeStyle
+  L9_2 = 1230
+  L10_2 = true
+  L11_2 = nil
+  L12_2 = true
+  L13_2 = true
+  L14_2 = false
+  L15_2 = false
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
 end
 L1_1.OnSubStart1908017 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1521,7 +1651,7 @@ function L10_1(A0_2, A1_2)
   L8_2 = true
   L9_2 = true
   L10_2 = false
-  L11_2 = false
+  L11_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
   L3_2 = L3_1
   L4_2 = L3_2
@@ -1547,16 +1677,6 @@ function L10_1(A0_2, A1_2)
   L6_2 = 1
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.DoFreeStyle
-  L5_2 = 1170
-  L6_2 = true
-  L7_2 = nil
-  L8_2 = true
-  L9_2 = true
-  L10_2 = false
-  L11_2 = true
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1908018 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1800,7 +1920,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1908016 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
   L2_2 = print
   L3_2 = "OnSubStart1908007"
   L2_2(L3_2)
@@ -1929,6 +2049,25 @@ function L10_1(A0_2, A1_2)
   L14_2 = false
   L15_2 = true
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
+  L7_2 = actorMgr
+  L8_2 = L7_2
+  L7_2 = L7_2.CreateActorWithPos
+  L9_2 = "Q1908007TriggerRequest"
+  L10_2 = "Actor/Gadget/Q1908007TriggerRequest"
+  L11_2 = 70900002
+  L12_2 = 0
+  L13_2 = {}
+  L13_2.x = -629.995
+  L13_2.y = 228.313
+  L13_2.z = 296.398
+  L14_2 = {}
+  L14_2.x = 0.0
+  L14_2.y = 0.0
+  L14_2.z = 0.0
+  L15_2 = true
+  L16_2 = false
+  L17_2 = 3
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
 end
 L1_1.OnSubStart1908007 = L10_1
 function L10_1(A0_2, A1_2)

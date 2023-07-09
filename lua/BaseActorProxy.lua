@@ -2051,7 +2051,7 @@ function L1_1(A0_2, A1_2)
 end
 L0_1.GetSubQuestState = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
-  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2
   if A9_2 == nil then
     A9_2 = true
   end
@@ -2089,12 +2089,13 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
   if not A8_2 then
     L23_2 = 0
   end
-  L24_2 = A9_2
-  return L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2)
+  L24_2 = 0
+  L25_2 = A9_2
+  return L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2)
 end
 L0_1.TransmitPlayer = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
-  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2
+  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2
   L11_2 = NG_HSOD_DEBUG
   if L11_2 then
     L11_2 = print
@@ -2129,12 +2130,13 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
   if not A10_2 then
     L24_2 = 0
   end
-  L25_2 = true
-  return L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2)
+  L25_2 = 0
+  L26_2 = true
+  return L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2)
 end
 L0_1.TransmitPlayerWithText = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
-  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2
+  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2
   L11_2 = NG_HSOD_DEBUG
   if L11_2 then
     L11_2 = print
@@ -2169,10 +2171,52 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
   if not A10_2 then
     L24_2 = 0
   end
-  L25_2 = true
-  return L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2)
+  L25_2 = 0
+  L26_2 = true
+  return L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2)
 end
 L0_1.TransmitPlayerWithDialogText = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
+  L7_2 = NG_HSOD_DEBUG
+  if L7_2 then
+    L7_2 = print
+    L8_2 = "BaseActorProxy:TransmitPlayerUseCustomizedTplId->ShowBlackScreen "
+    L9_2 = tostring
+    L10_2 = A0_2.alias
+    L9_2 = L9_2(L10_2)
+    L8_2 = L8_2 .. L9_2
+    L7_2(L8_2)
+    L8_2 = A0_2
+    L7_2 = A0_2.PrintTraceback
+    L7_2(L8_2)
+  end
+  L7_2 = A0_2.uActor
+  L8_2 = L7_2
+  L7_2 = L7_2.TryTransmitPlayer
+  L9_2 = A1_2
+  L10_2 = A2_2
+  L11_2 = A3_2
+  L12_2 = {}
+  L13_2 = nil
+  L14_2 = false
+  L15_2 = 0
+  L16_2 = nil
+  L17_2 = nil
+  L18_2 = nil
+  L19_2 = A4_2 or L19_2
+  if not A4_2 then
+    L19_2 = 0
+  end
+  L20_2 = A5_2 or L20_2
+  if not A5_2 then
+    L20_2 = 0
+  end
+  L21_2 = A6_2
+  L22_2 = true
+  return L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
+end
+L0_1.TransmitPlayerUseCustomizedTplId = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
@@ -3495,6 +3539,87 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   end
 end
 L0_1.NarratorOnlyTaskByData = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  if A2_2 == nil then
+    A2_2 = A0_2.mainQuestID
+  end
+  if A3_2 == nil then
+    A3_2 = 0
+  end
+  L5_2 = A0_2
+  L4_2 = A0_2.NarratorOnlyTaskByDataWithPriorityInternal
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L8_2 = A3_2
+  L9_2 = 0
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
+end
+L0_1.NarratorOnlyTaskByDataWithPriority = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
+  local L5_2, L6_2, L7_2, L8_2, L9_2
+  L5_2 = A0_2.uActor
+  if L5_2 == nil then
+    L5_2 = print
+    L6_2 = "error : NarratorOnlyTaskByData , self or uActor is nil."
+    L5_2(L6_2)
+    return
+  end
+  if 0 < A3_2 then
+    L5_2 = actorUtils
+    L5_2 = L5_2.IsCanPlayNarratorWithPriority
+    L6_2 = A3_2
+    L5_2 = L5_2(L6_2)
+    if L5_2 == false then
+      L5_2 = print
+      L6_2 = "narrator cannot play : not allowed to play."
+      L5_2(L6_2)
+      return
+    end
+  end
+  if A2_2 == nil then
+    A2_2 = A0_2.mainQuestID
+  end
+  L5_2 = isFromCB
+  if L5_2 == nil then
+    isFromCB = false
+  end
+  if A1_2 ~= nil then
+    L5_2 = A1_2.hasAudio
+    if L5_2 == nil then
+      A1_2.hasAudio = false
+    end
+  end
+  L6_2 = A0_2
+  L5_2 = A0_2.ClearNarratorTask
+  L5_2(L6_2)
+  if nil ~= A4_2 then
+    L6_2 = A0_2
+    L5_2 = A0_2.OverrideNarratorResumeReminder
+    L7_2 = A4_2
+    L5_2(L6_2, L7_2)
+  end
+  L5_2 = A0_2.uActor
+  L6_2 = L5_2
+  L5_2 = L5_2.NarratorTaskByDataWithPriority
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
+  if nil ~= L5_2 then
+    L7_2 = L5_2
+    L6_2 = L5_2.FinishEvent
+    L8_2 = "+"
+    L9_2 = A0_2.RecoverNarratorResumeReminder
+    L6_2(L7_2, L8_2, L9_2)
+    L7_2 = L5_2
+    L6_2 = L5_2.DestroyEvent
+    L8_2 = "+"
+    L9_2 = A0_2.RecoverNarratorResumeReminder
+    L6_2(L7_2, L8_2, L9_2)
+  end
+end
+L0_1.NarratorOnlyTaskByDataWithPriorityInternal = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2
   if nil ~= A1_2 then
@@ -3898,30 +4023,33 @@ function L1_1(A0_2)
   L1_2(L2_2)
 end
 L0_1.ExitBomberMode = L1_1
-function L1_1(A0_2)
+L1_1 = "EnterFindCatMode"
+function L2_1(A0_2)
   local L1_2, L2_2
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.EnterFindCatMode
   L1_2(L2_2)
 end
-L0_1.EnterFindCatMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ExitFindCatMode"
+function L2_1(A0_2)
   local L1_2, L2_2
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.ExitFindCatMode
   L1_2(L2_2)
 end
-L0_1.ExitFindCatMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ForceFlushRemove"
+function L2_1(A0_2)
   local L1_2, L2_2
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.ForceFlushRemove
   L1_2(L2_2)
 end
-L0_1.ForceFlushRemove = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "TriggerNpcSpeechBubble"
 function L2_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
@@ -4717,6 +4845,49 @@ function L2_1(A0_2, A1_2, A2_2)
   else
     return A2_2
   end
+end
+L0_1[L1_1] = L2_1
+L1_1 = "FindTableIndex"
+function L2_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  if A1_2 == nil then
+    L3_2 = 0
+    return L3_2
+  end
+  L3_2 = ipairs
+  L4_2 = A1_2
+  L3_2, L4_2, L5_2 = L3_2(L4_2)
+  for L6_2, L7_2 in L3_2, L4_2, L5_2 do
+    if L7_2 == A2_2 then
+      return L6_2
+    end
+  end
+  L3_2 = 0
+  return L3_2
+end
+L0_1[L1_1] = L2_1
+L1_1 = "RemoveTableElement"
+function L2_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  if A1_2 == nil or A2_2 == nil then
+    L3_2 = 0
+    return L3_2
+  end
+  L3_2 = ipairs
+  L4_2 = A1_2
+  L3_2, L4_2, L5_2 = L3_2(L4_2)
+  for L6_2, L7_2 in L3_2, L4_2, L5_2 do
+    if L7_2 == A2_2 then
+      L8_2 = table
+      L8_2 = L8_2.remove
+      L9_2 = A1_2
+      L10_2 = L6_2
+      L8_2(L9_2, L10_2)
+      return L6_2
+    end
+  end
+  L3_2 = 0
+  return L3_2
 end
 L0_1[L1_1] = L2_1
 L1_1 = "Log"

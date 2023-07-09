@@ -99,6 +99,30 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnMainCanceled = L9_1
+function L9_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.SafeDestroyQuestNpc
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.NpcDestroy = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = L2_2
+    L3_2 = L2_2.DestroySelf
+    L3_2(L4_2)
+  end
+end
+L1_1.ActorDestroy = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
@@ -178,7 +202,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.ShowBlackScreenWithDialogText
-  L4_2 = 0.5
+  L4_2 = 0
   L5_2 = 1.5
   L6_2 = 0.5
   function L7_2(A0_3)
@@ -197,6 +221,10 @@ function L9_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish7335003 = L9_1
 return L1_1

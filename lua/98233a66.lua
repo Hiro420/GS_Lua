@@ -259,14 +259,6 @@ function L10_1(A0_2, A1_2)
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.LightNotifyTo
-  L4_2 = L7_1.Npc1467Data
-  L4_2 = L4_2.alias
-  L5_2 = 0
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
@@ -285,6 +277,13 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
   L4_2 = "Q1909408TriggerRequest"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909402N516Trigger"
   L5_2 = 3
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -356,7 +355,7 @@ function L10_1(A0_2, A1_2, A2_2)
 end
 L1_1.NpcDestroy = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "OnSubStart1909402"
   L2_2(L3_2)
@@ -373,7 +372,7 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.id
   L5_2 = 1909402
   L6_2 = 1
-  L7_2 = 10
+  L7_2 = 15
   L8_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
@@ -424,6 +423,22 @@ function L10_1(A0_2, A1_2)
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1429Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1090
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart1909402 = L10_1
 function L10_1(A0_2, A1_2)
@@ -524,39 +539,22 @@ function L10_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc1467Data
+  L4_2 = L7_1.WendyData
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
-  L3_2 = L2_2.DoFreeStyle
-  L5_2 = 1120
+  L3_2 = L2_2.SitOnChair
+  L5_2 = 8010
   L6_2 = true
-  L7_2 = nil
-  L8_2 = true
-  L9_2 = true
-  L10_2 = false
-  L11_2 = false
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2(L4_2, L5_2, L6_2)
   L3_2 = L3_1
   L4_2 = L3_2
   L3_2 = L3_2.GetQuestNpcActor
-  L5_2 = L7_1.WendyData
+  L5_2 = L7_1.Npc1467Data
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
-  L4_2 = L3_2.SitOnChair
-  L6_2 = 8010
-  L7_2 = true
-  L4_2(L5_2, L6_2, L7_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc1467Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L2_2 = L4_2
-  L5_2 = L2_2
-  L4_2 = L2_2.DoFreeStyle
+  L4_2 = L3_2.DoFreeStyle
   L6_2 = 1120
   L7_2 = true
   L8_2 = nil
@@ -580,6 +578,26 @@ function L10_1(A0_2, A1_2)
   L13_2 = false
   L14_2 = 3
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc1429Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.DoFreeStyle
+  L7_2 = 1090
+  L8_2 = true
+  L9_2 = nil
+  L10_2 = true
+  L11_2 = true
+  L12_2 = false
+  L13_2 = true
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.DisableInteeHeadCtrl
+  L7_2 = true
+  L5_2(L6_2, L7_2)
 end
 L1_1.OnSubStart1909403 = L10_1
 function L10_1(A0_2, A1_2)
@@ -924,6 +942,17 @@ function L10_1(A0_2, A1_2)
   end
   L9_2 = nil
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.WendyData
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L2_2 = L4_2
+  L5_2 = L2_2
+  L4_2 = L2_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubStart1909406 = L10_1
 function L10_1(A0_2, A1_2)
@@ -947,6 +976,16 @@ function L10_1(A0_2, A1_2)
   L5_2 = L5_2.alias
   L6_2 = 3
   L3_2(L4_2, L5_2, L6_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.WendyData
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = false
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubFinish1909406 = L10_1
 function L10_1(A0_2, A1_2)

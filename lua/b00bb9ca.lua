@@ -223,6 +223,16 @@ function L10_1(A0_2, A1_2)
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q4011207Talk"
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.UnCallDelayByQuest
+  L4_2 = "4011201"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q40112Finishcaidan"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnMainCanceled = L10_1
 function L10_1(A0_2, A1_2)
@@ -239,6 +249,20 @@ function L10_1(A0_2, A1_2)
   end
 end
 L1_1.ActorDestroy = L10_1
+function L10_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L1_2 = print
+  L2_2 = "StartKaiche"
+  L1_2(L2_2)
+  L1_2 = L3_1
+  L2_2 = L1_2
+  L1_2 = L1_2.NarratorOnlyTaskByData
+  L3_2 = L9_1.kaiche1
+  L4_2 = nil
+  L5_2 = 40112
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+end
+L1_1.StartKaiche = L10_1
 function L10_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -277,49 +301,102 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 1004
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc10090Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.GaiaData
+  L5_2 = L5_2.id
+  L6_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q40112Finishcaidan"
+  L5_2 = "Actor/Gadget/Q40112Finishcaidan"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = {}
+  L8_2.x = 5.231
+  L8_2.y = 0.038
+  L8_2.z = 1.52
+  L9_2 = {}
+  L9_2.x = 0.0
+  L9_2.y = 0.0
+  L9_2.z = 0.0
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 1004
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestVar
   L4_2 = 4011201
   L5_2 = 0
   L2_2 = L2_2(L3_2, L4_2, L5_2)
   if L2_2 == 0 then
-    L4_2 = A0_2
-    L3_2 = A0_2.NarratorOnlyTaskByData
-    L5_2 = L9_1.kaiche1
-    function L6_2(A0_3)
-      local L1_3, L2_3, L3_3, L4_3
-      L2_3 = A0_3
-      L1_3 = A0_3.SetQuestVarByMainId
-      L3_3 = 0
-      L4_3 = 3
-      L1_3(L2_3, L3_3, L4_3)
+    L3_2 = L3_1
+    L4_2 = L3_2
+    L3_2 = L3_2.ClearNarratorTask
+    L3_2(L4_2)
+    L3_2 = L3_1
+    L4_2 = L3_2
+    L3_2 = L3_2.UnCallDelayByQuest
+    L5_2 = "4011201"
+    L3_2(L4_2, L5_2)
+    L3_2 = L3_1
+    L4_2 = L3_2
+    L3_2 = L3_2.CallDelayByQuest
+    L5_2 = "4011201"
+    L6_2 = 1
+    function L7_2(A0_3)
+      local L1_3, L2_3, L3_3
+      L1_3 = L3_1
+      L2_3 = L1_3
+      L1_3 = L1_3.AfterMainPageActiveSafeCall
+      function L3_3(A0_4)
+        local L1_4, L2_4, L3_4, L4_4
+        L1_4 = L3_1
+        L2_4 = L1_4
+        L1_4 = L1_4.NarratorOnlyTaskByData
+        L3_4 = L9_1.kaiche1
+        function L4_4(A0_5)
+          local L1_5, L2_5, L3_5, L4_5
+          L1_5 = L3_1
+          L2_5 = L1_5
+          L1_5 = L1_5.SetQuestVarByMainId
+          L3_5 = 0
+          L4_5 = 3
+          L1_5(L2_5, L3_5, L4_5)
+        end
+        L1_4(L2_4, L3_4, L4_4)
+        L1_4 = print
+        L2_4 = "startkaiche"
+        L1_4(L2_4)
+      end
+      L1_3(L2_3, L3_3)
     end
-    L7_2 = 40112
     L3_2(L4_2, L5_2, L6_2, L7_2)
   end
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.CreateQuestNpc
-  L5_2 = A1_2
-  L6_2 = L7_1.Npc10090Data
-  L6_2 = L6_2.id
-  L7_2 = 0
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.CreateQuestNpc
-  L5_2 = A1_2
-  L6_2 = L7_1.GaiaData
-  L6_2 = L6_2.id
-  L7_2 = 0
-  L3_2(L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnSubStart4011201 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish4011201"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q40112Finishcaidan"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish4011201 = L10_1
 function L10_1(A0_2, A1_2)
@@ -543,11 +620,18 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc1051Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyQuestNpcActor
+    L3_3 = L7_1.Npc1051Data
+    L3_3 = L3_3.alias
+    L4_3 = 3
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish4011205 = L10_1
 function L10_1(A0_2, A1_2)
@@ -596,20 +680,6 @@ function L10_1(A0_2, A1_2)
   L6_2[1] = L7_2
   L7_2 = 2.5
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActionSafeCall
-  function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc10090Data
-    L3_3 = L3_3.alias
-    L4_3 = 3
-    L1_3(L2_3, L3_3, L4_3)
-  end
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish4011206 = L10_1
 function L10_1(A0_2, A1_2)

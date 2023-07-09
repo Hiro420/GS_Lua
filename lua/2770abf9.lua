@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L1_2 = print
   L2_2 = "[MainId: 19073][Trigger: Q1907303TriggerRequest] TriggerIn"
   L1_2(L2_2)
@@ -60,14 +60,40 @@ function L8_1(A0_2)
   L3_2 = "19073"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.RequestInteraction
-  L4_2 = L5_1.Coop_KaeyaData
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroySelf
-  L2_2(L3_2)
+  L2_2 = L1_2.ShowBlackScreenWithDialogText
+  L4_2 = 0.5
+  L5_2 = 1.5
+  L6_2 = 0.5
+  function L7_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.GetActor
+    L3_3 = "19073"
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.CreateQuestNpcById
+    L4_3 = 1907304
+    L5_3 = L5_1.Coop_KaeyaData
+    L5_3 = L5_3.id
+    L6_3 = 1
+    L2_3(L3_3, L4_3, L5_3, L6_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.RequestInteraction
+    L4_3 = L5_1.Coop_KaeyaData
+    L4_3 = L4_3.alias
+    L2_3(L3_3, L4_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.DestroySelf
+    L2_3(L3_3)
+  end
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = 0
+  L11_2 = false
+  L12_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

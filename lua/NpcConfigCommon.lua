@@ -130,4 +130,8 @@ L1_1.Default = 0
 L1_1.React = 1
 L1_1.Ignore = 2
 L0_1.ReactEnableType = L1_1
+L1_1 = {}
+L1_1.None = 0
+L1_1.Reminder = 1
+L0_1.ReactEventType = L1_1
 return L0_1

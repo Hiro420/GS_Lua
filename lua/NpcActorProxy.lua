@@ -87,6 +87,8 @@ function L3_1(A0_2, A1_2)
   L3_2.isOrphan = L4_2
   L4_2 = A0_2.platformInfo
   L3_2.platformInfo = L4_2
+  L4_2 = A0_2.inWater
+  L3_2.inWater = L4_2
   L4_2 = actorUtils
   L4_2 = L4_2.CreateNpcActor
   L5_2 = A0_2.configID
@@ -271,6 +273,15 @@ function L3_1(A0_2)
   L1_2(L2_2)
 end
 L1_1.SetPlayerNpcEnergy = L3_1
+function L3_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SetPlayerNpcHeroEnergy
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+L1_1.SetPlayerNpcEnergyType = L3_1
 function L3_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2, L7_2, L8_2
   L4_2 = A0_2.uActor

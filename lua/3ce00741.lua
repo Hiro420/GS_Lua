@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = {}
+L0_1.MainID = 74059
+L0_1.ActorAlias = "74059"
+L1_1 = {}
+L1_1.q7405901 = 7405901
+L1_1.q7405905 = 7405905
+L1_1.q7405906 = 7405906
+L1_1.q7405902 = 7405902
+L1_1.q7405904 = 7405904
+L1_1.q7405903 = 7405903
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.narratorId = 740591001
+L2_1.pauseLen = 10
+L2_1.resumeLen = 5
+L2_1.tag = "StoryInMainPage"
+L2_1.startCheckPause = false
+L3_1 = {}
+L4_1 = 7
+L5_1 = 3
+L6_1 = 4
+L3_1[1] = L4_1
+L3_1[2] = L5_1
+L3_1[3] = L6_1
+L2_1.durationList = L3_1
+L1_1.paim_7405901 = L2_1
+L0_1.Datas = L1_1
+return L0_1

@@ -647,20 +647,35 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish4011519 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart4011505"
   L2_2(L3_2)
-  L2_2 = L3_1
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1029Data
-  L4_2 = L4_2.id
-  L5_2 = 4011505
-  L6_2 = 1
-  L7_2 = 20
-  L8_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q4011505Talk"
+  L5_2 = "Actor/Gadget/Q4011505Talk"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = sceneData
+  L9_2 = L8_2
+  L8_2 = L8_2.GetDummyPoint
+  L10_2 = 20183
+  L11_2 = "Q4011505_N1029"
+  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_2.pos
+  L9_2 = sceneData
+  L10_2 = L9_2
+  L9_2 = L9_2.GetDummyPoint
+  L11_2 = 20183
+  L12_2 = "Q4011505_N1029"
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 20183
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart4011505 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1013,12 +1028,11 @@ function L9_1(A0_2, A1_2)
     L3_3 = "4011515"
     L4_3 = 4.5
     function L5_3(A0_4)
-      local L1_4, L2_4, L3_4
+      local L1_4, L2_4
       L1_4 = actorUtils
       L1_4 = L1_4.ShowContext
-      L2_4 = "ActivityPage"
-      L3_4 = 2023
-      L1_4(L2_4, L3_4)
+      L2_4 = "PenAdvMainPage"
+      L1_4(L2_4)
     end
     L1_3(L2_3, L3_3, L4_3, L5_3)
   end

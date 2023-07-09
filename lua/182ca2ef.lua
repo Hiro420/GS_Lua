@@ -175,6 +175,41 @@ function L9_1(A0_2, A1_2)
   L4_2 = L2_2
   L3_2 = L2_2.ClearCheckPlayerDistTask
   L3_2(L4_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q1907601N515Trigger"
+  L6_2 = 1073
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q1907603N1053Trigger"
+  L6_2 = 1073
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q1907604N515Trigger"
+  L6_2 = 3
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q1907605N515Trigger"
+  L6_2 = 3
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyEntityActor
+  L5_2 = "Q1907607N515Trigger"
+  L6_2 = 3
+  L7_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
@@ -215,6 +250,23 @@ function L9_1(A0_2, A1_2, A2_2, A3_2)
 end
 L1_1.DailyNpcSafeHideSelf = L9_1
 function L9_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L1_2 = print
+  L2_2 = "unCallNPCTrigger"
+  L1_2(L2_2)
+  L1_2 = L3_1
+  L2_2 = L1_2
+  L1_2 = L1_2.NpcCreateWithNpcTriggerAndBlackscreen
+  L3_2 = L7_1.Coop_KavehData
+  L3_2 = L3_2.id
+  L4_2 = 1907607
+  L5_2 = 1
+  L6_2 = 20
+  L7_2 = 1
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+end
+L1_1.unCallNPCTrigger = L9_1
+function L9_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L1_2 = print
   L2_2 = "FuncBegin"
@@ -247,23 +299,6 @@ function L9_1(A0_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.FuncBegin = L9_1
-function L9_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L1_2 = print
-  L2_2 = "unCallNPCTrigger"
-  L1_2(L2_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L3_2 = L7_1.Coop_KavehData
-  L3_2 = L3_2.id
-  L4_2 = 1907607
-  L5_2 = 1
-  L6_2 = 20
-  L7_2 = 1
-  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
-end
-L1_1.unCallNPCTrigger = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print

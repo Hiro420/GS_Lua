@@ -64,6 +64,10 @@ function L8_1(A0_2)
   L4_2 = L5_1.Npc13308Data
   L4_2 = L4_2.alias
   L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

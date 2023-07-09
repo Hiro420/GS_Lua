@@ -177,10 +177,15 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7905804 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart7905805"
   L2_2(L3_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.FinishQuestID
+  L3_2 = false
+  L4_2 = 7905805
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7905805 = L8_1
 function L8_1(A0_2, A1_2)

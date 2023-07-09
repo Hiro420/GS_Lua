@@ -334,6 +334,20 @@ function L9_1(A0_2, A1_2)
   L5_2 = 3
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909801N516Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909805N517Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
@@ -705,40 +719,6 @@ function L9_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = true
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc13304Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L2_2 = L4_2
-  L5_2 = L2_2
-  L4_2 = L2_2.DoFreeStyle
-  L6_2 = 1120
-  L7_2 = true
-  L8_2 = nil
-  L9_2 = true
-  L10_2 = true
-  L11_2 = false
-  L12_2 = false
-  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc13305Data
-  L6_2 = L6_2.alias
-  L4_2 = L4_2(L5_2, L6_2)
-  L3_2 = L4_2
-  L5_2 = L3_2
-  L4_2 = L3_2.DoFreeStyle
-  L6_2 = 1160
-  L7_2 = true
-  L8_2 = nil
-  L9_2 = true
-  L10_2 = true
-  L11_2 = false
-  L12_2 = false
-  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
 L1_1.OnSubStart1909802 = L9_1
 function L9_1(A0_2, A1_2)
@@ -865,40 +845,6 @@ function L9_1(A0_2, A1_2)
   L11_2 = true
   L12_2 = false
   L13_2 = true
-  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  L5_2 = L3_1
-  L6_2 = L5_2
-  L5_2 = L5_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc13304Data
-  L7_2 = L7_2.alias
-  L5_2 = L5_2(L6_2, L7_2)
-  L3_2 = L5_2
-  L6_2 = L3_2
-  L5_2 = L3_2.DoFreeStyle
-  L7_2 = 1120
-  L8_2 = true
-  L9_2 = nil
-  L10_2 = true
-  L11_2 = true
-  L12_2 = false
-  L13_2 = false
-  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
-  L5_2 = L3_1
-  L6_2 = L5_2
-  L5_2 = L5_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc13305Data
-  L7_2 = L7_2.alias
-  L5_2 = L5_2(L6_2, L7_2)
-  L4_2 = L5_2
-  L6_2 = L4_2
-  L5_2 = L4_2.DoFreeStyle
-  L7_2 = 1160
-  L8_2 = true
-  L9_2 = nil
-  L10_2 = true
-  L11_2 = true
-  L12_2 = false
-  L13_2 = false
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.OnSubStart1909803 = L9_1

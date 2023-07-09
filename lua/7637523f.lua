@@ -161,16 +161,9 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7904401 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFinish7904401"
-  L2_2(L3_2)
-end
-L1_1.OnSubFinish7904401 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
-  L3_2 = "OnSubStart7904402"
+  L3_2 = "OnSubFinish7904401"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.SetNavigationByMainId
@@ -178,12 +171,24 @@ function L9_1(A0_2, A1_2)
   L5_2 = true
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart7904402 = L9_1
+L1_1.OnSubFinish7904401 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
+  L3_2 = "OnSubStart7904402"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7904402 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
   L3_2 = "OnSubFinish7904402"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SetNavigationByMainId
+  L4_2 = 79044
+  L5_2 = true
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7904402 = L9_1
 function L9_1(A0_2, A1_2)
@@ -243,15 +248,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7904403 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart7904410"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.SetNavigationByMainId
-  L4_2 = 79044
-  L5_2 = true
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart7904410 = L9_1
 function L9_1(A0_2, A1_2)
@@ -287,10 +287,17 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7904404 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish7904404"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc20975Data
+  L4_2 = L4_2.alias
+  L5_2 = 10
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish7904404 = L9_1
 function L9_1(A0_2, A1_2)

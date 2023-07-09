@@ -298,12 +298,23 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Coop_KaeyaData
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Coop_KaeyaData
+    L4_3 = L4_3.id
+    L5_3 = 1
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -399,6 +410,26 @@ function L10_1(A0_2, A1_2)
   L5_2 = L5_2.id
   L6_2 = 4
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13304Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13305Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubStart1907901 = L10_1
 function L10_1(A0_2, A1_2)
@@ -409,7 +440,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1907901 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
   L2_2 = print
   L3_2 = "OnSubStart1907902"
   L2_2(L3_2)
@@ -468,20 +499,38 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 19079
   L2_2 = L2_2(L3_2, L4_2, L5_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.SetWalkSpeedRatio
+  L5_2 = 0.75
+  L3_2(L4_2, L5_2)
   L3_2 = L3_1
   L4_2 = L3_2
-  L3_2 = L3_2.NpcBeFollowTaskByRoutePointsWithDiffLen
-  L5_2 = L2_2
-  L6_2 = L9_1.RoutePointsData
-  L7_2 = 5
-  L8_2 = 3
-  L9_2 = -1
-  function L10_2(A0_3)
-    local L1_3, L2_3, L3_3
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Coop_KaeyaData
+  L5_2 = L5_2.alias
+  L6_2 = 19079
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.NpcBeFollowTaskByRoutePointsWithDiffLen
+  L6_2 = L3_2
+  L7_2 = L9_1.RoutePointsData
+  L8_2 = 5
+  L9_2 = 3
+  L10_2 = -1
+  function L11_2()
+    local L0_3, L1_3, L2_3, L3_3
+    L0_3 = L3_1
+    L1_3 = L0_3
+    L0_3 = L0_3.GetQuestNpcActor
+    L2_3 = L7_1.Coop_KaeyaData
+    L2_3 = L2_3.alias
+    L3_3 = 19079
+    L0_3 = L0_3(L1_3, L2_3, L3_3)
     L1_3 = L3_1
     L2_3 = L1_3
     L1_3 = L1_3.NpcResetForceAvatarWalk
-    L3_3 = L2_2
+    L3_3 = L0_3
     L1_3(L2_3, L3_3)
     L1_3 = actorUtils
     L1_3 = L1_3.FinishQuestID
@@ -489,19 +538,37 @@ function L10_1(A0_2, A1_2)
     L3_3 = 1907902
     L1_3(L2_3, L3_3)
   end
-  function L11_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
-    L1_3 = print
-    L2_3 = "OnMovePause"
-    L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.Standby
+  function L12_2()
+    local L0_3, L1_3
+    L0_3 = print
+    L1_3 = "OnPause"
+    L0_3(L1_3)
+  end
+  function L13_2()
+    local L0_3, L1_3
+    L0_3 = print
+    L1_3 = "OnResume"
+    L0_3(L1_3)
+  end
+  function L14_2()
+    local L0_3, L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L0_3 = print
+    L1_3 = "OnMovePause"
+    L0_3(L1_3)
+    L0_3 = L3_1
+    L1_3 = L0_3
+    L0_3 = L0_3.GetQuestNpcActor
+    L2_3 = L7_1.Coop_KaeyaData
+    L2_3 = L2_3.alias
+    L0_3 = L0_3(L1_3, L2_3)
+    L2_3 = L0_3
+    L1_3 = L0_3.Standby
     L1_3(L2_3)
     L1_3 = actorUtils
     L1_3 = L1_3.GetAvatarPos
     L1_3 = L1_3()
-    L3_3 = A0_3
-    L2_3 = A0_3.GetPos
+    L3_3 = L0_3
+    L2_3 = L0_3.GetPos
     L2_3 = L2_3(L3_3)
     L3_3 = {}
     L4_3 = L1_3.x
@@ -516,8 +583,8 @@ function L10_1(A0_2, A1_2)
     L5_3 = L2_3.z
     L4_3 = L4_3 - L5_3
     L3_3.z = L4_3
-    L5_3 = A0_3
-    L4_3 = A0_3.SteerToAutonomyTask
+    L5_3 = L0_3
+    L4_3 = L0_3.SteerToAutonomyTask
     L6_3 = L3_3
     L7_3 = 1
     L8_3 = true
@@ -525,82 +592,57 @@ function L10_1(A0_2, A1_2)
     L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     L4_3 = L3_1
     L5_3 = L4_3
-    L4_3 = L4_3.StopNarrator
+    L4_3 = L4_3.TryPauseCurAutoNarrator
+    L4_3(L5_3)
+    L4_3 = print
+    L5_3 = "TryPauseCurAutoNarrator"
     L4_3(L5_3)
   end
-  function L12_2(A0_3)
-    local L1_3, L2_3
-    L1_3 = print
-    L2_3 = "OnMoveResume"
+  function L15_2()
+    local L0_3, L1_3, L2_3
+    L0_3 = print
+    L1_3 = "OnMoveResume"
+    L0_3(L1_3)
+    L0_3 = L3_1
+    L1_3 = L0_3
+    L0_3 = L0_3.GetQuestNpcActor
+    L2_3 = L7_1.Coop_KaeyaData
+    L2_3 = L2_3.alias
+    L0_3 = L0_3(L1_3, L2_3)
+    L2_3 = L0_3
+    L1_3 = L0_3.ClearSteerToAutonomyTask
     L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.ClearSteerToAutonomyTask
-    L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.ResumeMove
+    L2_3 = L0_3
+    L1_3 = L0_3.ResumeMove
     L1_3(L2_3)
     L1_3 = L3_1
     L2_3 = L1_3
-    L1_3 = L1_3.TryResumeCurOnlyNarrator
+    L1_3 = L1_3.TryResumeCurAutoNarrator
     L1_3(L2_3)
-  end
-  function L13_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
     L1_3 = print
-    L2_3 = "OnMovePause"
+    L2_3 = "TryResumeCurAutoNarrator"
     L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.Standby
-    L1_3(L2_3)
-    L1_3 = actorUtils
-    L1_3 = L1_3.GetAvatarPos
-    L1_3 = L1_3()
-    L3_3 = A0_3
-    L2_3 = A0_3.GetPos
-    L2_3 = L2_3(L3_3)
-    L3_3 = {}
-    L4_3 = L1_3.x
-    L5_3 = L2_3.x
-    L4_3 = L4_3 - L5_3
-    L3_3.x = L4_3
-    L4_3 = L1_3.y
-    L5_3 = L2_3.y
-    L4_3 = L4_3 - L5_3
-    L3_3.y = L4_3
-    L4_3 = L1_3.z
-    L5_3 = L2_3.z
-    L4_3 = L4_3 - L5_3
-    L3_3.z = L4_3
-    L5_3 = A0_3
-    L4_3 = A0_3.SteerToAutonomyTask
-    L6_3 = L3_3
-    L7_3 = 1
-    L8_3 = true
-    L9_3 = true
-    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
-    L4_3 = L3_1
-    L5_3 = L4_3
-    L4_3 = L4_3.StopNarrator
-    L4_3(L5_3)
   end
-  L14_2 = nil
-  L15_2 = nil
-  L16_2 = true
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.NarratorOnlyTaskByData
-  L5_2 = L9_1.NarratorWithId
-  L6_2 = nil
-  L7_2 = 19079
-  L3_2(L4_2, L5_2, L6_2, L7_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.NpcForceAvatarWalkByDist
-  L5_2 = L2_2
-  L6_2 = 2
-  L7_2 = 3
-  L3_2(L4_2, L5_2, L6_2, L7_2)
+  L16_2 = nil
+  L17_2 = true
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.NarratorOnlyTaskByData
+  L6_2 = L9_1.NarratorWithId
+  L7_2 = nil
+  L8_2 = 19079
+  L4_2(L5_2, L6_2, L7_2, L8_2)
+  L4_2 = print
+  L5_2 = "19079NarratorBegin"
+  L4_2(L5_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.NpcForceAvatarWalkByDist
+  L6_2 = L3_2
+  L7_2 = 2
+  L8_2 = 3
+  L4_2(L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1907902 = L10_1
 function L10_1(A0_2, A1_2)
@@ -611,7 +653,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1907902 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFailed1907902"
   L2_2(L3_2)
@@ -619,6 +661,16 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ClearNarratorTask
   L2_2(L3_2)
+  L2_2 = print
+  L3_2 = "19079NarratorClear"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Coop_KaeyaData
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFailed1907902 = L10_1
 function L10_1(A0_2, A1_2)
@@ -723,6 +775,26 @@ function L10_1(A0_2, A1_2)
   L12_2 = false
   L13_2 = 3
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13304Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13305Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.DisableInteeHeadCtrl
+  L7_2 = true
+  L5_2(L6_2, L7_2)
 end
 L1_1.OnSubStart1907903 = L10_1
 function L10_1(A0_2, A1_2)
@@ -758,6 +830,10 @@ function L10_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish1907903 = L10_1
 return L1_1

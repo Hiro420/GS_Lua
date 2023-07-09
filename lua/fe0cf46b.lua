@@ -82,7 +82,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnMainFailed = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
@@ -97,6 +97,13 @@ function L8_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 1079
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907501N515Trigger"
+  L5_2 = 1079
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnMainCanceled = L8_1
 function L8_1(A0_2, A1_2)

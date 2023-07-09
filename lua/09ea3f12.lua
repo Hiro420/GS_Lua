@@ -162,6 +162,13 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13456Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
   L2_2 = L2_2.LightNotifyTo
   L4_2 = L7_1.Npc4122Data
   L4_2 = L4_2.alias
@@ -215,6 +222,13 @@ function L8_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909301N516Trigger"
+  L5_2 = 3
+  L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -402,6 +416,26 @@ function L8_1(A0_2, A1_2)
   L5_2 = L5_2.id
   L6_2 = 4
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13304Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DisableInteeHeadCtrl
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13305Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
 end
 L1_1.OnSubStart1909301 = L8_1
 function L8_1(A0_2, A1_2)

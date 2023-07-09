@@ -247,7 +247,7 @@ function L8_1(A0_2, A1_2)
     L4_3 = L4_3(L5_3, L6_3)
     L6_3 = L4_3
     L5_3 = L4_3.DoFreeStyle
-    L7_3 = 1060
+    L7_3 = 1120
     L8_3 = true
     L9_3 = nil
     L10_3 = true

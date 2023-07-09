@@ -34,7 +34,7 @@ function L8_1(A0_2)
   L1_2 = L3_1
   L2_2 = L1_2
   L1_2 = L1_2.AddComponentTrigger
-  L3_2 = 4
+  L3_2 = 8
   L4_2 = DistType
   L4_2 = L4_2.EULER
   L5_2 = {}
@@ -50,10 +50,24 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2
+  local L1_2, L2_2, L3_2, L4_2
   L1_2 = print
   L2_2 = "[MainId: 19096][Trigger: Q1909602TriggerRequest] TriggerIn"
   L1_2(L2_2)
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "19096"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.RequestInteraction
+  L4_2 = L5_1.DilucData
+  L4_2 = L4_2.alias
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)
@@ -75,26 +89,10 @@ function L8_1(A0_2)
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
   L2_2 = L1_2.ShowBlackScreenWithDialogText
-  L4_2 = 0.5
-  L5_2 = 1
+  L4_2 = 0
+  L5_2 = 2
   L6_2 = 0.5
-  function L7_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
-    L1_3 = actorMgr
-    L2_3 = L1_3
-    L1_3 = L1_3.GetActor
-    L3_3 = "19096"
-    L1_3 = L1_3(L2_3, L3_3)
-    L3_3 = L1_3
-    L2_3 = L1_3.RequestInteraction
-    L4_3 = L5_1.DilucData
-    L4_3 = L4_3.alias
-    L2_3(L3_3, L4_3)
-    L2_3 = L3_1
-    L3_3 = L2_3
-    L2_3 = L2_3.DestroySelf
-    L2_3(L3_3)
-  end
+  L7_2 = nil
   L8_2 = nil
   L9_2 = nil
   L10_2 = 0

@@ -219,6 +219,54 @@ function L2_1(A0_2)
                 L14_2.floatingHeight = L15_2
               end
             end
+            L15_2 = L13_2.platformPoint
+            if nil ~= L15_2 then
+              L15_2 = CS
+              L15_2 = L15_2.MoleMole
+              L15_2 = L15_2.PlatformPoint
+              L15_2 = L15_2.Get
+              L15_2 = L15_2()
+              L17_2 = L15_2
+              L16_2 = L15_2.SetGroupConfig
+              L18_2 = L13_2.platformPoint
+              L18_2 = L18_2.groupId
+              L19_2 = L13_2.platformPoint
+              L19_2 = L19_2.configId
+              L16_2(L17_2, L18_2, L19_2)
+              L16_2 = L13_2.platformPoint
+              L16_2 = L16_2.offsetPos
+              if nil ~= L16_2 then
+                L17_2 = L15_2
+                L16_2 = L15_2.SetOffsetPos
+                L18_2 = L13_2.platformPoint
+                L18_2 = L18_2.offsetPos
+                L18_2 = L18_2.x
+                L19_2 = L13_2.platformPoint
+                L19_2 = L19_2.offsetPos
+                L19_2 = L19_2.y
+                L20_2 = L13_2.platformPoint
+                L20_2 = L20_2.offsetPos
+                L20_2 = L20_2.z
+                L16_2(L17_2, L18_2, L19_2, L20_2)
+              end
+              L16_2 = L13_2.platformPoint
+              L16_2 = L16_2.offsetRot
+              if nil ~= L16_2 then
+                L17_2 = L15_2
+                L16_2 = L15_2.SetOffsetRot
+                L18_2 = L13_2.platformPoint
+                L18_2 = L18_2.offsetRot
+                L18_2 = L18_2.x
+                L19_2 = L13_2.platformPoint
+                L19_2 = L19_2.offsetRot
+                L19_2 = L19_2.y
+                L20_2 = L13_2.platformPoint
+                L20_2 = L20_2.offsetRot
+                L20_2 = L20_2.z
+                L16_2(L17_2, L18_2, L19_2, L20_2)
+              end
+              L14_2.platformPoint = L15_2
+            end
           end
         end
         L9_2 = L7_2.schedulePoints
@@ -498,6 +546,15 @@ function L2_1(A0_2, A1_2, A2_2)
             L14_2(L15_2, L16_2)
           end
         end
+        L8_2 = A2_2[L6_2]
+        L8_2 = L8_2.hideSpeechBubble
+        if L8_2 ~= nil then
+          L8_2 = A2_2[L6_2]
+          L8_2 = L8_2.hideSpeechBubble
+          L7_2.hideSpeechBubble = L8_2
+        else
+          L7_2.hideSpeechBubble = false
+        end
         L8_2 = A0_2.speechBubbleTask
         L9_2 = L8_2
         L8_2 = L8_2.AddDailyBubbleData
@@ -566,7 +623,7 @@ function L2_1(A0_2, A1_2, A2_2)
         L15_2 = L15_2.BubbleTime
         L16_2 = L4_2
         L17_2 = L5_2
-        L18_2 = true
+        L18_2 = false
         L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
       end
     end

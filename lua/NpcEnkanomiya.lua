@@ -416,6 +416,15 @@ function L2_1(A0_2, A1_2, A2_2)
             L14_2(L15_2, L16_2)
           end
         end
+        L8_2 = A2_2[L6_2]
+        L8_2 = L8_2.hideSpeechBubble
+        if L8_2 ~= nil then
+          L8_2 = A2_2[L6_2]
+          L8_2 = L8_2.hideSpeechBubble
+          L7_2.hideSpeechBubble = L8_2
+        else
+          L7_2.hideSpeechBubble = false
+        end
         L8_2 = A0_2.speechBubbleTask
         L9_2 = L8_2
         L8_2 = L8_2.AddDailyBubbleData
@@ -484,7 +493,7 @@ function L2_1(A0_2, A1_2, A2_2)
         L15_2 = L15_2.BubbleTime
         L16_2 = L4_2
         L17_2 = L5_2
-        L18_2 = true
+        L18_2 = false
         L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
       end
     end

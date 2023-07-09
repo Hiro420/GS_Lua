@@ -269,6 +269,24 @@ function L10_1(A0_2, A1_2)
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = 71700494
+  L5_2 = "1"
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = 70710037
+  L5_2 = "3"
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = 71700528
+  L5_2 = "2"
+  L2_2(L3_2, L4_2, L5_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
@@ -279,7 +297,14 @@ function L10_1(A0_2, A1_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
-  L4_2 = "Q19096Trigger1"
+  L4_2 = "Q1909601TriggerRequest"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909602TriggerRequest"
   L5_2 = 1018
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -290,11 +315,13 @@ function L10_1(A0_2, A1_2)
   L5_2 = 0
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.CancelStoryByQuest
-  L4_2 = 1909609
-  L2_2(L3_2, L4_2)
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1909604N1527Trigger"
+  L5_2 = 1018
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.RemoveLocalGadget
@@ -313,6 +340,11 @@ function L10_1(A0_2, A1_2)
   L4_2 = 70710037
   L5_2 = "3"
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q19096TriggerPauseNarrator"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnMainCanceled = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2)
@@ -371,6 +403,20 @@ function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L10_1
 function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = L2_2
+    L3_2 = L2_2.DestroySelf
+    L3_2(L4_2)
+  end
+end
+L1_1.ActorDestroy = L10_1
+function L10_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1909619"
@@ -385,7 +431,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1909619 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L2_2 = print
   L3_2 = "OnSubStart1909601"
   L2_2(L3_2)
@@ -491,6 +537,25 @@ function L10_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateActorWithPos
+  L5_2 = "Q1909601TriggerRequest"
+  L6_2 = "Actor/Gadget/Q1909601TriggerRequest"
+  L7_2 = 70900002
+  L8_2 = 0
+  L9_2 = {}
+  L9_2.x = 1769.173
+  L9_2.y = 222.123
+  L9_2.z = -399.122
+  L10_2 = {}
+  L10_2.x = 0.0
+  L10_2.y = 0.0
+  L10_2.z = 0.0
+  L11_2 = true
+  L12_2 = false
+  L13_2 = 3
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.OnSubStart1909601 = L10_1
 function L10_1(A0_2, A1_2)
@@ -650,10 +715,10 @@ function L10_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1527Data
+  L4_2 = L7_1.Coop_KaeyaData
   L4_2 = L4_2.id
   L5_2 = 1909604
-  L6_2 = 2
+  L6_2 = 3
   L7_2 = 5
   L8_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
@@ -731,7 +796,7 @@ function L10_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc1527Data
+  L4_2 = L7_1.Coop_KaeyaData
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
@@ -1009,59 +1074,13 @@ function L10_1(A0_2, A1_2)
     L1_3(L2_3, L3_3)
   end
   function L11_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
-    L1_3 = print
-    L2_3 = "OnMovePause"
-    L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.Standby
-    L1_3(L2_3)
-    L1_3 = actorUtils
-    L1_3 = L1_3.GetAvatarPos
-    L1_3 = L1_3()
-    L3_3 = A0_3
-    L2_3 = A0_3.GetPos
-    L2_3 = L2_3(L3_3)
-    L3_3 = {}
-    L4_3 = L1_3.x
-    L5_3 = L2_3.x
-    L4_3 = L4_3 - L5_3
-    L3_3.x = L4_3
-    L4_3 = L1_3.y
-    L5_3 = L2_3.y
-    L4_3 = L4_3 - L5_3
-    L3_3.y = L4_3
-    L4_3 = L1_3.z
-    L5_3 = L2_3.z
-    L4_3 = L4_3 - L5_3
-    L3_3.z = L4_3
-    L5_3 = A0_3
-    L4_3 = A0_3.SteerToAutonomyTask
-    L6_3 = L3_3
-    L7_3 = 1
-    L8_3 = true
-    L9_3 = true
-    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
-    L4_3 = L3_1
-    L5_3 = L4_3
-    L4_3 = L4_3.StopNarrator
-    L4_3(L5_3)
-  end
-  function L12_2(A0_3)
     local L1_3, L2_3
     L1_3 = print
-    L2_3 = "OnMoveResume"
+    L2_3 = "OnPause"
     L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.ClearSteerToAutonomyTask
-    L1_3(L2_3)
-    L2_3 = A0_3
-    L1_3 = A0_3.ResumeMove
-    L1_3(L2_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.TryResumeCurAutoNarrator
-    L1_3(L2_3)
+  end
+  function L12_2(A0_3)
+    local L1_3
   end
   function L13_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
@@ -1099,10 +1118,31 @@ function L10_1(A0_2, A1_2)
     L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     L4_3 = L3_1
     L5_3 = L4_3
-    L4_3 = L4_3.StopNarrator
+    L4_3 = L4_3.TryPauseCurAutoNarrator
+    L4_3(L5_3)
+    L4_3 = print
+    L5_3 = "NarratorTryPause"
     L4_3(L5_3)
   end
-  L14_2 = nil
+  function L14_2(A0_3)
+    local L1_3, L2_3
+    L1_3 = print
+    L2_3 = "OnMoveResume"
+    L1_3(L2_3)
+    L2_3 = A0_3
+    L1_3 = A0_3.ClearSteerToAutonomyTask
+    L1_3(L2_3)
+    L2_3 = A0_3
+    L1_3 = A0_3.ResumeMove
+    L1_3(L2_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TryResumeCurAutoNarrator
+    L1_3(L2_3)
+    L1_3 = print
+    L2_3 = "NarratorTryResume"
+    L1_3(L2_3)
+  end
   L15_2 = nil
   L16_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
@@ -1120,6 +1160,25 @@ function L10_1(A0_2, A1_2)
   L6_2 = nil
   L7_2 = 19096
   L3_2(L4_2, L5_2, L6_2, L7_2)
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.CreateActorWithPos
+  L5_2 = "Q19096TriggerPauseNarrator"
+  L6_2 = "Actor/Gadget/Q19096TriggerPauseNarrator"
+  L7_2 = 70900002
+  L8_2 = 0
+  L9_2 = {}
+  L9_2.x = 1806.662
+  L9_2.y = 217.676
+  L9_2.z = -387.692
+  L10_2 = {}
+  L10_2.x = 0.0
+  L10_2.y = 0.0
+  L10_2.z = 0.0
+  L11_2 = true
+  L12_2 = false
+  L13_2 = 3
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.OnSubStart1909609 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1139,6 +1198,32 @@ function L10_1(A0_2, A1_2)
   L3_2 = L3_2.NpcResetForceAvatarWalk
   L5_2 = L2_2
   L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.ActorDestroy
+  L5_2 = "Q19096TriggerPauseNarrator"
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.FinishTaskByCmdType
+  L5_2 = ActorCommandType
+  L5_2 = L5_2.QUEST_MOVE_TASK
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc1533Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  npc1533Data = L3_2
+  L3_2 = npc1533Data
+  L4_2 = L3_2
+  L3_2 = L3_2.ClearFollowTask
+  L3_2(L4_2)
+  L3_2 = npc1533Data
+  L4_2 = L3_2
+  L3_2 = L3_2.Standby
+  L3_2(L4_2)
 end
 L1_1.OnSubFinish1909609 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1367,11 +1452,20 @@ function L10_1(A0_2, A1_2)
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
   L5_2 = L3_1
   L6_2 = L5_2
+  L5_2 = L5_2.FinishTaskByCmdType
+  L7_2 = ActorCommandType
+  L7_2 = L7_2.QUEST_MOVE_TASK
+  L5_2(L6_2, L7_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
   L5_2 = L5_2.GetQuestNpcActor
   L7_2 = L7_1.Npc1533Data
   L7_2 = L7_2.alias
   L5_2 = L5_2(L6_2, L7_2)
   L2_2 = L5_2
+  L6_2 = L2_2
+  L5_2 = L2_2.ClearFollowTask
+  L5_2(L6_2)
   L6_2 = L2_2
   L5_2 = L2_2.Standby
   L5_2(L6_2)

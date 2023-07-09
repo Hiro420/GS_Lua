@@ -50,23 +50,30 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = print
   L2_2 = "[MainId: 40114][Trigger: Q4011406Kaiche] TriggerIn"
   L1_2(L2_2)
-  L1_2 = actorMgr
-  L2_2 = L1_2
-  L1_2 = L1_2.GetActor
-  L3_2 = "40114"
-  L1_2 = L1_2(L2_2, L3_2)
-  L3_2 = L1_2
-  L2_2 = L1_2.NarratorOnlyTaskByData
-  L4_2 = L7_1.Q4011406Kaiche
-  L2_2(L3_2, L4_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroySelf
-  L2_2(L3_2)
+  L1_2 = actorUtils
+  L1_2 = L1_2.IsInRollerCoaster
+  L1_2 = L1_2()
+  if L1_2 then
+    L1_2 = actorMgr
+    L2_2 = L1_2
+    L1_2 = L1_2.GetActor
+    L3_2 = "40114"
+    L1_2 = L1_2(L2_2, L3_2)
+    L3_2 = L1_2
+    L2_2 = L1_2.NarratorOnlyTaskByData
+    L4_2 = L7_1.Q4011406Kaiche
+    L5_2 = nil
+    L6_2 = 40114
+    L2_2(L3_2, L4_2, L5_2, L6_2)
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.DestroySelf
+    L2_2(L3_2)
+  end
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

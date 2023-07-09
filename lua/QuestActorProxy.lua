@@ -1444,37 +1444,41 @@ function L5_1(A0_2, A1_2)
   A0_2.postEnterSceneHandlers = nil
 end
 L1_1.Destroy = L5_1
-function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
-  local L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
-  L8_2 = A0_2.speechBubbleTask
-  if L8_2 == nil then
-    L9_2 = A0_2
-    L8_2 = A0_2.CreateTask
-    L10_2 = TaskID
-    L10_2 = L10_2.NARRATOR_TASK_ID
-    L11_2 = LuaTaskType
-    L11_2 = L11_2.SPEECH_BUBBLE
-    L12_2 = "Speech"
-    L8_2 = L8_2(L9_2, L10_2, L11_2, L12_2)
-    A0_2.speechBubbleTask = L8_2
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
+  local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
+  L9_2 = A0_2.speechBubbleTask
+  if L9_2 == nil then
+    L10_2 = A0_2
+    L9_2 = A0_2.CreateTask
+    L11_2 = TaskID
+    L11_2 = L11_2.NARRATOR_TASK_ID
+    L12_2 = LuaTaskType
+    L12_2 = L12_2.SPEECH_BUBBLE
+    L13_2 = "Speech"
+    L9_2 = L9_2(L10_2, L11_2, L12_2, L13_2)
+    A0_2.speechBubbleTask = L9_2
   end
-  L8_2 = A0_2.speechBubbleTask
-  if L8_2 ~= nil then
+  L9_2 = A0_2.speechBubbleTask
+  if L9_2 ~= nil then
     if A7_2 == nil then
       A7_2 = false
     end
-    L8_2 = A0_2.speechBubbleTask
-    L9_2 = L8_2
-    L8_2 = L8_2.CreateQuestSpeechBubble
-    L10_2 = A1_2
-    L11_2 = A0_2.mainQuestID
-    L12_2 = A2_2
-    L13_2 = A3_2
-    L14_2 = A5_2
-    L15_2 = A6_2
-    L16_2 = A4_2
-    L17_2 = A7_2
-    L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+    if A8_2 == nil then
+      A8_2 = false
+    end
+    L9_2 = A0_2.speechBubbleTask
+    L10_2 = L9_2
+    L9_2 = L9_2.CreateQuestSpeechBubble
+    L11_2 = A1_2
+    L12_2 = A0_2.mainQuestID
+    L13_2 = A2_2
+    L14_2 = A3_2
+    L15_2 = A5_2
+    L16_2 = A6_2
+    L17_2 = A4_2
+    L18_2 = A7_2
+    L19_2 = A8_2
+    L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
   end
 end
 L1_1.CreateSpeechBubbleTask = L5_1
@@ -3846,6 +3850,94 @@ function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   return L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
 end
 L1_1.TransmitPlayerWithDialogTextByQuestId = L6_1
+function L6_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
+  L5_2 = A0_2
+  L4_2 = A0_2.GetTransmitCfgById
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  L5_2 = 0
+  L6_2 = 0
+  L7_2 = nil
+  L8_2 = 0
+  if nil ~= L4_2 then
+    L5_2 = A1_2.QuestConfigId
+    L6_2 = L4_2.point_id
+    L9_2 = sceneData
+    L10_2 = L9_2
+    L9_2 = L9_2.GetDummyPoint
+    L11_2 = L4_2.scene_id
+    L12_2 = L4_2.pos
+    L9_2 = L9_2(L10_2, L11_2, L12_2)
+    L7_2 = L9_2
+    L8_2 = L4_2.scene_id
+  else
+    L9_2 = actorUtils
+    L9_2 = L9_2.LogError
+    L10_2 = "[Lua]Quest Transmit with no share config!!! questId:"
+    L11_2 = tostring
+    L12_2 = L5_2
+    L11_2 = L11_2(L12_2)
+    L10_2 = L10_2 .. L11_2
+    L9_2(L10_2)
+    L9_2 = false
+    return L9_2
+  end
+  L10_2 = A0_2
+  L9_2 = A0_2.TransmitPlayerUseCustomizedTplId
+  L11_2 = L8_2
+  L12_2 = L7_2.pos
+  L13_2 = L7_2.rot
+  L14_2 = L5_2
+  L15_2 = L6_2
+  L16_2 = A3_2
+  return L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
+end
+L1_1.TransmitPlayerUseCustomizedTplById = L6_1
+function L6_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
+  L5_2 = A0_2
+  L4_2 = A0_2.GetTransmitCfgByQuestId
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  L5_2 = 0
+  L6_2 = nil
+  L7_2 = 0
+  if nil ~= L4_2 then
+    L5_2 = L4_2.point_id
+    L8_2 = sceneData
+    L9_2 = L8_2
+    L8_2 = L8_2.GetDummyPoint
+    L10_2 = L4_2.scene_id
+    L11_2 = L4_2.pos
+    L8_2 = L8_2(L9_2, L10_2, L11_2)
+    L6_2 = L8_2
+    L7_2 = L4_2.scene_id
+  else
+    L8_2 = actorUtils
+    L8_2 = L8_2.LogError
+    L9_2 = "[Lua]Quest Transmit with no share config!!! questId:"
+    L10_2 = tostring
+    L11_2 = A1_2
+    L10_2 = L10_2(L11_2)
+    L9_2 = L9_2 .. L10_2
+    L8_2(L9_2)
+    L8_2 = false
+    return L8_2
+  end
+  L9_2 = A0_2
+  L8_2 = A0_2.TransmitPlayerUseCustomizedTplId
+  L10_2 = L7_2
+  L11_2 = L6_2.pos
+  L12_2 = L6_2.rot
+  L13_2 = A1_2
+  L14_2 = L5_2
+  L15_2 = A3_2
+  return L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
+end
+L1_1.TransmitPlayerUseCustomizedTplByQuestId = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
   local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
   L12_2 = A0_2

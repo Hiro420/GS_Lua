@@ -269,7 +269,7 @@ function L9_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.DestroyEntityActor
   L4_2 = "Q1907815Trigger"
-  L5_2 = 0
+  L5_2 = 3
   L6_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = L3_1
@@ -296,6 +296,41 @@ function L9_1(A0_2, A1_2)
     L4_2 = 0
     L2_2(L3_2, L4_2)
   end
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907811N13244Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907805N515Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907813N515Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907816N515Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q1907817N515Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)

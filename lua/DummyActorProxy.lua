@@ -374,6 +374,12 @@ function L1_1(A0_2, A1_2, A2_2)
   L3_2(L4_2, L5_2, L6_2)
 end
 L0_1.SetDynAdapterToGround = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+end
+L0_1.AdvWalkToRoute = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+end
+L0_1.AdvRunToRoute = L1_1
 function L1_1(A0_2)
   local L1_2, L2_2
   L1_2 = actorUtils
@@ -1822,18 +1828,20 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.UncallOnDoorOpen = L1_1
-function L1_1(A0_2)
+L1_1 = "SetFlyStateParams"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.SetFlyStateParams = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ResetFlyStateParams"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.ResetFlyStateParams = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "StopRealReminder"
 function L2_1(A0_2)
   local L1_2

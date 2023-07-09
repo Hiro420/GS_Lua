@@ -491,52 +491,10 @@ function L12_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed2006110 = L12_1
 function L12_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart2006111"
   L2_2(L3_2)
-  L2_2 = math
-  L2_2 = L2_2.random
-  L3_2 = 1
-  L4_2 = 100
-  L2_2 = L2_2(L3_2, L4_2)
-  if 1 <= L2_2 and L2_2 <= 50 then
-    L3_2 = actorMgr
-    L4_2 = L3_2
-    L3_2 = L3_2.GetActor
-    L5_2 = L2_1.ActorAlias
-    L3_2 = L3_2(L4_2, L5_2)
-    if L3_2 ~= nil then
-      L5_2 = L3_2
-      L4_2 = L3_2.FinishQuestID
-      L6_2 = false
-      L7_2 = 2006112
-      L4_2(L5_2, L6_2, L7_2)
-      L5_2 = L3_2
-      L4_2 = L3_2.FinishQuestID
-      L6_2 = true
-      L7_2 = 2006113
-      L4_2(L5_2, L6_2, L7_2)
-    end
-  elseif 50 < L2_2 and L2_2 <= 100 then
-    L3_2 = actorMgr
-    L4_2 = L3_2
-    L3_2 = L3_2.GetActor
-    L5_2 = L2_1.ActorAlias
-    L3_2 = L3_2(L4_2, L5_2)
-    if L3_2 ~= nil then
-      L5_2 = L3_2
-      L4_2 = L3_2.FinishQuestID
-      L6_2 = false
-      L7_2 = 2006113
-      L4_2(L5_2, L6_2, L7_2)
-      L5_2 = L3_2
-      L4_2 = L3_2.FinishQuestID
-      L6_2 = true
-      L7_2 = 2006112
-      L4_2(L5_2, L6_2, L7_2)
-    end
-  end
 end
 L1_1.OnSubStart2006111 = L12_1
 function L12_1(A0_2, A1_2)

@@ -743,11 +743,11 @@ function L16_1(A0_2, A1_2)
   L3_2[4] = L7_2
   L3_2[5] = L8_2
   L2_2 = L3_2
-  L3_2 = table
-  L3_2 = L3_2.remove
-  L4_2 = L2_2
-  L5_2 = L11_1
-  L3_2(L4_2, L5_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.RemoveTableElement
+  L5_2 = L2_2
+  L6_2 = L11_1
+  L3_2(L4_2, L5_2, L6_2)
   L3_2 = math
   L3_2 = L3_2.randomseed
   L4_2 = os

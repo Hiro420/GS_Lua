@@ -332,14 +332,14 @@ function L9_1(A0_2)
   L5_2 = L2_2.x
   L4_2 = L4_2 - L5_2
   L3_2 = L3_2(L4_2)
-  if L3_2 < 1 then
+  if L3_2 < 4 then
     L3_2 = math
     L3_2 = L3_2.abs
     L4_2 = L1_2.z
     L5_2 = L2_2.z
     L4_2 = L4_2 - L5_2
     L3_2 = L3_2(L4_2)
-    if L3_2 < 1 then
+    if L3_2 < 4 then
       L3_2 = actorMgr
       L4_2 = L3_2
       L3_2 = L3_2.GetActor
@@ -1038,14 +1038,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.PaimonData
-  L5_2 = L5_2.id
-  L6_2 = 2
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpcWithTrigger
   L4_2 = "7904116Trigger"
   L5_2 = 7904116
@@ -1119,7 +1111,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7904127 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish7904127"
   L2_2(L3_2)
@@ -1133,20 +1125,6 @@ function L9_1(A0_2, A1_2)
   L3_2 = L2_2.DestroyWithDisappear
   L5_2 = false
   L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.SafeDestroyQuestNpc
-  L5_2 = L7_1.Npc13247Data
-  L5_2 = L5_2.alias
-  L6_2 = 10
-  L3_2(L4_2, L5_2, L6_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.SafeDestroyQuestNpc
-  L5_2 = L7_1.PaimonData
-  L5_2 = L5_2.alias
-  L6_2 = 10
-  L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish7904127 = L9_1
 function L9_1(A0_2, A1_2)

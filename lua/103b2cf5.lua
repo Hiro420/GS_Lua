@@ -86,10 +86,15 @@ function L7_1(A0_2, A1_2)
 end
 L1_1.OnMainCanceled = L7_1
 function L7_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1910001"
   L2_2(L3_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.FinishQuestID
+  L3_2 = false
+  L4_2 = 1910001
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart1910001 = L7_1
 function L7_1(A0_2, A1_2)

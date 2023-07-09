@@ -69,6 +69,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
   if L11_2 == nil then
     A1_2.isOrphan = false
   end
+  L11_2 = A1_2.inWater
+  if L11_2 == nil then
+    A1_2.inWater = false
+  end
   L11_2 = {}
   L11_2.alias = L8_2
   L12_2 = A1_2.script
@@ -84,6 +88,8 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
   L11_2.bornShoesOffset = L12_2
   L12_2 = A1_2.isOrphan
   L11_2.isOrphan = L12_2
+  L12_2 = A1_2.inWater
+  L11_2.inWater = L12_2
   L11_2.isNetwork = true
   L12_2 = A1_2.isAutoStart
   L12_2 = L12_2 ~= false
@@ -163,6 +169,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
   if L11_2 == nil then
     A1_2.isOrphan = false
   end
+  L11_2 = A1_2.inWater
+  if L11_2 == nil then
+    A1_2.inWater = false
+  end
   L11_2 = {}
   L11_2.alias = L7_2
   L12_2 = A1_2.script
@@ -178,6 +188,8 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
   L11_2.bornShoesOffset = L12_2
   L12_2 = A1_2.isOrphan
   L11_2.isOrphan = L12_2
+  L12_2 = A1_2.inWater
+  L11_2.inWater = L12_2
   L11_2.isNetwork = false
   L11_2.isAutoStart = false
   L11_2.sceneID = L4_2

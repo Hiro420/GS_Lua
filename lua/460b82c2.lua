@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
 L0_1 = {}
 L0_1.MainID = 803
 L0_1.ActorAlias = "803"
@@ -35,6 +35,8 @@ L1_1.q80329 = 80329
 L1_1.q80330 = 80330
 L1_1.q80331 = 80331
 L1_1.q80332 = 80332
+L1_1.q80333 = 80333
+L1_1.q80334 = 80334
 L0_1.SubIDs = L1_1
 L1_1 = {}
 L2_1 = {}
@@ -171,5 +173,17 @@ L3_1[1] = L4_1
 L3_1[2] = L5_1
 L2_1.durationList = L3_1
 L1_1.Q80311_NarratorWithId = L2_1
+L2_1 = {}
+L2_1.alias = "Q80334_TriggerIn"
+L2_1.script = "Actor/Gadget/Q80334_TriggerIn"
+L2_1.id = 70900002
+L3_1 = sceneData
+L4_1 = L3_1
+L3_1 = L3_1.GetDummyPoint
+L5_1 = 3
+L6_1 = "Q371WendyFootPrint3"
+L3_1 = L3_1(L4_1, L5_1, L6_1)
+L2_1.point = L3_1
+L1_1.Q80334_TriggerIn = L2_1
 L0_1.Datas = L1_1
 return L0_1

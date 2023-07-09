@@ -272,6 +272,117 @@ function L2_1(A0_2)
     L3_2 = L3_2.ElementTypeData
     L1_2(L2_2, L3_2)
   end
+  L1_2 = A0_2.ConfigData
+  L1_2 = L1_2.InteeData
+  if nil ~= L1_2 then
+    L1_2 = A0_2.uActor
+    L2_2 = L1_2
+    L1_2 = L1_2.InitInteeData
+    L3_2 = A0_2.ConfigData
+    L3_2 = L3_2.InteeData
+    L1_2(L2_2, L3_2)
+  end
+  L1_2 = util
+  L1_2 = L1_2.begin_sample
+  L2_2 = "[ConfigNpcActor]ReactionData"
+  L1_2(L2_2)
+  L1_2 = A0_2.ConfigData
+  L1_2 = L1_2.ReactionData
+  if nil ~= L1_2 then
+    L1_2 = A0_2.ConfigData
+    L1_2 = L1_2.ReactionData
+    L1_2 = L1_2.reactionDatas
+    if nil ~= L1_2 then
+      L1_2 = A0_2.uActor
+      L2_2 = L1_2
+      L1_2 = L1_2.BeginAddReactionData
+      L3_2 = A0_2.ConfigData
+      L3_2 = L3_2.ReactionData
+      L3_2 = L3_2.reactionDatas
+      L3_2 = #L3_2
+      L1_2(L2_2, L3_2)
+      L1_2 = ipairs
+      L2_2 = A0_2.ConfigData
+      L2_2 = L2_2.ReactionData
+      L2_2 = L2_2.reactionDatas
+      L1_2, L2_2, L3_2 = L1_2(L2_2)
+      for L4_2, L5_2 in L1_2, L2_2, L3_2 do
+        L6_2 = CS
+        L6_2 = L6_2.MoleMole
+        L6_2 = L6_2.NpcReactionData
+        L6_2 = L6_2.Get
+        L6_2 = L6_2()
+        L8_2 = L6_2
+        L7_2 = L6_2.SetPriority
+        L9_2 = L5_2.priority
+        L7_2(L8_2, L9_2)
+        L7_2 = L5_2.reactionEvent
+        if L7_2 ~= nil then
+          L7_2 = CS
+          L7_2 = L7_2.MoleMole
+          L7_2 = L7_2.NpcReactionEvent
+          L7_2 = L7_2.Get
+          L7_2 = L7_2()
+          L9_2 = L7_2
+          L8_2 = L7_2.SetEventType
+          L10_2 = L5_2.reactionEvent
+          L10_2 = L10_2.eventType
+          L8_2(L9_2, L10_2)
+          L8_2 = L5_2.reactionEvent
+          L8_2 = L8_2.eventUIntParams
+          if L8_2 ~= nil then
+            L8_2 = ipairs
+            L9_2 = L5_2.reactionEvent
+            L9_2 = L9_2.eventUIntParams
+            L8_2, L9_2, L10_2 = L8_2(L9_2)
+            for L11_2, L12_2 in L8_2, L9_2, L10_2 do
+              L14_2 = L7_2
+              L13_2 = L7_2.AddUIntParam
+              L15_2 = L12_2
+              L13_2(L14_2, L15_2)
+            end
+          end
+          L9_2 = L6_2
+          L8_2 = L6_2.SetReactionEvent
+          L10_2 = L5_2.reactionEvent
+          L8_2(L9_2, L10_2)
+        end
+        L7_2 = L5_2.reactionActions
+        if nil ~= L7_2 then
+          L7_2 = ipairs
+          L8_2 = L5_2.reactionActions
+          L7_2, L8_2, L9_2 = L7_2(L8_2)
+          for L10_2, L11_2 in L7_2, L8_2, L9_2 do
+            L12_2 = CS
+            L12_2 = L12_2.MoleMole
+            L12_2 = L12_2.NpcReactionAction
+            L12_2 = L12_2.Get
+            L12_2 = L12_2()
+            L13_2 = L11_2.freestyle
+            L12_2.freestyle = L13_2
+            L13_2 = L11_2.time
+            L12_2.time = L13_2
+            L14_2 = L6_2
+            L13_2 = L6_2.AddReactionAction
+            L15_2 = L12_2
+            L13_2(L14_2, L15_2)
+          end
+        end
+        L7_2 = A0_2.uActor
+        L8_2 = L7_2
+        L7_2 = L7_2.AddReactionData
+        L9_2 = L6_2
+        L7_2(L8_2, L9_2)
+      end
+      L1_2 = A0_2.uActor
+      L2_2 = L1_2
+      L1_2 = L1_2.EndAddReactionData
+      L1_2(L2_2)
+    end
+  end
+  L1_2 = util
+  L1_2 = L1_2.end_sample
+  L1_2()
 end
 L1_1.InitBaseConfig = L2_1
 return L1_1

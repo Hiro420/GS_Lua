@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+local L0_1, L1_1, L2_1, L3_1, L4_1
 L0_1 = {}
 L0_1.MainID = 19094
 L0_1.ActorAlias = "19094"
@@ -279,12 +279,6 @@ L2_1.pauseLen = 10
 L2_1.resumeLen = 5
 L2_1.tag = "StoryInMainPage"
 L2_1.startCheckPause = false
-L3_1 = {}
-L4_1 = 7
-L5_1 = 5
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.durationList = L3_1
 L1_1.NarratorWithId = L2_1
 L0_1.Datas = L1_1
 return L0_1

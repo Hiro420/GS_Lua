@@ -97,6 +97,14 @@ function L9_1(A0_2)
   L1_2["80329"] = L2_2
   L2_2 = A0_2.OnSubStart80330
   L1_2["80330"] = L2_2
+  L2_2 = A0_2.OnSubStart80331
+  L1_2["80331"] = L2_2
+  L2_2 = A0_2.OnSubStart80332
+  L1_2["80332"] = L2_2
+  L2_2 = A0_2.OnSubStart80333
+  L1_2["80333"] = L2_2
+  L2_2 = A0_2.OnSubStart80334
+  L1_2["80334"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -163,6 +171,14 @@ function L9_1(A0_2)
   L1_2["80329"] = L2_2
   L2_2 = A0_2.OnSubFinish80330
   L1_2["80330"] = L2_2
+  L2_2 = A0_2.OnSubFinish80331
+  L1_2["80331"] = L2_2
+  L2_2 = A0_2.OnSubFinish80332
+  L1_2["80332"] = L2_2
+  L2_2 = A0_2.OnSubFinish80333
+  L1_2["80333"] = L2_2
+  L2_2 = A0_2.OnSubFinish80334
+  L1_2["80334"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -876,13 +892,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.AmborData
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
   L2_2 = L2_2.UnCallDelayByQuest
   L4_2 = "Test001"
   L2_2(L3_2, L4_2)
@@ -891,6 +900,13 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.TransmitPlayerByQuestId
   L4_2 = 80329
   L5_2 = 1
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.AmborData
+  L4_2 = L4_2.alias
+  L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80329 = L9_1
@@ -908,4 +924,157 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish80330 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80331"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80331 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80331"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80331 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80332"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80332 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80332"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80332 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubStart80333"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.AmborData
+  L5_2 = L5_2.id
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1025Data
+  L5_2 = L5_2.id
+  L6_2 = 2
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1026Data
+  L5_2 = L5_2.id
+  L6_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1025Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.SetPlayerNpcEnergyType
+  L5_2 = 1
+  L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc1026Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SetPlayerNpcEnergyType
+  L6_2 = 5
+  L4_2(L5_2, L6_2)
+end
+L1_1.OnSubStart80333 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80333"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.AmborData
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1025Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1026Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish80333 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
+  L3_2 = "OnSubStart80334"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q80334_TriggerIn"
+  L5_2 = "Actor/Gadget/Q80334_TriggerIn"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = sceneData
+  L9_2 = L8_2
+  L8_2 = L8_2.GetDummyPoint
+  L10_2 = 3
+  L11_2 = "Q371WendyFootPrint3"
+  L8_2 = L8_2(L9_2, L10_2, L11_2)
+  L8_2 = L8_2.pos
+  L9_2 = sceneData
+  L10_2 = L9_2
+  L9_2 = L9_2.GetDummyPoint
+  L11_2 = 3
+  L12_2 = "Q371WendyFootPrint3"
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.TransmitPlayerUseCustomizedTplById
+  L4_2 = A1_2
+  L5_2 = 1
+  L6_2 = 8
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart80334 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80334"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80334 = L9_1
 return L1_1

@@ -291,6 +291,14 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc21043Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart7334802 = L10_1
 function L10_1(A0_2, A1_2)
@@ -351,10 +359,18 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7334803 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart7334805"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc21043Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart7334805 = L10_1
 function L10_1(A0_2, A1_2)
