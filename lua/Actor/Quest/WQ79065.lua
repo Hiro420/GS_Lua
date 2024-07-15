@@ -710,19 +710,26 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906507 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart7906514"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTrigger
-  L4_2 = L7_1.Npc21466Data
-  L4_2 = L4_2.id
-  L5_2 = 7906514
-  L6_2 = 0
-  L7_2 = 4
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NpcCreateWithNpcTrigger
+    L3_3 = L7_1.Npc21466Data
+    L3_3 = L3_3.id
+    L4_3 = 7906514
+    L5_3 = 0
+    L6_3 = 4
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7906514 = L8_1
 function L8_1(A0_2, A1_2)

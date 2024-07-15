@@ -166,12 +166,12 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ShowBlackScreen
   L4_2 = 0.5
-  L5_2 = 2
+  L5_2 = 2.5
   L6_2 = 0.5
   L7_2 = nil
   L8_2 = nil
   L9_2 = nil
-  L10_2 = "LEVEL_CLOCKWORK_GAME_01"
+  L10_2 = "UI_ACTIVITY_WINTERCAMP_BOSS_LOCKED"
   L11_2 = false
   L12_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)

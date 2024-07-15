@@ -2573,6 +2573,13 @@ function L9_1(A0_2, A1_2)
   L4_2 = true
   L5_2 = "DisableKWQQuest"
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithDither
+  L4_2 = L7_1.Npc2661Data
+  L4_2 = L4_2.alias
+  L5_2 = 100
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart7906221 = L9_1
 function L9_1(A0_2, A1_2)
@@ -2703,10 +2710,15 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7906223 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish7906223"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.QuestNarratorTask
+  L4_2 = L8_1.Narrator7906224
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7906223 = L9_1
 function L9_1(A0_2, A1_2)
@@ -2714,11 +2726,6 @@ function L9_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubStart7906224"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.QuestNarratorTask
-  L4_2 = L8_1.Narrator7906224
-  L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -3196,15 +3203,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7906245 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7906245"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.QuestNarratorTask
-  L4_2 = L8_1.Narrator7906245
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7906245 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3313,16 +3315,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906266 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906266"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 5
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 5
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906266 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3340,16 +3349,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906249 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906249"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 6
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 6
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906249 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3381,16 +3397,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906254 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906254"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 7
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 7
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906254 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3408,16 +3431,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906253 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906253"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 8
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 8
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906253 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3435,16 +3465,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906252 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906252"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 9
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 9
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906252 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3462,16 +3499,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906251 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906251"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 10
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 10
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906251 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3489,16 +3533,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906250 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906250"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 11
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 11
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906250 = L9_1
 function L9_1(A0_2, A1_2)
@@ -3516,16 +3567,23 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7906229 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed7906229"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerById
-  L4_2 = A1_2
-  L5_2 = 12
-  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L2_2.LevelReadySafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.TransmitPlayerById
+    L3_3 = A1_2
+    L4_3 = 12
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed7906229 = L9_1
 function L9_1(A0_2, A1_2)

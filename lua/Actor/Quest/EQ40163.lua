@@ -334,13 +334,6 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
-  L4_2 = L7_1.Npc30561
-  L4_2 = L4_2.alias
-  L5_2 = 100
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
   L4_2 = L7_1.Npc30574
   L4_2 = L4_2.alias
   L5_2 = 100
@@ -412,12 +405,12 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DestroyNpcTrigger
-  L4_2 = "Q4016318N30561Trigger"
+  L4_2 = "Q4016318N2670Trigger"
   L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DestroyNpcTrigger
-  L4_2 = "Q4016319N30561Trigger"
+  L4_2 = "Q4016319N2670Trigger"
   L2_2(L3_2, L4_2)
   L2_2 = L3_1
   L3_2 = L2_2
