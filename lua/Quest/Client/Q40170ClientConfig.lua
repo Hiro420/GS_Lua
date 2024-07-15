@@ -1,0 +1,33 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = {}
+L0_1.MainID = 40170
+L0_1.ActorAlias = "40170"
+L0_1.IgnoreDoReturnNpcForDaily = true
+L1_1 = {}
+L1_1.q4017001 = 4017001
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L4_1 = "QUEST_Black_Clear"
+L3_1[1] = L4_1
+L2_1.textMapId = L3_1
+L2_1.prefabPath = "ART/UI/Menus/Activity/FairyTales/FairyTalesPlotDialog"
+L2_1.loadCtxTag = ""
+L2_1.loadCtxCloseDelay = 0
+L1_1.TransmitData = L2_1
+L2_1 = {}
+L3_1 = {}
+L4_1 = "QUEST_Black_Clear"
+L3_1[1] = L4_1
+L2_1.textMapId = L3_1
+L2_1.textShowTime = 1
+L2_1.showBlackScreen = true
+L2_1.useWhiteScreen = false
+L2_1.disableTPAudio = false
+L2_1.overrideTPAudioEvtName = ""
+L2_1.loadCtxTag = ""
+L2_1.loadCtxCloseDelay = 0
+L1_1.TransmitData_01 = L2_1
+L0_1.Datas = L1_1
+return L0_1

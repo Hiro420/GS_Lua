@@ -1,0 +1,1438 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1
+L0_1 = require
+L1_1 = "Actor/ActorCommon"
+L0_1(L1_1)
+L0_1 = require
+L1_1 = "Actor/Quest/QuestActorProxy"
+L0_1 = L0_1(L1_1)
+L1_1 = class
+L2_1 = "Quest40141"
+L3_1 = L0_1
+L1_1 = L1_1(L2_1, L3_1)
+L1_1.defaultAlias = "Quest40141"
+L2_1 = nil
+L3_1 = nil
+L4_1 = nil
+L5_1 = nil
+L6_1 = nil
+L7_1 = nil
+L8_1 = nil
+L9_1 = nil
+function L10_1(A0_2)
+  local L1_2
+  L3_1 = A0_2
+  L1_2 = A0_2.clientData
+  L2_1 = L1_2
+  L1_2 = L2_1.MainID
+  L4_1 = L1_2
+  L1_2 = L2_1.ActorAlias
+  L5_1 = L1_2
+  L1_2 = L2_1.SubIDs
+  L6_1 = L1_2
+  L1_2 = L2_1.Npcs
+  L7_1 = L1_2
+  L1_2 = L2_1.Points
+  L8_1 = L1_2
+  L1_2 = L2_1.Datas
+  L9_1 = L1_2
+end
+L1_1.OnDataLoaded = L10_1
+function L10_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = {}
+  L2_2 = A0_2.OnSubStart4014101
+  L1_2["4014101"] = L2_2
+  L2_2 = A0_2.OnSubStart4014102
+  L1_2["4014102"] = L2_2
+  L2_2 = A0_2.OnSubStart4014103
+  L1_2["4014103"] = L2_2
+  L2_2 = A0_2.OnSubStart4014104
+  L1_2["4014104"] = L2_2
+  L2_2 = A0_2.OnSubStart4014107
+  L1_2["4014107"] = L2_2
+  L2_2 = A0_2.OnSubStart4014105
+  L1_2["4014105"] = L2_2
+  L2_2 = A0_2.OnSubStart4014106
+  L1_2["4014106"] = L2_2
+  L2_2 = A0_2.OnSubStart4014108
+  L1_2["4014108"] = L2_2
+  L2_2 = A0_2.OnSubStart4014109
+  L1_2["4014109"] = L2_2
+  L2_2 = A0_2.OnSubStart4014110
+  L1_2["4014110"] = L2_2
+  L2_2 = A0_2.OnSubStart4014112
+  L1_2["4014112"] = L2_2
+  L2_2 = A0_2.OnSubStart4014113
+  L1_2["4014113"] = L2_2
+  L2_2 = A0_2.OnSubStart4014111
+  L1_2["4014111"] = L2_2
+  L2_2 = A0_2.OnSubStart4014114
+  L1_2["4014114"] = L2_2
+  A0_2.subStartHandlers = L1_2
+end
+L1_1.OnSubStartHandlerBuild = L10_1
+function L10_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = {}
+  L2_2 = A0_2.OnSubFinish4014101
+  L1_2["4014101"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014102
+  L1_2["4014102"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014103
+  L1_2["4014103"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014104
+  L1_2["4014104"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014107
+  L1_2["4014107"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014105
+  L1_2["4014105"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014106
+  L1_2["4014106"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014108
+  L1_2["4014108"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014109
+  L1_2["4014109"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014110
+  L1_2["4014110"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014112
+  L1_2["4014112"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014113
+  L1_2["4014113"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014111
+  L1_2["4014111"] = L2_2
+  L2_2 = A0_2.OnSubFinish4014114
+  L1_2["4014114"] = L2_2
+  A0_2.subFinishHandlers = L1_2
+end
+L1_1.OnSubFinishHandlerBuild = L10_1
+function L10_1(A0_2)
+  local L1_2
+  L1_2 = {}
+  A0_2.subFailedHandlers = L1_2
+end
+L1_1.OnSubFailedHandlerBuild = L10_1
+function L10_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = print
+  L2_2 = "Start"
+  L1_2(L2_2)
+end
+L1_1.Start = L10_1
+function L10_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = print
+  L2_2 = "OnDestroy"
+  L1_2(L2_2)
+end
+L1_1.OnDestroy = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnMainFinished"
+  L2_2(L3_2)
+end
+L1_1.OnMainFinished = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnMainFailed"
+  L2_2(L3_2)
+end
+L1_1.OnMainFailed = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnMainCanceled"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1070Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1083Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc10232Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1045Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc30474Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13900Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13891Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13855Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2428Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2427Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2260Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q4014103Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q4014107Trigger"
+  L5_2 = 3
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014102N1084Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014104N13860Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014105N1084Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014106N10232Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014108N10232Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014109N1070Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014111N13860Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014112N30474Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyNpcTrigger
+  L4_2 = "Q4014113N13900Trigger"
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnMainCanceled = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = L2_2
+    L3_2 = L2_2.DestroySelf
+    L3_2(L4_2)
+  end
+end
+L1_1.ActorDestroy = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
+  L8_2 = "Q"
+  L9_2 = A2_2
+  L10_2 = "N"
+  L11_2 = A1_2
+  L12_2 = "Trigger"
+  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
+  L9_2 = A2_2
+  L10_2 = A1_2
+  L11_2 = A3_2
+  L12_2 = A4_2
+  L13_2 = A5_2
+  L14_2 = 2
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+end
+L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2)
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.CreateQuestNpcWithTrigger
+  L7_2 = "Q"
+  L8_2 = A2_2
+  L9_2 = "N"
+  L10_2 = A1_2
+  L11_2 = "Trigger"
+  L7_2 = L7_2 .. L8_2 .. L9_2 .. L10_2 .. L11_2
+  L8_2 = A2_2
+  L9_2 = A1_2
+  L10_2 = A3_2
+  L11_2 = A4_2
+  L12_2 = 2
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.NpcCreateWithNpcTrigger = L10_1
+function L10_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.ShowBlackScreen
+  L5_2 = 0.5
+  L6_2 = 1
+  L7_2 = 0.5
+  function L8_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyQuestNpcActor
+    L3_3 = A2_2
+    L4_3 = A1_2
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L9_2 = nil
+  L10_2 = nil
+  L11_2 = ""
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+end
+L1_1.NpcDestroyWithBlackscreen = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
+    L3_3 = A1_2
+    L4_3 = A2_2
+    L5_3 = A3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L4_2(L5_2, L6_2)
+end
+L1_1.DailyNpcSafeHideSelf = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
+  function L6_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = A2_2
+    L5_3 = A3_2
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L4_2(L5_2, L6_2)
+end
+L1_1.NpcCreateWithActionSafeCall = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.CreateQuestNpcWithTrigger
+  L6_2 = "Q"
+  L7_2 = A2_2
+  L8_2 = "N"
+  L9_2 = A1_2
+  L10_2 = "Trigger"
+  L6_2 = L6_2 .. L7_2 .. L8_2 .. L9_2 .. L10_2
+  L7_2 = A2_2
+  L8_2 = A1_2
+  L9_2 = A3_2
+  L10_2 = 8
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+L1_1.NpcCreateWithTrigger = L10_1
+function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.CallDelay
+  L8_2 = 2
+  function L9_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpcWithTriggerBlack
+    L3_3 = "Q"
+    L4_3 = A2_2
+    L5_3 = "N"
+    L6_3 = A1_2
+    L7_3 = "Trigger"
+    L3_3 = L3_3 .. L4_3 .. L5_3 .. L6_3 .. L7_3
+    L4_3 = A2_2
+    L5_3 = A1_2
+    L6_3 = A3_2
+    L7_3 = A4_2
+    L8_3 = A5_2
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
+  end
+  L6_2(L7_2, L8_2, L9_2)
+end
+L1_1.CallDelayNpcCreateWithNpcTriggerAndBlack = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014101"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart4014101 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014101"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.Narrator_4014198
+  L5_2 = nil
+  L6_2 = 40141
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFinish4014101 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014102"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTrigger
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.id
+  L5_2 = 4014102
+  L6_2 = 0
+  L7_2 = 10
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1130
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+end
+L1_1.OnSubStart4014102 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014102"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc1084Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.TransmitPlayerByData
+  L4_2 = A1_2
+  L5_2 = 1
+  L6_2 = L9_1.TransmitData
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFinish4014102 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014103"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q4014103Trigger"
+  L5_2 = "Actor/Gadget/Q4014103Trigger"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = L8_1.TPos_Q4014103Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q4014103Trigger
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2260Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart4014103 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014103"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q4014103Trigger"
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish4014103 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014104"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTrigger
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.id
+  L5_2 = 4014104
+  L6_2 = 0
+  L7_2 = 10
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1280
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DailyNpcSafeHideSelf
+  L5_2 = L7_1.Npc2260Data
+  L5_2 = L5_2.alias
+  L6_2 = 1
+  L7_2 = true
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+end
+L1_1.OnSubStart4014104 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014104"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014104 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014107"
+  L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q4014107Trigger"
+  L5_2 = "Actor/Gadget/Q4014107Trigger"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = L8_1.TPos_Q4014107Trigger
+  L8_2 = L8_2.pos
+  L9_2 = L8_1.TPos_Q4014107Trigger
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2260Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart4014107 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014107"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q4014107Trigger"
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2260Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.Narrator_4014197
+  L5_2 = nil
+  L6_2 = 40141
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFinish4014107 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014105"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.id
+  L5_2 = 4014105
+  L6_2 = 0
+  L7_2 = 15
+  L8_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+end
+L1_1.OnSubStart4014105 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014105"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc1084Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish4014105 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014106"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
+  L4_2 = L7_1.Npc10232Data
+  L4_2 = L4_2.id
+  L5_2 = 4014106
+  L6_2 = 0
+  L7_2 = 10
+  L8_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2428Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2427Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubStart4014106 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014106"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc10232Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014106 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014108"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithActionSafeCall
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1084Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
+  L4_2 = L7_1.Npc10232Data
+  L4_2 = L4_2.id
+  L5_2 = 4014108
+  L6_2 = 0
+  L7_2 = 5
+  L8_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2428Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2427Data
+  L4_2 = L4_2.alias
+  L5_2 = 1
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1090
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SitOnChair
+  L6_2 = 8040
+  L7_2 = false
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc1084Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L2_2 = L4_2
+  L5_2 = L2_2
+  L4_2 = L2_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13860Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L3_2 = L4_2
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+end
+L1_1.OnSubStart4014108 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014108"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc10232Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014108 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014109"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTrigger
+  L4_2 = L7_1.Npc1070Data
+  L4_2 = L4_2.id
+  L5_2 = 4014109
+  L6_2 = 0
+  L7_2 = 15
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc1083Data
+    L4_3 = L4_3.id
+    L5_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc1045Data
+    L4_3 = L4_3.id
+    L5_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DailyNpcSafeHideSelf
+    L3_3 = L7_1.Npc2428Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DailyNpcSafeHideSelf
+    L3_3 = L7_1.Npc2427Data
+    L3_3 = L3_3.alias
+    L4_3 = 1
+    L5_3 = true
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc1083Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.SitOnChair
+    L4_3 = 0
+    L5_3 = true
+    L2_3(L3_3, L4_3, L5_3)
+    L2_3 = L3_1
+    L3_3 = L2_3
+    L2_3 = L2_3.GetQuestNpcActor
+    L4_3 = L7_1.Npc1045Data
+    L4_3 = L4_3.alias
+    L2_3 = L2_3(L3_3, L4_3)
+    L4_3 = L2_3
+    L3_3 = L2_3.SitOnChair
+    L5_3 = 0
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = L3_1
+    L4_3 = L3_3
+    L3_3 = L3_3.GetQuestNpcActor
+    L5_3 = L7_1.Npc1070Data
+    L5_3 = L5_3.alias
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.DoFreeStyle
+    L6_3 = 1190
+    L7_3 = true
+    L8_3 = nil
+    L9_3 = true
+    L10_3 = true
+    L11_3 = false
+    L12_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = L3_1
+    L5_3 = L4_3
+    L4_3 = L4_3.GetQuestNpcActor
+    L6_3 = L7_1.Npc1083Data
+    L6_3 = L6_3.alias
+    L4_3 = L4_3(L5_3, L6_3)
+    L1_3 = L4_3
+    L5_3 = L1_3
+    L4_3 = L1_3.DisableInteeHeadCtrl
+    L6_3 = true
+    L4_3(L5_3, L6_3)
+    L4_3 = L3_1
+    L5_3 = L4_3
+    L4_3 = L4_3.GetQuestNpcActor
+    L6_3 = L7_1.Npc1045Data
+    L6_3 = L6_3.alias
+    L4_3 = L4_3(L5_3, L6_3)
+    L2_3 = L4_3
+    L5_3 = L2_3
+    L4_3 = L2_3.DisableInteeHeadCtrl
+    L6_3 = true
+    L4_3(L5_3, L6_3)
+  end
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubStart4014109 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014109"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1045Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2428Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2427Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFinish4014109 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014110"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithActionSafeCall
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithActionSafeCall
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1070Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NpcCreateWithTrigger
+    L3_3 = L7_1.Npc1083Data
+    L3_3 = L3_3.id
+    L4_3 = 4014110
+    L5_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L7_1.Npc1083Data
+    L3_3 = L3_3.alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.DoFreeStyle
+    L4_3 = 1120
+    L5_3 = true
+    L6_3 = nil
+    L7_3 = true
+    L8_3 = true
+    L9_3 = false
+    L10_3 = false
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+  end
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.SitOnChair
+  L5_2 = 0
+  L6_2 = true
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc1070Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SitOnChair
+  L6_2 = 0
+  L7_2 = true
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13860Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L2_2 = L4_2
+  L5_2 = L2_2
+  L4_2 = L2_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc1070Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L3_2 = L4_2
+  L5_2 = L3_2
+  L4_2 = L3_2.DisableInteeHeadCtrl
+  L6_2 = true
+  L4_2(L5_2, L6_2)
+end
+L1_1.OnSubStart4014110 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014110"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc1083Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014110 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014112"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTrigger
+  L4_2 = L7_1.Npc30474Data
+  L4_2 = L4_2.id
+  L5_2 = 4014112
+  L6_2 = 0
+  L7_2 = 5
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc30474Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1320
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SitOnChair
+  L6_2 = 0
+  L7_2 = true
+  L4_2(L5_2, L6_2, L7_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc1070Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.SitOnChair
+  L7_2 = 0
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.GetQuestNpcActor
+  L7_2 = L7_1.Npc13860Data
+  L7_2 = L7_2.alias
+  L5_2 = L5_2(L6_2, L7_2)
+  L3_2 = L5_2
+  L6_2 = L3_2
+  L5_2 = L3_2.DisableInteeHeadCtrl
+  L7_2 = true
+  L5_2(L6_2, L7_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.GetQuestNpcActor
+  L7_2 = L7_1.Npc1070Data
+  L7_2 = L7_2.alias
+  L5_2 = L5_2(L6_2, L7_2)
+  L4_2 = L5_2
+  L6_2 = L4_2
+  L5_2 = L4_2.DisableInteeHeadCtrl
+  L7_2 = true
+  L5_2(L6_2, L7_2)
+end
+L1_1.OnSubStart4014112 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014112"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.Narrator_4014196
+  L5_2 = nil
+  L6_2 = 40141
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc30474Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc1070Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014112 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014113"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CallDelayNpcCreateWithNpcTriggerAndBlack
+  L4_2 = L7_1.Npc13900Data
+  L4_2 = L4_2.id
+  L5_2 = 4014113
+  L6_2 = 0
+  L7_2 = 10
+  L8_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+end
+L1_1.OnSubStart4014113 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014113"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NarratorOnlyTaskByData
+  L4_2 = L9_1.Narrator_4014195
+  L5_2 = nil
+  L6_2 = 40141
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13900Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014113 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014111"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc1084Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreateWithNpcTrigger
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.id
+  L5_2 = 4014111
+  L6_2 = 0
+  L7_2 = 25
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.Npc13891Data
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.GetQuestNpcActor
+  L4_2 = L7_1.Npc1084Data
+  L4_2 = L4_2.alias
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.DoFreeStyle
+  L5_2 = 1090
+  L6_2 = true
+  L7_2 = nil
+  L8_2 = true
+  L9_2 = true
+  L10_2 = false
+  L11_2 = false
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestNpcActor
+  L5_2 = L7_1.Npc13860Data
+  L5_2 = L5_2.alias
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.DoFreeStyle
+  L6_2 = 1170
+  L7_2 = true
+  L8_2 = nil
+  L9_2 = true
+  L10_2 = true
+  L11_2 = false
+  L12_2 = false
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.GetQuestNpcActor
+  L6_2 = L7_1.Npc13891Data
+  L6_2 = L6_2.alias
+  L4_2 = L4_2(L5_2, L6_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.DoFreeStyle
+  L7_2 = 1060
+  L8_2 = true
+  L9_2 = nil
+  L10_2 = true
+  L11_2 = true
+  L12_2 = false
+  L13_2 = false
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+end
+L1_1.OnSubStart4014111 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014111"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearNarratorTask
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
+  L4_2 = 3
+  L5_2 = L7_1.Npc1084Data
+  L5_2 = L5_2.alias
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13860Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc13891Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish4014111 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart4014114"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart4014114 = L10_1
+function L10_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish4014114"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish4014114 = L10_1
+return L1_1
