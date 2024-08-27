@@ -49,16 +49,15 @@ function L7_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L7_1
 function L7_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2
+  local L1_2, L2_2, L3_2
   L1_2 = print
   L2_2 = "[MainId: 803][Trigger: Q80334_TriggerIn] TriggerIn"
   L1_2(L2_2)
   L1_2 = actorUtils
-  L2_2 = L1_2
   L1_2 = L1_2.HandleQuestLoadingCtxOpForLua
-  L3_2 = "test"
-  L4_2 = 1
-  L1_2(L2_2, L3_2, L4_2)
+  L2_2 = "test"
+  L3_2 = 1
+  L1_2(L2_2, L3_2)
 end
 L1_1.TriggerIn = L7_1
 function L7_1(A0_2)

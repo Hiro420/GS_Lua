@@ -149,51 +149,70 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubStart48901 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "48901 Finish : Story"
   L2_2(L3_2)
   L3_2 = A0_2
-  L2_2 = A0_2.PaimonVanish
-  L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L4_1.Alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.EnableInteraction
-  L5_2 = false
-  L3_2(L4_2, L5_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.NpcWalkToTask
-  L5_2 = L2_2
-  L6_2 = L4_1.Pos2
-  function L7_2(A0_3, A1_3)
-    local L2_3, L3_3, L4_3, L5_3, L6_3
-    L3_3 = A0_3
-    L2_3 = A0_3.ClearFollowTask
-    L2_3(L3_3)
-    L3_3 = A0_3
-    L2_3 = A0_3.EnableInteraction
-    L4_3 = true
-    L2_3(L3_3, L4_3)
-    L3_3 = A0_3
-    L2_3 = A0_3.PerformDither
+  L2_2 = A0_2.ActionSafeCall
+  function L4_2()
+    local L0_3, L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L0_3 = A0_2
+    L1_3 = L0_3
+    L0_3 = L0_3.PaimonVanish
+    L0_3(L1_3)
+    L0_3 = actorMgr
+    L1_3 = L0_3
+    L0_3 = L0_3.GetActor
+    L2_3 = L4_1.Alias
+    L0_3 = L0_3(L1_3, L2_3)
+    L1_3 = A0_2
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestNpcActor
+    L3_3 = L4_1.Alias
+    L1_3 = L1_3(L2_3, L3_3)
+    L3_3 = L1_3
+    L2_3 = L1_3.EnableInteraction
     L4_3 = false
-    L5_3 = 1
-    L6_3 = A0_3.HideSelf
-    L2_3(L3_3, L4_3, L5_3, L6_3)
+    L2_3(L3_3, L4_3)
+    L2_3 = A0_2
+    L3_3 = L2_3
+    L2_3 = L2_3.NpcWalkToTask
+    L4_3 = L1_3
+    L5_3 = L4_1.Pos2
+    function L6_3(A0_4, A1_4)
+      local L2_4, L3_4, L4_4, L5_4, L6_4
+      L3_4 = A0_4
+      L2_4 = A0_4.ClearFollowTask
+      L2_4(L3_4)
+      L3_4 = A0_4
+      L2_4 = A0_4.EnableInteraction
+      L4_4 = true
+      L2_4(L3_4, L4_4)
+      L3_4 = A0_4
+      L2_4 = A0_4.PerformDither
+      L4_4 = false
+      L5_4 = 1
+      L6_4 = A0_4.HideSelf
+      L2_4(L3_4, L4_4, L5_4, L6_4)
+      L2_4 = A0_2
+      L3_4 = L2_4
+      L2_4 = L2_4.DestroyQuestNpcActor
+      L4_4 = L4_1.Alias
+      L2_4(L3_4, L4_4)
+    end
+    L7_3 = nil
+    L8_3 = nil
+    function L9_3(A0_4)
+      local L1_4, L2_4, L3_4
+      L2_4 = A0_4
+      L1_4 = A0_4.SyncPos
+      L3_4 = 2
+      L1_4(L2_4, L3_4)
+    end
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
   end
-  L8_2 = nil
-  L9_2 = nil
-  function L10_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L2_3 = A0_3
-    L1_3 = A0_3.SyncPos
-    L3_3 = 2
-    L1_3(L2_3, L3_3)
-  end
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish48901 = L5_1
 function L5_1(A0_2, A1_2)

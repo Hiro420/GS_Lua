@@ -85,6 +85,8 @@ function L3_1(A0_2, A1_2)
   L3_2 = {}
   L4_2 = A0_2.isOrphan
   L3_2.isOrphan = L4_2
+  L4_2 = A0_2.placeList
+  L3_2.placeList = L4_2
   L4_2 = A0_2.platformInfo
   L3_2.platformInfo = L4_2
   L4_2 = A0_2.inWater

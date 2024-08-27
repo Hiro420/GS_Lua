@@ -45,6 +45,43 @@ function L3_1(A0_2)
   L1_2(L2_2)
 end
 L0_1.OnFinishLoadScene = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.TryVehicleOffDisableEff
+  L2_2 = 30010
+  L1_2(L2_2)
+end
+L0_1.VehicleOff = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.SimpleUIShowForLua
+  L2_2 = true
+  L3_2 = "General"
+  L4_2 = "ART/Effect/UI/UI/Eff_UI_Remus_FirstPerson_02"
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.TestUIEffect = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = {}
+  L1_2.narratorId = 1403801
+  L1_2.tag = "StoryInMainPage"
+  L1_2.startCheckPause = true
+  L1_2.resumeReminder = -1
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = "355"
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = L2_2
+  L3_2 = L2_2.QuestNarratorTask
+  L5_2 = L1_2
+  L6_2 = nil
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.TestNarrator = L3_1
 function L3_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L2_2 = 0
@@ -215,7 +252,7 @@ L0_1.TestInteraction = L3_1
 function L3_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = 1669
-  L2_2 = 0
+  L2_2 = 800
   L4_2 = A0_2
   L3_2 = A0_2.CreateXNpc
   L5_2 = L1_2
@@ -223,6 +260,17 @@ function L3_1(A0_2)
   L3_2(L4_2, L5_2, L6_2)
 end
 L0_1.Create1669 = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = 21544
+  L2_2 = 79064
+  L4_2 = A0_2
+  L3_2 = A0_2.CreateXNpc
+  L5_2 = L1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.Create21544 = L3_1
 function L3_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L1_2 = {}
@@ -297,6 +345,260 @@ function L3_1(A0_2)
   L3_2(L4_2, L5_2, L6_2)
 end
 L0_1.CreateNilou = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "Npc1665"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SetAnimatorLayerWeight
+  L4_2 = "HeadControllerRotationLayer"
+  L5_2 = 0.2
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SetAnimatorLayerWeight
+  L4_2 = "HeadControllerRotationLayer"
+  L5_2 = 0.3
+  L2_2(L3_2, L4_2, L5_2)
+end
+L0_1.TestLayerWeight = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = print
+  L2_2 = "CreateXXXLL"
+  L1_2(L2_2)
+  L2_2 = A0_2
+  L1_2 = A0_2.CreateXNpc
+  L3_2 = 9500
+  L4_2 = 70678
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.CreateXXXLL = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2.DeleteNpc
+  L3_2 = 9500
+  L4_2 = 70678
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.DeleteXXXLL = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = 1665
+  L2_2 = 800
+  L4_2 = A0_2
+  L3_2 = A0_2.CreateXNpc
+  L5_2 = L1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.CreateXG = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2.DeleteNpc
+  L3_2 = 1665
+  L4_2 = 800
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.DeleteXG = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = 1044
+  L2_2 = 800
+  L4_2 = A0_2
+  L3_2 = A0_2.CreateXNpc
+  L5_2 = L1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.CreateYD = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2.DeleteNpc
+  L3_2 = 1044
+  L4_2 = 800
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.DeleteYD = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = 1026
+  L2_2 = 800
+  L3_2 = M
+  L3_2 = L3_2.Pos
+  L4_2 = 1605.672
+  L5_2 = 286.2045
+  L6_2 = -1120.195
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.CreateXNpcAt
+  L6_2 = L1_2
+  L7_2 = L2_2
+  L8_2 = L3_2
+  L4_2(L5_2, L6_2, L7_2, L8_2)
+end
+L0_1.CreateY = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L2_2 = A0_2
+  L1_2 = A0_2.DeleteNpc
+  L3_2 = 1026
+  L4_2 = 800
+  L1_2(L2_2, L3_2, L4_2)
+end
+L0_1.DeleteY = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L1_2 = 1026
+  L2_2 = 800
+  L3_2 = actorMgr
+  L4_2 = L3_2
+  L3_2 = L3_2.GetActor
+  L5_2 = "Npc1026800"
+  L3_2 = L3_2(L4_2, L5_2)
+  L5_2 = L3_2
+  L4_2 = L3_2.SetNpcAnimator
+  L6_2 = 1
+  L7_2 = "Move"
+  L8_2 = 1
+  L9_2 = 0
+  L10_2 = true
+  L11_2 = true
+  L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L4_2 = M
+  L4_2 = L4_2.Pos
+  L5_2 = 1601.54
+  L6_2 = 286.2613
+  L7_2 = -1113.253
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  L5_2 = {}
+  L6_2 = L4_2
+  L5_2[1] = L6_2
+  L7_2 = L3_2
+  L6_2 = L3_2.AdvRunToRoute
+  L8_2 = L5_2
+  L9_2 = 0
+  L10_2 = false
+  L11_2 = true
+  L12_2 = true
+  L13_2 = true
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+end
+L0_1.YMove = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.SetPostEffect
+  L2_2 = "PostEffect_Gacha_ShootingStar"
+  L3_2 = true
+  L1_2(L2_2, L3_2)
+end
+L0_1.TestGachaEffect = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.SetPostEffect
+  L2_2 = "PostEffect_Gacha_ShootingStar"
+  L3_2 = false
+  L1_2(L2_2, L3_2)
+end
+L0_1.ClearGachaEffect = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "800"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SetLocalGadgetState
+  L4_2 = 70710703
+  L5_2 = "1"
+  L6_2 = 200
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L0_1.TestGadgetState = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "800"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.SetLocalGadgetState
+  L4_2 = 70710703
+  L5_2 = "1"
+  L6_2 = 201
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L0_1.TestGadgetState1 = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L1_2 = require
+  L2_2 = "Actor/Gadget/Q14026Trigger"
+  L1_2(L2_2)
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "355"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.CreateXNpc
+  L4_2 = 6153
+  L5_2 = 355
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.ClearSpeechBubbleTask
+  L2_2(L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CreateSpeechBubbleTask
+  L4_2 = 6153
+  L5_2 = 3071309
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L9_2 = 0
+  L10_2 = false
+  L11_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CallDelay
+  L4_2 = 3
+  function L5_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L1_3 = L1_2
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateSpeechBubbleTask
+    L3_3 = 6153
+    L4_3 = 3071312
+    L5_3 = 0
+    L6_3 = false
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = false
+    L10_3 = false
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+  end
+  L2_2(L3_2, L4_2, L5_2)
+end
+L0_1.CreateSpeech = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = 13356
+  L2_2 = 800
+  L4_2 = A0_2
+  L3_2 = A0_2.CreateXNpc
+  L5_2 = L1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L0_1.CreateAA = L3_1
 function L3_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
   L1_2 = 1016
@@ -1008,6 +1310,147 @@ function L3_1(A0_2)
 end
 L0_1.CreatePlatformNpc = L3_1
 function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "800"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CreateQuestNpcWithTrigger
+  L4_2 = "Q800AmberTrigger"
+  L5_2 = 80001
+  L6_2 = 1002
+  L7_2 = 1
+  L8_2 = 5
+  L9_2 = 2
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CreateQuestNpcWithTriggerInVehicle
+  L4_2 = "Q800AmberTrigger"
+  L5_2 = 80001
+  L6_2 = 1002
+  L7_2 = 1
+  L8_2 = 5
+  L9_2 = 1
+  L10_2 = 2
+  L11_2 = {}
+  L12_2 = 30013
+  L11_2[1] = L12_2
+  L12_2 = "QUEST_Message_Q46401"
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L0_1.CreateDragonTrigger = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "Npc6159800"
+  L1_2 = L1_2(L2_2, L3_2)
+  L2_2 = M
+  L2_2 = L2_2.Pos
+  L3_2 = -2192.158
+  L4_2 = 324.0295
+  L5_2 = 8151.235
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  L4_2 = L1_2
+  L3_2 = L1_2.SetNpcAnimator
+  L5_2 = 3
+  L6_2 = "Water"
+  L7_2 = 0
+  L8_2 = 0
+  L9_2 = true
+  L10_2 = true
+  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L4_2 = L1_2
+  L3_2 = L1_2.RunToTask
+  L5_2 = L2_2
+  L3_2(L4_2, L5_2)
+end
+L0_1.TestDragonMove = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "8019"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.PlayCutsceneIndex
+  L4_2 = 80070101
+  L2_2(L3_2, L4_2)
+end
+L0_1.TestCS = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.GetAvatarPos
+  L1_2 = L1_2()
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.PlayEffect
+  L4_2 = "Eff_Censer_Empty_SoundCyAQ2"
+  L5_2 = L1_2
+  L6_2 = nil
+  L7_2 = nil
+  L8_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+end
+L0_1.TestEffect = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
+  L1_2 = {}
+  L1_2.x = -2227.143
+  L1_2.y = 324.0313
+  L1_2.z = 8149.583
+  L2_2 = {}
+  L2_2.x = 0
+  L2_2.y = 153
+  L2_2.z = 0
+  L3_2 = 0
+  L4_2 = 0.5
+  L5_2 = 1
+  L6_2 = 0.5
+  L7_2 = globalActor
+  L8_2 = L7_2
+  L7_2 = L7_2.TransmitPlayerToArcLight
+  L9_2 = 3
+  L10_2 = L1_2
+  L11_2 = L2_2
+  L12_2 = 1
+  L13_2 = 1
+  L14_2 = L4_2
+  L15_2 = L5_2
+  L16_2 = L6_2
+  function L17_2()
+    local L0_3, L1_3
+    L0_3 = print
+    L1_3 = "set to arc liaht finish"
+    L0_3(L1_3)
+  end
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+end
+L0_1.TestToArcLight = L3_1
+function L3_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L1_2 = actorMgr
+  L2_2 = L1_2
+  L1_2 = L1_2.GetActor
+  L3_2 = "800"
+  L1_2 = L1_2(L2_2, L3_2)
+  L3_2 = L1_2
+  L2_2 = L1_2.CreateRepeatableNpcShowDisappearTrigger
+  L4_2 = "Q800testRepeatTrigger"
+  L5_2 = 80069
+  L6_2 = 1005
+  L7_2 = 0
+  L8_2 = 6
+  L9_2 = 10
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+end
+L0_1.CreateRepeatableTrigger = L3_1
+function L3_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L1_2 = print
   L2_2 = "---BindNpcPlatform!!"
@@ -1345,7 +1788,7 @@ end
 L0_1.TestExitCameraLook = L3_1
 function L3_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
-  L1_2 = 10204
+  L1_2 = 6159
   L2_2 = 800
   L4_2 = A0_2
   L3_2 = A0_2.CreateXNpc

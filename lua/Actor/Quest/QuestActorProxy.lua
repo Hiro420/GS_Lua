@@ -1814,32 +1814,40 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   return L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
 end
 L1_1.CreateQuestNpcByIdWithPos = L5_1
-function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
-  L6_2 = A1_2.QuestConfigId
-  L7_2 = A0_2.shareData
-  L8_2 = L7_2
-  L7_2 = L7_2.GetQuestData
-  L9_2 = L6_2
-  L7_2 = L7_2(L8_2, L9_2)
-  L8_2 = actorMgr
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
+  L7_2 = actorUtils
+  L7_2 = L7_2.IsQuestPlaceOccupied
+  L8_2 = A6_2
+  L7_2 = L7_2(L8_2)
+  if L7_2 then
+    return
+  end
+  L7_2 = A1_2.QuestConfigId
+  L8_2 = A0_2.shareData
   L9_2 = L8_2
-  L8_2 = L8_2.CreateQuestNpcActorInternal
-  L10_2 = A0_2.mainQuestID
-  L11_2 = A2_2
-  L12_2 = L7_2
-  L13_2 = A0_2
-  L14_2 = A3_2
-  L15_2 = nil
+  L8_2 = L8_2.GetQuestData
+  L10_2 = L7_2
+  L8_2 = L8_2(L9_2, L10_2)
+  L9_2 = actorMgr
+  L10_2 = L9_2
+  L9_2 = L9_2.CreateQuestNpcActorInternal
+  L11_2 = A0_2.mainQuestID
+  L12_2 = A2_2
+  L13_2 = L8_2
+  L14_2 = A0_2
+  L15_2 = A3_2
   L16_2 = nil
-  L17_2 = A4_2
-  L18_2 = A5_2
-  L19_2 = true
-  return L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
+  L17_2 = nil
+  L18_2 = A4_2
+  L19_2 = A5_2
+  L20_2 = true
+  L21_2 = A6_2
+  return L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2)
 end
 L1_1.CreateQuestOrphanNpc = L5_1
 function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
-  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2
   L8_2 = A0_2
   L7_2 = A0_2.CreateQuestNpcById
   L9_2 = A2_2
@@ -1859,15 +1867,57 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   L13_2 = A3_2
   L14_2 = A4_2
   L15_2 = A5_2
-  L16_2 = "Actor/Gadget/RequestInteractionNPCTrigger"
-  L17_2 = L7_2
-  L18_2 = false
-  L19_2 = L8_2
-  L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
+  L16_2 = 0
+  L17_2 = "Actor/Gadget/RequestInteractionNPCTrigger"
+  L18_2 = L7_2
+  L19_2 = false
+  L20_2 = L8_2
+  L21_2 = 0
+  L22_2 = 0
+  L23_2 = 0
+  L24_2 = nil
+  L25_2 = false
+  L26_2 = nil
+  L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2)
 end
 L1_1.CreateQuestNpcWithTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2
+  L11_2 = A0_2
+  L10_2 = A0_2.CreateQuestNpcById
+  L12_2 = A2_2
+  L13_2 = A3_2
+  L14_2 = A4_2
+  L10_2(L11_2, L12_2, L13_2, L14_2)
+  L10_2 = false
+  L11_2 = false
+  if A7_2 == 2 then
+    L10_2 = true
+    L11_2 = true
+  end
+  L13_2 = A0_2
+  L12_2 = A0_2.CreateQuestNpcWithTriggerInternal
+  L14_2 = A1_2
+  L15_2 = A2_2
+  L16_2 = A3_2
+  L17_2 = A4_2
+  L18_2 = A5_2
+  L19_2 = 0
+  L20_2 = "Actor/Gadget/RequestInteractionNPCTrigger"
+  L21_2 = L10_2
+  L22_2 = false
+  L23_2 = L11_2
+  L24_2 = 0
+  L25_2 = 0
+  L26_2 = 0
+  L27_2 = A8_2
+  L28_2 = true
+  L29_2 = A9_2
+  L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2)
+end
+L1_1.CreateQuestNpcWithTriggerInVehicle = L5_1
 function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
-  local L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2
+  local L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2
   L8_2 = "Actor/Gadget/CreateNPCWithBlackTrigger"
   if A7_2 == 1 or A7_2 == 2 then
     L8_2 = "Actor/Gadget/CreateNPCWithBlackLightUpTrigger"
@@ -1887,18 +1937,22 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   L16_2 = A3_2
   L17_2 = A4_2
   L18_2 = A5_2
-  L19_2 = L8_2
-  L20_2 = L9_2
-  L21_2 = L10_2
-  L22_2 = L11_2
-  L23_2 = 0.5
-  L24_2 = A6_2
-  L25_2 = 0.5
-  L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2)
+  L19_2 = 0
+  L20_2 = L8_2
+  L21_2 = L9_2
+  L22_2 = L10_2
+  L23_2 = L11_2
+  L24_2 = 0.5
+  L25_2 = A6_2
+  L26_2 = 0.5
+  L27_2 = nil
+  L28_2 = false
+  L29_2 = nil
+  L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2)
 end
 L1_1.CreateQuestNpcWithTriggerBlack = L5_1
 function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
-  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2
   L10_2 = "Actor/Gadget/CreateNPCWithBlackTrigger"
   if A9_2 == 1 or A9_2 == 2 then
     L10_2 = "Actor/Gadget/CreateNPCWithBlackLightUpTrigger"
@@ -1918,219 +1972,296 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
   L18_2 = A3_2
   L19_2 = A4_2
   L20_2 = A5_2
-  L21_2 = L10_2
-  L22_2 = L11_2
-  L23_2 = L12_2
-  L24_2 = L13_2
-  L25_2 = A6_2
-  L26_2 = A7_2
-  L27_2 = A8_2
-  L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2)
+  L21_2 = 0
+  L22_2 = L10_2
+  L23_2 = L11_2
+  L24_2 = L12_2
+  L25_2 = L13_2
+  L26_2 = A6_2
+  L27_2 = A7_2
+  L28_2 = A8_2
+  L29_2 = nil
+  L30_2 = false
+  L31_2 = nil
+  L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
 end
 L1_1.CreateQuestNpcWithTriggerBlackEx = L5_1
-function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2, A12_2)
-  local L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2
-  L13_2 = A1_2
-  if L13_2 == nil then
-    L14_2 = print
-    L15_2 = "try to creat npc trigger , triggerAlias is nil. "
-    L16_2 = A3_2
-    L15_2 = L15_2 .. L16_2
-    L14_2(L15_2)
-    return
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+  local L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2
+  L12_2 = "Actor/Gadget/CreateNPCWithBlackTrigger"
+  if A9_2 == 1 or A9_2 == 2 then
+    L12_2 = "Actor/Gadget/CreateNPCWithBlackLightUpTrigger"
   end
-  L14_2 = 70900002
-  L15_2 = A0_2.shareData
-  L16_2 = L15_2
-  L15_2 = L15_2.GetQuestData
+  L13_2 = false
+  L14_2 = false
+  L15_2 = false
+  if A9_2 == 2 then
+    L13_2 = true
+    L14_2 = true
+    L15_2 = true
+  end
+  L17_2 = A0_2
+  L16_2 = A0_2.CreateQuestNpcWithTriggerInternal
+  L18_2 = A1_2
+  L19_2 = A2_2
+  L20_2 = A3_2
+  L21_2 = A4_2
+  L22_2 = A5_2
+  L23_2 = 0
+  L24_2 = L12_2
+  L25_2 = L13_2
+  L26_2 = L14_2
+  L27_2 = L15_2
+  L28_2 = A6_2
+  L29_2 = A7_2
+  L30_2 = A8_2
+  L31_2 = A10_2
+  L32_2 = true
+  L33_2 = A11_2
+  L16_2(L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2)
+end
+L1_1.CreateQuestNpcWithTriggerInVehicleBlack = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2
+  L7_2 = "Actor/Gadget/CreateRepeatableNPCTrigger"
+  L8_2 = false
+  L9_2 = true
+  L10_2 = false
+  L11_2 = 0.5
+  L12_2 = 1
+  L13_2 = 0.5
+  L15_2 = A0_2
+  L14_2 = A0_2.CreateQuestNpcWithTriggerInternal
+  L16_2 = A1_2
   L17_2 = A2_2
-  L15_2 = L15_2(L16_2, L17_2)
-  L16_2 = A0_2.mainQuestID
-  L17_2 = nil
-  L18_2 = nil
-  L19_2 = nil
-  if L15_2 == nil then
-    L20_2 = print
-    L21_2 = "try to create npc"
-    L22_2 = A3_2
-    L23_2 = " on "
-    L24_2 = L16_2
-    L25_2 = "but data not exist"
-    L21_2 = L21_2 .. L22_2 .. L23_2 .. L24_2 .. L25_2
-    L20_2(L21_2)
+  L18_2 = A3_2
+  L19_2 = A4_2
+  L20_2 = A5_2
+  L21_2 = A6_2
+  L22_2 = L7_2
+  L23_2 = L8_2
+  L24_2 = L9_2
+  L25_2 = L10_2
+  L26_2 = L11_2
+  L27_2 = L12_2
+  L28_2 = L13_2
+  L29_2 = nil
+  L30_2 = false
+  L31_2 = nil
+  L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
+end
+L1_1.CreateRepeatableNpcShowDisappearTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2, A12_2, A13_2, A14_2, A15_2, A16_2)
+  local L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2
+  L17_2 = A1_2
+  if L17_2 == nil then
+    L18_2 = print
+    L19_2 = "try to creat npc trigger , triggerAlias is nil. "
+    L20_2 = A3_2
+    L19_2 = L19_2 .. L20_2
+    L18_2(L19_2)
     return
   end
-  L20_2 = L15_2.npcs
-  if L20_2 == nil then
-    L21_2 = print
-    L22_2 = "try to create npc"
-    L23_2 = A3_2
-    L24_2 = " on "
-    L25_2 = L16_2
-    L26_2 = "but npcs not in data"
-    L22_2 = L22_2 .. L23_2 .. L24_2 .. L25_2 .. L26_2
-    L21_2(L22_2)
-    return
-  end
+  L18_2 = 70900002
+  L19_2 = A0_2.shareData
+  L20_2 = L19_2
+  L19_2 = L19_2.GetQuestData
+  L21_2 = A2_2
+  L19_2 = L19_2(L20_2, L21_2)
+  L20_2 = A0_2.mainQuestID
   L21_2 = nil
-  L22_2 = #L20_2
-  L23_2 = 1
-  L24_2 = L22_2
-  L25_2 = 1
-  for L26_2 = L23_2, L24_2, L25_2 do
-    L27_2 = L20_2[L26_2]
-    if L27_2 ~= nil then
+  L22_2 = nil
+  L23_2 = nil
+  if L19_2 == nil then
+    L24_2 = print
+    L25_2 = "try to create npc"
+    L26_2 = A3_2
+    L27_2 = " on "
+    L28_2 = L20_2
+    L29_2 = "but data not exist"
+    L25_2 = L25_2 .. L26_2 .. L27_2 .. L28_2 .. L29_2
+    L24_2(L25_2)
+    return
+  end
+  L24_2 = L19_2.npcs
+  if L24_2 == nil then
+    L25_2 = print
+    L26_2 = "try to create npc"
+    L27_2 = A3_2
+    L28_2 = " on "
+    L29_2 = L20_2
+    L30_2 = "but npcs not in data"
+    L26_2 = L26_2 .. L27_2 .. L28_2 .. L29_2 .. L30_2
+    L25_2(L26_2)
+    return
+  end
+  L25_2 = nil
+  L26_2 = #L24_2
+  L27_2 = 1
+  L28_2 = L26_2
+  L29_2 = 1
+  for L30_2 = L27_2, L28_2, L29_2 do
+    L31_2 = L24_2[L30_2]
+    if L31_2 ~= nil then
       if A3_2 ~= nil then
-        L28_2 = L27_2.id
-        if L28_2 == A3_2 then
-          L21_2 = L27_2
+        L32_2 = L31_2.id
+        if L32_2 == A3_2 then
+          L25_2 = L31_2
           break
         end
       else
-        L21_2 = L27_2
+        L25_2 = L31_2
         break
       end
     end
   end
-  if L21_2 == nil then
+  if L25_2 == nil then
     return
   end
-  L23_2 = NG_HSOD_DEBUG
-  if L23_2 then
-    L23_2 = assert
-    L24_2 = L21_2.id
-    L24_2 = L24_2 ~= nil
-    L25_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
-    L23_2(L24_2, L25_2)
-    L23_2 = assert
-    L24_2 = L21_2.alias
-    L24_2 = L24_2 ~= nil
-    L25_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
-    L23_2(L24_2, L25_2)
-    L23_2 = assert
-    L24_2 = L21_2.script
-    L24_2 = L24_2 ~= nil
-    L25_2 = "CreateQuestNpcWithTrigger : npc script is null in shareconfig"
-    L23_2(L24_2, L25_2)
-    L23_2 = assert
-    L24_2 = L21_2.pos
-    L24_2 = L24_2 ~= nil
-    L25_2 = "CreateQuestNpcWithTrigger : npc pos is null in shareconfig or param"
-    L23_2(L24_2, L25_2)
+  L27_2 = NG_HSOD_DEBUG
+  if L27_2 then
+    L27_2 = assert
+    L28_2 = L25_2.id
+    L28_2 = L28_2 ~= nil
+    L29_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
+    L27_2(L28_2, L29_2)
+    L27_2 = assert
+    L28_2 = L25_2.alias
+    L28_2 = L28_2 ~= nil
+    L29_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
+    L27_2(L28_2, L29_2)
+    L27_2 = assert
+    L28_2 = L25_2.script
+    L28_2 = L28_2 ~= nil
+    L29_2 = "CreateQuestNpcWithTrigger : npc script is null in shareconfig"
+    L27_2(L28_2, L29_2)
+    L27_2 = assert
+    L28_2 = L25_2.pos
+    L28_2 = L28_2 ~= nil
+    L29_2 = "CreateQuestNpcWithTrigger : npc pos is null in shareconfig or param"
+    L27_2(L28_2, L29_2)
   end
-  L17_2 = L21_2.scene_id
-  if L17_2 == nil then
-    L23_2 = sceneData
-    L17_2 = L23_2.DefaultSceneID
-  elseif L17_2 == 0 then
-    L23_2 = sceneData
-    L23_2 = L23_2.currSceneID
-    if L23_2 ~= -1 then
-      L23_2 = sceneData
-      L17_2 = L23_2.currSceneID
+  L21_2 = L25_2.scene_id
+  if L21_2 == nil then
+    L27_2 = sceneData
+    L21_2 = L27_2.DefaultSceneID
+  elseif L21_2 == 0 then
+    L27_2 = sceneData
+    L27_2 = L27_2.currSceneID
+    if L27_2 ~= -1 then
+      L27_2 = sceneData
+      L21_2 = L27_2.currSceneID
     end
   end
-  L23_2 = sceneData
-  L24_2 = L23_2
-  L23_2 = L23_2.GetDummyPoint
-  L25_2 = L17_2
-  L26_2 = L21_2.pos
-  L23_2 = L23_2(L24_2, L25_2, L26_2)
-  L18_2 = L23_2.pos
-  L23_2 = sceneData
-  L24_2 = L23_2
-  L23_2 = L23_2.GetDummyPoint
-  L25_2 = L17_2
-  L26_2 = L21_2.pos
-  L23_2 = L23_2(L24_2, L25_2, L26_2)
-  L19_2 = L23_2.rot
-  if A11_2 == nil then
-    A11_2 = 2
+  L27_2 = sceneData
+  L28_2 = L27_2
+  L27_2 = L27_2.GetDummyPoint
+  L29_2 = L21_2
+  L30_2 = L25_2.pos
+  L27_2 = L27_2(L28_2, L29_2, L30_2)
+  L22_2 = L27_2.pos
+  L27_2 = sceneData
+  L28_2 = L27_2
+  L27_2 = L27_2.GetDummyPoint
+  L29_2 = L21_2
+  L30_2 = L25_2.pos
+  L27_2 = L27_2(L28_2, L29_2, L30_2)
+  L23_2 = L27_2.rot
+  if A12_2 == nil then
+    A12_2 = 2
   end
-  if A8_2 == true then
-    L24_2 = A0_2
-    L23_2 = A0_2.NotifyToNpcById
-    L25_2 = A3_2
-    L26_2 = 0
-    L27_2 = 1
-    L28_2 = true
+  if A9_2 == true then
+    L28_2 = A0_2
+    L27_2 = A0_2.NotifyToNpcById
+    L29_2 = A3_2
+    L30_2 = 0
+    L31_2 = 1
+    L32_2 = true
+    L33_2 = {}
+    L34_2 = NpcNotifyPriority
+    L34_2 = L34_2.Max
+    L33_2[1] = L34_2
+    L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2)
+  end
+  L27_2 = false
+  if A15_2 ~= nil then
+    L27_2 = A15_2
+  end
+  L28_2 = {}
+  L28_2.dist = A5_2
+  L28_2.outDist = A6_2
+  L29_2 = {}
+  L29_2.x = 0
+  L29_2.y = 0.8
+  L29_2.z = 0
+  L28_2.offset = L29_2
+  L28_2.questID = A2_2
+  L29_2 = A0_2.clientData
+  L29_2 = L29_2.ActorAlias
+  L28_2.actorAlias = L29_2
+  L28_2.npcID = A3_2
+  L28_2.npcIndex = A4_2
+  L29_2 = L25_2.alias
+  L28_2.npcAlias = L29_2
+  L28_2.durationToBlack = A11_2
+  L28_2.durationKeepBlack = A12_2
+  L28_2.durationFromBlack = A13_2
+  L28_2.interHighPriority = A8_2
+  L28_2.hideDailyNpc = A9_2
+  L28_2.useQuestMode = A10_2
+  L28_2.mainQuestID = L20_2
+  L28_2.targetVehicleFeatureTagList = A14_2
+  L28_2.hasVehiclePreCondition = L27_2
+  L28_2.hintTextMapId = A16_2
+  L29_2 = actorMgr
+  L29_2 = L29_2.GadgetTriggerDic
+  L29_2[L17_2] = L28_2
+  L29_2 = A0_2.NpcTriggerDataDic
+  if nil == L29_2 then
     L29_2 = {}
-    L30_2 = NpcNotifyPriority
-    L30_2 = L30_2.Max
-    L29_2[1] = L30_2
-    L23_2(L24_2, L25_2, L26_2, L27_2, L28_2, L29_2)
+    A0_2.NpcTriggerDataDic = L29_2
   end
-  L23_2 = {}
-  L23_2.dist = A5_2
-  L24_2 = {}
-  L24_2.x = 0
-  L24_2.y = 0.8
-  L24_2.z = 0
-  L23_2.offset = L24_2
-  L23_2.questID = A2_2
-  L24_2 = A0_2.clientData
-  L24_2 = L24_2.ActorAlias
-  L23_2.actorAlias = L24_2
-  L23_2.npcID = A3_2
-  L23_2.npcIndex = A4_2
-  L24_2 = L21_2.alias
-  L23_2.npcAlias = L24_2
-  L23_2.durationToBlack = A10_2
-  L23_2.durationKeepBlack = A11_2
-  L23_2.durationFromBlack = A12_2
-  L23_2.interHighPriority = A7_2
-  L23_2.hideDailyNpc = A8_2
-  L23_2.useQuestMode = A9_2
-  L23_2.mainQuestID = L16_2
-  L24_2 = actorMgr
-  L24_2 = L24_2.GadgetTriggerDic
-  L24_2[L13_2] = L23_2
-  L24_2 = A0_2.NpcTriggerDataDic
-  if nil == L24_2 then
-    L24_2 = {}
-    A0_2.NpcTriggerDataDic = L24_2
-  end
-  L24_2 = A0_2.NpcTriggerDataDic
-  L24_2[L13_2] = A2_2
-  L24_2 = actorMgr
-  L25_2 = L24_2
-  L24_2 = L24_2.CreateActorWithPos
-  L26_2 = L13_2
-  L27_2 = A6_2
-  L28_2 = L14_2
-  L29_2 = 0
-  L30_2 = L18_2
-  L31_2 = L19_2
-  L32_2 = true
-  L33_2 = false
-  L34_2 = L17_2
-  L24_2 = L24_2(L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2)
-  if L24_2 == nil then
-    L25_2 = print
-    L26_2 = "try to create trigger, failed"
-    L27_2 = A3_2
-    L28_2 = " on "
-    L29_2 = L16_2
-    L26_2 = L26_2 .. L27_2 .. L28_2 .. L29_2
-    L25_2(L26_2)
-    if A8_2 == true then
-      L26_2 = A0_2
-      L25_2 = A0_2.NotifyToNpcById
-      L27_2 = A3_2
-      L28_2 = 0
-      L29_2 = 0
-      L30_2 = true
-      L31_2 = {}
-      L32_2 = NpcNotifyPriority
-      L32_2 = L32_2.Max
-      L31_2[1] = L32_2
-      L25_2(L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
+  L29_2 = A0_2.NpcTriggerDataDic
+  L29_2[L17_2] = A2_2
+  L29_2 = actorMgr
+  L30_2 = L29_2
+  L29_2 = L29_2.CreateActorWithPos
+  L31_2 = L17_2
+  L32_2 = A7_2
+  L33_2 = L18_2
+  L34_2 = 0
+  L35_2 = L22_2
+  L36_2 = L23_2
+  L37_2 = true
+  L38_2 = false
+  L39_2 = L21_2
+  L29_2 = L29_2(L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2)
+  if L29_2 == nil then
+    L30_2 = print
+    L31_2 = "try to create trigger, failed"
+    L32_2 = A3_2
+    L33_2 = " on "
+    L34_2 = L20_2
+    L31_2 = L31_2 .. L32_2 .. L33_2 .. L34_2
+    L30_2(L31_2)
+    if A9_2 == true then
+      L31_2 = A0_2
+      L30_2 = A0_2.NotifyToNpcById
+      L32_2 = A3_2
+      L33_2 = 0
+      L34_2 = 0
+      L35_2 = true
+      L36_2 = {}
+      L37_2 = NpcNotifyPriority
+      L37_2 = L37_2.Max
+      L36_2[1] = L37_2
+      L30_2(L31_2, L32_2, L33_2, L34_2, L35_2, L36_2)
     end
-    L25_2 = actorMgr
-    L25_2 = L25_2.GadgetTriggerDic
-    L25_2[L13_2] = nil
-    L25_2 = A0_2.NpcTriggerDataDic
-    L25_2[L13_2] = nil
+    L30_2 = actorMgr
+    L30_2 = L30_2.GadgetTriggerDic
+    L30_2[L17_2] = nil
+    L30_2 = A0_2.NpcTriggerDataDic
+    L30_2[L17_2] = nil
     return
   end
 end
@@ -2210,6 +2341,29 @@ function L5_1(A0_2, A1_2)
   L3_2(L4_2, L5_2)
 end
 L1_1.DestroyNpcTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2
+  if A2_2 == true then
+    L3_2 = actorMgr
+    L3_2 = L3_2.GadgetTriggerDic
+    L3_2 = L3_2[A1_2]
+    if L3_2 ~= nil then
+      L5_2 = A0_2
+      L4_2 = A0_2.GetRealAlias
+      L6_2 = L3_2.npcAlias
+      L4_2 = L4_2(L5_2, L6_2)
+      L6_2 = A0_2
+      L5_2 = A0_2.DestroyQuestNpcActorByAlias
+      L7_2 = L4_2
+      L5_2(L6_2, L7_2)
+    end
+  end
+  L4_2 = A0_2
+  L3_2 = A0_2.DestroyNpcTrigger
+  L5_2 = A1_2
+  L3_2(L4_2, L5_2)
+end
+L1_1.DestroyRepeatableNpcShowDisappearTrigger = L5_1
 function L5_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
   L2_2 = A0_2.NpcTriggerDataDic
@@ -4354,6 +4508,18 @@ function L6_1(A0_2, A1_2, A2_2, A3_2)
   return L6_2
 end
 L1_1.GetTransmitCfgByDummyPoint = L6_1
+function L6_1(A0_2, A1_2)
+  local L2_2, L3_2
+  if nil == A1_2 then
+    L2_2 = false
+    return L2_2
+  end
+  L2_2 = actorUtils
+  L2_2 = L2_2.TryStartTribalAutoTrack
+  L3_2 = A1_2.QuestConfigId
+  return L2_2(L3_2)
+end
+L1_1.TryStartTribalAutoTrack = L6_1
 function L6_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   if A1_2 == nil then
@@ -6518,4 +6684,12 @@ function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L5_2(L6_2, L7_2, L8_2, L9_2)
 end
 L1_1.UnbindQuestNpcFromPlatform = L6_1
+function L6_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = actorUtils
+  L1_2 = L1_2.TryVehicleOffDisableEff
+  L2_2 = 30010
+  L1_2(L2_2)
+end
+L1_1.NatsaurusVehicleOff = L6_1
 return L1_1

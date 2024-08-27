@@ -62,6 +62,23 @@ function L2_1(A0_2)
     L8_2 = A0_2.TriggerOut
     L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   end
+  L2_2 = L1_2.hasVehiclePreCondition
+  if L2_2 == true then
+    L2_2 = L1_2.targetVehicleFeatureTagList
+    if L2_2 ~= nil then
+      L3_2 = A0_2
+      L2_2 = A0_2.SetTriggerConditionInVehicle
+      L4_2 = L1_2.targetVehicleFeatureTagList
+      L2_2(L3_2, L4_2)
+      L2_2 = L1_2.hintTextMapId
+      if L2_2 ~= nil then
+        L3_2 = A0_2
+        L2_2 = A0_2.SetTriggerInHintTextMapIdOnCond
+        L4_2 = L1_2.hintTextMapId
+        L2_2(L3_2, L4_2)
+      end
+    end
+  end
 end
 L1_1.OnPostComponentPrepare = L2_1
 function L2_1(A0_2)

@@ -27,6 +27,7 @@ L1_1.bornPos = nil
 L1_1.bornDir = nil
 L1_1.bornShoesOffset = nil
 L1_1.isOrphan = false
+L1_1.placeList = nil
 L1_1.platformInfo = nil
 L1_1.inWater = false
 L1_1.createSource = 0
@@ -487,6 +488,20 @@ function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
 L1_1.SetNpcAnimator = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2
+  if A3_2 == nil then
+    A3_2 = true
+  end
+  L4_2 = A0_2.uActor
+  L5_2 = L4_2
+  L4_2 = L4_2.SetAnimatorLayerWeight
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L8_2 = A3_2
+  L4_2(L5_2, L6_2, L7_2, L8_2)
+end
+L1_1.SetAnimatorLayerWeight = L3_1
 function L3_1(A0_2)
   local L1_2
 end

@@ -198,6 +198,27 @@ function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
   L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2)
 end
 L1_1.AddComponentTrigger = L3_1
+function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
+  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
+  if A10_2 == nil then
+    A10_2 = 0
+  end
+  L11_2 = A0_2.uActor
+  L12_2 = L11_2
+  L11_2 = L11_2.AddSimpleTriggerWithDiffDistance
+  L13_2 = A10_2
+  L14_2 = A1_2
+  L15_2 = A2_2
+  L16_2 = A3_2
+  L17_2 = A4_2
+  L18_2 = A5_2
+  L19_2 = A6_2
+  L20_2 = A7_2
+  L21_2 = A8_2
+  L22_2 = A9_2
+  L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
+end
+L1_1.AddSimpleTriggerWithDiffDistance = L3_1
 function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
   local L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2
   if A4_2 == nil then
@@ -319,6 +340,24 @@ function L3_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
   L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
 end
 L1_1.AddNpcCylinderShapeTrigger = L3_1
+function L3_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SetTriggerConditionInVehicle
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+L1_1.SetTriggerConditionInVehicle = L3_1
+function L3_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SetTriggerInHintTextMapIdOnCond
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+L1_1.SetTriggerInHintTextMapIdOnCond = L3_1
 function L3_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   if A2_2 == nil then

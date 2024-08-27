@@ -41,6 +41,8 @@ function L9_1(A0_2)
   L1_2["7201301"] = L2_2
   L2_2 = A0_2.OnSubStart7201302
   L1_2["7201302"] = L2_2
+  L2_2 = A0_2.OnSubStart7201303
+  L1_2["7201303"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -51,6 +53,8 @@ function L9_1(A0_2)
   L1_2["7201301"] = L2_2
   L2_2 = A0_2.OnSubFinish7201302
   L1_2["7201302"] = L2_2
+  L2_2 = A0_2.OnSubFinish7201303
+  L1_2["7201303"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -96,18 +100,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart7201301"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc1036Data
-  L5_2 = L5_2.id
-  L6_2 = 1
-  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart7201301 = L9_1
 function L9_1(A0_2, A1_2)
@@ -125,7 +121,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.EnterSceneLookCameraByParam
-  L4_2 = L8_1.CameraParams
+  L4_2 = nil
   L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7201302 = L9_1
@@ -136,4 +132,18 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish7201302 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7201303"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7201303 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7201303"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7201303 = L9_1
 return L1_1

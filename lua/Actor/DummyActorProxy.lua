@@ -138,6 +138,19 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L0_1.SetNpcAnimator = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2
+  if A3_2 == false then
+    return
+  end
+  L4_2 = actorUtils
+  L4_2 = L4_2.SetAnimatorLayerWeight
+  L5_2 = A0_2.alias
+  L6_2 = A1_2
+  L7_2 = A2_2
+  L4_2(L5_2, L6_2, L7_2)
+end
+L0_1.SetAnimatorLayerWeight = L1_1
 function L1_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   if A2_2 == nil then
@@ -892,6 +905,81 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
   L4_2(L5_2, L6_2, L7_2)
 end
 L0_1.VeryImportantWarning = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2
+  L10_2 = NG_HSOD_DEBUG
+  if L10_2 then
+    L10_2 = print
+    L11_2 = "BaseActorProxy:v->ShowBlackScreen "
+    L12_2 = tostring
+    L13_2 = A0_2.alias
+    L12_2 = L12_2(L13_2)
+    L11_2 = L11_2 .. L12_2
+    L10_2(L11_2)
+    L11_2 = A0_2
+    L10_2 = A0_2.PrintTraceback
+    L10_2(L11_2)
+  end
+  L10_2 = globalActor
+  L11_2 = L10_2
+  L10_2 = L10_2.TransmitPlayerToArcLight
+  L12_2 = A1_2
+  L13_2 = A2_2
+  L14_2 = A3_2
+  L15_2 = A4_2
+  L16_2 = A5_2
+  L17_2 = A6_2
+  L18_2 = A7_2
+  L19_2 = A8_2
+  L20_2 = A9_2
+  L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2)
+end
+L0_1.TransmitPlayerToArcLight = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L1_2 = NG_HSOD_DEBUG
+  if L1_2 then
+    L2_2 = A0_2
+    L1_2 = A0_2.LogError
+    L3_2 = "DummyActorProxy:SetPlayerNpcNoneEnergyType "
+    L4_2 = tostring
+    L5_2 = A0_2.alias
+    L4_2 = L4_2(L5_2)
+    L3_2 = L3_2 .. L4_2
+    L1_2(L2_2, L3_2)
+  end
+end
+L0_1.SetPlayerNpcNoneEnergyType = L1_1
+function L1_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2
+  L1_2 = NG_HSOD_DEBUG
+  if L1_2 then
+    L2_2 = A0_2
+    L1_2 = A0_2.LogError
+    L3_2 = "DummyActorProxy:SetPlayerNpcEnergy "
+    L4_2 = tostring
+    L5_2 = A0_2.alias
+    L4_2 = L4_2(L5_2)
+    L3_2 = L3_2 .. L4_2
+    L1_2(L2_2, L3_2)
+  end
+end
+L0_1.SetPlayerNpcEnergy = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = NG_HSOD_DEBUG
+  if L2_2 then
+    L3_2 = A0_2
+    L2_2 = A0_2.LogError
+    L4_2 = "DummyActorProxy:SetPlayerNpcEnergyType "
+    L5_2 = tostring
+    L6_2 = A0_2.alias
+    L5_2 = L5_2(L6_2)
+    L4_2 = L4_2 .. L5_2
+    L2_2(L3_2, L4_2)
+  end
+end
+L0_1.SetPlayerNpcEnergyType = L1_1
 function L1_1(A0_2)
   local L1_2
   L1_2 = 0
@@ -1850,36 +1938,41 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.ExitSneakMode = L1_1
-function L1_1(A0_2)
+L1_1 = "EnterBomberMode"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.EnterBomberMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ExitBomberMode"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.ExitBomberMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "EnterFindCatMode"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.EnterFindCatMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "ExitFindCatMode"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.ExitFindCatMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "TriggerNpcSpeechBubble"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.TriggerNpcSpeechBubble = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "ClearNpcSpeechBubble"
 function L2_1(A0_2)
   local L1_2

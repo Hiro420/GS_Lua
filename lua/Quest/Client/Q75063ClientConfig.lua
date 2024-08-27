@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1
+L0_1 = {}
+L0_1.MainID = 75063
+L0_1.ActorAlias = "75063"
+L0_1.IgnoreDoReturnNpcForDaily = true
+L1_1 = {}
+L1_1.q7506301 = 7506301
+L1_1.q7506302 = 7506302
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = {}
+L3_1.x = -2257.629
+L3_1.y = 44.626
+L3_1.z = 8848.484
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 9.265
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L1_1.TPos_Q75063Trigger = L2_1
+L0_1.Points = L1_1
+L1_1 = {}
+L2_1 = {}
+L3_1 = 750630001
+L2_1[1] = L3_1
+L1_1.DialogsId = L2_1
+L0_1.Datas = L1_1
+return L0_1

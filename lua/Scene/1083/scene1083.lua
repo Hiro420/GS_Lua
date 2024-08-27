@@ -31,6 +31,7 @@ L2_1.x = 0.0
 L2_1.y = 0.0
 L2_1.z = 0.0
 L1_1.safe_rot = L2_1
+L1_1.second_area_id = 3519
 L0_1.room_safe_pos = L1_1
 L1_1 = {}
 L1_1.x = -1000.0

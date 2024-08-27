@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = {}
+L0_1.MainID = 25036
+L0_1.ActorAlias = "25036"
+L1_1 = {}
+L1_1.q2503601 = 2503601
+L1_1.q2503602 = 2503602
+L1_1.q2503603 = 2503603
+L1_1.q2503604 = 2503604
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.id = 6019
+L2_1.alias = "Npc6019"
+L2_1.script = "Actor/Npc/NpcFSMBehaviour"
+L3_1 = {}
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.rot = L4_1
+L2_1.point = L3_1
+L1_1.Npc6019 = L2_1
+L0_1.Npcs = L1_1
+return L0_1

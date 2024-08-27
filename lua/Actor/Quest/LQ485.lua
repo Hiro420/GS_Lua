@@ -449,25 +449,21 @@ function L14_1(A0_2, A1_2)
 end
 L1_1.OnSubStart48501 = L14_1
 function L14_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
   L3_2 = "48511 start:..."
   L2_2(L3_2)
   L3_2 = A0_2
-  L2_2 = A0_2.CreateQuestNpcCreateTask
-  L4_2 = {}
-  L5_2 = L5_1.Ambor
-  L4_2[1] = L5_2
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.ShowBlackScreen
-  L5_2 = 0.5
-  L6_2 = 1.0
+  L2_2 = A0_2.CreateQuestNpcWithTriggerBlackEx
+  L4_2 = "Q48511N1002Trigger"
+  L5_2 = 48511
+  L6_2 = L5_1.AmborID
   L7_2 = 0
-  L8_2 = A0_2.CreateAmbor1
-  L9_2 = A0_2.RequestAmbor
-  L10_2 = L2_2
-  L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L8_2 = 20
+  L9_2 = 0
+  L10_2 = 2
+  L11_2 = 2
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
 L1_1.OnSubStart48511 = L14_1
 function L14_1(A0_2)

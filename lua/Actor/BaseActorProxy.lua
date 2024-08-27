@@ -1656,6 +1656,15 @@ function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
   L3_2 = L2_2
+  L2_2 = L2_2.CancelNavigation
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+L0_1.CancelNavigation = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
   L2_2 = L2_2.TryShowMoveToggle
   L4_2 = A1_2
   L2_2(L3_2, L4_2)
@@ -2320,6 +2329,36 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   return L8_2(L9_2, L10_2)
 end
 L0_1.TransmitPlayerUseCustomizedTplId = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
+  local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2
+  L10_2 = NG_HSOD_DEBUG
+  if L10_2 then
+    L10_2 = print
+    L11_2 = "BaseActorProxy:v->ShowBlackScreen "
+    L12_2 = tostring
+    L13_2 = A0_2.alias
+    L12_2 = L12_2(L13_2)
+    L11_2 = L11_2 .. L12_2
+    L10_2(L11_2)
+    L11_2 = A0_2
+    L10_2 = A0_2.PrintTraceback
+    L10_2(L11_2)
+  end
+  L10_2 = A0_2.uActor
+  L11_2 = L10_2
+  L10_2 = L10_2.TransmitPlayerToArcLight
+  L12_2 = A1_2
+  L13_2 = A2_2
+  L14_2 = A3_2
+  L15_2 = A4_2
+  L16_2 = A5_2
+  L17_2 = A6_2
+  L18_2 = A7_2
+  L19_2 = A8_2
+  L20_2 = A9_2
+  L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2)
+end
+L0_1.TransmitPlayerToArcLight = L1_1
 function L1_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
@@ -4112,22 +4151,24 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L0_1.EnterCombatSneakMode = L1_1
-function L1_1(A0_2)
+L1_1 = "ExitCombatSneakMode"
+function L2_1(A0_2)
   local L1_2, L2_2
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.ExitCombatSneakMode
   L1_2(L2_2)
 end
-L0_1.ExitCombatSneakMode = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "EnterBomberMode"
+function L2_1(A0_2)
   local L1_2, L2_2
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.EnterBomberMode
   L1_2(L2_2)
 end
-L0_1.EnterBomberMode = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "ExitBomberMode"
 function L2_1(A0_2)
   local L1_2, L2_2

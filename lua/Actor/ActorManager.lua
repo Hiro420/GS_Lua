@@ -323,7 +323,7 @@ function L1_1(A0_2, A1_2)
 end
 L0_1.CreateLocalActorWithData = L1_1
 function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2, L42_2
   L3_2 = A1_2.sceneID
   if L3_2 == nil then
     L4_2 = sceneData
@@ -377,399 +377,402 @@ function L1_1(A0_2, A1_2, A2_2)
     L18_2 = L18_2(L19_2)
   end
   L19_2 = L18_2.isOrphan
-  L20_2 = false
-  L21_2 = L18_2.platformInfo
-  if L21_2 ~= nil then
-    L21_2 = L18_2.platformInfo
-    L21_2 = L21_2.groupId
-    L20_2 = 0 < L21_2
+  L20_2 = L18_2.placeList
+  L21_2 = false
+  L22_2 = L18_2.platformInfo
+  if L22_2 ~= nil then
+    L22_2 = L18_2.platformInfo
+    L22_2 = L22_2.groupId
+    L21_2 = 0 < L22_2
   end
-  L21_2 = L18_2.inWater
+  L22_2 = L18_2.inWater
   if L17_2 then
-    L22_2 = actorUtils
-    L22_2 = L22_2.ClearCacheCmdAll
-    L23_2 = L6_2
-    L22_2(L23_2)
+    L23_2 = actorUtils
+    L23_2 = L23_2.ClearCacheCmdAll
+    L24_2 = L6_2
+    L23_2(L24_2)
   end
-  L22_2 = sceneData
-  L22_2 = L22_2.currSceneID
-  if L3_2 ~= L22_2 then
-    L22_2 = sceneData
-    L22_2 = L22_2.currSceneID
-    if L22_2 ~= 1001 then
+  L23_2 = sceneData
+  L23_2 = L23_2.currSceneID
+  if L3_2 ~= L23_2 then
+    L23_2 = sceneData
+    L23_2 = L23_2.currSceneID
+    if L23_2 ~= 1001 then
       if A2_2 ~= true and L13_2 then
-        L22_2 = sceneData
-        L22_2 = L22_2.currSceneID
-        if L22_2 ~= -1 then
-          L22_2 = actorUtils
-          L22_2 = L22_2.NotifyActorPreCreate
-          L23_2 = L6_2
-          L22_2(L23_2)
-          L22_2 = NG_HSOD_DEBUG
-          if L22_2 then
-            L22_2 = util
-            L22_2 = L22_2.unrequire
-            L23_2 = L7_2
-            L22_2(L23_2)
-          end
-          L22_2 = require
-          L23_2 = L7_2
-          L22_2 = L22_2(L23_2)
+        L23_2 = sceneData
+        L23_2 = L23_2.currSceneID
+        if L23_2 ~= -1 then
           L23_2 = actorUtils
-          L23_2 = L23_2.NotifyActorCreate
-          L24_2 = L22_2.actorType
-          L25_2 = L6_2
-          L26_2 = L7_2
-          L27_2 = L8_2
-          L28_2 = L10_2
-          L29_2 = L11_2
-          L30_2 = L12_2
-          L31_2 = L3_2
-          L32_2 = L4_2
-          L33_2 = L5_2
-          L34_2 = 0
+          L23_2 = L23_2.NotifyActorPreCreate
+          L24_2 = L6_2
+          L23_2(L24_2)
+          L23_2 = NG_HSOD_DEBUG
+          if L23_2 then
+            L23_2 = util
+            L23_2 = L23_2.unrequire
+            L24_2 = L7_2
+            L23_2(L24_2)
+          end
+          L23_2 = require
+          L24_2 = L7_2
+          L23_2 = L23_2(L24_2)
+          L24_2 = actorUtils
+          L24_2 = L24_2.NotifyActorCreate
+          L25_2 = L23_2.actorType
+          L26_2 = L6_2
+          L27_2 = L7_2
+          L28_2 = L8_2
+          L29_2 = L10_2
+          L30_2 = L11_2
+          L31_2 = L12_2
+          L32_2 = L3_2
+          L33_2 = L4_2
+          L34_2 = L5_2
           L35_2 = 0
           L36_2 = 0
-          L37_2 = L18_2
-          L23_2(L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2)
+          L37_2 = 0
+          L38_2 = L18_2
+          L24_2(L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2)
         end
       end
-      L22_2 = A0_2.dummyActor
-      L22_2.alias = L6_2
-      L22_2 = A0_2.dummyActor
-      return L22_2
+      L23_2 = A0_2.dummyActor
+      L23_2.alias = L6_2
+      L23_2 = A0_2.dummyActor
+      return L23_2
     end
   end
-  L22_2 = A1_2.noPerform
-  if L22_2 == nil then
-    L22_2 = true
+  L23_2 = A1_2.noPerform
+  if L23_2 == nil then
+    L23_2 = true
   end
-  L23_2 = A1_2.ditherShow
-  L23_2 = L23_2 == true
-  L24_2 = A1_2.ditherDuration
-  L25_2 = actorUtils
-  L25_2 = L25_2.TrySwitchNpcActor
-  L26_2 = L8_2
-  L27_2 = L5_2
-  L28_2 = L6_2
-  L25_2 = L25_2(L26_2, L27_2, L28_2)
-  if L25_2 ~= nil then
-    L26_2 = L0_1.GetActorInternal
-    L27_2 = A0_2
-    L28_2 = L25_2
-    L26_2 = L26_2(L27_2, L28_2)
-    L27_2 = L0_1.ClearActor
+  L24_2 = A1_2.ditherShow
+  L24_2 = L24_2 == true
+  L25_2 = A1_2.ditherDuration
+  L26_2 = actorUtils
+  L26_2 = L26_2.TrySwitchNpcActor
+  L27_2 = L8_2
+  L28_2 = L5_2
+  L29_2 = L6_2
+  L26_2 = L26_2(L27_2, L28_2, L29_2)
+  if L26_2 ~= nil then
+    L27_2 = L0_1.GetActorInternal
     L28_2 = A0_2
-    L29_2 = L25_2
-    L27_2(L28_2, L29_2)
-    if L26_2 ~= nil then
-      L26_2.alias = L6_2
-      L27_2 = L0_1.ActorDic
-      L27_2[L6_2] = L26_2
+    L29_2 = L26_2
+    L27_2 = L27_2(L28_2, L29_2)
+    L28_2 = L0_1.ClearActor
+    L29_2 = A0_2
+    L30_2 = L26_2
+    L28_2(L29_2, L30_2)
+    if L27_2 ~= nil then
+      L27_2.alias = L6_2
+      L28_2 = L0_1.ActorDic
+      L28_2[L6_2] = L27_2
     end
   end
-  L26_2 = L0_1.GetActorInternal
-  L27_2 = A0_2
-  L28_2 = L6_2
-  L26_2 = L26_2(L27_2, L28_2)
-  if L26_2 ~= nil then
-    L28_2 = L26_2
-    L27_2 = L26_2.IsValid
-    L27_2 = L27_2(L28_2)
-    if L27_2 ~= true then
-      L27_2 = L0_1.ClearActor
-      L28_2 = A0_2
-      L29_2 = L6_2
-      L27_2(L28_2, L29_2)
-      L26_2 = nil
+  L27_2 = L0_1.GetActorInternal
+  L28_2 = A0_2
+  L29_2 = L6_2
+  L27_2 = L27_2(L28_2, L29_2)
+  if L27_2 ~= nil then
+    L29_2 = L27_2
+    L28_2 = L27_2.IsValid
+    L28_2 = L28_2(L29_2)
+    if L28_2 ~= true then
+      L28_2 = L0_1.ClearActor
+      L29_2 = A0_2
+      L30_2 = L6_2
+      L28_2(L29_2, L30_2)
+      L27_2 = nil
     end
   end
-  if L26_2 ~= nil then
-    L27_2 = L26_2.defaultAlias
-    L28_2 = L0_1.tempDefaultAlias
-    if L27_2 == L28_2 then
-      L27_2 = NG_HSOD_DEBUG
-      if L27_2 then
-        L27_2 = util
-        L27_2 = L27_2.unrequire
-        L28_2 = L7_2
-        L27_2(L28_2)
-      end
-      L27_2 = require
-      L28_2 = L7_2
-      L27_2 = L27_2(L28_2)
-      L28_2 = L27_2.defaultAlias
-      L29_2 = L26_2.defaultAlias
-      if L28_2 ~= L29_2 then
-        L28_2 = L0_1.ClearActor
-        L29_2 = A0_2
-        L30_2 = L6_2
-        L28_2(L29_2, L30_2)
-        L26_2 = nil
-      end
-    end
-  end
-  if L26_2 == nil then
-    L27_2 = actorUtils
-    L27_2 = L27_2.NotifyActorPreCreate
-    L28_2 = L6_2
-    L27_2(L28_2)
-    L27_2 = NG_HSOD_DEBUG
-    if L27_2 then
-      L27_2 = util
-      L27_2 = L27_2.unrequire
-      L28_2 = L7_2
-      L27_2(L28_2)
-    end
-    L27_2 = require
-    L28_2 = L7_2
-    L27_2 = L27_2(L28_2)
-    if L27_2 == nil then
+  if L27_2 ~= nil then
+    L28_2 = L27_2.defaultAlias
+    L29_2 = L0_1.tempDefaultAlias
+    if L28_2 == L29_2 then
       L28_2 = NG_HSOD_DEBUG
       if L28_2 then
-        L28_2 = actorUtils
-        L28_2 = L28_2.LogError
-        L29_2 = "[Lua] quest:"
-        L30_2 = tostring
-        L31_2 = mainID
-        L30_2 = L30_2(L31_2)
-        L31_2 = " check metaPath of "
-        L32_2 = tostring
-        L33_2 = L6_2
-        L32_2 = L32_2(L33_2)
-        L29_2 = L29_2 .. L30_2 .. L31_2 .. L32_2
+        L28_2 = util
+        L28_2 = L28_2.unrequire
+        L29_2 = L7_2
         L28_2(L29_2)
       end
-      return L26_2
-    end
-    L29_2 = L27_2
-    L28_2 = L27_2.new
-    L28_2 = L28_2(L29_2)
-    L26_2 = L28_2
-    L26_2.configID = L8_2
-    L26_2.dataIndex = L9_2
-    L26_2.bornSceneID = L3_2
-    L26_2.bornRoomID = L4_2
-    L26_2.bornQuestID = L5_2
-    L26_2.bornPos = L10_2
-    L26_2.bornDir = L11_2
-    L26_2.bornShoesOffset = L12_2
-    L26_2.isOrphan = L19_2
-    L28_2 = L18_2.platformInfo
-    L26_2.platformInfo = L28_2
-    L26_2.inWater = L21_2
-    L28_2 = L18_2.createSource
-    L26_2.createSource = L28_2
-    L28_2 = L18_2.createSourceId
-    L26_2.createSourceId = L28_2
-    L26_2.isNetwork = L13_2
-    L26_2.isAutoStart = L14_2
-    L26_2.actorData = A1_2
-    L26_2.dontDestroyOnClear = L16_2
-    L26_2.isLocal = A2_2
-    L29_2 = L26_2
-    L28_2 = L26_2.PreGetAlias
-    L28_2 = L28_2(L29_2)
-    L30_2 = L26_2
-    L29_2 = L26_2.OnPreInit
-    L29_2(L30_2)
-    if L6_2 == nil or L6_2 == "" then
-      if L28_2 ~= nil then
-        L6_2 = L28_2
-      else
-        L6_2 = L26_2.defaultAlias
+      L28_2 = require
+      L29_2 = L7_2
+      L28_2 = L28_2(L29_2)
+      L29_2 = L28_2.defaultAlias
+      L30_2 = L27_2.defaultAlias
+      if L29_2 ~= L30_2 then
+        L29_2 = L0_1.ClearActor
+        L30_2 = A0_2
+        L31_2 = L6_2
+        L29_2(L30_2, L31_2)
+        L27_2 = nil
       end
     end
-    L26_2.alias = L6_2
-    L26_2.metaPath = L7_2
-    L29_2 = L0_1.ActorDic
-    L29_2[L6_2] = L26_2
-    L30_2 = L26_2
-    L29_2 = L26_2.OnInit
-    L31_2 = L6_2
-    L29_2(L30_2, L31_2)
-    L29_2 = print
-    L30_2 = "NotifyActorCreate  actor == nil "
-    L31_2 = tostring
-    L32_2 = L5_2
-    L31_2 = L31_2(L32_2)
-    L32_2 = " Alias:="
-    L33_2 = L6_2
-    L30_2 = L30_2 .. L31_2 .. L32_2 .. L33_2
-    L29_2(L30_2)
-    L29_2 = L26_2.uActor
-    if L29_2 == nil then
-      L29_2 = L0_1.ActorDic
-      L29_2[L6_2] = nil
-      L29_2 = A0_2.dummyActor
-      L29_2.alias = L6_2
-      L29_2 = A0_2.dummyActor
-      return L29_2
-    else
-      L30_2 = L26_2
-      L29_2 = L26_2.OnPostInit
-      L29_2(L30_2)
-      L29_2 = L26_2.MarkDitherShow
+  end
+  if L27_2 == nil then
+    L28_2 = actorUtils
+    L28_2 = L28_2.NotifyActorPreCreate
+    L29_2 = L6_2
+    L28_2(L29_2)
+    L28_2 = NG_HSOD_DEBUG
+    if L28_2 then
+      L28_2 = util
+      L28_2 = L28_2.unrequire
+      L29_2 = L7_2
+      L28_2(L29_2)
+    end
+    L28_2 = require
+    L29_2 = L7_2
+    L28_2 = L28_2(L29_2)
+    if L28_2 == nil then
+      L29_2 = NG_HSOD_DEBUG
+      if L29_2 then
+        L29_2 = actorUtils
+        L29_2 = L29_2.LogError
+        L30_2 = "[Lua] quest:"
+        L31_2 = tostring
+        L32_2 = mainID
+        L31_2 = L31_2(L32_2)
+        L32_2 = " check metaPath of "
+        L33_2 = tostring
+        L34_2 = L6_2
+        L33_2 = L33_2(L34_2)
+        L30_2 = L30_2 .. L31_2 .. L32_2 .. L33_2
+        L29_2(L30_2)
+      end
+      return L27_2
+    end
+    L30_2 = L28_2
+    L29_2 = L28_2.new
+    L29_2 = L29_2(L30_2)
+    L27_2 = L29_2
+    L27_2.configID = L8_2
+    L27_2.dataIndex = L9_2
+    L27_2.bornSceneID = L3_2
+    L27_2.bornRoomID = L4_2
+    L27_2.bornQuestID = L5_2
+    L27_2.bornPos = L10_2
+    L27_2.bornDir = L11_2
+    L27_2.bornShoesOffset = L12_2
+    L27_2.isOrphan = L19_2
+    L27_2.placeList = L20_2
+    L29_2 = L18_2.platformInfo
+    L27_2.platformInfo = L29_2
+    L27_2.inWater = L22_2
+    L29_2 = L18_2.createSource
+    L27_2.createSource = L29_2
+    L29_2 = L18_2.createSourceId
+    L27_2.createSourceId = L29_2
+    L27_2.isNetwork = L13_2
+    L27_2.isAutoStart = L14_2
+    L27_2.actorData = A1_2
+    L27_2.dontDestroyOnClear = L16_2
+    L27_2.isLocal = A2_2
+    L30_2 = L27_2
+    L29_2 = L27_2.PreGetAlias
+    L29_2 = L29_2(L30_2)
+    L31_2 = L27_2
+    L30_2 = L27_2.OnPreInit
+    L30_2(L31_2)
+    if L6_2 == nil or L6_2 == "" then
       if L29_2 ~= nil then
-        L30_2 = L26_2
-        L29_2 = L26_2.MarkDitherShow
-        L31_2 = L23_2
-        L29_2(L30_2, L31_2)
+        L6_2 = L29_2
+      else
+        L6_2 = L27_2.defaultAlias
+      end
+    end
+    L27_2.alias = L6_2
+    L27_2.metaPath = L7_2
+    L30_2 = L0_1.ActorDic
+    L30_2[L6_2] = L27_2
+    L31_2 = L27_2
+    L30_2 = L27_2.OnInit
+    L32_2 = L6_2
+    L30_2(L31_2, L32_2)
+    L30_2 = print
+    L31_2 = "NotifyActorCreate  actor == nil "
+    L32_2 = tostring
+    L33_2 = L5_2
+    L32_2 = L32_2(L33_2)
+    L33_2 = " Alias:="
+    L34_2 = L6_2
+    L31_2 = L31_2 .. L32_2 .. L33_2 .. L34_2
+    L30_2(L31_2)
+    L30_2 = L27_2.uActor
+    if L30_2 == nil then
+      L30_2 = L0_1.ActorDic
+      L30_2[L6_2] = nil
+      L30_2 = A0_2.dummyActor
+      L30_2.alias = L6_2
+      L30_2 = A0_2.dummyActor
+      return L30_2
+    else
+      L31_2 = L27_2
+      L30_2 = L27_2.OnPostInit
+      L30_2(L31_2)
+      L30_2 = L27_2.MarkDitherShow
+      if L30_2 ~= nil then
+        L31_2 = L27_2
+        L30_2 = L27_2.MarkDitherShow
+        L32_2 = L24_2
+        L30_2(L31_2, L32_2)
       end
       if not L15_2 then
-        L29_2 = L26_2.CheckShow
-        if L29_2 ~= nil then
-          L30_2 = L26_2
-          L29_2 = L26_2.CheckShow
-          L29_2(L30_2)
+        L30_2 = L27_2.CheckShow
+        if L30_2 ~= nil then
+          L31_2 = L27_2
+          L30_2 = L27_2.CheckShow
+          L30_2(L31_2)
         end
       end
     end
   else
-    L28_2 = L26_2
-    L27_2 = L26_2.OnReuse
-    L27_2(L28_2)
-    L27_2 = actorUtils
-    L27_2 = L27_2.NotifyActorPreCreate
-    L28_2 = L6_2
-    L27_2(L28_2)
-    L28_2 = L26_2
-    L27_2 = L26_2.ClearAllTask
-    L27_2(L28_2)
-    L26_2.bornSceneID = L3_2
-    L26_2.bornRoomID = L4_2
-    L26_2.bornQuestID = L5_2
-    L26_2.bornShoesOffset = L12_2
-    L26_2.isOrphan = L19_2
-    L27_2 = L18_2.platformInfo
-    L26_2.platformInfo = L27_2
-    L26_2.inWater = L21_2
-    L27_2 = L18_2.createSource
-    L26_2.createSource = L27_2
-    L27_2 = L18_2.createSourceId
-    L26_2.createSourceId = L27_2
-    L26_2.isAutoStart = L14_2
-    L27_2 = print
-    L28_2 = "NotifyActorCreate actor OnReuse "
-    L29_2 = tostring
-    L30_2 = L5_2
-    L29_2 = L29_2(L30_2)
-    L30_2 = " Alias:="
-    L31_2 = L6_2
-    L28_2 = L28_2 .. L29_2 .. L30_2 .. L31_2
-    L27_2(L28_2)
-    L27_2 = L26_2.MarkDitherShow
-    if L27_2 ~= nil then
-      L28_2 = L26_2
-      L27_2 = L26_2.MarkDitherShow
-      L29_2 = L23_2
-      L27_2(L28_2, L29_2)
+    L29_2 = L27_2
+    L28_2 = L27_2.OnReuse
+    L28_2(L29_2)
+    L28_2 = actorUtils
+    L28_2 = L28_2.NotifyActorPreCreate
+    L29_2 = L6_2
+    L28_2(L29_2)
+    L29_2 = L27_2
+    L28_2 = L27_2.ClearAllTask
+    L28_2(L29_2)
+    L27_2.bornSceneID = L3_2
+    L27_2.bornRoomID = L4_2
+    L27_2.bornQuestID = L5_2
+    L27_2.bornShoesOffset = L12_2
+    L27_2.isOrphan = L19_2
+    L27_2.placeList = L20_2
+    L28_2 = L18_2.platformInfo
+    L27_2.platformInfo = L28_2
+    L27_2.inWater = L22_2
+    L28_2 = L18_2.createSource
+    L27_2.createSource = L28_2
+    L28_2 = L18_2.createSourceId
+    L27_2.createSourceId = L28_2
+    L27_2.isAutoStart = L14_2
+    L28_2 = print
+    L29_2 = "NotifyActorCreate actor OnReuse "
+    L30_2 = tostring
+    L31_2 = L5_2
+    L30_2 = L30_2(L31_2)
+    L31_2 = " Alias:="
+    L32_2 = L6_2
+    L29_2 = L29_2 .. L30_2 .. L31_2 .. L32_2
+    L28_2(L29_2)
+    L28_2 = L27_2.MarkDitherShow
+    if L28_2 ~= nil then
+      L29_2 = L27_2
+      L28_2 = L27_2.MarkDitherShow
+      L30_2 = L24_2
+      L28_2(L29_2, L30_2)
     end
-    if not L20_2 then
-      L27_2 = L26_2.SetPosAndTurnTo
-      if L27_2 ~= nil then
-        L28_2 = L26_2
-        L27_2 = L26_2.SetPosAndTurnTo
-        L29_2 = L10_2
-        L30_2 = M
-        L30_2 = L30_2.Euler2DirXZ
-        L31_2 = L11_2
-        L30_2 = L30_2(L31_2)
-        L31_2 = L22_2
-        L27_2(L28_2, L29_2, L30_2, L31_2)
+    if not L21_2 then
+      L28_2 = L27_2.SetPosAndTurnTo
+      if L28_2 ~= nil then
+        L29_2 = L27_2
+        L28_2 = L27_2.SetPosAndTurnTo
+        L30_2 = L10_2
+        L31_2 = M
+        L31_2 = L31_2.Euler2DirXZ
+        L32_2 = L11_2
+        L31_2 = L31_2(L32_2)
+        L32_2 = L23_2
+        L28_2(L29_2, L30_2, L31_2, L32_2)
       else
-        L27_2 = L26_2.SetPos
-        if L27_2 ~= nil then
-          L28_2 = L26_2
-          L27_2 = L26_2.SetPos
-          L29_2 = L10_2
-          L30_2 = L22_2
-          L27_2(L28_2, L29_2, L30_2)
+        L28_2 = L27_2.SetPos
+        if L28_2 ~= nil then
+          L29_2 = L27_2
+          L28_2 = L27_2.SetPos
+          L30_2 = L10_2
+          L31_2 = L23_2
+          L28_2(L29_2, L30_2, L31_2)
         end
-        L27_2 = L26_2.TurnTo
-        if L27_2 ~= nil then
-          L28_2 = L26_2
-          L27_2 = L26_2.TurnTo
-          L29_2 = M
-          L29_2 = L29_2.Euler2DirXZ
-          L30_2 = L11_2
-          L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2 = L29_2(L30_2)
-          L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2)
+        L28_2 = L27_2.TurnTo
+        if L28_2 ~= nil then
+          L29_2 = L27_2
+          L28_2 = L27_2.TurnTo
+          L30_2 = M
+          L30_2 = L30_2.Euler2DirXZ
+          L31_2 = L11_2
+          L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2, L42_2 = L30_2(L31_2)
+          L28_2(L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2, L42_2)
         end
       end
     else
-      L27_2 = L26_2.SetPosAndTurnOnPlatform
-      if L27_2 ~= nil then
-        L28_2 = L26_2
-        L27_2 = L26_2.SetPosAndTurnOnPlatform
-        L29_2 = L18_2.platformInfo
-        L27_2(L28_2, L29_2)
+      L28_2 = L27_2.SetPosAndTurnOnPlatform
+      if L28_2 ~= nil then
+        L29_2 = L27_2
+        L28_2 = L27_2.SetPosAndTurnOnPlatform
+        L30_2 = L18_2.platformInfo
+        L28_2(L29_2, L30_2)
       end
     end
-    L27_2 = L26_2.SetShoesOffsetOnReuse
-    if L27_2 ~= nil then
-      L28_2 = L26_2
-      L27_2 = L26_2.SetShoesOffsetOnReuse
-      L29_2 = L12_2
-      L27_2(L28_2, L29_2)
+    L28_2 = L27_2.SetShoesOffsetOnReuse
+    if L28_2 ~= nil then
+      L29_2 = L27_2
+      L28_2 = L27_2.SetShoesOffsetOnReuse
+      L30_2 = L12_2
+      L28_2(L29_2, L30_2)
     end
     if not L15_2 then
-      L27_2 = L26_2.CheckShow
-      if L27_2 ~= nil then
-        L28_2 = L26_2
-        L27_2 = L26_2.CheckShow
-        L27_2(L28_2)
+      L28_2 = L27_2.CheckShow
+      if L28_2 ~= nil then
+        L29_2 = L27_2
+        L28_2 = L27_2.CheckShow
+        L28_2(L29_2)
       end
     end
-    L28_2 = L26_2
-    L27_2 = L26_2.ClearActor
-    L27_2(L28_2)
+    L29_2 = L27_2
+    L28_2 = L27_2.ClearActor
+    L28_2(L29_2)
     if A2_2 ~= true then
-      L27_2 = actorUtils
-      L27_2 = L27_2.NotifyActorCreate
-      L28_2 = L26_2.actorType
-      L29_2 = L6_2
-      L30_2 = L7_2
-      L31_2 = L8_2
-      L32_2 = L10_2
-      L33_2 = L11_2
-      L34_2 = L12_2
-      L35_2 = L3_2
-      L36_2 = L4_2
-      L37_2 = L5_2
-      L38_2 = 0
+      L28_2 = actorUtils
+      L28_2 = L28_2.NotifyActorCreate
+      L29_2 = L27_2.actorType
+      L30_2 = L6_2
+      L31_2 = L7_2
+      L32_2 = L8_2
+      L33_2 = L10_2
+      L34_2 = L11_2
+      L35_2 = L12_2
+      L36_2 = L3_2
+      L37_2 = L4_2
+      L38_2 = L5_2
       L39_2 = 0
       L40_2 = 0
-      L41_2 = L18_2
-      L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2)
+      L41_2 = 0
+      L42_2 = L18_2
+      L28_2(L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2, L42_2)
     end
-    L27_2 = actorUtils
-    L27_2 = L27_2.NotifyActorAutoStart
-    L28_2 = L8_2
-    L29_2 = L5_2
-    L30_2 = L14_2
-    L27_2(L28_2, L29_2, L30_2)
+    L28_2 = actorUtils
+    L28_2 = L28_2.NotifyActorAutoStart
+    L29_2 = L8_2
+    L30_2 = L5_2
+    L31_2 = L14_2
+    L28_2(L29_2, L30_2, L31_2)
     if L14_2 then
-      L28_2 = L26_2
-      L27_2 = L26_2.Start
-      L27_2(L28_2)
+      L29_2 = L27_2
+      L28_2 = L27_2.Start
+      L28_2(L29_2)
     end
   end
   if L5_2 ~= nil and 0 < L5_2 then
-    L28_2 = L26_2
-    L27_2 = L26_2.ResetAsNoDaily
-    L27_2(L28_2)
+    L29_2 = L27_2
+    L28_2 = L27_2.ResetAsNoDaily
+    L28_2(L29_2)
   end
-  if L23_2 then
-    L27_2 = L26_2.DitherToShowWhenAppear
-    if L27_2 ~= nil then
-      L28_2 = L26_2
-      L27_2 = L26_2.DitherToShowWhenAppear
-      L29_2 = L24_2
-      L27_2(L28_2, L29_2)
+  if L24_2 then
+    L28_2 = L27_2.DitherToShowWhenAppear
+    if L28_2 ~= nil then
+      L29_2 = L27_2
+      L28_2 = L27_2.DitherToShowWhenAppear
+      L30_2 = L25_2
+      L28_2(L29_2, L30_2)
     end
   end
-  return L26_2
+  return L27_2
 end
 L0_1.CreateActorWithDataInternal = L1_1
 function L1_1(A0_2, A1_2, A2_2)
@@ -1253,342 +1256,346 @@ function L1_1(A0_2, A1_2)
   L2_2[A1_2] = nil
 end
 L0_1.DestroyEntityHandler = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
-  local L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
-  L8_2 = NG_HSOD_DEBUG
-  if L8_2 then
-    L8_2 = assert
-    L9_2 = A2_2.id
-    L9_2 = L9_2 ~= nil
-    L10_2 = "CreateNPCActorData : npc alias is null in shareconfig"
-    L8_2(L9_2, L10_2)
-    L8_2 = assert
-    L9_2 = A2_2.alias
-    L9_2 = L9_2 ~= nil
-    L10_2 = "CreateNPCActorData : npc alias is null in shareconfig"
-    L8_2(L9_2, L10_2)
-    L8_2 = assert
-    L9_2 = A2_2.script
-    L9_2 = L9_2 ~= nil
-    L10_2 = "CreateNPCActorData : npc script is null in shareconfig"
-    L8_2(L9_2, L10_2)
-    L8_2 = assert
-    L9_2 = A2_2.pos
-    L9_2 = L9_2 ~= nil or A4_2 ~= nil
-    L10_2 = "CreateNPCActorData : npc pos is null in shareconfig or param"
-    L8_2(L9_2, L10_2)
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
+  local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
+  L9_2 = NG_HSOD_DEBUG
+  if L9_2 then
+    L9_2 = assert
+    L10_2 = A2_2.id
+    L10_2 = L10_2 ~= nil
+    L11_2 = "CreateNPCActorData : npc alias is null in shareconfig"
+    L9_2(L10_2, L11_2)
+    L9_2 = assert
+    L10_2 = A2_2.alias
+    L10_2 = L10_2 ~= nil
+    L11_2 = "CreateNPCActorData : npc alias is null in shareconfig"
+    L9_2(L10_2, L11_2)
+    L9_2 = assert
+    L10_2 = A2_2.script
+    L10_2 = L10_2 ~= nil
+    L11_2 = "CreateNPCActorData : npc script is null in shareconfig"
+    L9_2(L10_2, L11_2)
+    L9_2 = assert
+    L10_2 = A2_2.pos
+    L10_2 = L10_2 ~= nil or A4_2 ~= nil
+    L11_2 = "CreateNPCActorData : npc pos is null in shareconfig or param"
+    L9_2(L10_2, L11_2)
   end
-  L8_2 = {}
-  L9_2 = A2_2.scene_id
-  L8_2.sceneID = L9_2
-  L9_2 = L8_2.sceneID
-  if L9_2 == nil then
-    L10_2 = sceneData
-    L9_2 = L10_2.DefaultSceneID
-  elseif L9_2 == 0 then
-    L10_2 = sceneData
-    L10_2 = L10_2.currSceneID
-    if L10_2 ~= -1 then
-      L10_2 = sceneData
-      L9_2 = L10_2.currSceneID
+  L9_2 = {}
+  L10_2 = A2_2.scene_id
+  L9_2.sceneID = L10_2
+  L10_2 = L9_2.sceneID
+  if L10_2 == nil then
+    L11_2 = sceneData
+    L10_2 = L11_2.DefaultSceneID
+  elseif L10_2 == 0 then
+    L11_2 = sceneData
+    L11_2 = L11_2.currSceneID
+    if L11_2 ~= -1 then
+      L11_2 = sceneData
+      L10_2 = L11_2.currSceneID
     end
   end
-  L10_2 = A2_2.alias
-  L11_2 = A2_2.id
+  L11_2 = A2_2.alias
+  L12_2 = A2_2.id
   if A3_2 ~= nil then
-    L13_2 = A3_2
-    L12_2 = A3_2.IsRandom
-    L12_2 = L12_2(L13_2)
-    if L12_2 then
-      L13_2 = A3_2
-      L12_2 = A3_2.GetRandomFactorValue
-      L14_2 = A2_2.id
-      L12_2 = L12_2(L13_2, L14_2)
-      L13_2 = tonumber
-      L14_2 = L12_2
-      L13_2 = L13_2(L14_2)
-      L11_2 = L13_2
+    L14_2 = A3_2
+    L13_2 = A3_2.IsRandom
+    L13_2 = L13_2(L14_2)
+    if L13_2 then
       L14_2 = A3_2
-      L13_2 = A3_2.GetRandomNpcAlias
-      L15_2 = L12_2
+      L13_2 = A3_2.GetRandomFactorValue
+      L15_2 = A2_2.id
       L13_2 = L13_2(L14_2, L15_2)
-      L10_2 = L13_2
+      L14_2 = tonumber
+      L15_2 = L13_2
+      L14_2 = L14_2(L15_2)
+      L12_2 = L14_2
+      L15_2 = A3_2
+      L14_2 = A3_2.GetRandomNpcAlias
+      L16_2 = L13_2
+      L14_2 = L14_2(L15_2, L16_2)
+      L11_2 = L14_2
       if A4_2 == nil or A5_2 == nil then
-        L14_2 = A3_2
-        L13_2 = A3_2.GetRandomFactorValue
-        L15_2 = A2_2.pos
-        L13_2 = L13_2(L14_2, L15_2)
-        L14_2 = sceneData
-        L15_2 = L14_2
-        L14_2 = L14_2.GetDummyPoint
-        L16_2 = L9_2
-        L17_2 = L13_2
-        L14_2 = L14_2(L15_2, L16_2, L17_2)
-        if L14_2 ~= nil then
-          A4_2 = L14_2.pos
-          A5_2 = L14_2.rot
+        L15_2 = A3_2
+        L14_2 = A3_2.GetRandomFactorValue
+        L16_2 = A2_2.pos
+        L14_2 = L14_2(L15_2, L16_2)
+        L15_2 = sceneData
+        L16_2 = L15_2
+        L15_2 = L15_2.GetDummyPoint
+        L17_2 = L10_2
+        L18_2 = L14_2
+        L15_2 = L15_2(L16_2, L17_2, L18_2)
+        if L15_2 ~= nil then
+          A4_2 = L15_2.pos
+          A5_2 = L15_2.rot
         else
-          L15_2 = M
-          L15_2 = L15_2.Pos
-          L16_2 = 0
+          L16_2 = M
+          L16_2 = L16_2.Pos
           L17_2 = 0
           L18_2 = 0
-          L15_2 = L15_2(L16_2, L17_2, L18_2)
-          A4_2 = L15_2
-          L15_2 = M
-          L15_2 = L15_2.Pos
-          L16_2 = 0
+          L19_2 = 0
+          L16_2 = L16_2(L17_2, L18_2, L19_2)
+          A4_2 = L16_2
+          L16_2 = M
+          L16_2 = L16_2.Pos
           L17_2 = 0
           L18_2 = 0
-          L15_2 = L15_2(L16_2, L17_2, L18_2)
-          A5_2 = L15_2
-          L15_2 = NG_HSOD_DEBUG
-          if L15_2 then
-            L15_2 = actorUtils
-            L15_2 = L15_2.LogError
-            L16_2 = "[Lua]Quest CreateNPCActorData Random questId:"
-            L17_2 = tostring
-            L18_2 = A1_2
-            L17_2 = L17_2(L18_2)
-            L18_2 = "  npc pos:"
-            L19_2 = tostring
-            L20_2 = L13_2
-            L19_2 = L19_2(L20_2)
-            L20_2 = " currScene: "
-            L21_2 = tostring
-            L22_2 = sceneData
-            L22_2 = L22_2.currSceneID
-            L21_2 = L21_2(L22_2)
-            L16_2 = L16_2 .. L17_2 .. L18_2 .. L19_2 .. L20_2 .. L21_2
-            L15_2(L16_2)
+          L19_2 = 0
+          L16_2 = L16_2(L17_2, L18_2, L19_2)
+          A5_2 = L16_2
+          L16_2 = NG_HSOD_DEBUG
+          if L16_2 then
+            L16_2 = actorUtils
+            L16_2 = L16_2.LogError
+            L17_2 = "[Lua]Quest CreateNPCActorData Random questId:"
+            L18_2 = tostring
+            L19_2 = A1_2
+            L18_2 = L18_2(L19_2)
+            L19_2 = "  npc pos:"
+            L20_2 = tostring
+            L21_2 = L14_2
+            L20_2 = L20_2(L21_2)
+            L21_2 = " currScene: "
+            L22_2 = tostring
+            L23_2 = sceneData
+            L23_2 = L23_2.currSceneID
+            L22_2 = L22_2(L23_2)
+            L17_2 = L17_2 .. L18_2 .. L19_2 .. L20_2 .. L21_2 .. L22_2
+            L16_2(L17_2)
           end
         end
       end
     else
-      L13_2 = A3_2
-      L12_2 = A3_2.GetRealAlias
-      L14_2 = L10_2
-      L15_2 = A1_2
-      L12_2 = L12_2(L13_2, L14_2, L15_2)
-      L10_2 = L12_2
+      L14_2 = A3_2
+      L13_2 = A3_2.GetRealAlias
+      L15_2 = L11_2
+      L16_2 = A1_2
+      L13_2 = L13_2(L14_2, L15_2, L16_2)
+      L11_2 = L13_2
     end
   end
-  L8_2.configID = L11_2
-  L8_2.sceneID = L9_2
-  L8_2.alias = L10_2
-  L12_2 = A2_2.script
-  L8_2.metaPath = L12_2
-  L12_2 = A2_2.room_id
-  L8_2.roomID = L12_2
+  L9_2.configID = L12_2
+  L9_2.sceneID = L10_2
+  L9_2.alias = L11_2
+  L13_2 = A2_2.script
+  L9_2.metaPath = L13_2
+  L13_2 = A2_2.room_id
+  L9_2.roomID = L13_2
   if A4_2 ~= nil then
-    L8_2.bornPos = A4_2
+    L9_2.bornPos = A4_2
   else
-    L12_2 = sceneData
-    L13_2 = L12_2
-    L12_2 = L12_2.GetDummyPoint
-    L14_2 = L9_2
-    L15_2 = A2_2.pos
-    L12_2 = L12_2(L13_2, L14_2, L15_2)
-    if L12_2 ~= nil then
-      L13_2 = L12_2.pos
-      L8_2.bornPos = L13_2
+    L13_2 = sceneData
+    L14_2 = L13_2
+    L13_2 = L13_2.GetDummyPoint
+    L15_2 = L10_2
+    L16_2 = A2_2.pos
+    L13_2 = L13_2(L14_2, L15_2, L16_2)
+    if L13_2 ~= nil then
+      L14_2 = L13_2.pos
+      L9_2.bornPos = L14_2
     else
-      L13_2 = NG_HSOD_DEBUG
-      if L13_2 then
-        L13_2 = actorUtils
-        L13_2 = L13_2.LogError
-        L14_2 = "[Lua]Quest CreateNPCActorData questId:"
-        L15_2 = tostring
-        L16_2 = A1_2
-        L15_2 = L15_2(L16_2)
-        L16_2 = "  npc pos:"
-        L17_2 = tostring
-        L18_2 = A2_2.pos
-        L17_2 = L17_2(L18_2)
-        L18_2 = " currScene: "
-        L19_2 = tostring
-        L20_2 = sceneData
-        L20_2 = L20_2.currSceneID
-        L19_2 = L19_2(L20_2)
-        L14_2 = L14_2 .. L15_2 .. L16_2 .. L17_2 .. L18_2 .. L19_2
-        L13_2(L14_2)
+      L14_2 = NG_HSOD_DEBUG
+      if L14_2 then
+        L14_2 = actorUtils
+        L14_2 = L14_2.LogError
+        L15_2 = "[Lua]Quest CreateNPCActorData questId:"
+        L16_2 = tostring
+        L17_2 = A1_2
+        L16_2 = L16_2(L17_2)
+        L17_2 = "  npc pos:"
+        L18_2 = tostring
+        L19_2 = A2_2.pos
+        L18_2 = L18_2(L19_2)
+        L19_2 = " currScene: "
+        L20_2 = tostring
+        L21_2 = sceneData
+        L21_2 = L21_2.currSceneID
+        L20_2 = L20_2(L21_2)
+        L15_2 = L15_2 .. L16_2 .. L17_2 .. L18_2 .. L19_2 .. L20_2
+        L14_2(L15_2)
       end
-      L13_2 = M
-      L13_2 = L13_2.Pos
-      L14_2 = 0
+      L14_2 = M
+      L14_2 = L14_2.Pos
       L15_2 = 0
       L16_2 = 0
-      L13_2 = L13_2(L14_2, L15_2, L16_2)
-      L8_2.bornPos = L13_2
+      L17_2 = 0
+      L14_2 = L14_2(L15_2, L16_2, L17_2)
+      L9_2.bornPos = L14_2
     end
   end
   if A5_2 ~= nil then
-    L8_2.bornEuler = A5_2
+    L9_2.bornEuler = A5_2
   else
-    L12_2 = sceneData
-    L13_2 = L12_2
-    L12_2 = L12_2.GetDummyPoint
-    L14_2 = L9_2
-    L15_2 = A2_2.pos
-    L12_2 = L12_2(L13_2, L14_2, L15_2)
-    if L12_2 ~= nil then
-      L13_2 = L12_2.rot
-      L8_2.bornEuler = L13_2
+    L13_2 = sceneData
+    L14_2 = L13_2
+    L13_2 = L13_2.GetDummyPoint
+    L15_2 = L10_2
+    L16_2 = A2_2.pos
+    L13_2 = L13_2(L14_2, L15_2, L16_2)
+    if L13_2 ~= nil then
+      L14_2 = L13_2.rot
+      L9_2.bornEuler = L14_2
     else
-      L13_2 = NG_HSOD_DEBUG
-      if L13_2 then
-        L13_2 = actorUtils
-        L13_2 = L13_2.LogError
-        L14_2 = "[Lua]Quest CreateNPCActorData questId:"
-        L15_2 = tostring
-        L16_2 = A1_2
-        L15_2 = L15_2(L16_2)
-        L16_2 = "  npc pos:"
-        L17_2 = tostring
-        L18_2 = A2_2.pos
-        L17_2 = L17_2(L18_2)
-        L18_2 = " currScene: "
-        L19_2 = tostring
-        L20_2 = sceneData
-        L20_2 = L20_2.currSceneID
-        L19_2 = L19_2(L20_2)
-        L14_2 = L14_2 .. L15_2 .. L16_2 .. L17_2 .. L18_2 .. L19_2
-        L13_2(L14_2)
+      L14_2 = NG_HSOD_DEBUG
+      if L14_2 then
+        L14_2 = actorUtils
+        L14_2 = L14_2.LogError
+        L15_2 = "[Lua]Quest CreateNPCActorData questId:"
+        L16_2 = tostring
+        L17_2 = A1_2
+        L16_2 = L16_2(L17_2)
+        L17_2 = "  npc pos:"
+        L18_2 = tostring
+        L19_2 = A2_2.pos
+        L18_2 = L18_2(L19_2)
+        L19_2 = " currScene: "
+        L20_2 = tostring
+        L21_2 = sceneData
+        L21_2 = L21_2.currSceneID
+        L20_2 = L20_2(L21_2)
+        L15_2 = L15_2 .. L16_2 .. L17_2 .. L18_2 .. L19_2 .. L20_2
+        L14_2(L15_2)
       end
-      L13_2 = M
-      L13_2 = L13_2.Pos
-      L14_2 = 0
+      L14_2 = M
+      L14_2 = L14_2.Pos
       L15_2 = 0
       L16_2 = 0
-      L13_2 = L13_2(L14_2, L15_2, L16_2)
-      L8_2.bornEuler = L13_2
+      L17_2 = 0
+      L14_2 = L14_2(L15_2, L16_2, L17_2)
+      L9_2.bornEuler = L14_2
     end
   end
-  L8_2.questID = A1_2
-  L8_2.dataIndex = 0
-  L8_2.isNetwork = true
-  L12_2 = A2_2.isAutoStart
-  L12_2 = L12_2 ~= false
-  L8_2.isAutoStart = L12_2
-  L8_2.isCheckHide = false
-  L8_2.noPerform = true
-  L8_2.dontDestroyOnClear = false
-  L8_2.clearCmd = true
-  L8_2.ditherShow = A6_2
-  L8_2.ditherDuration = A7_2
-  L12_2 = A2_2.bornShoesOffset
-  if L12_2 ~= nil then
-    L12_2 = A2_2.bornShoesOffset
-    L8_2.bornShoesOffset = L12_2
+  L9_2.questID = A1_2
+  L9_2.dataIndex = 0
+  L9_2.isNetwork = true
+  L13_2 = A2_2.isAutoStart
+  L13_2 = L13_2 ~= false
+  L9_2.isAutoStart = L13_2
+  L9_2.isCheckHide = false
+  L9_2.noPerform = true
+  L9_2.dontDestroyOnClear = false
+  L9_2.clearCmd = true
+  L9_2.ditherShow = A6_2
+  L9_2.ditherDuration = A7_2
+  L13_2 = A2_2.bornShoesOffset
+  if L13_2 ~= nil then
+    L13_2 = A2_2.bornShoesOffset
+    L9_2.bornShoesOffset = L13_2
   else
-    L8_2.bornShoesOffset = 0
+    L9_2.bornShoesOffset = 0
   end
-  L13_2 = A0_2
-  L12_2 = A0_2.CreateDefaultExtMetaInfo
-  L12_2 = L12_2(L13_2)
-  L13_2 = A2_2.isOrphan
-  if L13_2 ~= nil then
-    L13_2 = A2_2.isOrphan
-    L12_2.isOrphan = L13_2
+  L14_2 = A0_2
+  L13_2 = A0_2.CreateDefaultExtMetaInfo
+  L13_2 = L13_2(L14_2)
+  L14_2 = A2_2.isOrphan
+  if L14_2 ~= nil then
+    L14_2 = A2_2.isOrphan
+    L13_2.isOrphan = L14_2
   end
-  L13_2 = A2_2.platformInfo
-  L12_2.platformInfo = L13_2
-  L13_2 = A2_2.inWater
-  if L13_2 ~= nil then
-    L13_2 = A2_2.inWater
-    L12_2.inWater = L13_2
+  if A8_2 ~= nil then
+    L13_2.placeList = A8_2
   end
-  L8_2.extMetaInfo = L12_2
-  return L8_2
+  L14_2 = A2_2.platformInfo
+  L13_2.platformInfo = L14_2
+  L14_2 = A2_2.inWater
+  if L14_2 ~= nil then
+    L14_2 = A2_2.inWater
+    L13_2.inWater = L14_2
+  end
+  L9_2.extMetaInfo = L13_2
+  return L9_2
 end
 L0_1.CreateNPCActorData = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
-  local L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+  local L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2
   if A3_2 == nil then
-    L11_2 = print
-    L12_2 = "try to create npc"
-    L13_2 = A2_2
-    L14_2 = " on "
-    L15_2 = A1_2
-    L16_2 = "but data not exist"
-    L12_2 = L12_2 .. L13_2 .. L14_2 .. L15_2 .. L16_2
-    L11_2(L12_2)
-    return
-  end
-  L11_2 = A3_2.npcs
-  if L11_2 == nil then
     L12_2 = print
     L13_2 = "try to create npc"
     L14_2 = A2_2
     L15_2 = " on "
     L16_2 = A1_2
-    L17_2 = "but npcs not in data"
+    L17_2 = "but data not exist"
     L13_2 = L13_2 .. L14_2 .. L15_2 .. L16_2 .. L17_2
     L12_2(L13_2)
     return
   end
-  L12_2 = NG_HSOD_DEBUG
-  if L12_2 then
-    L12_2 = actorUtils
-    L12_2 = L12_2.CheckActorCreateMainQuestId
-    L13_2 = A1_2
-    L12_2(L13_2)
+  L12_2 = A3_2.npcs
+  if L12_2 == nil then
+    L13_2 = print
+    L14_2 = "try to create npc"
+    L15_2 = A2_2
+    L16_2 = " on "
+    L17_2 = A1_2
+    L18_2 = "but npcs not in data"
+    L14_2 = L14_2 .. L15_2 .. L16_2 .. L17_2 .. L18_2
+    L13_2(L14_2)
+    return
   end
-  L12_2 = nil
-  L13_2 = #L11_2
+  L13_2 = NG_HSOD_DEBUG
+  if L13_2 then
+    L13_2 = actorUtils
+    L13_2 = L13_2.CheckActorCreateMainQuestId
+    L14_2 = A1_2
+    L13_2(L14_2)
+  end
+  L13_2 = nil
+  L14_2 = #L12_2
   if A5_2 == nil or A5_2 == 0 then
-    L14_2 = 1
-    L15_2 = L13_2
-    L16_2 = 1
-    for L17_2 = L14_2, L15_2, L16_2 do
-      L18_2 = L11_2[L17_2]
-      if L18_2 ~= nil then
+    L15_2 = 1
+    L16_2 = L14_2
+    L17_2 = 1
+    for L18_2 = L15_2, L16_2, L17_2 do
+      L19_2 = L12_2[L18_2]
+      if L19_2 ~= nil then
         if A2_2 ~= nil then
-          L19_2 = L18_2.id
-          if L19_2 == A2_2 then
-            L12_2 = L18_2
+          L20_2 = L19_2.id
+          if L20_2 == A2_2 then
+            L13_2 = L19_2
             break
           end
         else
-          L12_2 = L18_2
+          L13_2 = L19_2
           break
         end
       end
     end
-  elseif A5_2 <= L13_2 then
-    L12_2 = L11_2[A5_2]
+  elseif A5_2 <= L14_2 then
+    L13_2 = L12_2[A5_2]
   else
-    L14_2 = print
-    L15_2 = "try to create npc"
-    L16_2 = A2_2
-    L17_2 = " on "
-    L18_2 = A1_2
-    L19_2 = " index out of range"
-    L15_2 = L15_2 .. L16_2 .. L17_2 .. L18_2 .. L19_2
-    L14_2(L15_2)
+    L15_2 = print
+    L16_2 = "try to create npc"
+    L17_2 = A2_2
+    L18_2 = " on "
+    L19_2 = A1_2
+    L20_2 = " index out of range"
+    L16_2 = L16_2 .. L17_2 .. L18_2 .. L19_2 .. L20_2
+    L15_2(L16_2)
   end
-  if L12_2 ~= nil then
+  if L13_2 ~= nil then
     if A10_2 ~= nil then
-      L12_2.isOrphan = A10_2
+      L13_2.isOrphan = A10_2
     end
-    L15_2 = A0_2
-    L14_2 = A0_2.CreateNPCActorData
-    L16_2 = A1_2
-    L17_2 = L12_2
-    L18_2 = A4_2
-    L19_2 = A6_2
-    L20_2 = A7_2
-    L21_2 = A8_2
-    L22_2 = A9_2
-    L14_2 = L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2)
-    L15_2 = actorMgr
-    L16_2 = L15_2
-    L15_2 = L15_2.CreateActorWithData
-    L17_2 = L14_2
-    return L15_2(L16_2, L17_2)
+    L16_2 = A0_2
+    L15_2 = A0_2.CreateNPCActorData
+    L17_2 = A1_2
+    L18_2 = L13_2
+    L19_2 = A4_2
+    L20_2 = A6_2
+    L21_2 = A7_2
+    L22_2 = A8_2
+    L23_2 = A9_2
+    L24_2 = A11_2
+    L15_2 = L15_2(L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2)
+    L16_2 = actorMgr
+    L17_2 = L16_2
+    L16_2 = L16_2.CreateActorWithData
+    L18_2 = L15_2
+    return L16_2(L17_2, L18_2)
   end
-  L14_2 = nil
-  return L14_2
+  L15_2 = nil
+  return L15_2
 end
 L0_1.CreateQuestNpcActorInternal = L1_1
 function L1_1(A0_2, A1_2, A2_2)

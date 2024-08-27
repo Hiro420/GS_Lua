@@ -1023,10 +1023,34 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart4016403 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "OnSubFinish4016403"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ShowBlackScreen
+  L4_2 = 0.4
+  L5_2 = 0.5
+  L6_2 = 0
+  function L7_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyQuestNpcActor
+    L3_3 = L7_1.Npc2670
+    L3_3 = L3_3.alias
+    L4_3 = 100
+    L1_3(L2_3, L3_3, L4_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyQuestNpcActor
+    L3_3 = L7_1.Npc1075
+    L3_3 = L3_3.alias
+    L4_3 = 100
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
 end
 L1_1.OnSubFinish4016403 = L9_1
 function L9_1(A0_2, A1_2)

@@ -189,10 +189,15 @@ function L6_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish39602 = L6_1
 function L6_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnFinished 39604"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SetNavigationByMainId
+  L4_2 = 70681
+  L5_2 = true
+  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.ActionSafeCall
   function L4_2(A0_3)

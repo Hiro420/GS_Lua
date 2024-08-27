@@ -161,6 +161,22 @@ function L9_1(A0_2)
   L1_2["80061"] = L2_2
   L2_2 = A0_2.OnSubStart80062
   L1_2["80062"] = L2_2
+  L2_2 = A0_2.OnSubStart80063
+  L1_2["80063"] = L2_2
+  L2_2 = A0_2.OnSubStart80064
+  L1_2["80064"] = L2_2
+  L2_2 = A0_2.OnSubStart80065
+  L1_2["80065"] = L2_2
+  L2_2 = A0_2.OnSubStart80066
+  L1_2["80066"] = L2_2
+  L2_2 = A0_2.OnSubStart80067
+  L1_2["80067"] = L2_2
+  L2_2 = A0_2.OnSubStart80068
+  L1_2["80068"] = L2_2
+  L2_2 = A0_2.OnSubStart80069
+  L1_2["80069"] = L2_2
+  L2_2 = A0_2.OnSubStart80070
+  L1_2["80070"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -291,6 +307,22 @@ function L9_1(A0_2)
   L1_2["80061"] = L2_2
   L2_2 = A0_2.OnSubFinish80062
   L1_2["80062"] = L2_2
+  L2_2 = A0_2.OnSubFinish80063
+  L1_2["80063"] = L2_2
+  L2_2 = A0_2.OnSubFinish80064
+  L1_2["80064"] = L2_2
+  L2_2 = A0_2.OnSubFinish80065
+  L1_2["80065"] = L2_2
+  L2_2 = A0_2.OnSubFinish80066
+  L1_2["80066"] = L2_2
+  L2_2 = A0_2.OnSubFinish80067
+  L1_2["80067"] = L2_2
+  L2_2 = A0_2.OnSubFinish80068
+  L1_2["80068"] = L2_2
+  L2_2 = A0_2.OnSubFinish80069
+  L1_2["80069"] = L2_2
+  L2_2 = A0_2.OnSubFinish80070
+  L1_2["80070"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -335,6 +367,30 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnMainCanceled = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L7_2 = L3_1
+  L8_2 = L7_2
+  L7_2 = L7_2.CreateRepeatableNpcShowDisappearTrigger
+  L9_2 = A1_2
+  L10_2 = A2_2
+  L11_2 = A3_2
+  L12_2 = A4_2
+  L13_2 = A5_2
+  L14_2 = A6_2
+  L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+end
+L1_1.CreateRepeatableNpcShowDisappearTrigger = L9_1
+function L9_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyRepeatableNpcShowDisappearTrigger
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.DestroyRepeatableNpcShowDisappearTrigger = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -347,7 +403,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateLocalGadget
@@ -457,7 +515,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80003 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80004"
   L2_2(L3_2)
@@ -468,7 +526,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SpawnGadget
@@ -486,7 +546,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80004 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80005"
   L2_2(L3_2)
@@ -497,7 +557,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80005 = L9_1
 function L9_1(A0_2, A1_2)
@@ -508,7 +570,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80005 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80006"
   L2_2(L3_2)
@@ -519,7 +581,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80006 = L9_1
 function L9_1(A0_2, A1_2)
@@ -530,7 +594,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80006 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80007"
   L2_2(L3_2)
@@ -541,7 +605,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80007 = L9_1
 function L9_1(A0_2, A1_2)
@@ -636,7 +702,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80013 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80014"
   L2_2(L3_2)
@@ -647,7 +713,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80014 = L9_1
 function L9_1(A0_2, A1_2)
@@ -665,7 +733,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80014 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80015"
   L2_2(L3_2)
@@ -676,7 +744,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
@@ -694,7 +764,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80015 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80016"
   L2_2(L3_2)
@@ -705,7 +775,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80016 = L9_1
 function L9_1(A0_2, A1_2)
@@ -744,7 +816,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80018 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80019"
   L2_2(L3_2)
@@ -755,7 +827,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80019 = L9_1
 function L9_1(A0_2, A1_2)
@@ -831,7 +905,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80022 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80023"
   L2_2(L3_2)
@@ -842,7 +916,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.WendyData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80023 = L9_1
 function L9_1(A0_2, A1_2)
@@ -882,7 +958,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80024 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80025"
   L2_2(L3_2)
@@ -893,7 +969,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc4184Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.GetActor
@@ -996,7 +1074,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80025 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80026"
   L2_2(L3_2)
@@ -1007,7 +1085,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc4184Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80026 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1253,7 +1333,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80037 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80038"
   L2_2(L3_2)
@@ -1264,7 +1344,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80038 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1440,7 +1522,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1484,7 +1568,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80044 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80045"
   L2_2(L3_2)
@@ -1495,7 +1579,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1637,7 +1723,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc5304Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1732,7 +1820,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80055 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80056"
   L2_2(L3_2)
@@ -1743,7 +1831,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.PaimonData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1751,7 +1841,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1038Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1759,7 +1851,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.WendyData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1767,7 +1861,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1775,7 +1871,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.DilucData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1783,7 +1881,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.GaiaSPData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1791,7 +1891,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1015Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1799,7 +1901,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1016Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1807,7 +1911,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1066Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1815,7 +1921,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1020Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1823,7 +1931,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1047Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1831,7 +1941,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1033Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80056 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1926,7 +2038,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80056 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80057"
   L2_2(L3_2)
@@ -1937,7 +2049,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -1956,7 +2070,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80057 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80058"
   L2_2(L3_2)
@@ -1967,7 +2081,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80058 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1999,7 +2115,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80059 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80060"
   L2_2(L3_2)
@@ -2010,7 +2126,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80060 = L9_1
 function L9_1(A0_2, A1_2)
@@ -2021,7 +2139,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80060 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80061"
   L2_2(L3_2)
@@ -2032,7 +2150,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80061 = L9_1
 function L9_1(A0_2, A1_2)
@@ -2043,7 +2163,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80061 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80062"
   L2_2(L3_2)
@@ -2054,7 +2174,9 @@ function L9_1(A0_2, A1_2)
   L5_2 = L7_1.AmborData
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80062 = L9_1
 function L9_1(A0_2, A1_2)
@@ -2064,4 +2186,133 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish80062 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80063"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80063 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80063"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80063 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80064"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80064 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80064"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80064 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80065"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80065 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80065"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80065 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80066"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80066 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80066"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80066 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80067"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80067 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80067"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80067 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80068"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80068 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80068"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80068 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = print
+  L3_2 = "OnSubStart80069"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateRepeatableNpcShowDisappearTrigger
+  L4_2 = "Q800testRepeatTrigger"
+  L5_2 = 80069
+  L6_2 = L7_1.PaimonData
+  L6_2 = L6_2.id
+  L7_2 = 0
+  L8_2 = 6
+  L9_2 = 10
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+end
+L1_1.OnSubStart80069 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80069"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish80069 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80070"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80070 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80070"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyRepeatableNpcShowDisappearTrigger
+  L4_2 = "Q800testRepeatTrigger"
+  L5_2 = true
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish80070 = L9_1
 return L1_1

@@ -187,78 +187,8 @@ function L9_1(A0_2)
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
 function L9_1(A0_2)
-  local L1_2, L2_2
+  local L1_2
   L1_2 = {}
-  L2_2 = A0_2.OnSubFailed1403225
-  L1_2["1403225"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403201
-  L1_2["1403201"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403226
-  L1_2["1403226"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403227
-  L1_2["1403227"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403228
-  L1_2["1403228"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403202
-  L1_2["1403202"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403235
-  L1_2["1403235"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403203
-  L1_2["1403203"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403222
-  L1_2["1403222"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403204
-  L1_2["1403204"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403223
-  L1_2["1403223"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403205
-  L1_2["1403205"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403221
-  L1_2["1403221"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403224
-  L1_2["1403224"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403206
-  L1_2["1403206"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403219
-  L1_2["1403219"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403207
-  L1_2["1403207"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403208
-  L1_2["1403208"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403211
-  L1_2["1403211"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403212
-  L1_2["1403212"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403213
-  L1_2["1403213"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403214
-  L1_2["1403214"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403215
-  L1_2["1403215"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403231
-  L1_2["1403231"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403216
-  L1_2["1403216"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403217
-  L1_2["1403217"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403229
-  L1_2["1403229"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403230
-  L1_2["1403230"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403232
-  L1_2["1403232"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403233
-  L1_2["1403233"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403234
-  L1_2["1403234"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403218
-  L1_2["1403218"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403220
-  L1_2["1403220"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403209
-  L1_2["1403209"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403210
-  L1_2["1403210"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
 L1_1.OnSubFailedHandlerBuild = L9_1
@@ -410,20 +340,34 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L7_2 = L6_2
   L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
   L8_2 = "Q"
-  L9_2 = A2_2
+  L9_2 = A1_2
   L10_2 = "N"
-  L11_2 = A1_2
+  L11_2 = A5_2
   L12_2 = "Trigger"
   L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
-  L9_2 = A2_2
-  L10_2 = A1_2
-  L11_2 = A3_2
-  L12_2 = A4_2
-  L13_2 = A5_2
+  L9_2 = A1_2
+  L10_2 = A5_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
   L14_2 = 2
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.GetActor
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = L2_2
+    L3_2 = L2_2.DestroySelf
+    L3_2(L4_2)
+  end
+end
+L1_1.ActorDestroy = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
   L7_2 = 0.5
@@ -480,13 +424,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403225 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403225"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403225 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart1403201"
@@ -494,31 +431,35 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1077
-  L4_2 = L4_2.id
-  L5_2 = 1403201
-  L6_2 = 0
-  L7_2 = 15
-  L8_2 = 1
+  L4_2 = 1403201
+  L5_2 = 0
+  L6_2 = 15
+  L7_2 = 1
+  L8_2 = L7_1.Npc1077
+  L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1403201 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubFinish1403201"
   L2_2(L3_2)
-  L2_2 = L3_1
+  L2_2 = actorMgr
   L3_2 = L2_2
-  L2_2 = L2_2.PlayerEnterDungeonWithData
-  L4_2 = 1223
-  L5_2 = 1203
-  L6_2 = 1403201
-  L7_2 = 1
-  L8_2 = L6_1.PlayerEnterDungeonData14032
-  L9_2 = nil
-  L10_2 = nil
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L2_2 = L2_2.CreateActorWithPos
+  L4_2 = "Q1403201Trigger"
+  L5_2 = "Actor/Gadget/Q1403201Trigger"
+  L6_2 = 70900002
+  L7_2 = 0
+  L8_2 = L8_1._Q1403201TriggerPoint_
+  L8_2 = L8_2.pos
+  L9_2 = L8_1._Q1403201TriggerPoint_
+  L9_2 = L9_2.rot
+  L10_2 = true
+  L11_2 = false
+  L12_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.SafeDestroyQuestNpc
@@ -528,13 +469,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403201 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403201"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403201 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -552,13 +486,6 @@ L1_1.OnSubFinish1403226 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403226"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403226 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403227"
   L2_2(L3_2)
 end
@@ -573,13 +500,6 @@ L1_1.OnSubFinish1403227 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403227"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403227 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403228"
   L2_2(L3_2)
 end
@@ -591,13 +511,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403228 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403228"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403228 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -621,19 +534,17 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1403202 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1403202"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q1403201Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish1403202 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403202"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403202 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -660,13 +571,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403235 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403235"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403235 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart1403203"
@@ -674,12 +578,12 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1077
-  L4_2 = L4_2.id
-  L5_2 = 1403203
-  L6_2 = 0
-  L7_2 = 40
-  L8_2 = 1
+  L4_2 = 1403203
+  L5_2 = 0
+  L6_2 = 40
+  L7_2 = 1
+  L8_2 = L7_1.Npc1077
+  L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1403203 = L9_1
@@ -697,13 +601,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403203 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403203"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403203 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -723,13 +620,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403222 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403222"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403222 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -762,13 +652,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403204 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403204"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403204 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1403223"
@@ -787,13 +670,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403223 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403223"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403223 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -826,13 +702,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403205 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403205"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403205 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1403221"
@@ -862,13 +731,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403221 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403221"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403221 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1403224"
@@ -887,13 +749,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403224 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403224"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403224 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -942,13 +797,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish1403206 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403206"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403206 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
   L2_2 = print
@@ -1111,13 +959,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403219 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403219"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403219 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
   L2_2 = print
   L3_2 = "OnSubStart1403207"
@@ -1194,13 +1035,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403207 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403207"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403207 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -1337,13 +1171,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403208 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403208"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403208 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1403211"
@@ -1373,13 +1200,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403211 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403211"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403211 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart1403212"
@@ -1387,12 +1207,12 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc14096
-  L4_2 = L4_2.id
-  L5_2 = 1403212
-  L6_2 = 0
-  L7_2 = 20
-  L8_2 = 1
+  L4_2 = 1403212
+  L5_2 = 0
+  L6_2 = 20
+  L7_2 = 1
+  L8_2 = L7_1.Npc14096
+  L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1403212 = L9_1
@@ -1410,13 +1230,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403212 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403212"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403212 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
@@ -1437,13 +1250,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403213 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403213"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403213 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1403214"
@@ -1463,13 +1269,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403214 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403214"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403214 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1403215"
@@ -1488,13 +1287,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403215 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403215"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403215 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -1530,13 +1322,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403231 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403231"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403231 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart1403216"
@@ -1544,12 +1329,12 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1077
-  L4_2 = L4_2.id
-  L5_2 = 1403216
-  L6_2 = 0
-  L7_2 = 35
-  L8_2 = 1
+  L4_2 = 1403216
+  L5_2 = 0
+  L6_2 = 35
+  L7_2 = 1
+  L8_2 = L7_1.Npc1077
+  L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1403216 = L9_1
@@ -1567,13 +1352,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403216 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403216"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403216 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -1597,13 +1375,6 @@ L1_1.OnSubFinish1403217 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403217"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403217 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403229"
   L2_2(L3_2)
 end
@@ -1621,13 +1392,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403229 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403229"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403229 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -1651,13 +1415,6 @@ L1_1.OnSubFinish1403230 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403230"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403230 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403232"
   L2_2(L3_2)
 end
@@ -1669,13 +1426,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403232 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403232"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403232 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
@@ -1693,13 +1443,6 @@ L1_1.OnSubFinish1403233 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403233"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403233 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403234"
   L2_2(L3_2)
 end
@@ -1712,13 +1455,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403234 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403234"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403234 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart1403218"
@@ -1726,12 +1462,12 @@ function L9_1(A0_2, A1_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
-  L4_2 = L7_1.Npc1077
-  L4_2 = L4_2.id
-  L5_2 = 1403218
-  L6_2 = 0
-  L7_2 = 30
-  L8_2 = 1
+  L4_2 = 1403218
+  L5_2 = 0
+  L6_2 = 30
+  L7_2 = 1
+  L8_2 = L7_1.Npc1077
+  L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1403218 = L9_1
@@ -1759,13 +1495,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
 end
 L1_1.OnSubFinish1403218 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403218"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403218 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
   L2_2 = print
@@ -1956,13 +1685,6 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403220 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403220"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403220 = L9_1
-function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1403209"
@@ -1991,13 +1713,6 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403209 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403209"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403209 = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L2_2 = print
@@ -2167,11 +1882,4 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1403210 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403210"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403210 = L9_1
 return L1_1

@@ -117,6 +117,8 @@ function L9_1(A0_2)
   L1_2["80339"] = L2_2
   L2_2 = A0_2.OnSubStart80340
   L1_2["80340"] = L2_2
+  L2_2 = A0_2.OnSubStart80341
+  L1_2["80341"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L9_1
@@ -203,6 +205,8 @@ function L9_1(A0_2)
   L1_2["80339"] = L2_2
   L2_2 = A0_2.OnSubFinish80340
   L1_2["80340"] = L2_2
+  L2_2 = A0_2.OnSubFinish80341
+  L1_2["80341"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L9_1
@@ -1440,4 +1444,29 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80340 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart80341"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart80341 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80341"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestOrphanNpc
+  L4_2 = A1_2
+  L5_2 = L7_1.AmborData
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0.5
+  L9_2 = L8_1.QuestOrphanNpcPlaceList
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+end
+L1_1.OnSubFinish80341 = L9_1
 return L1_1

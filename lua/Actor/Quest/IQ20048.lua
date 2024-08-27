@@ -120,12 +120,10 @@ L1_1.CreateFoodRipples = L5_1
 function L5_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.BANDAILY
-  L6_2 = true
+  L2_2 = A0_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L3_1.NpcID
+  L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L2_2 = globalActor
   L3_2 = L2_2
@@ -160,15 +158,7 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed2004801 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.BANDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2
   L2_2 = globalActor
   L3_2 = L2_2
   L2_2 = L2_2.UnSpawn
@@ -237,15 +227,7 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed2004803 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.BANDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "04 start"
   L2_2(L3_2)
@@ -281,15 +263,7 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed2004804 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.BANDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "05 start"
   L2_2(L3_2)
@@ -301,18 +275,28 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubStart2004805 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.STARTDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "05 finish"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ShowBlackScreen
+  L4_2 = 0.2
+  L5_2 = 1
+  L6_2 = 0.5
+  function L7_2()
+    local L0_3, L1_3, L2_3, L3_3
+    L0_3 = A0_2
+    L1_3 = L0_3
+    L0_3 = L0_3.DestroyQuestNpcActor
+    L2_3 = L3_1.Npc
+    L3_3 = 0
+    L0_3(L1_3, L2_3, L3_3)
+  end
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = ""
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.OnSubFinish2004805 = L5_1
 function L5_1(A0_2, A1_2)
@@ -323,15 +307,7 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubFailed2004805 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.BANDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "06 start"
   L2_2(L3_2)
@@ -343,18 +319,28 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnSubStart2004806 = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.STARTDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "06 finish"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ShowBlackScreen
+  L4_2 = 0.2
+  L5_2 = 1
+  L6_2 = 0.5
+  function L7_2()
+    local L0_3, L1_3, L2_3, L3_3
+    L0_3 = A0_2
+    L1_3 = L0_3
+    L0_3 = L0_3.DestroyQuestNpcActor
+    L2_3 = L3_1.Npc
+    L3_3 = 0
+    L0_3(L1_3, L2_3, L3_3)
+  end
+  L8_2 = nil
+  L9_2 = nil
+  L10_2 = ""
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.OnSubFinish2004806 = L5_1
 function L5_1(A0_2, A1_2)
@@ -387,7 +373,7 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.OnMainFailed = L5_1
 function L5_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "main canceled "
   L4_2 = tostring
@@ -396,13 +382,10 @@ function L5_1(A0_2, A1_2)
   L3_2 = L3_2 .. L4_2
   L2_2(L3_2)
   L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc1567"
-  L5_2 = DailyNpcManager
-  L5_2 = L5_2.NpcEventType
-  L5_2 = L5_2.STARTDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = A0_2.DestroyQuestNpcActor
+  L4_2 = L3_1.Npc
+  L5_2 = 0
+  L2_2(L3_2, L4_2, L5_2)
   L2_2 = globalActor
   L3_2 = L2_2
   L2_2 = L2_2.UnSpawn

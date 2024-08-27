@@ -227,12 +227,6 @@ function L10_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.SetNavigationByMainId
-  L4_2 = 74085
-  L5_2 = true
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart7408501 = L10_1
 function L10_1(A0_2, A1_2)
