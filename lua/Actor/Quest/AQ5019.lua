@@ -148,7 +148,7 @@ function L7_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.DestroyQuestNpcActor
   L4_2 = L6_1.Npc14607
   L4_2 = L4_2.alias
   L5_2 = 3
@@ -191,14 +191,14 @@ function L7_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.DestroyQuestNpcActor
   L4_2 = L6_1.Npc14184
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.DestroyQuestNpcActor
   L4_2 = L6_1.Npc14207
   L4_2 = L4_2.alias
   L5_2 = 3

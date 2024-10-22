@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -147,9 +147,36 @@ L18_1.questState = L19_1
 L17_1[1] = L18_1
 L16_1[1] = L17_1
 L15_1.conditions = L16_1
+L16_1 = {}
+L17_1 = {}
+L18_1 = 40168
+L17_1[1] = L18_1
+L16_1.validQuestIds = L17_1
+L16_1.priority = 300
+L17_1 = {}
+L18_1 = {}
+L18_1.dialogId = 1018108500
+L18_1.duration = 0
+L18_1.intervalMin = 20
+L18_1.intervalMax = 30
+L17_1[1] = L18_1
+L16_1.dialogDataList = L17_1
+L17_1 = {}
+L18_1 = {}
+L19_1 = {}
+L20_1 = LuaVirtualType
+L20_1 = L20_1.NpcActionSubQuestCondition
+L19_1._type_ = L20_1
+L19_1.subQuestId = 4016816
+L20_1 = L3_1.UnFinished
+L19_1.questState = L20_1
+L18_1[1] = L19_1
+L17_1[1] = L18_1
+L16_1.conditions = L17_1
 L12_1[1] = L13_1
 L12_1[2] = L14_1
 L12_1[3] = L15_1
+L12_1[4] = L16_1
 L11_1.NahidaNarratorData = L12_1
 L10_1.Data = L11_1
 return L10_1

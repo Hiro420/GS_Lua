@@ -146,6 +146,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L11_2 = A3_2
   L12_2 = 2
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  return
 end
 L1_1.NpcCreateWithNpcTrigger = L9_1
 function L9_1(A0_2, A1_2)
@@ -180,6 +181,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L13_2 = A4_2
   L14_2 = 2
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  return
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2)
@@ -344,6 +346,18 @@ function L9_1(A0_2, A1_2)
   L11_2 = false
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DisableMainPageWithConfigByQuest
+  L4_2 = false
+  L5_2 = "DisableFairyBookQuest"
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.BanUIByQuest
+  L3_2 = 2
+  L4_2 = false
+  L5_2 = 15008
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart1500802 = L9_1
 function L9_1(A0_2, A1_2)
@@ -455,6 +469,24 @@ function L9_1(A0_2, A1_2)
   L7_2 = 3
   L8_2 = 0
   L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.DisableMainPageWithConfigByQuest
+  L7_2 = true
+  L8_2 = "DisableFairyBookQuest"
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = actorUtils
+  L5_2 = L5_2.BanUIByQuest
+  L6_2 = 2
+  L7_2 = true
+  L8_2 = 15008
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.SetNavigationByMainId
+  L7_2 = 15008
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1500803 = L9_1
 function L9_1(A0_2, A1_2)
@@ -498,6 +530,18 @@ function L9_1(A0_2, A1_2)
   L3_2 = L3_2.CancelStoryByQuest
   L5_2 = 121500802
   L3_2(L4_2, L5_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DisableMainPageWithConfigByQuest
+  L5_2 = false
+  L6_2 = "DisableFairyBookQuest"
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.BanUIByQuest
+  L4_2 = 2
+  L5_2 = false
+  L6_2 = 15008
+  L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1500803 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1003,6 +1047,18 @@ function L9_1(A0_2, A1_2)
   L14_2 = false
   L15_2 = 3
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.DisableMainPageWithConfigByQuest
+  L7_2 = false
+  L8_2 = "DisableFairyBookQuest"
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = actorUtils
+  L5_2 = L5_2.BanUIByQuest
+  L6_2 = 2
+  L7_2 = false
+  L8_2 = 15008
+  L5_2(L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1500806 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1123,10 +1179,28 @@ function L9_1(A0_2, A1_2)
   L7_2 = 4
   L8_2 = 1
   L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.DisableMainPageWithConfigByQuest
+  L7_2 = true
+  L8_2 = "DisableFairyBookQuest"
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = actorUtils
+  L5_2 = L5_2.BanUIByQuest
+  L6_2 = 2
+  L7_2 = true
+  L8_2 = 15008
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L3_1
+  L6_2 = L5_2
+  L5_2 = L5_2.SetNavigationByMainId
+  L7_2 = 15008
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1500807 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1500807"
   L2_2(L3_2)
@@ -1149,6 +1223,18 @@ function L9_1(A0_2, A1_2)
   L4_2 = L2_2
   L3_2 = L2_2.ResetForceAvatarWalk
   L3_2(L4_2)
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DisableMainPageWithConfigByQuest
+  L5_2 = false
+  L6_2 = "DisableFairyBookQuest"
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = actorUtils
+  L3_2 = L3_2.BanUIByQuest
+  L4_2 = 2
+  L5_2 = false
+  L6_2 = 15008
+  L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1500807 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1178,6 +1264,10 @@ function L9_1(A0_2, A1_2)
   L8_2 = L7_1.Npc1087
   L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ExitTailMode
+  L2_2(L3_2)
 end
 L1_1.OnSubStart1500808 = L9_1
 function L9_1(A0_2, A1_2)

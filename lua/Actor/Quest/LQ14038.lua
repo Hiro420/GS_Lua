@@ -1223,7 +1223,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403809 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = print
   L3_2 = "OnSubStart1403810"
   L2_2(L3_2)
@@ -1409,11 +1409,21 @@ function L10_1(A0_2, A1_2)
   L8_2 = 1
   L9_2 = true
   L5_2(L6_2, L7_2, L8_2, L9_2)
-  L5_2 = L3_1
+  L5_2 = actorMgr
   L6_2 = L5_2
-  L5_2 = L5_2.SetWeather
-  L7_2 = "Homeworld/Weather_ClearSky_HomeWorld_Interior_02"
-  L5_2(L6_2, L7_2)
+  L5_2 = L5_2.CreateActorWithPos
+  L7_2 = "Q14038Trigger14"
+  L8_2 = "Actor/Gadget/Q14038Trigger14"
+  L9_2 = 70900002
+  L10_2 = 0
+  L11_2 = L8_1.TPos_Q14038Trigger14
+  L11_2 = L11_2.pos
+  L12_2 = L8_1.TPos_Q14038Trigger14
+  L12_2 = L12_2.rot
+  L13_2 = true
+  L14_2 = false
+  L15_2 = 1098
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
 end
 L1_1.OnSubStart1403810 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1429,7 +1439,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403810 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = print
   L3_2 = "OnSubStart1403811"
   L2_2(L3_2)
@@ -1595,11 +1605,21 @@ function L10_1(A0_2, A1_2)
   L8_2 = 1
   L9_2 = true
   L5_2(L6_2, L7_2, L8_2, L9_2)
-  L5_2 = L3_1
+  L5_2 = actorMgr
   L6_2 = L5_2
-  L5_2 = L5_2.SetWeather
-  L7_2 = "Homeworld/Weather_ClearSky_HomeWorld_Interior_02"
-  L5_2(L6_2, L7_2)
+  L5_2 = L5_2.CreateActorWithPos
+  L7_2 = "Q14038Trigger14"
+  L8_2 = "Actor/Gadget/Q14038Trigger14"
+  L9_2 = 70900002
+  L10_2 = 0
+  L11_2 = L8_1.TPos_Q14038Trigger14
+  L11_2 = L11_2.pos
+  L12_2 = L8_1.TPos_Q14038Trigger14
+  L12_2 = L12_2.rot
+  L13_2 = true
+  L14_2 = false
+  L15_2 = 1098
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
 end
 L1_1.OnSubStart1403811 = L10_1
 function L10_1(A0_2, A1_2)
@@ -1661,7 +1681,7 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ActionSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
     L1_3 = actorMgr
     L2_3 = L1_3
     L1_3 = L1_3.CreateActorWithPos
@@ -1803,17 +1823,27 @@ function L10_1(A0_2, A1_2)
     L5_3 = 1
     L6_3 = true
     L2_3(L3_3, L4_3, L5_3, L6_3)
-    L2_3 = L3_1
+    L2_3 = actorMgr
     L3_3 = L2_3
-    L2_3 = L2_3.SetWeather
-    L4_3 = "Homeworld/Weather_ClearSky_HomeWorld_Interior_02"
-    L2_3(L3_3, L4_3)
+    L2_3 = L2_3.CreateActorWithPos
+    L4_3 = "Q14038Trigger14"
+    L5_3 = "Actor/Gadget/Q14038Trigger14"
+    L6_3 = 70900002
+    L7_3 = 0
+    L8_3 = L8_1.TPos_Q14038Trigger14
+    L8_3 = L8_3.pos
+    L9_3 = L8_1.TPos_Q14038Trigger14
+    L9_3 = L9_3.rot
+    L10_3 = true
+    L11_3 = false
+    L12_3 = 1098
+    L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
   L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart1403822 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1403822"
   L2_2(L3_2)
@@ -1834,6 +1864,13 @@ function L10_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.CancelWeather
   L2_2(L3_2)
+  L2_2 = actorMgr
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyEntityActor
+  L4_2 = "Q14008Trigger14"
+  L5_2 = 1908
+  L6_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1403822 = L10_1
 function L10_1(A0_2, A1_2)
@@ -3696,6 +3733,10 @@ function L10_1(A0_2, A1_2)
   L4_2 = "Paimon"
   L5_2 = 1097
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CancelWeather
+  L2_2(L3_2)
 end
 L1_1.OnSubFailed1403826 = L10_1
 function L10_1(A0_2, A1_2)
@@ -3916,6 +3957,10 @@ function L10_1(A0_2, A1_2)
   L4_2 = "Paimon"
   L5_2 = 1097
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CancelWeather
+  L2_2(L3_2)
 end
 L1_1.OnSubFailed1403818 = L10_1
 function L10_1(A0_2, A1_2)
@@ -4225,6 +4270,10 @@ function L10_1(A0_2, A1_2)
   L4_2 = "Paimon"
   L5_2 = 1097
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CancelWeather
+  L2_2(L3_2)
 end
 L1_1.OnSubFailed1403819 = L10_1
 function L10_1(A0_2, A1_2)

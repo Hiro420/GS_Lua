@@ -221,6 +221,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L13_2 = A4_2
   L14_2 = 2
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  return
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
@@ -352,7 +353,7 @@ function L9_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 500002
   L8_2 = 5
-  L9_2 = true
+  L9_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -507,7 +508,7 @@ function L9_1(A0_2, A1_2)
     L5_3 = L5_3.NotifyTo
     L7_3 = L7_1.Npc5133
     L7_3 = L7_3.alias
-    L8_3 = 2
+    L8_3 = 1
     L9_3 = true
     L5_3(L6_3, L7_3, L8_3, L9_3)
   end
