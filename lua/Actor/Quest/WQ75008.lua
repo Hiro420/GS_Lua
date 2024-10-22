@@ -182,12 +182,26 @@ function L9_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.LevelLoadFinishSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
-    L2_3 = A0_3
-    L1_3 = A0_3.SetNavigationByMainId
-    L3_3 = 75008
-    L4_3 = true
-    L1_3(L2_3, L3_3, L4_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CallDelayByQuest
+    L3_3 = "7500802"
+    L4_3 = 1
+    function L5_3(A0_4)
+      local L1_4, L2_4, L3_4, L4_4
+      L2_4 = A0_4
+      L1_4 = A0_4.SetNavigationByMainId
+      L3_4 = 75008
+      L4_4 = true
+      L1_4(L2_4, L3_4, L4_4)
+      L1_4 = L3_1
+      L2_4 = L1_4
+      L1_4 = L1_4.QuestNarratorTask
+      L3_4 = L8_1.Narrator_7500801
+      L1_4(L2_4, L3_4)
+    end
+    L1_3(L2_3, L3_3, L4_3, L5_3)
   end
   L2_2(L3_2, L4_2)
 end
@@ -207,11 +221,6 @@ function L9_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.QuestNarratorTask
-  L4_2 = L8_1.Narrator_7500801
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7500801 = L9_1
 function L9_1(A0_2, A1_2)

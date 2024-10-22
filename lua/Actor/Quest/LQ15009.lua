@@ -211,6 +211,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L13_2 = A4_2
   L14_2 = 2
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  return
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2, A2_2)
@@ -502,6 +503,18 @@ function L9_1(A0_2, A1_2)
   L8_2 = "StateGroup_specialArea"
   L9_2 = "None"
   L6_2(L7_2, L8_2, L9_2)
+  L6_2 = actorUtils
+  L6_2 = L6_2.BanUIByQuest
+  L7_2 = 2
+  L8_2 = false
+  L9_2 = 15009
+  L6_2(L7_2, L8_2, L9_2)
+  L6_2 = actorUtils
+  L6_2 = L6_2.BanUIByQuest
+  L7_2 = 24
+  L8_2 = false
+  L9_2 = 15009
+  L6_2(L7_2, L8_2, L9_2)
 end
 L1_1.OnSubStart1500907 = L9_1
 function L9_1(A0_2, A1_2)
@@ -627,6 +640,18 @@ function L9_1(A0_2, A1_2)
     end
     L6_2(L7_2, L8_2)
   end
+  L6_2 = actorUtils
+  L6_2 = L6_2.BanUIByQuest
+  L7_2 = 2
+  L8_2 = true
+  L9_2 = 15009
+  L6_2(L7_2, L8_2, L9_2)
+  L6_2 = actorUtils
+  L6_2 = L6_2.BanUIByQuest
+  L7_2 = 24
+  L8_2 = true
+  L9_2 = 15009
+  L6_2(L7_2, L8_2, L9_2)
 end
 L1_1.OnSubStart1500913 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1143,6 +1168,18 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.ResumePaimonInProfilePage
   L4_2 = L6_1.SceneIDList
   L2_2(L3_2, L4_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.BanUIByQuest
+  L3_2 = 2
+  L4_2 = false
+  L5_2 = 15009
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = actorUtils
+  L2_2 = L2_2.BanUIByQuest
+  L3_2 = 24
+  L4_2 = false
+  L5_2 = 15009
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1500903 = L9_1
 function L9_1(A0_2, A1_2)

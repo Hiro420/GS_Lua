@@ -502,6 +502,19 @@ function L3_1(A0_2, A1_2, A2_2, A3_2)
   L4_2(L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.SetAnimatorLayerWeight = L3_1
+function L3_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  if A2_2 == nil then
+    A2_2 = true
+  end
+  L3_2 = A0_2.uActor
+  L4_2 = L3_2
+  L3_2 = L3_2.EnableFootPrint
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.EnableFootPrint = L3_1
 function L3_1(A0_2)
   local L1_2
 end

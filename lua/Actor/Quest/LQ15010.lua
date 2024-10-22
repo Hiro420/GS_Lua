@@ -242,6 +242,7 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L11_2 = A3_2
   L12_2 = 2
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  return
 end
 L1_1.NpcCreateWithNpcTrigger = L9_1
 function L9_1(A0_2, A1_2)
@@ -258,6 +259,27 @@ function L9_1(A0_2, A1_2)
   end
 end
 L1_1.ActorDestroy = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
+  L8_2 = "Q"
+  L9_2 = A1_2
+  L10_2 = "N"
+  L11_2 = A5_2
+  L12_2 = "Trigger"
+  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
+  L9_2 = A1_2
+  L10_2 = A5_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
+  L14_2 = 2
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  return
+end
+L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   local L6_2, L7_2, L8_2, L9_2
   L6_2 = L3_1
@@ -289,59 +311,66 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
 end
 L1_1.CallDelayNpcCreateWithNpcTriggerAndBlack = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1501001"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTrigger
-  L4_2 = L7_1.Npc1087
-  L4_2 = L4_2.id
-  L5_2 = 0
-  L6_2 = 7
-  L7_2 = 1501001
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc14227
-  L5_2 = L5_2.id
-  L6_2 = 0
-  L7_2 = false
-  L8_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateQuestNpc
-  L4_2 = A1_2
-  L5_2 = L7_1.Npc14228
-  L5_2 = L5_2.id
-  L6_2 = 0
-  L7_2 = false
-  L8_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.GetQuestVar
-  L4_2 = 1501001
-  L5_2 = 0
-  L2_2 = L2_2(L3_2, L4_2, L5_2)
-  if L2_2 == 0 then
-    L3_2 = L3_1
-    L4_2 = L3_2
-    L3_2 = L3_2.QuestNarratorTask
-    L5_2 = L6_1.NarratorWithId_1501001
-    L6_2 = nil
-    L3_2(L4_2, L5_2, L6_2)
-    L3_2 = L3_1
-    L4_2 = L3_2
-    L3_2 = L3_2.SetQuestVarByMainId
-    L5_2 = 0
-    L6_2 = 1
-    L3_2(L4_2, L5_2, L6_2)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NpcCreateWithNpcTrigger
+    L3_3 = L7_1.Npc1087
+    L3_3 = L3_3.id
+    L4_3 = 0
+    L5_3 = 7
+    L6_3 = 1501001
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc14227
+    L4_3 = L4_3.id
+    L5_3 = 0
+    L6_3 = false
+    L7_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateQuestNpc
+    L3_3 = A1_2
+    L4_3 = L7_1.Npc14228
+    L4_3 = L4_3.id
+    L5_3 = 0
+    L6_3 = false
+    L7_3 = 0
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.GetQuestVar
+    L3_3 = 1501001
+    L4_3 = 0
+    L1_3 = L1_3(L2_3, L3_3, L4_3)
+    if L1_3 == 0 then
+      L2_3 = L3_1
+      L3_3 = L2_3
+      L2_3 = L2_3.QuestNarratorTask
+      L4_3 = L6_1.NarratorWithId_1501001
+      L5_3 = nil
+      L2_3(L3_3, L4_3, L5_3)
+      L2_3 = L3_1
+      L3_3 = L2_3
+      L2_3 = L2_3.SetQuestVarByMainId
+      L4_3 = 0
+      L5_3 = 1
+      L2_3(L3_3, L4_3, L5_3)
+    end
   end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart1501001 = L9_1
 function L9_1(A0_2, A1_2)
@@ -423,7 +452,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CallDelayNpcCreateWithNpcTriggerAndBlack
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
   L4_2 = 1501003
   L5_2 = 0
   L6_2 = 10
@@ -1426,7 +1455,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CallDelayNpcCreateWithNpcTriggerAndBlack
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
   L4_2 = 1501009
   L5_2 = 0
   L6_2 = 15

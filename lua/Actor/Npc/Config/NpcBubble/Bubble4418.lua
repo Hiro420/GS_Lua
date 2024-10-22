@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -42,7 +42,41 @@ L12_1.intervalMin = 20
 L12_1.intervalMax = 30
 L11_1[1] = L12_1
 L10_1.bubbleDatas = L11_1
+L11_1 = {}
+L12_1 = {}
+L12_1.priority = 2
+L11_1.condition = L12_1
+L12_1 = {}
+L13_1 = {}
+L13_1.dialogId = 1016441802
+L13_1.duration = 0
+L13_1.intervalMin = 20
+L13_1.intervalMax = 30
+L12_1[1] = L13_1
+L11_1.bubbleDatas = L12_1
+L12_1 = {}
+L13_1 = {}
+L14_1 = {}
+L15_1 = LuaVirtualType
+L15_1 = L15_1.NpcActionActivityCondCondition
+L14_1._type_ = L15_1
+L14_1.activityId = 2034
+L14_1.activityCondId = 2034004
+L14_1.isActivityValid = true
+L15_1 = {}
+L16_1 = LuaVirtualType
+L16_1 = L16_1.NpcActionQuestGlobalVarCondition
+L15_1._type_ = L16_1
+L15_1.questGlobalVarId = 4016801
+L15_1.questGlobalVarValue = 1
+L16_1 = L6_1.Equal
+L15_1.questGlobalVarOperate = L16_1
+L13_1[1] = L14_1
+L13_1[2] = L15_1
+L12_1[1] = L13_1
+L11_1.conditionGrp = L12_1
 L8_1[1] = L9_1
 L8_1[2] = L10_1
+L8_1[3] = L11_1
 L7_1.BubbleData = L8_1
 return L7_1
