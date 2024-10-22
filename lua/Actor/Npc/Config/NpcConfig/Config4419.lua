@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -76,41 +76,8 @@ L17_1 = L1_1.Stand
 L16_1.action = L17_1
 L15_1[1] = L16_1
 L14_1.actionPoints = L15_1
-L15_1 = {}
-L16_1 = {}
-L16_1.sceneId = 3
-L16_1.priority = 2
-L15_1.condition = L16_1
-L16_1 = {}
-L17_1 = {}
-L18_1 = {}
-L19_1 = LuaVirtualType
-L19_1 = L19_1.NpcActionActivityCondCondition
-L18_1._type_ = L19_1
-L18_1.activityId = 2034
-L18_1.activityCondId = 2034004
-L18_1.isActivityValid = true
-L19_1 = {}
-L20_1 = LuaVirtualType
-L20_1 = L20_1.NpcActionQuestGlobalVarCondition
-L19_1._type_ = L20_1
-L19_1.questGlobalVarId = 4016801
-L19_1.questGlobalVarValue = 1
-L20_1 = L5_1.Equal
-L19_1.questGlobalVarOperate = L20_1
-L17_1[1] = L18_1
-L17_1[2] = L19_1
-L16_1[1] = L17_1
-L15_1.conditionGrp = L16_1
-L16_1 = {}
-L17_1 = {}
-L18_1 = L1_1.Hide
-L17_1.action = L18_1
-L16_1[1] = L17_1
-L15_1.actionPoints = L16_1
 L12_1[1] = L13_1
 L12_1[2] = L14_1
-L12_1[3] = L15_1
 L11_1.DailyScheduleData = L12_1
 L12_1 = {}
 L13_1 = {}

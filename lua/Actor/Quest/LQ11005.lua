@@ -1020,6 +1020,11 @@ function L21_1(A0_2, A1_2)
     L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
   end
   L3_2(L4_2, L5_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.ChangeWeather
+  L5_2 = "BigWorld/Weather_ClearSky"
+  L3_2(L4_2, L5_2)
 end
 L1_1.OnSubStart1100503 = L21_1
 function L21_1(A0_2, A1_2)
@@ -1820,10 +1825,6 @@ function L21_1(A0_2, A1_2)
   L2_2 = A0_2.NarratorOnlyTaskLegacy
   L4_2 = L3_1.NarratorFlow4
   L2_2(L3_2, L4_2)
-  L2_2 = globalActor
-  L3_2 = L2_2
-  L2_2 = L2_2.LeaveAllWeather
-  L2_2(L3_2)
 end
 L1_1.OnSubFinish1100504 = L21_1
 function L21_1(A0_2, A1_2)
@@ -2177,10 +2178,6 @@ function L21_1(A0_2, A1_2)
   L2_2 = L2_2.UnSpawn
   L4_2 = "Wash"
   L2_2(L3_2, L4_2)
-  L2_2 = globalActor
-  L3_2 = L2_2
-  L2_2 = L2_2.LeaveAllWeather
-  L2_2(L3_2)
 end
 L1_1.OnSubFailed1100504 = L21_1
 function L21_1(A0_2, A1_2)

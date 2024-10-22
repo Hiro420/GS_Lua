@@ -189,10 +189,15 @@ function L7_1(A0_2, A1_2)
 end
 L1_1.OnSubStart45103 = L7_1
 function L7_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "45104 start:..."
   L2_2(L3_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.ChangeWeather
+  L4_2 = "BigWorld/Weather_ClearSky"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart45104 = L7_1
 function L7_1(A0_2, A1_2)
@@ -200,6 +205,11 @@ function L7_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.ActionSafeCall
   L4_2 = A0_2.Razor05
+  L2_2(L3_2, L4_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.ChangeWeather
+  L4_2 = "BigWorld/Weather_ClearSky"
   L2_2(L3_2, L4_2)
   L3_2 = A0_2
   L2_2 = A0_2.ActionSafeCall

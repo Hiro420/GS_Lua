@@ -199,20 +199,6 @@ function L9_1(A0_2, A1_2)
   L5_2 = nil
   L6_2 = 13008
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc1054Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc12713Data
-  L4_2 = L4_2.alias
-  L5_2 = 3
-  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1300801 = L9_1
 function L9_1(A0_2, A1_2)

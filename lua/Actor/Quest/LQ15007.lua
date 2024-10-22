@@ -140,7 +140,6 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L11_2 = A3_2
   L12_2 = 2
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  return
 end
 L1_1.NpcCreateWithNpcTrigger = L9_1
 function L9_1(A0_2, A1_2, A2_2)

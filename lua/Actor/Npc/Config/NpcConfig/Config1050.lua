@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -283,40 +283,6 @@ L25_1[1] = L26_1
 L23_1[1] = L24_1
 L23_1[2] = L25_1
 L22_1.conditions = L23_1
-L23_1 = {}
-L24_1 = {}
-L25_1 = 40168
-L24_1[1] = L25_1
-L23_1.validQuestIds = L24_1
-L23_1.priority = 300
-L24_1 = {}
-L25_1 = {}
-L25_1.dialogId = 1018105006
-L25_1.duration = 0
-L25_1.intervalMin = 20
-L25_1.intervalMax = 30
-L24_1[1] = L25_1
-L23_1.dialogDataList = L24_1
-L24_1 = {}
-L25_1 = {}
-L26_1 = {}
-L27_1 = LuaVirtualType
-L27_1 = L27_1.NpcActionSubQuestCondition
-L26_1._type_ = L27_1
-L26_1.subQuestId = 4016802
-L27_1 = L3_1.Finished
-L26_1.questState = L27_1
-L27_1 = {}
-L28_1 = LuaVirtualType
-L28_1 = L28_1.NpcActionSubQuestCondition
-L27_1._type_ = L28_1
-L27_1.subQuestId = 4016816
-L28_1 = L3_1.None
-L27_1.questState = L28_1
-L25_1[1] = L26_1
-L25_1[2] = L27_1
-L24_1[1] = L25_1
-L23_1.conditions = L24_1
 L12_1[1] = L13_1
 L12_1[2] = L14_1
 L12_1[3] = L15_1
@@ -327,7 +293,6 @@ L12_1[7] = L19_1
 L12_1[8] = L20_1
 L12_1[9] = L21_1
 L12_1[10] = L22_1
-L12_1[11] = L23_1
 L11_1.NahidaNarratorData = L12_1
 L10_1.Data = L11_1
 return L10_1

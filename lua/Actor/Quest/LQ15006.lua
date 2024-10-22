@@ -142,7 +142,6 @@ function L8_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   L13_2 = A4_2
   L14_2 = 2
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
-  return
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L8_1
 function L8_1(A0_2, A1_2, A2_2, A3_2, A4_2)
@@ -162,27 +161,8 @@ function L8_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L11_2 = A3_2
   L12_2 = 2
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  return
 end
 L1_1.NpcCreateWithNpcTrigger = L8_1
-function L8_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2
-  L4_2 = L3_1
-  L5_2 = L4_2
-  L4_2 = L4_2.ActionSafeCall
-  function L6_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.NotifyTo
-    L3_3 = A1_2
-    L4_3 = A3_2
-    L5_3 = A2_2
-    L1_3(L2_3, L3_3, L4_3, L5_3)
-  end
-  L4_2(L5_2, L6_2)
-end
-L1_1.DailyNpcSafeHideSelf = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
   L2_2 = print
@@ -220,14 +200,6 @@ function L8_1(A0_2, A1_2)
   L10_2 = false
   L11_2 = false
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.DailyNpcSafeHideSelf
-  L5_2 = L6_1.Npc6057
-  L5_2 = L5_2.alias
-  L6_2 = true
-  L7_2 = 1
-  L3_2(L4_2, L5_2, L6_2, L7_2)
   L3_2 = L3_1
   L4_2 = L3_2
   L3_2 = L3_2.GetQuestNpcActor
@@ -289,7 +261,7 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.AfterMainPageActiveSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
+    local L1_3, L2_3, L3_3, L4_3
     L1_3 = actorUtils
     L1_3 = L1_3.ShowContext
     L2_3 = "ChapterBeginDialog"
@@ -301,14 +273,6 @@ function L8_1(A0_2, A1_2)
     L3_3 = 15006
     L4_3 = true
     L1_3(L2_3, L3_3, L4_3)
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.LightNotifyTo
-    L3_3 = L6_1.Npc6057
-    L3_3 = L3_3.alias
-    L4_3 = 0
-    L5_3 = true
-    L1_3(L2_3, L3_3, L4_3, L5_3)
   end
   L2_2(L3_2, L4_2)
 end

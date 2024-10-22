@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -16,25 +16,23 @@ L4_1 = nil
 L5_1 = nil
 L6_1 = nil
 L7_1 = nil
-L8_1 = nil
-function L9_1(A0_2)
+function L8_1(A0_2)
   local L1_2
-  L3_1 = A0_2
   L1_2 = A0_2.clientData
   L2_1 = L1_2
   L1_2 = L2_1.MainID
-  L4_1 = L1_2
+  L3_1 = L1_2
   L1_2 = L2_1.ActorAlias
-  L5_1 = L1_2
+  L4_1 = L1_2
   L1_2 = L2_1.SubIDs
-  L6_1 = L1_2
+  L5_1 = L1_2
   L1_2 = L2_1.Npcs
-  L7_1 = L1_2
+  L6_1 = L1_2
   L1_2 = L2_1.Datas
-  L8_1 = L1_2
+  L7_1 = L1_2
 end
-L1_1.OnDataLoaded = L9_1
-function L9_1(A0_2)
+L1_1.OnDataLoaded = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubStart1203401
@@ -67,8 +65,8 @@ function L9_1(A0_2)
   L1_2["1203414"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
-L1_1.OnSubStartHandlerBuild = L9_1
-function L9_1(A0_2)
+L1_1.OnSubStartHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubFinish1203401
@@ -101,62 +99,61 @@ function L9_1(A0_2)
   L1_2["1203414"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
-L1_1.OnSubFinishHandlerBuild = L9_1
-function L9_1(A0_2)
+L1_1.OnSubFinishHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubFailed1203413
   L1_2["1203413"] = L2_2
   A0_2.subFailedHandlers = L1_2
 end
-L1_1.OnSubFailedHandlerBuild = L9_1
-function L9_1(A0_2)
+L1_1.OnSubFailedHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "Start"
   L1_2(L2_2)
 end
-L1_1.Start = L9_1
-function L9_1(A0_2)
+L1_1.Start = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "OnDestroy"
   L1_2(L2_2)
 end
-L1_1.OnDestroy = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnDestroy = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainFinished"
   L2_2(L3_2)
 end
-L1_1.OnMainFinished = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnMainFinished = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainFailed"
   L2_2(L3_2)
 end
-L1_1.OnMainFailed = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnMainFailed = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
 end
-L1_1.OnMainCanceled = L9_1
-function L9_1(A0_2)
+L1_1.OnMainCanceled = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "NormalCheck"
   L1_2(L2_2)
-  L1_2 = L3_1
-  L2_2 = L1_2
-  L1_2 = L1_2.CheckDistance
+  L2_2 = A0_2
+  L1_2 = A0_2.CheckDistance
   L1_2(L2_2)
 end
-L1_1.NormalCheck = L9_1
-function L9_1(A0_2)
+L1_1.NormalCheck = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L1_2 = print
   L2_2 = "CheckDistance"
@@ -171,7 +168,7 @@ function L9_1(A0_2)
     L1_2 = L1_2()
     L3_2 = A0_2
     L2_2 = A0_2.GetQuestNpcActor
-    L4_2 = L7_1.Npc12521Data
+    L4_2 = L6_1.Npc12521Data
     L4_2 = L4_2.alias
     L2_2 = L2_2(L3_2, L4_2)
     L4_2 = L2_2
@@ -202,7 +199,7 @@ function L9_1(A0_2)
       L5_2(L6_2, L7_2, L8_2)
       L6_2 = A0_2
       L5_2 = A0_2.GetQuestNpcActor
-      L7_2 = L7_1.Npc12521Data
+      L7_2 = L6_1.Npc12521Data
       L7_2 = L7_2.alias
       L5_2 = L5_2(L6_2, L7_2)
       L7_2 = L5_2
@@ -212,7 +209,7 @@ function L9_1(A0_2)
       L6_2(L7_2, L8_2, L9_2)
       L7_2 = A0_2
       L6_2 = A0_2.NarratorOnlyTaskByData
-      L8_2 = L8_1.NarratorFailFar
+      L8_2 = L7_1.NarratorFailFar
       L9_2 = 12034
       L6_2(L7_2, L8_2, L9_2)
     else
@@ -224,36 +221,36 @@ function L9_1(A0_2)
     end
   end
 end
-L1_1.CheckDistance = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.CheckDistance = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1203401"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1203401 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203401 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1203401"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1203401 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203401 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubStart1203402"
   L2_2(L3_2)
 end
-L1_1.OnSubStart1203402 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203402 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1203402"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1203402 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203402 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1203403"
@@ -290,27 +287,27 @@ function L9_1(A0_2, A1_2)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12485Data
+    L4_3 = L6_1.Npc12485Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12486Data
+    L4_3 = L6_1.Npc12486Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc3173Data
+    L4_3 = L6_1.Npc3173Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc12485Data
+    L3_3 = L6_1.Npc12485Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -324,7 +321,7 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
     L3_3 = A0_3
     L2_3 = A0_3.NotifyTo
-    L4_3 = L7_1.Npc3016Data
+    L4_3 = L6_1.Npc3016Data
     L4_3 = L4_3.alias
     L5_3 = 1
     L6_3 = true
@@ -332,15 +329,15 @@ function L9_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart1203403 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203403 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1203403"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1203403 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203403 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1203404"
@@ -372,7 +369,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc12485Data
+  L4_2 = L6_1.Npc12485Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
@@ -386,40 +383,40 @@ function L9_1(A0_2, A1_2)
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
   L4_2 = A0_2
   L3_2 = A0_2.NotifyTo
-  L5_2 = L7_1.Npc3016Data
+  L5_2 = L6_1.Npc3016Data
   L5_2 = L5_2.alias
   L6_2 = 1
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1203404 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203404 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1203404"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc1047Data
+  L4_2 = L6_1.Npc1047Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc12486Data
+  L4_2 = L6_1.Npc12486Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1203404 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203404 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "OnSubStart1203405"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc12485Data
+  L4_2 = L6_1.Npc12485Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
@@ -433,29 +430,29 @@ function L9_1(A0_2, A1_2)
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
   L4_2 = A0_2
   L3_2 = A0_2.NotifyTo
-  L5_2 = L7_1.Npc3016Data
+  L5_2 = L6_1.Npc3016Data
   L5_2 = L5_2.alias
   L6_2 = 1
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart1203405 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203405 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1203405"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc12485Data
+  L4_2 = L6_1.Npc12485Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
   L3_2 = L2_2.DoFreeStateTrigger
   L3_2(L4_2)
 end
-L1_1.OnSubFinish1203405 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203405 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1203406"
@@ -474,7 +471,7 @@ function L9_1(A0_2, A1_2)
       local L1_4, L2_4, L3_4
       L2_4 = A0_4
       L1_4 = A0_4.RequestInteraction
-      L3_4 = L7_1.Npc12485Data
+      L3_4 = L6_1.Npc12485Data
       L3_4 = L3_4.alias
       L1_4(L2_4, L3_4)
     end
@@ -488,69 +485,69 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1203406 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203406 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1203406"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc12532Data
+  L4_2 = L6_1.Npc12532Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1203406 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203406 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1203407"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1203407 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203407 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1203407"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1203407 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203407 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart1203408"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1203408 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203408 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1203408"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish1203408 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203408 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1203409"
@@ -582,27 +579,27 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart1203409 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203409 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1203409"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc12485Data
+  L4_2 = L6_1.Npc12485Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1203409 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203409 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
   L2_2 = print
   L3_2 = "OnSubStart1203410"
@@ -610,69 +607,69 @@ function L9_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12528Data
+  L5_2 = L6_1.Npc12528Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12529Data
+  L5_2 = L6_1.Npc12529Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12523Data
+  L5_2 = L6_1.Npc12523Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12451Data
+  L5_2 = L6_1.Npc12451Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc3023Data
+  L5_2 = L6_1.Npc3023Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc3005Data
+  L5_2 = L6_1.Npc3005Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12487Data
+  L5_2 = L6_1.Npc12487Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12488Data
+  L5_2 = L6_1.Npc12488Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc3023Data
+  L4_2 = L6_1.Npc3023Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
@@ -690,7 +687,7 @@ function L9_1(A0_2, A1_2)
   L3_2(L4_2, L5_2)
   L4_2 = A0_2
   L3_2 = A0_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc3005Data
+  L5_2 = L6_1.Npc3005Data
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
@@ -699,7 +696,7 @@ function L9_1(A0_2, A1_2)
   L4_2(L5_2, L6_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc12487Data
+  L6_2 = L6_1.Npc12487Data
   L6_2 = L6_2.alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
@@ -737,8 +734,8 @@ function L9_1(A0_2, A1_2)
   L15_2 = 3
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
 end
-L1_1.OnSubStart1203410 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203410 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1203410"
@@ -749,13 +746,13 @@ function L9_1(A0_2, A1_2)
     local L1_3, L2_3, L3_3, L4_3, L5_3
     L2_3 = A0_3
     L1_3 = A0_3.NarratorOnlyTaskByData
-    L3_3 = L8_1.Narrator1
+    L3_3 = L7_1.Narrator1
     L4_3 = nil
     L5_3 = 12034
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc3023Data
+    L3_3 = L6_1.Npc3023Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -764,7 +761,7 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3, L4_3)
     L3_3 = A0_3
     L2_3 = A0_3.GetQuestNpcActor
-    L4_3 = L7_1.Npc3005Data
+    L4_3 = L6_1.Npc3005Data
     L4_3 = L4_3.alias
     L2_3 = L2_3(L3_3, L4_3)
     L4_3 = L2_3
@@ -774,8 +771,8 @@ function L9_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish1203410 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203410 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1203411"
@@ -787,20 +784,20 @@ function L9_1(A0_2, A1_2)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc3054Data
+    L4_3 = L6_1.Npc3054Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.NotifyTo
-    L3_3 = L7_1.Npc3016Data
+    L3_3 = L6_1.Npc3016Data
     L3_3 = L3_3.alias
     L4_3 = 1
     L5_3 = true
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc12487Data
+    L3_3 = L6_1.Npc12487Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -814,7 +811,7 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
     L3_3 = A0_3
     L2_3 = A0_3.GetQuestNpcActor
-    L4_3 = L7_1.Npc3023Data
+    L4_3 = L6_1.Npc3023Data
     L4_3 = L4_3.alias
     L2_3 = L2_3(L3_3, L4_3)
     L4_3 = L2_3
@@ -828,7 +825,7 @@ function L9_1(A0_2, A1_2)
     L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
     L4_3 = A0_3
     L3_3 = A0_3.GetQuestNpcActor
-    L5_3 = L7_1.Npc3054Data
+    L5_3 = L6_1.Npc3054Data
     L5_3 = L5_3.alias
     L3_3 = L3_3(L4_3, L5_3)
     L5_3 = L3_3
@@ -843,8 +840,8 @@ function L9_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart1203411 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203411 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1203411"
@@ -855,7 +852,7 @@ function L9_1(A0_2, A1_2)
     local L1_3, L2_3, L3_3, L4_3, L5_3
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc3054Data
+    L3_3 = L6_1.Npc3054Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -863,27 +860,15 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3)
     L3_3 = A0_3
     L2_3 = A0_3.DestroyQuestNpcActor
-    L4_3 = L7_1.Npc3054Data
-    L4_3 = L4_3.alias
-    L5_3 = 3
-    L2_3(L3_3, L4_3, L5_3)
-    L3_3 = A0_3
-    L2_3 = A0_3.DestroyQuestNpcActor
-    L4_3 = L7_1.Npc3005Data
-    L4_3 = L4_3.alias
-    L5_3 = 3
-    L2_3(L3_3, L4_3, L5_3)
-    L3_3 = A0_3
-    L2_3 = A0_3.DestroyQuestNpcActor
-    L4_3 = L7_1.Npc3023Data
+    L4_3 = L6_1.Npc3054Data
     L4_3 = L4_3.alias
     L5_3 = 3
     L2_3(L3_3, L4_3, L5_3)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish1203411 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203411 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1203412"
@@ -897,7 +882,7 @@ function L9_1(A0_2, A1_2)
     L1_3(L2_3)
     L2_3 = A0_3
     L1_3 = A0_3.NotifyTo
-    L3_3 = L7_1.Npc3054Data
+    L3_3 = L6_1.Npc3054Data
     L3_3 = L3_3.alias
     L4_3 = 1
     L5_3 = true
@@ -930,62 +915,62 @@ function L9_1(A0_2, A1_2)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12489Data
+    L4_3 = L6_1.Npc12489Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12491Data
+    L4_3 = L6_1.Npc12491Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc3037Data
+    L4_3 = L6_1.Npc3037Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc3036Data
+    L4_3 = L6_1.Npc3036Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12492Data
+    L4_3 = L6_1.Npc12492Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12545Data
+    L4_3 = L6_1.Npc12545Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.CreateQuestNpc
     L3_3 = A1_2
-    L4_3 = L7_1.Npc12546Data
+    L4_3 = L6_1.Npc12546Data
     L4_3 = L4_3.id
     L5_3 = 0
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.NotifyTo
-    L3_3 = L7_1.Npc3016Data
+    L3_3 = L6_1.Npc3016Data
     L3_3 = L3_3.alias
     L4_3 = 1
     L5_3 = true
     L1_3(L2_3, L3_3, L4_3, L5_3)
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc12489Data
+    L3_3 = L6_1.Npc12489Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -999,7 +984,7 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
     L3_3 = A0_3
     L2_3 = A0_3.GetQuestNpcActor
-    L4_3 = L7_1.Npc12491Data
+    L4_3 = L6_1.Npc12491Data
     L4_3 = L4_3.alias
     L2_3 = L2_3(L3_3, L4_3)
     L4_3 = L2_3
@@ -1013,7 +998,7 @@ function L9_1(A0_2, A1_2)
     L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
     L4_3 = A0_3
     L3_3 = A0_3.GetQuestNpcActor
-    L5_3 = L7_1.Npc3037Data
+    L5_3 = L6_1.Npc3037Data
     L5_3 = L5_3.alias
     L3_3 = L3_3(L4_3, L5_3)
     L5_3 = L3_3
@@ -1027,7 +1012,7 @@ function L9_1(A0_2, A1_2)
     L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
     L5_3 = A0_3
     L4_3 = A0_3.GetQuestNpcActor
-    L6_3 = L7_1.Npc3036Data
+    L6_3 = L6_1.Npc3036Data
     L6_3 = L6_3.alias
     L4_3 = L4_3(L5_3, L6_3)
     L6_3 = L4_3
@@ -1041,14 +1026,14 @@ function L9_1(A0_2, A1_2)
     L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
     L6_3 = A0_3
     L5_3 = A0_3.NotifyTo
-    L7_3 = L7_1.Npc3042Data
+    L7_3 = L6_1.Npc3042Data
     L7_3 = L7_3.alias
     L8_3 = 1
     L9_3 = true
     L5_3(L6_3, L7_3, L8_3, L9_3)
     L6_3 = A0_3
     L5_3 = A0_3.NotifyTo
-    L7_3 = L7_1.Npc3047Data
+    L7_3 = L6_1.Npc3047Data
     L7_3 = L7_3.alias
     L8_3 = 1
     L9_3 = true
@@ -1062,7 +1047,7 @@ function L9_1(A0_2, A1_2)
       L7_3 = A0_3
       L6_3 = A0_3.CreateQuestNpc
       L8_3 = A1_2
-      L9_3 = L7_1.Npc12448Data
+      L9_3 = L6_1.Npc12448Data
       L9_3 = L9_3.id
       L10_3 = 0
       L6_3(L7_3, L8_3, L9_3, L10_3)
@@ -1091,7 +1076,7 @@ function L9_1(A0_2, A1_2)
     end
     L9_3 = A0_3
     L8_3 = A0_3.GetQuestNpcActor
-    L10_3 = L7_1.Npc12487Data
+    L10_3 = L6_1.Npc12487Data
     L10_3 = L10_3.alias
     L8_3 = L8_3(L9_3, L10_3)
     L10_3 = L8_3
@@ -1105,7 +1090,7 @@ function L9_1(A0_2, A1_2)
     L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
     L10_3 = A0_3
     L9_3 = A0_3.GetQuestNpcActor
-    L11_3 = L7_1.Npc3023Data
+    L11_3 = L6_1.Npc3023Data
     L11_3 = L11_3.alias
     L9_3 = L9_3(L10_3, L11_3)
     L11_3 = L9_3
@@ -1120,97 +1105,83 @@ function L9_1(A0_2, A1_2)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3041Data
+    L13_3 = L6_1.Npc3041Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3035Data
+    L13_3 = L6_1.Npc3035Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3049Data
+    L13_3 = L6_1.Npc3049Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3050Data
+    L13_3 = L6_1.Npc3050Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3048Data
+    L13_3 = L6_1.Npc3048Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3052Data
+    L13_3 = L6_1.Npc3052Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.CreateQuestNpc
     L12_3 = A1_2
-    L13_3 = L7_1.Npc3051Data
+    L13_3 = L6_1.Npc3051Data
     L13_3 = L13_3.id
     L14_3 = 0
     L10_3(L11_3, L12_3, L13_3, L14_3)
     L11_3 = A0_3
     L10_3 = A0_3.NotifyTo
-    L12_3 = L7_1.Npc3066Data
+    L12_3 = L6_1.Npc3066Data
     L12_3 = L12_3.alias
     L13_3 = 1
     L14_3 = true
     L10_3(L11_3, L12_3, L13_3, L14_3)
-    L11_3 = A0_3
-    L10_3 = A0_3.CreateQuestNpc
-    L12_3 = A1_2
-    L13_3 = L7_1.Npc3005Data
-    L13_3 = L13_3.id
-    L14_3 = 0
-    L10_3(L11_3, L12_3, L13_3, L14_3)
-    L11_3 = A0_3
-    L10_3 = A0_3.CreateQuestNpc
-    L12_3 = A1_2
-    L13_3 = L7_1.Npc3023Data
-    L13_3 = L13_3.id
-    L14_3 = 0
-    L10_3(L11_3, L12_3, L13_3, L14_3)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart1203412 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203412 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1203412"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc1047Data
+  L4_2 = L6_1.Npc1047Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc12448Data
+  L4_2 = L6_1.Npc12448Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish1203412 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203412 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
   L2_2 = print
   L3_2 = "OnSubStart1203413"
@@ -1218,41 +1189,41 @@ function L9_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc3027Data
+  L5_2 = L6_1.Npc3027Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc3028Data
+  L5_2 = L6_1.Npc3028Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc3044Data
+  L5_2 = L6_1.Npc3044Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3066Data
+  L4_2 = L6_1.Npc3066Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3054Data
+  L4_2 = L6_1.Npc3054Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
@@ -1289,7 +1260,7 @@ function L9_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L7_1.Npc12521Data
+  L5_2 = L6_1.Npc12521Data
   L5_2 = L5_2.id
   L6_2 = 0
   L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
@@ -1326,7 +1297,7 @@ function L9_1(A0_2, A1_2)
   end
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc12521Data
+  L7_2 = L6_1.Npc12521Data
   L7_2 = L7_2.alias
   L5_2 = L5_2(L6_2, L7_2)
   L7_2 = L5_2
@@ -1335,7 +1306,7 @@ function L9_1(A0_2, A1_2)
   L6_2(L7_2, L8_2)
   L7_2 = A0_2
   L6_2 = A0_2.GetQuestNpcActor
-  L8_2 = L7_1.Npc12489Data
+  L8_2 = L6_1.Npc12489Data
   L8_2 = L8_2.alias
   L6_2 = L6_2(L7_2, L8_2)
   L8_2 = L6_2
@@ -1349,7 +1320,7 @@ function L9_1(A0_2, A1_2)
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
   L8_2 = A0_2
   L7_2 = A0_2.GetQuestNpcActor
-  L9_2 = L7_1.Npc12491Data
+  L9_2 = L6_1.Npc12491Data
   L9_2 = L9_2.alias
   L7_2 = L7_2(L8_2, L9_2)
   L9_2 = L7_2
@@ -1363,7 +1334,7 @@ function L9_1(A0_2, A1_2)
   L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
   L9_2 = A0_2
   L8_2 = A0_2.GetQuestNpcActor
-  L10_2 = L7_1.Npc3037Data
+  L10_2 = L6_1.Npc3037Data
   L10_2 = L10_2.alias
   L8_2 = L8_2(L9_2, L10_2)
   L10_2 = L8_2
@@ -1377,7 +1348,7 @@ function L9_1(A0_2, A1_2)
   L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
   L10_2 = A0_2
   L9_2 = A0_2.GetQuestNpcActor
-  L11_2 = L7_1.Npc3036Data
+  L11_2 = L6_1.Npc3036Data
   L11_2 = L11_2.alias
   L9_2 = L9_2(L10_2, L11_2)
   L11_2 = L9_2
@@ -1391,21 +1362,21 @@ function L9_1(A0_2, A1_2)
   L10_2(L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
   L11_2 = A0_2
   L10_2 = A0_2.NotifyTo
-  L12_2 = L7_1.Npc3042Data
+  L12_2 = L6_1.Npc3042Data
   L12_2 = L12_2.alias
   L13_2 = 1
   L14_2 = true
   L10_2(L11_2, L12_2, L13_2, L14_2)
   L11_2 = A0_2
   L10_2 = A0_2.NotifyTo
-  L12_2 = L7_1.Npc3047Data
+  L12_2 = L6_1.Npc3047Data
   L12_2 = L12_2.alias
   L13_2 = 1
   L14_2 = true
   L10_2(L11_2, L12_2, L13_2, L14_2)
   L11_2 = A0_2
   L10_2 = A0_2.GetQuestNpcActor
-  L12_2 = L7_1.Npc12487Data
+  L12_2 = L6_1.Npc12487Data
   L12_2 = L12_2.alias
   L10_2 = L10_2(L11_2, L12_2)
   L12_2 = L10_2
@@ -1419,7 +1390,7 @@ function L9_1(A0_2, A1_2)
   L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
   L12_2 = A0_2
   L11_2 = A0_2.GetQuestNpcActor
-  L13_2 = L7_1.Npc3023Data
+  L13_2 = L6_1.Npc3023Data
   L13_2 = L13_2.alias
   L11_2 = L11_2(L12_2, L13_2)
   L13_2 = L11_2
@@ -1432,8 +1403,8 @@ function L9_1(A0_2, A1_2)
   L19_2 = false
   L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
 end
-L1_1.OnSubStart1203413 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203413 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubFinish1203413"
@@ -1456,55 +1427,55 @@ function L9_1(A0_2, A1_2)
     L1_3(L2_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3041Data
+    L3_3 = L6_1.Npc3041Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3028Data
+    L3_3 = L6_1.Npc3028Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3027Data
+    L3_3 = L6_1.Npc3027Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3035Data
+    L3_3 = L6_1.Npc3035Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3049Data
+    L3_3 = L6_1.Npc3049Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3050Data
+    L3_3 = L6_1.Npc3050Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3048Data
+    L3_3 = L6_1.Npc3048Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3052Data
+    L3_3 = L6_1.Npc3052Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
     L2_3 = A0_3
     L1_3 = A0_3.DestroyQuestNpcActor
-    L3_3 = L7_1.Npc3051Data
+    L3_3 = L6_1.Npc3051Data
     L3_3 = L3_3.alias
     L4_3 = 3
     L1_3(L2_3, L3_3, L4_3)
@@ -1532,13 +1503,13 @@ function L9_1(A0_2, A1_2)
     end
     L4_3 = A0_3
     L3_3 = A0_3.DestroyQuestNpcActor
-    L5_3 = L7_1.Npc3044Data
+    L5_3 = L6_1.Npc3044Data
     L5_3 = L5_3.alias
     L6_3 = 3
     L3_3(L4_3, L5_3, L6_3)
     L4_3 = A0_3
     L3_3 = A0_3.GetQuestNpcActor
-    L5_3 = L7_1.Npc12521Data
+    L5_3 = L6_1.Npc12521Data
     L5_3 = L5_3.alias
     L3_3 = L3_3(L4_3, L5_3)
     L5_3 = L3_3
@@ -1547,13 +1518,13 @@ function L9_1(A0_2, A1_2)
     L4_3(L5_3, L6_3)
     L5_3 = A0_3
     L4_3 = A0_3.DestroyQuestNpcActor
-    L6_3 = L7_1.Npc12521Data
+    L6_3 = L6_1.Npc12521Data
     L6_3 = L6_3.alias
     L7_3 = 3
     L4_3(L5_3, L6_3, L7_3)
     L5_3 = A0_3
     L4_3 = A0_3.LightNotifyTo
-    L6_3 = L7_1.Npc3042Data
+    L6_3 = L6_1.Npc3042Data
     L6_3 = L6_3.alias
     L7_3 = 0
     L8_3 = true
@@ -1566,8 +1537,8 @@ function L9_1(A0_2, A1_2)
   L12_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
-L1_1.OnSubFinish1203413 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFinish1203413 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFailed1203413"
@@ -1580,19 +1551,19 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc3044Data
+  L4_2 = L6_1.Npc3044Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc3028Data
+  L4_2 = L6_1.Npc3028Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.DestroyQuestNpcActor
-  L4_2 = L7_1.Npc3027Data
+  L4_2 = L6_1.Npc3027Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
@@ -1607,7 +1578,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
-  L4_2 = L7_1.Npc12521Data
+  L4_2 = L6_1.Npc12521Data
   L4_2 = L4_2.alias
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = L2_2
@@ -1615,22 +1586,22 @@ function L9_1(A0_2, A1_2)
   L5_2 = true
   L3_2(L4_2, L5_2)
 end
-L1_1.OnSubFailed1203413 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubFailed1203413 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
   L2_2 = print
   L3_2 = "OnSubStart1203414"
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3016Data
+  L4_2 = L6_1.Npc3016Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
-  L4_2 = L7_1.Npc3054Data
+  L4_2 = L6_1.Npc3054Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
@@ -1649,7 +1620,7 @@ function L9_1(A0_2, A1_2)
   if L2_2 == 0 then
     L4_2 = A0_2
     L3_2 = A0_2.RequestInteraction
-    L5_2 = L7_1.Npc12492Data
+    L5_2 = L6_1.Npc12492Data
     L5_2 = L5_2.alias
     L3_2(L4_2, L5_2)
   elseif L2_2 == 1 then
@@ -1681,14 +1652,14 @@ function L9_1(A0_2, A1_2)
   end
   L4_2 = A0_2
   L3_2 = A0_2.NotifyTo
-  L5_2 = L7_1.Npc3066Data
+  L5_2 = L6_1.Npc3066Data
   L5_2 = L5_2.alias
   L6_2 = 1
   L7_2 = true
   L3_2(L4_2, L5_2, L6_2, L7_2)
   L4_2 = A0_2
   L3_2 = A0_2.GetQuestNpcActor
-  L5_2 = L7_1.Npc12489Data
+  L5_2 = L6_1.Npc12489Data
   L5_2 = L5_2.alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
@@ -1702,7 +1673,7 @@ function L9_1(A0_2, A1_2)
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L7_1.Npc12491Data
+  L6_2 = L6_1.Npc12491Data
   L6_2 = L6_2.alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
@@ -1716,7 +1687,7 @@ function L9_1(A0_2, A1_2)
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L7_1.Npc3037Data
+  L7_2 = L6_1.Npc3037Data
   L7_2 = L7_2.alias
   L5_2 = L5_2(L6_2, L7_2)
   L7_2 = L5_2
@@ -1730,7 +1701,7 @@ function L9_1(A0_2, A1_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
   L7_2 = A0_2
   L6_2 = A0_2.GetQuestNpcActor
-  L8_2 = L7_1.Npc3036Data
+  L8_2 = L6_1.Npc3036Data
   L8_2 = L8_2.alias
   L6_2 = L6_2(L7_2, L8_2)
   L8_2 = L6_2
@@ -1744,14 +1715,14 @@ function L9_1(A0_2, A1_2)
   L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
   L8_2 = A0_2
   L7_2 = A0_2.NotifyTo
-  L9_2 = L7_1.Npc3047Data
+  L9_2 = L6_1.Npc3047Data
   L9_2 = L9_2.alias
   L10_2 = 1
   L11_2 = true
   L7_2(L8_2, L9_2, L10_2, L11_2)
   L8_2 = A0_2
   L7_2 = A0_2.GetQuestNpcActor
-  L9_2 = L7_1.Npc12487Data
+  L9_2 = L6_1.Npc12487Data
   L9_2 = L9_2.alias
   L7_2 = L7_2(L8_2, L9_2)
   L9_2 = L7_2
@@ -1765,7 +1736,7 @@ function L9_1(A0_2, A1_2)
   L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
   L9_2 = A0_2
   L8_2 = A0_2.GetQuestNpcActor
-  L10_2 = L7_1.Npc3023Data
+  L10_2 = L6_1.Npc3023Data
   L10_2 = L10_2.alias
   L8_2 = L8_2(L9_2, L10_2)
   L10_2 = L8_2
@@ -1778,8 +1749,8 @@ function L9_1(A0_2, A1_2)
   L16_2 = false
   L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
 end
-L1_1.OnSubStart1203414 = L9_1
-function L9_1(A0_2, A1_2)
+L1_1.OnSubStart1203414 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish1203414"
@@ -1790,7 +1761,7 @@ function L9_1(A0_2, A1_2)
     local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
-    L3_3 = L7_1.Npc12491Data
+    L3_3 = L6_1.Npc12491Data
     L3_3 = L3_3.alias
     L1_3 = L1_3(L2_3, L3_3)
     L3_3 = L1_3
@@ -1798,7 +1769,7 @@ function L9_1(A0_2, A1_2)
     L2_3(L3_3)
     L3_3 = A0_3
     L2_3 = A0_3.GetQuestNpcActor
-    L4_3 = L7_1.Npc12487Data
+    L4_3 = L6_1.Npc12487Data
     L4_3 = L4_3.alias
     L2_3 = L2_3(L3_3, L4_3)
     L4_3 = L2_3
@@ -1806,7 +1777,7 @@ function L9_1(A0_2, A1_2)
     L3_3(L4_3)
     L4_3 = A0_3
     L3_3 = A0_3.GetQuestNpcActor
-    L5_3 = L7_1.Npc12489Data
+    L5_3 = L6_1.Npc12489Data
     L5_3 = L5_3.alias
     L3_3 = L3_3(L4_3, L5_3)
     L5_3 = L3_3
@@ -1814,14 +1785,14 @@ function L9_1(A0_2, A1_2)
     L4_3(L5_3)
     L5_3 = A0_3
     L4_3 = A0_3.LightNotifyTo
-    L6_3 = L7_1.Npc3066Data
+    L6_3 = L6_1.Npc3066Data
     L6_3 = L6_3.alias
     L7_3 = 0
     L8_3 = true
     L4_3(L5_3, L6_3, L7_3, L8_3)
     L5_3 = A0_3
     L4_3 = A0_3.GetQuestNpcActor
-    L6_3 = L7_1.Npc3023Data
+    L6_3 = L6_1.Npc3023Data
     L6_3 = L6_3.alias
     L4_3 = L4_3(L5_3, L6_3)
     L6_3 = L4_3
@@ -1829,124 +1800,124 @@ function L9_1(A0_2, A1_2)
     L5_3(L6_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12529Data
+    L7_3 = L6_1.Npc12529Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12523Data
+    L7_3 = L6_1.Npc12523Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12451Data
+    L7_3 = L6_1.Npc12451Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12448Data
+    L7_3 = L6_1.Npc12448Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc3023Data
+    L7_3 = L6_1.Npc3023Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc3005Data
+    L7_3 = L6_1.Npc3005Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12487Data
+    L7_3 = L6_1.Npc12487Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12488Data
+    L7_3 = L6_1.Npc12488Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12489Data
+    L7_3 = L6_1.Npc12489Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12491Data
+    L7_3 = L6_1.Npc12491Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc3037Data
+    L7_3 = L6_1.Npc3037Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc3036Data
+    L7_3 = L6_1.Npc3036Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12492Data
+    L7_3 = L6_1.Npc12492Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc3173Data
+    L7_3 = L6_1.Npc3173Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12545Data
+    L7_3 = L6_1.Npc12545Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.DestroyQuestNpcActor
-    L7_3 = L7_1.Npc12546Data
+    L7_3 = L6_1.Npc12546Data
     L7_3 = L7_3.alias
     L8_3 = 3
     L5_3(L6_3, L7_3, L8_3)
     L6_3 = A0_3
     L5_3 = A0_3.LightNotifyTo
-    L7_3 = L7_1.Npc3016Data
+    L7_3 = L6_1.Npc3016Data
     L7_3 = L7_3.alias
     L8_3 = 0
     L9_3 = true
     L5_3(L6_3, L7_3, L8_3, L9_3)
     L6_3 = A0_3
     L5_3 = A0_3.LightNotifyTo
-    L7_3 = L7_1.Npc3054Data
+    L7_3 = L6_1.Npc3054Data
     L7_3 = L7_3.alias
     L8_3 = 0
     L9_3 = true
     L5_3(L6_3, L7_3, L8_3, L9_3)
     L6_3 = A0_3
     L5_3 = A0_3.LightNotifyTo
-    L7_3 = L7_1.Npc3047Data
+    L7_3 = L6_1.Npc3047Data
     L7_3 = L7_3.alias
     L8_3 = 0
     L9_3 = true
     L5_3(L6_3, L7_3, L8_3, L9_3)
     L6_3 = A0_3
     L5_3 = A0_3.GetQuestNpcActor
-    L7_3 = L7_1.Npc3037Data
+    L7_3 = L6_1.Npc3037Data
     L7_3 = L7_3.alias
     L5_3 = L5_3(L6_3, L7_3)
     L7_3 = L5_3
@@ -1954,7 +1925,7 @@ function L9_1(A0_2, A1_2)
     L6_3(L7_3)
     L7_3 = A0_3
     L6_3 = A0_3.GetQuestNpcActor
-    L8_3 = L7_1.Npc3036Data
+    L8_3 = L6_1.Npc3036Data
     L8_3 = L8_3.alias
     L6_3 = L6_3(L7_3, L8_3)
     L8_3 = L6_3
@@ -1962,12 +1933,12 @@ function L9_1(A0_2, A1_2)
     L7_3(L8_3)
     L8_3 = A0_3
     L7_3 = A0_3.DestroyQuestNpcActor
-    L9_3 = L7_1.Npc12528Data
+    L9_3 = L6_1.Npc12528Data
     L9_3 = L9_3.alias
     L10_3 = 3
     L7_3(L8_3, L9_3, L10_3)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish1203414 = L9_1
+L1_1.OnSubFinish1203414 = L8_1
 return L1_1

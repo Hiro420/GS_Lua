@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -54,5 +54,24 @@ L14_1[1] = L15_1
 L13_1.actionPoints = L14_1
 L12_1[1] = L13_1
 L11_1.DailyScheduleData = L12_1
+L12_1 = {}
+L13_1 = {}
+L14_1 = {}
+L14_1.titleStr = "NPC_TITLE_6040"
+L14_1.priority = 0
+L15_1 = {}
+L16_1 = {}
+L17_1 = {}
+L18_1 = LuaVirtualType
+L18_1 = L18_1.NpcActionDayNightCondition
+L17_1._type_ = L18_1
+L18_1 = L2_1.AllDay
+L17_1.daily = L18_1
+L16_1[1] = L17_1
+L15_1[1] = L16_1
+L14_1.conditions = L15_1
+L13_1[1] = L14_1
+L12_1.titleDatas = L13_1
+L11_1.TitleDataNew = L12_1
 L10_1.Data = L11_1
 return L10_1

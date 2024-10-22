@@ -150,6 +150,26 @@ function L9_1(A0_2, A1_2)
   end
 end
 L1_1.ActorDestroy = L9_1
+function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L6_2 = L3_1
+  L7_2 = L6_2
+  L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
+  L8_2 = "Q"
+  L9_2 = A1_2
+  L10_2 = "N"
+  L11_2 = A5_2
+  L12_2 = "Trigger"
+  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
+  L9_2 = A1_2
+  L10_2 = A5_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
+  L14_2 = 2
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+end
+L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
   L3_2 = globalActor
@@ -175,27 +195,6 @@ function L9_1(A0_2, A1_2, A2_2)
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
 end
 L1_1.NpcDestroyWithBlackscreen = L9_1
-function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
-  L6_2 = L3_1
-  L7_2 = L6_2
-  L6_2 = L6_2.CreateQuestNpcWithTriggerBlack
-  L8_2 = "Q"
-  L9_2 = A1_2
-  L10_2 = "N"
-  L11_2 = A5_2
-  L12_2 = "Trigger"
-  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2 .. L12_2
-  L9_2 = A1_2
-  L10_2 = A5_2
-  L11_2 = A2_2
-  L12_2 = A3_2
-  L13_2 = A4_2
-  L14_2 = 2
-  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
-  return
-end
-L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = print
@@ -323,10 +322,10 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcDestroyWithBlackscreen
-  L4_2 = 3
-  L5_2 = L7_1.Npc14294
-  L5_2 = L5_2.alias
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc14294
+  L4_2 = L4_2.alias
+  L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2

@@ -152,18 +152,6 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
 end
 L0_1.SetAnimatorLayerWeight = L1_1
 function L1_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2
-  if A2_2 == false then
-    return
-  end
-  L3_2 = actorUtils
-  L3_2 = L3_2.EnableFootPrint
-  L4_2 = A0_2.alias
-  L5_2 = A1_2
-  L3_2(L4_2, L5_2)
-end
-L0_1.EnableFootPrint = L1_1
-function L1_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   if A2_2 == nil then
     A2_2 = false
@@ -1944,13 +1932,12 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.EnterSneakMode = L1_1
-L1_1 = "ExitSneakMode"
-function L2_1(A0_2)
+function L1_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1[L1_1] = L2_1
+L0_1.ExitSneakMode = L1_1
 L1_1 = "EnterBomberMode"
 function L2_1(A0_2)
   local L1_2
