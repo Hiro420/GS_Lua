@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -52,7 +52,41 @@ L16_1 = L1_1.Stand
 L15_1.action = L16_1
 L14_1[1] = L15_1
 L13_1.actionPoints = L14_1
+L14_1 = {}
+L14_1.bornConfigId = 526088000
+L15_1 = {}
+L16_1 = L2_1.AllDay
+L15_1.daily = L16_1
+L15_1.sceneId = 3
+L15_1.priority = 0
+L14_1.condition = L15_1
+L15_1 = {}
+L16_1 = {}
+L17_1 = {}
+L18_1 = {}
+L18_1.x = -1334.564
+L18_1.y = 163.56
+L18_1.z = 7674.814
+L17_1.pos = L18_1
+L18_1 = {}
+L18_1.x = 0
+L18_1.y = 50.90597
+L18_1.z = 0
+L17_1.rot = L18_1
+L16_1.dummypoint = L17_1
+L16_1.freestyle = 1190
+L17_1 = L6_1.Default
+L16_1.lookAtType = L17_1
+L17_1 = L7_1.Default
+L16_1.reactOnCollide = L17_1
+L17_1 = L7_1.Default
+L16_1.reactOnBodyLang = L17_1
+L17_1 = L1_1.Stand
+L16_1.action = L17_1
+L15_1[1] = L16_1
+L14_1.actionPoints = L15_1
 L12_1[1] = L13_1
+L12_1[2] = L14_1
 L11_1.DailyScheduleData = L12_1
 L10_1.Data = L11_1
 return L10_1

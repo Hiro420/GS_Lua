@@ -317,10 +317,23 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.InvokeOnInteraction = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart7500230"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3
+    L1_3 = actorUtils
+    L1_3 = L1_3.SimpleUIShowForLua
+    L2_3 = false
+    L3_3 = "QuestReviewTipsDialog"
+    L4_3 = "75002"
+    L1_3(L2_3, L3_3, L4_3)
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7500230 = L8_1
 function L8_1(A0_2, A1_2)

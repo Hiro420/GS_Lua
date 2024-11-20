@@ -34,6 +34,8 @@ L1_1.OnDataLoaded = L8_1
 function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
+  L2_2 = A0_2.OnSubStart1403612
+  L1_2["1403612"] = L2_2
   L2_2 = A0_2.OnSubStart1403601
   L1_2["1403601"] = L2_2
   L2_2 = A0_2.OnSubStart1403602
@@ -62,6 +64,8 @@ L1_1.OnSubStartHandlerBuild = L8_1
 function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
+  L2_2 = A0_2.OnSubFinish1403612
+  L1_2["1403612"] = L2_2
   L2_2 = A0_2.OnSubFinish1403601
   L1_2["1403601"] = L2_2
   L2_2 = A0_2.OnSubFinish1403602
@@ -94,20 +98,8 @@ function L8_1(A0_2)
   L1_2["1403601"] = L2_2
   L2_2 = A0_2.OnSubFailed1403602
   L1_2["1403602"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403603
-  L1_2["1403603"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403610
-  L1_2["1403610"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403604
-  L1_2["1403604"] = L2_2
   L2_2 = A0_2.OnSubFailed1403605
   L1_2["1403605"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403606
-  L1_2["1403606"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403611
-  L1_2["1403611"] = L2_2
-  L2_2 = A0_2.OnSubFailed1403607
-  L1_2["1403607"] = L2_2
   L2_2 = A0_2.OnSubFailed1403608
   L1_2["1403608"] = L2_2
   L2_2 = A0_2.OnSubFailed1403609
@@ -165,6 +157,20 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.ActorDestroy = L8_1
 function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart1403612"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart1403612 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish1403612"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish1403612 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart1403601"
@@ -194,10 +200,15 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1403601 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFailed1403601"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
+  L4_2 = "Q1403201Trigger"
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFailed1403601 = L8_1
 function L8_1(A0_2, A1_2)
@@ -521,13 +532,6 @@ L1_1.OnSubFinish1403603 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403603"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403603 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403610"
   L2_2(L3_2)
 end
@@ -539,13 +543,6 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403610 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403610"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403610 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -575,13 +572,6 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403604 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403604"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403604 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -929,13 +919,6 @@ L1_1.OnSubFinish1403606 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
-  L3_2 = "OnSubFailed1403606"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403606 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
   L3_2 = "OnSubStart1403611"
   L2_2(L3_2)
 end
@@ -947,13 +930,6 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403611 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403611"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403611 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
@@ -983,13 +959,6 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1403607 = L8_1
-function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
-  L2_2 = print
-  L3_2 = "OnSubFailed1403607"
-  L2_2(L3_2)
-end
-L1_1.OnSubFailed1403607 = L8_1
 function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print

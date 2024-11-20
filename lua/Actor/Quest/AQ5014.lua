@@ -242,36 +242,6 @@ function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   return
 end
 L1_1.NpcCreateWithNpcTriggerAndBlackscreen = L9_1
-function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
-  local L6_2, L7_2, L8_2, L9_2
-  L6_2 = L3_1
-  L7_2 = L6_2
-  L6_2 = L6_2.CallDelay
-  L8_2 = 2
-  function L9_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CreateQuestNpcWithTriggerBlackEx
-    L3_3 = "Q"
-    L4_3 = A1_2
-    L5_3 = "N"
-    L6_3 = A5_2
-    L7_3 = "Trigger"
-    L3_3 = L3_3 .. L4_3 .. L5_3 .. L6_3 .. L7_3
-    L4_3 = A1_2
-    L5_3 = A5_2
-    L6_3 = A2_2
-    L7_3 = A3_2
-    L8_3 = 0.5
-    L9_3 = A4_2
-    L10_3 = 0.5
-    L11_3 = 2
-    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
-  end
-  L6_2(L7_2, L8_2, L9_2)
-end
-L1_1.CallDelayNpcCreateWithNpcTriggerAndBlack = L9_1
 function L9_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = actorMgr
@@ -2678,7 +2648,7 @@ function L9_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CallDelayNpcCreateWithNpcTriggerAndBlack
+  L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
   L4_2 = 501410
   L5_2 = 0
   L6_2 = 50

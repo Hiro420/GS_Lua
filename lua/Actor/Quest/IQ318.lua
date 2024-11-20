@@ -89,10 +89,6 @@ function L7_1(A0_2, A1_2)
   L12_2 = L3_2
   L11_2, L12_2 = L11_2(L12_2)
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L5_2 = A0_2.uActor
-  L6_2 = L5_2
-  L5_2 = L5_2.AvatarPaimonAppear
-  L5_2(L6_2)
 end
 L1_1.OnSubStart31802 = L7_1
 function L7_1(A0_2, A1_2)
@@ -107,12 +103,6 @@ function L7_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnFinished 31802"
   L2_2(L3_2)
-  L2_2 = A0_2.uActor
-  L3_2 = L2_2
-  L2_2 = L2_2.AvatarPaimonDisappear
-  L4_2 = nil
-  L5_2 = false
-  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
   L4_2 = L6_1.Alias

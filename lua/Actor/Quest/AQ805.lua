@@ -266,6 +266,36 @@ function L8_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6319
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6313
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6314
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80501 = L8_1
 function L8_1(A0_2, A1_2)
@@ -322,7 +352,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80501 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "OnSubStart80502"
   L2_2(L3_2)
@@ -355,9 +385,7 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 5
   L8_2 = 1
-  L9_2 = {}
-  L10_2 = 30013
-  L9_2[1] = L10_2
+  L9_2 = nil
   L10_2 = "Bigworld_Godess_NatsaurusHint"
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
   L2_2 = L3_1
@@ -369,11 +397,7 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 5
   L8_2 = 0
-  L9_2 = {}
-  L10_2 = 30012
-  L11_2 = 0
-  L9_2[1] = L10_2
-  L9_2[2] = L11_2
+  L9_2 = nil
   L10_2 = "Bigworld_Godess_NatsaurusHint"
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
   L2_2 = L3_1
@@ -381,6 +405,36 @@ function L8_1(A0_2, A1_2)
   L2_2 = L2_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.Npc6086
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6319
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6313
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6314
   L5_2 = L5_2.id
   L6_2 = 0
   L7_2 = false
@@ -448,6 +502,36 @@ function L8_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6319
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6313
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6314
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80503 = L8_1
 function L8_1(A0_2, A1_2)
@@ -484,10 +568,40 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish80503 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart80504"
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6319
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6313
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6314
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80504 = L8_1
 function L8_1(A0_2, A1_2)

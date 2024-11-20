@@ -1809,7 +1809,7 @@ function L21_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1100503 = L21_1
 function L21_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L3_2 = A0_2
   L2_2 = A0_2.CountDownUITerminate
   L2_2(L3_2)
@@ -1824,6 +1824,24 @@ function L21_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.LeaveAllWeather
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.LightNotifyTo
+  L4_2 = "Npc1537"
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.LightNotifyTo
+  L4_2 = "Npc1541"
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.LightNotifyTo
+  L4_2 = "Npc1631"
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1100504 = L21_1
 function L21_1(A0_2, A1_2)

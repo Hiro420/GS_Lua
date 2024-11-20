@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+local L0_1, L1_1, L2_1, L3_1, L4_1
 L0_1 = {}
 L0_1.MainID = 15000
 L0_1.ActorAlias = "15000"
@@ -138,22 +138,12 @@ L2_1.narratorId = 150000001
 L2_1.tag = "StoryInMainPage"
 L2_1.startCheckPause = true
 L2_1.resumeReminder = -1
-L3_1 = {}
-L4_1 = 5
-L3_1[1] = L4_1
-L2_1.durationList = L3_1
 L1_1.Search = L2_1
 L2_1 = {}
 L2_1.narratorId = 150000002
 L2_1.tag = "StoryInMainPage"
 L2_1.startCheckPause = true
 L2_1.resumeReminder = -1
-L3_1 = {}
-L4_1 = 5
-L5_1 = 5
-L3_1[1] = L4_1
-L3_1[2] = L5_1
-L2_1.durationList = L3_1
 L1_1.TalkOver = L2_1
 L0_1.Datas = L1_1
 return L0_1

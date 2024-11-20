@@ -142,6 +142,11 @@ function L8_1(A0_2, A1_2)
   L6_2 = 60
   L7_2 = 7501603
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CancelStoryByQuest
+  L4_2 = 147501605
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart7501603 = L8_1
 function L8_1(A0_2, A1_2)

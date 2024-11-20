@@ -2342,20 +2342,16 @@ function L5_1(A0_2, A1_2)
 end
 L1_1.DestroyNpcTrigger = L5_1
 function L5_1(A0_2, A1_2, A2_2)
-  local L3_2, L4_2, L5_2, L6_2, L7_2
+  local L3_2, L4_2, L5_2, L6_2
   if A2_2 == true then
     L3_2 = actorMgr
     L3_2 = L3_2.GadgetTriggerDic
     L3_2 = L3_2[A1_2]
     if L3_2 ~= nil then
       L5_2 = A0_2
-      L4_2 = A0_2.GetRealAlias
+      L4_2 = A0_2.DestroyQuestNpcActorByAlias
       L6_2 = L3_2.npcAlias
-      L4_2 = L4_2(L5_2, L6_2)
-      L6_2 = A0_2
-      L5_2 = A0_2.DestroyQuestNpcActorByAlias
-      L7_2 = L4_2
-      L5_2(L6_2, L7_2)
+      L4_2(L5_2, L6_2)
     end
   end
   L4_2 = A0_2
@@ -4520,6 +4516,16 @@ function L6_1(A0_2, A1_2)
   return L2_2(L3_2)
 end
 L1_1.TryStartTribalAutoTrack = L6_1
+function L6_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.SimpleUIShowForLua
+  L3_2 = false
+  L4_2 = "QuestReviewTipsDialog"
+  L5_2 = A1_2
+  return L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.TryShowQuestReview = L6_1
 function L6_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   if A1_2 == nil then

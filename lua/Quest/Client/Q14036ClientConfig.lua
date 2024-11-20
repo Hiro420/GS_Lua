@@ -14,6 +14,7 @@ L1_1.q1403611 = 1403611
 L1_1.q1403607 = 1403607
 L1_1.q1403608 = 1403608
 L1_1.q1403609 = 1403609
+L1_1.q1403612 = 1403612
 L0_1.SubIDs = L1_1
 L1_1 = {}
 L2_1 = {}
@@ -109,6 +110,7 @@ L2_1.picPathsGirl = L3_1
 L2_1.picAutoNextInterval = 1
 L2_1.canSkipPic = false
 L2_1.isPicLoopPlay = false
+L2_1.isUseQuestRelatedPoint = false
 L1_1.PlayerEnterDungeonData14032 = L2_1
 L0_1.Datas = L1_1
 return L0_1
