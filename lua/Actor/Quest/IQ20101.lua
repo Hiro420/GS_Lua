@@ -294,6 +294,36 @@ function L17_1(A0_2, A1_2)
   L4_2 = A1_2
   L5_2 = L5_1.ScaredNPCID
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_Diluc"
+  L5_2 = 10000016
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CallDelay
   L4_2 = 1
@@ -320,6 +350,36 @@ function L17_1(A0_2, A1_2)
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.GuardNPCID
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_Diluc"
+  L5_2 = 10000016
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CallDelay
@@ -375,10 +435,40 @@ function L17_1(A0_2, A1_2)
 end
 L1_1.OnSubStart2010111 = L17_1
 function L17_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "2010142 Start : "
   L2_2(L3_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_Diluc"
+  L5_2 = 10000016
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart2010142 = L17_1
 function L17_1(A0_2, A1_2)
@@ -495,6 +585,36 @@ function L17_1(A0_2, A1_2)
   L4_2 = A1_2
   L5_2 = 70300040
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_Diluc"
+  L5_2 = 10000016
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart2010143 = L17_1
 function L17_1(A0_2, A1_2)
@@ -513,6 +633,36 @@ function L17_1(A0_2, A1_2)
   L2_2 = A0_2.UnSpawn
   L4_2 = "Harp"
   L2_2(L3_2, L4_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_Diluc"
+  L5_2 = 10000016
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttach
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerBoy"
+  L5_2 = 10000005
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.SpawnAttachHeroEntity
+  L4_2 = "Mask_PlayerGirl"
+  L5_2 = 10000007
+  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CallDelay
   L4_2 = 0.5
@@ -535,6 +685,36 @@ function L17_1(A0_2, A1_2)
   L5_2 = L9_1.Diluc
   L4_2[1] = L5_2
   L2_2 = L2_2(L3_2, L4_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SpawnAttach
+  L5_2 = "Mask_Diluc"
+  L6_2 = 10000016
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SpawnAttach
+  L5_2 = "Mask_PlayerBoy"
+  L6_2 = 10000005
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SpawnAttach
+  L5_2 = "Mask_PlayerGirl"
+  L6_2 = 10000007
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SpawnAttachHeroEntity
+  L5_2 = "Mask_PlayerBoy"
+  L6_2 = 10000005
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = globalActor
+  L4_2 = L3_2
+  L3_2 = L3_2.SpawnAttachHeroEntity
+  L5_2 = "Mask_PlayerGirl"
+  L6_2 = 10000007
+  L3_2(L4_2, L5_2, L6_2)
   L4_2 = A0_2
   L3_2 = A0_2.CallDelay
   L5_2 = 1.5

@@ -1042,13 +1042,6 @@ function L23_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc2311"
-  L5_2 = L2_1.NpcEventType
-  L5_2 = L5_2.HIDESELF
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L5_1.ID
@@ -1302,13 +1295,6 @@ function L23_1(A0_2, A1_2)
   L5_2 = L17_1.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc2311"
-  L5_2 = L2_1.NpcEventType
-  L5_2 = L5_2.HIDESELF
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
   L2_2 = A0_2.NarratorOnlyTaskLegacy
   L4_2 = L3_1.NarratorFlow4
   L2_2(L3_2, L4_2)
@@ -1440,17 +1426,10 @@ function L23_1(A0_2, A1_2)
 end
 L1_1.OnSubStart100314 = L23_1
 function L23_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "100315 start:..."
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc2311"
-  L5_2 = L2_1.NpcEventType
-  L5_2 = L5_2.HIDESELF
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
@@ -1579,13 +1558,6 @@ end
 L1_1.OnSubFinish100307 = L23_1
 function L23_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc2311"
-  L5_2 = L2_1.NpcEventType
-  L5_2 = L5_2.STARTDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
   L4_2 = L10_1.Alias
@@ -1813,14 +1785,7 @@ function L23_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish100314 = L23_1
 function L23_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
-  L3_2 = A0_2
-  L2_2 = A0_2.NotifyTo
-  L4_2 = "Npc2311"
-  L5_2 = L2_1.NpcEventType
-  L5_2 = L5_2.STARTDAILY
-  L6_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  local L2_2, L3_2, L4_2, L5_2
   L3_2 = A0_2
   L2_2 = A0_2.GetQuestNpcActor
   L4_2 = L10_1.Alias

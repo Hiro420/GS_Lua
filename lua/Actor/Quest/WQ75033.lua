@@ -405,15 +405,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7503306 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish7503306"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.QuestNarratorTask
-  L4_2 = L8_1.NarratorWithId01
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish7503306 = L9_1
 function L9_1(A0_2, A1_2)

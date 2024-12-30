@@ -159,6 +159,7 @@ function L9_1(A0_2, A1_2, A2_2)
     L3_3 = A2_2
     L4_3 = A1_2
     L1_3(L2_3, L3_3, L4_3)
+    return
   end
   L9_2 = nil
   L10_2 = nil

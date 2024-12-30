@@ -992,6 +992,13 @@ function L1_1(A0_2, A1_2)
   end
 end
 L0_1.SetPlayerNpcEnergyType = L1_1
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+end
+L0_1.NatlanBallVSStart = L1_1
+function L1_1(A0_2)
+  local L1_2
+end
+L0_1.NatlanBallVSEnd = L1_1
 function L1_1(A0_2)
   local L1_2
   L1_2 = 0
@@ -1932,18 +1939,20 @@ function L1_1(A0_2)
   return L1_2
 end
 L0_1.InvokeOnAbility = L1_1
-function L1_1(A0_2)
+L1_1 = "SayDialogAudio"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.SayDialogAudio = L1_1
-function L1_1(A0_2)
+L0_1[L1_1] = L2_1
+L1_1 = "EnterSneakMode"
+function L2_1(A0_2)
   local L1_2
   L1_2 = 0
   return L1_2
 end
-L0_1.EnterSneakMode = L1_1
+L0_1[L1_1] = L2_1
 L1_1 = "ExitSneakMode"
 function L2_1(A0_2)
   local L1_2

@@ -350,6 +350,10 @@ function L8_1(A0_2)
   L3_2 = "Q1502325N1092Trigger"
   L1_2(L2_2, L3_2)
   L2_2 = A0_2
+  L1_2 = A0_2.DestroyNpcTrigger
+  L3_2 = "Q1502316Trigger"
+  L1_2(L2_2, L3_2)
+  L2_2 = A0_2
   L1_2 = A0_2.UnCallDelayByQuest
   L3_2 = "Q1502303"
   L1_2(L2_2, L3_2)
@@ -1209,26 +1213,32 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish1502306 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubStart1502316"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.PlayCutsceneIndex
-  L4_2 = 150230601
-  function L5_2(A0_3)
-    local L1_3, L2_3, L3_3
-    L1_3 = actorUtils
-    L1_3 = L1_3.FinishQuestID
-    L2_3 = false
-    L3_3 = 1502316
-    L1_3(L2_3, L3_3)
+  L2_2 = L2_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L1_3 = actorMgr
+    L2_3 = L1_3
+    L1_3 = L1_3.CreateActorWithPos
+    L3_3 = "Q1502316Trigger"
+    L4_3 = "Actor/Gadget/Q1502316Trigger"
+    L5_3 = 70900002
+    L6_3 = 0
+    L7_3 = L7_1._Q1502316TriggerPoint_
+    L7_3 = L7_3.pos
+    L8_3 = L7_1._Q1502316TriggerPoint_
+    L8_3 = L8_3.rot
+    L9_3 = true
+    L10_3 = false
+    L11_3 = 20240
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
   end
-  L6_2 = nil
-  L7_2 = nil
-  L8_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart1502316 = L8_1
 function L8_1(A0_2, A1_2)

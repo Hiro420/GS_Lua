@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1, L31_1, L32_1, L33_1, L34_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -43,7 +43,8 @@ L29_1 = nil
 L30_1 = nil
 L31_1 = 0
 L32_1 = 0
-function L33_1(A0_2)
+L33_1 = nil
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
   L1_2 = A0_2.clientData
   L2_1 = L1_2
@@ -141,9 +142,11 @@ function L33_1(A0_2)
   L29_1 = L1_2
   L1_2 = L2_1.Maid2Data
   L30_1 = L1_2
+  L1_2 = L2_1.QuestOrphanNpcPlaceList
+  L33_1 = L1_2
 end
-L1_1.OnDataLoaded = L33_1
-function L33_1(A0_2)
+L1_1.OnDataLoaded = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   A0_2.subStartHandlers = L1_2
@@ -214,8 +217,8 @@ function L33_1(A0_2)
   L2_2 = A0_2.OnSubStart100014
   L1_2["100014"] = L2_2
 end
-L1_1.OnSubStartHandlerBuild = L33_1
-function L33_1(A0_2)
+L1_1.OnSubStartHandlerBuild = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   A0_2.subFinishHandlers = L1_2
@@ -286,8 +289,8 @@ function L33_1(A0_2)
   L2_2 = A0_2.OnSubFinish100014
   L1_2["100014"] = L2_2
 end
-L1_1.OnSubFinishHandlerBuild = L33_1
-function L33_1(A0_2, A1_2, A2_2)
+L1_1.OnSubFinishHandlerBuild = L34_1
+function L34_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L3_2 = print
   L4_2 = "NOW Bubble"
@@ -303,8 +306,8 @@ function L33_1(A0_2, A1_2, A2_2)
   L10_2 = 2
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
-L1_1.ShowBubble = L33_1
-function L33_1(A0_2)
+L1_1.ShowBubble = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L1_2 = actorUtils
   L1_2 = L1_2.GetAvatarPos
@@ -344,8 +347,8 @@ function L33_1(A0_2)
     L4_2(L5_2)
   end
 end
-L1_1.GetDistance = L33_1
-function L33_1(A0_2)
+L1_1.GetDistance = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2
   L1_2 = actorMgr
   L2_2 = L1_2
@@ -366,8 +369,8 @@ function L33_1(A0_2)
     end
   end
 end
-L1_1.CheckDistance = L33_1
-function L33_1(A0_2)
+L1_1.CheckDistance = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
   L1_2 = print
   L2_2 = "FailNum is"
@@ -506,8 +509,8 @@ function L33_1(A0_2)
     L6_2(L7_2, L8_2)
   end
 end
-L1_1.SneakAIPrepare100010 = L33_1
-function L33_1(A0_2)
+L1_1.SneakAIPrepare100010 = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
   L1_2 = print
   L2_2 = "FailNum is"
@@ -646,8 +649,8 @@ function L33_1(A0_2)
     L6_2(L7_2, L8_2)
   end
 end
-L1_1.SneakAIPrepare100015 = L33_1
-function L33_1(A0_2)
+L1_1.SneakAIPrepare100015 = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
   L1_2 = {}
   L2_2 = L2_1.SneakAI1Data
@@ -709,8 +712,8 @@ function L33_1(A0_2)
     end
   end
 end
-L1_1.SneakAIDestroy = L33_1
-function L33_1(A0_2)
+L1_1.SneakAIDestroy = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -793,8 +796,8 @@ function L33_1(A0_2)
     L9_2(L10_2, L11_2)
   end
 end
-L1_1.NPCDestroy = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.NPCDestroy = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100001 start:..."
@@ -916,8 +919,8 @@ function L33_1(A0_2, A1_2)
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart100000 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100000 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "100001 start:..."
@@ -997,22 +1000,22 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart100001 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100001 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "100002 start:..."
   L2_2(L3_2)
 end
-L1_1.OnSubStart100002 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100002 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "100003 start:..."
   L2_2(L3_2)
 end
-L1_1.OnSubStart100003 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100003 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "100004 start:..."
@@ -1036,15 +1039,15 @@ function L33_1(A0_2, A1_2)
   L5_2 = L16_1.ID
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100004 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100004 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "100005 start:..."
   L2_2(L3_2)
 end
-L1_1.OnSubStart100005 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100005 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "100006 start:..."
@@ -1124,8 +1127,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100006 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100006 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100007 start:..."
@@ -1180,8 +1183,8 @@ function L33_1(A0_2, A1_2)
   L5_2 = L30_1.ID
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100007 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100007 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "100024 start:..."
@@ -1307,8 +1310,8 @@ function L33_1(A0_2, A1_2)
   L8_2 = 0
   L4_2(L5_2, L6_2, L7_2, L8_2)
 end
-L1_1.OnSubStart100024 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100024 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100026 start:..."
@@ -1338,8 +1341,8 @@ function L33_1(A0_2, A1_2)
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart100026 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100026 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100008 start:..."
@@ -1434,8 +1437,8 @@ function L33_1(A0_2, A1_2)
   end
   L9_2(L10_2, L11_2, L12_2)
 end
-L1_1.OnSubStart100008 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100008 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L2_2 = print
   L3_2 = "100015 start:..."
@@ -1716,8 +1719,8 @@ function L33_1(A0_2, A1_2)
   end
   L5_2(L6_2, L7_2, L8_2)
 end
-L1_1.OnSubStart100015 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100015 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100009 start:..."
@@ -1768,8 +1771,8 @@ function L33_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart100009 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100009 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100010 start:..."
@@ -2065,8 +2068,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100010 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100010 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "100011 start:..."
@@ -2105,8 +2108,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100011 = L33_1
-function L33_1(A0_2)
+L1_1.OnSubStart100011 = L34_1
+function L34_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2
   L1_2 = actorMgr
   L2_2 = L1_2
@@ -2121,8 +2124,8 @@ function L33_1(A0_2)
     L2_2(L3_2, L4_2, L5_2)
   end
 end
-L1_1.FinishSneak = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.FinishSneak = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "100012 start:..."
@@ -2168,8 +2171,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart100012 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100012 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "100013 start:..."
@@ -2197,8 +2200,8 @@ function L33_1(A0_2, A1_2)
   L10_2 = L2_2
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
-L1_1.OnSubStart100013 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100013 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "100014 start:..."
@@ -2228,8 +2231,8 @@ function L33_1(A0_2, A1_2)
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart100014 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubStart100014 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 100001"
@@ -2258,8 +2261,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100001 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100001 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100002"
@@ -2281,8 +2284,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100002 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100002 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100003"
@@ -2304,8 +2307,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100003 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100003 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100004"
@@ -2327,22 +2330,22 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100004 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100004 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnFinished 100005"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish100005 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100005 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnFinished 100006"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish100006 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100006 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 100007"
@@ -2392,8 +2395,8 @@ function L33_1(A0_2, A1_2)
     L3_2(L4_2, L5_2)
   end
 end
-L1_1.OnSubFinish100007 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100007 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100021"
@@ -2415,8 +2418,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100021 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100021 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = L31_1
   if L2_2 < 10 then
@@ -2425,8 +2428,8 @@ function L33_1(A0_2, A1_2)
     L2_2(L3_2)
   end
 end
-L1_1.CheckLight2 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.CheckLight2 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = L31_1
   L2_2 = L2_2 + 0.9
@@ -2448,8 +2451,8 @@ function L33_1(A0_2, A1_2)
   L6_2 = A0_2.CheckLight2
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.ShowLight2 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.ShowLight2 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100022"
@@ -2474,8 +2477,8 @@ function L33_1(A0_2, A1_2)
   L2_2 = A0_2.ShowLight1
   L2_2(L3_2)
 end
-L1_1.OnSubFinish100022 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100022 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = L32_1
   if L2_2 < 10 then
@@ -2484,8 +2487,8 @@ function L33_1(A0_2, A1_2)
     L2_2(L3_2)
   end
 end
-L1_1.CheckLight1 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.CheckLight1 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = L32_1
   L2_2 = L2_2 + 0.9
@@ -2507,8 +2510,8 @@ function L33_1(A0_2, A1_2)
   L6_2 = A0_2.CheckLight1
   L3_2(L4_2, L5_2, L6_2)
 end
-L1_1.ShowLight1 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.ShowLight1 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnFinished 100015"
@@ -2581,8 +2584,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish100015 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100015 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100010"
@@ -2608,8 +2611,8 @@ function L33_1(A0_2, A1_2)
   L2_2 = A0_2.ForceFlushRemove
   L2_2(L3_2)
 end
-L1_1.OnSubFinish100010 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100010 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100013"
@@ -2650,8 +2653,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100013 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100013 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 100014"
@@ -2706,8 +2709,8 @@ function L33_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish100012 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100012 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 100014"
@@ -2715,7 +2718,15 @@ function L33_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.ActionSafeCall
   function L4_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    L2_3 = A0_3
+    L1_3 = A0_3.CreateQuestOrphanNpc
+    L3_3 = A1_2
+    L4_3 = L25_1.ID
+    L5_3 = 0
+    L6_3 = false
+    L7_3 = 0.5
+    L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3)
     L2_3 = A0_3
     L1_3 = A0_3.GetQuestNpcActor
     L3_3 = "Paimon"
@@ -2729,8 +2740,8 @@ function L33_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish100014 = L33_1
-function L33_1(A0_2, A1_2)
+L1_1.OnSubFinish100014 = L34_1
+function L34_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   if A1_2 == 31 then
     L2_2 = print
@@ -2770,13 +2781,13 @@ function L33_1(A0_2, A1_2)
     L2_2(L3_2, L4_2, L5_2)
   end
 end
-L1_1.InvokeOnInteraction = L33_1
-function L33_1(A0_2)
+L1_1.InvokeOnInteraction = L34_1
+function L34_1(A0_2)
   local L1_2
 end
-L1_1.Start = L33_1
-function L33_1(A0_2)
+L1_1.Start = L34_1
+function L34_1(A0_2)
   local L1_2
 end
-L1_1.OnDestroy = L33_1
+L1_1.OnDestroy = L34_1
 return L1_1

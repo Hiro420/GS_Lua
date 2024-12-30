@@ -164,15 +164,21 @@ function L8_1(A0_2, A1_2)
     L4_2 = L2_2
     L3_2 = L2_2.DestroySelf
     L3_2(L4_2)
+    return
   end
 end
 L1_1.ActorDestroy = L8_1
 function L8_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
   L7_2 = 0.5
-  if A6_2 then
-    L7_2 = 0
+  if not A6_2 then
+    L8_2 = needLightUp
+    if not L8_2 then
+      goto lbl_8
+    end
   end
+  L7_2 = 0
+  ::lbl_8::
   L8_2 = L3_1
   L9_2 = L8_2
   L8_2 = L8_2.CreateQuestNpcWithTriggerBlackEx
@@ -256,7 +262,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7513701 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart7513702"
   L2_2(L3_2)
@@ -269,8 +275,7 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 7513702
   L8_2 = 35
-  L9_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart7513702 = L8_1
 function L8_1(A0_2, A1_2)
@@ -332,7 +337,7 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish7513704 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart7513705"
   L2_2(L3_2)
@@ -345,8 +350,7 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 7513705
   L8_2 = 30
-  L9_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreenEX
@@ -356,13 +360,12 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 7513705
   L8_2 = 35
-  L9_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DisableMainPageWithConfigByQuest
   L4_2 = false
-  L5_2 = "DisableAllExcludeCameraAndMove"
+  L5_2 = "DisableTestSumeruMainQuest"
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = actorUtils
   L2_2 = L2_2.SetQuestPostEffect
@@ -429,7 +432,7 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.DisableMainPageWithConfigByQuest
   L4_2 = true
-  L5_2 = "DisableAllExcludeCameraAndMove"
+  L5_2 = "DisableTestSumeruMainQuest"
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubStart7513711 = L8_1
@@ -529,7 +532,7 @@ function L8_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.DisableMainPageWithConfigByQuest
   L4_2 = false
-  L5_2 = "DisableAllExcludeCameraAndMove"
+  L5_2 = "DisableTestSumeruMainQuest"
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = L3_1
   L3_2 = L2_2
@@ -556,8 +559,7 @@ function L8_1(A0_2, A1_2)
   L6_2 = 0
   L7_2 = 7513707
   L8_2 = 35
-  L9_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos

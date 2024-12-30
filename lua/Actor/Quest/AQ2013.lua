@@ -935,10 +935,16 @@ function L8_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish201310 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFailed201310"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L6_1.Npc3086Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFailed201310 = L8_1
 return L1_1

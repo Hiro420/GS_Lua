@@ -48,6 +48,8 @@ function L8_1(A0_2)
   L1_2["80506"] = L2_2
   L2_2 = A0_2.OnSubStart80507
   L1_2["80507"] = L2_2
+  L2_2 = A0_2.OnSubStart80508
+  L1_2["80508"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L8_1
@@ -68,6 +70,8 @@ function L8_1(A0_2)
   L1_2["80506"] = L2_2
   L2_2 = A0_2.OnSubFinish80507
   L1_2["80507"] = L2_2
+  L2_2 = A0_2.OnSubFinish80508
+  L1_2["80508"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L8_1
@@ -705,4 +709,54 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80507 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L2_2 = print
+  L3_2 = "OnSubStart80508"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc1080
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateLocalGadget
+  L4_2 = 71700714
+  L5_2 = "1"
+  L6_2 = {}
+  L6_2.x = -1561
+  L6_2.y = 129
+  L6_2.z = 8627
+  L7_2 = {}
+  L7_2.x = 0
+  L7_2.y = 0
+  L7_2.z = 0
+  L8_2 = 3
+  L9_2 = nil
+  L10_2 = nil
+  L11_2 = true
+  L12_2 = 0
+  L13_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+end
+L1_1.OnSubStart80508 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80508"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.RemoveLocalGadget
+  L4_2 = 71700714
+  L5_2 = "1"
+  L2_2(L3_2, L4_2, L5_2)
+end
+L1_1.OnSubFinish80508 = L8_1
 return L1_1

@@ -2051,217 +2051,258 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
 end
 L1_1.CreateRepeatableNpcShowDisappearTrigger = L5_1
-function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2, A12_2, A13_2, A14_2, A15_2, A16_2)
-  local L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2
-  L17_2 = A1_2
-  if L17_2 == nil then
-    L18_2 = print
-    L19_2 = "try to creat npc trigger , triggerAlias is nil. "
-    L20_2 = A3_2
-    L19_2 = L19_2 .. L20_2
-    L18_2(L19_2)
-    return
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
+  local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2
+  L9_2 = "Actor/Gadget/CreateNPCWithCameraLookTrigger"
+  L10_2 = false
+  L11_2 = true
+  L12_2 = true
+  L13_2 = 0.5
+  L14_2 = 1
+  L15_2 = 0.5
+  L16_2 = true
+  if A7_2 == false then
+    L16_2 = false
   end
-  L18_2 = 70900002
-  L19_2 = A0_2.shareData
-  L20_2 = L19_2
-  L19_2 = L19_2.GetQuestData
-  L21_2 = A2_2
-  L19_2 = L19_2(L20_2, L21_2)
-  L20_2 = A0_2.mainQuestID
-  L21_2 = nil
-  L22_2 = nil
-  L23_2 = nil
+  if A8_2 == false then
+    L12_2 = false
+  end
+  L18_2 = A0_2
+  L17_2 = A0_2.CreateQuestNpcWithTriggerInternal
+  L19_2 = A1_2
+  L20_2 = A2_2
+  L21_2 = A3_2
+  L22_2 = A4_2
+  L23_2 = A5_2
+  L24_2 = distOut
+  L25_2 = L9_2
+  L26_2 = L10_2
+  L27_2 = L11_2
+  L28_2 = L12_2
+  L29_2 = L13_2
+  L30_2 = L14_2
+  L31_2 = L15_2
+  L32_2 = nil
+  L33_2 = false
+  L34_2 = nil
+  L35_2 = A6_2
+  L36_2 = L16_2
+  L17_2(L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2)
+end
+L1_1.CreateNpcWithCameraLookTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2, A12_2, A13_2, A14_2, A15_2, A16_2, A17_2, A18_2)
+  local L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2
+  L19_2 = A1_2
   if L19_2 == nil then
-    L24_2 = print
-    L25_2 = "try to create npc"
-    L26_2 = A3_2
-    L27_2 = " on "
-    L28_2 = L20_2
-    L29_2 = "but data not exist"
-    L25_2 = L25_2 .. L26_2 .. L27_2 .. L28_2 .. L29_2
-    L24_2(L25_2)
+    L20_2 = print
+    L21_2 = "try to creat npc trigger , triggerAlias is nil. "
+    L22_2 = A3_2
+    L21_2 = L21_2 .. L22_2
+    L20_2(L21_2)
     return
   end
-  L24_2 = L19_2.npcs
-  if L24_2 == nil then
-    L25_2 = print
-    L26_2 = "try to create npc"
-    L27_2 = A3_2
-    L28_2 = " on "
-    L29_2 = L20_2
-    L30_2 = "but npcs not in data"
-    L26_2 = L26_2 .. L27_2 .. L28_2 .. L29_2 .. L30_2
-    L25_2(L26_2)
-    return
-  end
+  L20_2 = 70900002
+  L21_2 = A0_2.shareData
+  L22_2 = L21_2
+  L21_2 = L21_2.GetQuestData
+  L23_2 = A2_2
+  L21_2 = L21_2(L22_2, L23_2)
+  L22_2 = A0_2.mainQuestID
+  L23_2 = nil
+  L24_2 = nil
   L25_2 = nil
-  L26_2 = #L24_2
-  L27_2 = 1
-  L28_2 = L26_2
+  if L21_2 == nil then
+    L26_2 = print
+    L27_2 = "try to create npc"
+    L28_2 = A3_2
+    L29_2 = " on "
+    L30_2 = L22_2
+    L31_2 = "but data not exist"
+    L27_2 = L27_2 .. L28_2 .. L29_2 .. L30_2 .. L31_2
+    L26_2(L27_2)
+    return
+  end
+  L26_2 = L21_2.npcs
+  if L26_2 == nil then
+    L27_2 = print
+    L28_2 = "try to create npc"
+    L29_2 = A3_2
+    L30_2 = " on "
+    L31_2 = L22_2
+    L32_2 = "but npcs not in data"
+    L28_2 = L28_2 .. L29_2 .. L30_2 .. L31_2 .. L32_2
+    L27_2(L28_2)
+    return
+  end
+  L27_2 = nil
+  L28_2 = #L26_2
   L29_2 = 1
-  for L30_2 = L27_2, L28_2, L29_2 do
-    L31_2 = L24_2[L30_2]
-    if L31_2 ~= nil then
+  L30_2 = L28_2
+  L31_2 = 1
+  for L32_2 = L29_2, L30_2, L31_2 do
+    L33_2 = L26_2[L32_2]
+    if L33_2 ~= nil then
       if A3_2 ~= nil then
-        L32_2 = L31_2.id
-        if L32_2 == A3_2 then
-          L25_2 = L31_2
+        L34_2 = L33_2.id
+        if L34_2 == A3_2 then
+          L27_2 = L33_2
           break
         end
       else
-        L25_2 = L31_2
+        L27_2 = L33_2
         break
       end
     end
   end
-  if L25_2 == nil then
+  if L27_2 == nil then
     return
   end
-  L27_2 = NG_HSOD_DEBUG
-  if L27_2 then
-    L27_2 = assert
-    L28_2 = L25_2.id
-    L28_2 = L28_2 ~= nil
-    L29_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
-    L27_2(L28_2, L29_2)
-    L27_2 = assert
-    L28_2 = L25_2.alias
-    L28_2 = L28_2 ~= nil
-    L29_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
-    L27_2(L28_2, L29_2)
-    L27_2 = assert
-    L28_2 = L25_2.script
-    L28_2 = L28_2 ~= nil
-    L29_2 = "CreateQuestNpcWithTrigger : npc script is null in shareconfig"
-    L27_2(L28_2, L29_2)
-    L27_2 = assert
-    L28_2 = L25_2.pos
-    L28_2 = L28_2 ~= nil
-    L29_2 = "CreateQuestNpcWithTrigger : npc pos is null in shareconfig or param"
-    L27_2(L28_2, L29_2)
+  L29_2 = NG_HSOD_DEBUG
+  if L29_2 then
+    L29_2 = assert
+    L30_2 = L27_2.id
+    L30_2 = L30_2 ~= nil
+    L31_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
+    L29_2(L30_2, L31_2)
+    L29_2 = assert
+    L30_2 = L27_2.alias
+    L30_2 = L30_2 ~= nil
+    L31_2 = "CreateQuestNpcWithTrigger : npc alias is null in shareconfig"
+    L29_2(L30_2, L31_2)
+    L29_2 = assert
+    L30_2 = L27_2.script
+    L30_2 = L30_2 ~= nil
+    L31_2 = "CreateQuestNpcWithTrigger : npc script is null in shareconfig"
+    L29_2(L30_2, L31_2)
+    L29_2 = assert
+    L30_2 = L27_2.pos
+    L30_2 = L30_2 ~= nil
+    L31_2 = "CreateQuestNpcWithTrigger : npc pos is null in shareconfig or param"
+    L29_2(L30_2, L31_2)
   end
-  L21_2 = L25_2.scene_id
-  if L21_2 == nil then
-    L27_2 = sceneData
-    L21_2 = L27_2.DefaultSceneID
-  elseif L21_2 == 0 then
-    L27_2 = sceneData
-    L27_2 = L27_2.currSceneID
-    if L27_2 ~= -1 then
-      L27_2 = sceneData
-      L21_2 = L27_2.currSceneID
+  L23_2 = L27_2.scene_id
+  if L23_2 == nil then
+    L29_2 = sceneData
+    L23_2 = L29_2.DefaultSceneID
+  elseif L23_2 == 0 then
+    L29_2 = sceneData
+    L29_2 = L29_2.currSceneID
+    if L29_2 ~= -1 then
+      L29_2 = sceneData
+      L23_2 = L29_2.currSceneID
     end
   end
-  L27_2 = sceneData
-  L28_2 = L27_2
-  L27_2 = L27_2.GetDummyPoint
-  L29_2 = L21_2
-  L30_2 = L25_2.pos
-  L27_2 = L27_2(L28_2, L29_2, L30_2)
-  L22_2 = L27_2.pos
-  L27_2 = sceneData
-  L28_2 = L27_2
-  L27_2 = L27_2.GetDummyPoint
-  L29_2 = L21_2
-  L30_2 = L25_2.pos
-  L27_2 = L27_2(L28_2, L29_2, L30_2)
-  L23_2 = L27_2.rot
+  L29_2 = sceneData
+  L30_2 = L29_2
+  L29_2 = L29_2.GetDummyPoint
+  L31_2 = L23_2
+  L32_2 = L27_2.pos
+  L29_2 = L29_2(L30_2, L31_2, L32_2)
+  L24_2 = L29_2.pos
+  L29_2 = sceneData
+  L30_2 = L29_2
+  L29_2 = L29_2.GetDummyPoint
+  L31_2 = L23_2
+  L32_2 = L27_2.pos
+  L29_2 = L29_2(L30_2, L31_2, L32_2)
+  L25_2 = L29_2.rot
   if A12_2 == nil then
     A12_2 = 2
   end
   if A9_2 == true then
-    L28_2 = A0_2
-    L27_2 = A0_2.NotifyToNpcById
-    L29_2 = A3_2
-    L30_2 = 0
-    L31_2 = 1
-    L32_2 = true
-    L33_2 = {}
-    L34_2 = NpcNotifyPriority
-    L34_2 = L34_2.Max
-    L33_2[1] = L34_2
-    L27_2(L28_2, L29_2, L30_2, L31_2, L32_2, L33_2)
+    L30_2 = A0_2
+    L29_2 = A0_2.NotifyToNpcById
+    L31_2 = A3_2
+    L32_2 = 0
+    L33_2 = 1
+    L34_2 = true
+    L35_2 = {}
+    L36_2 = NpcNotifyPriority
+    L36_2 = L36_2.Max
+    L35_2[1] = L36_2
+    L29_2(L30_2, L31_2, L32_2, L33_2, L34_2, L35_2)
   end
-  L27_2 = false
+  L29_2 = false
   if A15_2 ~= nil then
-    L27_2 = A15_2
+    L29_2 = A15_2
   end
-  L28_2 = {}
-  L28_2.dist = A5_2
-  L28_2.outDist = A6_2
-  L29_2 = {}
-  L29_2.x = 0
-  L29_2.y = 0.8
-  L29_2.z = 0
-  L28_2.offset = L29_2
-  L28_2.questID = A2_2
-  L29_2 = A0_2.clientData
-  L29_2 = L29_2.ActorAlias
-  L28_2.actorAlias = L29_2
-  L28_2.npcID = A3_2
-  L28_2.npcIndex = A4_2
-  L29_2 = L25_2.alias
-  L28_2.npcAlias = L29_2
-  L28_2.durationToBlack = A11_2
-  L28_2.durationKeepBlack = A12_2
-  L28_2.durationFromBlack = A13_2
-  L28_2.interHighPriority = A8_2
-  L28_2.hideDailyNpc = A9_2
-  L28_2.useQuestMode = A10_2
-  L28_2.mainQuestID = L20_2
-  L28_2.targetVehicleFeatureTagList = A14_2
-  L28_2.hasVehiclePreCondition = L27_2
-  L28_2.hintTextMapId = A16_2
-  L29_2 = actorMgr
-  L29_2 = L29_2.GadgetTriggerDic
-  L29_2[L17_2] = L28_2
-  L29_2 = A0_2.NpcTriggerDataDic
-  if nil == L29_2 then
-    L29_2 = {}
-    A0_2.NpcTriggerDataDic = L29_2
+  L30_2 = {}
+  L30_2.dist = A5_2
+  L30_2.outDist = A6_2
+  L31_2 = {}
+  L31_2.x = 0
+  L31_2.y = 0.8
+  L31_2.z = 0
+  L30_2.offset = L31_2
+  L30_2.questID = A2_2
+  L31_2 = A0_2.clientData
+  L31_2 = L31_2.ActorAlias
+  L30_2.actorAlias = L31_2
+  L30_2.npcID = A3_2
+  L30_2.npcIndex = A4_2
+  L31_2 = L27_2.alias
+  L30_2.npcAlias = L31_2
+  L30_2.durationToBlack = A11_2
+  L30_2.durationKeepBlack = A12_2
+  L30_2.durationFromBlack = A13_2
+  L30_2.interHighPriority = A8_2
+  L30_2.hideDailyNpc = A9_2
+  L30_2.useQuestMode = A10_2
+  L30_2.mainQuestID = L22_2
+  L30_2.targetVehicleFeatureTagList = A14_2
+  L30_2.hasVehiclePreCondition = L29_2
+  L30_2.hintTextMapId = A16_2
+  L30_2.talkId = A17_2
+  L30_2.hideUIWhenCamLook = A18_2
+  L31_2 = actorMgr
+  L31_2 = L31_2.GadgetTriggerDic
+  L31_2[L19_2] = L30_2
+  L31_2 = A0_2.NpcTriggerDataDic
+  if nil == L31_2 then
+    L31_2 = {}
+    A0_2.NpcTriggerDataDic = L31_2
   end
-  L29_2 = A0_2.NpcTriggerDataDic
-  L29_2[L17_2] = A2_2
-  L29_2 = actorMgr
-  L30_2 = L29_2
-  L29_2 = L29_2.CreateActorWithPos
-  L31_2 = L17_2
-  L32_2 = A7_2
-  L33_2 = L18_2
-  L34_2 = 0
-  L35_2 = L22_2
-  L36_2 = L23_2
-  L37_2 = true
-  L38_2 = false
-  L39_2 = L21_2
-  L29_2 = L29_2(L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2)
-  if L29_2 == nil then
-    L30_2 = print
-    L31_2 = "try to create trigger, failed"
-    L32_2 = A3_2
-    L33_2 = " on "
-    L34_2 = L20_2
-    L31_2 = L31_2 .. L32_2 .. L33_2 .. L34_2
-    L30_2(L31_2)
+  L31_2 = A0_2.NpcTriggerDataDic
+  L31_2[L19_2] = A2_2
+  L31_2 = actorMgr
+  L32_2 = L31_2
+  L31_2 = L31_2.CreateActorWithPos
+  L33_2 = L19_2
+  L34_2 = A7_2
+  L35_2 = L20_2
+  L36_2 = 0
+  L37_2 = L24_2
+  L38_2 = L25_2
+  L39_2 = true
+  L40_2 = false
+  L41_2 = L23_2
+  L31_2 = L31_2(L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2)
+  if L31_2 == nil then
+    L32_2 = print
+    L33_2 = "try to create trigger, failed"
+    L34_2 = A3_2
+    L35_2 = " on "
+    L36_2 = L22_2
+    L33_2 = L33_2 .. L34_2 .. L35_2 .. L36_2
+    L32_2(L33_2)
     if A9_2 == true then
-      L31_2 = A0_2
-      L30_2 = A0_2.NotifyToNpcById
-      L32_2 = A3_2
-      L33_2 = 0
-      L34_2 = 0
-      L35_2 = true
-      L36_2 = {}
-      L37_2 = NpcNotifyPriority
-      L37_2 = L37_2.Max
-      L36_2[1] = L37_2
-      L30_2(L31_2, L32_2, L33_2, L34_2, L35_2, L36_2)
+      L33_2 = A0_2
+      L32_2 = A0_2.NotifyToNpcById
+      L34_2 = A3_2
+      L35_2 = 0
+      L36_2 = 0
+      L37_2 = true
+      L38_2 = {}
+      L39_2 = NpcNotifyPriority
+      L39_2 = L39_2.Max
+      L38_2[1] = L39_2
+      L32_2(L33_2, L34_2, L35_2, L36_2, L37_2, L38_2)
     end
-    L30_2 = actorMgr
-    L30_2 = L30_2.GadgetTriggerDic
-    L30_2[L17_2] = nil
-    L30_2 = A0_2.NpcTriggerDataDic
-    L30_2[L17_2] = nil
+    L32_2 = actorMgr
+    L32_2 = L32_2.GadgetTriggerDic
+    L32_2[L19_2] = nil
+    L32_2 = A0_2.NpcTriggerDataDic
+    L32_2[L19_2] = nil
     return
   end
 end
@@ -2477,6 +2518,16 @@ function L5_1(A0_2)
   end
 end
 L1_1.ClearAllNpcTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = A0_2.uActor
+  L4_2 = L3_2
+  L3_2 = L3_2.WaitEntityReadyCall
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.WaitEntityReadyCall = L5_1
 function L5_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L3_2 = A0_2
@@ -4253,92 +4304,110 @@ function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
   return L13_2(L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2)
 end
 L1_1.TransmitPlayerWithDialogTextByQuestId = L6_1
-function L6_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
-  L5_2 = A0_2
-  L4_2 = A0_2.GetTransmitCfgById
-  L6_2 = A1_2
-  L7_2 = A2_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  L5_2 = 0
-  L6_2 = 0
-  L7_2 = nil
-  L8_2 = 0
-  if nil ~= L4_2 then
-    L5_2 = A1_2.QuestConfigId
-    L6_2 = L4_2.point_id
-    L9_2 = sceneData
-    L10_2 = L9_2
-    L9_2 = L9_2.GetDummyPoint
-    L11_2 = L4_2.scene_id
-    L12_2 = L4_2.pos
-    L9_2 = L9_2(L10_2, L11_2, L12_2)
-    L7_2 = L9_2
-    L8_2 = L4_2.scene_id
-  else
-    L9_2 = actorUtils
-    L9_2 = L9_2.LogError
-    L10_2 = "[Lua]Quest Transmit with no share config!!! questId:"
-    L11_2 = tostring
-    L12_2 = L5_2
-    L11_2 = L11_2(L12_2)
-    L10_2 = L10_2 .. L11_2
-    L9_2(L10_2)
-    L9_2 = false
-    return L9_2
-  end
+function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
+  local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2
   L10_2 = A0_2
-  L9_2 = A0_2.TransmitPlayerUseCustomizedTplId
-  L11_2 = L8_2
-  L12_2 = L7_2.pos
-  L13_2 = L7_2.rot
-  L14_2 = L5_2
-  L15_2 = L6_2
-  L16_2 = A3_2
-  return L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2)
+  L9_2 = A0_2.GetTransmitCfgById
+  L11_2 = A1_2
+  L12_2 = A2_2
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L10_2 = 0
+  L11_2 = 0
+  L12_2 = nil
+  L13_2 = 0
+  L14_2 = false
+  if A4_2 == true then
+    L14_2 = true
+  end
+  if nil ~= L9_2 then
+    L10_2 = A1_2.QuestConfigId
+    L11_2 = L9_2.point_id
+    L15_2 = sceneData
+    L16_2 = L15_2
+    L15_2 = L15_2.GetDummyPoint
+    L17_2 = L9_2.scene_id
+    L18_2 = L9_2.pos
+    L15_2 = L15_2(L16_2, L17_2, L18_2)
+    L12_2 = L15_2
+    L13_2 = L9_2.scene_id
+  else
+    L15_2 = actorUtils
+    L15_2 = L15_2.LogError
+    L16_2 = "[Lua]Quest Transmit with no share config!!! questId:"
+    L17_2 = tostring
+    L18_2 = L10_2
+    L17_2 = L17_2(L18_2)
+    L16_2 = L16_2 .. L17_2
+    L15_2(L16_2)
+    L15_2 = false
+    return L15_2
+  end
+  L16_2 = A0_2
+  L15_2 = A0_2.TransmitPlayerUseCustomizedTplId
+  L17_2 = L13_2
+  L18_2 = L12_2.pos
+  L19_2 = L12_2.rot
+  L20_2 = L10_2
+  L21_2 = L11_2
+  L22_2 = A3_2
+  L23_2 = L14_2
+  L24_2 = A5_2
+  L25_2 = A6_2
+  L26_2 = A7_2
+  L27_2 = A8_2
+  return L15_2(L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2)
 end
 L1_1.TransmitPlayerUseCustomizedTplById = L6_1
-function L6_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2
-  L5_2 = A0_2
-  L4_2 = A0_2.GetTransmitCfgByQuestId
-  L6_2 = A1_2
-  L7_2 = A2_2
-  L4_2 = L4_2(L5_2, L6_2, L7_2)
-  L5_2 = 0
-  L6_2 = nil
-  L7_2 = 0
-  if nil ~= L4_2 then
-    L5_2 = L4_2.point_id
-    L8_2 = sceneData
-    L9_2 = L8_2
-    L8_2 = L8_2.GetDummyPoint
-    L10_2 = L4_2.scene_id
-    L11_2 = L4_2.pos
-    L8_2 = L8_2(L9_2, L10_2, L11_2)
-    L6_2 = L8_2
-    L7_2 = L4_2.scene_id
-  else
-    L8_2 = actorUtils
-    L8_2 = L8_2.LogError
-    L9_2 = "[Lua]Quest Transmit with no share config!!! questId:"
-    L10_2 = tostring
-    L11_2 = A1_2
-    L10_2 = L10_2(L11_2)
-    L9_2 = L9_2 .. L10_2
-    L8_2(L9_2)
-    L8_2 = false
-    return L8_2
+function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
+  local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2
+  L10_2 = A0_2
+  L9_2 = A0_2.GetTransmitCfgByQuestId
+  L11_2 = A1_2
+  L12_2 = A2_2
+  L9_2 = L9_2(L10_2, L11_2, L12_2)
+  L10_2 = 0
+  L11_2 = nil
+  L12_2 = 0
+  L13_2 = false
+  if A4_2 == true then
+    L13_2 = true
   end
-  L9_2 = A0_2
-  L8_2 = A0_2.TransmitPlayerUseCustomizedTplId
-  L10_2 = L7_2
-  L11_2 = L6_2.pos
-  L12_2 = L6_2.rot
-  L13_2 = A1_2
-  L14_2 = L5_2
-  L15_2 = A3_2
-  return L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2)
+  if nil ~= L9_2 then
+    L10_2 = L9_2.point_id
+    L14_2 = sceneData
+    L15_2 = L14_2
+    L14_2 = L14_2.GetDummyPoint
+    L16_2 = L9_2.scene_id
+    L17_2 = L9_2.pos
+    L14_2 = L14_2(L15_2, L16_2, L17_2)
+    L11_2 = L14_2
+    L12_2 = L9_2.scene_id
+  else
+    L14_2 = actorUtils
+    L14_2 = L14_2.LogError
+    L15_2 = "[Lua]Quest Transmit with no share config!!! questId:"
+    L16_2 = tostring
+    L17_2 = A1_2
+    L16_2 = L16_2(L17_2)
+    L15_2 = L15_2 .. L16_2
+    L14_2(L15_2)
+    L14_2 = false
+    return L14_2
+  end
+  L15_2 = A0_2
+  L14_2 = A0_2.TransmitPlayerUseCustomizedTplId
+  L16_2 = L12_2
+  L17_2 = L11_2.pos
+  L18_2 = L11_2.rot
+  L19_2 = A1_2
+  L20_2 = L10_2
+  L21_2 = A3_2
+  L22_2 = L13_2
+  L23_2 = A5_2
+  L24_2 = A6_2
+  L25_2 = A7_2
+  L26_2 = A8_2
+  return L14_2(L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2)
 end
 L1_1.TransmitPlayerUseCustomizedTplByQuestId = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2)
@@ -5822,6 +5891,19 @@ function L6_1(A0_2)
   L1_2(L2_2, L3_2)
 end
 L1_1.ClearQuestLimitRegionTask = L6_1
+function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L6_2 = A0_2.uActor
+  L7_2 = L6_2
+  L6_2 = L6_2.StartTalkPrepareInter
+  L8_2 = A1_2
+  L9_2 = A2_2
+  L10_2 = A3_2
+  L11_2 = A4_2
+  L12_2 = A5_2
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+end
+L1_1.StartTalkPrepareInter = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
   local L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
   L10_2 = globalActor

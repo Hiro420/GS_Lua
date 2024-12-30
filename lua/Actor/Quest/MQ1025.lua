@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1, L26_1, L27_1, L28_1, L29_1, L30_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -35,11 +35,12 @@ L23_1 = nil
 L24_1 = nil
 L25_1 = nil
 L26_1 = nil
-L27_1 = 1025
-L28_1 = require
-L29_1 = "Actor/DailyNPCManager"
-L28_1 = L28_1(L29_1)
-function L29_1(A0_2)
+L27_1 = nil
+L28_1 = 1025
+L29_1 = require
+L30_1 = "Actor/DailyNPCManager"
+L29_1 = L29_1(L30_1)
+function L30_1(A0_2)
   local L1_2
   L1_2 = A0_2.clientData
   L2_1 = L1_2
@@ -89,9 +90,11 @@ function L29_1(A0_2)
   L25_1 = L1_2
   L1_2 = L2_1.QYJData
   L26_1 = L1_2
+  L1_2 = L2_1.QuestOrphanNpcPlaceList
+  L27_1 = L1_2
 end
-L1_1.OnDataLoaded = L29_1
-function L29_1(A0_2)
+L1_1.OnDataLoaded = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   A0_2.subStartHandlers = L1_2
@@ -159,8 +162,8 @@ function L29_1(A0_2)
   L2_2 = A0_2.OnSubStart102521
   L1_2["102521"] = L2_2
 end
-L1_1.OnSubStartHandlerBuild = L29_1
-function L29_1(A0_2)
+L1_1.OnSubStartHandlerBuild = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   A0_2.subFinishHandlers = L1_2
@@ -228,8 +231,8 @@ function L29_1(A0_2)
   L2_2 = A0_2.OnSubFinish102521
   L1_2["102521"] = L2_2
 end
-L1_1.OnSubFinishHandlerBuild = L29_1
-function L29_1(A0_2)
+L1_1.OnSubFinishHandlerBuild = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L1_2 = print
   L2_2 = "paimon vanish"
@@ -245,8 +248,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.PaimonVanish = L29_1
-function L29_1(A0_2)
+L1_1.PaimonVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -260,8 +263,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2, L5_2)
   end
 end
-L1_1.BDRDestroy = L29_1
-function L29_1(A0_2)
+L1_1.BDRDestroy = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -274,8 +277,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.keqingVanish = L29_1
-function L29_1(A0_2)
+L1_1.keqingVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -288,8 +291,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.XiaoVanish = L29_1
-function L29_1(A0_2)
+L1_1.XiaoVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -302,8 +305,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.PllVanish = L29_1
-function L29_1(A0_2)
+L1_1.PllVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -316,8 +319,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.GanyuVanish = L29_1
-function L29_1(A0_2)
+L1_1.GanyuVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -330,8 +333,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.NingguangVanish = L29_1
-function L29_1(A0_2)
+L1_1.NingguangVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -344,8 +347,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.Xian1Vanish = L29_1
-function L29_1(A0_2)
+L1_1.Xian1Vanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -358,8 +361,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.Xian2Vanish = L29_1
-function L29_1(A0_2)
+L1_1.Xian2Vanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -372,8 +375,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.Xian3Vanish = L29_1
-function L29_1(A0_2)
+L1_1.Xian3Vanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -386,8 +389,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.Army1Vanish = L29_1
-function L29_1(A0_2)
+L1_1.Army1Vanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -400,8 +403,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.ChangchangVanish = L29_1
-function L29_1(A0_2)
+L1_1.ChangchangVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -414,8 +417,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.ZhongliVanish = L29_1
-function L29_1(A0_2)
+L1_1.ZhongliVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -428,8 +431,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.GongziVanish = L29_1
-function L29_1(A0_2)
+L1_1.GongziVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -442,8 +445,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.NVshiVanish = L29_1
-function L29_1(A0_2)
+L1_1.NVshiVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -456,8 +459,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.QYJVanish = L29_1
-function L29_1(A0_2)
+L1_1.QYJVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -470,8 +473,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.ShitouVanish = L29_1
-function L29_1(A0_2)
+L1_1.ShitouVanish = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2
   L2_2 = A0_2
   L1_2 = A0_2.GetQuestNpcActor
@@ -484,8 +487,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.YingerVanish = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.YingerVanish = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "1014 Invoke : "
@@ -517,8 +520,8 @@ function L29_1(A0_2, A1_2)
     L2_2(L3_2, L4_2)
   end
 end
-L1_1.InvokeOnInteraction = L29_1
-function L29_1(A0_2)
+L1_1.InvokeOnInteraction = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = A0_2
   L1_2 = A0_2.PlayCutsceneIndex
@@ -529,8 +532,8 @@ function L29_1(A0_2)
   L7_2 = true
   L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
 end
-L1_1.PlayAwakeCutscene = L29_1
-function L29_1(A0_2)
+L1_1.PlayAwakeCutscene = L30_1
+function L30_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2
   L1_2 = print
   L2_2 = "35104 Finish : Tutorial1"
@@ -548,8 +551,8 @@ function L29_1(A0_2)
     L2_2(L3_2, L4_2, L5_2)
   end
 end
-L1_1.On102506CutsceneFinish = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.On102506CutsceneFinish = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
   L2_2 = print
   L3_2 = "102501 start:..."
@@ -579,8 +582,8 @@ function L29_1(A0_2, A1_2)
   end
   L4_2(L5_2, L6_2, L7_2)
 end
-L1_1.OnSubStart102501 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102501 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -612,8 +615,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart102503 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102503 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -645,8 +648,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart102504 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102504 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -676,8 +679,8 @@ function L29_1(A0_2, A1_2)
   L10_2 = "QUEST_Black_Q1200010"
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
-L1_1.OnSubStart102516 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102516 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -696,8 +699,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart102515 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102515 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -744,8 +747,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart102502 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102502 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -788,8 +791,8 @@ function L29_1(A0_2, A1_2)
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart102505 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102505 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -881,8 +884,8 @@ function L29_1(A0_2, A1_2)
   L11_2 = false
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.OnSubStart102506 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102506 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -893,8 +896,8 @@ function L29_1(A0_2, A1_2)
   L5_2 = L10_1.ID
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart102510 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102510 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -943,8 +946,8 @@ function L29_1(A0_2, A1_2)
   L5_2 = L6_1.ID
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubStart102513 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubStart102513 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1006,8 +1009,8 @@ function L29_1(A0_2, A1_2)
   end
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish102516 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102516 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1037,8 +1040,8 @@ function L29_1(A0_2, A1_2)
   L4_2 = A0_2.NVshiVanish
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish102502 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102502 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1048,8 +1051,8 @@ function L29_1(A0_2, A1_2)
   L4_2 = A0_2.PaimonVanish
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish102515 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102515 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1095,8 +1098,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish102505 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102505 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1106,8 +1109,8 @@ function L29_1(A0_2, A1_2)
   L4_2 = A0_2.PaimonVanish
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish102506 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102506 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1181,8 +1184,8 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish102510 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102510 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "OnFinished 102501"
@@ -1249,20 +1252,20 @@ function L29_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubFinish102517 = L29_1
-function L29_1(A0_2, A1_2)
+L1_1.OnSubFinish102517 = L30_1
+function L30_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "******OnFinish 102521"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish102521 = L29_1
-function L29_1(A0_2)
+L1_1.OnSubFinish102521 = L30_1
+function L30_1(A0_2)
   local L1_2
 end
-L1_1.Start = L29_1
-function L29_1(A0_2)
+L1_1.Start = L30_1
+function L30_1(A0_2)
   local L1_2
 end
-L1_1.OnDestroy = L29_1
+L1_1.OnDestroy = L30_1
 return L1_1

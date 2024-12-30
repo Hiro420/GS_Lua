@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -15,6 +15,10 @@ L7_1 = {}
 L8_1 = {}
 L9_1 = {}
 L10_1 = {}
+L10_1.questGlobalVarId = 502901
+L10_1.questGlobalVarValue = 0
+L11_1 = L6_1.Equal
+L10_1.questGlobalVarOperate = L11_1
 L9_1.condition = L10_1
 L10_1 = {}
 L11_1 = {}
@@ -24,6 +28,22 @@ L11_1.intervalMin = 20
 L11_1.intervalMax = 30
 L10_1[1] = L11_1
 L9_1.bubbleDatas = L10_1
+L10_1 = {}
+L11_1 = {}
+L11_1.questGlobalVarId = 502901
+L11_1.questGlobalVarValue = 1
+L12_1 = L6_1.Equal
+L11_1.questGlobalVarOperate = L12_1
+L10_1.condition = L11_1
+L11_1 = {}
+L12_1 = {}
+L12_1.dialogId = 1016602601
+L12_1.duration = 0
+L12_1.intervalMin = 20
+L12_1.intervalMax = 30
+L11_1[1] = L12_1
+L10_1.bubbleDatas = L11_1
 L8_1[1] = L9_1
+L8_1[2] = L10_1
 L7_1.BubbleData = L8_1
 return L7_1

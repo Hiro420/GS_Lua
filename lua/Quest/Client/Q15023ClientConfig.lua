@@ -280,5 +280,17 @@ L3_1.y = 0.0
 L3_1.z = 0.0
 L2_1.rot = L3_1
 L1_1._Q15023DungeonTarget08Point_ = L2_1
+L2_1 = {}
+L3_1 = {}
+L3_1.x = -102.444
+L3_1.y = 264.095
+L3_1.z = 93.007
+L2_1.pos = L3_1
+L3_1 = {}
+L3_1.x = 0.0
+L3_1.y = 0.0
+L3_1.z = 0.0
+L2_1.rot = L3_1
+L1_1._Q1502316TriggerPoint_ = L2_1
 L0_1.Points = L1_1
 return L0_1

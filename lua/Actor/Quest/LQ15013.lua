@@ -152,9 +152,14 @@ L1_1.NpcCreateWithNpcTrigger = L9_1
 function L9_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
   local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
   L7_2 = 0.5
-  if A6_2 then
-    L7_2 = 0
+  if not A6_2 then
+    L8_2 = needLightUp
+    if not L8_2 then
+      goto lbl_8
+    end
   end
+  L7_2 = 0
+  ::lbl_8::
   L8_2 = L3_1
   L9_2 = L8_2
   L8_2 = L8_2.CreateQuestNpcWithTriggerBlackEx

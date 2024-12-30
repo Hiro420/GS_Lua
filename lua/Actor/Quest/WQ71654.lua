@@ -74,6 +74,12 @@ function L8_1(A0_2)
   L1_2["7165419"] = L2_2
   L2_2 = A0_2.OnSubStart7165420
   L1_2["7165420"] = L2_2
+  L2_2 = A0_2.OnSubStart7165421
+  L1_2["7165421"] = L2_2
+  L2_2 = A0_2.OnSubStart7165422
+  L1_2["7165422"] = L2_2
+  L2_2 = A0_2.OnSubStart7165423
+  L1_2["7165423"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L8_1
@@ -120,6 +126,12 @@ function L8_1(A0_2)
   L1_2["7165419"] = L2_2
   L2_2 = A0_2.OnSubFinish7165420
   L1_2["7165420"] = L2_2
+  L2_2 = A0_2.OnSubFinish7165421
+  L1_2["7165421"] = L2_2
+  L2_2 = A0_2.OnSubFinish7165422
+  L1_2["7165422"] = L2_2
+  L2_2 = A0_2.OnSubFinish7165423
+  L1_2["7165423"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L8_1
@@ -634,4 +646,76 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L1_1.OnSubFinish7165420 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7165421"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7165421 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7165421"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7165421 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubStart7165422"
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.CreateQuestNpcCreateTask
+  L4_2 = {}
+  L5_2 = "Paimon"
+  L4_2[1] = L5_2
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.LevelLoadFinishSafeCall
+  function L5_2()
+    local L0_3, L1_3, L2_3, L3_3, L4_3, L5_3, L6_3
+    L0_3 = A0_2
+    L1_3 = L0_3
+    L0_3 = L0_3.TransmitPlayerById
+    L2_3 = A1_2
+    L3_3 = 1
+    L4_3 = nil
+    function L5_3(A0_4)
+      local L1_4, L2_4, L3_4, L4_4, L5_4
+      L2_4 = A0_4
+      L1_4 = A0_4.CreateQuestNpc
+      L3_4 = A1_2
+      L4_4 = L7_1.PaimonData
+      L4_4 = L4_4.id
+      L5_4 = 0
+      L1_4(L2_4, L3_4, L4_4, L5_4)
+    end
+    L6_3 = L2_2
+    L0_3(L1_3, L2_3, L3_3, L4_3, L5_3, L6_3)
+  end
+  L3_2(L4_2, L5_2)
+end
+L1_1.OnSubStart7165422 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7165422"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7165422 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubStart7165423"
+  L2_2(L3_2)
+end
+L1_1.OnSubStart7165423 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = print
+  L3_2 = "OnSubFinish7165423"
+  L2_2(L3_2)
+end
+L1_1.OnSubFinish7165423 = L8_1
 return L1_1

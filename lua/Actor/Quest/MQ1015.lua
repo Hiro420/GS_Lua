@@ -904,6 +904,10 @@ function L16_1(A0_2, A1_2)
   L3_2 = "OnFinished 101502"
   L2_2(L3_2)
   L3_2 = A0_2
+  L2_2 = A0_2.ActionSafeCall
+  L4_2 = A0_2.QiqiDestroy
+  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
   L2_2 = A0_2.NotifyTo
   L4_2 = "Npc2103"
   L5_2 = NpcUtil

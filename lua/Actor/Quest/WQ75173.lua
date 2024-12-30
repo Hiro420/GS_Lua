@@ -139,6 +139,7 @@ function L8_1(A0_2, A1_2)
     L4_2 = L2_2
     L3_2 = L2_2.DestroySelf
     L3_2(L4_2)
+    return
   end
 end
 L1_1.ActorDestroy = L8_1

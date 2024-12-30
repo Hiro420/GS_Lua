@@ -366,6 +366,18 @@ function L7_1(A0_2, A1_2)
   L3_2 = "OnSubStart7509706"
   L2_2(L3_2)
   L3_2 = A0_2
+  L2_2 = A0_2.GetSubQuestState
+  L4_2 = 7510101
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 3 then
+    L2_2 = actorUtils
+    L2_2 = L2_2.FinishQuestID
+    L3_2 = false
+    L4_2 = 7509706
+    L2_2(L3_2, L4_2)
+    return
+  end
+  L3_2 = A0_2
   L2_2 = A0_2.GetQuestVar
   L4_2 = 7509706
   L5_2 = 0

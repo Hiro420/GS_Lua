@@ -135,18 +135,32 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.NpcCreateWithNpcTrigger
-  L4_2 = L7_1.Npc21697
-  L4_2 = L4_2.id
-  L5_2 = 0
-  L6_2 = 60
-  L7_2 = 7501603
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
   L2_2 = L2_2.CancelStoryByQuest
   L4_2 = 147501605
   L2_2(L3_2, L4_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.GetSubQuestState
+  L4_2 = 503401
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 2 then
+  else
+    L3_2 = A0_2
+    L2_2 = A0_2.GetSubQuestState
+    L4_2 = 503406
+    L2_2 = L2_2(L3_2, L4_2)
+    if L2_2 == 2 then
+    else
+      L2_2 = L3_1
+      L3_2 = L2_2
+      L2_2 = L2_2.NpcCreateWithNpcTrigger
+      L4_2 = L7_1.Npc21697
+      L4_2 = L4_2.id
+      L5_2 = 0
+      L6_2 = 60
+      L7_2 = 7501603
+      L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+    end
+  end
 end
 L1_1.OnSubStart7501603 = L8_1
 function L8_1(A0_2, A1_2)
@@ -274,11 +288,25 @@ function L8_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnSubStart7501605"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.DeployStoryByQuest
-  L4_2 = 147501605
-  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.GetSubQuestState
+  L4_2 = 503401
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 == 2 then
+  else
+    L3_2 = A0_2
+    L2_2 = A0_2.GetSubQuestState
+    L4_2 = 503406
+    L2_2 = L2_2(L3_2, L4_2)
+    if L2_2 == 2 then
+    else
+      L2_2 = L3_1
+      L3_2 = L2_2
+      L2_2 = L2_2.DeployStoryByQuest
+      L4_2 = 147501605
+      L2_2(L3_2, L4_2)
+    end
+  end
 end
 L1_1.OnSubStart7501605 = L8_1
 function L8_1(A0_2, A1_2)

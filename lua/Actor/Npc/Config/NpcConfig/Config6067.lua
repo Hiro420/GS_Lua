@@ -72,5 +72,13 @@ L14_1.conditions = L15_1
 L13_1[1] = L14_1
 L12_1.titleDatas = L13_1
 L11_1.TitleDataNew = L12_1
+L12_1 = {}
+L13_1 = {}
+L14_1 = {}
+L14_1.icon = "UI_NPCTopIcon_Activity_MusicalShop"
+L14_1.priority = 0
+L13_1[1] = L14_1
+L12_1.markDatas = L13_1
+L11_1.BillboardMarkData = L12_1
 L10_1.Data = L11_1
 return L10_1

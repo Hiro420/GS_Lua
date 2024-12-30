@@ -298,6 +298,7 @@ L3_1 = {}
 L4_1 = "QUEST_Black_Clear"
 L3_1[1] = L4_1
 L2_1.textMapId = L3_1
+L2_1.useQuestLoadingPage = true
 L2_1.useWhiteScreen = false
 L2_1.loadCtxCloseDelay = 0
 L2_1.isUseQuestRelatedPoint = false

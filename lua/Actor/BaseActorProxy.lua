@@ -2118,6 +2118,16 @@ function L1_1(A0_2, A1_2)
   L3_2.loadCtxTag = L4_2
   L4_2 = A1_2.loadCtxCloseDelay
   L3_2.loadCtxCloseDelay = L4_2
+  L4_2 = A1_2.dontResetPlayerFSM
+  L3_2.dontResetPlayerFSM = L4_2
+  L4_2 = A1_2.targetArcCurveId
+  L3_2.targetArcCurveId = L4_2
+  L4_2 = A1_2.targetArcPointId
+  L3_2.targetArcPointId = L4_2
+  L4_2 = A1_2.targetArcInitialSpeed
+  L3_2.targetArcInitialSpeed = L4_2
+  L4_2 = A1_2.targetArcProgress
+  L3_2.targetArcProgress = L4_2
   L4_2 = A0_2.uActor
   L5_2 = L4_2
   L4_2 = L4_2.TryTransmitPlayer
@@ -2279,54 +2289,63 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2,
   return L13_2(L14_2, L15_2)
 end
 L0_1.TransmitPlayerWithDialogText = L1_1
-function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
-  local L7_2, L8_2, L9_2, L10_2
-  L7_2 = NG_HSOD_DEBUG
-  if L7_2 then
-    L7_2 = print
-    L8_2 = "BaseActorProxy:TransmitPlayerUseCustomizedTplId->ShowBlackScreen "
-    L9_2 = tostring
-    L10_2 = A0_2.alias
-    L9_2 = L9_2(L10_2)
-    L8_2 = L8_2 .. L9_2
-    L7_2(L8_2)
-    L8_2 = A0_2
-    L7_2 = A0_2.PrintTraceback
-    L7_2(L8_2)
+function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+  local L12_2, L13_2, L14_2, L15_2
+  L12_2 = NG_HSOD_DEBUG
+  if L12_2 then
+    L12_2 = print
+    L13_2 = "BaseActorProxy:TransmitPlayerUseCustomizedTplId->ShowBlackScreen "
+    L14_2 = tostring
+    L15_2 = A0_2.alias
+    L14_2 = L14_2(L15_2)
+    L13_2 = L13_2 .. L14_2
+    L12_2(L13_2)
+    L13_2 = A0_2
+    L12_2 = A0_2.PrintTraceback
+    L12_2(L13_2)
   end
-  L7_2 = {}
-  L7_2.sceneId = A1_2
-  L7_2.targetPos = A2_2
-  L7_2.targetEuler = A3_2
-  L8_2 = {}
-  L7_2.textMapId = L8_2
-  L8_2 = {}
-  L7_2.dialogId = L8_2
-  L7_2.useTextMapId = false
-  L7_2.textShowTime = 0
-  L7_2.transFinishCallback = nil
-  L7_2.transPreCallback = nil
-  L7_2.task = nil
-  L8_2 = A4_2 or L8_2
+  L12_2 = {}
+  L12_2.sceneId = A1_2
+  L12_2.targetPos = A2_2
+  L12_2.targetEuler = A3_2
+  L13_2 = {}
+  L12_2.textMapId = L13_2
+  L13_2 = {}
+  L12_2.dialogId = L13_2
+  L12_2.useTextMapId = false
+  L12_2.textShowTime = 0
+  L12_2.transFinishCallback = nil
+  L12_2.transPreCallback = nil
+  L12_2.task = nil
+  L13_2 = A4_2 or L13_2
   if not A4_2 then
-    L8_2 = 0
+    L13_2 = 0
   end
-  L7_2.questId = L8_2
-  L8_2 = A5_2 or L8_2
+  L12_2.questId = L13_2
+  L13_2 = A5_2 or L13_2
   if not A5_2 then
-    L8_2 = 0
+    L13_2 = 0
   end
-  L7_2.pointId = L8_2
-  L7_2.customTemplateId = A6_2
-  L7_2.showBlackScreen = true
-  L7_2.useWhiteScreen = false
-  L7_2.disableTPAudio = false
-  L7_2.overrideTPAudioEvtName = nil
-  L8_2 = A0_2.uActor
-  L9_2 = L8_2
-  L8_2 = L8_2.TryTransmitPlayer
-  L10_2 = L7_2
-  return L8_2(L9_2, L10_2)
+  L12_2.pointId = L13_2
+  L12_2.customTemplateId = A6_2
+  L12_2.showBlackScreen = true
+  L12_2.useWhiteScreen = false
+  L12_2.disableTPAudio = false
+  L12_2.overrideTPAudioEvtName = nil
+  L13_2 = A7_2 or L13_2
+  if not A7_2 then
+    L13_2 = false
+  end
+  L12_2.dontResetPlayerFSM = L13_2
+  L12_2.targetArcCurveId = A8_2
+  L12_2.targetArcPointId = A9_2
+  L12_2.targetArcInitialSpeed = A10_2
+  L12_2.targetArcProgress = A11_2
+  L13_2 = A0_2.uActor
+  L14_2 = L13_2
+  L13_2 = L13_2.TryTransmitPlayer
+  L15_2 = L12_2
+  return L13_2(L14_2, L15_2)
 end
 L0_1.TransmitPlayerUseCustomizedTplId = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2)
@@ -4903,6 +4922,37 @@ function L2_1(A0_2)
   L1_2 = A0_2.uActor
   L2_2 = L1_2
   L1_2 = L1_2.BattleUITerminate
+  L1_2(L2_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "NatlanBallVSStart"
+function L2_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2, A11_2)
+  local L12_2, L13_2, L14_2, L15_2
+  L12_2 = {}
+  L12_2.total = A1_2
+  L12_2.teammateID = A2_2
+  L12_2.teammatePictureID = A3_2
+  L12_2.teammateGroupID = A4_2
+  L12_2.teammateInstID = A5_2
+  L12_2.teammateGVKey = A6_2
+  L12_2.opponentID = A7_2
+  L12_2.opponentPictureID = A8_2
+  L12_2.opponentGroupID = A9_2
+  L12_2.opponentInstID = A10_2
+  L12_2.opponentGVKey = A11_2
+  L13_2 = A0_2.uActor
+  L14_2 = L13_2
+  L13_2 = L13_2.NatlanBallVSStart
+  L15_2 = L12_2
+  L13_2(L14_2, L15_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "NatlanBallVSEnd"
+function L2_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
+  L1_2 = L1_2.NatlanBallVSEnd
   L1_2(L2_2)
 end
 L0_1[L1_1] = L2_1
