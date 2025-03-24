@@ -828,21 +828,27 @@ function L9_1(A0_2, A1_2)
   L4_2 = true
   L5_2 = "DisableTestSumeruMainQuest"
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = actorMgr
+  L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q502807Trigger_T1"
-  L5_2 = "Actor/Gadget/Q502807Trigger_T1"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = L8_1._Q502807Trigger_T1Point_
-  L8_2 = L8_2.pos
-  L9_2 = L8_1._Q502807Trigger_T1Point_
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20235
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
+  L2_2 = L2_2.LevelLoadFinishSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L1_3 = sceneData
+    L1_3 = L1_3.currSceneID
+    if L1_3 == 20235 then
+      L1_3 = L3_1
+      L2_3 = L1_3
+      L1_3 = L1_3.TransmitPlayerWithQuestIdByData
+      L3_3 = 502807
+      L4_3 = 1
+      L5_3 = L6_1.TransmitDatafire02
+      L6_3 = nil
+      L7_3 = nil
+      L8_3 = nil
+      L1_3(L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3)
+    end
+  end
+  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubStart502807 = L9_1
 function L9_1(A0_2, A1_2)
@@ -876,11 +882,6 @@ function L9_1(A0_2, A1_2)
   L4_2 = false
   L5_2 = "DisableTestSumeruMainQuest"
   L2_2(L3_2, L4_2, L5_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q502807Trigger_T1"
-  L2_2(L3_2, L4_2)
 end
 L1_1.OnSubFinish502807 = L9_1
 function L9_1(A0_2, A1_2)
@@ -897,11 +898,6 @@ function L9_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ActorDestroy
   L4_2 = "Q502807Trigger"
-  L2_2(L3_2, L4_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.ActorDestroy
-  L4_2 = "Q502807Trigger_T1"
   L2_2(L3_2, L4_2)
   L3_2 = A0_2
   L2_2 = A0_2.ResumeAvatarFreeStyle

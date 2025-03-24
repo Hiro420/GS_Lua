@@ -26,6 +26,7 @@ L3_1 = nil
 L4_1 = nil
 L1_1.AliasCache = nil
 L1_1.NpcTriggerDataDic = nil
+L1_1.WeatherTriggerDataDic = nil
 function L5_1(A0_2)
   local L1_2
   L1_2 = A0_2.uActor
@@ -158,6 +159,158 @@ function L5_1(A0_2)
   L3_2(L4_2)
 end
 L1_1.OnDataLoad = L5_1
+function L5_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = A0_2.shareData
+  if L2_2 == nil then
+    return
+  end
+  L2_2 = A0_2.shareData
+  L3_2 = L2_2
+  L2_2 = L2_2.GetRewindData
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 ~= nil then
+    L4_2 = A0_2
+    L3_2 = A0_2.RecordNpcPoints
+    L5_2 = A1_2
+    L6_2 = L2_2.npcs
+    L7_2 = true
+    L3_2(L4_2, L5_2, L6_2, L7_2)
+  end
+  L3_2 = A0_2.shareData
+  L4_2 = L3_2
+  L3_2 = L3_2.GetQuestData
+  L5_2 = A1_2
+  L3_2 = L3_2(L4_2, L5_2)
+  if L3_2 ~= nil then
+    L5_2 = A0_2
+    L4_2 = A0_2.RecordNpcPoints
+    L6_2 = A1_2
+    L7_2 = L3_2.npcs
+    L8_2 = false
+    L4_2(L5_2, L6_2, L7_2, L8_2)
+  end
+end
+L1_1.OnQueryNpcPoints = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
+  if A2_2 == nil then
+    return
+  end
+  L4_2 = 1
+  L5_2 = #A2_2
+  L6_2 = 1
+  for L7_2 = L4_2, L5_2, L6_2 do
+    L8_2 = A2_2[L7_2]
+    if L8_2 ~= nil then
+      L10_2 = A0_2
+      L9_2 = A0_2.CheckDataCondition
+      L11_2 = L8_2
+      L9_2 = L9_2(L10_2, L11_2)
+      if L9_2 ~= false then
+        L9_2 = L8_2.scene_id
+        if L9_2 == nil then
+          L10_2 = sceneData
+          L9_2 = L10_2.DefaultSceneID
+        elseif L9_2 == 0 then
+          L10_2 = sceneData
+          L10_2 = L10_2.currSceneID
+          if L10_2 ~= -1 then
+            L10_2 = sceneData
+            L9_2 = L10_2.currSceneID
+          end
+        end
+        L10_2 = nil
+        L11_2 = nil
+        L13_2 = A0_2
+        L12_2 = A0_2.IsRandom
+        L12_2 = L12_2(L13_2)
+        if L12_2 then
+          L12_2 = tonumber
+          L14_2 = A0_2
+          L13_2 = A0_2.GetRandomFactorValue
+          L15_2 = L8_2.id
+          L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2 = L13_2(L14_2, L15_2)
+          L12_2 = L12_2(L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2)
+          L10_2 = L12_2
+          L13_2 = A0_2
+          L12_2 = A0_2.GetRandomFactorValue
+          L14_2 = L8_2.pos
+          L12_2 = L12_2(L13_2, L14_2)
+          L11_2 = L12_2
+        else
+          L10_2 = L8_2.id
+          L11_2 = L8_2.pos
+        end
+        if L11_2 == nil then
+          L12_2 = actorUtils
+          L12_2 = L12_2.LogError
+          L13_2 = "[Lua]pos is nil:"
+          L14_2 = tostring
+          L15_2 = questMainID
+          L14_2 = L14_2(L15_2)
+          L15_2 = "  npc pos:"
+          L16_2 = tostring
+          L17_2 = posStr
+          L16_2 = L16_2(L17_2)
+          L17_2 = " currScene: "
+          L18_2 = tostring
+          L19_2 = sceneData
+          L19_2 = L19_2.currSceneID
+          L18_2 = L18_2(L19_2)
+          L13_2 = L13_2 .. L14_2 .. L15_2 .. L16_2 .. L17_2 .. L18_2
+          L12_2(L13_2)
+        else
+          L12_2 = sceneData
+          L13_2 = L12_2
+          L12_2 = L12_2.GetDummyPoint
+          L14_2 = L9_2
+          L15_2 = L11_2
+          L12_2 = L12_2(L13_2, L14_2, L15_2)
+          L13_2 = CS
+          L13_2 = L13_2.MoleMole
+          L13_2 = L13_2.QuestNpcPoint
+          L13_2 = L13_2.Get
+          L13_2 = L13_2()
+          L15_2 = L13_2
+          L14_2 = L13_2.SetId
+          L16_2 = L10_2
+          L14_2(L15_2, L16_2)
+          L15_2 = L13_2
+          L14_2 = L13_2.SetPos
+          L16_2 = L12_2.pos
+          L16_2 = L16_2.x
+          L17_2 = L12_2.pos
+          L17_2 = L17_2.y
+          L18_2 = L12_2.pos
+          L18_2 = L18_2.z
+          L14_2(L15_2, L16_2, L17_2, L18_2)
+          L15_2 = L13_2
+          L14_2 = L13_2.SetSceneId
+          L16_2 = L9_2
+          L14_2(L15_2, L16_2)
+          if A3_2 then
+            L14_2 = A0_2.uActor
+            L15_2 = L14_2
+            L14_2 = L14_2.RecordRewindNpcPoint
+            L16_2 = A1_2
+            L17_2 = L13_2
+            L14_2(L15_2, L16_2, L17_2)
+          else
+            L14_2 = A0_2.uActor
+            L15_2 = L14_2
+            L14_2 = L14_2.RecordQuestNpcPoint
+            L16_2 = A1_2
+            L17_2 = L13_2
+            L14_2(L15_2, L16_2, L17_2)
+          end
+        end
+      end
+    end
+  end
+end
+L1_1.RecordNpcPoints = L5_1
 function L5_1(A0_2)
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L1_2 = A0_2.uActor
@@ -434,6 +587,9 @@ function L5_1(A0_2, A1_2)
   L2_2 = A0_2.ClearAllNpcTrigger
   L2_2(L3_2)
   L3_2 = A0_2
+  L2_2 = A0_2.ClearAllWeatherTrigger
+  L2_2(L3_2)
+  L3_2 = A0_2
   L2_2 = A0_2.ReleaseCustomFreeStyle
   L2_2(L3_2)
 end
@@ -466,6 +622,9 @@ function L5_1(A0_2, A1_2)
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.ClearAllNpcTrigger
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearAllWeatherTrigger
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.ReleaseCustomFreeStyle
@@ -502,6 +661,9 @@ function L5_1(A0_2, A1_2)
   L2_2 = A0_2.ClearAllNpcTrigger
   L2_2(L3_2)
   L3_2 = A0_2
+  L2_2 = A0_2.ClearAllWeatherTrigger
+  L2_2(L3_2)
+  L3_2 = A0_2
   L2_2 = A0_2.ReleaseCustomFreeStyle
   L2_2(L3_2)
 end
@@ -523,6 +685,161 @@ function L5_1(A0_2, A1_2)
   end
 end
 L1_1.OnMainCanceled = L5_1
+function L5_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2
+  L3_2 = A0_2
+  L2_2 = A0_2.OnMainPaused
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.DestroyAllNpc
+  L2_2(L3_2)
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroyAllQuestNpc
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearAllNpcTrigger
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.DestroyAllQuestLocalGadget
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.CancelAllStory
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearAllWeatherTrigger
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.Stop
+  L2_2(L3_2)
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyAllHideNpc
+  L2_2(L3_2)
+end
+L1_1.OnMainPausedHandler = L5_1
+function L5_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  if A1_2 ~= nil then
+    L2_2 = print
+    L3_2 = "main paused "
+    L4_2 = tostring
+    L5_2 = A1_2.QuestMainId
+    L4_2 = L4_2(L5_2)
+    L3_2 = L3_2 .. L4_2
+    L2_2(L3_2)
+  else
+    L2_2 = print
+    L3_2 = "main paused nil never start"
+    L2_2(L3_2)
+  end
+end
+L1_1.OnMainPaused = L5_1
+function L5_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
+  L1_2 = A0_2.shareData
+  if L1_2 == nil then
+    return
+  end
+  L1_2 = {}
+  L2_2 = A0_2.shareData
+  L2_2 = L2_2.RewindData
+  L3_2 = A0_2.shareData
+  L3_2 = L3_2.QuestData
+  if L2_2 ~= nil then
+    L4_2 = pairs
+    L5_2 = L2_2
+    L4_2, L5_2, L6_2 = L4_2(L5_2)
+    for L7_2, L8_2 in L4_2, L5_2, L6_2 do
+      if L8_2 ~= nil then
+        L9_2 = L8_2.npcs
+        if L9_2 ~= nil then
+          L9_2 = L8_2.npcs
+          L10_2 = 1
+          L11_2 = #L9_2
+          L12_2 = 1
+          for L13_2 = L10_2, L11_2, L12_2 do
+            L14_2 = L9_2[L13_2]
+            if L14_2 ~= nil then
+              L15_2 = nil
+              L17_2 = A0_2
+              L16_2 = A0_2.IsRandom
+              L16_2 = L16_2(L17_2)
+              if L16_2 then
+                L16_2 = tonumber
+                L18_2 = A0_2
+                L17_2 = A0_2.GetRandomFactorValue
+                L19_2 = L14_2.id
+                L17_2, L18_2, L19_2 = L17_2(L18_2, L19_2)
+                L16_2 = L16_2(L17_2, L18_2, L19_2)
+                L15_2 = L16_2
+              else
+                L15_2 = L14_2.id
+              end
+              L16_2 = L1_2[L15_2]
+              if L16_2 == nil then
+                L1_2[L15_2] = true
+                L17_2 = A0_2
+                L16_2 = A0_2.DestroyQuestNpcActorByAlias
+                L18_2 = L14_2.alias
+                L19_2 = false
+                L16_2(L17_2, L18_2, L19_2)
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  if L3_2 ~= nil then
+    L4_2 = pairs
+    L5_2 = L3_2
+    L4_2, L5_2, L6_2 = L4_2(L5_2)
+    for L7_2, L8_2 in L4_2, L5_2, L6_2 do
+      if L8_2 ~= nil then
+        L9_2 = L8_2.npcs
+        if L9_2 ~= nil then
+          L9_2 = L8_2.npcs
+          L10_2 = 1
+          L11_2 = #L9_2
+          L12_2 = 1
+          for L13_2 = L10_2, L11_2, L12_2 do
+            L14_2 = L9_2[L13_2]
+            if L14_2 ~= nil then
+              L15_2 = nil
+              L17_2 = A0_2
+              L16_2 = A0_2.IsRandom
+              L16_2 = L16_2(L17_2)
+              if L16_2 then
+                L16_2 = tonumber
+                L18_2 = A0_2
+                L17_2 = A0_2.GetRandomFactorValue
+                L19_2 = L14_2.id
+                L17_2, L18_2, L19_2 = L17_2(L18_2, L19_2)
+                L16_2 = L16_2(L17_2, L18_2, L19_2)
+                L15_2 = L16_2
+              else
+                L15_2 = L14_2.id
+              end
+              L16_2 = L1_2[L15_2]
+              if L16_2 == nil then
+                L1_2[L15_2] = true
+                L17_2 = A0_2
+                L16_2 = A0_2.DestroyQuestNpcActorByAlias
+                L18_2 = L14_2.alias
+                L19_2 = false
+                L16_2(L17_2, L18_2, L19_2)
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  L1_2 = nil
+end
+L1_1.DestroyAllNpc = L5_1
 function L5_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = tostring
@@ -1320,6 +1637,12 @@ function L5_1(A0_2)
   L1_2(L2_2, L3_2, L4_2)
   L1_2 = A0_2.uActor
   L2_2 = L1_2
+  L1_2 = L1_2.PauseMainQuest
+  L3_2 = "+"
+  L4_2 = A0_2.OnMainPausedHandler
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
   L1_2 = L1_2.FailedSubQuest
   L3_2 = "+"
   L4_2 = A0_2.OnSubFailed
@@ -1346,6 +1669,12 @@ function L5_1(A0_2)
   L1_2 = L1_2.PostEnterScene
   L3_2 = "+"
   L4_2 = A0_2.OnPostEnterScene
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
+  L1_2 = L1_2.QueryNpcPoints
+  L3_2 = "+"
+  L4_2 = A0_2.OnQueryNpcPoints
   L1_2(L2_2, L3_2, L4_2)
   L2_2 = A0_2
   L1_2 = A0_2.RegisterTaskCB
@@ -1412,6 +1741,12 @@ function L5_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = A0_2.uActor
   L3_2 = L2_2
+  L2_2 = L2_2.PauseMainQuest
+  L4_2 = "-"
+  L5_2 = A0_2.OnMainPausedHandler
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
   L2_2 = L2_2.FailedSubQuest
   L4_2 = "-"
   L5_2 = A0_2.OnSubFailed
@@ -1439,10 +1774,17 @@ function L5_1(A0_2, A1_2)
   L4_2 = "-"
   L5_2 = A0_2.OnPostEnterScene
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = A0_2.uActor
+  L3_2 = L2_2
+  L2_2 = L2_2.QueryNpcPoints
+  L4_2 = "-"
+  L5_2 = A0_2.OnQueryNpcPoints
+  L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.ClearAllNpcTrigger
   L2_2(L3_2)
   A0_2.NpcTriggerDataDic = nil
+  A0_2.WeatherTriggerDataDic = nil
   L3_2 = A0_2
   L2_2 = A0_2.OnDestroy
   L2_2(L3_2)
@@ -1465,15 +1807,24 @@ function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2)
   local L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
   L9_2 = A0_2.speechBubbleTask
   if L9_2 == nil then
-    L10_2 = A0_2
-    L9_2 = A0_2.CreateTask
-    L11_2 = TaskID
-    L11_2 = L11_2.NARRATOR_TASK_ID
-    L12_2 = LuaTaskType
-    L12_2 = L12_2.SPEECH_BUBBLE
-    L13_2 = "Speech"
-    L9_2 = L9_2(L10_2, L11_2, L12_2, L13_2)
-    A0_2.speechBubbleTask = L9_2
+    L9_2 = TaskID
+    L9_2 = L9_2.QUEST_NPC_SPEECH_BUBBLE_TASK_ID
+    L10_2 = actorUtils
+    L10_2 = L10_2.IsCodeSwitchEnable
+    L11_2 = 5405
+    L10_2 = L10_2(L11_2)
+    if L10_2 then
+      L10_2 = TaskID
+      L9_2 = L10_2.NARRATOR_TASK_ID
+    end
+    L11_2 = A0_2
+    L10_2 = A0_2.CreateTask
+    L12_2 = L9_2
+    L13_2 = LuaTaskType
+    L13_2 = L13_2.SPEECH_BUBBLE
+    L14_2 = "Speech"
+    L10_2 = L10_2(L11_2, L12_2, L13_2, L14_2)
+    A0_2.speechBubbleTask = L10_2
   end
   L9_2 = A0_2.speechBubbleTask
   if L9_2 ~= nil then
@@ -2516,8 +2867,180 @@ function L5_1(A0_2)
     end
     A0_2.NpcTriggerDataDic = nil
   end
+  L2_2 = A0_2
+  L1_2 = A0_2.CancelWeather
+  L1_2(L2_2)
 end
 L1_1.ClearAllNpcTrigger = L5_1
+function L5_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
+  if A1_2 == nil then
+    L7_2 = A0_2
+    L6_2 = A0_2.LogError
+    L8_2 = "try to creat SetWeatherTrigger , triggerAlias is nil. "
+    L9_2 = tostring
+    L10_2 = mainQuestId
+    L9_2 = L9_2(L10_2)
+    L8_2 = L8_2 .. L9_2
+    L6_2(L7_2, L8_2)
+    return
+  end
+  if A5_2 == nil then
+    L7_2 = A0_2
+    L6_2 = A0_2.LogError
+    L8_2 = "try to creat SetWeatherTrigger , weatherName is nil. "
+    L9_2 = tostring
+    L10_2 = mainQuestId
+    L9_2 = L9_2(L10_2)
+    L8_2 = L8_2 .. L9_2
+    L6_2(L7_2, L8_2)
+    return
+  end
+  L6_2 = A1_2
+  L7_2 = "_"
+  L8_2 = tostring
+  L9_2 = A0_2.mainQuestID
+  L8_2 = L8_2(L9_2)
+  L6_2 = L6_2 .. L7_2 .. L8_2
+  L7_2 = "Actor/Gadget/SetWeatherTrigger"
+  L8_2 = 70900002
+  L9_2 = A0_2.mainQuestID
+  L10_2 = {}
+  L10_2.dist = A4_2
+  L11_2 = {}
+  L11_2.x = 0
+  L11_2.y = 0.8
+  L11_2.z = 0
+  L10_2.offset = L11_2
+  L10_2.questID = 0
+  L11_2 = A0_2.clientData
+  L11_2 = L11_2.ActorAlias
+  L10_2.actorAlias = L11_2
+  L10_2.weatherName = A5_2
+  L10_2.mainQuestID = L9_2
+  L10_2.useQuestMode = true
+  L11_2 = actorMgr
+  L11_2 = L11_2.WeatherGadgetTriggerDic
+  L11_2[L6_2] = L10_2
+  L11_2 = A0_2.WeatherTriggerDataDic
+  if nil == L11_2 then
+    L11_2 = {}
+    A0_2.WeatherTriggerDataDic = L11_2
+  end
+  L11_2 = A0_2.WeatherTriggerDataDic
+  L11_2[L6_2] = L9_2
+  L11_2 = actorMgr
+  L12_2 = L11_2
+  L11_2 = L11_2.CreateActorWithPos
+  L13_2 = L6_2
+  L14_2 = L7_2
+  L15_2 = L8_2
+  L16_2 = 0
+  L17_2 = A3_2
+  L18_2 = {}
+  L18_2.x = 0
+  L18_2.y = 0
+  L18_2.z = 0
+  L19_2 = true
+  L20_2 = false
+  L21_2 = A2_2
+  L11_2 = L11_2(L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2)
+  if L11_2 == nil then
+    L12_2 = print
+    L13_2 = "try to create weather trigger, failed"
+    L14_2 = A5_2
+    L15_2 = " on "
+    L16_2 = L9_2
+    L13_2 = L13_2 .. L14_2 .. L15_2 .. L16_2
+    L12_2(L13_2)
+    L12_2 = actorMgr
+    L12_2 = L12_2.WeatherGadgetTriggerDic
+    L12_2[L6_2] = nil
+    L12_2 = A0_2.WeatherTriggerDataDic
+    L12_2[L6_2] = nil
+    return
+  end
+end
+L1_1.CreateSetWeatherTrigger = L5_1
+function L5_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = A0_2.WeatherTriggerDataDic
+  if L2_2 == nil then
+    return
+  end
+  L2_2 = A1_2
+  L3_2 = "_"
+  L4_2 = tostring
+  L5_2 = A0_2.mainQuestID
+  L4_2 = L4_2(L5_2)
+  L2_2 = L2_2 .. L3_2 .. L4_2
+  L3_2 = actorMgr
+  L3_2 = L3_2.WeatherGadgetTriggerDic
+  L3_2 = L3_2[L2_2]
+  if L3_2 == nil then
+    return
+  end
+  L4_2 = actorMgr
+  L5_2 = L4_2
+  L4_2 = L4_2.GetActorInternal
+  L6_2 = L2_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if L4_2 ~= nil then
+    L6_2 = L4_2
+    L5_2 = L4_2.DestroySelf
+    L5_2(L6_2)
+  else
+    L5_2 = actorUtils
+    L5_2 = L5_2.DestroyLocalGadget
+    L6_2 = L2_2
+    L5_2(L6_2)
+  end
+  L5_2 = actorMgr
+  L5_2 = L5_2.WeatherGadgetTriggerDic
+  L5_2[L2_2] = nil
+  L5_2 = A0_2.WeatherTriggerDataDic
+  L5_2[L2_2] = nil
+  L6_2 = A0_2
+  L5_2 = A0_2.CancelWeather
+  L5_2(L6_2)
+end
+L1_1.ClearWeatherTrigger = L5_1
+function L5_1(A0_2)
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = A0_2.WeatherTriggerDataDic
+  if L1_2 ~= nil then
+    L1_2 = pairs
+    L2_2 = A0_2.WeatherTriggerDataDic
+    L1_2, L2_2, L3_2 = L1_2(L2_2)
+    for L4_2, L5_2 in L1_2, L2_2, L3_2 do
+      if L4_2 ~= nil then
+        L6_2 = actorMgr
+        L7_2 = L6_2
+        L6_2 = L6_2.GetActorInternal
+        L8_2 = L4_2
+        L6_2 = L6_2(L7_2, L8_2)
+        if L6_2 ~= nil then
+          L8_2 = L6_2
+          L7_2 = L6_2.DestroySelf
+          L7_2(L8_2)
+        else
+          L7_2 = actorUtils
+          L7_2 = L7_2.DestroyLocalGadget
+          L8_2 = L4_2
+          L7_2(L8_2)
+        end
+        L7_2 = actorMgr
+        L7_2 = L7_2.WeatherGadgetTriggerDic
+        L7_2[L4_2] = nil
+      end
+    end
+    L2_2 = A0_2
+    L1_2 = A0_2.CancelWeather
+    L1_2(L2_2)
+    A0_2.WeatherTriggerDataDic = nil
+  end
+end
+L1_1.ClearAllWeatherTrigger = L5_1
 function L5_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2
   L3_2 = A0_2.uActor
@@ -6550,6 +7073,14 @@ function L6_1(A0_2, A1_2)
   return L3_2(L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.GetLocalGadgetRelSubKey = L6_1
+function L6_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
+  L1_2 = L1_2.RemoveAllLocalGadget
+  L1_2(L2_2)
+end
+L1_1.DestroyAllQuestLocalGadget = L6_1
 function L6_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = A0_2.uActor
@@ -6662,8 +7193,9 @@ function L6_1(A0_2, A1_2)
   L5_2 = A0_2.mainQuestID
   L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
   L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.DeployStory
+  L3_2 = A0_2.uActor
+  L4_2 = L3_2
+  L3_2 = L3_2.DeployStory
   L5_2 = A1_2
   L6_2 = L2_2
   L3_2(L4_2, L5_2, L6_2)
@@ -6678,13 +7210,22 @@ function L6_1(A0_2, A1_2)
   L5_2 = A0_2.mainQuestID
   L3_2, L4_2, L5_2, L6_2 = L3_2(L4_2, L5_2)
   L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-  L4_2 = A0_2
-  L3_2 = A0_2.CancelStory
+  L3_2 = A0_2.uActor
+  L4_2 = L3_2
+  L3_2 = L3_2.CancelStory
   L5_2 = A1_2
   L6_2 = L2_2
   L3_2(L4_2, L5_2, L6_2)
 end
 L1_1.CancelStoryByQuest = L6_1
+function L6_1(A0_2)
+  local L1_2, L2_2
+  L1_2 = A0_2.uActor
+  L2_2 = L1_2
+  L1_2 = L1_2.CancelAllStory
+  L1_2(L2_2)
+end
+L1_1.CancelAllStory = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, ...)
   local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   if nil == A1_2 then

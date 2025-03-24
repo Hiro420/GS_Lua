@@ -140,6 +140,16 @@ function L10_1(A0_2, A1_2)
   end
 end
 L1_1.ActorDestroy = L10_1
+function L10_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.DestroyQuestNpcActor
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L3_2(L4_2, L5_2, L6_2)
+end
+L1_1.NPCDestroyImmediately = L10_1
 function L10_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L5_2 = L3_1
@@ -254,7 +264,7 @@ function L10_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.SafeDestroyQuestNpc
+  L2_2 = L2_2.NPCDestroyImmediately
   L4_2 = L7_1.Npc1075Data
   L4_2 = L4_2.alias
   L5_2 = 1084
@@ -582,7 +592,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc13311Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -590,7 +602,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc13312Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.CreateQuestNpc
@@ -598,7 +612,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc1077Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.DailyNpcSafeHideSelf
@@ -952,7 +968,7 @@ function L10_1(A0_2, A1_2)
 end
 L1_1.OnSubFinish400007 = L10_1
 function L10_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubStart400009"
   L2_2(L3_2)
@@ -971,7 +987,9 @@ function L10_1(A0_2, A1_2)
   L5_2 = L7_1.Npc13339Data
   L5_2 = L5_2.id
   L6_2 = 0
-  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart400009 = L10_1
 function L10_1(A0_2, A1_2)

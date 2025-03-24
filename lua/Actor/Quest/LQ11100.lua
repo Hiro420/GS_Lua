@@ -873,7 +873,7 @@ function L14_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1110008 = L14_1
 function L14_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "********1110003 Finish"
   L2_2(L3_2)
@@ -884,6 +884,26 @@ function L14_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.ClearSpeechBubbleTask
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L8_1.Alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L9_1.Alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L10_1.Alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1110008 = L14_1
 function L14_1(A0_2)

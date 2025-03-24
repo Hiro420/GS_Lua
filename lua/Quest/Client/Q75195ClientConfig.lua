@@ -1,0 +1,29 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = {}
+L0_1.MainID = 75195
+L0_1.ActorAlias = "75195"
+L1_1 = {}
+L1_1.q7519501 = 7519501
+L1_1.q7519502 = 7519502
+L1_1.q7519504 = 7519504
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.id = 6469
+L2_1.alias = "Npc6469"
+L2_1.script = "Actor/Npc/TempNPC"
+L3_1 = {}
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.rot = L4_1
+L2_1.point = L3_1
+L1_1.Npc6469 = L2_1
+L0_1.Npcs = L1_1
+return L0_1

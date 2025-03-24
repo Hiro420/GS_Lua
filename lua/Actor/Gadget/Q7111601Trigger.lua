@@ -50,7 +50,7 @@ function L8_1(A0_2)
 end
 L1_1.OnPostComponentPrepare = L8_1
 function L8_1(A0_2)
-  local L1_2, L2_2, L3_2, L4_2, L5_2
+  local L1_2, L2_2, L3_2, L4_2
   L1_2 = print
   L2_2 = "[MainId: 71116][Trigger: Q7111601Trigger] TriggerIn"
   L1_2(L2_2)
@@ -60,18 +60,13 @@ function L8_1(A0_2)
   L3_2 = "71116"
   L1_2 = L1_2(L2_2, L3_2)
   L3_2 = L1_2
-  L2_2 = L1_2.GetQuestNpcActor
-  L4_2 = L5_1.Npc21433Data
-  L4_2 = L4_2.alias
-  L2_2 = L2_2(L3_2, L4_2)
-  L4_2 = L2_2
-  L3_2 = L2_2.NarratorOnlyTaskByData
-  L5_2 = L7_1.C7111690
-  L3_2(L4_2, L5_2)
-  L3_2 = L3_1
-  L4_2 = L3_2
-  L3_2 = L3_2.DestroySelf
-  L3_2(L4_2)
+  L2_2 = L1_2.NarratorOnlyTaskByData
+  L4_2 = L7_1.C7111690
+  L2_2(L3_2, L4_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DestroySelf
+  L2_2(L3_2)
 end
 L1_1.TriggerIn = L8_1
 function L8_1(A0_2)

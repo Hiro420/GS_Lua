@@ -420,13 +420,6 @@ function L8_1(A0_2, A1_2)
   L10_2 = true
   L11_2 = false
   L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
-  L5_2 = A0_2
-  L4_2 = A0_2.CreateQuestNpc
-  L6_2 = A1_2
-  L7_2 = L6_1.Npc3018Data
-  L7_2 = L7_2.id
-  L8_2 = 4
-  L4_2(L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1914302 = L8_1
 function L8_1(A0_2, A1_2)
@@ -449,6 +442,12 @@ function L8_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
   L4_2 = L6_1.Npc3018Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L6_1.Npc3038Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)

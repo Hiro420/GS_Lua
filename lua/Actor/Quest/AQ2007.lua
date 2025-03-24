@@ -385,6 +385,19 @@ function L8_1(A0_2, A1_2)
   L3_2 = "OnSubStart200702"
   L2_2(L3_2)
   L3_2 = A0_2
+  L2_2 = A0_2.ActionSafeCall
+  function L4_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3
+    L2_3 = A0_3
+    L1_3 = A0_3.CreateQuestNpcById
+    L3_3 = 200702
+    L4_3 = L6_1.Npc1013Data
+    L4_3 = L4_3.id
+    L5_3 = 7
+    L1_3(L2_3, L3_3, L4_3, L5_3)
+  end
+  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.Npc12008Data
@@ -460,6 +473,12 @@ function L8_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
   L4_2 = L6_1.Npc12011Data
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.SafeDestroyQuestNpc
+  L4_2 = L6_1.Npc1013Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)

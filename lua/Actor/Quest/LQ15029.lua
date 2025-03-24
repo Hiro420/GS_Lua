@@ -415,6 +415,14 @@ function L8_1(A0_2, A1_2)
   L4_2(L5_2, L6_2, L7_2, L8_2)
   L4_2 = L3_1
   L5_2 = L4_2
+  L4_2 = L4_2.DailyNpcSafeHideSelf
+  L6_2 = L7_1.Npc6249
+  L6_2 = L6_2.alias
+  L7_2 = true
+  L8_2 = 1
+  L4_2(L5_2, L6_2, L7_2, L8_2)
+  L4_2 = L3_1
+  L5_2 = L4_2
   L4_2 = L4_2.CreateLocalGadget
   L6_2 = L6_1.Gadget73029032_Chair
   L7_2 = "1"
@@ -649,10 +657,18 @@ function L8_1(A0_2, A1_2)
   L8_2 = L7_1.Npc1096
   L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc6249
+  L4_2 = L4_2.alias
+  L5_2 = true
+  L6_2 = 1
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubStart1502902 = L8_1
 function L8_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1502902"
   L2_2(L3_2)
@@ -663,6 +679,14 @@ function L8_1(A0_2, A1_2)
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc6249
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish1502902 = L8_1
 function L8_1(A0_2, A1_2)

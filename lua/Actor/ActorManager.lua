@@ -6,6 +6,8 @@ L1_1 = {}
 L0_1.Alias2EntityIDDic = L1_1
 L1_1 = {}
 L0_1.GadgetTriggerDic = L1_1
+L1_1 = {}
+L0_1.WeatherGadgetTriggerDic = L1_1
 L1_1 = require
 L2_1 = "Actor/DummyActorProxy"
 L1_1 = L1_1(L2_1)
@@ -64,6 +66,14 @@ function L1_1(A0_2, A1_2)
   L2_2(L3_2)
 end
 L0_1.ResetTestRequireLua = L1_1
+function L1_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = util
+  L2_2 = L2_2.unrequire
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1.UnRequireLua = L1_1
 function L1_1()
   local L0_2, L1_2, L2_2, L3_2
   L0_2 = print
@@ -197,7 +207,7 @@ function L1_1(A0_2, A1_2)
 end
 L0_1.UnregisteSubGlobal = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2)
-  local L4_2, L5_2, L6_2, L7_2, L8_2
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L4_2 = L0_1.GetActorInternal
   L5_2 = A0_2
   L6_2 = A1_2
@@ -213,6 +223,13 @@ function L1_1(A0_2, A1_2, A2_2, A3_2)
     L5_2 = require
     L6_2 = A2_2
     L5_2 = L5_2(L6_2)
+    L6_2 = print
+    L7_2 = "CreateActor : "
+    L8_2 = tostring
+    L9_2 = A2_2
+    L8_2 = L8_2(L9_2)
+    L7_2 = L7_2 .. L8_2
+    L6_2(L7_2)
     L7_2 = L5_2
     L6_2 = L5_2.new
     L6_2 = L6_2(L7_2)
@@ -827,7 +844,7 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
 end
 L0_1.CreateQuestActor = L1_1
 function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
-  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L5_2 = NG_HSOD_DEBUG
   if L5_2 then
     L5_2 = util
@@ -843,8 +860,8 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
     L6_2 = tostring
     L7_2 = type
     L8_2 = L5_2
-    L7_2, L8_2, L9_2, L10_2, L11_2 = L7_2(L8_2)
-    L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
+    L7_2, L8_2, L9_2, L10_2, L11_2, L12_2 = L7_2(L8_2)
+    L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
     if L6_2 ~= "table" then
       L6_2 = actorUtils
       L6_2 = L6_2.ActorDebugError
@@ -871,8 +888,8 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
       L6_2 = L6_2.ActorDebugError
       L7_2 = tostring
       L8_2 = A2_2
-      L7_2, L8_2, L9_2, L10_2, L11_2 = L7_2(L8_2)
-      L6_2(L7_2, L8_2, L9_2, L10_2, L11_2)
+      L7_2, L8_2, L9_2, L10_2, L11_2, L12_2 = L7_2(L8_2)
+      L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
       L6_2 = actorUtils
       L6_2 = L6_2.LogError
       L7_2 = "[Lua]CreateQuestActor mainID:"
@@ -893,6 +910,15 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L6_2.mainQuestID = A3_2
   L6_2.mainQuestConfigID = A4_2
   L6_2.metaPath = A2_2
+  L7_2 = print
+  L8_2 = "CreateQuestActorInternal "
+  L9_2 = A2_2
+  L10_2 = "  tag="
+  L11_2 = tostring
+  L12_2 = L6_2.testTag
+  L11_2 = L11_2(L12_2)
+  L8_2 = L8_2 .. L9_2 .. L10_2 .. L11_2
+  L7_2(L8_2)
   L8_2 = L6_2
   L7_2 = L6_2.OnPreInit
   L7_2(L8_2)
@@ -1534,7 +1560,7 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2,
     return
   end
   L13_2 = NG_HSOD_DEBUG
-  if L13_2 then
+  if L13_2 and not A10_2 then
     L13_2 = actorUtils
     L13_2 = L13_2.CheckActorCreateMainQuestId
     L14_2 = A1_2

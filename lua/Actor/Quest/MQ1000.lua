@@ -2715,6 +2715,16 @@ function L34_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "OnFinished 100014"
   L2_2(L3_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.UnSpawn
+  L4_2 = "Xianglu1"
+  L2_2(L3_2, L4_2)
+  L2_2 = globalActor
+  L3_2 = L2_2
+  L2_2 = L2_2.UnSpawn
+  L4_2 = "Xianglu2"
+  L2_2(L3_2, L4_2)
   L3_2 = A0_2
   L2_2 = A0_2.ActionSafeCall
   function L4_2(A0_3)

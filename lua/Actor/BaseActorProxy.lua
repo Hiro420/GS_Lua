@@ -2128,6 +2128,8 @@ function L1_1(A0_2, A1_2)
   L3_2.targetArcInitialSpeed = L4_2
   L4_2 = A1_2.targetArcProgress
   L3_2.targetArcProgress = L4_2
+  L4_2 = A1_2.isKeepVehicle
+  L3_2.isKeepVehicle = L4_2
   L4_2 = A0_2.uActor
   L5_2 = L4_2
   L4_2 = L4_2.TryTransmitPlayer

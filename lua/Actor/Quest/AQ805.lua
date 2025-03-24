@@ -50,6 +50,8 @@ function L8_1(A0_2)
   L1_2["80507"] = L2_2
   L2_2 = A0_2.OnSubStart80508
   L1_2["80508"] = L2_2
+  L2_2 = A0_2.OnSubStart80509
+  L1_2["80509"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
 L1_1.OnSubStartHandlerBuild = L8_1
@@ -72,6 +74,8 @@ function L8_1(A0_2)
   L1_2["80507"] = L2_2
   L2_2 = A0_2.OnSubFinish80508
   L1_2["80508"] = L2_2
+  L2_2 = A0_2.OnSubFinish80509
+  L1_2["80509"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
 L1_1.OnSubFinishHandlerBuild = L8_1
@@ -300,6 +304,26 @@ function L8_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6424
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6426
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80501 = L8_1
 function L8_1(A0_2, A1_2)
@@ -444,6 +468,26 @@ function L8_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6424
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6426
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80502 = L8_1
 function L8_1(A0_2, A1_2)
@@ -536,6 +580,26 @@ function L8_1(A0_2, A1_2)
   L7_2 = false
   L8_2 = 0
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6424
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6426
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart80503 = L8_1
 function L8_1(A0_2, A1_2)
@@ -601,6 +665,26 @@ function L8_1(A0_2, A1_2)
   L2_2 = L2_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.Npc6314
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6424
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc6426
   L5_2 = L5_2.id
   L6_2 = 0
   L7_2 = false
@@ -759,4 +843,56 @@ function L8_1(A0_2, A1_2)
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish80508 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = print
+  L3_2 = "OnSubStart80509"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateQuestNpc
+  L4_2 = A1_2
+  L5_2 = L6_1.Npc1080
+  L5_2 = L5_2.id
+  L6_2 = 0
+  L7_2 = false
+  L8_2 = 0
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.CreateSetWeatherTrigger
+  L4_2 = "Q80001_Rain"
+  L5_2 = 3
+  L6_2 = {}
+  L6_2.x = -1506
+  L6_2.y = 133
+  L6_2.z = 8658
+  L7_2 = 30
+  L8_2 = "BigWorld/Weather_Rain_Light"
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+end
+L1_1.OnSubStart80509 = L8_1
+function L8_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2
+  L2_2 = print
+  L3_2 = "OnSubFinish80509"
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L6_1.Npc1080
+  L4_2 = L4_2.alias
+  L5_2 = 3
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearAllWeatherTrigger
+  L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ClearWeatherTrigger
+  L4_2 = "Q80001_Rain"
+  L2_2(L3_2, L4_2)
+end
+L1_1.OnSubFinish80509 = L8_1
 return L1_1

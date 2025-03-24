@@ -1,4 +1,4 @@
-local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
 L0_1 = require
 L1_1 = "Actor/ActorCommon"
 L0_1(L1_1)
@@ -15,21 +15,23 @@ L3_1 = nil
 L4_1 = nil
 L5_1 = nil
 L6_1 = nil
-function L7_1(A0_2)
+L7_1 = nil
+function L8_1(A0_2)
   local L1_2
+  L3_1 = A0_2
   L1_2 = A0_2.clientData
   L2_1 = L1_2
   L1_2 = L2_1.MainID
-  L3_1 = L1_2
-  L1_2 = L2_1.ActorAlias
   L4_1 = L1_2
-  L1_2 = L2_1.SubIDs
+  L1_2 = L2_1.ActorAlias
   L5_1 = L1_2
-  L1_2 = L2_1.Npcs
+  L1_2 = L2_1.SubIDs
   L6_1 = L1_2
+  L1_2 = L2_1.Npcs
+  L7_1 = L1_2
 end
-L1_1.OnDataLoaded = L7_1
-function L7_1(A0_2)
+L1_1.OnDataLoaded = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubStart2102901
@@ -54,8 +56,8 @@ function L7_1(A0_2)
   L1_2["2102910"] = L2_2
   A0_2.subStartHandlers = L1_2
 end
-L1_1.OnSubStartHandlerBuild = L7_1
-function L7_1(A0_2)
+L1_1.OnSubStartHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = {}
   L2_2 = A0_2.OnSubFinish2102901
@@ -80,93 +82,100 @@ function L7_1(A0_2)
   L1_2["2102910"] = L2_2
   A0_2.subFinishHandlers = L1_2
 end
-L1_1.OnSubFinishHandlerBuild = L7_1
-function L7_1(A0_2)
+L1_1.OnSubFinishHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2
   L1_2 = {}
   A0_2.subFailedHandlers = L1_2
 end
-L1_1.OnSubFailedHandlerBuild = L7_1
-function L7_1(A0_2)
+L1_1.OnSubFailedHandlerBuild = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "Start"
   L1_2(L2_2)
 end
-L1_1.Start = L7_1
-function L7_1(A0_2)
+L1_1.Start = L8_1
+function L8_1(A0_2)
   local L1_2, L2_2
   L1_2 = print
   L2_2 = "OnDestroy"
   L1_2(L2_2)
 end
-L1_1.OnDestroy = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnDestroy = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnMainFinished"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L6_1.Npc2031Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc2031Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.LightNotifyTo
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.LightNotifyTo
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnMainFinished = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnMainFinished = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnMainFailed"
   L2_2(L3_2)
 end
-L1_1.OnMainFailed = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnMainFailed = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L6_1.Npc2031Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SafeDestroyQuestNpc
+  L4_2 = L7_1.Npc2031Data
   L4_2 = L4_2.alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.LightNotifyTo
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.LightNotifyTo
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.LightNotifyTo
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 0
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.ActorDestroy
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
   L4_2 = "Q21029Trigger"
   L2_2(L3_2, L4_2)
 end
-L1_1.OnMainCanceled = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnMainCanceled = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = actorMgr
   L3_2 = L2_2
@@ -179,25 +188,28 @@ function L7_1(A0_2, A1_2)
     L3_2(L4_2)
   end
 end
-L1_1.ActorDestroy = L7_1
-function L7_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.ActorDestroy = L8_1
+function L8_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2, L7_2, L8_2
-  L5_2 = A0_2
-  L4_2 = A0_2.CreateQuestNpc
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.CreateQuestNpc
   L6_2 = A1_2
   L7_2 = A2_2
   L8_2 = A3_2
   L4_2(L5_2, L6_2, L7_2, L8_2)
 end
-L1_1.NpcCreate = L7_1
-function L7_1(A0_2, A1_2, A2_2, A3_2)
+L1_1.NpcCreate = L8_1
+function L8_1(A0_2, A1_2, A2_2, A3_2)
   local L4_2, L5_2, L6_2
-  L5_2 = A0_2
-  L4_2 = A0_2.ActionSafeCall
+  L4_2 = L3_1
+  L5_2 = L4_2
+  L4_2 = L4_2.ActionSafeCall
   function L6_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3, L5_3
-    L2_3 = A0_3
-    L1_3 = A0_3.NotifyTo
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.NotifyTo
     L3_3 = A1_2
     L4_3 = A2_2
     L5_3 = A3_2
@@ -205,18 +217,20 @@ function L7_1(A0_2, A1_2, A2_2, A3_2)
   end
   L4_2(L5_2, L6_2)
 end
-L1_1.DailyNpcSafeHideSelf = L7_1
-function L7_1(A0_2, A1_2, A2_2)
+L1_1.DailyNpcSafeHideSelf = L8_1
+function L8_1(A0_2, A1_2, A2_2)
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
-  L4_2 = A0_2
-  L3_2 = A0_2.ShowBlackScreen
+  L3_2 = L3_1
+  L4_2 = L3_2
+  L3_2 = L3_2.ShowBlackScreen
   L5_2 = 0.5
   L6_2 = 1
   L7_2 = 0.5
   function L8_2(A0_3)
     local L1_3, L2_3, L3_3, L4_3
-    L2_3 = A0_3
-    L1_3 = A0_3.SafeDestroyQuestNpc
+    L1_3 = L3_1
+    L2_3 = L1_3
+    L1_3 = L1_3.DestroyQuestNpcActor
     L3_3 = A2_2
     L4_3 = A1_2
     L1_3(L2_3, L3_3, L4_3)
@@ -226,29 +240,32 @@ function L7_1(A0_2, A1_2, A2_2)
   L11_2 = ""
   L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
 end
-L1_1.NpcDestroyWithBlackscreen = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.NpcDestroyWithBlackscreen = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
   L2_2 = print
   L3_2 = "OnSubStart2102901"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.NpcCreate
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcCreate
   L4_2 = A1_2
-  L5_2 = L6_1.Npc2031Data
+  L5_2 = L7_1.Npc2031Data
   L5_2 = L5_2.id
   L6_2 = 1
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
@@ -279,301 +296,308 @@ function L7_1(A0_2, A1_2)
   L12_2 = 3
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
 end
-L1_1.OnSubStart2102901 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102901 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2
   L2_2 = print
   L3_2 = "OnSubFinish2102901"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.ActorDestroy
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.ActorDestroy
   L4_2 = "Q21029Trigger"
   L2_2(L3_2, L4_2)
 end
-L1_1.OnSubFinish2102901 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102901 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102902"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102902 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102902 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102902"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102902 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102902 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102903"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102903 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102903 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102903"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102903 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102903 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102904"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102904 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102904 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102904"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102904 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102904 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102905"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102905 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102905 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102905"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102905 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102905 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102906"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102906 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102906 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102906"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102906 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102906 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102907"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
 end
-L1_1.OnSubStart2102907 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102907 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish2102907"
   L2_2(L3_2)
 end
-L1_1.OnSubFinish2102907 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102907 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102908"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.RequestInteraction
-  L4_2 = L6_1.Npc2031Data
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart2102908 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102908 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish2102908"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.NpcDestroyWithBlackscreen
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
   L4_2 = 3
-  L5_2 = L6_1.Npc2031Data
+  L5_2 = L7_1.Npc2031Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish2102908 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102908 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102909"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.RequestInteraction
-  L4_2 = L6_1.Npc2031Data
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart2102909 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102909 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish2102909"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.NpcDestroyWithBlackscreen
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
   L4_2 = 3
-  L5_2 = L6_1.Npc2031Data
+  L5_2 = L7_1.Npc2031Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish2102909 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubFinish2102909 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubStart2102910"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2030Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2030Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.DailyNpcSafeHideSelf
-  L4_2 = L6_1.Npc2074Data
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.DailyNpcSafeHideSelf
+  L4_2 = L7_1.Npc2074Data
   L4_2 = L4_2.alias
   L5_2 = 1
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.RequestInteraction
-  L4_2 = L6_1.Npc2031Data
-  L4_2 = L4_2.alias
-  L2_2(L3_2, L4_2)
 end
-L1_1.OnSubStart2102910 = L7_1
-function L7_1(A0_2, A1_2)
+L1_1.OnSubStart2102910 = L8_1
+function L8_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish2102910"
   L2_2(L3_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.NpcDestroyWithBlackscreen
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.NpcDestroyWithBlackscreen
   L4_2 = 3
-  L5_2 = L6_1.Npc2031Data
+  L5_2 = L7_1.Npc2031Data
   L5_2 = L5_2.alias
   L2_2(L3_2, L4_2, L5_2)
 end
-L1_1.OnSubFinish2102910 = L7_1
+L1_1.OnSubFinish2102910 = L8_1
 return L1_1

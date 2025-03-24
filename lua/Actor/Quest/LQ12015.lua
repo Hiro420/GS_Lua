@@ -644,7 +644,7 @@ function L8_1(A0_2, A1_2)
   L3_2 = "OnSubFinish1201508"
   L2_2(L3_2)
   L3_2 = A0_2
-  L2_2 = A0_2.SafeDestroyQuestNpc
+  L2_2 = A0_2.DestroyQuestNpcActor
   L4_2 = L6_1.Npc3064Data
   L4_2 = L4_2.alias
   L5_2 = 3

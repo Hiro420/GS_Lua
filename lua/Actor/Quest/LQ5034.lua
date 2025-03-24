@@ -193,7 +193,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.ActorDestroy = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
   L2_2 = print
   L3_2 = "OnSubStart503401"
   L2_2(L3_2)
@@ -207,21 +207,6 @@ function L9_1(A0_2, A1_2)
   L8_2 = L7_1.Npc1089
   L8_2 = L8_2.id
   L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
-  L2_2 = actorMgr
-  L3_2 = L2_2
-  L2_2 = L2_2.CreateActorWithPos
-  L4_2 = "Q03315transmit"
-  L5_2 = "Actor/Gadget/Q03315transmit"
-  L6_2 = 70900002
-  L7_2 = 0
-  L8_2 = L8_1._Q03315transmitPoint_
-  L8_2 = L8_2.pos
-  L9_2 = L8_1._Q03315transmitPoint_
-  L9_2 = L9_2.rot
-  L10_2 = true
-  L11_2 = false
-  L12_2 = 20245
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.GetSubQuestState

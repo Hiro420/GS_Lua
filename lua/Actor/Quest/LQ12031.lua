@@ -806,7 +806,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1203111 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish1203111"
   L2_2(L3_2)
@@ -814,13 +814,6 @@ function L9_1(A0_2, A1_2)
   L2_2 = A0_2.NarratorOnlyTaskByData
   L4_2 = L8_1.NarratorWithId2
   L2_2(L3_2, L4_2)
-end
-L1_1.OnSubFinish1203111 = L9_1
-function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
-  L2_2 = print
-  L3_2 = "OnSubStart1203112"
-  L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.LightNotifyTo
   L4_2 = L6_1.Npc3105Data
@@ -857,6 +850,20 @@ function L9_1(A0_2, A1_2)
   L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
+  L2_2 = A0_2.LightNotifyTo
+  L4_2 = L6_1.Npc3110Data
+  L4_2 = L4_2.alias
+  L5_2 = 0
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+end
+L1_1.OnSubFinish1203111 = L9_1
+function L9_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L2_2 = print
+  L3_2 = "OnSubStart1203112"
+  L2_2(L3_2)
+  L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
   L5_2 = L6_1.Npc12368Data
@@ -869,13 +876,6 @@ function L9_1(A0_2, A1_2)
   L5_2 = L6_1.Npc12405Data
   L5_2 = L5_2.id
   L6_2 = 3
-  L2_2(L3_2, L4_2, L5_2, L6_2)
-  L3_2 = A0_2
-  L2_2 = A0_2.LightNotifyTo
-  L4_2 = L6_1.Npc3110Data
-  L4_2 = L4_2.alias
-  L5_2 = 0
-  L6_2 = true
   L2_2(L3_2, L4_2, L5_2, L6_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpcWithTriggerBlack

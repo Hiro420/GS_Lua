@@ -162,6 +162,7 @@ function L9_1(A0_2, A1_2)
     L4_2 = L2_2
     L3_2 = L2_2.DestroySelf
     L3_2(L4_2)
+    return
   end
 end
 L1_1.ActorDestroy = L9_1
@@ -216,7 +217,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1501901 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2
+  local L2_2, L3_2, L4_2, L5_2
   L2_2 = print
   L3_2 = "OnSubFinish1501901"
   L2_2(L3_2)
@@ -224,6 +225,12 @@ function L9_1(A0_2, A1_2)
   L3_2 = L2_2
   L2_2 = L2_2.ClearNarratorTask
   L2_2(L3_2)
+  L2_2 = L3_1
+  L3_2 = L2_2
+  L2_2 = L2_2.SetNavigationByMainId
+  L4_2 = 15019
+  L5_2 = true
+  L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1501901 = L9_1
 function L9_1(A0_2, A1_2)
@@ -348,7 +355,7 @@ function L9_1(A0_2, A1_2)
     L9_3 = L9_3.rot
     L10_3 = true
     L11_3 = false
-    L12_3 = nil
+    L12_3 = 3
     L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
   L2_2(L3_2, L4_2, L5_2)
