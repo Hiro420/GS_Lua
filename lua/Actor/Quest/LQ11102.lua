@@ -52,13 +52,13 @@ function L15_1(A0_2)
   L10_1 = L1_2
   L1_2 = q11102Cfg
   L1_2 = L1_2.Crowd1Data
-  L12_1 = L1_2
+  Crowd1Data = L1_2
   L1_2 = q11102Cfg
   L1_2 = L1_2.Crowd2Data
-  L13_1 = L1_2
+  Crowd2Data = L1_2
   L1_2 = q11102Cfg
   L1_2 = L1_2.Crowd3Data
-  L14_1 = L1_2
+  Crowd3Data = L1_2
 end
 L1_1.OnDataLoaded = L15_1
 function L15_1(A0_2)
@@ -331,17 +331,20 @@ function L15_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L12_1.ID
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L13_1.ID
+  L5_2 = Crowd2Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L14_1.ID
+  L5_2 = Crowd3Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.ClearSpeechBubbleTask
@@ -397,6 +400,10 @@ function L15_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1110201 = L15_1
 function L15_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish1110201 = L15_1
 function L15_1(A0_2, A1_2)
@@ -486,6 +493,9 @@ function L15_1(A0_2, A1_2)
   local L2_2, L3_2
   L2_2 = print
   L3_2 = "********1110203 Finish"
+  L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearNarratorTask
   L2_2(L3_2)
 end
 L1_1.OnSubFinish1110203 = L15_1

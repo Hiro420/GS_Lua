@@ -384,6 +384,9 @@ function L13_1(A0_2, A1_2)
   L2_2 = print
   L3_2 = "********RequestInteraction start"
   L2_2(L3_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.ClearNarratorTask
+  L2_2(L3_2)
 end
 L1_1.OnSubFinish1110313 = L13_1
 function L13_1(A0_2, A1_2)

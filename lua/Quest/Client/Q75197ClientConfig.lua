@@ -1,0 +1,33 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = {}
+L0_1.MainID = 75197
+L0_1.ActorAlias = "75197"
+L0_1.IgnoreDoReturnNpcForDaily = true
+L1_1 = {}
+L1_1.q7519701 = 7519701
+L1_1.q7519706 = 7519706
+L1_1.q7519705 = 7519705
+L1_1.q7519702 = 7519702
+L1_1.q7519703 = 7519703
+L1_1.q7519704 = 7519704
+L0_1.SubIDs = L1_1
+L1_1 = {}
+L2_1 = {}
+L2_1.id = 1667
+L2_1.alias = "Npc1667"
+L2_1.script = "Actor/Npc/NpcFSMBehaviour"
+L3_1 = {}
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.pos = L4_1
+L4_1 = {}
+L4_1.x = 0
+L4_1.y = 0
+L4_1.z = 0
+L3_1.rot = L4_1
+L2_1.point = L3_1
+L1_1.Npc1667Data = L2_1
+L0_1.Npcs = L1_1
+return L0_1

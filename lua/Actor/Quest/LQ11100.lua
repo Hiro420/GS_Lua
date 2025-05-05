@@ -42,13 +42,13 @@ function L14_1(A0_2)
   L7_1 = L1_2
   L1_2 = q11100Cfg
   L1_2 = L1_2.Crowd1Data
-  L8_1 = L1_2
+  Crowd1Data = L1_2
   L1_2 = q11100Cfg
   L1_2 = L1_2.Crowd2Data
-  L9_1 = L1_2
+  Crowd2Data = L1_2
   L1_2 = q11100Cfg
   L1_2 = L1_2.Crowd3Data
-  L10_1 = L1_2
+  Crowd3Data = L1_2
   L1_2 = q11100Cfg
   L1_2 = L1_2.Qiuqiu1Data
   L11_1 = L1_2
@@ -523,11 +523,13 @@ function L14_1(A0_2, A1_2)
         L3_5 = A0_5
         L2_5 = A0_5.CreateQuestNpc
         L4_5 = A1_2
-        L5_5 = L8_1.ID
+        L5_5 = Crowd1Data
+        L5_5 = L5_5.ID
         L2_5(L3_5, L4_5, L5_5)
         L3_5 = A0_5
         L2_5 = A0_5.GetQuestNpcActor
-        L4_5 = L8_1.Alias
+        L4_5 = Crowd1Data
+        L4_5 = L4_5.Alias
         L2_5 = L2_5(L3_5, L4_5)
         L4_5 = L2_5
         L3_5 = L2_5.DoFreeStyle
@@ -536,7 +538,8 @@ function L14_1(A0_2, A1_2)
         L3_5 = L3_2
         L4_5 = L3_5
         L3_5 = L3_5.CreateSpeechBubbleTask
-        L5_5 = L2_5.ID
+        L5_5 = Crowd1Data
+        L5_5 = L5_5.ID
         L6_5 = 111030803
         L7_5 = 2
         L8_5 = true
@@ -546,11 +549,13 @@ function L14_1(A0_2, A1_2)
         L4_5 = A0_5
         L3_5 = A0_5.CreateQuestNpc
         L5_5 = A1_2
-        L6_5 = L9_1.ID
+        L6_5 = Crowd2Data
+        L6_5 = L6_5.ID
         L3_5(L4_5, L5_5, L6_5)
         L4_5 = A0_5
         L3_5 = A0_5.GetQuestNpcActor
-        L5_5 = L9_1.Alias
+        L5_5 = Crowd2Data
+        L5_5 = L5_5.Alias
         L3_5 = L3_5(L4_5, L5_5)
         L5_5 = L3_5
         L4_5 = L3_5.DoFreeStyle
@@ -559,7 +564,8 @@ function L14_1(A0_2, A1_2)
         L4_5 = L3_2
         L5_5 = L4_5
         L4_5 = L4_5.CreateSpeechBubbleTask
-        L6_5 = L3_5.ID
+        L6_5 = Crowd2Data
+        L6_5 = L6_5.ID
         L7_5 = 111030804
         L8_5 = 2
         L9_5 = true
@@ -569,11 +575,13 @@ function L14_1(A0_2, A1_2)
         L5_5 = A0_5
         L4_5 = A0_5.CreateQuestNpc
         L6_5 = A1_2
-        L7_5 = L10_1.ID
+        L7_5 = Crowd3Data
+        L7_5 = L7_5.ID
         L4_5(L5_5, L6_5, L7_5)
         L5_5 = A0_5
         L4_5 = A0_5.GetQuestNpcActor
-        L6_5 = L10_1.Alias
+        L6_5 = Crowd3Data
+        L6_5 = L6_5.Alias
         L4_5 = L4_5(L5_5, L6_5)
         L6_5 = L4_5
         L5_5 = L4_5.DoFreeStyle
@@ -582,7 +590,8 @@ function L14_1(A0_2, A1_2)
         L5_5 = L3_2
         L6_5 = L5_5
         L5_5 = L5_5.CreateSpeechBubbleTask
-        L7_5 = L4_5.ID
+        L7_5 = Crowd3Data
+        L7_5 = L7_5.ID
         L8_5 = 111030805
         L9_5 = 2
         L10_5 = true
@@ -642,7 +651,8 @@ function L14_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L8_1.ID
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
 end
 L1_1.OnSubFinish1110003 = L14_1
@@ -663,7 +673,8 @@ function L14_1(A0_2, A1_2)
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L8_1.Alias
+  L6_2 = Crowd1Data
+  L6_2 = L6_2.Alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
   L5_2 = L4_2.DoFreeStyle
@@ -671,7 +682,8 @@ function L14_1(A0_2, A1_2)
   L5_2(L6_2, L7_2)
   L6_2 = L2_2
   L5_2 = L2_2.CreateSpeechBubbleTask
-  L7_2 = L4_2.ID
+  L7_2 = Crowd1Data
+  L7_2 = L7_2.ID
   L8_2 = 111030803
   L9_2 = 2
   L10_2 = true
@@ -680,7 +692,8 @@ function L14_1(A0_2, A1_2)
   L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L9_1.Alias
+  L7_2 = Crowd2Data
+  L7_2 = L7_2.Alias
   L5_2 = L5_2(L6_2, L7_2)
   L7_2 = L5_2
   L6_2 = L5_2.DoFreeStyle
@@ -688,7 +701,8 @@ function L14_1(A0_2, A1_2)
   L6_2(L7_2, L8_2)
   L7_2 = L2_2
   L6_2 = L2_2.CreateSpeechBubbleTask
-  L8_2 = L5_2.ID
+  L8_2 = Crowd2Data
+  L8_2 = L8_2.ID
   L9_2 = 111030804
   L10_2 = 2
   L11_2 = true
@@ -697,7 +711,8 @@ function L14_1(A0_2, A1_2)
   L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
   L7_2 = A0_2
   L6_2 = A0_2.GetQuestNpcActor
-  L8_2 = L10_1.Alias
+  L8_2 = Crowd3Data
+  L8_2 = L8_2.Alias
   L6_2 = L6_2(L7_2, L8_2)
   L8_2 = L6_2
   L7_2 = L6_2.DoFreeStyle
@@ -705,7 +720,8 @@ function L14_1(A0_2, A1_2)
   L7_2(L8_2, L9_2)
   L8_2 = L2_2
   L7_2 = L2_2.CreateSpeechBubbleTask
-  L9_2 = L6_2.ID
+  L9_2 = Crowd3Data
+  L9_2 = L9_2.ID
   L10_2 = 111030805
   L11_2 = 2
   L12_2 = true
@@ -793,11 +809,13 @@ function L14_1(A0_2, A1_2)
   L5_2 = A0_2
   L4_2 = A0_2.CreateQuestNpc
   L6_2 = A1_2
-  L7_2 = L8_1.ID
+  L7_2 = Crowd1Data
+  L7_2 = L7_2.ID
   L4_2(L5_2, L6_2, L7_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L8_1.Alias
+  L6_2 = Crowd1Data
+  L6_2 = L6_2.Alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
   L5_2 = L4_2.DoFreeStyle
@@ -805,7 +823,8 @@ function L14_1(A0_2, A1_2)
   L5_2(L6_2, L7_2)
   L6_2 = L2_2
   L5_2 = L2_2.CreateSpeechBubbleTask
-  L7_2 = L4_2.ID
+  L7_2 = Crowd1Data
+  L7_2 = L7_2.ID
   L8_2 = 111030803
   L9_2 = 2
   L10_2 = true
@@ -815,11 +834,13 @@ function L14_1(A0_2, A1_2)
   L6_2 = A0_2
   L5_2 = A0_2.CreateQuestNpc
   L7_2 = A1_2
-  L8_2 = L9_1.ID
+  L8_2 = Crowd2Data
+  L8_2 = L8_2.ID
   L5_2(L6_2, L7_2, L8_2)
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L9_1.Alias
+  L7_2 = Crowd2Data
+  L7_2 = L7_2.Alias
   L5_2 = L5_2(L6_2, L7_2)
   L7_2 = L5_2
   L6_2 = L5_2.DoFreeStyle
@@ -827,7 +848,8 @@ function L14_1(A0_2, A1_2)
   L6_2(L7_2, L8_2)
   L7_2 = L2_2
   L6_2 = L2_2.CreateSpeechBubbleTask
-  L8_2 = L5_2.ID
+  L8_2 = Crowd2Data
+  L8_2 = L8_2.ID
   L9_2 = 111030804
   L10_2 = 2
   L11_2 = true
@@ -837,11 +859,13 @@ function L14_1(A0_2, A1_2)
   L7_2 = A0_2
   L6_2 = A0_2.CreateQuestNpc
   L8_2 = A1_2
-  L9_2 = L10_1.ID
+  L9_2 = Crowd3Data
+  L9_2 = L9_2.ID
   L6_2(L7_2, L8_2, L9_2)
   L7_2 = A0_2
   L6_2 = A0_2.GetQuestNpcActor
-  L8_2 = L10_1.Alias
+  L8_2 = Crowd3Data
+  L8_2 = L8_2.Alias
   L6_2 = L6_2(L7_2, L8_2)
   L8_2 = L6_2
   L7_2 = L6_2.DoFreeStyle
@@ -849,7 +873,8 @@ function L14_1(A0_2, A1_2)
   L7_2(L8_2, L9_2)
   L8_2 = L2_2
   L7_2 = L2_2.CreateSpeechBubbleTask
-  L9_2 = L6_2.ID
+  L9_2 = Crowd3Data
+  L9_2 = L9_2.ID
   L10_2 = 111030805
   L11_2 = 2
   L12_2 = true
@@ -886,17 +911,20 @@ function L14_1(A0_2, A1_2)
   L2_2(L3_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L8_1.Alias
+  L4_2 = Crowd1Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L9_1.Alias
+  L4_2 = Crowd2Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L10_1.Alias
+  L4_2 = Crowd3Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2

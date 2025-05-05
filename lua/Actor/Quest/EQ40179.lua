@@ -157,7 +157,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnMainFailed = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
@@ -460,11 +460,12 @@ function L9_1(A0_2, A1_2)
   L5_2 = 3
   L6_2 = nil
   L7_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnMainPaused"
   L2_2(L3_2)
@@ -489,7 +490,8 @@ function L9_1(A0_2, A1_2)
   L5_2 = 3
   L6_2 = nil
   L7_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnMainPaused = L9_1
 function L9_1(A0_2, A1_2)
@@ -2316,7 +2318,8 @@ function L9_1(A0_2, A1_2)
   L34_2 = 3
   L35_2 = nil
   L36_2 = true
-  L31_2(L32_2, L33_2, L34_2, L35_2, L36_2)
+  L37_2 = nil
+  L31_2(L32_2, L33_2, L34_2, L35_2, L36_2, L37_2)
   L31_2 = L3_1
   L32_2 = L31_2
   L31_2 = L31_2.GetQuestNpcActor
@@ -2736,7 +2739,8 @@ function L9_1(A0_2, A1_2)
   L20_2 = 3
   L21_2 = nil
   L22_2 = false
-  L17_2(L18_2, L19_2, L20_2, L21_2, L22_2)
+  L23_2 = nil
+  L17_2(L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
   L17_2 = L3_1
   L18_2 = L17_2
   L17_2 = L17_2.CreateQuestOrphanNpc

@@ -1614,6 +1614,33 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2, A8_2, A9_2, A10_2,
     L23_2 = A9_2
     L24_2 = A11_2
     L15_2 = L15_2(L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2)
+    L16_2 = L13_2.isOrphan
+    if L16_2 == true and L15_2 ~= nil then
+      L16_2 = actorUtils
+      L16_2 = L16_2.IsCodeSwitchEnable
+      L17_2 = 5601
+      L16_2 = L16_2(L17_2)
+      if L16_2 == false then
+        L16_2 = actorUtils
+        L16_2 = L16_2.IsOrphanConflictWithQuestAnyNpc
+        L17_2 = A2_2
+        L18_2 = A1_2
+        L19_2 = L15_2.bornPos
+        L20_2 = L15_2.sceneID
+        L16_2 = L16_2(L17_2, L18_2, L19_2, L20_2)
+        if L16_2 then
+          L16_2 = print
+          L17_2 = "refuse to create orphan npc"
+          L18_2 = A2_2
+          L19_2 = " on "
+          L20_2 = A1_2
+          L21_2 = " for conflict with other QuestNpc"
+          L17_2 = L17_2 .. L18_2 .. L19_2 .. L20_2 .. L21_2
+          L16_2(L17_2)
+          return
+        end
+      end
+    end
     L16_2 = actorMgr
     L17_2 = L16_2
     L16_2 = L16_2.CreateActorWithData

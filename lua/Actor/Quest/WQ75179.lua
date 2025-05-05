@@ -933,39 +933,18 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart7517905 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = print
   L3_2 = "OnSubFinish7517905"
   L2_2(L3_2)
   L2_2 = L3_1
   L3_2 = L2_2
-  L2_2 = L2_2.TransmitPlayerByData
-  L4_2 = A1_2
-  L5_2 = 2
-  L6_2 = L6_1.TransmitData_N6437
-  function L7_2(A0_3)
-    local L1_3, L2_3, L3_3, L4_3, L5_3
-    L1_3 = L3_1
-    L2_3 = L1_3
-    L1_3 = L1_3.CallDelayByQuest
-    L3_3 = ""
-    L4_3 = 2.5
-    function L5_3(A0_4)
-      local L1_4, L2_4, L3_4, L4_4, L5_4
-      L1_4 = L3_1
-      L2_4 = L1_4
-      L1_4 = L1_4.RequestInteractionForceAlias
-      L3_4 = L7_1.Npc6346
-      L3_4 = L3_4.alias
-      L4_4 = ""
-      L5_4 = true
-      L1_4(L2_4, L3_4, L4_4, L5_4)
-    end
-    L1_3(L2_3, L3_3, L4_3, L5_3)
-  end
-  L8_2 = nil
-  L9_2 = L6_1.TransmitData_N6437
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  L2_2 = L2_2.RequestInteractionForceAlias
+  L4_2 = L7_1.Npc6346
+  L4_2 = L4_2.alias
+  L5_2 = ""
+  L6_2 = true
+  L2_2(L3_2, L4_2, L5_2, L6_2)
 end
 L1_1.OnSubFinish7517905 = L9_1
 function L9_1(A0_2, A1_2)

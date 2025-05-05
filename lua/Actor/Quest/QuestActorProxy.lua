@@ -7098,30 +7098,47 @@ function L6_1(A0_2)
   L1_2(L2_2)
 end
 L1_1.CancelWeather = L6_1
-function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2)
-  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
-  L5_2 = actorUtils
-  L5_2 = L5_2.Log
-  L6_2 = string
-  L6_2 = L6_2.format
-  L7_2 = "[Lua] %u call BanCrowdNpc. blockId: %u groupId: %u isBan: %s"
-  L8_2 = A0_2.mainQuestID
-  L9_2 = A1_2
-  L10_2 = A2_2
-  L11_2 = tostring
-  L12_2 = A4_2
-  L11_2, L12_2 = L11_2(L12_2)
-  L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2 = L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2)
-  L5_2 = A0_2.uActor
-  L6_2 = L5_2
-  L5_2 = L5_2.BanCrowd
-  L7_2 = A0_2.mainQuestID
-  L8_2 = A1_2
-  L9_2 = A2_2
-  L10_2 = A3_2
-  L11_2 = A4_2
-  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+  local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2
+  L6_2 = actorUtils
+  L6_2 = L6_2.Log
+  L7_2 = string
+  L7_2 = L7_2.format
+  L8_2 = "[Lua] %u call BanCrowdNpc. blockId: %u groupId: %u isBan: %s isReleseSit: %s"
+  L9_2 = A0_2.mainQuestID
+  L10_2 = A1_2
+  L11_2 = A2_2
+  L12_2 = tostring
+  L13_2 = A4_2
+  L12_2 = L12_2(L13_2)
+  L13_2 = tostring
+  L14_2 = A5_2
+  L13_2, L14_2 = L13_2(L14_2)
+  L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2)
+  if A4_2 == true then
+    L6_2 = A0_2.uActor
+    L7_2 = L6_2
+    L6_2 = L6_2.BanCrowd
+    L8_2 = A0_2.mainQuestID
+    L9_2 = A1_2
+    L10_2 = A2_2
+    L11_2 = A3_2
+    L12_2 = true
+    L13_2 = A5_2
+    L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  else
+    L6_2 = A0_2.uActor
+    L7_2 = L6_2
+    L6_2 = L6_2.BanCrowd
+    L8_2 = A0_2.mainQuestID
+    L9_2 = A1_2
+    L10_2 = A2_2
+    L11_2 = A3_2
+    L12_2 = false
+    L13_2 = true
+    L6_2(L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  end
 end
 L1_1.BanCrowdNpc = L6_1
 function L6_1(A0_2, A1_2, A2_2, A3_2, A4_2)

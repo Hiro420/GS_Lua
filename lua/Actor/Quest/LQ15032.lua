@@ -169,7 +169,7 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnMainFailed = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnMainCanceled"
   L2_2(L3_2)
@@ -180,11 +180,12 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnMainCanceled = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnMainPaused"
   L2_2(L3_2)
@@ -220,11 +221,12 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnMainPaused = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = print
   L3_2 = "InvokeOnInteraction"
   L2_2(L3_2)
@@ -240,6 +242,17 @@ function L9_1(A0_2, A1_2)
     L3_2 = false
     L4_2 = 1503219
     L2_2(L3_2, L4_2)
+    L2_2 = L3_1
+    L3_2 = L2_2
+    L2_2 = L2_2.PlayerEnterDungeonWithData
+    L4_2 = 1513
+    L5_2 = 1239
+    L6_2 = 1503219
+    L7_2 = 1
+    L8_2 = L6_1.PlayerEnterDungeonData
+    L9_2 = nil
+    L10_2 = nil
+    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
   elseif A1_2 == 1503205 then
     L2_2 = L3_1
     L3_2 = L2_2
@@ -375,7 +388,8 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = actorMgr
   L3_2 = L2_2
   L2_2 = L2_2.CreateActorWithPos
@@ -420,21 +434,10 @@ function L9_1(A0_2, A1_2)
 end
 L1_1.OnSubStart1503219 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  local L2_2, L3_2
   L2_2 = print
   L3_2 = "OnSubFinish1503219"
   L2_2(L3_2)
-  L2_2 = L3_1
-  L3_2 = L2_2
-  L2_2 = L2_2.PlayerEnterDungeonWithData
-  L4_2 = 1513
-  L5_2 = 1239
-  L6_2 = 1503219
-  L7_2 = 1
-  L8_2 = L6_1.PlayerEnterDungeonData
-  L9_2 = nil
-  L10_2 = nil
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
 end
 L1_1.OnSubFinish1503219 = L9_1
 function L9_1(A0_2, A1_2)
@@ -684,7 +687,7 @@ function L9_1(A0_2, A1_2)
   L2_2 = L2_2.NpcCreateWithNpcTriggerAndBlackscreen
   L4_2 = 1503205
   L5_2 = 0
-  L6_2 = 30
+  L6_2 = 40
   L7_2 = 1.5
   L8_2 = L7_1.Npc1098
   L8_2 = L8_2.id
@@ -965,7 +968,8 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1503209 = L9_1
 function L9_1(A0_2, A1_2)
@@ -1028,11 +1032,12 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = true
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
 end
 L1_1.OnSubStart1503210 = L9_1
 function L9_1(A0_2, A1_2)
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
   L2_2 = print
   L3_2 = "OnSubFinish1503210"
   L2_2(L3_2)
@@ -1050,7 +1055,8 @@ function L9_1(A0_2, A1_2)
   L5_2 = 4
   L6_2 = nil
   L7_2 = false
-  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L8_2 = nil
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
   L2_2 = L3_1
   L3_2 = L2_2
   L2_2 = L2_2.LightNotifyTo

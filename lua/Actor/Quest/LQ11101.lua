@@ -51,13 +51,13 @@ function L14_1(A0_2)
   L10_1 = L1_2
   L1_2 = q11101Cfg
   L1_2 = L1_2.Crowd1Data
-  L11_1 = L1_2
+  Crowd1Data = L1_2
   L1_2 = q11101Cfg
   L1_2 = L1_2.Crowd2Data
-  L12_1 = L1_2
+  Crowd2Data = L1_2
   L1_2 = q11101Cfg
   L1_2 = L1_2.Crowd3Data
-  L13_1 = L1_2
+  Crowd3Data = L1_2
 end
 L1_1.OnDataLoaded = L14_1
 function L14_1(A0_2)
@@ -359,17 +359,20 @@ function L14_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L11_1.ID
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L12_1.ID
+  L5_2 = Crowd2Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L13_1.ID
+  L5_2 = Crowd3Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L2_2 = actorMgr
   L3_2 = L2_2
@@ -417,17 +420,20 @@ function L14_1(A0_2, A1_2)
   local L2_2, L3_2, L4_2, L5_2
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L11_1.Alias
+  L4_2 = Crowd1Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L12_1.Alias
+  L4_2 = Crowd2Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.SafeDestroyQuestNpc
-  L4_2 = L13_1.Alias
+  L4_2 = Crowd3Data
+  L4_2 = L4_2.Alias
   L5_2 = 3
   L2_2(L3_2, L4_2, L5_2)
 end
@@ -617,17 +623,20 @@ function L14_1(A0_2, A1_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L11_1.ID
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L12_1.ID
+  L5_2 = Crowd2Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
   L4_2 = A1_2
-  L5_2 = L13_1.ID
+  L5_2 = Crowd3Data
+  L5_2 = L5_2.ID
   L2_2(L3_2, L4_2, L5_2)
   L3_2 = A0_2
   L2_2 = A0_2.CreateQuestNpc
@@ -702,7 +711,8 @@ function L14_1(A0_2, A1_2)
   L3_2(L4_2, L5_2)
   L4_2 = A0_2
   L3_2 = A0_2.GetQuestNpcActor
-  L5_2 = L11_1.Alias
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.Alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = L3_2
   L4_2 = L3_2.DoFreeStyle
@@ -710,7 +720,8 @@ function L14_1(A0_2, A1_2)
   L4_2(L5_2, L6_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L12_1.Alias
+  L6_2 = Crowd2Data
+  L6_2 = L6_2.Alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = L4_2
   L5_2 = L4_2.DoFreeStyle
@@ -718,7 +729,8 @@ function L14_1(A0_2, A1_2)
   L5_2(L6_2, L7_2)
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L13_1.Alias
+  L7_2 = Crowd3Data
+  L7_2 = L7_2.Alias
   L5_2 = L5_2(L6_2, L7_2)
   L7_2 = L5_2
   L6_2 = L5_2.DoFreeStyle
@@ -808,25 +820,30 @@ function L14_1(A0_2, A1_2)
   L2_2 = L2_2(L3_2, L4_2)
   L4_2 = A0_2
   L3_2 = A0_2.GetQuestNpcActor
-  L5_2 = L11_1.Alias
+  L5_2 = Crowd1Data
+  L5_2 = L5_2.Alias
   L3_2 = L3_2(L4_2, L5_2)
   L5_2 = A0_2
   L4_2 = A0_2.CreateQuestNpc
   L6_2 = A1_2
-  L7_2 = L12_1.ID
+  L7_2 = Crowd2Data
+  L7_2 = L7_2.ID
   L4_2(L5_2, L6_2, L7_2)
   L5_2 = A0_2
   L4_2 = A0_2.GetQuestNpcActor
-  L6_2 = L12_1.Alias
+  L6_2 = Crowd2Data
+  L6_2 = L6_2.Alias
   L4_2 = L4_2(L5_2, L6_2)
   L6_2 = A0_2
   L5_2 = A0_2.CreateQuestNpc
   L7_2 = A1_2
-  L8_2 = L13_1.ID
+  L8_2 = Crowd3Data
+  L8_2 = L8_2.ID
   L5_2(L6_2, L7_2, L8_2)
   L6_2 = A0_2
   L5_2 = A0_2.GetQuestNpcActor
-  L7_2 = L13_1.Alias
+  L7_2 = Crowd3Data
+  L7_2 = L7_2.Alias
   L5_2 = L5_2(L6_2, L7_2)
 end
 L1_1.OnSubFinish1110107 = L14_1
